@@ -29,11 +29,7 @@
 25. Mac Chrome 浏览器常用快捷键:
 26. Mac 包管理器
 27. Mac 下弹出 U盘/SSD
-
-
-
-
-## 生词(New Words)
+28. 拷贝文件到移动 SSD 
 
 
 
@@ -245,3 +241,39 @@
   
 ### 27. Mac 下弹出 U盘/SSD
 - 选中要弹出的 U盘/SSD 然后按下 `Command` + `E`
+
+### 28. 拷贝文件到移动 SSD
+- 使用 brew 安装 Mounty
+  ```shell
+    brew cask install mounty
+  ```
+- 打开软件如果挂载提示: The volume UNTITLED is not re-mountable in read/write
+  mode. Probably it was not clean unmounted before. (卷不能在 读/写
+  模式下重新挂载. 可能是因为先前没有完全卸载(安全删除)).
+
+  这里的意思是说磁盘在 Win 下没有安全删除就拔除来了, 导致文件系统中有错误区块,
+  所以在 Mac 中不能挂载成读写模式. 到 Windows 下, 打开 Dos 命令行, 输入:
+  ```dos
+    chkdsk /f (tip: 就是 f, 不是移动硬盘所在盘符)
+  ```
+  然后回车, 退出 esc / Y
+
+  我在 Windows 10 上运行以上命令是不行的, 提示我卷在另外一个设备使用,
+  但是我用火绒安全弹出移动硬盘后, 再次拿到 Mac 上便是可以使用 Mounty 加载了...
+
+  下次再拔出移动硬盘之前, 一定记得安全删除/弹出.
+
+
+
+
+
+
+## 生词(New Words)
+- **remount [,ri:'maunt] --vi.重新骑上; 重登上. --vt.重新安装. --n.新马**
+    + A tiny tool to re-mount write-protected NTFS volumes under MacOS
+      in read-write mode. 一个微型工具, 以读写模式在 MacOS
+      下重新挂载(安装)受写保护的 NTFS 卷.
+    + She went to remount her horse. 她走过去重新上马.
+- **cask [kɑːsk]/[kæsk] --n.木桶, 桶. --vt.装入桶内.**
+    + I need a cask of wine and some apples. 我需要一桶酒和一些苹果.
+- 
