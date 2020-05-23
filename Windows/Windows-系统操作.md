@@ -3,8 +3,21 @@
 
 1. 如何打开注册表编辑器: Win + R 调出 “运行” 对话框， 输入 “regedit”
 
-1. Windows 系统提示说这些字符不允许用在文件名或者目录中：
-    + `/   /   :   *   ?   "   <   >   | `
+1. Windows 系统提示说这些字符不允许用在文件名或者目录中:
+    + Tilde (`~`)
+    + Number sign (`#`)
+    + Percent (`%`)
+    + Ampersand (`&`)
+    + Asterisk (`*`)
+    + Braces (`{ }`)
+    + Backslash (`\`)
+    + Colon (`:`)
+    + Angle brackets (`< >`)
+    + Question mark (`?`)
+    + Slash (`/`)
+    + Plus sign (`+`)
+    + Pipe (`|`)
+    + Quotation mark (`"`)
 
 1. Win10 调出任务管理器的快捷键: Ctrl + shift + Esc
 
