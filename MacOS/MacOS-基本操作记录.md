@@ -29,7 +29,23 @@
 25. Mac Chrome 浏览器常用快捷键:
 26. Mac 包管理器
 27. Mac 下弹出 U盘/SSD
-28. 拷贝文件到移动 SSD 
+28. 拷贝文件到移动 SSD
+29. 查看 mbp 风扇狂转(5000 ~ 6000 转) 的原因
+
+
+
+
+
+## 生词(New Words)
+- **remount [,ri:'maunt] --vi.重新骑上; 重登上. --vt.重新安装. --n.新马**
+    + A tiny tool to re-mount write-protected NTFS volumes under MacOS
+      in read-write mode. 一个微型工具, 以读写模式在 MacOS
+      下重新挂载(安装)受写保护的 NTFS 卷.
+    + She went to remount her horse. 她走过去重新上马.
+- **cask [kɑːsk]/[kæsk] --n.木桶, 桶. --vt.装入桶内.**
+    + I need a cask of wine and some apples. 我需要一桶酒和一些苹果.
+
+
 
 
 
@@ -263,17 +279,11 @@
 
   下次再拔出移动硬盘之前, 一定记得安全删除/弹出.
 
+### 29. 查看 mbp 风扇狂转(5000 ~ 6000 转) 的原因
+- 从 `启动台` 找到 `活动监视器`, 然后点击顶部的 `cpu` 模块,
+  查看每个软件(进程)对 CPU 的使用情况, 一般超过 100% 的都是导致 CPU
+  负载过大, 导致风扇狂转的原因.
 
-
-
-
-
-## 生词(New Words)
-- **remount [,ri:'maunt] --vi.重新骑上; 重登上. --vt.重新安装. --n.新马**
-    + A tiny tool to re-mount write-protected NTFS volumes under MacOS
-      in read-write mode. 一个微型工具, 以读写模式在 MacOS
-      下重新挂载(安装)受写保护的 NTFS 卷.
-    + She went to remount her horse. 她走过去重新上马.
-- **cask [kɑːsk]/[kæsk] --n.木桶, 桶. --vt.装入桶内.**
-    + I need a cask of wine and some apples. 我需要一桶酒和一些苹果.
-- 
+  <img src=""
+        style="margin-left: 0; border-radius: 4px; width: 66%;
+                box-shadow: 1px 1px 3px 2px #e5e5e5">
