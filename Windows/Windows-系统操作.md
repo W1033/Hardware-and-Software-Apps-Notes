@@ -1,5 +1,7 @@
 ##  Windows 10 系统操作
 
+壁纸切换软件: https://johnsad.ventures/software/backgroundswitcher/
+
 
 1. 如何打开注册表编辑器: Win + R 调出 “运行” 对话框， 输入 “regedit”
 
