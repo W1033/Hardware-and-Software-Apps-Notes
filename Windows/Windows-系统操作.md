@@ -1,6 +1,10 @@
 ##  Windows 10 系统操作
 
-壁纸切换软件: https://johnsad.ventures/software/backgroundswitcher/
+- 壁纸切换软件: https://johnsad.ventures/software/backgroundswitcher/
+
+- 解决黑域激活后弹出电脑失效的问题:
+    + 激活后, 执行 adb tcpip 3035 后再拔线.
+
 
 
 1. 如何打开注册表编辑器: Win + R 调出 “运行” 对话框， 输入 “regedit”
