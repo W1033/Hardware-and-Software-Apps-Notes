@@ -106,17 +106,14 @@
 ### win 10 常用軟件：
   - 監控軟件 -- wise system monitor
   - 調節色溫 -- f.lux / win10 夜灯功能
-  - 清理垃圾:
-        + Glary Utilities (http://www.dayanzai.me/glary-utilities.html)
-        + TuneUp Utilities
-        + Advanced SystemCare
+  - 清理垃圾 -- 火絨
   - 搜索軟件 -- everything / Listary
   - 卸載工具 -- Geek uninstaller
   - 數學公式編輯器 -- Mathtype (一般都是用網頁的，這個實際上並用不到)
   - GIF录屏 -- ScreenToGif
-  - 压缩软件 -- Bandizip, 7ZIP
+  - 压缩软件 -- Bandizip / 7ZIP
   - 视频播放 -- Potplayer / VLC
-  - 下载工具 -- uTorrent, PanDownload, 冰点文库
+  - 下载工具 -- 百度雲盤 / 迅雷 / 瀏覽器
   - 文件恢复 -- 易我数据恢复向导
   - 剪切板加强工具 -- Ditto
   - pdf 转 word -- ABBYYFineReader / smallPDF
@@ -125,6 +122,7 @@
   - nTrun: Win + R 快捷启动工具 (https://zhuanlan.zhihu.com/p/35722313)
   - 跨平台 todolist -- 小黄条
   - Markdown 编辑器 -- Typora
+  - 截圖工具 -- Snipaste
 
 
 ### win10 系统清理
