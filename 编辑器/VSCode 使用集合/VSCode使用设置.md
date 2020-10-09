@@ -33,7 +33,7 @@
 ## New Words
 
 
-## Contents
+## Content
 ### 1. Mac 和 Win 下的通用设置
 #### 1.1 快捷键
 - Windows: `Ctrl + Shift + p` / Mac: `Command + Shift + p`:
