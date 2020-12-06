@@ -59,7 +59,7 @@
 ### 4. `Shell` 也支持编程
 - `Shell` 并不是简单的堆砌命令，我们还可以在 `Shell` 中编程，这和使用 C++、C#、Java、Python 等常见的编程语言并没有什么两样。
 
-  hell 虽然没有 C++、Java、Python 等强大，但也支持了基本的编程元素，例如：
+  Shell 虽然没有 C++、Java、Python 等强大，但也支持了基本的编程元素，例如：
     + `if...else` 选择结构，`case...in` 开关语句，`for`、`while`、`until`循环;
     + 变量、数组、字符串、注释、加减乘除、逻辑运算等概念;
     + 函数，包括用户自定义的函数和内置函数（例如 printf、export、eval 等）。
