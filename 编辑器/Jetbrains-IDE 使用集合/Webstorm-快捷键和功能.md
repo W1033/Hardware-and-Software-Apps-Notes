@@ -1,7 +1,7 @@
 # WebStorm 操作记录
 
 ## 目录(Catalog)
-0. WebStorm 中的 `皮肤 和 `主题`
+0. WebStorm 中的 `皮肤` 和 `主题`
 1. WebStorm 中去掉灰色的参数提示: `parameter name hints`
 2. 解决 Webstorm 提交代码 `Github` 的相关问题.
 3. 解决 WebStorm 快捷键和 Mac 系统冲突
