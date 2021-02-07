@@ -23,7 +23,7 @@
 
 3. 然后点击当前窗口右上角的 `保存` 按钮， 在弹出窗口中 `画质调整` 中滑动按钮，来调节要保存图片的大小， 画质越高图片越大，反之越小。图示如下：
 
-<img src="./images-software/image-20210207143847484.png"
+<img src="./images-software/image-20210207144410320.png"
     style="margin-left: 0; border-radius: 4px; width: 66%;
         box-shadow: 1px 1px 3px 2px #e5e5e5">
 
