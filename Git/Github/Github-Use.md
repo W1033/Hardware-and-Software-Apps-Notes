@@ -46,6 +46,13 @@
   用一个空的去更新它，就相当于删除了。
 - `git remote update origin --prune` 刷新远程分支列表
 
+#### vscode-git中的U,M和D文件标记含义 （Added 20210326）
+- M (modified): 你已经在github中添加过该文件，然后你对这个文件进行了修改，就会文件后标记M
+- U (untracked): 你在本地新建了这个文件，还未提交到github上，就会标记U
+- D (delete): 你删除了这个文件，vscode-git会记录下这个状态
+- 
+
+
 ### 2. 提交代码到 `Github`
 1. 创建 git 仓库
     + 上传代码之前一定要把本地的git升级到最新版本，不要问我为什么
