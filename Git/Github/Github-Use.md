@@ -61,6 +61,7 @@
     + `git remote add origin https://xxx//xxxx//xxx/xxxxx.git` 
       (仓库名尽量不要用驼峰写法，因为会报错)
     + (链接地址就是打开创建的仓库之后那个写着"Clone or download"的长条绿色按钮)
+    + 如果我们想下载已有的在线仓库直接执行 `git pull https://github.com/W1033/xxxxxx.git` 即可 
 6. 上传 github 之前，需要先pull(拉下)一下，执行命令如下:
     + `git pull origin master`              
     + 下拉(pull)时提示错误 Fatal:refusing to merge unrelated histories
