@@ -5,7 +5,7 @@
 1. WebStorm 中去掉灰色的参数提示: `parameter name hints`
 2. 解决 Webstorm 提交代码 `Github` 的相关问题.
 3. 解决 WebStorm 快捷键和 Mac 系统冲突
-4. 
+4. WebStorm 如何使用正则给文档每段之间添加空格?
 5. 更改配色字体提示颜色
 6. WebStorm 中更改文档的默认字体:
 7. 更改字符编码:
@@ -27,7 +27,7 @@
 23. WebStorm 左侧的折叠线展示/隐藏
 24. WebStorm 中光标变成了白色小块：
 25. WebStorm 中光标变成黑块：
-26. 如何在 WebStorm 中快速删除空行？    
+26. 如何在 WebStorm 中使用正则快速删除空行？    
 27. WebStorm 好用插件集锦:
 28. 解决 MBP 下 WebStorm 启动扫描检查(inspections) 导致电脑风扇疯狂运行的问题
 
@@ -70,7 +70,14 @@
   因为快捷键和 Mac系统自带的快捷键冲突, 因此在 `偏好` 设置 --> `键盘`中,
   将 `应用快捷键` 中的 `显示帮助菜单` 的快捷键关闭或使用其他即可解决上述问题。
 
-### 4.
+### 4. WebStorm 如何使用正则给文档每段之间添加空格?
+
+按下 `command + R` 打开全局替换, 勾选 `RegExp`, 
+
+在第一行搜索框中输入 `。\n{1}` 然后点击后面的 `Search in selection only` 按钮(tip: 就是 `三`横线旁边有个竖线的按钮)
+
+然后在第二行搜索框中输入 `。\n\r`
+
 
 ### 5. 更改配色字体提示颜色
 - `Settings` --> `Editors` --> `colors&fonts` --> `HTML` -->
@@ -176,7 +183,7 @@
 ### 25. WebStorm 中光标变成黑块：
 - windows 上是 `ins`/`Insert` 键。 Mac 是 `fn + Eenter` 键 
 
-### 26. 如何在 WebStorm 中快速删除空行？
+### 26. 如何在 WebStorm 中使用正则快速删除空行？
 - 按下 `Command + R` 弹出替换框，勾选 `Matches` 和 `Regexp`(Regular Expression),
   然后在第一个输入框中输入正则 `\B\n`
   (Tip: `\B`:匹配一个单词的非边界位置。`\n`:匹配一个换行符)   
