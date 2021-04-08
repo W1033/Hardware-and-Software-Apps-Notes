@@ -1,5 +1,5 @@
 
-# [详细使用教程](http://itmyhome.com/markdown/article/extension/strikethrougn.html)
+# +[详细使用教程](http://itmyhome.com/markdown/article/extension/strikethrougn.html)
 
 
 ### Markdown 引入本地文件
@@ -67,7 +67,7 @@ Markdown 是一种`轻量级标记语言(1)`, 它使用**纯文本格式**编写
 #### 3.1 标题
 用 Markdown 书写时，只需要在文本前面加上 『#』 即可创建一级标题。同理，创建二级标题、三级标题等只需要增加 『#』 个数即可，Markdown 共支持六级标题。如下所示：
 
-<img src="./images-markdown/markdown01.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/markdown01.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 **Hint:** `#` 号 和「标题」之间保留一个字符的空格，markdown 语法默认都依照此规范。
 
@@ -82,18 +82,18 @@ Markdown 是一种`轻量级标记语言(1)`, 它使用**纯文本格式**编写
 | 加粗斜体 | `*** ***`|`***所有这些文本都很重要***` | ***加粗斜体文本***|
 | 删除线  | `~~ ~~` | `~~这是错误文本~~`  | ~~删除错误文本~~ |
 
-<img src="./images-markdown/1.jpg" style="border-radius: 4px; width: 70%;">
+<img src="./images-markdown/1.jpg" style="border-radius: 4px; width: 70%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 
 #### 3.3 无序列表
 使用中横线(`-`)或星号(`*`)来表示无序列表，注意后面需要加个空格。
 
-<img src="./images-markdown/8.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/8.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 
 #### 3.4 有序列表
 
-<img src="./images-markdown/9.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/9.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 #### 3.5 引用
 Markdown 标记区块引用只需要在整个段落的第一行前面加上 `>`（右箭头符号） ：
@@ -116,27 +116,27 @@ Markdown 标记区块引用只需要在整个段落的第一行前面加上 `>`�
 >
 > > 这是第二级引用。
 
-<img src="./images-markdown/6.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/6.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 
 #### 3.6 超链接
 
-<img src="./images-markdown/2.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/2.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 
 #### 3.7 图片
 
-<img src="./images-markdown/5.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/5.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 
 #### 3.8 代码块
 
-<img src="./images-markdown/3.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/3.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 
 #### 3.9 水平分割
 
-<img src="./images-markdown/7.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/7.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 
 #### 3.10 表格
@@ -172,7 +172,7 @@ foo | foo | foo
 bar | bar | bar
 baz | baz | baz
 
-<img src="./images-markdown/7.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/7.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 
 
 ### 4. 编辑工具
@@ -194,7 +194,7 @@ baz | baz | baz
 #### 4.1 自定义大小和带边框的图片插入写法:
 实际上也就是使用网页中的 HTML + CSS 源代码模式
 ```html
-<img src="./images-markdown/markdown01.jpg" style="border-radius: 4px; width: 79%;">
+<img src="./images-markdown/markdown01.jpg" style="border-radius: 4px; width: 79%; box-shadow: 1px 1px 5px 2px #e5e5e5">
 ```
 
 
