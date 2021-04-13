@@ -129,6 +129,7 @@ win10 系统截屏快捷键: Win+PrtSc
   - 跨平台 todolist -- 小黄条
   - Markdown 编辑器 -- Typora
   - 截圖工具 -- Snipaste
+  - 桌面背景切换工具 -- John's Background Switcher
 
 
 ### win10 系统清理
