@@ -2,6 +2,8 @@
 # +[详细使用教程](http://itmyhome.com/markdown/article/extension/strikethrougn.html)
 
 
+> 反思 Markdown : https://sspai.com/post/37340
+
 ### Markdown 引入本地文件
 - (1) 使用绝对路径
   
