@@ -29,16 +29,9 @@
 Markdown 是一种`轻量级标记语言(1)`, 它使用**纯文本格式**编写文档，使用一些预设的符号来代替样式, 当在 markdown 编辑器或阅读器中显示时, 会转换成有效的 HTML 文档.
 - `(1)` 轻量级标记语言(Lightweight Markup Language, 简称 XML)是一类用简单句法描述简单格式的文本语言。它作为一种标记语言，可使用文本编辑器输入。
 
-例如我们想要实现标题样式, 可以这么写:
+例如我们想要实现标题样式, 可以这么写 (下图左侧为书写方式, 右侧为显示效果.):
 
 ![markdown title](./images-markdown/markdown01.jpg)
-
-<p style="color: red;">上图: 左侧为书写方式, 右侧为显示效果</p>
-
-上图的图片插入写法如下:
-`![markdown title](./images-markdown/markdown01.jpg)`
-
-
 
 ### 2. Markdown 与 Word 的对比
 
