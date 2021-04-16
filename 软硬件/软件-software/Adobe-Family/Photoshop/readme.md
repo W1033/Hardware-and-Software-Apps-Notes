@@ -1,7 +1,8 @@
 # PhotoShop 
 
-磨皮插件 Portraiture 3
-+ 
+
+
+[Photoshop 的精髓是什么？为什么？](https://www.zhihu.com/question/20329343)
 
 
 ## 目录(Catalog)
@@ -99,8 +100,14 @@
 - (1) 在 `矩形选框` 工具上右键, 选择 `多边形工具`;
 - (2) 在上面 `选项` 栏中把, `边` 设置为 `3` 即可.
 
-
 ### 7. PS 插件
+
+1. 磨皮插件 Portraiture 3
+2. 
+
+
+
+
 
 
 ### 8. PS 制作九宫格方法
