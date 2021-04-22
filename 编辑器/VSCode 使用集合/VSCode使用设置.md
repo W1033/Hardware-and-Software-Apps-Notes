@@ -252,6 +252,7 @@
         "editor.fontSize": 14,
         "editor.letterSpacing": 1,
         "window.zoomLevel":0,
+        "editor.wordWrap": "on",
         "editor.wordWrapColumn": 100,
         "debug.toolBarLocation": "docKed",
         "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
