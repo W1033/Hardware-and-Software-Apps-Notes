@@ -1,5 +1,9 @@
 # Chrome 
 
+Mac Chrome 调出控制台的快捷键: `fn` + `F12`
+
+
+
 ## 目录 (Catalog)
 1. Chrome 下 advanced(进阶) 字体设置
 2. Chrome 中长截图
