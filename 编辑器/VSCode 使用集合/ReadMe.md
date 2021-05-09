@@ -31,6 +31,17 @@
 
 
 ## New Words
+## vscode 重要 快捷键:
+- 复制当前行：`shift + alt +up/down`
+- 格式化选定代码 ：`ctrl + k / ctrl + f`
+- 注释：
+  + a) 单行注释：`[ctrl+k, ctrl+c] 或 ctrl+/`
+  + b) 取消单行注释：`[ctrl+k, ctrl+u] (按下ctrl不放, 再按k + u)`
+  + c) 多行注释：`[alt+shift+A]`
+  + d) 多行注释：`/**`
+- 折叠代码快捷键: 先按下 `Ctrl + K` 再按下 `ctrl + 0(数字0)` 
+  + (Tip: 即使是折叠全部代码也不用全选文本) 
+- 代码展开: 先按下 `ctrl + K`, 再按下 `ctrl + J` ;
 
 
 ## Content

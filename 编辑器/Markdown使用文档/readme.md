@@ -1,5 +1,20 @@
 # Markdown
 
+
+
+## Markdown 中插入空格的方式: 
+```
+    紧贴 $a\!b$
+    没有空格 $ab$
+    小空格 a\,b
+    中等空格 a\;b
+    大空格 a\ b
+    quad空格 $a\quad b$
+    两个quad空格 $a\qquad b$
+```
+
+
+
 #### 4.5 markdown 引入本地文件
 - (1) 使用绝对路径
   
