@@ -118,11 +118,11 @@
 ##### 索尼手机申请 Bootloader 解锁
 索尼手机官网查看和申请 bootloader 解锁, 官网网址：https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
 - 自己手机从 Sony 官网取得 bootloader 解锁码
-    + 手机的 IMEI: 354985090874813
-    + 取得的解锁码：**05254F7851628DE6**
-
+    + 手机的 IMEI: 354985090874805
+    + 取得的解锁码：**BEAE7F44BA177F18**
 
 #### 3.2 刷入第三方 Recovery
+
 所谓第三方 Recovery，也就 CWM 与 TWRP 两款 REC，以及坊间基于它们的各种改款。不过 CWM 已在几年前停摆，目前刷机界是开源的 TWRP 家族独大。TWRP 全称 Team Win Recovery Project，是一个开源社区项目。
 
 > Recovery 是什么？
