@@ -64,13 +64,13 @@
 
 ## 14 条评论
 
-- [![satyru](https://pic2.zhimg.com/da8e974dc_s.jpg?source=06d4cd63)](https://www.zhihu.com/people/satyru)[satyru](https://www.zhihu.com/people/satyru)2017-12-10
+- [satyru](https://www.zhihu.com/people/satyru)2017-12-10
 
     您把mac系统整个都删掉了，只保留win系统，如果以后想装回mac系统，还能做到吗？
 
     3回复踩 举报
 
-- [![维拉蒂哦取消](https://pic4.zhimg.com/da8e974dc_s.jpg?source=06d4cd63)](https://www.zhihu.com/people/weiladiaoquxiao)[维拉蒂哦取消](https://www.zhihu.com/people/weiladiaoquxiao) (作者) 回复[satyru](https://www.zhihu.com/people/satyru)2017-12-13
+- [维拉蒂哦取消](https://www.zhihu.com/people/weiladiaoquxiao) (作者) 回复[satyru](https://www.zhihu.com/people/satyru)2017-12-13
 
     可以，command+r网络修复。
 

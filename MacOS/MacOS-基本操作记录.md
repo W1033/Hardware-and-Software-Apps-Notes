@@ -286,7 +286,6 @@
       软件, 然后通过显示的软件名通过 `brew list 软件名` 确定软件安装的路径..
 - 2、Macprot 包管理:
 - Macprot 与 brew 提供的功能基本一致, 不过......
-  
 ### 27. Mac 下弹出 U盘/SSD
 - 选中要弹出的 U盘/SSD 然后按下 `Command` + `E`
 
@@ -341,7 +340,6 @@
    那么, 如何知道这个占用了很高 CPU 使用率的进程是什么呢?
    只需双击打开查看便知道了, 只需要结束这个进程, CPU 温度下来,
    风扇转速便自然降下来了.
-  
 
 ### 30. Mac 无线连接 HP Laser MFP 136nw 打印机
 - (1) 首先确保打印机已启用 Wi-Fi Direct(wifi 直连).
@@ -367,10 +365,10 @@
 brew install upx
 ```
 
-\2. 使用UPX
+2. 使用UPX
 
 ```text
 sudo upx -d /Applications/CORE\ Keygen.app/Contents/MacOS/CORE\ Keygen
 ```
 
-\3. 再打开CORE Keygen.app就可以使用了。
+3. 再打开CORE Keygen.app就可以使用了。

@@ -7,6 +7,12 @@
 
 
 
+
+
+> 小白必看！超详细的刷机入坑指南: https://zhuanlan.zhihu.com/p/34700432
+
+
+
 ## 目录
 1. 为什么刷机
 2. 刷机分类
@@ -69,7 +75,7 @@
 
 详细一点就是：
 
-1. 解锁 **Bootloader**
+1. 解锁 **Bootloader**  (又称解BL锁，直译过来大概是“解锁启动加载器”。在2014年开始，很多机型开始加入BL锁，目的是防止用户刷非官方（手机制造商的）系统。)
 2. 用手机数据线连接手机按组合键进入 `Fastboot 模式`，使用 `adb` 命令行下刷入 第三方 Recovery：**TWRP**
 3. 卡刷：按组合键进入 `Recovery 模式（TWRP）`，刷入 **SuperSU.zip** 或 **Magisk.zip** 获得 Root 权限，或者刷入 **ROM 包.zip** 重装手机系统
 4. 或线刷：数据线连接手机、电脑，按组合键进入 `Recovery 模式（TWRP）`，在高级选项里开启 sideload 模式，在电脑上 cmd `adb sideload *.zip` 相比较优点是：不需要把包传到手机内存中）
@@ -122,15 +128,10 @@
     + 取得的解锁码：**BEAE7F44BA177F18**
 
 #### 3.2 刷入第三方 Recovery
-
-所谓第三方 Recovery，也就 CWM 与 TWRP 两款 REC，以及坊间基于它们的各种改款。不过 CWM 已在几年前停摆，目前刷机界是开源的 TWRP 家族独大。TWRP 全称 Team Win Recovery Project，是一个开源社区项目。
-
-> Recovery 是什么？
-> Recovery（以下简称 REC） 是 Android 手机备份功能，官方的 Recovery 在系统更新时都会启用。
-> 
-> 为什么刷入第三方的 REC？
-> 1. 在使用 REC 装系统的过程中，会对刷机包的数字签名进行校验。因而第三方 ROM 是无法通过官方 Recovery 刷入的。
-> 2. 官方的 REC 一般限制较多 (只能刷入官方的固件、补丁、更新等等), 而第三方的 REC 除了能任意刷入第三方 ROM ，还能调整分区大小。
+- (a) Recovery，又被称作rec，恢复模式，刷机模式等等。其功能大致类似于U盘重装系统时的WinPE，在另外的分区提供一个功能简易的小型操作系统，主要用来刷入.zip，格式化分区等。之后的步骤里，不论是系统，还是SuperSU、Gapps，以及其他诸如蝰蛇音效等，我们都是通过刷入.zip包的途径来实现的。
+- (b) 其实每一款手机出场的时候都会有一个rec，但是一般原厂的rec没怎么有使用价值，功能单一且弱，根本不能满足我们的使用需求，所以我们需要刷入功能强大无数倍的第三方rec。
+- (c) 曾经大家常用的一款功能强大的自制rec叫做CWM Recovery，但是后来出现了TWRP Recovery，不仅功能强大，而且界面美观，更无敌的是，TWRP打破了rec里只能音量键和电源键操作的限制，实现了触屏操作。经过时间的洗礼，当今TWRP的地位已经无可撼动。
+- (d) 下载TWRP。TWRP的官网：https://twrp.me/  (tip: 请一定注意你手机的具体型号, 找到对应的 TWRP, 不对应版本的 TWRP, 刷入手机后, 会卡在 twrp 的主界面, 导致你什么都干不了.)
 
 给手机刷第三方 Recovery, 我们使用从 Androis SDK 提取出来的一个工具 - `ADB`:
 
@@ -140,6 +141,7 @@
 
 > ADB 是什么？
 > ADB（Android Debug Bridge）是从 Android SDK 里提出来的一个工具，使用 ADB 命令行可以直接操作管理 Android 模拟器或者真实的 Andriod 设备。 ADB 主要功能有:
+>
 > - 在 Android 设备上运行 Shell (命令行)
 > - 管理模拟器或设备的端口映射
 > - 在计算机和设备之间上传 / 下载文件
@@ -190,5 +192,4 @@ Download:
 ### 6. Tail
 
 ### 7. Refer
-
 

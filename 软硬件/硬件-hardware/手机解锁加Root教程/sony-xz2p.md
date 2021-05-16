@@ -113,7 +113,7 @@ fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
 
 ## 索尼手机如何刷机
 
-完整文章讲解： https://zhuanlan.zhihu.com/p/187551676
+> 完整文章讲解： https://zhuanlan.zhihu.com/p/187551676
 
 ### 1. 准备所需要的的安装包
 
@@ -136,6 +136,12 @@ fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
 提示： TWRP 正确刷入之后， 手机连接电脑后就可以识别到手机了，此时手机里还没有系统，所以还需要下载 ftf 系统拷贝到手机内存中， 然后再使用 TWRP 安装 install
 
 
+
+
+
+### 上面的知乎文章关于强刷 ROM 的的部门并不对, 明天可以尝试这篇文章中是否正确:
+
+> https://biandan.me/1067.html
 
 
 
