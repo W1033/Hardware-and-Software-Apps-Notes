@@ -24,7 +24,7 @@
 ### 如何在Windows 10上安裝Flashtool Driver?
 
 > 来源： https://reat0ng.pixnet.net/blog/post/1396180
-- flashtool 只适合 2017 年前的 Sony 手机。 所以 2017 后的无需安装。
+安装 flashtool 主要是安装手机需要的驱动 win10 上需要禁止系统强制签名 ，所以还有点麻烦。
 
 
 
@@ -89,6 +89,9 @@ or if that doesn't work
 
 
 ### 下载 XZ2P 的 Recovery TWRP
+
+***全局提示：虽然下面已经可以正常安装 TWRP 了，但是依照下面的文章仍然不能成功刷机，完整刷机步骤见和淘宝刷机人的聊天记录。***
+
 **Important Hint:** 经过几十次的反复验证， 只有下面这个网址中的 TWRP 可以使用：
 
 + http://www.mediafire.com/file/sudsbi0ut6d3jry/331_xz2_Premium.gz/file
