@@ -195,3 +195,11 @@ Sysprep实际上是为公司环境创建的映像，用于自动Windows安装，
 
 如果您想在家中使用sysprep，则没有任何意义，因为它不会给您带来任何实际好处，除非您在家中运行AD（可疑）。Sysprep适用于系统管理员，而不是最终用户。
 
+
+
+
+
+### msiexec.exe
+
+msiexec.exe，系统进程，是Windows Installer的一部分。用于安装Windows Installer安装包（MSI），对系统的正常运行是非常重要的，一般在运行Microsoft Update安装更新或安装部分软件的时候出现，占用内存比较大。
+

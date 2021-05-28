@@ -47,7 +47,7 @@ win7 系统点击左下角的 windows 图标， 点击 "所有程序" --> "附�
 
 系统内置的三个核心日志文件（System，Security 和 Application）默认大小均为20480KB（20MB），记录事件数据超过20MB时，默认系统将优先覆盖过期的日志记录。其它应用程序及服务日志默认最大为1024KB，超过最大限制也优先覆盖过期的日志记录。
 
-![img](https://ask.qcloudimg.com/http-save/yehe-1268449/djve0llm4g.jpeg?imageView2/2/w/1620)
+
 
 Windows事件日志中共有五种事件类型，所有的事件必须拥有五种事件类型中的一种，且只可以有一种。五种事件类型分为：
 
