@@ -64,7 +64,7 @@
 
 31. MacOS Big Sur CORE keygen 无权限打开解决方案
 
-
+32. MacOS 更该锁屏时间
 
 
 
@@ -343,7 +343,7 @@
 
 ### 30. Mac 无线连接 HP Laser MFP 136nw 打印机
 - (1) 首先确保打印机已启用 Wi-Fi Direct(wifi 直连).
-- (2) 得到 Wi-Fi Direct 名称和密码(网络密钥),
+- å(2) 得到 Wi-Fi Direct 名称和密码(网络密钥),
   请按住打印机控制面板上的菜单按钮(`...`), 找到 `4 网络(NewWork)`
   接着按圆圈上 "上/右/下/左" 键中的 `左(箭头)` 键, 直到找到 --> `Wi-Fi`
   后, 按中间的 `OK` 键进入, 接下来仍按 `左(箭头)` 键, 找到 --> `Wi-Fi Direct`
@@ -372,3 +372,9 @@ sudo upx -d /Applications/CORE\ Keygen.app/Contents/MacOS/CORE\ Keygen
 ```
 
 3. 再打开CORE Keygen.app就可以使用了。
+
+
+
+### 32. 安装蓝灯后给 github 配置代理
+
+在 webstorm 拉取代码时提示： fatal: unable to access
