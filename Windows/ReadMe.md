@@ -151,50 +151,30 @@ A: `C:\Windows\Fonts`
 - (内存)監控軟件:
     + (1) TrafficMonitor (https://github.com/zhongyang219/TrafficMonitor/releases/tag/V1.80.3)
     + (2) Wise System Monitor
-
 - 調節色溫 -- f.lux / win10 夜灯功能
-
 - 安全软件+清理垃圾 -- 火絨
-
 - 系统清理工具
     + Dism++ (http://www.chuyu.me/zh-Hans/index.html)
     +
-    
 - 搜索軟件 -- everything / Listary
-
 - 卸載工具 -- Geek uninstaller
-
 - 數學公式編輯器 -- Mathtype (一般都是用網頁的，這個實際上並用不到)
-
 - GIF录屏 -- ScreenToGif
-
 - 压缩软件 -- Bandizip / 7ZIP
-
 - 视频播放 -- Potplayer / VLC
-
 - 下载工具 -- 百度雲盤 /  瀏覽器
-
 - 文件恢复 -- 
-
 - 剪切板加强工具 -- Ditto
-
 - pdf 转 word -- ABBYYFineReader / smallPDF
-
 - 英语词典 -- Google translate + 欧路词典
-
 - 强制关闭卡死程序 -- superF4
-
 - nTrun: Win + R 快捷启动工具 (https://zhuanlan.zhihu.com/p/35722313)
-
 - 跨平台 todolist -- 小黄条
-
 - Markdown 编辑器 -- Typora
-
 - 截圖工具 -- Snipaste
-
 - 壁纸切换软件( John's Background Switcher): https://johnsad.ventures/software/backgroundswitcher/
-
 - 录屏软件 -- oCam / ScreenToGif (开源便捷式捕获工具)
+- 磁盘分析工具 -- TreeSize / WizTree
 
 
 ### win10 开机有两个系统怎么删除其中一个
