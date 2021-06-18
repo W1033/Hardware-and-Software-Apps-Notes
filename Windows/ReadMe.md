@@ -147,28 +147,34 @@ A: `C:\Windows\Fonts`
     + `Ctrl + End`：光标跳转至末行最后一个字符后面(文件结尾)
 
 
-### win 10 常用軟件：
-  - 監控軟件 -- wise system monitor
-  - 調節色溫 -- f.lux / win10 夜灯功能
-  - 清理垃圾 -- 火絨
-  - 搜索軟件 -- everything / Listary
-  - 卸載工具 -- Geek uninstaller
-  - 數學公式編輯器 -- Mathtype (一般都是用網頁的，這個實際上並用不到)
-  - GIF录屏 -- ScreenToGif
-  - 压缩软件 -- Bandizip / 7ZIP
-  - 视频播放 -- Potplayer / VLC
-  - 下载工具 -- 百度雲盤 / 迅雷 / 瀏覽器
-  - 文件恢复 -- 易我数据恢复向导
-  - 剪切板加强工具 -- Ditto
-  - pdf 转 word -- ABBYYFineReader / smallPDF
-  - 英语词典 -- Google translate + 欧路词典
-  - 强制关闭卡死程序 -- superF4
-  - nTrun: Win + R 快捷启动工具 (https://zhuanlan.zhihu.com/p/35722313)
-  - 跨平台 todolist -- 小黄条
-  - Markdown 编辑器 -- Typora
-  - 截圖工具 -- Snipaste
-  - 壁纸切换软件( John's Background Switcher): https://johnsad.ventures/software/backgroundswitcher/
-  - 录屏软件 -- ScreenToGif (开源便捷式捕获工具)
+### win7 / win10 常用軟件推荐：
+- (内存)監控軟件:
+    + (1) TrafficMonitor (https://github.com/zhongyang219/TrafficMonitor/releases/tag/V1.80.3)
+    + (2) Wise System Monitor
+- 調節色溫 -- f.lux / win10 夜灯功能
+- 安全软件+清理垃圾 -- 火絨
+- 系统清理工具
+    + Dism++ (http://www.chuyu.me/zh-Hans/index.html)
+    +
+- 搜索軟件 -- everything / Listary
+- 卸載工具 -- Geek uninstaller
+- 數學公式編輯器 -- Mathtype (一般都是用網頁的，這個實際上並用不到)
+- GIF录屏 -- ScreenToGif
+- 压缩软件 -- Bandizip / 7ZIP
+- 视频播放 -- Potplayer / VLC
+- 下载工具 -- 百度雲盤 /  瀏覽器
+- 文件恢复 -- 
+- 剪切板加强工具 -- Ditto
+- pdf 转 word -- ABBYYFineReader / smallPDF
+- 英语词典 -- Google translate + 欧路词典
+- 强制关闭卡死程序 -- superF4
+- nTrun: Win + R 快捷启动工具 (https://zhuanlan.zhihu.com/p/35722313)
+- 跨平台 todolist -- 小黄条
+- Markdown 编辑器 -- Typora
+- 截圖工具 -- Snipaste
+- 壁纸切换软件( John's Background Switcher): https://johnsad.ventures/software/backgroundswitcher/
+- 录屏软件 -- oCam / ScreenToGif (开源便捷式捕获工具)
+- 磁盘分析工具 -- TreeSize / WizTree
 
 
 ### win10 开机有两个系统怎么删除其中一个
@@ -215,9 +221,9 @@ msiexec.exe，系统进程，是Windows Installer的一部分。用于安装Wind
 
 (3)、删除Windows更新文件，需要再点击当前页面的“清理系统文件”。
 
-#### 2. 删除 `C:\Windows\Temp` 文件夹下的所有文件
+#### 2. 删除 `C:\Windows\Temp` 文件夹下的所有文件
 
-#### 3. 删除 `C:\Windows\Prefetch` 下的所有文件
+#### 3. 删除 `C:\Windows\Prefetch` 下的所有文件
 
 #### 4. 删除 backup 备份文件夹下的内容
 

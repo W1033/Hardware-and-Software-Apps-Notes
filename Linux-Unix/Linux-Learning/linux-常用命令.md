@@ -15,7 +15,7 @@
 - `pwd`: Shows you what your **present working directory** is.
   (显示当前的工作目录)
 - `cd`: Let you **change directories**.
-    + (1) `cd` + `..`: 返回到上层目录 (`cd ..`)
+    + (1) `cd` + `..`: 返回到上层目录 (`cd ..`) （tip: `cd` 和 `..` 之间含有一个空格符，下面几个同理)
     + (2) `cd` + `\`: 返回到根目录 (`cd \`)
     + (3) `cd` + `/其他文件夹`: 将当前路径切换到所在应用程序文件夹
       (`cd /Applications`)
