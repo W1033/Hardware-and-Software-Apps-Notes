@@ -59,3 +59,18 @@ Adobe系列软件
 
 原始发布他的在微博：https://weibo.com/vposy 的置顶微博（仅粉丝可见）
 
+
+
+
+
+### Win10 系统，使用 Adobe Acrobat Pro 合并 pdf 报错:
+
+**问题**： "%%[ ProductName: Distiller ]%%
+FangSong_GB2312 not found, using Courier."
+
+**解决方法**：
+分为 2 步:
+
+- (1) 打开 Adobe Acrobat Pro 点击主页中部的 “将多个文件合并为 PDF”首先选择一个文件，等待程序处理完毕后打开，然后在顶部第二行中找到打印机图标，点击后在弹出**打印机(N)** 选项选择 **Adobe PDF**，然后点击后面的 **属性(P)** 按钮，在当前的弹框中把 **仅依靠系统字体，不适用文档字体(N)** 前的复选框取消勾选。
+- (2) 找到 **FangSong_GB2312**, **FZXBSJW**, **KaiTi_GB2312**, **方正小标宋_GBK** 几个字体，右键 **为所有用户安装**。
+
