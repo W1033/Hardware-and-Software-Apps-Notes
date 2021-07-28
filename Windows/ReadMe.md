@@ -163,7 +163,7 @@ A: `C:\Windows\Fonts`
 - 压缩软件 -- Bandizip / 7ZIP
 - 视频播放 -- Potplayer / VLC
 - 下载工具 -- 百度雲盤 /  瀏覽器
-- 文件恢复 -- 
+- 文件恢复 -- DiskGinus
 - 剪切板加强工具 -- Ditto
 - pdf 转 word -- ABBYYFineReader / smallPDF
 - 英语词典 -- Google translate + 欧路词典

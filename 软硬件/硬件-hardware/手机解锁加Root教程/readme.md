@@ -123,13 +123,15 @@
 
 ##### 索尼手机申请 Bootloader 解锁
 索尼手机官网查看和申请 bootloader 解锁, 官网网址：https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
-- 自己手机从 Sony 官网取得 bootloader 解锁码
+- 自己手机从 Sony 官网取得 bootloader 解锁码（已摔坏）
     + 手机的 IMEI: 354985090874805
     + 取得的解锁码：**BEAE7F44BA177F18**
-    
 - 白色手机的 bootloader 解锁码为：
     - Your unlock code for 354985090244603
     - 取得的 解锁码： DD6E8C2C02C01DF3
+- 第二个黑色 xz2p 的 bootloader 解锁码为：
+    - IMEI: 354985090080882
+    - 取的解锁码：70EAC40E775AF7C6
 
 #### 3.2 刷入第三方 Recovery
 - (a) Recovery，又被称作rec，恢复模式，刷机模式等等。其功能大致类似于U盘重装系统时的WinPE，在另外的分区提供一个功能简易的小型操作系统，主要用来刷入.zip，格式化分区等。之后的步骤里，不论是系统，还是SuperSU、Gapps，以及其他诸如蝰蛇音效等，我们都是通过刷入.zip包的途径来实现的。
@@ -155,7 +157,7 @@
 >
 > - 将下载下来的软件包解压到某个位置，比如直接把解压后的 `platform-tools`  放在 D 盘。
 > - 理论上，这时候我们就可以直接使用了，但是由于缺少“环境变量”，在 cmd 和 powershell 中并不能识别你的 adb 命令。这时候就需要配置一下环境变量。
->     - (1) 搜索 “高级系统设置”>>点击“高级”标签>>点击“环境变量”选项。
+>     - (1) 搜索 “高级系统设置”>>点击“高级”标签>>点击“环境变量”选项。（tip： 直接在运行串口中输入 “path”即可。）
 >     - (2) 在下方的“系统变量”找到名叫“path”的变量，将 adb 文件的路径加入即可。如果是win8.1及一下系统，输入`;D:\platform-tools`即可；如果是win10，只需要点击新建，输入`D:\platform-tools`。
 > - 一定要记得逐层点击应用和确认，少了一步就会无法正常调用adb。除此之外，由于一些手机的驱动比较特殊，还需要自行去手机官网下载对应的驱动。
 
@@ -203,26 +205,28 @@ Download:
 
 ## XZ2P (H8166) 淘宝刷机流程 
 
-1. 拔掉手机按 volume up + 开机键 震动三次后关机，这样就可以离开 twrp 卡死界面
+Tip: 安装 flashtool-drives.exe 时，勾选前两个和最后一个。
+
+1. 拔掉手机按 volume up + 开机键 震动三次后关机，(这样也可以离开 twrp 卡死界面)
 2. 按 volume down 2 秒钟后，插上手机进入 绿灯模式
-3. 下载 xz2p 的刷机包，在天翼网盘中： H8166——52.1.A.3.49HK10.zip (2.54G)
-4. 下载 Flashtoo-drives.exe (19.76MB)
+    + tip: win7 系统右下角驱动会提示 SOMC 安装成功。
+3. 下载 xz2p 的刷机包，H8166——52.1.A.3.49HK10.zip (2.54G)
+4. 下载 flashtool-drives.exe (19.76MB)
 5. 进入刷机包内，运行 newflasher.exe （tip: 第一步可以直接写 nn)
-6. 完毕之后: 按音量下，插上去，黑屏，绿灯松手. 
-  - 如果开机了就：同时按电源和音量上，震动3次松手会关机黑屏。
-  - 如果没开机就直接： 打开手机，进入开发者模式，打开 USB 调试
-7. 接着再次运行 newflasher.exe(我想应该和我第六步执行完毕后，开机的原因有关)
-8. 完成后： 拔掉手机，按音量上，插上去，蓝灯松手
+    + tip: 刷了 rom 之后一定不要开机，如果开机了就拔掉手机，按音量下，插上去，黑屏，绿灯松手.
+      再次运行 newflasher.exe
+6. 第 5 步完成后，拔掉手机，按音量上，插上去，蓝灯松手
 9. 接着打开 adb 执行：
-    1. fastboot flash boot twrp.xz2p.img
-    2. fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
-10. 拔掉手机，同时按电源和音量下，TWRP松手，滑动，插手机。
+    + (1) `fastboot flash boot twrp-xz2p.img`
+        + 右下角驱动会提示： Sony ADB interface 
+    + (2) `fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img`
+10. 拔掉手机，同时按电源和音量下，TWRP松手，滑动，插手机, 然后点击屏幕上的 **挂载**。
 11. 通过我的电脑找到 Apollo_dsds 后 把 4 个压缩文件拷贝进去
 12. 拔掉手机
 13. 通过 twrp 安装 4 个文件：
-    1. 安装，点1，不勾选，滑动。完成，点返回
-    2. 2,3也这样装了。
-    3. 点4，不勾选，滑动，完成，点重启系统，默认滑动会重启。
-14. 拔出SIM卡开机，3分钟左右有设置界面，点 中间下拉箭头，简体中文中国，开始使用，接受，移动网络 跳过，WIFI 在离线状态下设置，继续，下一步，
-    Google服务 全部取消勾选，接受，锁屏密码 跳过，跳过，完成。
+     1. 安装，点1，不勾选，滑动。完成，点返回
+     2. 2,3 也这样装了。
+     3. 点4，不勾选，滑动，完成，点重启系统，默认滑动会重启。
+14. 拔出SIM卡开机，3分钟左右有设置界面，点 中间下拉箭头，简体中文中国，开始使用，接受，
+    移动网络 跳过，WIFI 在离线状态下设置，继续，下一步， Google服务 全部取消勾选，接受，锁屏密码 跳过，跳过，完成。
 
