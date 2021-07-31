@@ -32,7 +32,7 @@
 
 ###  如何确定 Sony 手机申请解锁 Bootloader 后是否解锁？
 
-Dial *#*#7378423#*#* . Then go to -> "Service Info" -> "Configuration". If there is:
+Dial `*#*#7378423#*#*` . Then go to -> "Service Info" -> "Configuration". If there is:
 - Bootloader unlock allowed - Yes << this means that your Bootloader is Locked
 - Bootloader Unlocked - Yes << this means that your bootloader is unlocked
 
@@ -137,14 +137,6 @@ fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
 
 
 提示： TWRP 正确刷入之后， 手机连接电脑后就可以识别到手机了，此时手机里还没有系统，所以还需要下载 ftf 系统拷贝到手机内存中， 然后再使用 TWRP 安装 install
-
-
-
-
-
-### 上面的知乎文章关于强刷 ROM 的的部门并不对, 明天可以尝试这篇文章中是否正确:
-
-> https://biandan.me/1067.html
 
 
 
