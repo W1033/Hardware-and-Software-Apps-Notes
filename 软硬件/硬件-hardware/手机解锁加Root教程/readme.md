@@ -126,10 +126,16 @@
 - 自己手机从 Sony 官网取得 bootloader 解锁码
     + 手机的 IMEI: 354985090874805
     + 取得的解锁码：**BEAE7F44BA177F18**
-    
 - 白色手机的 bootloader 解锁码为：
     - Your unlock code for 354985090244603
     - 取得的 解锁码： DD6E8C2C02C01DF3
+- 第二个黑色的 xz2p:
+    - IMEI: 354985090080882
+    - 解锁码: 70EAC40E775AF7C6
+
+申请了 bootloader 之后, 按照下面的命令解锁 bootloader
+
+`fastboot oem unlock 0x<insert your unlock code>`
 
 #### 3.2 刷入第三方 Recovery
 - (a) Recovery，又被称作rec，恢复模式，刷机模式等等。其功能大致类似于U盘重装系统时的WinPE，在另外的分区提供一个功能简易的小型操作系统，主要用来刷入.zip，格式化分区等。之后的步骤里，不论是系统，还是SuperSU、Gapps，以及其他诸如蝰蛇音效等，我们都是通过刷入.zip包的途径来实现的。
