@@ -229,3 +229,26 @@ msiexec.exe，系统进程，是Windows Installer的一部分。用于安装Wind
 
 `C:\Windows\winsxs\Backup` 主要用来存放装机软件在安装过程中的备份文件，一般是为了防止文件丢失而设置的，默认不会使用，可以删除。
 
+
+
+
+
+## 如何判断电脑的 usb 接口是不是3.0?
+
+1、看接口，USB3.0的接口外面是4个接触点，里面是5个。
+USB3.0的图：[File:USB 3.0 A Buchse 13.jpg](https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/File%3AUSB_3.0_A_Buchse_13.jpg)
+USB2.0的图：[File:USB.svg](https://link.zhihu.com/?target=http%3A//zh.wikipedia.org/wiki/File%3AUSB.svg)
+接口看着一样，里面完全不同。
+
+2、看控制器，打开Windows设备管理器，右键点我的电脑-管理。
+
+展开USB总线控制器，看到有这个东西，就是说明有3.0
+
+![img](https://pic1.zhimg.com/50/aa648e803bd91e118e6f338996fce5a7_720w.jpg?source=1940ef5c)![img](https://pic1.zhimg.com/80/aa648e803bd91e118e6f338996fce5a7_720w.jpg?source=1940ef5c)
+
+3、看接口颜色，3.0的颜色是蓝色的，当然，这个最不靠谱，厂商可以做成蓝色的，还是以上面两条为准。其中第二条是无法造假的。
+
+作者：时国怀
+链接：https://www.zhihu.com/question/22343831/answer/21074124
+来源：知乎
+著作权归作者所有。
