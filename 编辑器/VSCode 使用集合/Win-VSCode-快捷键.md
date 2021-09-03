@@ -27,6 +27,7 @@ F1 或 `Ctrl+Shift+P` : 打开命令面板。在打开的输入框内，可以�
 ### 代码编辑
 
 #### 格式调整
+
 - 代码行缩进: `Ctrl+[` 、 `Ctrl+]`
 - `Ctrl+C` 、 `Ctrl+V` 复制或剪切当前行/当前选中内容
 - 代码格式化： `Shift+Alt+F`，或 `Ctrl+Shift+P` 后输入 `format code`
@@ -36,6 +37,7 @@ F1 或 `Ctrl+Shift+P` : 打开命令面板。在打开的输入框内，可以�
 - 在当前行上方插入一行 `Ctrl+Shift+Enter`
 
 #### 光标相关
+
 - 移动到行首： Home
 - 移动到行尾： End
 - 移动到文件结尾： `Ctrl+End`
