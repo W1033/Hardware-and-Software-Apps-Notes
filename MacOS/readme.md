@@ -134,6 +134,20 @@
 ### 7. 隐藏/显示程序坞快捷键
 - `Command + option(alt) + D`
 
+### 7. MacOS Dock 栏自动显示和隐藏取消延迟
+使用OS X的时候都会选择将Dock隐藏（可以在系统偏好设置—Dock中选择），等使用时将光标向下划Dock会自动弹出显示。这个显示或隐藏会有一点点（大概1秒左右）的延迟，使用下面的方法可以消除这个延迟:
+
+打开--终端(或 iTerm), 输入如下代码
+
+`defaults write com.apple.Dock autohide-delay -float 0 && killall Dock`
+
+当 Dock 再次隐藏或显示时会立即执行
+
+如想恢复默认的延迟速度, 在终端中输入以下代码即可:
+
+`defaults delete com.apple.Dock autohide-delay && killall Dock`
+
+
 ### 8. Mac 更该文件的默认显示方式
 - 在当前文件上单击右键 --> '显示简介' --> 打开方式 (点击选择需要的使用的默认软件) 
   --> 点击 '全部更该' 
