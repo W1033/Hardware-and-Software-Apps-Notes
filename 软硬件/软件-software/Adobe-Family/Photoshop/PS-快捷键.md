@@ -209,6 +209,7 @@
 - Windows: Ctrl+加号(+)
 
 **缩小**
+
 - Mac: Cmd+减号(-)
 - Windows: Ctrl+减号(-)
 
