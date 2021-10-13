@@ -1,17 +1,19 @@
 # Photoshop 使用记录
 
-## 目录(Catalog)
-1. ps 常用快捷键
 
 
-## 生词(New Words)
+打开标尺快捷键： `Ctrl + R`
+
+
 
 
 
 ## 内容(Content)
+
 ### 1. ps 常用快捷键
 
 #### #### 图层
+
 **填充图层**
 - Mac: `Alt` + `Backspace` (前景) or `Cmd` + `Backspace` (背景)
 - Windows: `Alt` + `Delete` (前景) or `Ctrl` + `Delete` (背景)
