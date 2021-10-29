@@ -50,7 +50,7 @@
     + `git  pull origin master --allow-unrelated-histories`  
       allow前面有两个破折号(dash)       
 7. 最后一步上传代码到 github 远程仓库
-    + `git push -u origin master` 
+    + `git push -u origin master` / `git push -f origin master`
     + (执行完后如果没有异常就说明上传成功了，中间可能会让输入 Username 和 Password，
       输入 github 的账号和密码即可)
 
