@@ -1,8 +1,6 @@
 # Github
 
 
-
-
 ## `git` 中的 `origin master`、`master` 以及 `push` 命令
 - `git branch -a` 展示所有 git 分支
     + `* master` : 本地分支
@@ -28,6 +26,7 @@
 
 
 ##  提交代码到 `Github`
+
 1. 创建 git 仓库
     + 上传代码之前一定要把本地的git升级到最新版本，不要问我为什么
     +  cd 到你的本地项目根目录下，执行git命令：
@@ -53,6 +52,7 @@
     + `git push -u origin master` / `git push -f origin master`
     + (执行完后如果没有异常就说明上传成功了，中间可能会让输入 Username 和 Password，
       输入 github 的账号和密码即可)
+
 
 
 ## 如果 Github 配置了 SSH 拉取代码的方式
@@ -112,11 +112,6 @@ git remote set-url origin https://github.com/your/repository
 
 
 
-## 把下载的仓库代码添加到 `git version`
-- `file` --> `Settings` --> `Version Control`
-
-
-
 ## 使用 `Git` 回退到 `Github` 的某个历史版本：
 - 1、进入到项目文件夹，
     + 命令行中输入 `git log` 查看所有历史版本，获取 git 的某个历史版本的 commit id,
@@ -138,11 +133,6 @@ git remote set-url origin https://github.com/your/repository
         - `git push -f origin master`
 
 
-
-## 在 WebStorm 中 解决 git 冲突的方法:
-- 先将本地仓库的修改的文件 commit, 由于此时本地文件和远程仓库有冲突，提交并不会成功，但
-  WebStorm会提示 merge 代码，这样就会把把远程和本地做的修改同时保留，这样操作过来后，再次
-  修改本地文件，便可以正常提交了。
 
 
 
@@ -222,7 +212,9 @@ $ git remote -v
 
 
 
-# [解决git clone速度太慢的问题](https://segmentfault.com/a/1190000039768491)
+# 解决git clone速度太慢的问题
+
+> 参考文章：https://segmentfault.com/a/1190000039768491
 
 最近发现使用git clone的速度比较慢，于是找到了办法分享给大家：
 
@@ -231,31 +223,34 @@ $ git remote -v
 git clone特别慢是因为`github.global.ssl.fastly.net`域名被限制了。
 只要找到这个域名对应的ip地址，然后在hosts文件中加上ip–>域名的映射，刷新DNS缓存便可。
 
+
+### 什么是 Hosts 文件？
+在互联网协议中，host表示能够同其他机器互相访问的本地计算机。一台本地机有唯一标志代码，同网络掩码一起组成IP地址，如果通过点到点协议通过ISP访问互联网，那么在连接期间将会拥有唯一的IP地址，这段时间内你的主机就是一个host。
+
+在这种情况下，host表示一个网络节点。host是根据 TCP/IP for Windows 的标准来工作的，它的作用是包含 IP地址 和 Host name(主机名) 的映射关系，是一个 映射 IP 地址和 Host name(主机名)的规定，规定要求每段只能包括一个映射关系，IP 地址要放在每段的最前面，空格后再写上映射的 Host name 主机名。对于这段的映射说明用 “#” 分割后用文字说明。
+
 ### 实施：
 
-1. 在网站 [https://www.ipaddress.com/](https://link.segmentfault.com/?enc=r8hFjO2Av2Y9qgcCzWs3gg%3D%3D.W0OoH1SmJRf9bum8wW2pys83XflAyaXlD1BCaKclGfs%3D) 分别搜索：
-
-github.global.ssl.fastly.net
-github.com
-
-得到ip:
+在网站 [https://www.ipaddress.com/](https://link.segmentfault.com/?enc=r8hFjO2Av2Y9qgcCzWs3gg%3D%3D.W0OoH1SmJRf9bum8wW2pys83XflAyaXlD1BCaKclGfs%3D) 分别搜索：`github.global.ssl.fastly.net` 和 `github.com` 得到 2 个 IP, 见下图: 
 
 ![image.png](readme.assets/bVcQ1Ll.png)
 
-github.global.ssl.fastly.net的ip
-
 ![image.png](readme.assets/bVcQ1Lo.png)
 
-github.com的ip
 
-1. 打开hosts文件
-
-- Windows上的hosts文件路径在`C:WindowsSystem32driversetchosts`
+### 打开hosts文件
+- Windows 上的 hosts 文件路径在: `C:\Windows\System32\drivers\etc`
 - Linux的hosts文件路径在：`sudo vim /etc/hosts`
+- Mac 中
+    - 点击 "Finder (访达)" 图标打开, 然后点击屏幕上面的 "前往" --> "前往文件夹"
+        输入 `/private/etc/` 点击前往按钮, 即可找到 hosts 文件夹.
+        (或者: - 打开Finder，按快捷键组合 `Shift+Command+G` 查找文件,
+        输入`/etc/hosts` 确认前往.)
+    - 修改: 将hosts文件复制到其它位置（如桌面），之后再打开，编辑并保存后，将其拖拽回原来的文件夹，替换原文件即可。
 
-1. 在hosts文件末尾添加两行(对应上面查到的ip)
+### 在hosts文件末尾添加两行(对应上面查到的ip)
 
-```accesslog
+```access
 199.232.69.194 github.global-ssl.fastly.net
 140.82.112.3 github.com 
 ```
@@ -264,56 +259,4 @@ github.com的ip
 
 - Winodws系统的做法：打开CMD，输入`ipconfig /flushdns`
 - CentOS的做法：在终端输入`nscd -i hosts`
-
-1. 完成，试试`git clone`这条命令速度如何？
-
-
-
-
-### 修改 `Win`/`Mac` 中 Github 下载速度缓慢的问题 (Note: 现在好像已经无效)
-- 通过查看下载链接，能够发现最终被指向到Amazon的服务器（http://github-cloud.s3.amazonaws.com）
- 了。由于国内访问亚马逊网站非常慢，我们需要修改Hosts文件来实现流畅访问。
-- 什么是 Hosts 文件？
-   + 在互联网协议中，host表示能够同其他机器互相访问的本地计算机。一台本地机有
-     唯一标志代码，同网络掩码一起组成IP地址，如果通过点到点协议通过ISP访问互联网，那么
-     在连接期间将会拥有唯一的IP地址，这段时间内你的主机就是一个host。
-   + 在这种情况下，host表示一个网络节点。host是根据 TCP/IP for Windows 的标准
-     来工作的，它的作用是包含 IP地址 和 Host name(主机名) 的映射关系，是一个 映射 IP
-     地址和 Host name(主机名)的规定，规定要求每段只能包括一个映射关系，IP 地址要放在
-     每段的最前面，空格后再写上映射的 Host name 主机名。对于这段的映射说明
-     用 “#” 分割后用文字说明。
-
-1. 打开 Hosts 文件:
-   + Windows 
-       - Hosts 文件的路径：`C:\Windows\System32\drivers\etc`
-   + Mac 中
-       - 点击 "Finder (访达)" 图标打开, 然后点击屏幕上面的 "前往" --> "前往文件夹"
-         输入 `/private/etc/` 点击前往按钮, 即可找到 hosts 文件夹.
-         (或者: - 打开Finder，按快捷键组合 `Shift+Command+G` 查找文件,
-         输入`/etc/hosts` 确认前往.)
-       - 如需修改，可将hosts文件复制到其它位置（如桌面），之后再打开，编辑并保存后，
-         将其拖拽回原来的文件夹，替换原文件即可。  
-1. 追加域名的 IP 地址
-   + 我们可以利用  `https://www.ipaddress.com`来获得一下 2 个 Github 域名的 IP 地址:
-       - (1) github.com
-       - (2) github.global.ssl.fastly.net
-   + 打开网页后， 利用输入框分别查询两个域名, 然后记录查询的
-       - github.com 查询为 IP Address: `192.30.253.113`
-       - github.global.ssl.fastly.net 查询 IP Address 为: `199.232.5.194`
-   + 将以上 2 个 IP 写入 Hosts 文件中. 然后保存. 
-       - ```
-            199.232.69.194 github.global-ssl.fastly.net
-            140.82.112.3 github.com 
-         ```
-1. 刷新 DNS 缓存
-    + Windows 下: 在终端或 cmd 中, 执行以下命令: `ipconfig /flushdns` 即可.
-    + Mac 下: 
-        - (1st) 在 "iTerm/终端" 中输入: 
-          ```base
-            sudo Killall -HUP mDNSResponder 
-            echo macOS DNS Cache Reset
-          ```
-        - (2nd) 第二种方法是如果不想使用命令行可以安装 PowerMyMac 
-            + 打开软件后点击 "TookKit (工具套装)" --> "Maintenance (维修, 保养)"
-              点击 "View" --> 单击左侧的 "Flush DNS" 然后点击右侧的 "Clean" 完成.
-
+- MacOS 的刷新方法见这篇文章：https://www.zhihu.com/question/19679715
