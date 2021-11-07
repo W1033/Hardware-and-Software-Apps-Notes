@@ -368,27 +368,28 @@
   选择打印机后, 等 Mac 自行设置完成后, 即可.
 
 ### 31. MacOS Big Sur CORE keygen 无权限打开解决方案
-
 ### 解决方案：
-
 使用UPX：
-
 1. 安装upx
-
 ```ps1con
 brew install upx
 ```
-
 2. 使用UPX
-
 ```text
 sudo upx -d /Applications/CORE\ Keygen.app/Contents/MacOS/CORE\ Keygen
 ```
-
 3. 再打开CORE Keygen.app就可以使用了。
 
 
-
 ### 32. 安装蓝灯后给 github 配置代理
-
 在 webstorm 拉取代码时提示： fatal: unable to access
+
+
+
+### 33. 删除 Mac 的 Profiles 文件
+```sh
+# 查看
+sudo profiles -P
+# 删除
+sudo /usr/bin/profiles -D
+```
