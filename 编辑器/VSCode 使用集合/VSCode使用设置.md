@@ -194,7 +194,7 @@
         // - 关闭左侧的缩略地图
         "editor.minimap.enabled": false,
         "marKdown.preview.fontSize": 13,
-
+  
         // - 关闭代码片段提示
         "editor.quicKSuggestions": {
             "other": false,
@@ -203,14 +203,14 @@
         "editor.parameterHints.enabled": false,
         "editor.wordBasedSuggestions": false,
         "editor.snippetSuggestions": "none",
-
+  
         // - 设置 flow 
         "flow.useNPMPacKagedFlow": true,
         "javascript.validate.enable": false,
-
+  
         // - 设置 Emmet
          "emmet.triggerExpansionOnTab": true,
-
+  
          // - 配置插件: Sass/Less/Typescript/Jade/Pug Compile Hero
         "compile-hero": {
             "disable-compile-files-on-did-save-code": false,
