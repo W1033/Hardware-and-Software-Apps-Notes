@@ -55,7 +55,20 @@
 
 
 
+## 【git】git pull 强制覆盖本地文件，如果你不想要本地的所有修改的情况下，这条命令特别好用
+
+```sh
+  git fetch --all
+  git reset --hard origin/master
+  git pull origin master
+```
+
+
+
+
+
 ## 如果 Github 配置了 SSH 拉取代码的方式
+
 下图以 `Vue-learning` 仓库为例：
 
 ![image-20211029155036918](readme.assets/image-20211029155036918.png)
