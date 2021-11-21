@@ -383,13 +383,3 @@ sudo upx -d /Applications/CORE\ Keygen.app/Contents/MacOS/CORE\ Keygen
 
 ### 32. 安装蓝灯后给 github 配置代理
 在 webstorm 拉取代码时提示： fatal: unable to access
-
-
-
-### 33. 删除 Mac 的 Profiles 文件
-```sh
-# 查看
-sudo profiles -P
-# 删除
-sudo /usr/bin/profiles -D
-```
