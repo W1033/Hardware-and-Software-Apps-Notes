@@ -1,8 +1,17 @@
 # Markdown
 
 
+## Markdown 编辑器
+自己使用的 Typora, 2021.11 月底开始收费
 
-## Markdown 中插入空格的方式: 
+如果愿意付15欧的话就买Typora，
+
+开源就用 MarkText 或者 Zettlr，还有数不尽的商业MD编辑器可以选用。
+
+
+
+## Markdown 中插入空格的方式:
+
 ```
     紧贴 $a\!b$
     没有空格 $ab$
