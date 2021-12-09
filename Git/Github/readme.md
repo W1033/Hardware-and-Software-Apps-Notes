@@ -64,6 +64,42 @@
 ```
 
 
+## I am using Git. I did a pull from a remote repo and got an error message:
+
+```md
+Please enter a commit message to explain why this merge is necessary,
+especially if it merges an updated upstream into a topic branch.
+```
+I try to type a message and press Enter but nothing happens.
+
+How do I tell Git/Terminal I am done typing in my message?
+
+I am using Terminal on OS X.
+
+**Answer:**
+It's not a Git error message, it's the editor as git uses your default editor.
+
+To solve this:
+
+1. press "i" (i for insert)
+2. write your merge message
+3. press "esc" (escape)
+4. write ":wq" (write & quit)
+5. then press enter
+
+
+## 关于 `src refspec master does not match any` 的解决方法
+
+```md
+error: src refspec master does not match any.  
+error: failed to push some refs to 'ssh://xxxxx.com/project.git'
+```
+
+1. Try `git show-ref` to see what refs you have. Is there a `refs/heads/master`?
+
+> Due to the recent "Replacing master with main in GitHub" action, you may notice that there is a `refs/heads/main`. As a result, the following command may change from `git push origin HEAD:master` to `git push origin HEAD:main`
+
+2. You can try `git push origin HEAD:master` as a more local-reference-independent solution. This explicitly states that you want to push the local ref `HEAD` to the remote ref `master` (see the [git-push refspec](https://git-scm.com/docs/git-push#git-push-ltrefspecgt82308203) documentation).
 
 
 
