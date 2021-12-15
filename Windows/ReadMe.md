@@ -259,3 +259,7 @@ USB2.0的图：[File:USB.svg](https://link.zhihu.com/?target=http%3A//zh.wikiped
 
 ## # windows 桌面图标错乱的解决方法
 使用 `Win+R` 打开运行，输入命令 `ie4uinit -show` 回车进行图标缓存清理。
+
+
+
+## # 解决 win10 更改默认浏览器后点击链接却无法调用 Chrome 的问题

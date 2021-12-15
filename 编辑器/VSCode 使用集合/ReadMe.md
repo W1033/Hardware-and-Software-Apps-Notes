@@ -167,16 +167,10 @@
 1. `indent-rainbow`: 缩进彩虹, 不同的颜色来提示当前的缩进位置.(tip: 颜色太丑.)
 1. `Local history`: 查看文件修改历史记录.
 
-
 ### 2. Mac 下设置
-#### 2.1 关于 VSCode 版本字体的问题
-- VSCode 在
-  [August 2019, version 1.38](https://code.visualstudio.com/updates/v1_38)
-  版本之前和之后的字体对比差距明显, 默认字体还是 `Menlo`,
-  但是英文和汉语字体都加粗了, 汉字的粗细尚可通过 `"editor.fontWeight": 300` 来改变,
-  但是这个设置对于英文字体却不管用; 暂时仍然使用 version 1.38 的版本.
 
 #### 2.2 Mac 下 `settings.json` 基本设置
+
 - ```json
     {
         // - 粘贴到 vscode 的 settings.json 中时记得删除这些注释,
@@ -205,7 +199,7 @@
         // - 关闭左侧的缩略地图
         "editor.minimap.enabled": false,
         "marKdown.preview.fontSize": 13,
-
+  
         // - 关闭代码片段提示
         "editor.quicKSuggestions": {
             "other": false,
@@ -214,14 +208,14 @@
         "editor.parameterHints.enabled": false,
         "editor.wordBasedSuggestions": false,
         "editor.snippetSuggestions": "none",
-
+  
         // - 设置 flow 
         "flow.useNPMPacKagedFlow": true,
         "javascript.validate.enable": false,
-
+  
         // - 设置 Emmet
          "emmet.triggerExpansionOnTab": true,
-
+  
          // - 配置插件: Sass/Less/Typescript/Jade/Pug Compile Hero
         "compile-hero": {
             "disable-compile-files-on-did-save-code": false,
