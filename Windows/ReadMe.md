@@ -259,11 +259,3 @@ USB2.0的图：[File:USB.svg](https://link.zhihu.com/?target=http%3A//zh.wikiped
 
 ## # windows 桌面图标错乱的解决方法
 使用 `Win+R` 打开运行，输入命令 `ie4uinit -show` 回车进行图标缓存清理。
-
-
-
-
-
-
-
-混改： 财务部的 -- 财务系统  安卓/苹果
