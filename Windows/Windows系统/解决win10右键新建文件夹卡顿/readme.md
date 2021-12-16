@@ -9,14 +9,12 @@
 
 “win+R”打开运行，输入“regedit”打开注册表，然后定位到：计算机\HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\igfxDTCM，然后右键“igfxDTCM”，选择【删除】
 
-<img src="../Windows-system-log.assets/3489393.jpg"
-    style="border-radius: 4px; box-shadow: 1px 1px 3px 2px #e5e5e5">
+<img src="../readme.assets/3489393.jpg" style="border-radius: 4px; box-shadow: 1px 1px 3px 2px #e5e5e5">
 
 **通过查询注册表信息，我的电脑内不存在igfxDTCM**
  那么，我们就需要执行下面的操作。计算机\HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers，这里仅保留“new”和“workfolders”两项，其余的全部删除
 
-<img src="../Windows-system-log.assets/970035.jpg"
-    style="border-radius: 4px; box-shadow: 1px 1px 3px 2px #e5e5e5">
+<img src="../readme.assets/970035.jpg" style="border-radius: 4px; box-shadow: 1px 1px 3px 2px #e5e5e5">
 
 
 ## 方式二 ：系统盘目录创建Intel项

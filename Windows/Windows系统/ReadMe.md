@@ -189,10 +189,9 @@ Sysprep实际上是为公司环境创建的映像，用于自动Windows安装，
 
 msiexec.exe，系统进程，是Windows Installer的一部分。用于安装Windows Installer安装包（MSI），对系统的正常运行是非常重要的，一般在运行Microsoft Update安装更新或安装部分软件的时候出现，占用内存比较大。
 
-
 ## # C 盘清理
 
-#### 0. 可以先安装 WizTree 查看 C 盘各个文件的大小
+#### 0. 安装 WizTree 查看 C 盘各个文件的大小
 
 #### 1. C盘垃圾清理
 
@@ -206,9 +205,26 @@ msiexec.exe，系统进程，是Windows Installer的一部分。用于安装Wind
 
 #### 3. 删除 `C:\Windows\Prefetch` 下的所有文件
 
-#### 4. 删除 backup 备份文件夹下的内容
+#### 4. 删除 `C:\Windows\winsxs\Backup` 备份文件夹下的内容
+backup 主要用来存放装机软件在安装过程中的备份文件，一般是为了防止文件丢失而设置的，默认不会使用，可以删除。
 
-`C:\Windows\winsxs\Backup` 主要用来存放装机软件在安装过程中的备份文件，一般是为了防止文件丢失而设置的，默认不会使用，可以删除。
+#### 5. 根据内存大小使用 `Geek Uninstall` 删除不需要的软件。
+
+--- --- ---
+#### Additional Info:
+- C:WindowsPrefetch（用来存放系统已访问的文件预读信息。）
+- C:WindowsWinSxSBackup（提供给装机软件在安装过程中进行备份文件的。）
+- C:WindowsTemp（电脑在运行的时候一般都会产生各种无用的临时文件。）
+- C:WindowsSystem32LogFiles（是记录系统和软件处理记录的日志文件。）
+- C:WindowsHelp（是帮助用户解决问题的系统帮助文件。）
+
+#### 一些系统文件介绍（理论上不建议动下面三个文件）：
+
+1. hiberfil.sys（休眠文件）
+2. pagefile.sys（虚拟内存文件）
+3. System Volume Information（系统还原的备份文件）
+
+
 
 
 ## # 如何判断电脑的 usb 接口是不是3.0?

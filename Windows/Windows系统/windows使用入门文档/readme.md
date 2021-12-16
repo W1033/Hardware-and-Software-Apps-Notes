@@ -5,7 +5,7 @@
 
 ## 标准键盘布局
 
-<img src="./win-images/keyboard.svg.png" style="display:block; margin-left: 0;"> 
+<img src="./readme.assets/keyboard.svg.png" style="display:block; margin-left: 0;"> 
 
 #### Character keys (字符键)
 **包含: `26个英文字母键` + `数字键` + `标点符号键等`**
