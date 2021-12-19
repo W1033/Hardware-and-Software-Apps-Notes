@@ -1,13 +1,6 @@
 # 软件 Software
 
 
-
-## TOC (目录)
-1. 使用黑阈激活器激活手机黑阈
-2. PhpStudy
-3.  potPlayer 快捷键
-
-
 ## Content (内容)
 
 ### 1. 使用黑阈激活器激活手机黑阈
