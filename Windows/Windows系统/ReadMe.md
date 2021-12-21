@@ -278,4 +278,13 @@ USB2.0的图：[File:USB.svg](https://link.zhihu.com/?target=http%3A//zh.wikiped
 
 
 
-## # 解决 win10 更改默认浏览器后点击链接却无法调用 Chrome 的问题
+## # 解决 win10 把 Chrome 设置为默认浏览器后，点击文档中的超链接无法调用
+> 参考文章：https://answers.microsoft.com/zh-hans/windows/forum/all/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8/b6e42028-c8d3-4582-a20a-45b8f834971b、
+
+实测下面这种方式可以解决，但是几天后开机后可能仍然还会打不开，应该是个不完全的解决方案：
+
+按 `Window + R`，运行 `msconfig`，点击 **服务 > 隐藏所有 Microsoft 服务 > 全部禁用**
+
+然后点击 **启动 > 打开任务管理器**，将**所有启动项都禁用**。
+
+然后重启电脑，尝试设置默认浏览器。
