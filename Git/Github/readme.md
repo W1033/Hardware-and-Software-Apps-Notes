@@ -24,7 +24,6 @@
 - U (untracked): 你在本地新建了这个文件，还未提交到github上，就会标记U
 - D (delete): 你删除了这个文件，vscode-git会记录下这个状态
 
-
 ##  提交代码到 `Github`
 
 1. 创建 git 仓库
