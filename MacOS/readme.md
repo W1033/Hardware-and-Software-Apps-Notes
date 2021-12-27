@@ -383,3 +383,8 @@ sudo upx -d /Applications/CORE\ Keygen.app/Contents/MacOS/CORE\ Keygen
 
 ### 32. 安装蓝灯后给 github 配置代理
 在 webstorm 拉取代码时提示： fatal: unable to access
+
+### 32. 解决 App 在 macOS Catalina下提示已损坏无法打开解决办法：
+在终端中输入以下命令；
+`sudo xattr -d com.apple.quarantine`
+然后打开 访达 - 应用程序 找到对应的应用程序拖进去，注意上面 quarantine 和应用之间有一个空格。
