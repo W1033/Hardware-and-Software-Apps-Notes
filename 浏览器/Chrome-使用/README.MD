@@ -48,7 +48,7 @@ Tip:找 mac 下 chrome 插件的安装位置是因为，chrome 浏览器的默�
 
 
 
-### 5. 临时解决 Mac 下 Chrome 浏览器被托管的问题
+### 5. 临时解决 macOS 下 Chrome 浏览器被托管的问题
 1. 使用 Combo Cleaner 全盘扫描, 然后清除全部威胁.
 2. 打开 `终端` 或 `iTerm` 使用如下命令删除 profiles 文件:
    ```sh
