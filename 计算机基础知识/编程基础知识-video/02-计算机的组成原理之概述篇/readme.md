@@ -10,13 +10,13 @@
 ## 2-1 计算机发展简史
 #### 1. 计算机发展的 4 个阶段
 + 第 1 个阶段: 电子管计算机 (1946 - 1957)
-    - <img src="../images/02/dian-zi-guan.png">
+    - <img src="./readme.assets/dian-zi-guan.png">
     - 第二次世界大战是电子管计算机产生的催化剂, 英国为了解密德国海军的密文
     - 最具代表的是: 埃尼阿克(ENIAC)
 + 第 2 个阶段: 晶体管计算机 (1957 - 1964)
     - 产生: 1948 年 贝尔实验室的三个科学家发明了晶体管.(1956 年的诺贝尔物理奖授予次
         三个科学家)
-    - <img src="../images/02/jing-ti-guan.png" style="width: 76%;">
+    - <img src="./readme.assets/jing-ti-guan.png" style="width: 76%;">
     - 全世界第一台晶体管计算机: TX-0, 诞生于 麻省理工大学(MIT)林肯实验室. 在当时还有
         一台性能最高的晶体管计算机: PDP-1, 具备 4K 内存, 每秒可执行 200000 条指令,且 
         配备了当时第一台 512 x 512 的显示器.
@@ -54,11 +54,11 @@
 - (1) 也称为小型机，普通服务器
 - (2) 不需要特殊的空调场所
 - (3) 具备不错的算力，可以完成较复杂的运算
-- <img src="../images/02/xiao-xing-computer.png" style="width:70%; margin-left:0;">
+- <img src="./readme.assets/xiao-xing-computer.png" style="width:70%; margin-left:0;">
 #### 4. 工作站
 - (1) 高端的通用微型计算机，提供比个人计算机更强大的性能
 - (2) 类似于普通台式电脑，体积较大,但性能强劲
-- <img src="../images/02/workstation.png" style="width:60%; margin-left:0;">
+- <img src="./readme.assets/workstation.png" style="width:60%; margin-left:0;">
 #### 5. 微型计算机: 又称为个人计算机, 是最普通的一类计算机.
 
 
@@ -104,7 +104,7 @@
     + (4) 能够按照要求将处理结果输出给用户
     
 - 冯诺依曼结构图:
-    + <img src="../images/02/01.png" style="width:76%; margin-left:0;">
+    + <img src="./readme.assets/01.png" style="width:76%; margin-left:0;">
 - 冯诺依曼瓶颈:
     + `将 CPU 与 存储器 分开`并非十全十美，反而会导致所谓的冯·诺伊曼瓶颈 
       (von Neumann bottleneck)：在 CPU 与 存储器 之间的流量（数据传输率）与 存储器的
@@ -114,9 +114,9 @@
       越来越严重。
 #### 2. 现在计算机的体系与结构
 - 现在计算机在冯诺依曼体系结构上进行修改的,主要解决了**CPU 运行速度大于存储器读写速率的问题**   
-  <img src="../images/02/02.png" style="width:76%; margin-left:0;"> 
+  <img src="./readme.assets/02.png" style="width:76%; margin-left:0;"> 
 - 存储器包括: 磁带 或 硬盘.现在的计算机可以理解为以**存储器**为核心的  
-  <img src="../images/02/03.png" style="width:70%; margin-left:0;"> 
+  <img src="./readme.assets/03.png" style="width:70%; margin-left:0;"> 
 
 
 ## 2-5 计算机的层次与编程语言
