@@ -1,8 +1,27 @@
 # Github
 
 
-## `git` 中的 `origin master`、`master` 以及 `push` 命令
-- `git branch -a` 展示所有 git 分支
+
+## New Words
+
+### ambiguous `/æmˈbɪɡjuəs/` ●●○ AWL adjective  
+```css
+├── adj
+│   ├── (1) something that is ambiguous is unclear, confusing, or not certain, 
+│   │    especially because it can be understood in more than one way. 模棱两可的; 不明确的
+│   │   ├── OPP(opposite`/'ɒpəzɪt/`) unambiguous: 
+│   │   ├── The language in the Minister’s statement is highly ambiguous.部长的声明措辞很含糊。
+│   │   ├── His role in the affair is ambiguous.他在这起事件中的角色并不明确。
+│   ├── Register(说明)
+│   │   ├── In everyday English, people also use the phrase you can take something two ways instead of saying it is ambiguous: ~What she says is ambiguous.~ ➔ You can take what she says two ways. 她的话模棱两可。在日常英语中﹐人们也会用短语 you can take sth two ways 来代替ambiguous
+```
+
+
+
+
+## Git 常用命令
+1. 展示远程仓库的所有分支
+   `git branch -a` 展示所有 git 分支
     + `* master` : 本地分支
     + `remotes/origin/HEAD -> origin/master` 远程分支
     + `remotes/origin/master` 远程分支
@@ -19,52 +38,107 @@
   用一个空的去更新它，就相当于删除了。
 - `git remote update origin --prune` 刷新远程分支列表
 
-## vscode-git 中的 U, M 和 D 文件标记含义 （Added 20210326）
-- M (modified): 你已经在github中添加过该文件，然后你对这个文件进行了修改，就会文件后标记M
-- U (untracked): 你在本地新建了这个文件，还未提交到github上，就会标记U
-- D (delete): 你删除了这个文件，vscode-git会记录下这个状态
+
+
+## VSCode-git 中的 U, M 和 D 文件标记含义 （Added 20210326）
+- **M (modified):** 你已经在 github 中添加过该文件，然后你对这个文件进行了修改，就会文件后标记 M
+- **U (untracked):** 你在本地新建了这个文件，还未提交到 github 上，就会标记 U
+- **D (delete):** 你删除了这个文件，vscode-git 会记录下这个状态
+
+
+
+## 拉取/Clone Git 项目到本地
+
+1. 打开 终端(CMD) 到 `cd` 到自己想要存放项目的文件夹
+
+2. 输入 `git clone url`(url 为你要拉取的项目地址，可以为 https/SSH)
+
+3. 项目拉取成功
+
 
 ##  提交代码到 `Github`
 
-1. 创建 git 仓库
-    + 上传代码之前一定要把本地的git升级到最新版本，不要问我为什么
-    +  cd 到你的本地项目根目录下，执行git命令：
-    +  `git init`   // 把这个目录变成Git可以管理的仓库 
-2. 将项目的所有文件添加到仓库中
-    + `git add .` 
-    + (.代表全部)(如果只想添加某个特定的文件，只需要把.换成特定的文件名即可)       
-3. 将 add 的文件 commit (委托，提交)到仓库
-    + `git commit -m "注释语句"` 
-4. 去 github 上创建自己的 Repository，(也可以使用现有的仓库)
-5. 将本地的仓库关联到github上
-    + `git remote add origin https://xxx//xxxx//xxx/xxxxx.git` 
-      (仓库名尽量不要用驼峰写法，因为会报错)
-    + (链接地址就是打开创建的仓库之后那个写着"Clone or download"的长条绿色按钮)
-    + 如果我们想下载已有的在线仓库直接执行 `git pull https://github.com/W1033/xxxxxx.git` 即可 
-6. 上传 github 之前，需要先pull(拉下)一下，执行命令如下:
-    + `git pull origin master`              
-    + 下拉(pull)时提示错误 Fatal:refusing to merge unrelated histories
-      (拒绝合并最近的历史记录) 的解决方法，把上面的代码改为:
-    + `git  pull origin master --allow-unrelated-histories`  
-      allow前面有两个破折号(dash)       
-7. 最后一步上传代码到 github 远程仓库
-    + `git push -u origin master` / `git push -f origin master`
-    + (执行完后如果没有异常就说明上传成功了，中间可能会让输入 Username 和 Password，
-      输入 github 的账号和密码即可)
+### 1. 创建 git 仓库
+**注：** 如果是 Windows 上传代码之前请尽量把本地的 git 升级到最新版本，以防提交的时候出现莫名其妙的问题。
 
-
-
-## 【git】git pull 强制覆盖本地文件，如果你不想要本地的所有修改的情况下，这条命令特别好用
-
+cd 到你的本地项目根目录下，执行 git 命令：
 ```sh
-  git fetch --all
-  git reset --hard origin/master
-  git pull origin master
+# 把这个目录变成Git可以管理的仓库
+git init
+```
+
+### 2. 将项目的所有文件添加到仓库中
+```sh
+# . 代表全部. 如果只想添加某个特定的文件，只需要把 . 换成特定的文件名即可  
+git add .
+```
+
+### 3. 将第二步添加的文件先提交(commit)到本地仓库
+```sh
+git commit -m "注释语句"
+```
+### 4. 去 github 上创建自己的 Repository，(也可以使用现有的仓库)
+
+### 5. 将本地的仓库关联到github上
+```sh
+# url: 可以是 https 或 SSH 
+git remote add origin url
+```
+
+#### 5.1 如果本地仓库之前已经关联了在线仓库，重新配置的方式
+
+下图以 `Vue-learning` 仓库为例：
+
+![image-20211029155036918](readme.assets/image-20211029155036918.png)
+
+如果本地文件夹之前已经用 `git pull origin master` 拉取过在线的仓库了，
+
+那么在本地仓库的 `.git` (默认隐藏, 点击当前窗口顶部的**查看** --> **隐藏的项目** 勾选) 文件夹内的 `config` 文件便可以看到  `url`  键后面的已有值了，
+
+此时我们使用下面的命令更改 SSH 拉取方式
+```sh
+# 也可以设置为新的 https 地址
+git remote set-url origin git@github.com:W1033/Vue-learning.git
+```
+
+更改完成后，可以使用如下命令查看当前的 origin 地址：
+```
+$ git remote -v
+```
+
+### 6. 上传 github 之前，尽量先拉取(pull) 一下代码，以防远程仓库初始化时有 README.md 文档，代码如下：
+```sh
+git pull origin master
+```
+如果下拉时提示错误 *Fatal:refusing to merge unrelated histories(拒绝合并最近的历史记录)*，
+
+解决方法，把上面的代码改为:
+```sh
+# allow 前面有两个破折号(dash)
+git pull origin master --allow-unrelated-histories
+```
+
+### 7. 最后一步上传代码到 github 远程仓库
+```sh
+git push -u origin master
+# or
+git push -f origin master
+```
+
+执行完后如果没有异常就说明上传成功了，中间可能会让输入 Username 和 Password，输入 github 的账号和密码即可.
+
+
+
+## 使用 git pull 强制覆盖本地文件的方式
+```sh
+# 如果你不想要本地的所有修改的情况下，这条命令特别好用
+git fetch --all
+git reset --hard origin/master
+git pull origin master
 ```
 
 
 ## I am using Git. I did a pull from a remote repo and got an error message:
-
 ```md
 Please enter a commit message to explain why this merge is necessary,
 especially if it merges an updated upstream into a topic branch.
@@ -87,10 +161,11 @@ To solve this:
 5. then press enter
 
 
-## 关于 `src refspec master does not match any` 的解决方法
+
+## 关于 `src ref spec master does not match any` 的解决方法
 
 ```md
-error: src refspec master does not match any.  
+error: src ref spec master does not match any.  
 error: failed to push some refs to 'ssh://xxxxx.com/project.git'
 ```
 
@@ -101,24 +176,6 @@ error: failed to push some refs to 'ssh://xxxxx.com/project.git'
 2. You can try `git push origin HEAD:master` as a more local-reference-independent solution. This explicitly states that you want to push the local ref `HEAD` to the remote ref `master` (see the [git-push refspec](https://git-scm.com/docs/git-push#git-push-ltrefspecgt82308203) documentation).
 
 
-
-## 如果 Github 配置了 SSH 拉取代码的方式
-
-下图以 `Vue-learning` 仓库为例：
-
-![image-20211029155036918](readme.assets/image-20211029155036918.png)
-
-如果本地文件夹之前已经用 `git pull origin master` 拉取过在线的仓库了，那么在本地仓库的 `.git` (默认隐藏, 点击当前窗口顶部的**查看** --> **隐藏的项目** 勾选) 文件夹内的 `config` 文件便可以看到  `url`  键后面的已有值了，此时我们使用下面的命令更改 SSH 拉取方式
-
-```sh
-git remote set-url origin git@github.com:W1033/Vue-learning.git
-```
-
-更改完成后，可以使用如下命令查看当前的 origin 地址：
-
-```
-$ git remote -v
-```
 
 
 
