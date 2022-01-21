@@ -20,27 +20,48 @@
 
 
 ## Git 常用命令
-1. 展示远程仓库的所有分支
-   `git branch -a` 展示所有 git 分支
-    + `* master` : 本地分支
-    + `remotes/origin/HEAD -> origin/master` 远程分支
-    + `remotes/origin/master` 远程分支
-- `git branch -r` 展示远程分支
-    + `origin/HEAD -> origin/master`
-    + `origin/master`
-- `git diff origin/origin master` 可以看到两者的不同
-- `git push origin master` 省略了 <dst> 等价于 `git push origin master:master`
-  其中 origin 指定了你要 push 到哪个 remote。一般写的形式为 
-  `git push origin <src>:<dst>`，冒号前面表示 local branch 的名字，冒号后表示 
-  remote repository 下 branch 的名字。注意，如果省略了 <dst>, git 会认为你想 push 到
-  remote repository 下和 local branch 相同名字的 branch.
-- `git push origin: mybranch` 在 origin repository 里面查找 mybranch 删除它。
-  用一个空的去更新它，就相当于删除了。
-- `git remote update origin --prune` 刷新远程分支列表
+
+### 基本命令见同级目录的：`../Git全栈开发使用指南/readme.md`
+
+1. 初始化仓库
+1. 配置
+1. 增加/删除文件
+1. 代码提交
+1. 分支
+1. 标签
+1. 查看信息
+1. 远程同步
+1. 撤销
+
+### 详细命令讲解见同级目录的:
+
+- `../《Pro-Git》/01-起步.md`
+- `../《Pro-Git》/02-Git基础.md`
+
+### 简要命令：
+
+```sh
+$ git push origin master
+```
+省略了 `<dst>` 等价于
+```sh
+$ git push origin master:master
+```
+其中 `origin` 指定了你要 `push` 到哪个 `remote`. 一般形式为:
+```sh
+$ git push origin <src>:<dst>
+```
+冒号前面表示 本地分支(local branch) 的名字，冒号后表示 远程仓库(remote repository) 下 branch 的名字。
+注意，如果省略了 `<dst>`, git 会认为你想 push 到 remote repository 下和 local branch 相同名字的 branch.
+
+```sh
+# 刷新远程分支列表
+$ git remote update origin --prune
+```
 
 
 
-## VSCode-git 中的 U, M 和 D 文件标记含义 （Added 20210326）
+## VSCode-git 中的 U, M 和 D 文件标记含义 
 - **M (modified):** 你已经在 github 中添加过该文件，然后你对这个文件进行了修改，就会文件后标记 M
 - **U (untracked):** 你在本地新建了这个文件，还未提交到 github 上，就会标记 U
 - **D (delete):** 你删除了这个文件，vscode-git 会记录下这个状态
@@ -193,31 +214,30 @@ git remote set-url origin https://github.com/your/repository
 
 
 
-
-
-
-
 ## 通过命令行在本地仓库中删除远程 github 仓库中的文件/夹
-- 前几天在 webstorm 中修改了仓库中几个文件夹, 最后提交到 github 后, 有一个
-  名为 `《SQL基础教程》` 的文件夹一直存在(注意: 此文件夹内部为空),
-  因为 github 网站不提供在线删除的功能,
-  所以只能通过命令行来解决, 下面贴出执行命令:
-  ```shell
-    # 打开 iTerm 进入到相对应的本地仓库
-    # (1) 删除本地 git 缓存
-    git rm -r --cached <filename>
-  
-    # (2) 重新 track(跟组) 文件
-    git add -A
-    git commit -m '《SQL基础教程》'
-  
-    # (3) 推送到远程仓库 (确保当前代码是最新的)
-    git push origin master
-  ```
+
+前几天在 webstorm 中修改了仓库中几个文件夹, 最后提交到 github 后, 有一个
+名为 `《SQL基础教程》` 的文件夹一直存在(注意: 此文件夹内部为空),
+因为 github 网站不提供在线删除的功能,
+所以只能通过命令行来解决, 下面贴出执行命令:
+
+```shell
+  # 打开 iTerm 进入到相对应的本地仓库
+  # (1) 删除本地 git 缓存
+  git rm -r --cached <filename>
+
+  # (2) 重新 track(跟踪) 文件
+  git add -A
+  git commit -m '《SQL基础教程》'
+
+  # (3) 推送到远程仓库 (确保当前代码是最新的)
+  git push origin master
+```
 
 
 
 ## 使用 `Git` 回退到 `Github` 的某个历史版本：
+
 - 1、进入到项目文件夹，
     + 命令行中输入 `git log` 查看所有历史版本，获取 git 的某个历史版本的 commit id,
       (id 为 40 位的 16 进制数字，通过 SHA1 计算得到). 如果命令行窗口过小，不会一次
@@ -236,14 +256,6 @@ git remote set-url origin https://github.com/your/repository
         - `git add .`
         - `git commit -m "message"`
         - `git push -f origin master`
-
-
-
-
-
-## 在命令行中解决 git 冲突的方法, 见 《Pro-Git》 等看完了再做笔记。  
-
-
 
 
 
