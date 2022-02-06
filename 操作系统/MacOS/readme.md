@@ -1,72 +1,6 @@
 # MacOS 使用记录
 
 
-## 目录(Catalog)
-1. Mac 键盘符号说明:
-
-2. Mac 一键返回到桌面
-
-3. 剪切-复制
-
-4. Mac 刷新 DNS 解析
-
-5. 打开没有授权的 App
-
-6. Mac 下好用的输入法： 搜狗输入法--秒杀苹果自带的中英文输入法
-
-7. 隐藏/显示程序坞快捷键
-
-8. Mac 更该文件的默认显示方式
-
-9. 搜索文件路径：
-
-10. Mac 下的 host 文件查找方式:
-
-11. 让 Mac 显示文件路径:
-
-12. 显示/隐藏 文件夹中的 默认隐藏文件  
-
-13. 在 Finder 的顶部显示文件路径:
-
-14. [如何在 Mac 上使用 "活动监视器" ](https://support.apple.com/zh-cn/HT201464)  
-
-15. Mac 命令行里查看 ip 的命令:
-
-16. Mac 触控板操作：
-
-17. Mac 软件卸载
-
-18. Mac 分屏
-
-19. Mac 系统自带截图快捷键
-
-20. Mac 下更习惯用的截图: QQ 截图
-
-21. 打开 Mac 上允许安装任何来源的应用程序的方法：
-
-22. 使用 `Spotlight` 搜搜
-
-23. Mac 程序界面快捷键:
-
-24. Mac 文件管理
-
-25. Mac Chrome 浏览器常用快捷键:
-
-26. Mac 包管理器
-
-27. Mac 下弹出 U盘/SSD
-
-28. 拷贝文件到移动 SSD
-
-29. 查看 mbp 风扇狂转(5000 ~ 6000 转) 的原因
-
-30. Mac 无线连接 HP MFP 136nw 打印机
-
-31. MacOS Big Sur CORE keygen 无权限打开解决方案
-
-32. MacOS 更该锁屏时间
-
-
 
 ## 生词(New Words)
 - **remount [,ri:'maunt] --vi.重新骑上; 重登上. --vt.重新安装. --n.新马**
@@ -76,7 +10,6 @@
     + She went to remount her horse. 她走过去重新上马.
 - **cask [kɑːsk]/[kæsk] --n.木桶, 桶. --vt.装入桶内.**
     + I need a cask of wine and some apples. 我需要一桶酒和一些苹果.
-
 
 
 
@@ -404,3 +337,13 @@ sudo upx -d /Applications/CORE\ Keygen.app/Contents/MacOS/CORE\ Keygen
 ~~插件安装后，在「系统偏好设置」里面可以查看到。~~
 
 ~~好用且稳定的NTFS插件Tuxera NTFS推荐给大家，可以让您完整的读写兼容NTFS格式驱动器，对磁盘进行访问、编辑、存储和传输文件等操作。同时还包括开源磁盘管理器等简单的格式和硬盘维修检查和修复。~~
+
+### 32 巫师后期推荐 5 款 Mac 必备软件
+- 0:00 介绍
+- 1:59 必装神器 Alfred (任意搜索软件)
+- 5:01 实时状态监控 iStat Menus
+- 8:35 窗口吸附 Magnet
+- 9:41 容器软件 Dropover
+- 12:04 MacOS深度定制 TinkerTool
+- 14:15 截屏神器 Monosnap
+- 17:18 目录自动备份Sync folders Pro
