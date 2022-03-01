@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
+  <head>
+    <title>19　两种典型的微处理器</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="../page_styles.css"/>
+</head>
+  <body class="calibre">
+
+<h1 id="txt019_1" class="sect">19　两种典型的微处理器</h1>
+<p class="content">微处理器——正是它，将计算机中央处理器的所有构成组件整合在一起，集成在一个硅芯片上——诞生于1971年。它的诞生有着很好的开端：第一个微处理器，即Intel 4004系列，包括了2300个晶体管。到现在，大约三十年过去了，家用计算机的微处理器中的晶体管数量也逐步逼近10,000,000个。</p>
+<p class="content">从本质上说，微处理器实际上所做的工作一直没有变。在现在的芯片上，新增的几百万个晶体管所做的很多事情令我们眼前一亮，但我们正处于微处理器探索的初期，过多的关心这些当代的芯片并不合适，因为它们只会分散我们的注意力而无法帮助我们去学习与理解它。为了更清晰地认识微处理器是如何工作的，让我们首先来看一下最原始的微处理器。</p>
+<p class="content">我们要讨论的微处理器出现于1974年。在这一年，英特尔公司在4月推出了8080处理器，摩托罗拉公司——从20世纪50年代生产半导体和晶体管——在8月推出了6800处理器。不仅如此，当年还有其他的一些微处理器面世。同年，得克萨斯仪器设备公司（Texas Instruments）推出了4位的处理器TMS 1000，它用于多种计算器、玩具和设备；国家半导体公司（National Semiconductor）推出了PACE——首个16位微处理器。但当我们回顾历史的时候就会发现，8080和6800是两个最具有重大历史意义的芯片。</p>
+<p class="content">英特尔为8080最初定的价格为360美元，这个价格对IBM的System/360来说是极大的讽刺。System/360是大型机处理系统，用户大都是一些大公司，售价动辄几百万美元（今天，你用1.95美元就可以买到一块8080芯片）。这并不是说8080可以与System/360相提并论，但在几年之内，IBM自己也关注起这些非常小的计算机。</p>
+<p class="content">8080是一个8位的微处理器，它包括6000个晶体管，运行的时钟频率为2 MHz，寻址空间为64 KB。摩托罗拉的6800（今天的售价也是1.95美元）包括4000个晶体管，其寻址空间也是64 KB。第一个版本的6800的运行速度为1 MHz，但摩托罗拉于1977年推出了运行速度分别为1.5 MHz和2 MHz的版本。</p>
+<p class="content">这些芯片被称为“单芯片微处理器”（single-chip microprocessors），不太准确的说法是“单芯片的计算机”。处理器只是计算机的一部分。除了处理器之外，计算机还需要其他一些设备，至少要包括一些随机访问的存储器（RAM），一些方便用户把信息输入计算机的设备（输入设备），一些使用户能够把信息从计算机中读取出来的设备（输出设备），以及其他一些能把所有构件连接在一块的芯片。本书会在第21章详细介绍这些构件。</p>
+<p class="content">现在，让我们来仔细研究一下微处理器本身。当描述微处理器的时候，我们总是习惯用一些框图来阐明其内部的构件及其连接情况。然而，在第17章我们已经使用了数不清的框图来描述它，现在我们将观察微处理器和外部设备的交互过程，以此来认识其内部的结构和工作原理。换句话说，为了弄清微处理器的工作原理，我们把它视做一个不需要详细研究其内部操作的黑盒。取而代之的方法是通过观测芯片的输入、输出信号，特别是芯片的指令集来理解微处理器的工作原理。</p>
+<p class="content">8080和6800都是40个管脚的集成电路。这些芯片最常见的IC封装大约为2英寸长，1/2英寸宽，1/8英寸厚。</p>
+<div class="picture_figure"><img alt="img" src="../images/00537.jpeg" class="picture_figure431"/></div>
+
+<p class="content">当然，你所看到的只是外部的封装。其内部的硅晶片是非常小的，例如在早期的8位微处理器中，硅晶片还不到1/4平方英寸。外包装可以保护内部的硅晶片，并且通过管脚提供了处理器的输入和输出访问接入点。下面给出了8080的40个管脚的功能说明图。</p>
+<div class="picture_figure"><img alt="img" src="../images/00538.jpeg" class="picture_figure432"/></div>
+<p class="content">本书中我们所创建的所有电气或电子设备都需要某种电源来供电。8080的一个特殊的地方就是它需要三种电源电压：管脚20必须接到5V的电压；管脚11需要接到-5V的电压；管脚28需接12V的电压；管脚2接地。（英特尔在1976年发布了8085芯片，目的就是简化对这些电源的要求）</p>
+<p class="content">其他的管脚都标有箭头。从芯片引出的箭头表明这是一个输出（output）信号，这种信号由微处理器控制，计算机的其他芯片对该信号响应。指向芯片的箭头表明该信号是一个输入（input）信号，该信号由其他芯片发出，并由8080芯片对其响应。还一些管脚既是输入又是输出。</p>
+<p class="content">第17章所设计的处理器需要一个振荡器来使其工作。8080需要两个不同的同步时钟输入，它们的频率都是2 MHz，分别标记为<img src="../images/00539.jpeg" class="picture_formula_line9" alt="img"/>和<img src="../images/00540.jpeg" class="picture_formula_line10" alt="img"/>，位于管脚22和15上。这些信号可以很方便地由英特尔生产的8224时钟信号发生器产生。为8224连接一个18 MHz的石英晶体后，它基本上就可以完成其余工作了。</p>
+<p class="content">一个微处理器通常有多个用来寻址存储器的输出信号。用于寻址的输出信号的数目与微处理器的可寻址空间大小直接相关。8080有16个用于寻址的输出信号，标记为<img src="../images/00541.jpeg" class="picture_formula_line11" alt="img"/>～<img src="../images/00542.jpeg" class="picture_formula_line12" alt="img"/>，因此它的可寻址空间大小为<img src="../images/00543.jpeg" class="picture_formula_line13" alt="img"/>，即65,536字节。</p>
+<p class="content">8080是一个8位的微处理器，可以一次从存储器读取或向存储器写入8位数据。该芯片还包括标记为<img src="../images/00544.jpeg" class="picture_formula_line11" alt="img"/>～<img src="../images/00545.jpeg" class="picture_formula_line11" alt="img"/>的8个信号，这些信号是芯片仅有的几个既可以用做输入又可以用做输出的信号。当微处理器从存储器中读取一个字节时，这些管脚的功能是输入；当微处理器向存储器写入一个字节时，其功能又变成了输出。</p>
+<p class="content">芯片的其余10个管脚是控制信号（control signals）。例如，RESET（复位）输入用于控制微处理器的复位。输出信号<img src="../images/00546.jpeg" class="picture_formula_line14" alt="img"/>的功能是指明微处理器需要向RAM中写入数据（<img src="../images/00547.jpeg" class="picture_formula_line15" alt="img"/>信号对应于RAM阵列的写输入）。此外，当芯片读取指令时，在某些时刻一些控制信号会出现在<img src="../images/00548.jpeg" class="picture_formula_line11" alt="img"/>～<img src="../images/00549.jpeg" class="picture_formula_line11" alt="img"/>管脚处。使用8080芯片构建的计算机系统通常使用8228系统控制芯片来锁存附加的控制信号。本章在后面将会讲述一些控制信号。但8080的控制信号是极其复杂的，因此，除非你准备用该芯片搭建一台计算机，否则最好不要在这些控制信号上过多花费时间。</p>
+<p class="content">假设8080微处理器连接了一个64KB的存储器，这样我们就能独立地读写数据而不依赖于微处理器。</p>
+<p class="content">8080芯片复位后，它把锁存在存储器0000h地址处的字节读入微处理器，通过在地址信号端<img src="../images/00550.jpeg" class="picture_formula_line11" alt="img"/>～<img src="../images/00551.jpeg" class="picture_formula_line12" alt="img"/>输出16个0实现该过程。它读取的字节必须是8080指令，读取该字节的过程被称为取指令（instruction fetch）。</p>
+<p class="content">在第17章设计的计算机中，所有的指令（除了HLT指令）都是3个字节长，包括1字节的操作码和2字节的地址。在8080中，指令的长度可以是1字节、2字节，或者3字节。有些指令使8080从存储器的一个特定地址读取字节到微处理器，有些指令使8080将一个字节从微处理器写入存储器的特定地址；还有些指令使8080在其内部执行而不需要访问RAM。8080执行完第一条指令后，接着从存储器读取第二条指令，并依此类推。这些指令组合在一起构成了计算机程序，可以用来做一些很有趣的事情。</p>
+<p class="content">当8080以最高速度2 MHz运行时，每个时钟周期是500ns（1 ÷ 2,000,000 = 0.000000500s）。第17章中的计算机的所有指令都需要4个时钟周期，8080的每条指令需要4～18个时钟周期，这就意味着每条指令的执行时间为2～9μs。</p>
+
+<p class="content">也许了解某个特定微处理器的功能的最好办法就是全面地测试其完整的指令集。</p>
+<p class="content">第17章最后完成的计算机仅包括12条指令。一个8位处理器的指令数很容易达到256，每一条指令的操作码就是一个特定的8位数（如果某些指令包含2字节的操作码，其指令集会更大）。8080虽然没有这么多指令，但是其指令数也已经达到了244。这看起来似乎是很多，但从总体上说，其功能并不比第17章的计算机强大。例如，如果想利用8080进行乘法或除法运算，你仍然需要自己写一小段代码。</p>
+<p class="content">在第17章曾经讲到过，为了方便地引用指令，我们为处理器的每一条指令的操作码都指派了一个特殊的助记符，而且其中的一些助记符是可以带有参数的。这种助记符只是在我们使用操作码时提供方便，它对于处理器是没有帮助的，处理器只能读取字节，对于助记符组成的文本的含义一无所知（为了讲解清楚，本书选用了Intel 8080说明文档中用到的部分助记符为例来说明）。</p>
+<p class="content">第17章设计的计算机的指令集包括两条非常重要的指令，我们称之为加载（Load）和保存（Store）。每条指令占3个字节。在Load指令中，第一个字节是操作码，其后的两个字节是要加载的操作数的16位地址。当处理器执行加载指令时，会把该指定地址中的字节加载到累加器。与之相似，当Store指令被执行时，累加器中的内容被保存到该指令指定的地址中。</p>
+<p class="content">我们可以用助记符把上述代码简写为以下形式：</p>
+<div class="picture_figure"><img src="../images/00552.jpeg" class="picture_figure433" alt="img"/></div>
+<p class="content">这里的A表示累加器（它既是Load指令的目的操作数也是Store指令的源操作数），aaaa表示16位的存储器地址，通常用4个16进制的数来表示一个地址。</p>
+<p class="content">同第17章的累加器一样，8080的8位累加器也记做A。8080也有与第17章的计算机的Load指令和Store指令功能相同的两条指令，它们也称做加载（Load）和保存（Store）。在8080中，加载指令和保存指令的操作码分别是32h和3Ah，每个操作后面也同样跟着一个16位的地址。在8080中，它们的助记符分别是STA（Store Accumulator，表示加载到累加器）和LDA（Load Accumulator，表示保存到累加器）：</p>
+
+<div class="picture_figure"><img src="../images/00553.jpeg" class="picture_table45" alt="img"/></div>
+<p class="content">8080芯片的微处理器的内部除累加器外还设置了6个寄存器（register），每个寄存器可以存放一个8位的数。这些寄存器和累加器非常相似，事实上累加器被视为一种特殊的寄存器。这6个寄存器和累加器一样，本质上都是锁存器。处理器既可以把数据从存储器读入寄存器，也可以把数据从寄存器存回存储器。当然，其他的寄存器没有累加器所具有的丰富的功能，例如，当把两个8位数相加时，其结果总是保存到累加器而不会保存到其他寄存器。</p>
+<p class="content">在8080中用B，C，D，E，H和L来表示新增的6个寄存器。人们通常会问以下两个问题：“为什么不使用F和G来表示？”，以及“I，J和K用来代表什么？”答案是，使用H和L来命名寄存器是因为它们具有特殊的含义，H可以代表高（High）而L可以代表低（Low）。通常把两个8位的寄存器H和L合起来构成一个16位的寄存器对（register pair），称做HL，H用来保存高字节而L用来保存低字节。这个16位的值通常用来对存储器寻址，我们将在下面看到它是怎样以简单的方式工作的。</p>
+<p class="content">寄存器是计算机必不可少的部件吗？为什么在第17章搭建的计算机中并没有寄存器的踪迹？从理论上讲，这些寄存器不是必需的，在第17章也没有用到它们，但在实际应用中使用它们将带来很大的方便。很多计算机程序都同时用到多个数据，将这些数据存放在寄存器比存放在存储器更便于访问，因为程序访问内存的次数越少其执行速度就越快。</p>
+<p class="content">在8080中有一条指令至少用到了63个操作码，这条指令就是MOV，即Move的缩写。其实该指令是一条单字节指令，它主要用来把一个寄存器中的内容转移到另一个寄存器（也可能就是原来的寄存器）。因为8080微处理器设计了7个寄存器（包括累加器在内），因此应用中使用大量的MOV指令是很正常的。</p>
+<p class="content">下面列出了前32条MOV指令。再一次提醒你，两个参数中左侧的是目标操作数，右侧的是源操作数。</p>
+
+<div class="picture_figure"><img src="../images/00554.jpeg" class="picture_table46" alt="img"/></div>
+<p class="content">这些指令使用起来非常方便。利用上面的指令可以方便地把一个寄存器存放的数据转移到另一个寄存器。下面让我们研究一下以HL寄存器对作为操作数的4条指令。</p>
+<div class="picture_figure"><img src="../images/00555.jpeg" class="picture_figure434" alt="img"/></div>
+<p class="content">前面讲过LDA指令，它可以把单字节的操作数从存储器转移到累加器；LDA操作码后面直接跟着该操作数的16位地址。在上面列出的指令中，MOV指令把字节从存储器转移到B寄存器，但该字节的16位地址却存放在HL寄存器对中。HL是怎样得到16位存储器地址的呢？这并不难解决，有很多方法可以做到，比如通过某种计算实现。</p>
+<p class="content">总而言之，对于下面这两条指令：</p>
+<div class="picture_figure"><img src="../images/00556.jpeg" class="picture_figure435" alt="img"/></div>
+<p class="content">它们的功能都是把一个字节从内存读入微处理器，但它们寻址存储器的方式并不相同。第一种方式称做直接寻址（direct addressing）；第二种方式称做间接寻址（indexed addressing）。</p>
+<p class="content">下面列出了其余32条MOV指令，我们看到HL保存的16位存储器地址也可以作为目标操作数。</p>
+<div class="picture_figure"><img src="../images/00557.jpeg" class="picture_table47" alt="img"/></div>
+<p class="content">其中的一些指令如：</p>
+<div class="picture_figure"><img src="../images/00558.jpeg" class="picture_figure436" alt="img"/></div>
+<p class="content">并不会执行有意义的操作。而指令：</p>
+<div class="picture_figure"><img src="../images/00559.jpeg" class="picture_figure437" alt="img"/></div>
+<p class="content">是不存在的，事实上，与之对应的指令是HLT（Halt）即停止指令，也就是说该指令的意义是停止。</p>
+<p class="content">研究MOV操作码的位模式能更好地了解它，MOV操作码由8位组成：</p>
+<div class="picture_figure"><img src="../images/00560.jpeg" class="picture_figure438" alt="img"/></div>
+<p class="content">其中ddd这3位是目标操作数的代码，sss这3位是源操作数的代码。它们所表示的意义如下：</p>
+
+<div class="picture_figure"><img src="../images/00561.jpeg" class="picture_figure439" alt="img"/></div>
+<p class="content">例如，指令</p>
+<div class="picture_figure"><img src="../images/00562.jpeg" class="picture_figure436" alt="img"/></div>
+<p class="content">对应的操作码为：</p>
+<p class="content_center">01101011</p>
+<p class="content">用十六进制数可表示为6Bh。这与前面列出的表格是一致的。</p>
+<p class="content">可以设想一下，在8080的内部可能是这样的：标记为sss的3位用于8-1数据选择器，标记为ddd的3位用来控制3-8译码器以此确定哪一个寄存器锁存了值。</p>
+<p class="content">寄存器B和C也可以组合成16位的寄存器对BC，同样我们还可以用Ｄ和E组成寄存器对DE。如果这些寄存器对也包含要读取或保存的字节的存储器地址，则可以用下面的指令实现：</p>
+<div class="picture_figure"><img src="../images/00563.jpeg" class="picture_table48" alt="img"/></div>
+<p class="content">另一种类型的传送（Move）指令称做传送立即数（Move Immediate），它的助记符写做MVI。传送立即数指令是一个双字节指令，第一个字节为操作码，第二个是数据。这个单字节数据从存储器转移到某个寄存器，或者转移到存储器中的某个存储单元，该存储单元由HL寄存器对寻址。</p>
+
+<div class="picture_figure"><img src="../images/00564.jpeg" class="picture_table49" alt="img"/></div>
+<p class="content">例如，当指令：</p>
+<div class="picture_figure"><img src="../images/00565.jpeg" class="picture_figure440" alt="img"/></div>
+<p class="content">执行后，寄存器E存放的字节是37h。这就是我们要介绍的第三种寻址方式——立即数寻址（immediate addressing）。</p>
+<p class="content">下面将列出一个操作码集，包括32个操作码，它们能完成4种基本的算术运算，这些运算在第17章设计处理器时我们已经熟悉了，它们是加法（ADD）、进位加法（ADC）、减法（SUB）和借位减法（SBB）。可以看到，在所有的例子中，累加器始终用于存放其中的一个操作数，同时用来保存计算结果。这些指令如下。</p>
+
+<div class="picture_figure"><img src="../images/00566.jpeg" class="picture_table46" alt="img"/></div>
+<p class="content">假如累加器A存放的字节是35h，累加器B存放的字节是22h，经过减法运算：</p>
+<div class="picture_figure"><img src="../images/00567.jpeg" class="picture_figure441" alt="img"/></div>
+<p class="content">累加器中的值变为22h，即两个字节的差。</p>
+<p class="content">如果累加器A中的值为35h，寄存器H和L中的值分别是10h和7Ch，而存储器地址107Ch处的字节为4Ah，指令：</p>
+<div class="picture_figure"><img src="../images/00568.jpeg" class="picture_figure442" alt="img"/></div>
+<p class="content">把累加器中的值（35h）与寄存器对HL寻址（107Ch）存储器得到的数值（4Ah）相加，并把计算结果（7Fh）保存到累加器。</p>
+<p class="content">在8080中，使用ADC指令和SBB指令可以对16位数、24位数、32位数甚至更高位的数进行加法、减法运算。例如，假设现在寄存器对BC和DE各自保存了一个16位的数，我们要把这两个数相加，并且把结果保存在寄存器对BC中。具体做法如下：</p>
+<div class="picture_figure"><img src="../images/00569.jpeg" class="picture_figure443" alt="img"/></div>
+<p class="content">在上面的计算中，用ADD指令对低字节相加，用ADC指令对高字节相加。低字节相加产生的进位会进入高字节的运算中。在这段简短的代码中，我们用到了4个MOV指令，这是因为在8080中只能利用累加器进行加法运算，操作数在累加器和寄存器之间来回地传送，因此在8080的代码中会大量使用MOV指令。</p>
+<p class="content">现在我们来讨论8080的标志位（flag）。第17章设计的处理器已经有了CF（进位标志位）和ZF（零标志位）两个标志位，在8080中又新增了3个标志位，包括符号标志位SF，奇偶标志位PF和辅助进位标志位AF。在8080中，用一个专门的8位寄存器来存放所有标志位，该寄存器称做程序状态字（Program Status Word，PSW）。不同的指令对标志位有不同的影响，LDA、STA或MOV指令始终都不会影响标志位，而ADD、SUB、ADC以及SBB指令会影响标志位的状态，具体情况如下。</p>
+
+<p class="content">●如果运算结果的最高位是1，那么符号标志位SF标志位置1，表示该计算结果是负数。</p>
+<p class="content">●如果运算结果为0，则零标志位ZF置0。</p>
+<p class="content">●如果运算结果中“1”的位数是偶数，即具有偶数性（even parity），则奇偶标志位PF置1；反之，如果“1”的位数是奇数，即运算结果具有奇数性（odd parity），则PF置0。由于PF的这个特点，有时会被用来进行简单的错误检查。PF在8080程序中并不常用。</p>
+<p class="content">●进位标志位CF的情况和第17章描述的稍有不同，当ADD和ADC运算产生进位或者SUB和SBB运算不发生借位时，CF都置1。</p>
+<p class="content">●辅助进位标志位AF只有在运算结果的低4位向高4位有进位时才置1。它只用于DAA（Decimal Adjust Accumulator，十进制调整累加器）指令中。</p>
+<p class="content">下面的两条指令会直接影响进位标志位CF。</p>
+<div class="picture_figure"><img src="../images/00570.jpeg" class="picture_table50" alt="img"/></div>
+<p class="content">第17章设计的计算机可以执行ADD、ADC、SUB和SBB指令（虽然缺乏灵活性），而8080功能更为强大，它还可以执行AND（与）、OR（或）、XOR（异或）等逻辑运算。不论是算术运算还是逻辑运算，都是由8080处理器的算术逻辑单元（ALU）来完成的。</p>
+<p class="content">以下是8080的算术运算和逻辑运算指令。</p>
+
+<div class="picture_figure"><img src="../images/00571.jpeg" class="picture_table46" alt="img"/></div>
+<p class="content">AND、XOR和OR都是按位运算（bitwise operations）指令，也就是说对于这些逻辑运算指令，其操作数的每一个对应位都是独立运算的，例如：</p>
+<div class="picture_figure"><img src="../images/00572.jpeg" class="picture_figure444" alt="img"/></div>
+<p class="content">保存到累加器的结果将会是05h。假如我们把3条指令换作OR，则最终的结果将会是5Fh；如果换作XOR，则结果又变成了5Ah。</p>
+<p class="content">CMP（Compare，比较）指令同SUB指令类似，也是把两个数相减，不同之处在于它并不在累加器中保存计算结果，计算的目的是为了设置标志位。这个标志位的值可以告诉我们两个操作数之间的大小关系。例如，我们考虑下面的指令：</p>
+<p class="content">MVI　B, 25h</p>
+<p class="content">CMP　A, B</p>
+<p class="content">指令执行后，累加器A中的值并没有变化。改变的是标志位的值，如果A中的值等于25h，则零标志位ZF置1；如果A中的值小于25h，则进位标志位CF置1。</p>
+<p class="content">同样的，也可以对立即数进行这8种算术逻辑操作。</p>
+<div class="picture_figure"><img src="../images/00573.jpeg" class="picture_table51" alt="img"/></div>
+<p class="content">例如，可以用下面的这条指令来替代上面列出的两条指令：</p>
+<p class="content">CPI　A, 25h</p>
+<p class="content">下面是两种特别的8080指令。</p>
+
+<div class="picture_figure"><img src="../images/00574.jpeg" class="picture_table52" alt="img"/></div>
+<p class="content">CMA是Complement Accumulator的简写。它对累加器中的数按位取反，即把0变为1，1变为0。例如，累加器中的数如果是01100101，使用CMA命令后，累加器中的数按位取反，得到10011010。我们还可以使用如下指令对累加器中的数取反：</p>
+<p class="content">XRI　A, FFh</p>
+<p class="content">前面提到过，DAA是Decimal Adjust Accumulator的缩写，即十进制调整累加器，它可能是8080中最复杂的一条指令。在8080微处理器中专门设计了一个完整的小部件用来执行该指令。</p>
+<p class="content">DAA指令提供了一种用二进制码表示十进制数的方法，称为BCD码（binary-coded decimal），程序员可以在该指令的帮助下实现十进制数的算术运算。BCD码采用的表示方式为，每4位为一段，每段所能表示数的范围是：0000～1001，对应十进制数的0～9。因为1字节有8位故可分割为2个段，因此在BCD码格式下，一个字节可以表示两位十进制数。</p>
+<p class="content">假设累加器A存放的是BCD码表示的27h，显然它就对应十进制数的27（通常，十六进制的27h对应的十进制数是39）。同时假设寄存器B中存放着BCD码表示的94h。假如执行如下指令：</p>
+<p class="content">MVI　A, 27h</p>
+<p class="content">MVI　B, 94h</p>
+<p class="content">ADD　A, B</p>
+<p class="content">累加器中存放的最终结果是BBh，当然，这肯定不是BCD码。因为BCD码中每4位组成的段所能表示的十进制数不会超过9。然而，当我们执行指令：</p>
+<p class="content">DAA</p>
+<p class="content">那么累加器最后所保存的值是21h，而且进位标志位CF置1。因为十进制的27与94相加的结果为121。由此可以看到，使用BCD码进行十进制的算术运算是很方便的。</p>
+<p class="content">在8080程序中，经常会对一个数进行加1或减1运算。在第17章的乘法程序中，为了实现对一个数减1，我们把该数与FFh相加，它是-1的补码。8080提供了专门的指令用来对寄存器或存储器中的数进行加1（称作增量）或减1（称作减量）操作。</p>
+<div class="picture_figure"><img src="../images/00575.jpeg" class="picture_figure3" alt="img"/></div>
+<p class="content">INR和DCR都是单字节指令，它们可以影响除CF（Carry Flag）之外的所有标志位。</p>
+<p class="content">8080还包括4个循环移位（Rotate）指令，这些指令可以把累加器中的内容向左或向右移动1位，它们的具体功能如下。</p>
+<div class="picture_figure"><img src="../images/00576.jpeg" class="picture_table53" alt="img"/></div>
+<p class="content">这些指令只对进位标志位CF有影响。</p>
+<p class="content">假设累加器中存放的数是A7h，即二进制的10100111。RLC指令使其每一位都向左移一位。最终的结果是，最低位（左端为低位，右端为高位）移出顶端移至尾部成为最高位，这条指令也会影响CF的状态。在这个例子中CF置1，最后的结果为01001111。RRC指令以同样的方式进行右移位操作。如果移位之前的数是10100111，执行RRC之后将变为11010011，同时CF置1。</p>
+<p class="content">较之RLC和RRC，RAL和RAR指令的工作方式稍有不同。执行RAL指令时，累加器中的数仍然按位左移，把CF中原来的值移至累加器中数值的最后一位，同时把累加器中数据的原最高位移至CF。例如，假设累加器中移位之前的数是10100111且CF为0，执行RAL指令后，累加器中的数变为01001110而CF变为1。类似的，如果执行的是RAR指令，累加器中的数变为01010011而CF变为1。</p>
+
+<p class="content">当我们在程序中需要对某个数进行乘2（左移）或除2（右移）运算时，使用移位操作会使运算变得非常简单。</p>
+<p class="content">我们通常把微处理器可以寻址访问的存储器称为随机访问存储器（random access memory，RAM），主要的原因是：只要提供了存储器地址（有多种方式），微处理器可以用非常简便的方式访问存储器的任意存储单元。RAM就像一本书，我们可以翻到它的任意一页。这种方式很方便，它不像存储在一个微缩胶片上的整个星期的报纸，为了阅读星期六的内容，我们需要扫描几乎整个星期的内容。同样，它也比读取磁带快得多，因为当我们要听最后一首歌时，需要快进磁带的一整面。微缩胶片和磁带都不是随机访问的，它们是顺序访问（sequential access）的。</p>
+<p class="content">显然，随机访问存储器是非常好的一种寻址方式，对于经常访问存储器的微处理器来说更是如此。然而，在某些情况下使用不同的寻址方式访问存储器也是有好处的。例如，下面例子中的这种存储方式既不是随机的也不是顺序的：假设你在办公室工作，有人会到你办公桌前为你分配任务，每一项工作都用到某种文件夹。这些工作通常有这样的特点，在你完成某项工作之前首先要做另一项相关工作，并用到另一个文件夹。因此你只能放下第一个文件夹，并在它上面打开一个第二个文件夹继续工作。现在又有一个人给你分配了一个比前一项优先级更高的工作，于是你打开第三个文件夹放在前面两个上，继续工作。而这项工作也需要先做一项相关工作，于是你只好再打开第四个文件夹，现在你的办公桌上已经堆叠了四个文件夹了。</p>
+<p class="content">你可能已经注意到了，事实上，这些堆叠的文件夹很有序地保存了你干活的顺序轨迹。最上面的文件夹总是代表优先级最高的工作，完成该工作之后就可以做接下来的工作了，依此类推。最后当你处理完办公桌上最后一个文件夹（即接受的第一个任务）后，就可以回家了。</p>
+<p class="content">这种形式的存储器称作堆栈（stack）。使用堆栈时，我们以从底部到顶部的顺序把数据存入堆栈，并以相反的顺序把数据从堆栈中取出，因此该技术也称作后进先出存储器（last-in-first-out，LIFO）。堆栈的特点是，最先保存到堆栈中的数据最后被取出，而最后保存的数据则被最先取出。</p>
+<p class="content">同样，在计算机中也可以使用堆栈，当然计算机中的堆栈保存的是数据而不是工作。大量的实践证明，在计算机中使用堆栈技术是十分方便的。通常把将数据存入堆栈的过程称作压入（push），把从堆栈取出数据的过程称作弹出（pop）。</p>
+<p class="content">假设你正在编写一个汇编语言程序，需要用到寄存器A、B、C来存储数据。在编写程序的过程中，你注意到程序需要做一个小的计算，并且该计算也需要用到寄存器A、B、C。你希望在完成该计算之后仍然回到原来的地方，并且仍然使用寄存器A、B、C中原先存放的数据。</p>
+<p class="content">为了保存寄存器A、B、C原先存放的数据，可以简单地把这些数据保存到存储器中不同的地址中，需要进行的计算完成之后，再把这些数据从存储器转移到寄存器。但这种方式需要记录数据存放的地址。有了堆栈的概念之后，我们可以用一种更清晰的方式来处理这个问题，即把这些寄存器中的数据依次存放到堆栈中。</p>
+<p class="content">PUSH　　A</p>
+<p class="content">PUSH　　B</p>
+<p class="content">PUSH　　C</p>
+<p class="content">稍后将具体解释这些指令实际的意义。现在需要知道的是，这些指令以某种方式把寄存器中的内容保存到先进后出存储器。这些指令执行之后，寄存器中原有的数据将妥善地保存下来，你就可以放心地使用这些寄存器进行别的工作了。为了取回原来的数据，可以使用POP指令把它们从堆栈中弹出，当然弹出的顺序和原来压入的顺序是相反的。相应的POP指令如下所示。</p>
+<p class="content">POP　　　C</p>
+<p class="content">POP　　　B</p>
+<p class="content">POP　　　A</p>
+<p class="content">再次谨记：后进先出。如果POP指令的顺序弄错了，将会引起严重的错误。</p>
+<p class="content">我们可以在程序中多次用到堆栈而不会引起混乱，这是堆栈机制的一个特殊优势。例如，在我们要编写的程序中已经把寄存器A、B、C中的数保存到了堆栈，在程序的另一段又需要把寄存器C、D、E中的数保存到堆栈，可以使用下面的指令：</p>
+<p class="content">PUSH　　C</p>
+<p class="content">PUSH　　D</p>
+<p class="content">PUSH　　E</p>
+<p class="content">当然，在该段程序中还需要使用一些指令将保存到堆栈中的数据取回至寄存器，这些指令是：</p>
+
+<p class="content">POP　　　E</p>
+<p class="content">POP　　　D</p>
+<p class="content">POP　　　C</p>
+<p class="content">显然，由于先进后出的原则，这些数据在先前存放的C、B、A中的数据之前弹出堆栈。</p>
+<p class="content">堆栈的功能是怎样实现的呢？首先，堆栈其实就是一段普通的RAM存储空间，只是这段空间相对独立不另作他用。8080微处理器设置了一个专门的16位寄存器对这段存储空间寻址，这个特殊的寄存器称为堆栈指针（SP，Stack Pointer）。</p>
+<p class="content">在我们所举的例子中，对于8080来说使用PUSH和POP对寄存器操作实际上是不准确的。在8080中，执行PUSH指令实际上是把16位的数据保存到堆栈，执行POP指令是把这些数据从堆栈中取回至寄存器。因此，对于上面的如PUSH C，POP C等指令，我们对其进行如下的修改。</p>
+<div class="picture_figure"><img src="../images/00577.jpeg" class="picture_table54" alt="img"/></div>
+<p class="content">PUSH　BC指令将寄存器B和C中的数据保存到堆栈，而POP　BC则将这些数据从堆栈取回到寄存器B和C中，并且保持原来的顺序。最后一行指令中的PSW代表程序状态字，如前所述，这是一个8位的寄存器，用于保存标志位。最后一行的PUSH和POP指令的操作对象实际上是累加器和PSW，即压入和弹出堆栈的数据由累加器和PSW中的内容组成。如果你想把所有寄存器中的数据及全部标志位都保存到堆栈，可以使用下面的指令：</p>
+<div class="picture_figure"><img src="../images/00578.jpeg" class="picture_figure445" alt="img"/></div>
+<p class="content">堆栈是怎样工作的呢？我们假设堆栈指针是8000h，当执行PUSH BC指令时将会引发以下操作。</p>
+<p class="content">●堆栈指针减1，变为7FFFh。</p>
+
+<p class="content">●寄存器B中的内容被保存到堆栈指针指向的地址，即存储器地址7FFFh处。</p>
+<p class="content">●堆栈指针减1，变为7FFEh。</p>
+<p class="content">●寄存器C中的内容被保存到堆栈指针指向的地址，即存储器地址7FFEh处。</p>
+<p class="content">类似的，在堆栈指针仍为7FFEh的情况下，执行POP BC指令时会将上面的步骤反过来执行一遍：</p>
+<p class="content">●堆栈指针指向的地址（7FFEh）的内容加载到累加器C。</p>
+<p class="content">●堆栈指针加1，变为7FFFh。</p>
+<p class="content">●堆栈指针指向的地址（7FFFh）的内容加载到累加器B。</p>
+<p class="content">●堆栈指针加1，变为8000h。</p>
+<p class="content">每执行一条PUSH指令，堆栈都会增加两个字节，这可能会导致程序出现一些小错误——堆栈可能会不断增大，最终覆盖掉存储器中保存的程序所必需的代码或数据。这种错误被称作堆栈上溢（stack overflow）。类似的，如果在程序中过多地使用了POP指令，则会过早地取完堆栈中的数据从而导致类似的错误，这种情况称为堆栈下溢（stack underflow）。</p>
+<p class="content">如果8080连接的是一个64 KB的存储器，你可能会把堆栈指针初始化为0000h。当执行第一条PUSH指令时，堆栈指针会减1变为FFFFh，即存储器的最后一个的存储单元。这时，堆栈的初始位置将会是存储器的最高地址，因为程序的代码通常从0000h开始存放，因此两者将保持非常远的距离。</p>
+<p class="content">8080使用LXI指令为堆栈寄存器赋值，LXI是Load Extended Immediate的缩写，即加载扩展的立即数。下面的这些指令将把操作码后的两个字节保存到16位寄存器对中。</p>
+<div class="picture_figure"><img src="../images/00579.jpeg" class="picture_table55" alt="img"/></div>
+<p class="content">指令：</p>
+<div class="picture_figure"><img src="../images/00580.jpeg" class="picture_figure408" alt="img"/></div>
+
+<p class="content">和下面两条指令等价：</p>
+<p class="content">MVI　B, 52h</p>
+<p class="content">MVI　C, 7Ah</p>
+<p class="content">LXI指令节省了一个字节。而且上表中最后一条LXI指令为栈指针赋了一个特殊的值。通常下面的指令会作为微处理器复位后首先执行的指令之一。</p>
+<div class="picture_figure"><img src="../images/00581.jpeg" class="picture_figure410" alt="img"/></div>
+<p class="content">类似的，还可以对寄存器对和堆栈指针进行加1或减1操作，即把它们看做16位寄存器。</p>
+<div class="picture_figure"><img src="../images/00582.jpeg" class="picture_table56" alt="img"/></div>
+<p class="content">对于要讨论的16位指令，我们可以再看一些例子。下面的指令把由任意2个寄存器组成的16位寄存器对的内容加到寄存器对HL中。</p>
+<div class="picture_figure"><img src="../images/00583.jpeg" class="picture_table57" alt="img"/></div>
+<p class="content">这些指令可以减少操作的字节数。例如，上面的第一条指令一般情况下需要6个字节。</p>
+<div class="picture_figure"><img src="../images/00584.jpeg" class="picture_figure446" alt="img"/></div>
+<p class="content">DAD指令一般用来计算存储器地址，只对进位标志位CF有影响。</p>
+
+<p class="content">接下来我们来认识一下各种各样的指令。下面两条指令的特点是操作码后面都跟着2字节的地址，第一条指令把HL寄存器对的内容保存到该地址，第二条指令把该地址的内容加载到HL寄存器对。</p>
+<div class="picture_figure"><img src="../images/00585.jpeg" class="picture_table58" alt="img"/></div>
+<p class="content">寄存器L的数据保存在地址aaaa，而寄存器H的数据保存在地址aaaa+1。</p>
+<p class="content">下面的两条指令把寄存器对HL保存的数据加载到程序计数器和堆栈指针。</p>
+<div class="picture_figure"><img src="../images/00586.jpeg" class="picture_table58" alt="img"/></div>
+<p class="content">PCHL指令本质上是一种Jump指令，它把HL保存的存储器地址加载到程序计数器，而8080处理器要执行的下一条指令就是程序计数器所指明的存储器地址中存放的指令。SPHL指令可以作为另一种为堆栈指针赋值的指令。</p>
+<p class="content">下面的两条指令中，第一条将HL保存的数据与堆栈顶部的两个字节进行交换；第二条指令将HL保存的数据和寄存器对DE保存的数据进行交换。</p>
+<div class="picture_figure"><img src="../images/00587.jpeg" class="picture_table58" alt="img"/></div>
+<p class="content">除了刚讲过的PCHL指令外，目前为止还没有介绍过8080的跳转指令。如第17章所述，在处理器中专门设置了一个称为程序计数器PC的寄存器，它用来保存处理器将要取出并执行的指令的存储地址。通常，处理器在PC的指引下顺序执行存储器中存放的指令，但有一些指令，如Jump（跳转）、Branch（分支）或Goto（无条件转移）——使处理器脱离原来的执行顺序。这些指令使PC重新加载另外的值，处理器要执行的下一条指令存放于存储器的其他位置，而不在按原来的顺序寻址。</p>
+<p class="content">当然，原始的普通跳转指令的确有一定的作用，但从第17章得来的经验可以知道，条件跳转（conditional jump）指令的作用更大。条件跳转指令使处理器根据某些标志位的值转移到特定的地址，这些标志位可以是进位标志位CF、零标志位ZF等。正是由于条件跳转指令的引入，第17章所设计的自动加法器才成为一般意义上的数字计算机。</p>
+<p class="content">8080有5个标志位，其中有4个可用于条件跳转指令。8080支持9种不同的跳转指令，包括了非条件跳转指令，还包含根据ZF（Zero Flag）、CF（Carry Flag）、PF（Parity Flag）以及SF（Sign Flag）是否为1而跳转的条件跳转指令。</p>
+<p class="content">在介绍这些指令之前，首先来介绍与Jump指令相关的另外两种指令。第一种是Call（调用）指令，它和Jump指令类似，但是有所不同的是：执行Call指令后，程序计数器（Program Counter，在这部分讲解中简称PC）加载一个新的地址，而处理器会把原来的地址保存起来，保存到何处呢？最好的选择自然是堆栈了。</p>
+<p class="content">这种策略使Call指令有效地记录了“从何处跳转”（where it jumped from），即保存了跳转之前的相关信息。堆栈中保存的地址可以使处理器最后返回到转移之前的位置。用于返回的指令称为Return（返回）。Return指令从堆栈中弹出两个字节，并把它们加载到PC中，这样就完成了返回到跳转点的工作。</p>
+<p class="content">对于任何处理器来说，Call和Return指令都非常重要。在它们的帮助下，程序员可以在程序中使用子程序（subroutine），子程序是一段频繁使用的完成特定功能的代码（这里的“频繁”意味着“不止一次”）。对于汇编语言来说，子程序是其基本的组成部分。</p>
+<p class="content">让我们来看一个使用子程序的例子。假设你在编写一个汇编语言程序，在程序的某个位置你需要把两个字节相乘，因此你编写了一段用于两个数相乘的代码，然后继续向下写，在程序的另一个位置你发现需要再一次对两个字节相乘。因为你已经写过把两个字节相乘的代码，所以只需要重复使用这些代码就可以了。但是怎么做呢？只是简单地把这些代码重复输入到存储器吗？我们希望不是，因为这样做不仅耽误时间而且浪费存储空间，一个更好的方法是跳转到先前写的那段乘法代码所在的位置。但是普通的Jump指令不能完成这个操作，因为在执行乘法之后不能准确地返回程序的当前位置。因此你需要使用Call指令和Return指令来帮助你实现这个功能。</p>
+<p class="content">用来实现两个数相乘的一组指令可以作为一个子程序。下面我们将看到这个子程序。在第17章的乘法程序中，被乘数（还有乘积）被保存在存储器的特定位置；而在8080的子程序中，乘数和被乘数分别存放在寄存器B和寄存器C中，乘积保存到16位寄存器对HL中。8080中的乘法子程序如下：</p>
+<div class="picture_figure"><img src="../images/00588.jpeg" class="picture_figure447" alt="img"/></div>
+<p class="content">注意，上述子程序的第一行有一个标志Multiply。当然，实际上这个标志对应着子程序在存储器中的起始地址。该子程序在开始处使用了两个PUSH指令，这是因为通常在子程序的起始处要保存程序用到的寄存器。</p>
+<p class="content">保存寄存器后，子程序下面要做的是把寄存器H和L置0。尽管可以使用MVI（转移立即数）指令代替SUB指令来实现该操作，但这样会用到4个字节而不是2个字节的指令。子程序执行成功后，运算结果会保存到寄存器对HL中。</p>
+<p class="content">接下来子程序把寄存器B中的数（即乘数）转移到累加器A，并判断该数是否为0。如果为0，则乘法子程序结束，因为乘数为0。由于寄存器H和L已经为0，所以子程序可以使用JZ（Jump If Zero）指令跳转到程序最后的两条POP指令。</p>
+<p class="content">如果乘数不是0，子程序会把寄存器B置为0。现在寄存器对BC存放的是16位的被乘数，而累加器中存放的是乘数。接下来DAD指令会把BC（被乘数）加到HL（运算结果）中。A中的乘数减1，如果结果不为0，则执行JNZ（非零跳转）指令，该指令会使BC再次加到HL。这个循环会继续执行，直到循环的次数等于乘数为止（当然也可以利用8080的移位指令编写一个更有效率的乘法子程序）。</p>
+<p class="content">在程序中使用如下指令来调用这个乘法子程序，例如，把25h和12h相乘：</p>
+<div class="picture_figure"><img src="../images/00589.jpeg" class="picture_figure448" alt="img"/></div>
+<p class="content">CALL指令把PC的值保存到堆栈中，被保存的这个值是CALL指令的下一条指令的地址，然后CALL指令将使程序跳转到标志为Multiply的指令，即子程序的起始处。当子程序得到计算结果后，执行RET（返回）指令，该指令使保存在堆栈的PC的值弹出，并重新设置到PC，之后程序将继续执行CALL指令后面的指令。</p>
+<p class="content">8080指令集包括条件CALL指令和条件Return指令，但它们使用的频率比条件跳转指令小得多。下面的表格完整地列出了这些指令。</p>
+<div class="picture_figure"><img src="../images/00590.jpeg" class="picture_table59" alt="img"/></div>
+<p class="content">正如你大概所了解的，存储器并不是连接在微处理器上的唯一设备。一个完整的计算机系统通常需要输入/输出设备（I/O）以实现人机交互。输入/输出设备通常包括键盘和显示器等。</p>
+<p class="content">微处理器是如何与外围设备（peripheral，除存储器外，与微处理器连接的所有设备都可以称为外围设备）互相通信的呢？外围设备配备了与存储器类似的接口，微处理器通过与某种外围设备对应的特定地址（即接口）对其进行读写操作。在某些微处理器中，外围设备实际上占用了一些通常用来寻址存储器的地址，这种结构称作内存图像I/O（memory-mapped I/O）。但在8080中，除了常规的65536个地址外，另外增加了256个地址专门用来访问输入/输出设备，它们被称作I/O端口（I/O ports）。I/O地址信号标记为<img src="../images/00591.jpeg" class="picture_formula_line16" alt="img"/>～<img src="../images/00592.jpeg" class="picture_formula_line16" alt="img"/>，但I/O的访问方式与存储器的访问方式不同，两者的区分由8228系统控制芯片的锁存信号来标识。</p>
+<p class="content">OUT（输出）指令把累加器中的内容写入到紧跟该指令后的字节所寻址的端口（port）。IN（输入）指令把一个字节从端口读入到累加器。它们的格式如下所示。</p>
+<div class="picture_figure"><img src="../images/00593.jpeg" class="picture_table52" alt="img"/></div>
+<p class="content">外围设备有时候需要获得处理器的注意。例如，当你按下键盘的某个键时，处理器应该马上注意到这个事件。这个过程由一个称为中断（interrupt）的机制实现，这是一个由外围设备产生的信号，连接至8080的INT输入端。</p>
+<p class="content">但是，当8080复位后，就不再响应中断。程序必须执行EI（Enable Interrupt）指令来允许中断，然后执行DI（Disable Interrupts）禁止中断。这两条指令如下所示。</p>
+<div class="picture_figure"><img src="../images/00594.jpeg" class="picture_table52" alt="img"/></div>
+<p class="content">8080的INTE输出信号用来指明何时允许中断。当外围设备需要中断微处理器的当前工作时，它需要把8080的INT输入信号置为1。8080通过从存储器中取出指令来响应该中断，同时控制信号指明有中断发生。外围设备通常提供下列指令来响应8080微处理器。</p>
+<div class="picture_figure"><img src="../images/00595.jpeg" class="picture_table60" alt="img"/></div>
+<p class="content">上面列出的这些指令都称作Restart（重新启动）指令，在其执行的过程中也会把当前PC中的数据保存到堆栈，这一点与CALL指令类似。但Restart指令在保存PC数据之后会立刻跳转到特定的地址，而且是根据参数的不同将跳转到不同的地址：比如RST 0将跳转到地址0000h处，RST 1将跳转到地址00008h处，依此类推，最后的RST 7将跳转到地址0038h处。这些地址存放的代码都是用来处理中断的。例如，由键盘引起的中断将执行RST 4指令，程序将跳转到地址0020h处，该地址存放的代码将负责从键盘读入数据（完整的过程将在第21章讲述）。</p>
+<p class="content">目前为止，我们已经介绍了243个操作码。在前255个数中，有12个没有作为操作码使用，它们是：08h，10h，18h，20h，28h，30h，38h，CBh，D9h，DDh，EDh和FDh。下面还需要讲到一个操作码。</p>
+<div class="picture_figure"><img src="../images/00596.jpeg" class="picture_table61" alt="img"/></div>
+<p class="content">NOP代表（即声明）no op（no operation，无操作）。NOP指令使处理器什么操作也不执行。这样做有什么好处呢？填空，即保持处理器的运行状态而不做任何事情。8080可以执行一批NOP指令而不会引起任何错误事件的发生。</p>
+<p class="content">本章不准备详细介绍Motorola 6800微处理器，因为在构造和功能方面它与8080非常相似。下面是6800的40个管脚的功能描述图。</p>
+<div class="picture_figure"><img alt="img" src="../images/00597.jpeg" class="picture_figure449"/></div>
+<p class="content">在上图中，<img src="../images/00598.jpeg" class="picture_formula_line12" alt="img"/>表示接地，<img src="../images/00599.jpeg" class="picture_formula_line17" alt="img"/>代表5V的电源。同8080一样，6800也有16个地址输出信号端和8个数据信号端，其中数据信号端既可以用于输入信号也可以用于输出信号。它还有一个RESET信号端和一个<img src="../images/00600.jpeg" class="picture_formula_line18" alt="img"/>（read/write，读/写）信号。<img src="../images/00601.jpeg" class="picture_formula_line19" alt="img"/>信号代表中断请求。与8080相比，6800的时钟信号较为简单，6800没有设计独立的I/O端口，所有的输入/输出设备的地址都是存储器地址空间的一部分。</p>
+<p class="content">6800有一个16位的程序计数器PC、一个16位的堆栈指针SP、一个8位的状态寄存器（用来保存标志位），以及两个8位的累加器A、B。A和B都可以用做累加器（而不是把B作为普通的寄存器），因为A和B的功能完全相同，任何用A做的工作都可以用B实现。与8080不同，6800没有设置其他的8位寄存器。</p>
+<p class="content">6800设置了一个16位的索引寄存器（index register），它可以用来保存16位的地址，其功能与8080的HL寄存器对相似。对于6800的大部分指令来说，它们的地址都可以由索引寄存器与紧跟在操作码后的字节相加得到。</p>
+<p class="content">尽管6800实现的操作与8080大致相同——加载、保存、加法、减法、移位、跳转、调用等，但对应的操作码和助记符是完全不同的。例如，下面列出了6800的转移（Branch）指令集。</p>
+<div class="picture_figure"><img src="../images/00602.jpeg" class="picture_table62" alt="img"/></div>
+
+<p class="content">与8080不同，6800没有设置奇偶标志位，而是设置了一个溢出标志位（Overflow flag）。上面的转移指令中有一些依赖于标志位的组合（combinations of flags）。</p>
+<p class="content">当然，8080和6800的指令集是不同的，虽然这两款芯片于同一年发布，但它们是由属于不同公司的两组不同的工程师设计的。这就造成了它们之间的不兼容，因此它们不能执行对方的机器码，为一种芯片编写的汇编语言程序也不能在另一种芯片上执行。如何编写能在不同类型处理器上执行的计算机程序是第24章的主题。</p>
+<p class="content">8080和6800的另一个有趣的区别是：在两个处理器中，LDA指令都从存储器的特定地址将数据加载到累加器。例如，在8080中，下面的字节序列：</p>
+<div class="picture_figure"><img src="../images/00603.jpeg" class="picture_figure450" alt="img"/></div>
+<p class="content">将把存储器地址347Bh处的字节加载到累加器。现在对比一下6800的LDA指令，它使用6800扩展寻址模式（6800 extended addressing mode）：</p>
+<div class="picture_figure"><img src="../images/00604.jpeg" class="picture_figure451" alt="img"/></div>
+<p class="content">上面的这组字节序列将把存储器7B34h地址处的字节加载到累加器。</p>
+<p class="content">两者的区别是很微妙的。当然，你可能已经注意到了操作码的不同：8080的操作码是3Ah，而6800的操作码是B6h。但是两种微处理器对紧跟在操作码后的地址的处理方式是不同的，8080假设低字节在前，高字节在后；而6800假设高字节在前，低字节在后。</p>
+<p class="content">Intel和Motorola的微处理器在保存多字节数据问题上的根本区别从未得到解决。直到今天，英特尔的微处理器在保存多字节数据时，仍然把最低有效字节放在最前面（也就是说，在最低地址处），而Motorola的微处理器在保存多字节数据时，仍然把最高有效字节放在最前面。</p>
+<p class="content">这两种不同的方式分别称为little-endian（Intel方式）和big-endian（Motorola方式）。争论两者之间哪一种方式更好是件有趣的事，但在这么做之前，先要知道big-endian这个术语出自乔纳森・斯威夫特（Jonathan Swift）的<span class="emphasis_italic">Gulliver’s Travels</span>，指的是刘普特（Lilliput）和布鲁夫思科（Belfuscu）之间关于在吃鸡蛋之前应该把鸡蛋的哪一头敲碎的争论。因此，这种争论可能是没有意义的（另一方面，坦白地说，在本书第17章设计的计算机所采用的方式我个人并不喜欢）。尽管不能确定那一种方式本质上是“对的”，这种差别确实造成了附加的兼容性问题，这种问题通常会在采用little-endian和big-endian系统的机器共享信息时出现。</p>
+<p class="content">这两种微处理器后来的发展如何呢？8080被应用在一些人所谓的第一台个人电脑（personal computer）上，更准确地说应该是用于第一台家用电脑（home computer）上。下图是Altair 8800，它曾登上了1975年1月的<span class="emphasis_italic">Popular Electronics</span>杂志的封面。</p>
+<div class="picture_figure"><img alt="img" src="../images/00605.jpeg" class="picture_figure452"/></div>
+<p class="content">当你看到Altair 8800时，前面板上的灯泡和开关会让你感到似曾相识。这个界面和第16章介绍64 KB RAM阵列时的初始“控制面板”的界面是类似的。</p>
+<p class="content">在8080之后，Intel又推出了8085芯片，而具有更重大意义的是Z-80芯片的出现。Z-80是由Zilog公司制造的，该公司是英特尔公司的竞争对手，由英特尔的前雇员费德瑞克·菲戈金（Federico Faggin）创立，费德瑞克·菲戈金曾在4004芯片的研制过程中做出重要贡献。Z-80和8080完全兼容，并且增加了许多非常有用的指令。1977年，Z-80曾被应用在Radio Shack TRS-80 Model 1上。</p>
+<p class="content">同样是在1977年，由斯蒂夫·乔布斯（Steven Jobs）和史蒂芬·沃兹内卡（Stephen Wozniak）创立的苹果计算机公司推出了新一代产品AppleⅡ。AppleⅡ既没有使用8080也没有使用6800，而是使用了基于MOS技术的更加便宜的6502芯片，它是6800的改进加强版本。</p>
+<p class="content">1978年6月，英特尔公司推出了8086芯片，这是一个16位的微处理器，可以寻址1MB的地址空间。8086的操作码与8080不兼容，但它包含了乘法指令和除法指令。一年后，英特尔推出了8088芯片，其内部结构与8086完全相同，但在外部仍以字节为单位（即外部接口为8位）访问存储器，所以该芯片能使用为8080设计的较为流行的8位的外围芯片（8-bit support chips）。IBM在5150个人计算机中使用了8088芯片，这种计算机通常称为IBM PC，于1981年秋季推出。</p>
+<p class="content">IBM大举进军个人计算机（Personal Computer，有时也简称为PC）市场对业界产生了重大影响，许多公司都推出了与个人计算机兼容的机器（兼容的含义将在随后的几章里详细讨论）。多年以来，“IBM PC兼容”也暗示了“Intel inside”（即内部使用了Intel微处理器），这里特指Intel x86系列微处理器。x86系列微处理器包括1982年发布的186芯片和286芯片，1985年发布的32位386芯片，1989年发布的486芯片。从1993年开始，英特尔公司推出Intel奔腾（Intel Pentium）系列微处理器，而这个系列如今被广泛地应用于PC兼容机。虽然这些处理器的指令集都在不断扩展，但是它们仍然支持始于8086的所有早期处理器的操作码。</p>
+<p class="content">苹果公司的Macintosh于1984年首次发布，它采用摩托罗拉的68000微处理器，68000是16位微处理器，是6800的下一代产品。68000及其后续产品（通常称为68K系列）是已发布的处理器中最受欢迎的一类。</p>
+<p class="content">从1994年开始，Macintosh计算机开始使用PowerPC微处理器，该处理器是由摩托罗拉，IBM以及苹果公司联合开发的。PowerPC是采用RISC（Reduced Instruction Set Computing，精简指令集计算机）微处理器体系结构来设计的，其目的是通过某些方面的简化来提高处理器的速度。在RISC计算机中，通常指令都是等长的（PowerPC中是32位），只有加载和保存两种指令能访问存储器，并且尽量简化指令的操作。RISC处理器设置了大量的寄存器，这样就能避免频繁访问存储器以提其高运行速度。</p>
+<p class="content">PowerPC拥有完全不同的指令集，因此不能执行68K系列微处理器的代码。然而，目前Macintosh计算机使用的PowerPC微处理器可以仿真（emulate）68K系列微处理器。运行在PowerPC上的仿真程序逐一检查68K程序的操作码，并执行相应的操作。它执行的速度没有PowerPC本身的代码那么快，但可以正常工作。</p>
+<p class="content">根据摩尔定律（Moore’s Law），微处理器中的晶体管数量每18个月翻一倍，人们不禁要问：增加的这些大量的晶体管用来做什么呢？</p>
+<p class="content">一些晶体管用来适应处理器不断增加的数据宽度——从4位、8位、16位到32位；另一些新增的晶体管用来应对新的指令。例如，现在大部分微处理器都支持用于浮点数的指令（将在第23章详细介绍）；还有一些新增的指令用来执行重复计算，以便在计算机屏幕上呈现图片和电影。</p>
+<p class="content">现代处理器使用多种技术来提高其运行速度。其中一种就是流水线技术（pipelining），即处理器在执行一条指令的同时读取下一条指令，尽管Jump指令在一定程度上会改变这种流程。现代处理器还包括一个Cache（高速缓冲存储器），它是一个设置在处理器内部，访问速度非常快的RAM阵列，用来存放处理器最近要执行的指令。由于计算机程序经常执行一些小的指令循环，使用Cache可以避免反复加载这些指令。上面提到的这些提高运行速度的策略都需要在处理器内部增加更多的逻辑组件和晶体管。</p>
+<p class="content">正如前面所提到的，微处理器只是整个计算机系统的一部分（尽管是最重要的一部分）。我们会在第21章构造这样一个系统，但首先要学习如何处理存储器中的数据，包括操作码和数字，我们要对这些数据进行编码。让我们从心态上回归到小学一年级，像孩子们学习读写一样学习如何编码吧。</p>
+</body></html>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
+  <head>
+    <title>20　ASCII码和字符转换</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="../page_styles.css"/>
+</head>
+  <body class="calibre">
+
+<h1 id="txt020_1" class="sect">20　ASCII码和字符转换</h1>
+<p class="content">数字计算机中的存储器唯一可以存储的是比特，因此如果要想在计算机上处理信息，就必须把它们按位存储。通过先前的学习，我们已经掌握了如何用比特来表示数字和机器码。现在我们面临的一大挑战就是如何用它来存储文本。毕竟，人类所积累的大部分信息，都是以各种文本形式保存的。文本信息聚集最多的地方之一就是图书馆，数不清的书、杂志和报纸所提供的都是文本信息。当然，我们现在已经使用计算机来存放图像和影音信息了，不过为了易于理解，我们还是先从如何使用计算机存放文本开始讲解。</p>
+<p class="content">为了将文本表示为数字形式，我们需要构建一种系统来为每一个字母赋予一个唯一的编码。数字和标点符号也算做文本的一种形式，所以它们也必须拥有自己的编码。简而言之，所有由符号所表示的字母和数字（Alphanumeric）都需要编码。具有这种功能的系统被称为字符编码集（Coded Character Set），系统内的每个独立编码称为字符编码（Character Codes）。</p>
+<p class="content">许多疑问也随之而来，而要解决的第一个问题是：构成这些编码究竟需要多少比特？要想回答这个问题就需要我们从长计议了。</p>
+<p class="content">当考虑用比特来表示文本的时候，切忌好高骛远。我们经常会看到书页上，或报刊和杂志的栏目上所有的内容被整齐地组织在一起。所有的段落都划分为宽度相等的文本行，但我们要注意，这种排版的形式永远只是文本之外的事物。当曾在某个杂志上细细品味过的一个故事，几年后与我们在另外一本书中重逢时，我们回忆起的往往是故事本身而不是文本的排版，没有人会因为行与行间距的不同而把它们当成两个故事。</p>
+<p class="content">我极力想阐述一个重要的观点，那就是文本与其印刷在纸上时采用的二维排版格式是两码事。充分发挥想象力，将文本看成是一维的由字母、数字和标点符号组成的数据流吧。当然，有时为了标明一句话的开始和结尾，还需要一些额外的编码。</p>
+<p class="content">还是先前所描述的例子，曾在某个杂志上细细品味过的一个故事，几年后出现在另外一本书中，但是文章的字体发生了变化，这算是一个问题吗？当年的杂志上是这样印刷的：</p>
+<div class="picture_figure"><img alt="img" src="../images/00606.jpeg" class="picture_figure453"/></div>
+<p class="content">而现在书中的写法变成了下面这样：</p>
+<p class="content_center">Call me Ishmael.</p>
+<p class="content">这些区别是我们所在意的吗？答案往往是否定的。字体改变了文本的表现形式，但故事本身的内容并没有因此而改变。字体是可以变来变去的。但这并无大碍。</p>
+<p class="content">还有一种简化问题的方法：我们可以总是使用毫无修饰的文本。没有斜体、粗体、下划线、颜色、空心体、上标、下标以及音标，同样的，这里没有元音字母标识等符号，只有赤条条的拉丁字母，这些字母组成了英语中99%的文本。</p>
+<p class="content">在先前对莫尔斯码和布莱叶盲文的学习中，我们了解了如何将字母表中的字符以二进制的形式表现出来。这些系统在适合的场合很好用，但要想用到计算机中却是难上加难。就拿莫尔斯码来说，它是变量自适应长度（Variable-Width）编码：常用字符的编码较短，而不常用字符的编码较长。这样的编码非常适合电报系统，但并不适用于计算机。另外，莫尔斯码并不区分字母的大小写。</p>
+<p class="content">布莱叶盲文编码使用固定宽度，非常适合计算机使用。每一个字符对应着6比特的编码，并且用到了转义（Escape）码对大小写进行了区分。转义码用来表明下一个字符为大写。这也就是说，每个大写字母都需要两组编码来表示。布莱叶盲文中用移位（Shift）码表示数字：移位码后紧跟的编码都被看做数字，直到遇到下一个移位码，此时系统又将后面的内容当做字母。</p>
+<p class="content">我们的目标是开发一个字符编码集，使用这个编码集，系统可以将如下的句子转换成为一系列的编码：</p>
+<p class="content_center"><span class="emphasis_bold"><span class="emphasis_italic">I have 27 sisters.</span></span></p>
+<p class="content">每一个字符的编码都会占据一定的比特。有的编码用来表示字母，有的用来表示标点符号，还有一些用来表示数字。甚至於单词间的空格也需要单独的编码。上面的句子中共18个字符（包括字间空格），对这样一个句子进行编码后得到的连续字符通常被称为文本字符串（string）。</p>
+<p class="content">我们需要对字符串中的数字进行编码，例如上面的句子中的27。或许大家会感到疑惑，因为之前我们都是用比特来表示数字的。最简单的，也是最容易想到的做法就是使用二进制数10和111作为2和7的编码。但是这里却不适用。在这个句子中，可以像处理其他的字符一样来处理2和7。它们的编码可以和本身表示的含义无关。</p>
+<p class="content">1874年由法国电报服务公司（French Telegraph Service）职员埃米尔·波多（Emile Baudot）发明了可以打印的电报机，划时代的波多电传码也应运而生。即使在今天来看，这种编码十分“经济划算”，每一个文本字符都采用5位编码。这种编码1877年被法国电报服务公司采纳，后来经唐纳德·默里（Donald Murray）修改，最终在1931年被当年的CCITT组织（Comité Consultatif International Télégraphique et Téléphonique），即现在的国际电信联盟（ITU）定为标准。该编码的正式名称是国际电报字母表第二号（International Telegraph Alphabet No.2）或ITA - 2，在美国常常被称为波多印字电报制（Baudot），不过更准确地说，叫做默里（Murray）编码。</p>
+<p class="content">随着20世纪的到来，Baudot被广泛应用于电传打字机（teletypewriters）。Baudot电传打字机配备了一个输入键盘，这款键盘有些像打字机，但只有30个键和一个空格键。电传打字机键盘上的每一个键实质上都起到了转换器的作用，它负责产生二进制编码并且通过输出电缆逐位传输出去。电传打字机也具备打印功能，通过输入电缆读取编码，触发电磁铁，从而将字符打印在纸上。</p>
+<p class="content">由于Baudot对每个字符采用5位编码，整个系统由32个编码所组成，这些编码的十六进制取值范围从00h到1Fh。下表给出了32个不同编码的十六进制形式及其所对应的字母表中的字符。</p>
+<div class="picture_figure"><img src="../images/00607.jpeg" class="picture_table63" alt="img"/></div>
+<p class="content">编码00h被保留了下来，没有指派给任何值。剩下的31个编码中，字母表中的字符占了26个，其余5个用来调整格式，如上表中的楷体排版的语句所示。</p>
+<p class="content">编码04h用来表示空格，通常用于分隔单词。编码02h和08h表示的是掉头和换行。这些都是电传打字机中的专用术语。当使用电传打字机上打字，一旦到了一行的末尾时，我们通常会按下一个操作杆或按钮。这个操作其实包括两个动作：第一个动作是，使打印机的滑架回到起始位置，这样打印下一行时可以从纸的最左边开始，这就是掉头。第二个动作是，将打印机的滑架移至正在使用中的位置的下一行，这就是换行。在Baudot编码系统中，这两个编码由专门的按键产生。Baudot电传打字机在打印的时候会响应这两个编码以完成相应的操作。</p>
+<p class="content">Baudot系统里怎么没有数字和标点符号呢？其实这是因为编码1Bh中暗藏玄机，它的实际作用是数字转义（Figure Shift）。数字转义编码后的所有的编码都会被解释为数字或标点符号，直到遇到字符转义编码（1Fh），一切就又被解释为字符。下表展示了十六进制编码以及所对应的数字和标点符号。</p>
+<div class="picture_figure"><img src="../images/00608.jpeg" class="picture_table64" alt="img"/></div>
+<p class="content">其实在ITU规范化的编码方案中，05h、0Bh和16h是留做他用的，官方说法为“国内使用”。表中列出的是这几个编码在美国使用时的含义。某些欧洲国家将这些编码代表重音符号。响铃编码令电传打字机发出清脆的铃声。“Who Are You”编码用来让打字员激活身份识别机制。</p>
+<p class="content">像莫尔斯码一样，这种5位的编码并没有提供区分大、小写的方法。下面这个句子：</p>
+<div class="picture_figure"><img alt="img" src="../images/00609.jpeg" class="picture_figure454"/></div>
+<p class="content">表示成编码的十六进制数据流就是：</p>
+<div class="picture_figure"><img alt="img" src="../images/00610.jpeg" class="picture_figure455"/></div>
+<p class="content">请注意三个转义码的使用：1Bh出现在数字之前，1Fh出现在数字之后，而数字结束之后又出现了1Bh。这一行编码以掉头、换行符结尾。</p>
+<p class="content">问题出来了，如果把相同的数据流再一次输入到电传打印机，情况就大不一样了，如下所示：</p>
+<p class="content_center"><span class="emphasis_italic">I SPENNT $25 TODAY.</span></p>
+<p class="content_center"><span class="emphasis_italic">8‘03,5 $25 TODAY.</span></p>
+<p class="content">怎么会这样？这是由于在接收到第二行编码之前打印机接收到的最后一个转义码是数字转义码，所以当遇见第二行开头几个编码时，打印机将它们解释成数字。</p>
+<p class="content">这种问题产生的根源就是采用了转义码，这的确很让人头痛。尽管Baudot电传码是很简洁实用的编码，但是，我们更加希望采用能唯一表示字符、数字及标点符号的编码方案，如果还能对大、小写进行区分那就更好不过了。</p>
+<p class="content">如果想知道比Baudot更好用的编码系统中一个编码需要多少比特，我们需要做几个小加法：所有的大小写字母加起来共需52个编码，0～9数字需要10个编码，加起来共有62个，如果算上一些标点符号，数量超过了64个，也就是说，一个编码至少需要6比特。但无论如何字符数应该不超过128个，而且应该远远不够128个，也就是说编码长度不会超过8位。</p>
+<p class="content">所以，答案就是7。在采用7位编码时，不需要转义字符，而且可以区分字母的大小写。</p>
+<p class="content">这些字符编码是什么样子的呢？其实我们可以随意编码。如果我们要去打造一台自己的计算机，计算机硬件的每一个部分都要亲自制作，计算机内部的程序也要亲手编写，而且不打算把这台计算机与其他的进行连接，那么就完全可以构造自己的编码系统。其实也很简单，就是给每一个字符指派一个唯一的编码。</p>
+<p class="content">但是这种自己制造计算机，并且独立使用的情况实在是太少了，所以所有人都遵循并使用统一化的编码，计算机的存在才有意义。这样一来，使用不同方法制造出的计算机之间就可以互相兼容，甚至可以互相交流文本信息。</p>
+<p class="content">这样一来，随意的编码就显得不太合适了。当我们使用计算机来处理文本时，如果字母表中字母的编码是按顺序来的，就会给我们的工作带来很多便利，显而易见的优点就是，字母的排序和分类将变得简单易行。</p>
+<p class="content">幸运的是，这种标准已经存在并且被广泛使用，它被称为美国信息交换标准码（American Standard Code for Information Interchange），简称为ASCII码，发音很像ASS-key。从1967年正式公布至今，它一直是计算机产业中最重要的标准。不过还有一个大的例外（后面会讲到），无论何时，当你在计算机上处理文本时，总会在不经意间使用到ASCII码。</p>
+<p class="content">ASCII码是7位编码，它的二进制取值范围为0000000～1111111，对应于十六进制就是00h～7Fh。现在我们一起来讨论下ASCII码，但我不建议从开始学起，因为相对于后面的编码，前32个编码理解起来还有一点难度。所以我们从第2组32个编码开始学习，它包括标点符号和10个数字。下表列出了这32个字符及相应的十六进制编码。</p>
+<div class="picture_figure"><img src="../images/00611.jpeg" class="picture_table65" alt="img"/></div>
+<p class="content">值得注意的是20h代表空格符，它的作用是将单词或句子隔开。</p>
+<p class="content">接下来的32个编码是大写字母和一些附加的标点符号的编码。除了@符号和下画线之外，其余的符号很难在打字机上找到。它们真正出现的地方是标准计算机键盘，下表列出了这些字符及相应的十六进制编码。</p>
+<div class="picture_figure"><img src="../images/00612.jpeg" class="picture_table66" alt="img"/></div>
+
+<div class="picture_figure"><p class="picture_table_title">续表</p><img src="../images/00613.jpeg" class="picture_table67" alt="img"/></div>
+<p class="content">再接下来的32个编码是所有小写字母和一些附加的标点符号及其对应的十六进制编码，这些字符也很少在打字机上出现。</p>
+<div class="picture_figure"><img src="../images/00614.jpeg" class="picture_table68" alt="img"/></div>
+<p class="content">注意，表的最后不包括7Fh及其对应的字符。如果你统计一下，就会发现这三张表共涵盖了95个字符。由于ASCII码的编码长度为7位，所以最多可以表示128个编码，这样算下来还剩33个编码可用。下面我们通过几个简短的例子学习一下编码。</p>
+<p class="content">像这样一段字符串：</p>
+<p class="content_center"><span class="emphasis_italic">Hello, you!</span></p>
+<p class="content">转换成ASCII码，用十六进制数表示如下：</p>
+<p class="content_center">48 65 6C 6F 2C 20 79 6F 75 21</p>
+<p class="content">这段编码中，除了普通的字符，逗号（编码2C）、空格（编码20）和感叹号（编码21）容易遗漏，需要额外注意。我们再来看一个例子：</p>
+<p class="content_center"><span class="emphasis_italic">I am 12 years old.</span></p>
+<p class="content">它用ASCII码表示为：</p>
+<p class="content_center">49 20 61 6D 20 31 32 20 79 65 61 72 73 20 6F 6C 64 2E</p>
+<p class="content">有意思的是数字12的表示方法。在这段编码串中，它被表示成十六进制数31h和32h，也就是数字1和2的ASCII码的组合。当数字12以文本流的身份出现时，不应该用十六进制码01h和02h，或者BCD码12h，或者0Ch来表示。因为这些编码在ASCII码中表示其他的意思。</p>
+<p class="content">在ASCII码中，一个大写字母与其对应的小写字母的ASCII码值相差20h。这种规律大大简化了程序代码的编写，例如一段将特定的字符串变成大写的程序。假设有一个字符串存放在内存的某个区域，每个字符占据一个字节。下面是一段8080子程序，初始状态下字符串的首地址存放在寄存器HL中；寄存器C存放字符串的长度，也就是字符的个数。</p>
+<div class="picture_figure"><img src="../images/00615.jpeg" class="picture_figure456" alt="img"/></div>
+
+<p class="content">还有另外一种方法也可以将小写字母减去20h而转换成大写字母，如下所示：</p>
+<div class="picture_figure"><img src="../images/00616.jpeg" class="picture_figure457" alt="img"/></div>
+<p class="content">ANI指令（AND Immediate）用来“与”一个立即数。在上面这个例子中，累加器中的数值与DFh执行“按位与”操作，其中DFh转换成二进制数就是11011111。“按位与”操作就是把两个数分别转换成二进制，然后将对应的位进行“与”操作。这个例子中，除了自左向右数的第3位被置成0外，A中的其他位均被保留。通过将这一位设置为0，我们实现了将小写字母的ASCII码转换成大写字母的目的。</p>
+<div class="picture_figure"><img src="../images/00617.jpeg" class="picture_table69" alt="img"/></div>
+
+<div class="picture_figure"><p class="picture_table_title">续表</p><img src="../images/00618.jpeg" class="picture_table70" alt="img"/></div>
+<p class="content">前面讲到的95个编码也被称为图形文字（graphic characters），因为它们可以被显示出来。其实ASCII码还包含33个控制字符（control characters），它们用来执行某一特定功能，因而不用显示出来。为了完整地讨论ASCII编码，下面将这33个控制字符也列举了出来，有一些的确很难理解，不过不用在意。其实在ASCII码公布以后，当时人们更多的是想把它用在电传打字机上，所以，如今其中的许多编码已经渐渐离开了人们的视线。</p>
+<p class="content">人们最初的想法是可以在图形字符中使用控制字符，以便对文本格式进行基本的调整。举个例子或许会帮助你更好地理解这种做法：假如有一台电传打字机或者打印机，它负责解析ASCII码，解析之后做出相应的操作，最后在纸上打印出字符。设备的打印头每打印一个字符就向右移动一格，通过这种方式来对ASCII码做出响应。而要实现这些操作就需要用到控制字符。</p>
+<p class="content">举个例子来讲，看看下面这个十六进制字符串：</p>
+<div class="picture_figure"><img alt="img" src="../images/00619.jpeg" class="picture_figure458"/></div>
+<p class="content">编码09代表水平制表符，简写为Tab。假设打印的过程中，所有水平排列字符的起始位置都为0，Tab的作用是在下一个水平位置即在距前一个字符的间距为字符长度8倍的位置打印下一个字符，如下所示：</p>
+<div class="picture_figure"><img alt="img" src="../images/00620.jpeg" class="picture_figure459"/></div>
+<p class="content">这种简单有效方法使得字符可以保持按列对齐。</p>
+<p class="content">有一些控制字符甚至沿用至今，例如换页符（12h），它使得打印机跳出当前页，并开始准备打印下一页。</p>
+<p class="content">回退符可以用来打印复合字符，尤其是在一些旧的打印机上。假设计算机要控制电传打字机，使其不仅打印小写字母e，还要将其重音标记出来，即è。我们可以使用回退符来实现，十六进制码为：65 08 60。</p>
+<p class="content">计算机中的掉头和换行与Baudot码中表示的意思相同，它们可以算得上是控制符中最重要的两个符号。在打印机中，掉头符使得打印头换行并转移至当前页面的最左端，换行符使打印头转移至当前位置下一行。这两种操作都使得打印头移至新的一行。掉头符通常用来另起一行继续打印，换行符通常在不需要移到页面最左端而换行时使用。</p>
+<p class="content">尽管ASCII码在计算机领域可以说是一统江湖，但许多IBM大型机上却没有采用这种标准。例如，System /360产品内部采用的是IBM自发研制的8位字符编码系统，也被称为扩展的BCD交换码（Extended BCD Interchange Code），或EBCDIC（英文中的发音为EBB-see-dick）。EBCDIC是早期的6位BCDIC编码的扩展形式，BCDIC的起源于IBM的打孔卡。一张打孔卡——存储容量为80个文本字符——1928年由IBM首创并沿用了将近50年，它的外观如下图所示。</p>
+<div class="picture_figure"><img alt="img" src="../images/00621.jpeg" class="picture_figure460"/></div>
+<p class="content">在考虑打孔卡与8位EBCDIC字符码的关系时，需要知道，在几代技术的影响下，这种编码也历经几十年的演变。因此，打孔卡与EBCDIC之间的逻辑性和一致性也逐渐消失了。</p>
+<p class="content">打孔卡上每一列穿出的一个或多个矩形孔代表一个字符，而这些字符一般也打印在卡片的顶部。最下面的10行由数字标识，自上向下分别为第0行、第1行直到第9行。第0行上面的一行通常不出现数字，称为第11行，顶端为第12行，这里没有第10行。</p>
+<p class="content">以下面列举一些IBM打孔卡的常用术语：第0～9行称做数字行（digit rows）或数字穿孔（digit punches），第11和12行被称做区域行（zone rows）或区域穿孔（zone punches）。由于不统一，IBM打孔卡用起来有时会有些混乱：比如有的卡片把第0和第9行看做是区域行而不是数字行。</p>
+<p class="content">一个EBCDIC字符码由8位比特组成，进一步可以细分为高半字节（4比特）与低半字节。低半字节是BCD码，与字符的数字穿孔保持一致，高半字节与区域穿孔的编码保持一致（而且与区域穿孔一一对应）。回忆一下第19章的BCD编码原理，其本质是采用二进制数对十进制数进行编码（binary-coded decimal）——其中数字0～9都利用不同的4位二进制数进行编码。</p>
+<p class="content">数字0～9并不需要区域穿孔进行额外表示，它们的EBCDIC编码的高半字节是1111，代表了区域穿孔不起作用，而0～9的EBCDIC编码的低半字节是数字穿孔的BCD码，如下所示。</p>
+<div class="picture_figure"><img src="../images/00622.jpeg" class="picture_table71" alt="img"/></div>
+<p class="content">大写字母有一些有趣的规律，如果区域穿孔只出现在第12行，则高半字节标识为1100；如果只出现在第11行，则高半字节标识为1101；如果出现在第0行，则高半字节标识1110。下表给出了大写字母及其对应的EBCDIC编码。</p>
+<div class="picture_figure"><img src="../images/00623.jpeg" class="picture_table72" alt="img"/></div>
+
+<div class="picture_figure"><p class="picture_table_title">续表</p><img src="../images/00624.jpeg" class="picture_table73" alt="img"/></div>
+<p class="content">值得注意的是R与S之间编号有跳变。有时在编写程序的时候，尤其是程序中用到EBCDIC编码时，这个容易被忽视的小细节往往会令人抓狂。</p>
+<p class="content">小写与大写字母的数字穿孔是相同的，但它们的区域穿孔不同。在a～i的小写字母，穿孔位于第12行和第0行，高半字节对应的编码为1000；在j～r的小写字母，穿孔位于第12行和第11行，高半字节对应的编码为1001；在s～z的小写字母，穿孔位于第11行和第0行，高半字节对应的编码为1010。小写字母的EBCDIC字符及其对应的十六进制编码如下表所示。</p>
+<div class="picture_figure"><img src="../images/00625.jpeg" class="picture_table74" alt="img"/></div>
+<p class="content">当然，标点符号和控制字符也都有自己的EBCDIC编码，但对于这些字符的编码系统没有必要去深究。</p>
+<p class="content">仔细观察IBM打孔卡，其中每一列细细数下共有12个孔，每个孔代表1位，也就是说可以提供12位的编码信息，不是吗？我们其实可以用打孔卡上每一列12孔中的7个来表示ASCII码。但是，这种方案有一个非技术方面的缺陷，那就是太多的穿孔将使得卡片变得很脆弱，容易折断。</p>
+<p class="content">采用8位编码的EBCDIC中其实还有很多编码未定义，这也说明当年ASCII码采用了7位编码也是合乎情理的。在ASCII码刚刚问世的那个年代，存储器的价格贵得令人咋舌，有一些观点认为ASCII码可以用6位编码并配合转义字符来使用，这样既可以区分大小写又节约了存储器。这种方案并没有被采纳，当时还有一些人认为ASCII码应采用8位编码，他们对计算机的体系结构有了一个大胆的推测，即计算机应该按字节存储，7位存储是不合适的。今天来看，8位的字节存储已经作为了一项标准。尽管ASCII码从技术的本质上来看是7位编码，但仍以8位的形式存储。</p>
+<p class="content">在字节与字符之间创建一种等价关系大大简化了我们的工作，举例来讲，如果要粗略估计一个文本文件所需要的存储空间，只要统计字符数就可以了。这时前面学过的K（kilos）和M （Megas）就派上了用场，用它们来表示文本所占据的计算机存储空间更加通俗易懂。</p>
+<p class="content">传统的排版格式是：一张大小为8.5×11英寸的打印纸，采用双倍行距，1英寸的页边距，每页可以容纳约27行的正文。每行宽度约为6.5英寸，每英寸可容纳10个字符，通过计算可以知道每页共包含约1750个字节。如果页面采用单倍行距，那么打印纸的容量约为原先的2倍，即3.5 KB。</p>
+<p class="content">翻开一本《纽约客》（<span class="emphasis_italic">The New Yorker</span>）杂志，可以看到杂志每页有3栏，每栏包含60行，每行约有40个字符，这样算下来每页大致包含7200个字符（也可以说成字节）。</p>
+<p class="content">《纽约时报》（<span class="emphasis_italic">New York Times</span>）每一页包含6栏。假如页面都是文字而不包含标题和图片（这其实是不大可能的），那么可以认为每栏包含155行，每行大约容纳35个字符，这样算下来整个页面共包含32,550个字符，即32 KB。</p>
+<p class="content">一般来讲精装书每页大约包含500个单词。根据统计，每个单词平均占用5个字母——更确切地来讲应该是6个字母，因为单词与单词之间是通过空格来分隔的，所以要一并统计在内。这样算下来，书的每一页大约包含3000个字符。假设每本书平均页数为333，这个估计或许和实际不符，但如果这样估算的话，每本书平均容量为1 MB。</p>
+<p class="content">不得不承认的是，书与书之间千差万别，所以上面这些也只是估算，下面列举出一些实际数据。</p>
+<p class="content">斯科特·菲茨杰拉德（F.Scott Fitzgerald）的《了不起的盖茨比》（<span class="emphasis_italic">The Great Gatsby</span>）大约300 KB。</p>
+<p class="content">塞林格（J.D.Salinger）的《麦田守望者》（<span class="emphasis_italic">Catcher in the Rye</span>）大约400 KB。</p>
+<p class="content">马克· 吐温（Mark Twain）的《哈克贝里· 弗恩历险记》（<span class="emphasis_italic">The Adventures of Huckleberry Finn</span>）大约540 KB。</p>
+
+<p class="content">约翰·斯坦贝克（John Steinbeck）的《愤怒的葡萄 / 怒火之花》（<span class="emphasis_italic">The Grapes of Wrath</span>）大约1MB。</p>
+<p class="content">赫尔曼·梅尔维尔（Herman Melville）的《白鲸》（<span class="emphasis_italic">Moby Dick</span>）大约1.3 MB。</p>
+<p class="content">亨利·菲尔丁（Henry Fielding）的《弃儿汤姆·琼斯的历史》（<span class="emphasis_italic">The History of Tom Jones</span>）大约2.25 MB。</p>
+<p class="content">玛格丽特·米切尔（Margaret Mitchell）的《乱世佳人》（<span class="emphasis_italic">Gone With the Wind</span>）大约2.5 MB。</p>
+<p class="content">斯蒂芬·金（Stephen King）的《末日逼近》（<span class="emphasis_italic">The Stand</span>）大约2.7 MB。</p>
+<p class="content">列夫·托尔斯泰（Leo Tolstoy）的《战争与和平》（<span class="emphasis_italic">War and Peace</span>）大约3.9 MB。</p>
+<p class="content">马塞尔·普鲁斯特（Marcel Proust）的《追忆似水年华》（<span class="emphasis_italic">Remembrance of Things Post</span>）大约7.7 MB。</p>
+<p class="content">美国国会图书馆（The United States Library of Congress）藏书约为2000万本，大概有20万亿字符，从存储器角度来说，数据总量为20 TB（这还不包括图书馆中的大量珍贵照片和录音资料）。</p>
+<p class="content">尽管ASCII码是计算机领域最重要的标准，但它并不是十全十美的。它的问题就蕴含在它的全称中——American Standard Code for Information Interchange，它是太美国化了！即使那些以英语为主要语言的国家，ASCII码也并不适用。ASCII码中包含美元符号，而英镑符号怎么找不到呢？还有西欧国家语言中用到的重音符号在哪里？更别说使用非拉丁字母的希腊文（Greek）、阿拉伯文（Arabic）、希伯来文（Hebrew）和西里尔文（Cyrillic）等欧洲国家了。此外，印度及东南亚地区用到的婆罗门手记、北印度的Devanagari方言、孟加拉语、泰语、西藏语也并没有在ASCII码中出现。简单的7位编码在面对数以万计的中国、日本、韩国的象形文字，以及奇怪的朝鲜文音节时也显得力不从心。</p>
+<p class="content">在ASCII码的发展历程中，尽管没有在引入非拉丁字母方面做过工作，但开发者也一直在积极思考与改进编码系统，使其适用于其他国家。根据公布的ASCII码标准，有10个ASCII码保留位（40h、5Bh、5Ch、5Dh、5Eh、60h、7Bh、7Ch、7Dh和7Eh）可被重新定义，这样就便于特定国家的使用。另外，英镑符号（￡）可以在需要时替换特殊符号（#），通用货币符号（¤）可以在需要时替换美元符号（$）。当然，为使得这一替换过程不发生混淆，如果在文本文件中使用了这些重定义的符号，相关人员都必须知道这些变化。</p>
+<p class="content">大多数计算机系统采用8位编码来存储字符，我们也自然地想到设计一种扩展的ASCII字符集，这样可以包含256个字符，比原先扩展了一倍。在这种字符集中，编码00h～7Fh与原ASCII码保持一致；编码80h～FFh可以用来引入其他字符。这项技术已经被用来定义附加的字符编码，比如前面提到过的重音字母以及非拉丁字母。下面这个例子是对96个额外字符的ASCII码扩展，称为第1号拉丁字母表（Latin Alphabet No.1），其中包括A0h～FFh字符编码。在该表中，每个字符的十六进制编码的高半字节由第一行给出，低半字节由第一列给出，如下表所示。</p>
+<div class="picture_figure"><img alt="img" src="../images/00626.jpeg" class="picture_figure461"/></div>
+<p class="content">编码A0h对应的字符为不中断空格（No-Break Space）。通常计算机在对文本进行排版时，会将其划分为行和段，行与行之间以空格符号区分（空格所对应的ASCII码为20h）。编码A0h显示为空格，但是并不表示行与行之间被断开。比如在“WW II”这样一段文字中就可以使用不中断空格。编码ADh被定义为软连字符（soft hyphen），它的用途是连接同一单词之间的音节，在一个单词被不得已划分在两行时就会用到它。</p>
+<p class="content">只可惜问题也随之而来，近几十年来出现了许多不同版本的扩展的ASCII码，多个不同的版本严重影响了编码的一致性，导致了混淆和不兼容。ASCII码被扩展到极致，有的甚至可以对中文、日文和朝鲜文进行编码。其中有一种流行的编码——Shift-JIS，即日本工业标准（Japanese Industrial Standard），利用81h～9Fh表示双字节字符编码的初始字节。通过这种手段，Shift -JIS可对额外的约6000个字符进行编码。只可惜Shift-JIS并不是唯一的采用这种技术的编码系统。在亚洲地区，还有三个类似的双字节字符编码系统（double-byte character sets，DBCS）同样也很流行。</p>
+<p class="content">双字节字符集的确有很多版本，但兼容性并不是它最主要的问题。它的另一个缺陷是，一些字符，特别是通用的ASCII码字符，是用单个字节编码表示的，相比而言，成千上万的象形文字则是双字节编码，这在无形之中增加了使用这种字符集的难度。</p>
+<p class="content">业界一直有一个目标，那就是创建一个独一无二的字符编码系统，它可以用于世界上所有语言文字，从1988年开始，几大著名计算机公司合作研究出一种用来替代ASCII码的编码系统，取名为Unicode（统一化字符编码标准）。相对于ASCII的7位编码，Unicode采用了16位编码，每一个字符需要2个字节。也就是说Unicode的字符编码范围为0000h～FFFFh，总共可以表示65,536个不同字符。全世界所有的人类语言，尤其是经常出现在计算机通信过程中的语言，都可以使用同一个编码系统，而且这种系统还具备很高的扩展性。</p>
+<p class="content">Unicode编码其实并不是从零开始设计的，前128个字符编码——即0000h～007Fh——与ASCII码是一致的。Unicode编码中的00A0h～00FFh与先前讲到的第1号拉丁字母表是一致的。全世界很多标准也被一同收录在Unicode中。</p>
+<p class="content">尽管相对于之前讲过的一些字符编码系统，可以说Unicode做出了有效地改进，但这也不能确保它被全世界广泛采纳。ASCII码，包括数不清的有一点小缺陷的扩展ASCII码已经在计算机领域根深蒂固，想一下子就取代它们并不是轻而易举的。</p>
+<p class="content">对于Unicode来讲，它唯一的问题，就是它改变了字符与存储空间之间“单字符，单字节”的等价对应关系。采用ASCII编码方式存储的著作《怒火之花》，其所占据的存储空间约为1 MB。而如果采用Unicode编码，约占2 MB。为了使编码系统兼容，Unicode在存储空间上付出了相应的代价。</p>
+</body></html>

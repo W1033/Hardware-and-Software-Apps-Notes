@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
+  <head>
+    <title>15　字节与十六进制</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="../page_styles.css"/>
+</head>
+  <body class="calibre">
+
+<h1 id="txt015_1" class="sect">15　字节与十六进制</h1>
+<p class="content">通过对上一章中两类改进加法机的剖析，我们学习了数据路径（Data Path）这个概念。纵观整个电路的脉络，每8个比特流为一组，如潺潺溪流般在器件与器件之间流动。其实，这8位比特流就是加法器、锁存器以及数据选择器的输入形式，同时它也是这些器件单元的输出形式。这8位的比特流可以用开关的不同状态组合所定义，而且可以用灯泡的亮灭来显示。这样一来，这些电路中数据路径的位宽（bits wide）就是8。为什么我们要把它定义为“8”位呢？为什么没有定义为6位、7位、9位或10位呢？</p>
+<p class="content">要想用偷懒的方式回答上面这个问题也很简单，答案就是这些加法机都是对第12章中原始加法机的改进，而它所“流传”下来的位宽恰好就是8位。但是追根究底，原始加法机偏偏是8位其实没有什么特别的原因。只不过在每次使用8位位宽时，一切工作都显得非常方便——一种优雅的比特化（biteful）的比特流。或许大家已经感觉到我在极力隐瞒一些东西，无法否认，其实我心中一直都很清楚（或许你也知道）：8比特代表一个字节（byte）。</p>
+<p class="content">字节这个词最早起源于1956年前后，由IBM公司提出。最早的拼写方式是bite，但为了避免与bit混淆用y代替了i。曾几何时，字节仅表示某一数据路径上的位数，直到20世纪60年代中叶，在IBM的360系统的发展下（一种大规模复杂的商用计算机），字节这个词逐渐开始用来表示一组8比特数据。</p>
+
+<p class="content">由于有8位，一个字节的取值范围为00000000到11111111。相应地，它还可以表示成为0～255之间的正整数，如果将一个数的补码作为其相对应的负数，那么一个字节可以表示在-128～127范围内的正、负整数。一个给定的字节可以代表2<span class="superscript">8</span>，即256种不同事物中的一个。</p>
+<p class="content">让我们再来看看“8”这个数字，当8作为比特流的一种尺度，它的确表现出了非常完美的特质。字节在很多方面都比单独的比特更胜一筹。IBM采用字节有一个很重要的原因，就是这样一来数字就可以按照BCD形式（第23章中将会讲述）方便地保存。在本章随后的讲述中，我们会发现凑巧的是：全世界大部分书面语言（除了中文、日文以及朝鲜文中使用的象形文字体系）的基本字符数都少于256，所以字节是一种理想的保存文本的手段。字节同样适合表示黑白图像中的灰度值，这是由于肉眼能区分的灰度约为256种。当一个字节无法表示所有信息（如刚提到的中文、日文以及朝鲜文中使用的象形文字体系等），我们只需采用两个字节——就可以表示2<span class="superscript">16</span>也就是65536个不同的物体——这也是一种很好的解决方案。</p>
+<p class="content">字节的一半——即4比特——我们称之为半字节（nibble，也可拼写成nybble），在计算机这个领域，它并不像字节那样经常使用。</p>
+<p class="content">由于字节在计算机内部出现的频率较高，如果可以使用一种简洁的方式将它的内在含义准确表达出来，将会为我们带来很多方便。假如一个8位二进制数表示为10110110，这种表达方式自然而又直观，但它还不够简洁。</p>
+<p class="content">我们完全可以采用十进制表示法来表示字节，但从二进制转换到十进制需要进行一系列计算——计算方法并不复杂，但是比较麻烦。我曾在第8章曾介绍过一种直观的计算方法。因为每一位二进制数对应着2的不同幂，因此我们可以把二进制数写到第一行，在底下写出每一位二进制数对应的2的乘方数，然后采用“列相乘、行相加”就可以得到对应的十进制数。下图表示了10110110的转换过程。</p>
+<div class="picture_figure"><img alt="img" src="../images/00403.jpeg" class="picture_figure313"/></div>
+<p class="content">把十进制数转换为二进制数就需要一点点技巧了。我们可以用这个十进制数不断除以递减排列的2的幂，每除一次得到的商就是所要求的二进制数中的一位，而余数成为下一次运算的除数，它的作用是除以下一个较小一点的2的幂。下图表示了十进制数182转换成二进制形式的过程。</p>
+<div class="picture_figure"><img alt="img" src="../images/00404.jpeg" class="picture_figure314"/></div>
+<p class="content">第8章对这种计算方法有更详细的描述。不过，在十进制数和二进制数之间进行转换还需用到一些工具，例如要借助笔和纸进行一系列演算。</p>
+<p class="content">第8章中我们还学到了八进制数，也称为八进制数字系统。这种系统仅使用到了数字0、1、2、3、4、5、6还有7。八进制数和二进制数之间的转换简洁方便，只要记住0～7这8个数字所对应的3位二进制数即可。下面这张表就表示了这种对应关系。</p>
+<div class="picture_figure"><img src="../images/00405.jpeg" class="picture_figure315" alt="img"/></div>
+<p class="content">假如要把一个二进制数（如10110110）转化为8进制，可以从最右端的数字开始。每3比特看做一组，这样每组便对应着一个八进制数：</p>
+<div class="picture_figure"><img alt="img" src="../images/00406.jpeg" class="picture_figure316"/></div>
+<p class="content">10110110这个字节很容易就表示为八进制数266。这种方法简洁明了，八进制用来表示字节不失为一个好方法。但还是有那么一点美中不足。</p>
+<p class="content">字节可以表示的二进制数的范围为00000000～11111111，如果采用八进制表示，那么相对应的范围也随之变成了000～377。仔细分析下先前的例子，我们从右到左把3位二进制数对应于中间以及最靠右的八进制数，而最靠左的八进制数却是由2位二进制数对应的。如果我们将16位二进制数直接表示为八进制会得到如下结果：</p>
+<div class="picture_figure"><img alt="img" src="../images/00407.jpeg" class="picture_figure317"/></div>
+<p class="content">如果我们把这个16位二进制数平分为两个字节并将其分别表示为八进制数会得到如下所示的不同结果：</p>
+<div class="picture_figure"><img alt="img" src="../images/00408.jpeg" class="picture_figure318"/></div>
+<p class="content">为了使多字节值能和分开表示的单字节值取得一致，我们需要一种可以等分单个字节的系统，按照这种思想，我们可以把每个字节等分成4组，每组2比特（基于4的计数系统）；还可以等分为2组，每组4比特（基于16的计数系统）。</p>
+<p class="content">基于16的计数系统（Base 16），对于我们而言是一种全新的系统。基于16的计数系统也被称为十六进制（hexadecimal），这个单词很容易让我们产生混淆。这是因为很多以hexa-为前缀的单词（比如Hexagon， Hexapod以及Hexameter）都会与6或多或少有些联系。而hexadecimal这个词却偏偏代表了16（Sixteen）这个含义。虽然在《微软出版物风格与技术手册》（<span class="emphasis_italic">The Microsoft Manual of Style for Technical Publications</span>）中明确说明“请勿将十六进制缩写为hex”，但包括我在内的绝大多数人还总是在不经意间使用这种缩写。</p>
+<p class="content">十六进制还有其他一些特别之处。比如在十进制中，我们通常可以用下面这种方式计数：</p>
+<div class="picture_figure"><img alt="img" src="../images/00409.jpeg" class="picture_figure319"/></div>
+<p class="content">我们仔细回忆一下在八进制中，8和9这两个数字是不需要的，就像下面这样：</p>
+<div class="picture_figure"><img alt="img" src="../images/00410.jpeg" class="picture_figure320"/></div>
+<p class="content">同理，四进制计数中我们也不需要4、5、6、7这些数字，就像下面这样：</p>
+<div class="picture_figure"><img alt="img" src="../images/00411.jpeg" class="picture_figure321"/></div>
+<p class="content">在二进制中，这一切变得更加简单，我们所需要的只有0和1：</p>
+<div class="picture_figure"><img alt="img" src="../images/00412.jpeg" class="picture_figure322"/></div>
+<p class="content">十六进制计数和上面所讲的这一系列情况是完全不同的，它需要比十进制更多的数字来计数。十六进制的计数过程将会是下面这种形式：</p>
+<div class="picture_figure"><img alt="img" src="../images/00413.jpeg" class="picture_figure323"/></div>
+<p class="content">上图中10（准确地来说是一个1紧挨着一个0）这个数字代表的准确含义实际上应该是十进制中的16。图中的问号表明我们还需要6个符号来完整表示十六进制系统。这些符号究竟是什么？它们出于何处？仔细想想，原有的计数系统中的符号都有自己的唯一身份，所以应该而且必须引入新的符号。寻找6个新符号对我们来说是小菜一碟，例如下面这几个符号：</p>
+<div class="picture_figure"><img alt="img" src="../images/00414.jpeg" class="picture_figure324"/></div>
+<p class="content">不像我们所使用的大多数数字符号，上面列出的每个符号都很容易识记，而且其背后都隐含着实际数字意义，这种形象的符号使得它们便于记忆。比如这个10加仑的牛仔帽、一个橄榄球（11个人组成一支橄榄球队）、一打（12个）面包圈、一只黑猫（使人们想起不吉利的13）、一轮满月（一般出现在后弦月14天之后的夜晚），一把匕首让人们联想到凯撒大帝（Julius Caesar）在三月的月中（第15日）被刺杀。</p>
+<p class="content">两个十六进制数可以完整地代表一个字节。这也意味着一个十六进制数恰好由4位二进制数组成，即半字节。下面这张表描述了如何在二进制、十六进制、十进制数之间进行转换。</p>
+<div class="picture_figure"><img alt="img" src="../images/00415.jpeg" class="picture_figure325"/></div>
+
+<p class="content">让我们再来看看如何把字节10110110转换成十六进制。</p>
+<div class="picture_figure"><img alt="img" src="../images/00416.jpeg" class="picture_figure326"/></div>
+<p class="content">无论是多字节还是单字节，我们都可以进行转换。</p>
+<div class="picture_figure"><img alt="img" src="../images/00417.jpeg" class="picture_figure327"/></div>
+<p class="content">一个字节能且只能由一对十六进制数来表示。</p>
+<p class="content">只可惜（或许你也松了口气）我们不打算用橄榄球或一打面包圈来表示十六进制数。虽然这种方案完全可行，但它不是很方便也不够正规，有时还会让人感到迷惑。事实上十六进制中缺少的6个符号由6个拉丁字母来表示，就像下面这样：</p>
+<div class="picture_figure"><img alt="img" src="../images/00418.jpeg" class="picture_figure328"/></div>
+<p class="content">下面这张表描述了正规的二进制、十六进制、十进制转换的过程。</p>
+<div class="picture_figure"><img alt="img" src="../images/00419.jpeg" class="picture_figure329"/></div>
+
+<p class="content">这样一来字节10110110就可以表示为十六进制的B6，而不用画一个橄榄球那么麻烦。我们再回忆回忆前面的章节，下面举一个完整的进制转换的例子（用下标代表进制），比如：</p>
+<p class="content">10110110<span class="subscript">TWO</span>（10110110<span class="subscript">2</span>）</p>
+<p class="content">它的四进制形式表示为：</p>
+<p class="content">2312<span class="subscript">FOUR</span>（2312<span class="subscript">4</span>）</p>
+<p class="content">它的八进制形式表示为：</p>
+<p class="content">266<span class="subscript">EITHT</span>（266<span class="subscript">8</span>）</p>
+<p class="content">它的十进制形式表示为：</p>
+<p class="content">182<span class="subscript">TEN</span>（182<span class="subscript">10</span>）</p>
+<p class="content">与此类似，它的十六进制形式可以表示为：</p>
+<p class="content">B6<span class="subscript">SIXTEEN</span>（B6<span class="subscript">16</span>）</p>
+<p class="content">但是这种写法有点累赘，幸好还有几种表达十六进制数通用方法。你还可以用如下方法表示：</p>
+<p class="content">B6<span class="subscript">HEX</span></p>
+<p class="content">在本书中将使用一种更加简洁实用的方法，那就是用一个小写的h紧跟在数字后边表示这个数是以十六进制表示的，就像这样：</p>
+<p class="content">B6h</p>
+<p class="content">通过分析可以得到十六进制数的每一位代表16的不同整数幂的倍数，如下图所示。</p>
+<div class="picture_figure"><img alt="img" src="../images/00420.jpeg" class="picture_figure330"/></div>
+
+<p class="content">十六进制数9A48Ch可以表示为如下形式：</p>
+<div class="picture_figure"><img src="../images/00421.jpeg" class="picture_figure331" alt="img"/></div>
+<p class="content">这个数用16的乘方表示可以写为：</p>
+<div class="picture_figure"><img src="../images/00422.jpeg" class="picture_figure332" alt="img"/></div>
+<p class="content">也可以将16的幂进一步展开，写为如下形式：</p>
+<div class="picture_figure"><img src="../images/00423.jpeg" class="picture_figure333" alt="img"/></div>
+<p class="content">我们可以仔细想想，如果只把一个数字（比如9，A，4，8和C中的任何一个）单独列举出来，而且不使用任何下标来指明其进制数，这种做法并不会产生二义性。无论在十进制还是十六进制下，一个单独的9仅代表9；而A的出现也说明了它本身是一个十六进制数——等价于十进制中的10。</p>
+<p class="content">我们可以拿起笔和纸进行演算了，把十六进制数转换成十进制数：</p>
+<div class="picture_figure"><img src="../images/00424.jpeg" class="picture_figure334" alt="img"/></div>
+<p class="content">运算的最后结果是631,948。这就是一个十六进制数转换成为十进制数的完整过程。</p>
+<p class="content">下面给出了一种模板，它可以帮助我们把4位十六进制转换成为十进制。</p>
+<div class="picture_figure"><img alt="img" src="../images/00425.jpeg" class="picture_figure335"/></div>
+
+<p class="content">下面我们来看一个例子，把79ACh转化成为十进制数。需要牢记在心的就是A和C分别代表10和12。</p>
+<div class="picture_figure"><img alt="img" src="../images/00426.jpeg" class="picture_figure336"/></div>
+<p class="content">十进制数转换为十六进制数通常涉及除法运算。我们知道，小于或等于255的数用1个字节就足以表示，也就是两个十六进制数。如何来求出这两个数呢？通常可以用这个数除以16，分别得到商和余数，商作为结果保留，而余数则作为下次运算的除数。我们举一个先前讲过的例子来进一步阐述运算法则：十进制数182，除以16，商为11（在十六进制中表示为B），余数为6，所以它的十六进制为B6h。</p>
+<p class="content">如果被转化的十进制数小于65,536，那么就可以使用少于4位的十六进制数来表示。下面给出一个十进制向十六进制数转化的一个模板。</p>
+<div class="picture_figure"><img alt="img" src="../images/00427.jpeg" class="picture_figure337"/></div>
+<p class="content">使用时首先把十进制写到左上角的方框里。这个方框代表着第一个被除数，然后除以第一个除数4096，得到的商放到被除数所对应的下面的方框里，而将余数放到被除数右边的方框里。这时将余数作为新的被除数去除以256。利用这个规则，通过反复迭代就可以得到最终结果。下面这幅图向我们展示了十进制数31,148转换成十六进制数的过程。</p>
+<div class="picture_figure"><img alt="img" src="../images/00428.jpeg" class="picture_figure338"/></div>
+<p class="content">显而易见，十进制数的10和12代表着十六进制中的A和C，计算得到的最后结果就是79ACh。</p>
+
+<p class="content">这个方法存在一个小小的问题，那就是如果使用计算器帮助你进行除法运算，它不会显示每步运算得到的余数是多少。如果让计算器去运算31,148除以4096，它的屏幕上只会出现7.6044921875。我们可以用倒推的方法计算余数，用4096乘以7（得到28,672），从31,148中减去它，这是一种办法。也可以用4096乘以0.6044921875，也就是计算器运算结果的小数部分（现在市面上很多计算器已经具备了十进制和十六进制数之间的转换功能）。</p>
+<p class="content">还有一种转换小于65,535的十六进制数的方法，首先我们把原数通过除以256的方式将其分为两个字节。接下来对于每个字节，再分别除以16。下图是运算过程使用到的模板。</p>
+<div class="picture_figure"><img alt="img" src="../images/00429.jpeg" class="picture_figure339"/></div>
+<p class="content">我们采用自顶向下的方式。每一次除法完成后，就将其得到的商放入除数左下方的方框里，而余数进入右边的方框里。下图举例说明了十进制数51,966的转换过程。</p>
+<div class="picture_figure"><img alt="img" src="../images/00430.jpeg" class="picture_figure340"/></div>
+<p class="content">最后我们得到了四个1位的十六进制数字，其十进制值分别是12、10、15和14，转换过来就是CAFE，无论怎么看它都更像一个单词，很难想象它其实是一个数字（我想应该没人愿意点一杯叫做56,495的东西，然后把它当作咖啡喝下去吧）！</p>
+<p class="content">对于每种计数系统，我们都可以描绘出相应的操作运算表，下面是十六进制的加法运算表。</p>
+<div class="picture_figure"><img alt="img" src="../images/00431.jpeg" class="picture_figure341"/></div>
+
+<p class="content">使用这张表可以方便地仿照一般的加法运算来对十六进制数进行加运算，如下例所示：</p>
+<div class="picture_figure"><img alt="img" src="../images/00432.jpeg" class="picture_figure342"/></div>
+<p class="content">回忆一下第13章的内容，我们讨论过可以用一个2的补数来表示与其相对应的负数。如果我们处理的是带符号的8位二进制数，那么所有负数的最高位都为1。在十六进制系统中，最高位为8、9、A、B、C、D、E或F的两位带符号数都是负数，因为这些十六进制数对应的二进制数的最高位为1。例如99h可以表示无符号的十进制数153（你必须清楚它是单字节的无符号数），也可以表示十进制的-103（这时它被看做有符号数）。</p>
+<p class="content">奇妙的是，99h这个十六进制字节从某种意义上来讲，也代表着十进制的99！我们都非常想知道原因，不过这种说法似乎和先前所学到的所有东西相抵触。我会在第23章中进行详细解释。但在此之前，我们必须先讨论一下存储器方面的知识。</p>
+</body></html>
