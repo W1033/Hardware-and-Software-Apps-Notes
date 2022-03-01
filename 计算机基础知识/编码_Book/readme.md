@@ -1,6 +1,6 @@
 # Code: The Hidden Language of Computer Hardware and Software
 
-编码:隐匿在计算机软硬件软硬件背后的语言
+编码:隐匿在计算机软硬件背后的语言
 
 - [美] Charles Petzold
 - 左飞/薛佟佟
@@ -174,15 +174,15 @@ Additional Info: 下图来自维基百科。
 
 一组含有2个点或划的编码组合，可以给我们呈现出4个字母——I，A，N和M。
 
-<img src="./readme.assets/00011.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00011.jpeg" style="display:block; width:40%;">
 
 一组含有3个点或划的莫尔斯码可以为我们表示更多的字母。
 
-<img src="./readme.assets/00012.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00012.jpeg" style="display:block; width:40%;">
 
 最后（如果我们不想考虑存在数字和标点符号的莫尔斯码的情况），一串由4个点或划组成的莫尔斯码就可以表示16个字符。
 
-<img src="./readme.assets/00013.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00013.jpeg" style="display:block; width:40%;">
 
 
 综合以上数据来看，这四张表包含了2＋4＋8＋16组码字，总共表示了30个字母，比拉丁字母表的26个字母还要多出4个。所以，你会注意到最后一个表中有4组编码是用来表示重音字母的。
@@ -193,16 +193,16 @@ Additional Info: 下图来自维基百科。
 
 我们可以用如下这样一个列表来总结这个有趣的规律。
 
-<img src="./readme.assets/00014.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00014.jpeg" style="display:block; width:40%;">
 
 在这四个表中，每张表的码字数都是前一张表码字数量的两倍，因此如果第一张表含有2个码字，那么第二张表则含有2×2个码字，而第三个表就有2×2×2个码字。下面用另一种方式呈现这个规律。
 
-<img src="./readme.assets/00015.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00015.jpeg" style="display:block; width:40%;">
 
 当然，如果我们遇到了数字的自乘，就可以通过幂的方式来表示它。例如，2×2×2×2可以记作2<span class="superscript">4</span>（2的4次幂）。数字2、4、8和16都是以2为底数的幂值，因为你可以通过使其自身乘2来得到它们。由此我们的总结列表也可以写成下面这种样子。
 
 
-<img src="./readme.assets/00016.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00016.jpeg" style="display:block; width:40%;">
 
 现在这个表已经变得很简洁了。如果知道了码字中“点”和“划”的数目，那么以这个数目为指数的2的幂运算结果就是其总共可以表示的码字数。我们可以用下面这个简单的公式来概括上述表格所表示的内容：
 
@@ -214,7 +214,7 @@ Additional Info: 下图来自维基百科。
 
 这张图给出了所有字母及其所对应的由“点”和“划”组成的连续序列。当对一串码字进行解码时，我们需要沿着箭头从左向右进行搜寻。以“点-划-点”的码字为例来说，当你需要找出这串码字所代表的字母时，应首先从图的左边开始，选择“点”的分支；然后继续沿着箭头向右选择“划”，接着又是一个“点”。找到最后一个“点”时结果就会紧随其后出现了，没错就是字母“R”。
 
-<img src="./readme.assets/00017.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00017.jpeg" style="display:block; width:40%;">
 
 如果仔细想一想，你就会发现构建这样一个表对于定义莫尔斯码规范来说是很必要的。首先，它确保了我们不会对不同的字母定义相同的码字。其次，通过这个表我们可以用尽可能短的码字来表示所有的字母，而避免产生编码长度上的浪费。
 
@@ -228,7 +228,7 @@ Additional Info: 下图来自维基百科。
 
 利用它就可以继续计算出更长位数的点划序列所能表示的码字数目了。
 
-<img src="./readme.assets/00018.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00018.jpeg" style="display:block; width:40%;">
 
 幸运的是，我们并不需要写出所有可能的码字来计算码字的总数目。我们需要做的只是让2不断地与自己相乘。
 
@@ -243,7 +243,7 @@ Additional Info: 下图来自维基百科。
 ### 3　布莱叶盲文与二进制码
 塞缪尔·莫尔斯并不是第一个将书面语言的字母成功编码的人。实际上，在因自己的名字被用来命名某种编码方式而名声大噪的人中，莫尔斯先生也不是第一人。这项荣誉应该归一个法国盲人小伙子所有。尽管他比莫尔斯要晚出生18年，但是他很早就创建了自己的编码规范。他的生平鲜为人知，尽管关于他的故事流传至今的为数不多，但这也足以构成一个引人注目的传奇。
 
-<img src="./readme.assets/00019.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00019.jpeg" style="display:block; width:40%;">
 
 刘易斯·布莱叶（Louis Braille）于1809年生于法国的库普雷，这是一个距离巴黎市东只有25英里的小镇。布莱叶的父亲是一个马具匠人。在布莱叶3岁的时候——一个本不该在父亲的工作间玩耍的年纪——他不小心被一个尖锐的工具刺伤了一只眼睛。伤口感染也影响到了他的另外一只眼睛，最后使他的双目完全失明。按常理，布莱叶将在无知和贫困当中度过自己的一生（就像当时大部分盲人那样），但是小刘易斯对知识的渴望和过人的智慧很快被人们所发现。他最初同其他孩子一样在镇上的小学上学，后来在他10岁的时候，在小镇牧师和一名学校老师的帮助下，布莱叶被送往巴黎皇家盲人学校学习。
 
@@ -263,7 +263,7 @@ Additional Info: 下图来自维基百科。
 
 在布莱叶盲文中，每个在书写文字中用到的符号——具体来说就是字母、数字和标点符号——都被编码成为2×3的点码单元中的一个或者多个凸起的点。这个点码单元包含的点通常使用1到6的数字来编号。
 
-<img alt="img" src="./readme.assets/00020.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00020.jpeg" style="display:block; width:20%;"/>
 
 在现代应用中，使用特殊的打印机或轧花机可以将布莱叶盲文印到纸张上。
 
@@ -278,18 +278,17 @@ Additional Info: 下图来自维基百科。
 
 因此，布莱叶盲文系统能够表示64个不同的码字。下图就是所有可能的64种码字。
 
-<img alt="img" src="./readme.assets/00022.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00022.jpeg" style="display:block; width:70%;"/>
 
 假如发现布莱叶盲文中用到的码字数目少于64，就会有人问了，为什么64个可能的码字中有一些被遗弃不用呢？假如我们发现布莱叶盲文中用到的码字数目超过64，问题就更严重了，我们会怀疑自己的智商，甚至怀疑基本的数学原理——到底2加2是不是等于4。
 
 还是让我们来开始解析布莱叶盲文吧，首先看看基本的小写字母表。
 
-
-<img alt="img" src="./readme.assets/00023.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00023.jpeg" style="display:block; width:70%;"/>
 
 例如，词组“you and me”用布莱叶盲文表示成如下组合：
 
-<img alt="img" src="./readme.assets/00024.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00024.jpeg" style="display:block; width:60%;"/>
 
 注意，一个单词中每个字母所对应的点码单元之间都用一小块空白分开；而单词之间则用一个大的空格（实际上是没有凸点的点码单元）所分隔开来。
 
@@ -299,53 +298,53 @@ Additional Info: 下图来自维基百科。
 
 自从刘易斯·布莱叶发明布莱叶盲文以来，其应用已经扩展到各个领域。目前在英文出版物中最常用的盲文系统被称为二级布莱叶盲文（Grade 2 Braille）。二级布莱叶盲文使用了很多缩写，以便于保存树型结构和提高阅读速度。例如，如果字母的码字单独出现，它们就表示一个普通的单词。以下三排图样（包含“完整的”第三排）为我们展示了这些单词的码字。
 
-<img alt="img" src="./readme.assets/00025.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00025.jpeg" style="display:block; width:70%;"/>
 
 因此，短语“you and me”使用二级布莱叶盲文就可以表示为：
 
-<img alt="img" src="./readme.assets/00026.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00026.jpeg" style="display:block; width:40%;"/>
 
 
 到目前为止，我们已经描述了31个码字——单词间的大空格（即没有凸点的点码单元）以及总共3排每排10个的字母和单词码字。与理论上可以达到的最多码字数——64相比，我们还差得远呢。正如从下面的分析中我们将看到的那样，在二级布莱叶盲文里，没有任何的码字会被浪费。
 
 首先，我们可以使用字母a到j的码字加6号凸点的组合。这些新码字通常用来表示单词中字母串的缩写，还有我们前面所担心的w字母（像上文的二级布莱叶盲文单词编码一样，表示w字母的编码也可以表示一个单词）。
 
-<img alt="img" src="./readme.assets/00027.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00027.jpeg" style="display:block; width:70%;"/>
 
 例如，单词“about”使用二级布莱叶盲文可以记作：
 
-<img alt="img" src="./readme.assets/00028.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00028.jpeg" style="display:block; width:40%;"/>
 
 然后，我们取从a到j的码字，“降低”它们使用的点位，只用到编号为2、3、5和6的点，这样就得到了新的码字。根据上下文环境，它们将被用来表示一些标点符号或者字符串缩写。
 
-<img alt="img" src="./readme.assets/00029.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00029.jpeg" style="display:block; width:70%;"/>
 
 前4个码字分别表示逗号、分号、冒号和句号。需要注意的是，左右括号使用的是相同的码字，但是开闭引号使用的却是不同的码字。
 
 目前为止我们已经定义了51个码字了。“占用3、4、5和6号点”的码字还有很多组没有被定义，下面的6组就是这些被遗漏的码字，我们也用它们来表示一些字符串缩写和其他的标点符号。
 
-<img alt="img" src="./readme.assets/00030.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00030.jpeg" style="display:block; width:70%;"/>
 
 
 表示字符串缩写“ble”的码字很重要，因为当它不是用来作为单词的一部分时，它的出现就意味着之后的码字应被译为数字。表示数字的码字与表示字母a到j的码字是相同的。
 
-<img alt="img" src="./readme.assets/00031.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00031.jpeg" style="display:block; width:70%;"/>
 
 因此，下面这组编码：
 
-<img alt="img" src="./readme.assets/00032.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00032.jpeg" style="display:block; width:40%;"/>
 
 表示的就是数字256。
 
 如果你还要继续下去，那么我们还需要定义7个码字才算完全用满原有的64个码字。它们是：
 
-<img alt="img" src="./readme.assets/00033.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00033.jpeg" style="display:block; width:70%;"/>
 
 第一个码字（4号点凸起）用来表示音调符号（accent indicator）。其他的码字则用来表示缩写的前缀或者其他的功能：4号和6号点凸起的码字（上表的第5个码字），根据上下文用来表示小数点或者强调符号（emphasis indicator）。5号和6号点凸起的编码，表示与“数字标识符”相对应的“字母标识符”（letter indicator）。
 
 最后（如果你现在还为布莱叶盲文如何表示大写字母忧心忡忡的话），我们还有6号凸点——大写标识符。这个符号表示它之后的字母将都被译为大写。例如，我们可以把这套文字系统的原创者的名字记做：
 
-<img alt="img" src="./readme.assets/00034.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00034.jpeg" style="display:block; width:70%;"/>
 
 这串编码分别表示了一个大写字母标识符、字母l、缩写字符串ou、字母i和s，以及一个空格，再加一个大写字母标识符，还有字母b、r、a、i、l、l和e。（在实际应用中，可能会把名字末尾不发音的2个字母省略掉，以进一步压缩编码）
 
@@ -365,7 +364,7 @@ Additional Info: 下图来自维基百科。
 
 你只需要电池和灯泡就可以自己来做一个简单的手电筒了。当然，你还需要一些短的绝缘导线（末端剥去绝缘皮），此外你还必须把这些元件连接起来，如下图所示。
 
-<img alt="img" src="./readme.assets/00035.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00035.jpeg" style="display:block; width:40%;"/>
 
 
 注意，在上图的右边，我们可以看到两个断开的线头，那就是开关。假设这两个电池没有问题，灯泡也没有烧坏，让这两个线头互相接触，就可以点亮灯泡。
@@ -378,7 +377,7 @@ Additional Info: 下图来自维基百科。
 
 众所周知，所有的物质——我们所能看到和感觉到的事物——（通常情况下）都是由叫做原子（atom）的极其微小的东西组成的。每一个原子又由三种粒子构成：它们分别是中子（neutron）、质子（proton）和电子（electron）。你可以把原子的结构画成一个小太阳系，其中中子和质子被束缚在原子核内，而电子则围绕着原子核旋转，犹如行星围绕太阳旋转一样。
 
-<img alt="img" src="./readme.assets/00036.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00036.jpeg" style="display:block; width:30%;"/>
 
 
 我要提醒大家的是，如果你能搞到一个放大倍数很大的显微镜足以看清原子结构的时候，你会发现这张图与原子实际的样子并不一样。但是我们可以把它当做一个研究模型，方便我们进行一些探讨。
@@ -524,30 +523,30 @@ Additional Info: 下图来自维基百科。
 
 也许现在你已经懂得一些关于电学的知识了，所以你打算用电池、灯泡、开关和导线来自制一个“手电筒”。在第一次尝试中，你把电池还有开关在卧室中接好，然后从窗户引出两根导线，绕过围墙，接到你朋友的卧室里，在那里把它们接到一个灯泡上。
 
-<img alt="img" src="./readme.assets/00043.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00043.jpeg" style="display:block; width:40%;"/>
 
 
 尽管图中只画了一节电池，不过实际应用中你也许要用两个。在以后的示意图中，下面的标志表示一个“关”状态（也称断开状态）的开关。
 
-<img alt="img" src="./readme.assets/00044.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00044.jpeg" style="display:block; width:40%;"/>
 
 下图则表示开关是“开”的（也称作闭合状态）。
 
-<img alt="img" src="./readme.assets/00045.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00045.jpeg" style="display:block; width:40%;"/>
 
 本章手电筒跟上一章中的手电筒的工作方式一样，尽管本章的手电筒中用来连接各个部件的导线比原来长了不少。当你把自己房间那端的开关闭合时，你朋友那儿的灯泡就会被点亮。
 
-<img alt="img" src="./readme.assets/00046.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00046.jpeg" style="display:block; width:40%;"/>
 
 现在，你可以用莫尔斯码来发信息了。既然你已经成功地安装了这个“手电筒”，你就可以照样再安装另一套这样的“远距离”设备，好让你的朋友也能够给你发信息。
 
-<img alt="img" src="./readme.assets/00047.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00047.jpeg" style="display:block; width:40%;"/>
 
 恭喜你！你已经架设好了一套双向电报系统！你可能注意到了，这个系统包含了两个相互独立但又完全相同的电路。理论上来说，在你给朋友发送信息的同时，他也可以给你发信息（不过同时阅读和发送电码对你的大脑来说或许是个挑战）。
 
 聪明的你也许可以采用如下方式把这套系统加以改进，这样可以节省25%的导线。
 
-<img alt="img" src="./readme.assets/00048.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00048.jpeg" style="display:block; width:40%;"/>
 
 
 注意，现在这两个电池的负极被连在一起。但是这两个回路（电池到开关到灯泡再到电池）依然是相互独立的，尽管现在它们看起来像连体婴儿一样。
@@ -556,17 +555,17 @@ Additional Info: 下图来自维基百科。
 
 我们来进一步检查一下这个电路，以确保使用时不会有意外发生。首先，当你在自己这端闭合开关的时候，你朋友屋里的灯泡就会点亮。红色的线表示出了电路中电流流动的路径。
 
-<img alt="img" src="./readme.assets/00049.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00049.jpeg" style="display:block; width:40%;"/>
 
 电路的其余部分没有电流通过，因为没有完整路径可以让电子构成回路。
 
 当你没有发送信息，而你的朋友正在发送时，他房间里的开关控制了你房间里灯泡的亮灭。下图的红线仍然表示电流流经的路径。
 
-<img alt="img" src="./readme.assets/00050.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00050.jpeg" style="display:block; width:40%;"/>
 
 当你和你的朋友同时发送信息时，有时两个开关都断开了，有时一个闭合而另一个断开，也有可能两个开关同时闭合。最后一种情况下，电路中电流的示意图如下图所示。
 
-<img alt="img" src="./readme.assets/00051.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00051.jpeg" style="display:block; width:40%;"/>
 
 
 电路的公用部分没有电流通过。
@@ -592,15 +591,15 @@ Additional Info: 下图来自维基百科。
 
 我们来看看新的电路是如何工作的。先从一个单向的电路开始分析。
 
-<img alt="img" src="./readme.assets/00053.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00053.jpeg" style="display:block; width:40%;"/>
 
 如果你使用的是高压电池和大灯泡，你只需要在你和你朋友的房子之间接一根导线，因为可以把地球当成一条导线。
 
-<img alt="img" src="./readme.assets/00054.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00054.jpeg" style="display:block; width:40%;"/>
 
 当你闭合开关时，电流就会按下图流动。
 
-<img alt="img" src="./readme.assets/00055.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00055.jpeg" style="display:block; width:40%;"/>
 
 电子从你朋友房子的地下出发，经过灯泡、导线和你房间的开关，最后回到电池的正极。而电子最初是从电池的负极传入地下的。
 
@@ -619,7 +618,7 @@ Additional Info: 下图来自维基百科。
 
 以后，我将不再画这个图例了。我将用大写字母“V”（表示电压）来代替它。因此单向的灯泡电报系统的电路示意图就变成了如下这个样子。
 
-<img alt="img" src="./readme.assets/00057.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00057.jpeg" style="display:block; width:40%;"/>
 
 字母V是电压的意思，但是它也有吸尘器的意思。我们把V想象成一个电子吸尘器，然后把地面想象成电子的海洋。电子吸尘器通过电路把电子从地下拉出来，让它们沿设计好的线路开始工作（例如点亮灯泡）。
 
@@ -630,7 +629,7 @@ Additional Info: 下图来自维基百科。
 
 因此，在一对铜柱电极（或者自来水管）的帮助下，我们只用了两根导线，就冲破了你与你朋友家之间围墙的阻隔，构建了一个双向的莫尔斯码发送系统。
 
-<img alt="img" src="./readme.assets/00058.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00058.jpeg" style="display:block; width:40%;"/>
 
 这条电路在功能上与之前的那个电路是完全一样的，而在之前那条电路中，我们使用了3条导线来穿越房子之间的围墙。
 
@@ -660,7 +659,7 @@ Additional Info: 下图来自维基百科。
 ### 6　电报机与继电器
 萨缪尔·芬利·布里斯·莫尔斯（Samuel Finley Breese Morse）1791年出生于马萨诸塞州的查尔斯顿镇。这座小镇曾是邦克山战役打响的地方，位于波士顿的东北部。莫尔斯出生那年，距美国宪法制定刚过两年，而当时乔治·华盛顿正处在他的第一个总统任期内；叶卡捷琳娜大帝正统治着俄国；路易十六和玛莉·安托瓦内特将在2年后的法国大革命中人头落地。然后在1791年，莫扎特完成了他最后一部歌剧——《魔笛》（The Magic Flute），不久后在35岁时与世长辞。
 
-<img src="./readme.assets/00059.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00059.jpeg" style="display:block; width:40%;">
 
 莫尔斯在耶鲁大学深造，并在伦敦学习艺术。后来他成为了一名成功的画家。他的作品《拉法耶特将军》（General Lafayette，1852年），现在还悬挂在纽约市政大厅。1836年，他以独立候选人的身份参与竞选纽约市市长，并获得了5.7%的选票。他还是一个早期的摄影爱好者。莫尔斯接受刘易斯·达盖尔（Louis Daguerre）的亲自指点，学习银板照相术，并且拍摄了美国最早的一些银板照片。在1840年，他把这项技术传授给了17岁的马修·布雷迪（Mathew Brady），而布雷迪后来与同事一起，完成了一组非常有纪念意义的关于美国内战、亚伯拉罕·林肯（Abraham Lincoln），还有萨缪尔·莫尔斯本人等的摄影作品。
 
@@ -675,7 +674,7 @@ Additional Info: 下图来自维基百科。
 
 如果你手头有一根铁棒，那么在上面用细导线绕几百圈，然后在导线上接通电流，铁棒就变成了一块磁铁。现在它可以吸引其他的铁块和钢块（电磁铁上缠绕足够多的细导线，会产生足够强的电阻，能防止电磁铁产生短路现象）。断开电流，铁棒将丧失磁性。
 
-<img alt="img" src="./readme.assets/00060.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00060.jpeg" style="display:block; width:30%;"/>
 
 电磁铁是电报机的基础。在线路的一端闭合或断开开关，可以使线路另一端的电磁铁有所动作。
 
@@ -685,7 +684,7 @@ Additional Info: 下图来自维基百科。
 
 传统电报机中用来发送信息的电键，其外形如下图所示。
 
-<img alt="img" src="./readme.assets/00061.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00061.jpeg" style="display:block; width:40%;"/>
 
 它虽然外表奇特，其实只是一个被设计成有“最大开闭速度”的开关而已。如果需要长时间使用电键，最舒适的方法是，用拇指，食指和中指握住手柄，轻击它使其上下移动。保持电键的按下状态一小段时间，就会产生一个“点”的莫尔斯码。按下状态保持的时间更长一些就会产生一个“划”的莫尔斯码。
 
@@ -693,20 +692,20 @@ Additional Info: 下图来自维基百科。
 
 当然，我们人类是个懒惰的物种，电报操作员们很快发现，他们可以很容易地通过听钢笔弹起和落下的声音来翻译电码。在传统电报机中的“发声器”的帮助下，钢笔最终被废弃，整个装置看起来如下图所示。
 
-<img alt="img" src="./readme.assets/00062.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00062.jpeg" style="display:block; width:40%;"/>
 
 
 当电报机的电键被按下时，发声器中的电磁铁拉动上面的活动横杠下降，它会发出“滴”的声音。当松开电键的时候，横杠弹回到原来的位置，发出“嗒”的声音。一次快速的“滴-嗒”声代表点；一次慢速的“滴——嗒”声则代表划。
 
 电键、发声器、电池，还有一些导线连接到一起，电报机的电路示意图与前面章节中的手电筒电路图很相似。
 
-<img alt="img" src="./readme.assets/00063.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00063.jpeg" style="display:block; width:40%;"/>
 
 正如我们以前所发现的那样，不必非得用两根导线来连接两个电报站。如果地球能为我们提供电路的另一半的话，一根导线就足够了。
 
 就像我们在上一章所做的那样，我们可以把接地的电池用大写“V”表示。因此完整的单向系统如下图所示。
 
-<img alt="img" src="./readme.assets/00064.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00064.jpeg" style="display:block; width:40%;"/>
 
 双向通信仅仅需要再增加一个电键和发报人。这与我们前一章中的做法是类似的。
 
@@ -722,7 +721,7 @@ Additional Info: 下图来自维基百科。
 
 有一天，当你正在转发信息时，瞄了瞄发声器上那根上蹿下跳的横杠，又看了看在电键上上下翻飞的手指。然后你就这样来来回回地瞅来瞅去，恍然发现发声器上下跳跃的节奏与电键是一致的。因此你就去外面找了根小木棍，然后用木棍和一些细绳把发声器和电键连接到了一起，如下图所示。
 
-<img alt="img" src="./readme.assets/00065.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00065.jpeg" style="display:block; width:40%;"/>
 
 现在，设备可以自己工作了，而下午剩余的时间嘛，你就可以去休个假，钓个鱼。
 
@@ -731,15 +730,15 @@ Additional Info: 下图来自维基百科。
 
 继电器的示意图如下。
 
-<img alt="img" src="./readme.assets/00066.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00066.jpeg" style="display:block; width:40%;"/>
 
 当输入的电流触发了电磁铁，电磁铁把一个弹性金属条吸附下来，就像闭合了开关一样，使电流可以从接口输出。
 
-<img alt="img" src="./readme.assets/00067.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00067.jpeg" style="display:block; width:40%;"/>
 
 因此，把一个电报机电键、一个继电器，还有一个发声器连接好，差不多就是下图的这个样子。
 
-<img alt="img" src="./readme.assets/00068.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00068.jpeg" style="display:block; width:40%;"/>
 
 
 继电器是一个意义非凡的设备。当然，它是一个开关，但是这个开关的闭合和断开并不是由人来操纵的，而是由电流控制的。你可以通过它来完成一些不可思议的事情。实际上，使用它，你甚至可以装配好一台近乎完整的计算机来！
@@ -764,12 +763,12 @@ Additional Info: 下图来自维基百科。
 
 不需要立刻将它与任何事物联系起来。我们可能会联想到3个苹果或者3个别的什么东西。但是当我们从上下文中得知该数字表示的是某个小孩的生日、电视频道、曲棍球赛的得分或蛋糕食谱中面粉的杯数时，也能够像认为它代表3个苹果时一样自然。因为数字最开始产生时就很抽象，所以对于我们来说，理解这样一个问题会有一点困难。这个问题就是如下数量的苹果：
 
-<img alt="img" src="./readme.assets/00069.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00069.jpeg" style="display:block; width:40%;"/>
 
 
 并不一定要用符号“3”来表示。本章及下一章中的很大一部分内容将专门用来说明如下这些苹果：
 
-<img alt="img" src="./readme.assets/00070.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00070.jpeg" style="display:block; width:40%;"/>
 
 同样可以用“11”来表示。
 
@@ -777,7 +776,7 @@ Additional Info: 下图来自维基百科。
 
 在这个意义上，以10为基数或使用十进制数字系统完全是随意的。而且，英文中还对基于十的数字赋予了几乎神奇的意义，并且给了它们特有的名字：十个一年是一个十年（decade）；十个十年是一个世纪（century）；十个世纪就是一个千年（millennium）。一千个一千就是一个百万（million）；一千个百万就是一个十亿（billion）。以下都是10的各次幂。
 
-<img src="./readme.assets/00071.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00071.jpeg" style="display:block; width:40%;">
 
 
 大多数历史学家认为数字最初起源于对事物的计数，例如：人数、财产或商业交易的计数等。举个例子，如果有一个人有四只鸭子，用图画表示为：
@@ -827,7 +826,7 @@ Additional Info: 下图来自维基百科。
 
 阿拉伯数字的整体结构可以以我们读数字的方式来展现。以4825为例，我们读做“四千八百二十五”，意思就是：
 
-<img src="./readme.assets/00076.jpeg" style="display:block; width:20%;">
+<img src="./readme.assets/00076.jpeg" style="display:block; width:10%;">
 
 或者，我们也可以将此结构以如下写法写出：
 
@@ -847,7 +846,7 @@ Additional Info: 下图来自维基百科。
 
 每个位置代表10的一个整数次幂。我们不需要一个专门的符号来表示数字“10”，因为我们可以将1放在不同的位置，并用0作为占位符。
 
-<img alt="img" src="./readme.assets/00079.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00079.jpeg" style="display:block; width:40%;"/>
 
 
 另一个好处就是，以同样的方式将数字置于小数点右边可以表示分数。数字42,705.684就是：
@@ -867,19 +866,20 @@ Additional Info: 下图来自维基百科。
 
 我们知道，3加4等于7。类似地，30加40等于70，300加400等于700，3000加4000等于7000。这就是阿拉伯数字的“闪光”之处。任何长度的十进制数相加时，只要根据一种方法将问题分成几步即可，而每个步骤最多只是将两个一位数字相加而已。这就是为什么以前有人会强迫你记住加法表的原因。
 
-<img src="./readme.assets/00083.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00083.jpeg" style="display:block; width:40%;">
 
 从最上边的一行和最左边的一列分别找出要相加的两个数字，这一行与这一列的交叉点就是所要得到的和。例如，4加6等于10。
 
 同样，当你想将两个十进制数相乘的时候，方法可能稍微复杂些，但是你仍然只需要将问题分解成几步，做加法和一位数的乘法即可。在你的小学时代你一定也被要求必须记住下面的乘法表。
 
-<img src="./readme.assets/00084.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00084.jpeg" style="display:block; width:40%;">
 
 
 <p class="picture_table_tit
 
 
-<img src="./readme.assets/00085.jpeg" style="display:block; width:50%;"></div>
+<img src="./readme.assets/00085.jpeg" style="display:block; width:40%;">
+
 位置计数系统的好处并不在于它有多么好用，而在于对非十进制的系统而言，它仍然是易于实现计数的。我们现有的计数系统并不适用于每种情况。以10为基数的数字系统最大的问题是它对于卡通人物没有任何意义。大多数卡通人物每只手（或爪子）只有4根手指，因此它们需要一个以8为基数的计数系统。而有意思的是，许多我们在十进制数中所了解到的知识同样适合卡通朋友们所钟爱的八进制计数系统。
 
 
@@ -888,24 +888,24 @@ Additional Info: 下图来自维基百科。
 ### 8　十的替代品
 对于我们人类而言，10是一个非常重要的数字。10是我们大多数人拥有的手指或脚趾的数目，当然我们也希望所有人的手指和脚趾都是10个。因为手指非常便于计数，于是我们人类已经适应了这个以10为基数的数字系统。
 
-<img alt="img" src="./readme.assets/00086.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00086.jpeg" style="display:block; width:40%;"/>
 
 就如前面章节中所提到的，我们现在所用的数字系统是基于10的数字系统的，或称为十进制。我们已经非常习惯这个数字系统了，因此起初也很难再构想出其他的数字系统。的确，当我们看到数字10的时候，我们不自觉地就会想到这个数字代表了下面这么多只鸭子：
 
-<img alt="img" src="./readme.assets/00087.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00087.jpeg" style="display:block; width:40%;"/>
 
 
 但是，数字10之所以指的是这么多只鸭子，其唯一理由就在于这些鸭子的数目与我们的手指数目相同。如果人类的手指不是10根，我们数数的方式就会有所不同，那么10就会是另外一个含义。同样，数字10可以代表这么多只鸭子：
 
-<img alt="img" src="./readme.assets/00088.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00088.jpeg" style="display:block; width:40%;"/>
 
 或者是这么多只的鸭子：
 
-<img alt="img" src="./readme.assets/00089.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00089.jpeg" style="display:block; width:40%;"/>
 
 甚至可以是这么多只的鸭子：
 
-<img alt="img" src="./readme.assets/00090.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00090.jpeg" style="display:block; width:40%;"/>
 
 当我们认识到，10可以表示两只鸭子，我们就可以解释开关、导线、灯泡和继电器（进一步推广到计算机）是如何表示数字的了。
 
@@ -923,11 +923,11 @@ Additional Info: 下图来自维基百科。
 
 十进制中我们的计数方式是：0、1、2、3、4、5、6、7、8、9，然后是10。在八进制中数字系统中计数方式是：0、1、2、3、4、5、6、7，而后是什么呢？我们已经将符号用完了。在这里唯一有意义的只有10，而在这里的正确答案恰恰就是10。在八进制中，7之后的下一个数字是10。但是这个“10”代表的并不是人类手指的数量。在八进制中，“10”代表的是卡通人物手指的数量。
 
-<img alt="img" src="./readme.assets/00091.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00091.jpeg" style="display:block; width:40%;"/>
 
 如果继续用脚趾数下去的话，就是这样：
 
-<img alt="img" src="./readme.assets/00092.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00092.jpeg" style="display:block; width:40%;"/>
 
 使用非十进制的数字系统时，你可以将“10”读作“一零”，这样可以避免一些混淆。类似地，“13”读作“一三”，“20”读作“二零”。要想真正避免混淆，可以将“20”读作“基于8的数二零”或“八进制二零”。
 
@@ -979,13 +979,13 @@ Additional Info: 下图来自维基百科。
 
 下表给出了一些2的整数次幂的十进制及其对应的八进制的表示形式。
 
-<img src="./readme.assets/00093.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00093.jpeg" style="display:block; width:40%;">
 
 最右列的好整数暗示我们，十进制以外的数字系统可能对使用二进制码有所帮助。
 
 在结构上，八进制数字系统与十进制数字系统并没有什么不同。它们只是在细节上存在一些差异。例如，八进制数中的每个位所代表的值是该位数字乘以8的整数次幂的结果。
 
-<img alt="img" src="./readme.assets/00094.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00094.jpeg" style="display:block; width:40%;"/>
 
 这样，一个八进制数3725<span class="subscript">EIGHT</span>可以分解成如下形式：
 
@@ -994,21 +994,21 @@ Additional Info: 下图来自维基百科。
 
 同样还可以写成若干种不同的形式，下面是利用十进制的8的整数次幂写出的一种形式：
 
-<img src="./readme.assets/00095.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00095.jpeg" style="display:block; width:40%;">
 
 采用八进制形式的8的整数次幂，表现形式如下：
 
-<img src="./readme.assets/00096.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00096.jpeg" style="display:block; width:40%;">
 
 还有一种拆分形式：
 
-<img src="./readme.assets/00097.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00097.jpeg" style="display:block; width:40%;">
 
 如果用十进制数计算出结果，会得到2005<span class="subscript">TEN</span>。这就是将八进制数转化为十进制数的方法。
 
 我们可以像进行十进制数的加法和乘法那样，对八进制数进行加法或乘法运算。不同的是，我们要采用不同的表来对各个数码进行乘法或加法运算。下面是八进制数的加法表。
 
-<img src="./readme.assets/00098.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00098.jpeg" style="display:block; width:40%;">
 
 
 例如，5<span class="subscript">EIGHT</span> +7<span class="subscript">EIGHT</span> =14<span class="subscript">EIGHT</span>。我们还可以将两个更长的八进制数按照与十进制相同的方法相加：
@@ -1019,7 +1019,7 @@ Additional Info: 下图来自维基百科。
 
 同样，在八进制中，2乘以2结果依然为4。但是3乘以3却不等于9。那是多少呢？在这里，3乘以3结果是11 <span class="subscript">EIGHT</span>，其与9<span class="subscript">TEN</span>所代表的数量相等。下面为八进制乘法的乘法表。
 
-<img src="./readme.assets/00100.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00100.jpeg" style="display:block; width:40%;">
 
 在这里，4 × 6等于30<span class="subscript">EIGHT</span>，而30<span class="subscript">EIGHT</span>与24<span class="subscript">TEN</span>等价，也就是与十进制中的4 × 6相等。
 
@@ -1032,7 +1032,7 @@ Additional Info: 下图来自维基百科。
 
 这里我不打算在四进制数上花太多的时间，因为接下来我们即将转入一个更为重要的话题。通过下图我们可以看出四进制中每一位是如何跟4的某个整数次幂相对应的。
 
-<img alt="img" src="./readme.assets/00102.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00102.jpeg" style="display:block; width:40%;"/>
 
 四进制数31232可以写做如下形式：
 
@@ -1053,7 +1053,7 @@ Additional Info: 下图来自维基百科。
 
 0和1现在已不是我们要处理的全部问题了，而我们还需要练习一下才能习惯使用二进制数。二进制数最大的问题是数字用完得很快。例如，下图就是海豚如何用它的鳍来计数的例子。
 
-<img alt="img" src="./readme.assets/00106.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00106.jpeg" style="display:block; width:40%;"/>
 
 是的，在二进制中，1的下一个数字是10。这让人惊讶，但也并不是什么意外。无论使用哪种计数系统，当单个的数字用完时，第一个两位数就是10。二进制系统这样计数的：
 
@@ -1084,46 +1084,45 @@ Additional Info: 下图来自维基百科。
 
 在一个多位二进制数中，数字的位置和2的整数次幂的对应关系为：
 
-<img alt="img" src="./readme.assets/00107.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00107.jpeg" style="display:block; width:40%;"/>
 
 因此，任何一个以1开头而后面全是0的二进制数一定都是2的整数次幂。幂指数就等于这个二进制数中0的个数。
 
 以下是2的各整数次幂的扩展表，它可以用来说明这条规则。
 
-<img src="./readme.assets/00108.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00108.jpeg" style="display:block; width:40%;">
 
 假定有一个二进制数101101011010，它可以写成：
 
-
-<img src="./readme.assets/00109.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00109.jpeg" style="display:block; width:40%;">
 
 同样也可以用下面这种方式表示：
 
-<img src="./readme.assets/00110.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00110.jpeg" style="display:block; width:40%;">
 
 如果将各个部分以十进制数的形式相加，会得到2048 + 512 + 256 + 64 + 16 + 8 + 2，即2,906<span class="subscript">TEN</span>。
 
 为了更简明、更便捷地将二进制数转换为十进制数，你可能会更喜欢借助我准备的模板来进行转换：
 
-<img alt="img" src="./readme.assets/00111.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00111.jpeg" style="display:block; width:40%;"/>
 
 这个模板可以将一个数转换最大长度为8的二进制数，但是它很容易扩展。在使用模板的时候，将8位二进制数填入到上面一行的格子里，每个格子一位。做8个乘法运算，然后将结果填入到下面一行的8个小格子里。再将这8个格子中的数相加就会得到最终结果。下面就举例说明如何得到与二进制数10010110相等的十进制数。
 
-<img alt="img" src="./readme.assets/00112.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00112.jpeg" style="display:block; width:40%;"/>
 
 将十进制数转换成二进制数就没那么直接了。下面是一个能够帮你将0～255范围内的十进制数转换为二进制数的模板。
 
-<img alt="img" src="./readme.assets/00113.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00113.jpeg" style="display:block; width:40%;"/>
 
 这个转换实际上比看上去要麻烦得多，因此一定要仔细地按照下面的指导来操作。将整个十进制数（小于或等于255）填入到上面一行最左端的格子中。用第一个除数（128）去除这个数。所得的商填入正下方的格子（左下角的格子），余数填入右边的格子（上面一行左数第二个格子）。用第一个余数再除以下一个除数64。依照模板的顺序用同样的方法继续进行下去。
 
 要记住，每次求得的商只能是0或者1。如果被除数小于除数，商为0，余数就是被除数。如果被除数大于或等于除数，那么商为1，余数就是被除数减去除数所得之差。下面以150为例进行转换。
 
-<img alt="img" src="./readme.assets/00114.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00114.jpeg" style="display:block; width:40%;"/>
 
 如果需要对两个二进制数进行加法或乘法，直接运算可能会比转换成十进制再进行运算要简单些。这将是你真正喜欢二进制数的地方。想象一下，如果你记住了如下表格，掌握加法将是一件多么迅速的事情啊。
 
-<img src="./readme.assets/00115.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00115.jpeg" style="display:block; width:40%;">
 
 让我们用这个表格来计算两个二进制数的和：
 
@@ -1133,7 +1132,7 @@ Additional Info: 下图来自维基百科。
 
 乘法表甚至比加法表还要简单，因为该表可以由两个基本的乘法规则推导出来：任何数乘以0结果都为0，任何数乘以1，结果都是这个数本身。
 
-<img src="./readme.assets/00117.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00117.jpeg" style="display:block; width:40%;">
 
 以下是13<span class="subscript">TEN</span>与11<span class="subscript">TEN</span>的二进制乘法运算过程：
 
@@ -1144,7 +1143,7 @@ Additional Info: 下图来自维基百科。
 人们在使用二进制数的时候通常将它们写成带有前导零的形式（即第一个1的左边有零）。例如0011，而不是写做11。这样写不会改变量字的大小，仅仅是为了美观。例如，以下是前16个二进制数以及与它们等价的十进制数。
 
 
-<img src="./readme.assets/00119.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00119.jpeg" style="display:block; width:40%;">
 
 让我们再看一下这一列二进制数。仔细考虑这4个垂直列中每一列的1和0，注意它们在一列中自上而下是以怎样的规律交替的。
 
@@ -1158,13 +1157,13 @@ Additional Info: 下图来自维基百科。
 
 这是很有条理的，难道不是么？事实上，只要再重复这16个数字并且在每个数字的前面加一个1就可以很容易地写出后面的16个数字。
 
-<img src="./readme.assets/00120.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00120.jpeg" style="display:block; width:40%;">
 
 
 <p class="picture_table_tit
 
 
-<img src="./readme.assets/00121.jpeg" style="display:block; width:50%;"></div>
+<img src="./readme.assets/00121.jpeg" style="display:block; width:40%;">
 从另外一种角度来看：当以二进制计数的时候，最右边的一位（最低位）以0和1交替。每当该位由1变为0，从右边数的第二位（次低位）也随之改变——不是由0变到1，就是由1变到0。因此，每次只要有一个二进制数码的值由1变到0，紧挨着的高位数字也会发生变化，而且其变化不是由0到1就是由1到0。
 
 在书写一个比较大的十进制数的时候，通常在每三位数字之间用一个逗号隔开，这样会让人很清楚地读出数字的大小。例如，当你看到数字12000000时，你可能不得不去数一下其中0的个数才知道这个数是多少，但是，如果数字写做12,000,000，你一眼就会知道它是一千二百万。
@@ -1222,16 +1221,16 @@ Additional Info: 下图来自维基百科。
 
 假设两盏提灯实际上是永久固定在教堂钟楼上的。通常它们不会被点亮。
 
-<img alt="img" src="./readme.assets/00122.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00122.jpeg" style="display:block; width:40%;"/>
 
 这代表英军还没有入侵。如果一盏提灯亮起：
 
-<img alt="img" src="./readme.assets/00123.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00123.jpeg" style="display:block; width:40%;"/>
 
 
 表示英军从陆路入侵。如果两盏灯都被点亮：
 
-<img alt="img" src="./readme.assets/00124.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00124.jpeg" style="display:block; width:40%;"/>
 
 表示英军正由海路入侵。
 
@@ -1339,7 +1338,7 @@ Additional Info: 下图来自维基百科。
 
 类似的，在二进制中，可能有的编码数等于2的整数次幂，其幂指数就是比特位的位数。
 
-<img src="./readme.assets/00129.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00129.jpeg" style="display:block; width:40%;">
 
 每增加一个比特位就会将编码的数量增加一倍。
 
@@ -1374,7 +1373,7 @@ log<span class="subscript">2</span>128 = 7
 
 与胶片速度对应的比特值如下表所示。
 
-<img src="./readme.assets/00132.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00132.jpeg" style="display:block; width:40%;">
 
 大多数现代的35毫米照相机胶片都使用这些码字（除了那些要手动进行曝光的相机和具有内置式测光表但需要手动设定曝光速度的相机以外）。如果你观察一下照相机内部放胶卷的地方，就会发现在胶卷筒内部有6个金属的触点，对应着胶片的金属方格（1～6号）。银色方格实际上是胶卷暗盒中的金属，即导体；涂有颜料的黑色方格，是绝缘体。
 
@@ -1392,20 +1391,20 @@ log<span class="subscript">2</span>128 = 7
 
 在最常见的形式中，UPC是由30条不同宽度的垂直黑色条纹组成的，它们的间隔宽度也不同，条纹下面标有数字。例如，以下是Campbell公司出品的10 3/4盎司的罐装鸡汁面汤包上的UPC。
 
-<img alt="img" src="./readme.assets/00133.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00133.jpeg" style="display:block; width:30%;"/>
 
 
 我们要试着将条形码形象地看成是细条和黑条、窄间隙和宽间隙的排列，事实上，这就是观察条形码的一种方式。在UPC中，黑色条纹有四种不同的宽度，宽条纹的宽度分别是最细条纹宽度的两倍、三倍或四倍。同样，宽间隔的宽度分别是最窄间隔宽度的两倍、三倍或四倍。
 
 但是，另一种解读UPC的方式就是将它们看做一列比特位。记住整个条形码不是在收银台的扫描仪所“看到”的那样。扫描仪所读到的并不是下面一排的数字，因为这需要更精密的光学识别（OCR，Optical Character Recognition）技术。扫描仪只识别整个条形码的一条窄带，条形码做得很大是为了便于结算台的操作人员用扫描仪对准。扫描仪所看到的那一个UPC断面可以这样表示：
 
-<img alt="img" src="./readme.assets/00134.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00134.jpeg" style="display:block; width:90%;"/>
 
 看起来与莫尔斯码很像，不是吗？
 
 当计算机从左向右扫描这个信息时，它会首先给遇到的第一个黑条分配一个值为1的比特，给与这个黑条相邻的白色间隙分配一个值为0的比特。随后的条纹和间隙被读做一行中的一系列比特，每个系列的比特可以是1位、2位、3位或4位，而这个位数取决于条纹和空隙的宽度。本例中扫描仪所扫描到的条形码与比特位之间的关系可以简单的表示为：
 
-<img alt="img" src="./readme.assets/00135.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00135.jpeg" style="display:block; width:90%;"/>
 
 因此，整个UPC只不过是一串95位二进制数。在本例中，这些比特可以做如下分组。
 
@@ -1413,14 +1412,14 @@ log<span class="subscript">2</span>128 = 7
 
 最左边的护线之后是6组比特串，每串含有7个比特位。其中每一组都可以是数字0～9的编码，后面我会做一个简短的说明。接下来是一个5比特位的中间护线，这是一个固定的模式（始终是01010），它是一个内置式的检错码。如果计算机扫描仪没有在应有的位置找到中间护线，它就无法破解UPC码。这条中间护线是用来预防条形码被篡改或被印错的一种方法。
 
-<img alt="img" src="./readme.assets/00136.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00136.jpeg" style="display:block; width:40%;"/>
 
 
 中间护线后面仍然是6组比特串，每组中含有7个比特位。之后是最右边的护线，最右边的护线通常都为101。最右边的护线可以实现UPC的反向扫描（也就是从右到左扫描），这一点我们将在后面解释。
 
 因此，整个UPC对12个数字进行了编码。UPC的左边含有6个编码数字，每个数字占有7个比特位。你可以利用如下的表格来解码。
 
-<img src="./readme.assets/00137.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00137.jpeg" style="display:block; width:40%;">
 
 注意，这里每个7位编码都是以0开头，以1结尾的。如果扫描仪遇到了一个位于左边的7位编码，这个编码是以1开头以0结尾的，那么它就知道自己没有将UPC正确地读入或者条形码被篡改了。另外我们还注意到每组编码都仅有两组连续为1的比特位，这就暗示每个数字对应着UPC码中的两个垂直条纹。
 
@@ -1428,7 +1427,7 @@ log<span class="subscript">2</span>128 = 7
 
 破解右边的6组7位编码要用到下表。
 
-<img src="./readme.assets/00138.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00138.jpeg" style="display:block; width:40%;">
 
 这些编码都是之前编码的补码：之前出现0的地方，现在都换成了1，反之亦然。这些编码都是以1开头，以0结尾的。除此之外，每组编码都含有偶数个1，属于偶校验。
 
@@ -1468,11 +1467,11 @@ log<span class="subscript">2</span>128 = 7
 
 UPC可以从两个方向读，这一点是非常方便的。如果扫描装置解码的第一个数是符合偶校验（即7位编码中有偶数个1）的，扫描仪就会知道，它正从右向左扫描UPC码。计算机就会使用如下表来解码。
 
-<img src="./readme.assets/00139.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00139.jpeg" style="display:block; width:40%;">
 
 以下是对左边数字的解码表。
 
-<img src="./readme.assets/00140.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00140.jpeg" style="display:block; width:40%;">
 
 所有这些7位编码都与由左向右扫描时得到的UPC完全不同。这里不会有模棱两可的现象存在。
 
@@ -1484,20 +1483,20 @@ UPC可以从两个方向读，这一点是非常方便的。如果扫描装置�
 
 下面是第2章中莫尔斯码的基本表。
 
-<img alt="img" src="./readme.assets/00141.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00141.jpeg" style="display:block; width:40%;"/>
 
 
 以下是转化为比特的结果。
 
-<img alt="img" src="./readme.assets/00142.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00142.jpeg" style="display:block; width:40%;"/>
 
 注意，这里所有编码都是以1开头，以两个0结尾。结尾处的两个0代表单词内各个字母之间的空格。单词之间的空格编码则是另外一对0。因此，在莫尔斯码中“hi there”通常是这样表示的：
 
-<img alt="img" src="./readme.assets/00143.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00143.jpeg" style="display:block; width:40%;"/>
 
 但是，当莫尔斯码采用比特来表示的时候，看起来就像UPC的一个截面。
 
-<img alt="img" src="./readme.assets/00144.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00144.jpeg" style="display:block; width:40%;"/>
 
 用比特的形式表示布莱叶盲文比表示莫尔斯码容易得多。布莱叶盲文是6位编码。其中的每一个字母都是由6个点组成的，这些点可能是凸起的，也可能是不凸起的。就如同在第3章中所提到的那样，这些点通常用数字1～6编号。
 
@@ -1547,7 +1546,7 @@ UPC可以从两个方向读，这一点是非常方便的。如果扫描装置�
 
 而后乔治·布尔出现了。
 
-<img src="./readme.assets/00147.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00147.jpeg" style="display:block; width:40%;">
 
 乔治·布尔于1815年出生于英格兰，降临到了这个对于他来说充满不公的世界。乔治的父亲是个鞋匠，母亲曾经做过女佣，因此，按常理在当时英国森严的等级制度下，他基本上不会做出什么有别于父辈们的事业。但是他凭借着勇于探究的精神以及父亲的帮助（乔治的父亲对科学、数学和文学都有浓厚的兴趣），乔治在年少的时候就接受了良好的教育，而这本应是上流社会中的男孩子们才能享有的特权。他学习了拉丁语、希腊语和数学。1849年，布尔凭借着他早期在数学研究上的论文成为了爱尔兰利克市皇后书院的数学系首席教授。
 
@@ -1770,7 +1769,7 @@ OR
 
 也就是说，只有当运算符AND左右两端都为1的时候，结果才为1。这个运算与常规的乘法是完全相同的，该规则可以总结为如下这样一个表格，这与第8章中加法和乘法表的形式类似。
 
-<img src="./readme.assets/00150.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00150.jpeg" style="display:block; width:40%;">
 
 当符号“+”表示OR的时候，有以下几种可能的结果：
 
@@ -1784,7 +1783,7 @@ OR
 
 如果运算符OR左右两端有一个操作数为1，则其运算结果就为1。这个运算与常规的加法类似，但是在1 + 1 = 1这里例外。运算符OR可以概括为如下这样一个表格。
 
-<img src="./readme.assets/00151.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00151.jpeg" style="display:block; width:40%;">
 
 我们应用这两个表格来计算一下原表达式的结果：
 
@@ -1820,73 +1819,73 @@ OR
 
 在实验的开始，将灯泡和电池正常连接起来，但是，你用了两个开关，而不是一个，如下图所示。
 
-<img alt="img" src="./readme.assets/00152.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00152.jpeg" style="display:block; width:40%;"/>
 
 像这样一个接着一个首尾相连的接线方式称做串联（series）。如果你闭合左端的开关，什么都不会发生。
 
-<img alt="img" src="./readme.assets/00153.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00153.jpeg" style="display:block; width:40%;"/>
 
 
 如果让左边的开关保持断开，而闭合右边的开关，同样什么都不会发生。只有当左右两个开关都闭合时灯泡才会亮，如下图所示。
 
-<img alt="img" src="./readme.assets/00154.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00154.jpeg" style="display:block; width:40%;"/>
 
 这里的关键词是“与”。当左右两个开关必须都是闭合的时候电流才流过回路。
 
 这个电路是一个简单的逻辑演示。实际上，灯泡是在回答“两个开关是否都闭合？”这样一个问题。这个电路的运转情况，我们可以总结为如下表格。
 
 
-<img src="./readme.assets/00155.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00155.jpeg" style="display:block; width:40%;">
 
 在之前的章节中，我们已经知道二进制数是如何表示信息的——而信息是无所不包的，无论是简单的数字还是罗杰·艾伯特<a id="footnote_quote_txt010_1" class="footnote_quote" href="part0017.html#footnote_content_txt010_1">[1]</a>拇指的方向都是信息。我们可以说二进制0代表“艾伯特的拇指向下”，二进制1代表“艾伯特的拇指向上。”一个开关有两个状态，因此可以代表二进制数。我们可以说0代表“开关断开”，1代表“开关闭合”。一个灯泡有两种状态，因此，它也可以用二进制数来表示。我们可以说0代表“灯泡不亮”，1代表“灯泡亮”。根据以上表述，我们可以将表格简化为如下形式。
 
-<img src="./readme.assets/00156.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00156.jpeg" style="display:block; width:40%;">
 
 注意，如果将左边的开关和右边的开关调换位置，结果是一样的。我们不用分辨开关哪个是哪个。所以，上面的表也可以写为和AND表或OR表类似的形式。
 
-<img src="./readme.assets/00157.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00157.jpeg" style="display:block; width:40%;">
 
 的确，这与AND表是一样的。
 
-<img src="./readme.assets/00158.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00158.jpeg" style="display:block; width:40%;">
 
 这个简单的电路演示了布尔代数中的AND运算。
 
 接下来，稍微改变一下开关连接方式，如下图所示。
 
-<img alt="img" src="./readme.assets/00159.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00159.jpeg" style="display:block; width:40%;"/>
 
 这种连接方式叫做并联（parallel）。这种连接与上一种连接的不同之处就在于，闭合上面的开关，灯泡就会亮。
 
-<img alt="img" src="./readme.assets/00160.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00160.jpeg" style="display:block; width:40%;"/>
 
 
 或者闭合下面的开关，灯泡也会亮。
 
-<img alt="img" src="./readme.assets/00161.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00161.jpeg" style="display:block; width:40%;"/>
 
 或者闭合所有的开关，灯泡还是会亮。
 
-<img alt="img" src="./readme.assets/00162.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00162.jpeg" style="display:block; width:40%;"/>
 
 
 如果上面的开关闭合或者下面的开关闭合或者都闭合，灯泡都会亮。这里的关键词为“或”。
 
 电路又一次做了一个逻辑上的演示。灯泡回答了“是否有开关闭合？”的问题。下表总结了这样一个电路的工作原理。
 
-<img src="./readme.assets/00163.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00163.jpeg" style="display:block; width:40%;">
 
 同样用0来表示开关断开或者灯泡不亮，用1表示开关闭合或灯泡亮，这个表可以写为如下形式。
 
-<img src="./readme.assets/00164.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00164.jpeg" style="display:block; width:40%;">
 
 同样的，两个开关可以调换，因此上表也可以写为如下形式。
 
-<img src="./readme.assets/00165.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00165.jpeg" style="display:block; width:40%;">
 
 你可能已经猜到了，这与布尔代数中的OR是一样的。
 
-<img src="./readme.assets/00166.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00166.jpeg" style="display:block; width:40%;">
 
 这就是说，两个开关并联相当于布尔代数中的OR运算。
 
@@ -1897,22 +1896,22 @@ OR
 
 既然你知道两个开关串联表示逻辑AND（用符号“×”表示）；两个开关并联表示逻辑OR（用符号“+”表示），因此你可以将8个开关做如下连接。
 
-<img src="./readme.assets/00167.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00167.jpeg" style="display:block; width:40%;">
 
 此电路中的每个开关都用一个字母来标记——与在布尔表达式中所用的字母一样（<img src="./readme.assets/00168.jpeg" class="picture_formula_line" >表示NOT <span class="emphasis_bold"><span class="emphasis_italic">W</span></span>，它是1-<span class="emphasis_italic">W</span>的另一种表示方式）。如果按照从左到右、从上到下的顺序遍历电路图，你就会以同样次序遇到出现在表达式中的字母。在表达式中每个符号“×”对应电路中的两个开关（或者两组开关）串联的点。在表达式中每个符号“+”对应电路中两个开关（或两组开关）并联的位置。
 
 与之前一样，店员首先拿出了一只未绝育的褐色公猫。闭合相应的开关，如下图所示。
 
-<img src="./readme.assets/00169.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00169.jpeg" style="display:block; width:40%;">
 
 尽管开关<span class="emphasis_bold"><span class="emphasis_italic">M</span></span>、<span class="emphasis_bold"><span class="emphasis_italic">T</span></span>和<span class="emphasis_bold"><img src="./readme.assets/00168.jpeg" class="picture_formula_line" ></span>闭合了，但是没有成功地点亮灯泡。接着，店员又拿出了一只已绝育的白色母猫。
 
 
-<img src="./readme.assets/00170.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00170.jpeg" style="display:block; width:40%;">
 
 相应的开关闭合后依然没有点亮灯泡。但是，最后店员拿出了一只已绝育的灰色母猫。
 
-<img src="./readme.assets/00171.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00171.jpeg" style="display:block; width:40%;">
 
 这次，灯泡被成功点亮了，表明这只猫符合你的全部要求。
 
@@ -1938,7 +1937,7 @@ OR
 同样也可以用这样一个由开关和灯泡组成的电路来表示，如下图所示。
 
 
-<img src="./readme.assets/00172.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00172.jpeg" style="display:block; width:40%;">
 
 这样的电路有时被称为网络（network），而如今这个词更多地被用来描述计算机之间的连接，而不仅指多个开关的集合。
 
@@ -1977,7 +1976,7 @@ OR
 
 由于括号太多，这个表达式看起来并不简单。但是这个表达式中少了一个变量，也就意味着在网络中少了一个开关。以下就是简化后的电路图。
 
-<img src="./readme.assets/00173.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00173.jpeg" style="display:block; width:40%;">
 
 确实，证明修改前后的两个电路功能等价要比去证明两个表达式功能相同简单许多。
 
@@ -1985,7 +1984,7 @@ OR
 
 现在让我们制作一个用来选猫咪的控制面板。这个控制面板上只有四个开关（与你家墙上控制灯开闭的开关很相似），此外面板上还安装了一个灯泡，如下图所示。
 
-<img alt="img" src="./readme.assets/00174.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00174.jpeg" style="display:block; width:40%;"/>
 
 开关打到上面是指开关闭合，反之是指开关断开。或许用来表示猫咪颜色的两个开关标记有点难于理解，这是为了将面板做得简洁而不得已导致的一个小缺憾。在表示颜色的两个开关中，左边的叫做B，意思是说只要它闭合（如上图所示）就表示黑色。两个开关中右边的那个叫做T，意思是说只要它闭合的时候就表示褐色。如果两个开关都闭合则表示其他颜色，这个选择叫做O。两个开关都断开的时候表示白色，用W表示，字母写在下部。
 
@@ -2001,11 +2000,11 @@ OR
 
 就我们的目的而言，我们对于继电器放大微弱信号的功能并不感兴趣。我们真正感兴趣的是继电器可以作为一个电流控制而非人工控制的开关。我们可以将继电器、开关、灯泡和两节电池按照下图连接。
 
-<img alt="img" src="./readme.assets/00175.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00175.jpeg" style="display:block; width:40%;"/>
 
 注意，左边的开关是断开的，灯泡没有发光。当闭合开关的时候，左端电池产生电流流过缠在铁芯上的圆线圈。于是铁芯产生了磁性，将上面的弹性金属簧片拉下，使回路接通，灯泡发光。
 
-<img alt="img" src="./readme.assets/00176.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00176.jpeg" style="display:block; width:40%;"/>
 
 
 当电磁铁将金属簧片拉下来时，我们称继电器被“触发”（triggered）。当左边的开关断开的时候，铁芯的磁性消失，金属簧片回到原位。
@@ -2014,7 +2013,7 @@ OR
 
 在这一章中，（在逻辑门创建之前）我们将多次运用继电器，因此就需要将上面那幅电路图简化。我们可以利用接地的方式减少一些电线。在这种情况下，大地仅代表了一个公共端，并不是真正意义上的物理接地。
 
-<img alt="img" src="./readme.assets/00177.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00177.jpeg" style="display:block; width:40%;"/>
 
 这看起来并不像简化的结果，但到现在我们还没有完成。注意两节电池的负极都是接地的。因此，我们可以看到这样的符号。
 
@@ -2022,42 +2021,42 @@ OR
 
 和第5章、第6章中一样，可以用大写字母V（代表电压）来代替上图中的电池。这样，继电器看上去就如下图所示。
 
-<img alt="img" src="./readme.assets/00179.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00179.jpeg" style="display:block; width:40%;"/>
 
 
 开关闭合，电流从V端流出，经过电磁铁芯流到大地上。产生磁效应吸合金属簧片，从而连通了V、灯泡和地之间的电路，使灯泡发光。
 
-<img alt="img" src="./readme.assets/00180.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00180.jpeg" style="display:block; width:40%;"/>
 
 上面的图显示了两个电源和两个接地端。但是在这一章的所有电路中，所有电源，即“V”是可以彼此互连的，接地端也如此。在本章和下一章的电路中，所有继电器网络和逻辑门只需要一节电池，尽管可能是一节很大容量的电池。例如，上述电路图可以画为如下只用一节电池的方式。
 
-<img alt="img" src="./readme.assets/00181.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00181.jpeg" style="display:block; width:40%;"/>
 
 
 但是，这个电路图中没有清楚地表明，为什么我们要使用继电器。可以先不看回路，单单看继电器，像前面的控制面板一样，从输出和输入开始。
 
-<img alt="img" src="./readme.assets/00182.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00182.jpeg" style="display:block; width:40%;"/>
 
 当电流流经输入时（例如，用一个开关把输入连到“V”端），电磁铁就会被触发，输出就得到一个电压。
 
 继电器的输入不一定只能是开关，其输出也未必只限于灯泡。一个继电器的输出可以连到另一个继电器的输入，例如下面这个电路：
 
-<img alt="img" src="./readme.assets/00183.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00183.jpeg" style="display:block; width:40%;"/>
 
 当开关闭合，第一个继电器被触发，提供电压给第二个继电器。于是第二个继电器被触发，使灯泡发光。
 
-<img alt="img" src="./readme.assets/00184.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00184.jpeg" style="display:block; width:40%;"/>
 
 
 连接继电器是创建逻辑门的关键。
 
 实际上，灯泡可以采用两种方式连接到继电器上。注意，弹性金属簧片是被电磁铁拉下来的。平时，金属簧片与上端触点相接触，当电磁铁拉动它时，它就会与下端触点相接触。我们之前一直把金属簧片与下方触点接触作为继电器的输出，而其实也可以把它与上方触点相接触作为输出。当我们这样使用的时候，继电器的输出恰好相反，当输入开关断开的时候，灯泡发光。
 
-<img alt="img" src="./readme.assets/00185.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00185.jpeg" style="display:block; width:40%;"/>
 
 当输入开关闭合时，灯泡熄灭。
 
-<img alt="img" src="./readme.assets/00186.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00186.jpeg" style="display:block; width:40%;"/>
 
 用开关术语来说，这种继电器叫做双掷继电器。它拥有两个输出，但是这两个输出在电的极性上是对立的——当一端有电压时，另一端就没有。
 
@@ -2066,152 +2065,152 @@ OR
 
 前面提到，两个开关可以串联，同样地，两个继电器也可以串联。
 
-<img alt="img" src="./readme.assets/00187.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00187.jpeg" style="display:block; width:40%;"/>
 
 上面继电器的输出为下面继电器提供电压。如上图所示，当两个开关都断开的时候，灯泡不发光。我们先闭合上面的开关。
 
-<img alt="img" src="./readme.assets/00188.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00188.jpeg" style="display:block; width:40%;"/>
 
 
 灯泡仍然不亮，因为下面的开关一直是断开的，这个继电器没有被触发。我们现在断开上面的开关，并闭合下面的开关。
 
-<img alt="img" src="./readme.assets/00189.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00189.jpeg" style="display:block; width:40%;"/>
 
 灯泡仍然不亮。由于上面的继电器没有被触发，电流无法流过灯泡。只有两个开关都闭合的时候灯泡才会被点亮。
 
-<img alt="img" src="./readme.assets/00190.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00190.jpeg" style="display:block; width:40%;"/>
 
 这时，两个继电器都被触发，电流从V流经灯泡后流入到地中。
 
 就像两个开关串联一样，这两个继电器也执行了逻辑操作。只有当两个继电器都被触发的时候灯泡才会亮。这样两个继电器的串联被称为一个“与门”。为了避免复杂的图示，电气工程师用如下专门的符号表示一个与门。
 
-<img alt="img" src="./readme.assets/00191.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00191.jpeg" style="display:block; width:40%;"/>
 
 这是四个基本逻辑门中的一个。与门有两个输入端（上图中的左端）和一个输出端（上图中的右端）。这样表示的与门通常输入在左边，输出在右边。这是因为人们习惯于由左向右的阅读方式，在读电路图的时候也会由左向右。但与门也可以画成输入在上端、右端或者下端。
 
 有两个继电器、两个开关和一个灯泡的原始电路图如下所示。
 
-<img alt="img" src="./readme.assets/00192.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00192.jpeg" style="display:block; width:40%;"/>
 
 使用“与门”符号，上图可以画为如下所示的图。
 
-<img alt="img" src="./readme.assets/00193.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00193.jpeg" style="display:block; width:40%;"/>
 
 注意，与门的符号不仅仅代替了两个串联的继电器，而且还暗示着上面的继电器与电源相连，两个继电器都接地。只有当上面的开关与下面的开关都闭合的时候，灯泡才会发光。这就是称它为“与门”的原因。
 
 
 与门的输入未必一定要和开关相连，而且输出也不一定只能与灯泡相连。我们真正要处理的是输入端的电压和输出端的电压。例如，一个与门的输出可以作为另一个与门的输入，如下所示。
 
-<img alt="img" src="./readme.assets/00194.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00194.jpeg" style="display:block; width:40%;"/>
 
 只有当三个开关全部闭合的时候，灯泡才会亮。只有当上面两个开关全闭合的时候，第一个与门的输出才会触发第二个与门中的第一个继电器。而最下面的开关闭合会触发第二个与门中的第二个触发器。
 
 如果我们将低电平视为0，将高电平视为1，那么与门的输入和输出之间的关系如下所示。
 
-<img alt="img" src="./readme.assets/00195.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00195.jpeg" style="display:block; width:40%;"/>
 
 像两个开关串联一样，与门的输入与输出之间的关系同样可用下表来描述。
 
-<img src="./readme.assets/00196.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00196.jpeg" style="display:block; width:40%;">
 
 同样可以让与门有多个输入端。例如，将三个继电器串联，如下图所示。
 
-<img alt="img" src="./readme.assets/00197.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00197.jpeg" style="display:block; width:40%;"/>
 
 
 只有当三个开关全部闭合时灯泡才会发光。这个结构可以用如下符号来表示。
 
-<img alt="img" src="./readme.assets/00198.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00198.jpeg" style="display:block; width:40%;"/>
 
 它被称为三输入端与门。
 
 以下逻辑门是由两个继电器并联而成。
 
-<img alt="img" src="./readme.assets/00199.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00199.jpeg" style="display:block; width:40%;"/>
 
 注意两个继电器的输出是接在一起的，这个连在一起的输出为灯泡提供了电源。任何一个继电器都能点亮灯泡。例如，如果闭合上面的开关，灯泡会亮。这时，灯泡从左边的继电器得到了电源供应。
 
-<img alt="img" src="./readme.assets/00200.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00200.jpeg" style="display:block; width:40%;"/>
 
 
 同样的，如果我们将上面的开关断开，并闭合下面的开关，灯泡也会发光。
 
-<img alt="img" src="./readme.assets/00201.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00201.jpeg" style="display:block; width:40%;"/>
 
 如果两个开关都闭合，灯泡也会亮。
 
-<img alt="img" src="./readme.assets/00202.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00202.jpeg" style="display:block; width:40%;"/>
 
 
 显而易见，当上面的开关或下面的开关闭合，灯泡都会发光，这里的关键词是“或”，因此这样的门被称为“或门”。电气工程师用如下符号表示或门。
 
-<img alt="img" src="./readme.assets/00203.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00203.jpeg" style="display:block; width:40%;"/>
 
 它和与门的符号稍微有点相似，但是输入端的一边是弧线，像英文单词“OR”中字母“O”一样（这样可以帮你分清它们）。
 
 或门的两个输入中，只要有一个加上电压，输出就是高电平。如果将低电平看做0，高电平看做1，那么或门也有四种可能的组合状态。
 
-<img alt="img" src="./readme.assets/00204.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00204.jpeg" style="display:block; width:40%;"/>
 
 像总结与门一样，我们可以将或门的输入和输出关系总结为一个表，如下所示。
 
-<img src="./readme.assets/00205.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00205.jpeg" style="display:block; width:40%;">
 
 或门也可以有多个输入端（只要任一个输入端为1，其输出端就为1，只有所有的输入端都为0时，输出端才为0）。
 
 前面解释了为什么我们所用的继电器叫双掷继电器，这是因为其输出有两种不同的连接方式。通常在开关断开的时候，灯泡不会亮。
 
-<img alt="img" src="./readme.assets/00206.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00206.jpeg" style="display:block; width:40%;"/>
 
 
 当开关闭合时，灯泡发光。
 
 也可以用另外一种连接方式，使开关断开时灯泡被点亮。
 
-<img alt="img" src="./readme.assets/00207.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00207.jpeg" style="display:block; width:40%;"/>
 
 这样的话，开关闭合，灯泡就会熄灭。以这种方式连接的继电器叫做反向器（inverter）。反向器不是逻辑门（一个逻辑门通常有两个或多个输入），尽管如此，它的用处还是很广。反向器可以用如下的专门符号来表示。
 
-<img alt="img" src="./readme.assets/00208.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00208.jpeg" style="display:block; width:40%;"/>
 
 由于它能将0（低电平）转换为1（高电平），因此被称为反向器，反过来也是一样的。
 
-<img alt="img" src="./readme.assets/00209.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00209.jpeg" style="display:block; width:40%;"/>
 
 利用反向器、与门和或门，我们就可以着手去设计一个自动选择理想猫咪的控制面板了。首先从开关开始，第一个开关闭合表示母猫，断开表示公猫。因此，我们可以得到两个信号，把它们分别叫做F和M，如下图所示。
 
-<img alt="img" src="./readme.assets/00210.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00210.jpeg" style="display:block; width:40%;"/>
 
 当F为1时，M为0，反之亦然。同样，第二个开关闭合表示这只猫已绝育，断开则表示这只猫未绝育。
 
-<img alt="img" src="./readme.assets/00211.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00211.jpeg" style="display:block; width:40%;"/>
 
 下面两个开关更加复杂。两个开关的不同组合分别表示四种不同的颜色。以下为两个接有电源的开关。
 
-<img alt="img" src="./readme.assets/00212.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00212.jpeg" style="display:block; width:40%;"/>
 
 当两个开关都断开时（如上图所示），表示白色。以下就是如何运用两个反向器和一个与门来得到W信号的方式。如果你选择一只白猫，W就为高电平（1）；否则，就为低电平（0）。
 
-<img alt="img" src="./readme.assets/00213.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00213.jpeg" style="display:block; width:40%;"/>
 
 当两个开关断开时，两个反向器的输入均为0，两个反向器的输出（也就是与门的输入）都为1。这就意味着与门的输出为1。如果有一个开关闭合，与门的输出就为0。
 
 要想用闭合第一个开关表示一只黑猫，可以利用一个反向器和一个与门实现。
 
-<img alt="img" src="./readme.assets/00214.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00214.jpeg" style="display:block; width:40%;"/>
 
 只有当第一个开关闭合而第二个开关断开的时候，与门输出才为1。同样，如果第二个开关闭合而第一个开关断开，与门的输出也为1，我们用此来表示褐色的猫。
 
-<img alt="img" src="./readme.assets/00215.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00215.jpeg" style="display:block; width:40%;"/>
 
 
 如果两个开关同时闭合则表示其他颜色的猫。
 
-<img alt="img" src="./readme.assets/00216.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00216.jpeg" style="display:block; width:40%;"/>
 
 现在，我们将四个小电路合并成一个大电路（按照惯例，黑实心点表示交叉线之间是连接的，没有黑实心点的交叉线则表示仅仅是穿过，没有连接）。
 
-<img alt="img" src="./readme.assets/00217.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00217.jpeg" style="display:block; width:40%;"/>
 
 这个电路看起来非常复杂，但是如果你仔细地沿着线路走，看清每个与门的输入是从哪来的，而暂不论这些输入去向何方，电路的工作原理就会一目了然。如果两个开关都断开，输出信号W就为1，其他都为0。如果第一个开关闭合，则输出信号B为1，其他为0，依此类推。
 
@@ -2225,7 +2224,7 @@ OR
 
 在这个表达式中，每个加号（+），必定对应电路中的一个或门。对于每一个乘号（×），则对应一个与门，电路图如下所示。
 
-<img alt="img" src="./readme.assets/00218.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00218.jpeg" style="display:block; width:40%;"/>
 
 电路图左侧的字母由上到下的顺序与它们表达式中出现的顺序一样。这些信号来源于与反向器相连的开关和2-4译码器的输出。请注意用来表示表达式中（1-W）部分的反向器的用法。
 
@@ -2233,82 +2232,82 @@ OR
 
 下面要介绍另外两种本章要用到的逻辑门。这两个门都会用到这样一个继电器，该继电器在未被触发时，其输出为高电平（这是用在反向器中的输出）。例如，在下面这种配置中，第一个继电器的输出为第二个继电器提供电源。当两个继电器全都断开时，灯泡发光。
 
-<img alt="img" src="./readme.assets/00219.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00219.jpeg" style="display:block; width:40%;"/>
 
 
 如果上面的开关闭合，灯泡就会熄灭。
 
-<img alt="img" src="./readme.assets/00220.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00220.jpeg" style="display:block; width:40%;"/>
 
 灯泡熄灭是由于第二个继电器没有电源供应。同样的，如果下面的开关闭合，灯泡也会熄灭。
 
-<img alt="img" src="./readme.assets/00221.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00221.jpeg" style="display:block; width:40%;"/>
 
 
 如果两个开关全部闭合，灯泡也不亮。
 
-<img alt="img" src="./readme.assets/00222.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00222.jpeg" style="display:block; width:40%;"/>
 
 这些结果恰恰与或门相反，这个门称为“或非门”，简称NOR，用以下符号表示。
 
-<img alt="img" src="./readme.assets/00223.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00223.jpeg" style="display:block; width:40%;"/>
 
 除去输出部分的小圆圈，这个符号与或门非常相像。小圆圈表示“反向”，所以或非门也可用下面的符号表示。
 
-<img alt="img" src="./readme.assets/00224.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00224.jpeg" style="display:block; width:40%;"/>
 
 或非门的输出如下表所示。
 
-<img src="./readme.assets/00225.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00225.jpeg" style="display:block; width:40%;">
 
 这个表所显示的结果与或门正好相反，在或门中，两个输入中有一个为1输出就为1，只有两个输入都为0，输出才为0。
 
 下面是另一种连接两个继电器的方法。
 
-<img alt="img" src="./readme.assets/00226.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00226.jpeg" style="display:block; width:40%;"/>
 
 
 在这种情况下，两个输出连接在一起，与或门的布局类似，但是却采用了另一种输出接法。灯泡在两个开关全断开时被点亮。
 
 当上面的开关闭合时，灯泡依然是亮的。
 
-<img alt="img" src="./readme.assets/00227.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00227.jpeg" style="display:block; width:40%;"/>
 
 同样，当只有下面的开关闭合时，灯泡也依然是亮的。
 
-<img alt="img" src="./readme.assets/00228.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00228.jpeg" style="display:block; width:40%;"/>
 
 
 只有当两个开关全闭合的时候，灯泡才会熄灭。
 
-<img alt="img" src="./readme.assets/00229.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00229.jpeg" style="display:block; width:40%;"/>
 
 这一结果和与门恰恰相反。这种逻辑门被称为与非门，或简称NAND。与非门的符号和与门类似，但在输出部位多了一个小圆圈，意思是输出和与门正好相反。
 
-<img alt="img" src="./readme.assets/00230.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00230.jpeg" style="display:block; width:40%;"/>
 
 与非门的输出如下表所示。
 
-<img src="./readme.assets/00231.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00231.jpeg" style="display:block; width:40%;">
 
 
 注意与非门的输出是和与门完全相反的。与门只有当输入全为1的时候输出才为1，否则输出就为0。
 
 到此为止，我们已经看到可以用四种不同的方式来连接有两个输入、一个输出的继电器，每一种方式的行为功能都不一样。为了避免重复画继电器，我们将它们称为逻辑门，并用电气工程师们所使用的专门符号来表示它们。特定逻辑门的输出取决于它的输入，输出与输入的关系可总结为以下几个表格。
 
-<img src="./readme.assets/00232.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00232.jpeg" style="display:block; width:40%;">
 
 现在，我们已经有四个逻辑门和一个反向器。把这些工具组合到一起其实就是原始的继电器，如下图所示。
 
-<img alt="img" src="./readme.assets/00233.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00233.jpeg" style="display:block; width:40%;"/>
 
 这叫做缓冲器（buffer），可用如下符号表示。
 
-<img alt="img" src="./readme.assets/00234.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00234.jpeg" style="display:block; width:40%;"/>
 
 除了输入端的小圆圈，这个符号与反向器是很相似的。很明显，缓冲器“没有什么作用”，它的输入与输出是相同的。
 
-<img alt="img" src="./readme.assets/00235.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00235.jpeg" style="display:block; width:40%;"/>
 
 
 但是在输入信号很微弱的时候，缓冲器就可以派上用场。之前提到过，这也就是很多年前在电报机中使用继电器的原因。另外，缓冲器还可以用于延迟一个信号。这是因为继电器需要一点时间——几分之一秒——才会被触发。
@@ -2317,23 +2316,23 @@ OR
 
 前面在创建2-4译码器的时候，曾出现过这样一个小电路。
 
-<img alt="img" src="./readme.assets/00236.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00236.jpeg" style="display:block; width:40%;"/>
 
 两个输入信号经过反向器后作为与门的输入。这样的组合有时可以去掉反向器而画成如下的形式。
 
-<img alt="img" src="./readme.assets/00237.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00237.jpeg" style="display:block; width:40%;"/>
 
 注意与门输入端的小圆圈。这些小圆圈表示信号在那一点被反转——将0（低电平）转换为1（高电平），反之亦然。
 
 实际上，带有两个反向输入的与门和或非门是等价的。
 
-<img alt="img" src="./readme.assets/00238.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00238.jpeg" style="display:block; width:40%;"/>
 
 只有当输入都为0的时候，其输出才为1。
 
 类似的，带有两个反向输入的或门和与非门也是等价的。
 
-<img alt="img" src="./readme.assets/00239.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00239.jpeg" style="display:block; width:40%;"/>
 
 
 只有当输入全为1时，输出才为0。
@@ -2342,7 +2341,8 @@ OR
 
 摩根定律可以简单地表示为如下形式：
 
-<div class="picture_formula"><img src="./readme.assets/00240.jpeg" class="picture_formula1" ></div>
+<img src="./readme.assets/00240.jpeg" class="picture_formula1" >
+
 A和B是两个布尔操作数。在第一个表达式中，两个操作数先被取反，再进行与运算。这与两个操作数进行或运算后再取反（即或非）的结果是一样的。在第二个表达式中，两个操作数先取反，再进行或运算，这和两个操作数先做与运算后再取反（即与非）的结果是等价的。
 
 摩根定律是简化布尔表达式的一种重要手段，因此也可以用来简化电路。从历史的角度来说，这正是香农的论文带给电气工程师们的真正意义。但在本书中简化电路不是重点，我们关注的是让一切有效地运转而不是以最简的形式运转。我们下面要做的就是一台加法器。
@@ -2367,24 +2367,24 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 二进制数加法与十进制数加法最大的不同就在于二进制数加法中用到了一个更为简单的加法表。
 
-<img src="./readme.assets/00241.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00241.jpeg" style="display:block; width:40%;">
 
 如果你是一头鲸鱼并且在学校中学习了这个表格，你会大声说出：
 
-<img src="./readme.assets/00242.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00242.jpeg" style="display:block; width:40%;">
 
 以上加法表可以重新写为下面带有前导零的形式，这样每个结果就都是一个2位的值。
 
-<img src="./readme.assets/00243.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00243.jpeg" style="display:block; width:40%;">
 
 像这样，一对二进制数相加的结果中具有两个数码，其中一位叫做加法位（sum bit），另一位则叫做进位位（carry bit，例如，1加1等于0，进位为1）。下面我们将二进制数加法表分成两个表格，第一个是表示加法的。
 
-<img src="./readme.assets/00244.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00244.jpeg" style="display:block; width:40%;">
 
 第二个是表示进位的。
 
 
-<img src="./readme.assets/00245.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00245.jpeg" style="display:block; width:40%;">
 
 用这种方法来看二进制加法非常方便，因为在我们的加法器中加法与进位是分别进行的。搭建一个二进制加法器需要我们首先设计一个电路，通过该电路执行这些操作。完全用二进制数，问题将在很大程度上得以简化，因为，电路中的所有器件，像开关、灯泡、导线等都可以用来表示二进制数的位。
 
@@ -2398,86 +2398,86 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 加法器的控制面板如下图所示。
 
-<img alt="img" src="./readme.assets/00247.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00247.jpeg" style="display:block; width:40%;"/>
 
 在这个面板中，有两排开关，每排8个。这些开关就是输入设备，我们将用它们来“输入”两个8位二进制数。在这套输入设备中，开关断开（关）即表示0，闭合（开）表示1，这与你房间墙上的开关是一样的。面板底部的输出设备是一排灯泡，共9个。这些灯泡用来显示结果。不发光的灯泡表示0，发光的灯泡表示1。这里有9个灯泡，因为两个8位二进制数的相加结果可能是一个9位的二进制数。
 
 加法器的其他部分是以各种形式连接起来的逻辑门。开关将触发逻辑门中的继电器来点亮相应的灯泡。例如，如果我们要将0110-0101和1011-0110（之前例子中的两个数）相加，则要将相应的开关置于下图所示位置。
 
-<img alt="img" src="./readme.assets/00248.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00248.jpeg" style="display:block; width:40%;"/>
 
 灯泡发光显示结果为：1-0001-1011（然而，这只是一个希望的结果，因为我们还没有将加法器真正搭建出来！）
 
 在上一章中提到过，本书中我们将会用到许多继电器。这个8位二进制加法器中所用到的继电器不少于144个，其中我们用来相加的8对二进制位，每对都需要18个继电器。如果将全部电路展示出来，你一定会崩溃的。没有人能看懂以各种方式连接起来的144个继电器所表达的意义。相反地，我们要利用逻辑门来分阶段地处理这个问题。当看到进位（两个1相加就会产生一个进位）结果表的时候，或许你已经看出来逻辑门和二进制加法的一些相关性了。
 
-<img src="./readme.assets/00249.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00249.jpeg" style="display:block; width:40%;">
 
 你可能意识到了，这和上一章中与门的输出结果是一样的。
 
-<img src="./readme.assets/00250.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00250.jpeg" style="display:block; width:40%;">
 
 因此，利用与门可以计算两个二进制数加法的进位。
 
 到此，我们着实取得了一些进展。下面我们要做的就是利用继电器来实现下表。
 
 
-<img src="./readme.assets/00251.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00251.jpeg" style="display:block; width:40%;">
 
 这是在作两个二进制数加法时需要解决的另一个问题。加法位的情况并不像进位位那样简单，但是我们即将实现它。
 
 首先我们要知道，或门和我们想要的结果很相似，除了右下角的结果。
 
-<img src="./readme.assets/00252.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00252.jpeg" style="display:block; width:40%;">
 
 与非门同样和我们想要的结果很相似，除了左上角的结果。
 
-<img src="./readme.assets/00253.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00253.jpeg" style="display:block; width:40%;">
 
 下面我们将或门和与非门连接到相同的输入上，如下图所示。
 
-<img alt="img" src="./readme.assets/00254.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00254.jpeg" style="display:block; width:40%;"/>
 
 下表总结了或门和与非门的输出，并将其与我们想要的结果进行了对比。
 
-<img src="./readme.assets/00255.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00255.jpeg" style="display:block; width:40%;">
 
 注意，我们想要的是1，那么这种情况只有在或门和与非门的输出都为1时才会出现。这表明两个输出端可以通过一个与门连接到一起。
 
-<img alt="img" src="./readme.assets/00256.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00256.jpeg" style="display:block; width:40%;"/>
 
 
 这就是我们想要的结果。
 
 注意，在整个电路中仍然有两个输入和一个输出。两个输入同时作为或门和与非门的输入。或门和与非门的输出又分别作为一个与门的输入，最后得出了我们想要的结果。
 
-<img src="./readme.assets/00257.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00257.jpeg" style="display:block; width:40%;">
 
 实际上这个电路有个专门的名称，叫做异或门，简写为XOR。之所以称为异或门是因为若想其输出结果为1，要么仅让输入A为1，要么仅让输入B为1，两输入端都为1则输出为0。为了不把或门、与非门和与门都画出来，我们可以使用一个电气工程师所采用的特定电气符号来表示异或门。
 
-<img alt="img" src="./readme.assets/00258.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00258.jpeg" style="display:block; width:40%;"/>
 
 异或门在输入端比或门多出了一条曲线，除此之外它看上去和或门非常相像。异或门的特征如下表所示。
 
-<img src="./readme.assets/00259.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00259.jpeg" style="display:block; width:40%;">
 
 异或门是本书中详细介绍的最后一个逻辑门（第6个门有时会在电气工程中介绍到。它称做同或门，因为只有当两个输入相同的时候，其输出才为1。同或门所给出的输出刚好与异或门相反，因此同或门的符号和异或门相同，但在输出端多了个小圆圈）。
 
 让我们回顾一下到目前为止所了解的内容。将两个二进制数相加将产生一个加法位和一个进位位。
 
 
-<img src="./readme.assets/00260.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00260.jpeg" style="display:block; width:40%;">
 
 可以利用下面这两个逻辑门来实现这些结果。
 
-<img src="./readme.assets/00261.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00261.jpeg" style="display:block; width:40%;">
 
 两个二进制数相加的结果是由异或门的输出给出的，而进位位是由与门的输出给出的。因此我们可以将与门和异或门连在一起来计算两个二进制数（即A和B）的和。
 
-<img alt="img" src="./readme.assets/00262.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00262.jpeg" style="display:block; width:40%;"/>
 
 为了避免重复画与门和异或门，你可以采用如下这种简单的表示方式。
 
-<img alt="img" src="./readme.assets/00263.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00263.jpeg" style="display:block; width:40%;"/>
 
 这个符号被称为半加器（Half Adder）。之所以叫半加器是有原因的，它将两个二进制数相加，得出一个加法位和一个进位位。但是绝大多数二进制数是多于1位的。半加器没有做到的是将之前一次的加法可能产生的进位位纳入下一次运算。例如，假设我们要将如下两个二进制数相加。
 
@@ -2488,40 +2488,40 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 为了对三个二进制数进行加法运算，我们需要将两个半加器和一个或门做如下连接。
 
-<img alt="img" src="./readme.assets/00265.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00265.jpeg" style="display:block; width:40%;"/>
 
 要理解它的工作原理，首先从最左边第一个半加器的输入A和输入B开始，其输出是一个加和及相应的进位。这个和必须与前一列的进位输入相加，然后再把它们输入到第二个半加器中。第二个半加器的输出和是最后的结果。两个半加器的进位输出又被输入到一个或门中。你可能会觉得，这里还需要一个半加法器，这当然是可行的。但是如果你了解了所有的可能性之后，你会发现，两个半加法器的进位输出是不会同时为1的。或门在这里已经足够，因为或门除了在输入都为1的时候以外，其他情况下结果和异或门结果相同。
 
 为了避免重复地画上面的那个图，我们用以下形式来替代上图中的一堆符号，它称为全加器（Full Adder）。
 
-<img alt="img" src="./readme.assets/00266.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00266.jpeg" style="display:block; width:40%;"/>
 
 以下表格总结了全加法器所有可能的输入组合以及对应的输出结果。
 
-<img src="./readme.assets/00267.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00267.jpeg" style="display:block; width:40%;">
 
 在本章前面曾经提到过，我们的加法器需要144个继电器。下面就来解释一下这个数目是如何得到的。每个与门、或门和与非门都需要两个继电器，因此一个异或门中就包含6个继电器。一个半加器是由一个异或门和一个与门组成的，因此一个半加器就需要8个继电器。每个全加器由两个半加器和一个或门组成，所以它要18个继电器。我们需要8个全加器来制作8位二进制加法器。因而总共需要144个继电器。
 
 再来看看之前提到的由灯泡和开关所组成的控制面板。现在我们可以开始将开关和灯泡连接到全加器了。
 
-<img alt="img" src="./readme.assets/00268.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00268.jpeg" style="display:block; width:40%;"/>
 
 首先将最右端的两个开关和最右端的一个灯泡连接到一个全加器上。
 
-<img alt="img" src="./readme.assets/00269.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00269.jpeg" style="display:block; width:40%;"/>
 
 当把两个二进制数相加时，第1列的处理方式与其他列有所不同。因为后面的几列可能包括来自前面加法的进位，而第1列不会，所以全加器的进位输入端是接地的，这表示第1列的进位输入是一个0。第1列二进制数相加后很可能会产生一个进位输出，这个进位输出是下一列加法的输入。
 
 对于接下来的两个二进制位和灯泡，可以按如下办法来连接全加器。
 
-<img alt="img" src="./readme.assets/00270.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00270.jpeg" style="display:block; width:40%;"/>
 
 
 第一个全加器的进位输出就是第二个全加器的进位输入。随后的每列二进制数都以同样的方式连接。每一列进位输出都是下一列的进位输入。
 
 最终，第8个灯泡和最后一对开关将以如下方式连接到全加法器上。
 
-<img alt="img" src="./readme.assets/00271.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00271.jpeg" style="display:block; width:40%;"/>
 
 这里，最后一个进位输出将被连接到第9个灯泡上。
 
@@ -2529,32 +2529,32 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 还可以用另一种方式来看这8个全加器的连接，每个全加器的进位输出都作为下一个全加器的进位输入。
 
-<img alt="img" src="./readme.assets/00272.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00272.jpeg" style="display:block; width:40%;"/>
 
 下面是画成一个盒子的完整的8位二进制加法器，输入标记为A<span class="subscript">0</span>～A<span class="subscript">7</span>和B<span class="subscript">0</span>～B<span class="subscript">7</span>，输出标记为S<span class="subscript">0</span>～S<span class="subscript">7</span>。
 
-<img alt="img" src="./readme.assets/00273.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00273.jpeg" style="display:block; width:40%;"/>
 
 
 这就是表示多位数字中各位数字的常用方法。A<span class="subscript">0</span>、B<span class="subscript">0</span>和S<span class="subscript">0</span>是最低有效位，或者说是最右边的一位。A<span class="subscript">7</span>、B<span class="subscript">7</span>和S<span class="subscript">7</span>是最高有效位，或者说是最左边的一位。例如，下面演示了这样一列带有下标的字母是如何用来表示一个二进制数0110-1001的。
 
-<img alt="img" src="./readme.assets/00274.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00274.jpeg" style="display:block; width:40%;"/>
 
 下标从0开始，并且向着高有效位的方向递增，因为它们和2的乘方数（幂）相对应。
 
-<img alt="img" src="./readme.assets/00275.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00275.jpeg" style="display:block; width:40%;"/>
 
 如果把下面一排的每个二进制位和其对应的2的幂相乘再依次相加，你就会得到0110-1001的十进制数表示64 + 32 + 8 + 1，即105。
 
 另一种8位二进制加法器可用下图表示。
 
-<img alt="img" src="./readme.assets/00276.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00276.jpeg" style="display:block; width:40%;"/>
 
 双线箭头包含了8个输入端，代表一组8个独立的信号。它们被标识为A<span class="subscript">7</span>…A<span class="subscript">0</span>、B<span class="subscript">7</span>…B<span class="subscript">0</span>、S<span class="subscript">7</span>…S<span class="subscript">0</span>，同样也表示一个8位二进制数。
 
 一旦你搭建起了8位二进制加法器，你就可以再搭建另外一个加法器。把它们级联起来就可以很容易地扩展出一个16位加法器。
 
-<img alt="img" src="./readme.assets/00277.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00277.jpeg" style="display:block; width:40%;"/>
 
 
 右边加法器的进位输出被连接到了左边加法器的进位输入上。左边加法器的输入包含了两个加数的高8位，而得到的结果也是最终加和的高8位。
@@ -2709,46 +2709,46 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 该加法器的核心是由逻辑门集成的8位全加器。
 
-<img alt="img" src="./readme.assets/00301.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00301.jpeg" style="display:block; width:40%;"/>
 
 
 你可能还记得，输入A<span class="subscript">0</span>～A<span class="subscript">7</span>及B<span class="subscript">0</span>～B<span class="subscript">7</span>与两排分别表示两个要相加的8位二进制数的开关相连。进位输入接地。S<span class="subscript">0</span>～S<span class="subscript">7</span>与表示结果的8个灯泡相连。由于这个加法有可能得到9位数值，进位输出端也连接了一个灯泡。
 
 控制面板示意如下图所示。
 
-<img alt="img" src="./readme.assets/00302.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00302.jpeg" style="display:block; width:40%;"/>
 
 在上图中，开关所表示的是183（即10110111）与22（即00010110）相加，结果如灯泡所示为205（即11001101）。
 
 8位加/减法器所用的新面板较从前做了些许的改动。它增设了一个开关，用以选择做加法还是做减法。
 
-<img src="./readme.assets/00303.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00303.jpeg" style="display:block; width:40%;">
 
 
 如上图所示，这个开关向下断开时表示选择加法运算，反之向上接通则表示选择减法运算。此外，右侧的8个灯泡用于表示计算结果。这里，第9个灯泡表示“上溢/下溢”。这个灯泡表明了正在计算的数字是一个不能用8个灯泡来表示的数字。如果在加法中得到了大于255（上溢，overflow）或在减法中得到了负数（下溢，underflow）这个灯泡就会发光。当减数大于被减数的时候，就会得到一个负数。
 
 加法器中新增的主要部分就是一个用来求8位二进制数对1补数的电路。之前提到，二进制数对1求补数相当于对其每位取反，因此我们计算8位二进制数补数的时候可以简单地应用8个反向器。
 
-<img alt="img" src="./readme.assets/00304.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00304.jpeg" style="display:block; width:40%;"/>
 
 问题是，该电路只会对输入求反，而我们要的是一台既能做加法又能做减法的机器，因此就要求该电路当且仅当进行减法运算时才实现反转。电路可以改造为如下图所示。
 
-<img alt="img" src="./readme.assets/00305.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00305.jpeg" style="display:block; width:40%;"/>
 
 标记为“取反”的信号将被输入到每一个异或门中。回想一下异或门的工作方式，如下表所示。
 
-<img src="./readme.assets/00306.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00306.jpeg" style="display:block; width:40%;">
 
 因此，如果“取反”信号是0，则8个异或门输出与输入相同。例如，如果输入是01100001，那么输出也为01100001。如果“取反”信号为1，则输出信号反置。例如，如果输入为01100001，输出则为10011110。
 
 
 将8个异或门合并起来画成一个器件，称为求补器（One’s Complement），如下所示。
 
-<img alt="img" src="./readme.assets/00307.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00307.jpeg" style="display:block; width:40%;"/>
 
 将一个求补器，一个8位二进制加法器和一个异或门做如下连接。
 
-<img alt="img" src="./readme.assets/00308.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00308.jpeg" style="display:block; width:40%;"/>
 
 注意，这里三个信号都标识为“SUB”，这就是加/减法转换开关。当该信号为0的时候，其进行的是加法运算，为1时进行的则是减法运算。在减法中，输入B（第二排开关）在送入加法器之前，需先通过求补电路进行取反。此外，在做减法时，我们通过设定CI（进位输入）为1来使得结果加1。而在加法中，求补电路将不起作用，且输入CI为0。
 
@@ -2818,7 +2818,7 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 这样的机制在二进制中被称为2的补数。以8位二进制数为例。范围为00000000～11111111，对应十进制中的0～255。但是如果你还想表示负数的话，则以1开头的每个8位数都表示一个负数，如下表所示。
 
-<img src="./readme.assets/00309.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00309.jpeg" style="display:block; width:40%;">
 
 现在所表示的数的范围是-128～+127。最高有效位（最左位）作为符号位（sign bit）。符号位中，1表示负数，0表示正数。
 
@@ -2827,17 +2827,17 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 这个系统为我们提供了一种不用负号就能表示正、负数的方法。同样也让我们自由地将正数和负数用加法法则相加。例如，将与-127和124等价的两个二进制数相加。利用上面的表格，可以简单地写为：
 
-<img alt="img" src="./readme.assets/00310.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00310.jpeg" style="display:block; width:30%;"/>
 
 结果等于十进制的-3。
 
 要注意的是，这里涉及了上溢和下溢情况，即结果大于127或小于-128。例如，将125与它自身相加：
 
-<img alt="img" src="./readme.assets/00311.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00311.jpeg" style="display:block; width:30%;"/>
 
 由于最高位为1，结果代表一个负数，相当于十进制的数-6。将-125与它本身相加也会出现同样的情况：
 
-<img alt="img" src="./readme.assets/00312.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00312.jpeg" style="display:block; width:30%;"/>
 
 在一开始，我们规定所处理的数值为8位，因此最左位被忽略。右边8位相当于十进制的+6。
 
@@ -2858,35 +2858,35 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 将继电器、电池、开关按如下形式连接。
 
-<img alt="img" src="./readme.assets/00313.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00313.jpeg" style="display:block; width:40%;"/>
 
 
 如果你认为这个系统看起来有点古怪，说明你还没有发挥出想象力。或许以前我们没见过采用这种连接方式的继电器，因为我们通常所见过的继电器，其输入和输出是分开的，而这里却构成了一个回路。当开关闭合后，电路就连通了。
 
-<img alt="img" src="./readme.assets/00314.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00314.jpeg" style="display:block; width:40%;"/>
 
 连通的电路使得电磁铁把金属簧片拉了下来。
 
-<img alt="img" src="./readme.assets/00315.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00315.jpeg" style="display:block; width:40%;"/>
 
 当金属簧片的位置变化时，电路不再连通，电磁铁不再具有磁性，金属簧片又弹回原位。
 
-<img alt="img" src="./readme.assets/00316.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00316.jpeg" style="display:block; width:40%;"/>
 
 
 如此一来，电路又一次连通了。从整个过程来看：开关一旦闭合，金属簧片就会上下跳动——电路也会随之连通或断开——声音也就会随之发出。如果金属簧片发出了一种刺耳的声音，这套系统就成为了一个蜂鸣器。如果金属簧片前端是一把小锤子，旁边只要放上一个锣，就构成了一个电铃。
 
 有两种方法可以使继电器连接成为一个蜂鸣器，下面再给出一种方法的描述，在示意图中包含了一个标准电压符号和一个接地符号。
 
-<img alt="img" src="./readme.assets/00317.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00317.jpeg" style="display:block; width:40%;"/>
 
 看到这幅图你或许立刻想起了第11章介绍过的反向器，因此电路可以简化为如下图所示。
 
-<img alt="img" src="./readme.assets/00318.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00318.jpeg" style="display:block; width:40%;"/>
 
 正如你所记得的那样，当反向器的输入是0的时候，它的输出就为1；而当其输入为1时，输出就为0。电路中的开关一旦闭合，反向器中的继电器就会在连通与断开这两种状态之间反复交替。你也可以将电路中的开关省去，这样就可以使反向器连续地工作，如下所示。
 
-<img alt="img" src="./readme.assets/00319.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00319.jpeg" style="display:block; width:40%;"/>
 
 这幅图似乎在表达着一种矛盾的逻辑，反向器的输出与其输入是相反的，但是在这里，输出同时又是输入！然而，我们要牢牢记住，反向器在本质上就是一个继电器，而继电器将状态取反以得到另一个状态是需要一点点时间的。所以，即使输入和输出是相同的，输出也会很快地改变，成为输入的相反状态（当然，输出随即也会很快改变输入，如此反复）。
 
@@ -2898,11 +2898,11 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 当采用0和1的交替序列来表示振荡器的输出时，我们一般使用下面这样的图来形象地描述输出。
 
-<img alt="img" src="./readme.assets/00320.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00320.jpeg" style="display:block; width:40%;"/>
 
 我们可以通过这幅图来充分地了解电路的输出，水平坐标代表时间，垂直坐标用来表示输出是0还是1。
 
-<img alt="img" src="./readme.assets/00321.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00321.jpeg" style="display:block; width:40%;"/>
 
 这幅图表示随着时间的推移，振荡器的输出在0和1之间按照固有的规律交替变化。正因为这一点，振荡器又经常被称为时钟（clock），通过振荡进行计数也是一种计时方式。
 
@@ -2911,11 +2911,11 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 振荡器从某个初始状态开始，经过一段时间又回到先前初始状态的这一段间隔定义为振荡器的一个循环（cycle），或者称为一个周期，如下图所示。
 
 
-<img alt="img" src="./readme.assets/00322.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00322.jpeg" style="display:block; width:40%;"/>
 
 一个循环所占用的时间就是该振荡器的周期（period）。假设我们使用的振荡器的周期恰好是0.05s，任取一个时间点，将其设置为起始状态点，我们把它标注为零点，就可以在水平轴上标出相应的时间。
 
-<img src="./readme.assets/00323.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00323.jpeg" style="display:block; width:40%;">
 
 周期的倒数就是振荡器的频率（frequency）。在这个例子中振荡器的周期是0.05s，那么其频率就是1÷0.05s，即振荡器每秒钟产生20次循环，而相应的输出每秒钟也变化20次。
 
@@ -2927,33 +2927,33 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 在此之前，让我们先来看看采用特殊方式连接的一对或非门。或非门的特点是只有在两个输入端都没有电压时，输出端才产生电压。
 
-<img src="./readme.assets/00324.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00324.jpeg" style="display:block; width:40%;">
 
 
 下面是一个包含两个或非门、两个开关和一个灯泡的电路。
 
-<img alt="img" src="./readme.assets/00325.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00325.jpeg" style="display:block; width:40%;"/>
 
 值得注意的是这种特殊的弯曲的连线方式：左边或非门的输出是右边或非门的输入，而右边或非门的输出是左边或非门的输入。这种连接方式我们称之为反馈（feedback）。系统的输出返回给输入这种形式和我们在振荡器中讨论的情况很相似。接下来你将会看到，本章大部分电路都具备这种特质。
 
 在初始状态下，电路中只有左边的或非门输出电流，这是因为其两个输入均为0。让我们闭合上面的开关，左边或非门将立刻输出0，右边或非门的输出也会随之变为1，这时灯泡将被点亮。
 
-<img alt="img" src="./readme.assets/00326.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00326.jpeg" style="display:block; width:40%;"/>
 
 奇妙的是，这时一旦你关闭上边的开关，灯炮依然闪闪发光。这是因为由于左边或非门的输入中有一个为1，其输出依然是0，因而左边或非门的输出不变，所以灯泡仍然亮着。
 
-<img alt="img" src="./readme.assets/00327.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00327.jpeg" style="display:block; width:40%;"/>
 
 
 难道你不觉得有点奇怪吗？两个开关都断开——和第一幅场景描述的是一模一样——但这里的灯泡却仍发光。这与我们先前所见过的所有情况都完全不同。先前遇到的电路其输出依赖且仅依赖于其输入，这次的结论与以前的大相径庭。无论上面的开关怎么调整其状态，灯泡总是亮着。这个开关对电路毫无影响，究其原因可以发现这是由于左边或非门的输出一直为0。
 
 现在来试试闭合下面的开关。我们会发现右边或非门的输入中有一个立刻变为1，其输出就相应地变为0，灯泡随之熄灭。左边或非门的输出此刻变为1。
 
-<img alt="img" src="./readme.assets/00328.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00328.jpeg" style="display:block; width:40%;"/>
 
 这时你再去断开下面的开关就会发现，灯泡一直处在熄灭状态。
 
-<img alt="img" src="./readme.assets/00329.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00329.jpeg" style="display:block; width:40%;"/>
 
 此时的电路状态与初始时是一样的。但是这次无论你怎么改变下面开关的状态，灯泡丝毫不受影响。我们将先前的情况一起总结一下：
 
@@ -2972,20 +2972,20 @@ A和B是两个布尔操作数。在第一个表达式中，两个操作数先被
 
 触发器种类繁多，先前所讲述的是最简单的一种R-S（Reset-Set，复位/置位）触发器。我们通常把两个或非门绘制成另一种形式，加上标识符就得到了下面这幅图。
 
-<img alt="img" src="./readme.assets/00330.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00330.jpeg" style="display:block; width:40%;"/>
 
-我们通常用Q来表示用于点亮灯泡的输出的状态。另一个输出<img src="./readme.assets/00331.jpeg" class="picture_formula_line1" >（读做Q反）是对Q的取反。Q是0，<img src="./readme.assets/00332.jpeg" class="picture_formula_line1" >就是1，反之亦然。输入端S（Set）用来置位，R（Reset）用来复位。你可以把“置位”理解为把Q设为1，而“复位”是把Q设为0。当状态S为1时（对应于先前触发器中上面的开关闭合的情况），此时Q变为1而<img src="./readme.assets/00333.jpeg" class="picture_formula_line1" >变为0；当R状态为1时（对应于前面图中闭合下面的开关的情况），此时Q变为0而<img src="./readme.assets/00334.jpeg" class="picture_formula_line1" >变为1。当S和R均为0时，输出保持Q原来的状态不变。我们把结论总结如下表所示。
+我们通常用Q来表示用于点亮灯泡的输出的状态。另一个输出<img src="./readme.assets/00331.jpeg" style="display:block; width:5%;">（读做Q反）是对Q的取反。Q是0，<img src="./readme.assets/00332.jpeg" style="display:block; width:5%;">就是1，反之亦然。输入端S（Set）用来置位，R（Reset）用来复位。你可以把“置位”理解为把Q设为1，而“复位”是把Q设为0。当状态S为1时（对应于先前触发器中上面的开关闭合的情况），此时Q变为1而<img src="./readme.assets/00333.jpeg" style="display:block; width:5%;">变为0；当R状态为1时（对应于前面图中闭合下面的开关的情况），此时Q变为0而<img src="./readme.assets/00334.jpeg" style="display:block; width:5%;">变为1。当S和R均为0时，输出保持Q原来的状态不变。我们把结论总结如下表所示。
 
 
-<img alt="img" src="./readme.assets/00335.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00335.jpeg" style="display:block; width:40%;"/>
 
 这类表称为功能表（function table）、逻辑表（logic table）或真值表（truth table）。它表达了不同输入组合所对应的不同输出结果。因为R-S触发器仅有两个输入端，所以不同的输入组合共有4种，分别对应于表中的4行。
 
-注意表中倒数第2行，这一行输入S和R均为0，而输出标识为Q和<img src="./readme.assets/00336.jpeg" class="picture_formula_line1" >。这表示当S和R输入均为0时，Q和<img src="./readme.assets/00337.jpeg" class="picture_formula_line1" >端的输出保持为S、R同时被设为0以前的输出值。表中最后一行表示S和R均为1的输入组合是被禁止或者不合法的。不要误解为你会因此被逮捕，而是说如果S、R状态同时为1时，Q和<img src="./readme.assets/00338.jpeg" class="picture_formula_line1" >均会为零，这与Q和<img src="./readme.assets/00339.jpeg" class="picture_formula_line1" >互反的假设关系相矛盾。所以当使用R-S触发器进行电路设计时，R、S输入同时为1的情况一定要避免。
+注意表中倒数第2行，这一行输入S和R均为0，而输出标识为Q和<img src="./readme.assets/00336.jpeg" style="display:block; width:5%;">。这表示当S和R输入均为0时，Q和<img src="./readme.assets/00337.jpeg" style="display:block; width:5%;">端的输出保持为S、R同时被设为0以前的输出值。表中最后一行表示S和R均为1的输入组合是被禁止或者不合法的。不要误解为你会因此被逮捕，而是说如果S、R状态同时为1时，Q和<img src="./readme.assets/00338.jpeg" style="display:block; width:5%;">均会为零，这与Q和<img src="./readme.assets/00339.jpeg" style="display:block; width:5%;">互反的假设关系相矛盾。所以当使用R-S触发器进行电路设计时，R、S输入同时为1的情况一定要避免。
 
 R-S触发器可以简化为带有输入和输出标志的小框图，就像下面画的这样。
 
-<img alt="img" src="./readme.assets/00340.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00340.jpeg" style="display:block; width:40%;"/>
 
 R-S触发器最突出的特点在于，它可以记住哪个输入端的最终状态为1。但是有时候我们需要一种记忆能力更加强大的电路，例如能记住在某个特定时间点上的一个信号是0还是1。
 
@@ -2993,33 +2993,33 @@ R-S触发器最突出的特点在于，它可以记住哪个输入端的最终�
 
 我们可以把状态转化的过程以真值表的形式表示如下。
 
-<img alt="img" src="./readme.assets/00341.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00341.jpeg" style="display:block; width:40%;"/>
 
 
 在前两种情况下，保持位为1，输出Q与数据端输入相同；后面两种情况下，保持位为0，输出端Q和其前一个状态保持一致。值得注意的是，保持位为0意味着输出将不再变化，也就是说不再被数据端所影响，我们可以进一步将真值表简化为如下所示。
 
-<img alt="img" src="./readme.assets/00342.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00342.jpeg" style="display:block; width:40%;"/>
 
 X表示“其取值情况与结果无关”，只要保持位的值为0，那么数据位对电路的输出没有影响，电路的输出和其前一个状态相同。
 
 如果使用先前学过的R-S触发器来实现这种具有保持位的功能系统，那么我们的电路需要在输入端增加两个与门，下图所给出了该系统的实现电路。
 
-<img alt="img" src="./readme.assets/00343.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00343.jpeg" style="display:block; width:40%;"/>
 
-回忆一下与门，它的特点是只有在输入端都为1的状态下，输出才为1。在上面这幅图中，输出端Q为0，<img src="./readme.assets/00344.jpeg" class="picture_formula_line2" >为1。
+回忆一下与门，它的特点是只有在输入端都为1的状态下，输出才为1。在上面这幅图中，输出端Q为0，<img src="./readme.assets/00344.jpeg" style="display:block; width:5%;">为1。
 
 只要保持位为0，则置位端对于输出结果不会有任何影响。
 
-<img alt="img" src="./readme.assets/00345.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00345.jpeg" style="display:block; width:40%;"/>
 
 
 同样，复位信号对输出也无任何影响。
 
-<img alt="img" src="./readme.assets/00346.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00346.jpeg" style="display:block; width:40%;"/>
 
 当保持位信号为1时，这套电路系统就和先前讲过的R-S触发器功能一致。
 
-<img alt="img" src="./readme.assets/00347.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00347.jpeg" style="display:block; width:40%;"/>
 
 这时由于上面与门的输出和复位端输入相同，而下面与门的输出和置位端输入相同，所以电路系统的功能和普通的R-S触发器是一样的。
 
@@ -3028,34 +3028,34 @@ X表示“其取值情况与结果无关”，只要保持位的值为0，那么
 由此可以总结出，真正有意义的输入可以是S为0，R为1或者是R为0，S为1的情形。如果把数据端信号看做置位信号，把它取反后的值看做复位端信号，我们可以画出相应的电路图如下所示。
 
 
-<img alt="img" src="./readme.assets/00348.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00348.jpeg" style="display:block; width:40%;"/>
 
-在上图所表示的情况下，所有输入均为0，而输出Q也为0（此时<img src="./readme.assets/00349.jpeg" class="picture_formula_line2" >为1）。可以看出只要保持位为0，电路输出就丝毫不受输入端的影响。
+在上图所表示的情况下，所有输入均为0，而输出Q也为0（此时<img src="./readme.assets/00349.jpeg" style="display:block; width:5%;">为1）。可以看出只要保持位为0，电路输出就丝毫不受输入端的影响。
 
-<img alt="img" src="./readme.assets/00350.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00350.jpeg" style="display:block; width:40%;"/>
 
 当保持位为1时，电路反映出数据端输入的值。
 
-<img alt="img" src="./readme.assets/00351.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00351.jpeg" style="display:block; width:40%;"/>
 
-现在Q端的输出和数据输入是一致的，而<img src="./readme.assets/00352.jpeg" class="picture_formula_line2" >端则正好相反。现在保持位又回到0，如下图所示。
+现在Q端的输出和数据输入是一致的，而<img src="./readme.assets/00352.jpeg" style="display:block; width:5%;">端则正好相反。现在保持位又回到0，如下图所示。
 
-<img src="./readme.assets/00353.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00353.jpeg" style="display:block; width:40%;">
 
 
 这时，电路会“记得”当保持位最后一次置1时数据端输入的值，数据端的变化对此没有影响。例如，数据端再置回0对输出将不会产生影响。
 
-<img alt="img" src="./readme.assets/00354.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00354.jpeg" style="display:block; width:40%;"/>
 
 这个电路称为电平触发的D型触发器，D（Data）表示数据端输入。所谓电平触发是指当保持位输入为某一特定电平（本例中为“1”）时，触发器才保存数据端的输入值（很快，我们将看到另一种形式的触发器）。
 
 通常情况下，当这种电路出现在书中的时候，输入端是不会被标记为保持位的，而是被标记为时钟（clock）。当然，这种信号并不是真正的时钟，但是在某些情况下它却具有类似时钟的属性，即它可以在0和1之间有规律地来回变化。但是现在时钟仅仅用来指示什么时候保存数据。
 
-<img alt="img" src="./readme.assets/00355.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00355.jpeg" style="display:block; width:40%;"/>
 
 通常把数据端简写为D，时钟端简写为Clk，其功能表如下所示。
 
-<img alt="img" src="./readme.assets/00356.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00356.jpeg" style="display:block; width:40%;"/>
 
 这个电路也就是所谓的电平触发的D型锁存器，它表示电路锁存住一位数据并保持它，以便将来使用。这个电路也可以被称为1位存储器。在本书的第16章将会介绍如何将多个1位存储器连接起来构成多位存储器。
 
@@ -3064,33 +3064,33 @@ X表示“其取值情况与结果无关”，只要保持位的值为0，那么
 
 可以使用锁存器来解决这个问题。我们在一个小盒子里布置8个锁存器，如前所述，每个锁存器包括两个或非门、两个与门以及一个反相器。所有的时钟输入端都互相连在一起。结果如下图所示。
 
-<img alt="img" src="./readme.assets/00357.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00357.jpeg" style="display:block; width:40%;"/>
 
 这个锁存器可以一次保存8位数。上面的8个输入端依次标记为D<span class="subscript">0</span>～D<span class="subscript">7</span>，下面的8个输出端被标记为Q<span class="subscript">0</span>～Q<span class="subscript">7</span>。左边的输入是时钟（Clk），时钟信号通常为0。当时钟信号为1时，D端输入的8位值被送到Q端输出。当时钟信号为0时，这8位值将保持不变，直到时钟信号再次被置1。
 
 也可以将8位锁存器的8个数据输入端和8个Q输出端画为两组线，如下图所示。
 
-<img alt="img" src="./readme.assets/00358.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00358.jpeg" style="display:block; width:40%;"/>
 
 下面是8位加法器的图示。
 
-<img alt="img" src="./readme.assets/00359.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00359.jpeg" style="display:block; width:40%;"/>
 
 
 通常（先不考虑上一章讲到的减法器），8个A输入端和8个B输入端连接到开关上，CI（进位输入）接地，而8个S（计算和）输出以及CO（进位输出）端连接到灯泡上。
 
 经过改进，8位加法器的8个S输出端既与灯泡相连，又连接到8位锁存器的数据（D）输入端。标记为“保存”（Save）的开关是锁存器的时钟输入，用来存放加法器的运算结果。
 
-<img alt="img" src="./readme.assets/00360.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00360.jpeg" style="display:block; width:40%;"/>
 
 标识为2-1选择器的方块是让你用一个开关来选择加法器的B端输入是取自第2排开关还是取自锁存器的Q端输出。当开关闭合时，就选择了用8位锁存器的输出作为B端输入。2-1选择器使用了8个如下所示的电路。
 
-<img src="./readme.assets/00361.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00361.jpeg" style="display:block; width:40%;">
 
 
 如果选择端（Select）输入是1，那么或门的输出和B端的输入就是一致的。这是因为上面与门的输出和B端输入是一样的，而下面与门的输出是0。类似的，如果选择端的输入是0，那么或门的输出则和A端输入一致。总结起来如下表所示。
 
-<img alt="img" src="./readme.assets/00362.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00362.jpeg" style="display:block; width:40%;"/>
 
 改进后的加法器中包含了8个这样的1位选择器。所有的选择端输入信号都是连在一起的。
 
@@ -3098,7 +3098,7 @@ X表示“其取值情况与结果无关”，只要保持位的值为0，那么
 
 对于加法器来说，一个更好的改进方法是去掉一整排8个开关。但是首先要对D触发器做一些修改，为它加一个或门和一个称为清零（Clear）的输入信号。清零信号通常为0，但当它为1时，Q输出为0，如下图所示。
 
-<img alt="img" src="./readme.assets/00363.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00363.jpeg" style="display:block; width:40%;"/>
 
 无论其他信号是什么，清零信号总是强制使Q输出为0，以达到使触发器清零的目的。
 
@@ -3109,121 +3109,122 @@ X表示“其取值情况与结果无关”，只要保持位的值为0，那么
 
 你可能会发现这个加法器比前面的那个好用，特别是当你需要加上一长串数字时。首先按下清零开关，这个操作会使锁存器的输出为0，并且熄灭了所有的灯泡，同时使8位加法器的第2行输入全为0。然后，通过开关输入第一个加数，并且闭合“相加”开关，这个加数的值就反映在灯泡上。再输入第二个加数并再次闭合“相加”开关。由开关输入的8位操作数加到前面的结果上，所得的和体现到灯泡上。反复如此操作，可以连续进行很多次加运算。
 
-<img alt="img" src="./readme.assets/00364.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00364.jpeg" style="display:block; width:40%;"/>
 
-前面提到过，我们所设计的D触发器是电平触发的，也就是说为了使数据端的值保存在锁存器中，必须把时钟端的输入从0变为1（即高电平）。但是，当时钟端输入为1时，数据端的输入是可以改变的，这时数据端输入的任何改变都会反映在Q和<img src="./readme.assets/00365.jpeg" class="picture_formula_line2" >的输出值中。
+前面提到过，我们所设计的D触发器是电平触发的，也就是说为了使数据端的值保存在锁存器中，必须把时钟端的输入从0变为1（即高电平）。但是，当时钟端输入为1时，数据端的输入是可以改变的，这时数据端输入的任何改变都会反映在Q和<img src="./readme.assets/00365.jpeg" style="display:block; width:5%;">的输出值中。
 
 对某些应用而言，电平触发时钟输入已经足够用了；但是对另外一些应用来说，边沿触发（edge-triggered）时钟输入则更有效。对于边沿触发器而言，只有当时钟从0跳变到1时，才会引起输出的改变。它们的区别在于，在电平触发器中，当时钟输入为0时，数据端输入的任何改变都不会影响输出；而在边沿触发器中，当时钟输入为1时，数据端输入的改变也不会影响输出。只有在时钟输入从0变到1的瞬间，数据端的输入才会影响边沿触发器的输出。
 
 边沿触发的D型触发器是由两级R-S触发器按如下方式连接而成的。
 
-<img alt="img" src="./readme.assets/00366.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00366.jpeg" style="display:block; width:40%;"/>
 
 这里，时钟端的输入既控制着第一级R-S触发器，也控制着第二级，但是要注意的是时钟信号在第一级中进行了取反操作，这意味着除了当时钟信号为0时保存数据外，第一级R-S触发器和D型触发器工作原理完全一致。第一级R-S触发器的输出是第二级的输入，当时钟信号为1时，它们都被保存。一言概之，只有当时钟信号由0变为1时，数据端输入才被保存下来。
 
 进一步分析，下图为一个处于非工作状态的触发器，其数据输入和时钟输入均为0，且Q输出也为0。
 
-<img alt="img" src="./readme.assets/00367.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00367.jpeg" style="display:block; width:40%;"/>
 
 现在使数据端输入为1，如下图所示。
 
-<img alt="img" src="./readme.assets/00368.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00368.jpeg" style="display:block; width:40%;"/>
 
 
 这改变了第一级触发器的状态，因为时钟输入取反变为1。但第二级触发器状态保持不变，因为时钟输入仍然为0。现在把时钟输入变为1。
 
-<img alt="img" src="./readme.assets/00369.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00369.jpeg" style="display:block; width:40%;"/>
 
 这就引起了第二级触发器输出的改变，使Q输出变为1。不同点在于，无论数据端输入发生何种变化（比方说变为0）都不会影响Q的输出。
 
-<img alt="img" src="./readme.assets/00370.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00370.jpeg" style="display:block; width:40%;"/>
 
-只有在时钟输入从0变化到1的瞬间Q和<img src="./readme.assets/00371.jpeg" class="picture_formula_line2" >输出才发生变化。
+只有在时钟输入从0变化到1的瞬间Q和<img src="./readme.assets/00371.jpeg" style="display:block; width:5%;">输出才发生变化。
 
 边沿触发的D型触发器的功能表需要一个新的符号来表示从0到1的瞬时变化，即用一个向上的箭头（↑）表示，如下表所示。
 
-<img alt="img" src="./readme.assets/00372.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00372.jpeg" style="display:block; width:40%;"/>
 
 
 表中箭头表示当时钟端由0变为1时（称为时钟信号的“正跳变”，“负跳变”是指从1变为0），Q端输出与数据端输入是相同的。触发器的符号如下图所示。
 
-<img alt="img" src="./readme.assets/00373.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00373.jpeg" style="display:block; width:40%;"/>
 
 图中的小三角符号表示触发器是边沿触发的。
 
 下面展示的是一个使用边沿D型触发器的电路，这个电路是不能用电平触发形式复制出来的。先回忆一下本章开始构造的振荡器，其输出在0和1之间变化。
 
-<img alt="img" src="./readme.assets/00374.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00374.jpeg" style="display:block; width:30%;"/>
 
-把振荡器的输出与边沿触发的D型触发器的时钟端输入连接，同时把<img src="./readme.assets/00375.jpeg" class="picture_formula_line2" >端输出连接到本身的D输入端。
+把振荡器的输出与边沿触发的D型触发器的时钟端输入连接，同时把<img src="./readme.assets/00375.jpeg" style="display:block; width:5%;">端输出连接到本身的D输入端。
 
-<img alt="img" src="./readme.assets/00376.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00376.jpeg" style="display:block; width:40%;"/>
 
 这个触发器的输出同时又是它自己的输入。反馈紧接着反馈！（实际上，这种构造可能是有问题的，振荡器是由状态来回迅速改变的继电器构成的，其输出与构成触发器的继电器相连，而这些其他的继电器不一定能跟得上振荡器的速度。为了避免这些问题，这里假设振荡器中的继电器比电路中其他地方的继电器速度要慢得多）
 
-仔细看一看下面的功能表就可以明白在电路中发生的情况了，电路启动时，假设时钟输入为0且Q输出也为0，则<img src="./readme.assets/00377.jpeg" class="picture_formula_line2" >端输出为1，而<img src="./readme.assets/00378.jpeg" class="picture_formula_line2" >是和D端输入相连的。
+仔细看一看下面的功能表就可以明白在电路中发生的情况了，电路启动时，假设时钟输入为0且Q输出也为0，则<img src="./readme.assets/00377.jpeg" style="display:block; width:5%;">端输出为1，而<img src="./readme.assets/00378.jpeg" style="display:block; width:5%;">是和D端输入相连的。
 
-<img alt="img" src="./readme.assets/00379.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00379.jpeg" style="display:block; width:30%;"/>
 
 
 当时钟输入从0变为1时，Q输出与D输入相同。
 
-<img alt="img" src="./readme.assets/00380.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00380.jpeg" style="display:block; width:30%;"/>
 
-但是由于<img src="./readme.assets/00381.jpeg" class="picture_formula_line2" >的输出变为0，因此D输入也变为0。现在时钟输入为1，如下表所示。
+但是由于<img src="./readme.assets/00381.jpeg" style="display:block; width:5%;">的输出变为0，因此D输入也变为0。现在时钟输入为1，如下表所示。
 
-<img alt="img" src="./readme.assets/00382.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00382.jpeg" style="display:block; width:30%;"/>
 
 当时钟输入变回0时，不会影响到输出，如下表所示。
 
-<img alt="img" src="./readme.assets/00383.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00383.jpeg" style="display:block; width:30%;"/>
 
-现在时钟端输入又变为1。由于D输入为0，那么Q输出为0且<img src="./readme.assets/00384.jpeg" class="picture_formula_line2" >输出为1。
+现在时钟端输入又变为1。由于D输入为0，那么Q输出为0且<img src="./readme.assets/00384.jpeg" style="display:block; width:5%;">输出为1。
 
-<img alt="img" src="./readme.assets/00385.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00385.jpeg" style="display:block; width:30%;"/>
 
 
 所以D输入也变为1，如下表所示。
 
-<img alt="img" src="./readme.assets/00386.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00386.jpeg" style="display:block; width:30%;"/>
 
 以上发生的现象可以简单总结为：每当时钟输入由0变为1时，Q端输出就发生变化，或者从0到1，或者由1到0。下面的时序图可以更加清楚地说明这个问题。
 
-<img alt="img" src="./readme.assets/00387.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00387.jpeg" style="display:block; width:40%;"/>
 
-当时钟端Clk输入由0变为1时，D的值（与<img src="./readme.assets/00388.jpeg" class="picture_formula_line2" >的值相同）被输出到Q端。当下一次Clk信号由0变为1时，D和<img src="./readme.assets/00389.jpeg" class="picture_formula_line2" >的值同样会改变。
+当时钟端Clk输入由0变为1时，D的值（与<img src="./readme.assets/00388.jpeg" style="display:block; width:5%;">的值相同）被输出到Q端。当下一次Clk信号由0变为1时，D和<img src="./readme.assets/00389.jpeg" style="display:block; width:5%;">的值同样会改变。
 
-如果这个振荡器的频率是20Hz（即20个周期的时间为1s），那么Q的输出频率是它的一半，即10Hz，由于这个原因，这种电路称为分频器（frequency divider），它的<img src="./readme.assets/00390.jpeg" class="picture_formula_line2" >输出反馈到触发器的数据端输入D。
+如果这个振荡器的频率是20Hz（即20个周期的时间为1s），那么Q的输出频率是它的一半，即10Hz，由于这个原因，这种电路称为分频器（frequency divider），它的<img src="./readme.assets/00390.jpeg" style="display:block; width:5%;">输出反馈到触发器的数据端输入D。
 
 当然，分频器的输出可以作为另一个分频器的Clk输入，并再一次进行分频。下面是三个分频器连接在一起的示意图。
 
-<img alt="img" src="./readme.assets/00391.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00391.jpeg" style="display:block; width:40%;"/>
 
 
 上图顶部的4个信号变化规律如下图所示。
 
-<img alt="img" src="./readme.assets/00392.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00392.jpeg" style="display:block; width:40%;"/>
 
 这里只给出了这幅图的一部分，因为这个电路会重复上述过程周而复始地变化下去。在这幅图中，你有没有发现眼熟的东西呢？
 
 提示一下，把这些信号标上0和1。
 
-<img alt="img" src="./readme.assets/00393.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00393.jpeg" style="display:block; width:40%;"/>
 
 现在看出来了么？试着把这个图顺时针旋转90°，然后读一读每一行的4位数字，它们分别对应了十进制中的0～15中的一个数。
 
-<img src="./readme.assets/00394.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00394.jpeg" style="display:block; width:40%;">
 
 
 <p class="picture_table_tit
 
 
-<img src="./readme.assets/00395.jpeg" style="display:block; width:50%;"></div>
+<img src="./readme.assets/00395.jpeg" style="display:block; width:40%;">
+
 可以看出，这个电路不仅仅具备了一个计数功能。当然，如果在这个电路中添加更多的触发器，其计数范围就会更大。在第8章中提到一个顺序递增的二进制序列，每一列数字在0和1之间的变化频率是其右边那一列数字变化频率的一半，这个计数器就是模仿了这一点。在每一次时钟信号的正跳变时，计数器的输出是增加的，即递增1。
 
 把8个触发器连接在一起，然后放入一个盒子中，构成了一个8位计数器。
 
-<img alt="img" src="./readme.assets/00396.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00396.jpeg" style="display:block; width:40%;"/>
 
 这个计数器称为“8位行波计数器”，因为每一个触发器的输出都是下一个触发器的时钟输入。变化是在触发器中一级一级地顺序传递的，最后一级触发器的变化必定会有一些延迟，更先进的计数器是“并行（同步）计数器”，这种计数器的所有输出是在同一时刻改变的。
 
@@ -3231,7 +3232,7 @@ X表示“其取值情况与结果无关”，只要保持位的值为0，那么
 
 这样一个计数器的时序图可以将8个输出分别表示出来，也可以将它们作为整体一起表示出来，如下图所示。
 
-<img alt="img" src="./readme.assets/00397.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00397.jpeg" style="display:block; width:40%;"/>
 
 
 时钟信号的每一个正跳变发生时，一些Q输出可能会改变，而另外一些可能不变，但总体上来说它们所表示的二进制编码递增了1。
@@ -3240,16 +3241,16 @@ X表示“其取值情况与结果无关”，只要保持位的值为0，那么
 
 随着触发器功能的增加，它的结构也变得更加复杂，下面给出了一个带预置和清零功能的边沿型D触发器。
 
-<img alt="img" src="./readme.assets/00398.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00398.jpeg" style="display:block; width:40%;"/>
 
-通常情况下，预置和清零信号输入会覆盖时钟和数据端输入，且两个输入都为0，当预置信号为1时，Q变为1，<img src="./readme.assets/00399.jpeg" class="picture_formula_line2" >变为0。当清零信号为1，Q变为0，<img src="./readme.assets/00400.jpeg" class="picture_formula_line2" >变为1（同R-S触发器中的S和R输入端一样，预置和清零信号不能同时为1）。除此之外，该触发器工作原理是和普通边沿D触发器是一样的。
+通常情况下，预置和清零信号输入会覆盖时钟和数据端输入，且两个输入都为0，当预置信号为1时，Q变为1，<img src="./readme.assets/00399.jpeg" style="display:block; width:5%;">变为0。当清零信号为1，Q变为0，<img src="./readme.assets/00400.jpeg" style="display:block; width:5%;">变为1（同R-S触发器中的S和R输入端一样，预置和清零信号不能同时为1）。除此之外，该触发器工作原理是和普通边沿D触发器是一样的。
 
-<img alt="img" src="./readme.assets/00401.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00401.jpeg" style="display:block; width:40%;"/>
 
 
 电路图符号可以简单地用下图来代替。
 
-<img alt="img" src="./readme.assets/00402.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00402.jpeg" style="display:block; width:40%;"/>
 
 现在，我们已经懂得如何使用继电器来做加法、减法和计数了，这是一件很有成就感的事情，因为我们使用的硬件是100多年前就存在的东西。我们还有更多未知领域要去探索，请稍事休息，停止思考那些构造方面的问题，回过头再来看看数字方面的问题吧。
 
@@ -3274,31 +3275,31 @@ X表示“其取值情况与结果无关”，只要保持位的值为0，那么
 
 我们完全可以采用十进制表示法来表示字节，但从二进制转换到十进制需要进行一系列计算——计算方法并不复杂，但是比较麻烦。我曾在第8章曾介绍过一种直观的计算方法。因为每一位二进制数对应着2的不同幂，因此我们可以把二进制数写到第一行，在底下写出每一位二进制数对应的2的乘方数，然后采用“列相乘、行相加”就可以得到对应的十进制数。下图表示了10110110的转换过程。
 
-<img alt="img" src="./readme.assets/00403.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00403.jpeg" style="display:block; width:40%;"/>
 
 把十进制数转换为二进制数就需要一点点技巧了。我们可以用这个十进制数不断除以递减排列的2的幂，每除一次得到的商就是所要求的二进制数中的一位，而余数成为下一次运算的除数，它的作用是除以下一个较小一点的2的幂。下图表示了十进制数182转换成二进制形式的过程。
 
-<img alt="img" src="./readme.assets/00404.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00404.jpeg" style="display:block; width:40%;"/>
 
 第8章对这种计算方法有更详细的描述。不过，在十进制数和二进制数之间进行转换还需用到一些工具，例如要借助笔和纸进行一系列演算。
 
 第8章中我们还学到了八进制数，也称为八进制数字系统。这种系统仅使用到了数字0、1、2、3、4、5、6还有7。八进制数和二进制数之间的转换简洁方便，只要记住0～7这8个数字所对应的3位二进制数即可。下面这张表就表示了这种对应关系。
 
-<img src="./readme.assets/00405.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00405.jpeg" style="display:block; width:40%;">
 
 假如要把一个二进制数（如10110110）转化为8进制，可以从最右端的数字开始。每3比特看做一组，这样每组便对应着一个八进制数：
 
-<img alt="img" src="./readme.assets/00406.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00406.jpeg" style="display:block; width:30%;"/>
 
 10110110这个字节很容易就表示为八进制数266。这种方法简洁明了，八进制用来表示字节不失为一个好方法。但还是有那么一点美中不足。
 
 字节可以表示的二进制数的范围为00000000～11111111，如果采用八进制表示，那么相对应的范围也随之变成了000～377。仔细分析下先前的例子，我们从右到左把3位二进制数对应于中间以及最靠右的八进制数，而最靠左的八进制数却是由2位二进制数对应的。如果我们将16位二进制数直接表示为八进制会得到如下结果：
 
-<img alt="img" src="./readme.assets/00407.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00407.jpeg" style="display:block; width:40%;"/>
 
 如果我们把这个16位二进制数平分为两个字节并将其分别表示为八进制数会得到如下所示的不同结果：
 
-<img alt="img" src="./readme.assets/00408.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00408.jpeg" style="display:block; width:40%;"/>
 
 为了使多字节值能和分开表示的单字节值取得一致，我们需要一种可以等分单个字节的系统，按照这种思想，我们可以把每个字节等分成4组，每组2比特（基于4的计数系统）；还可以等分为2组，每组4比特（基于16的计数系统）。
 
@@ -3306,52 +3307,52 @@ X表示“其取值情况与结果无关”，只要保持位的值为0，那么
 
 十六进制还有其他一些特别之处。比如在十进制中，我们通常可以用下面这种方式计数：
 
-<img alt="img" src="./readme.assets/00409.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00409.jpeg" style="display:block; width:40%;"/>
 
 我们仔细回忆一下在八进制中，8和9这两个数字是不需要的，就像下面这样：
 
-<img alt="img" src="./readme.assets/00410.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00410.jpeg" style="display:block; width:40%;"/>
 
 同理，四进制计数中我们也不需要4、5、6、7这些数字，就像下面这样：
 
-<img alt="img" src="./readme.assets/00411.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00411.jpeg" style="display:block; width:40%;"/>
 
 在二进制中，这一切变得更加简单，我们所需要的只有0和1：
 
-<img alt="img" src="./readme.assets/00412.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00412.jpeg" style="display:block; width:40%;"/>
 
 十六进制计数和上面所讲的这一系列情况是完全不同的，它需要比十进制更多的数字来计数。十六进制的计数过程将会是下面这种形式：
 
-<img alt="img" src="./readme.assets/00413.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00413.jpeg" style="display:block; width:40%;"/>
 
 上图中10（准确地来说是一个1紧挨着一个0）这个数字代表的准确含义实际上应该是十进制中的16。图中的问号表明我们还需要6个符号来完整表示十六进制系统。这些符号究竟是什么？它们出于何处？仔细想想，原有的计数系统中的符号都有自己的唯一身份，所以应该而且必须引入新的符号。寻找6个新符号对我们来说是小菜一碟，例如下面这几个符号：
 
-<img alt="img" src="./readme.assets/00414.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00414.jpeg" style="display:block; width:40%;"/>
 
 不像我们所使用的大多数数字符号，上面列出的每个符号都很容易识记，而且其背后都隐含着实际数字意义，这种形象的符号使得它们便于记忆。比如这个10加仑的牛仔帽、一个橄榄球（11个人组成一支橄榄球队）、一打（12个）面包圈、一只黑猫（使人们想起不吉利的13）、一轮满月（一般出现在后弦月14天之后的夜晚），一把匕首让人们联想到凯撒大帝（Julius Caesar）在三月的月中（第15日）被刺杀。
 
 两个十六进制数可以完整地代表一个字节。这也意味着一个十六进制数恰好由4位二进制数组成，即半字节。下面这张表描述了如何在二进制、十六进制、十进制数之间进行转换。
 
-<img alt="img" src="./readme.assets/00415.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00415.jpeg" style="display:block; width:40%;"/>
 
 
 让我们再来看看如何把字节10110110转换成十六进制。
 
-<img alt="img" src="./readme.assets/00416.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00416.jpeg" style="display:block; width:30%;"/>
 
 无论是多字节还是单字节，我们都可以进行转换。
 
-<img alt="img" src="./readme.assets/00417.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00417.jpeg" style="display:block; width:40%;"/>
 
 一个字节能且只能由一对十六进制数来表示。
 
 只可惜（或许你也松了口气）我们不打算用橄榄球或一打面包圈来表示十六进制数。虽然这种方案完全可行，但它不是很方便也不够正规，有时还会让人感到迷惑。事实上十六进制中缺少的6个符号由6个拉丁字母来表示，就像下面这样：
 
-<img alt="img" src="./readme.assets/00418.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00418.jpeg" style="display:block; width:40%;"/>
 
 下面这张表描述了正规的二进制、十六进制、十进制转换的过程。
 
-<img alt="img" src="./readme.assets/00419.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00419.jpeg" style="display:block; width:40%;"/>
 
 
 这样一来字节10110110就可以表示为十六进制的B6，而不用画一个橄榄球那么麻烦。我们再回忆回忆前面的章节，下面举一个完整的进制转换的例子（用下标代表进制），比如：
@@ -3384,47 +3385,47 @@ B6h
 
 通过分析可以得到十六进制数的每一位代表16的不同整数幂的倍数，如下图所示。
 
-<img alt="img" src="./readme.assets/00420.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00420.jpeg" style="display:block; width:40%;"/>
 
 
 十六进制数9A48Ch可以表示为如下形式：
 
-<img src="./readme.assets/00421.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00421.jpeg" style="display:block; width:30%;">
 
 这个数用16的乘方表示可以写为：
 
-<img src="./readme.assets/00422.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00422.jpeg" style="display:block; width:30%;">
 
 也可以将16的幂进一步展开，写为如下形式：
 
-<img src="./readme.assets/00423.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00423.jpeg" style="display:block; width:30%;">
 
 我们可以仔细想想，如果只把一个数字（比如9，A，4，8和C中的任何一个）单独列举出来，而且不使用任何下标来指明其进制数，这种做法并不会产生二义性。无论在十进制还是十六进制下，一个单独的9仅代表9；而A的出现也说明了它本身是一个十六进制数——等价于十进制中的10。
 
 我们可以拿起笔和纸进行演算了，把十六进制数转换成十进制数：
 
-<img src="./readme.assets/00424.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00424.jpeg" style="display:block; width:30%;">
 
 运算的最后结果是631,948。这就是一个十六进制数转换成为十进制数的完整过程。
 
 下面给出了一种模板，它可以帮助我们把4位十六进制转换成为十进制。
 
-<img alt="img" src="./readme.assets/00425.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00425.jpeg" style="display:block; width:40%;"/>
 
 
 下面我们来看一个例子，把79ACh转化成为十进制数。需要牢记在心的就是A和C分别代表10和12。
 
-<img alt="img" src="./readme.assets/00426.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00426.jpeg" style="display:block; width:40%;"/>
 
 十进制数转换为十六进制数通常涉及除法运算。我们知道，小于或等于255的数用1个字节就足以表示，也就是两个十六进制数。如何来求出这两个数呢？通常可以用这个数除以16，分别得到商和余数，商作为结果保留，而余数则作为下次运算的除数。我们举一个先前讲过的例子来进一步阐述运算法则：十进制数182，除以16，商为11（在十六进制中表示为B），余数为6，所以它的十六进制为B6h。
 
 如果被转化的十进制数小于65,536，那么就可以使用少于4位的十六进制数来表示。下面给出一个十进制向十六进制数转化的一个模板。
 
-<img alt="img" src="./readme.assets/00427.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00427.jpeg" style="display:block; width:40%;"/>
 
 使用时首先把十进制写到左上角的方框里。这个方框代表着第一个被除数，然后除以第一个除数4096，得到的商放到被除数所对应的下面的方框里，而将余数放到被除数右边的方框里。这时将余数作为新的被除数去除以256。利用这个规则，通过反复迭代就可以得到最终结果。下面这幅图向我们展示了十进制数31,148转换成十六进制数的过程。
 
-<img alt="img" src="./readme.assets/00428.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00428.jpeg" style="display:block; width:40%;"/>
 
 显而易见，十进制数的10和12代表着十六进制中的A和C，计算得到的最后结果就是79ACh。
 
@@ -3433,22 +3434,22 @@ B6h
 
 还有一种转换小于65,535的十六进制数的方法，首先我们把原数通过除以256的方式将其分为两个字节。接下来对于每个字节，再分别除以16。下图是运算过程使用到的模板。
 
-<img alt="img" src="./readme.assets/00429.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00429.jpeg" style="display:block; width:40%;"/>
 
 我们采用自顶向下的方式。每一次除法完成后，就将其得到的商放入除数左下方的方框里，而余数进入右边的方框里。下图举例说明了十进制数51,966的转换过程。
 
-<img alt="img" src="./readme.assets/00430.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00430.jpeg" style="display:block; width:40%;"/>
 
 最后我们得到了四个1位的十六进制数字，其十进制值分别是12、10、15和14，转换过来就是CAFE，无论怎么看它都更像一个单词，很难想象它其实是一个数字（我想应该没人愿意点一杯叫做56,495的东西，然后把它当作咖啡喝下去吧）！
 
 对于每种计数系统，我们都可以描绘出相应的操作运算表，下面是十六进制的加法运算表。
 
-<img alt="img" src="./readme.assets/00431.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00431.jpeg" style="display:block; width:40%;"/>
 
 
 使用这张表可以方便地仿照一般的加法运算来对十六进制数进行加运算，如下例所示：
 
-<img alt="img" src="./readme.assets/00432.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00432.jpeg" style="display:block; width:20%;"/>
 
 回忆一下第13章的内容，我们讨论过可以用一个2的补数来表示与其相对应的负数。如果我们处理的是带符号的8位二进制数，那么所有负数的最高位都为1。在十六进制系统中，最高位为8、9、A、B、C、D、E或F的两位带符号数都是负数，因为这些十六进制数对应的二进制数的最高位为1。例如99h可以表示无符号的十进制数153（你必须清楚它是单字节的无符号数），也可以表示十进制的-103（这时它被看做有符号数）。
 
@@ -3470,32 +3471,32 @@ B6h
 
 在第14章的学习过程中，我们一起讨论过由一个反向器、两个与门和两个或非门构成的D型电平触发器，如下图所示。
 
-<img alt="img" src="./readme.assets/00433.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00433.jpeg" style="display:block; width:40%;"/>
 
 当时钟输入为1，Q端输出与数据端输入保持一致。但当时钟输入跳变为0时，Q端输出将保持数据端最后一次的输入。除非时钟输入再次还原为1，之后的数据端输入不会影响输出。此触发器的真值表如下。
 
-<img alt="img" src="./readme.assets/00434.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00434.jpeg" style="display:block; width:40%;"/>
 
 在第14章的讨论中，这种触发器可以由两种不同特性的电路来实现，而在本章我们仅选择其中一种——目的就只是为了保存1位信息。为了更加清楚地表述，我们给输入和输出端重新命名，使其名称与功能相符，如下图所示。
 
-<img alt="img" src="./readme.assets/00435.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00435.jpeg" style="display:block; width:40%;"/>
 
 
 从结构上来讲，这套电路与先前所学到的是同一种触发器，只是命名的方式不尽相同，现在Q输出端被称为数据输出端（Data Out），时钟输入端（在第14章叫做保持位）命名为写操作端（Write）。就像信息可以被记录在纸上一样，写操作端的信号同样使得数据输入（Data In）信号被写入（Written Into），也可以称之为被存储（stored）到电路中。一般情况下，如果写操作端为0，则数据输入信号的状态对输出无影响。而当我们想把数据输入信号存储在触发器中时，可以把写入信号应先置1后置为0。在第14章讲到过，这种类型的电路也被称为锁存器，因为存储进去的数据就好像被锁住了一样。下面给出了1位锁存器简化框图，框图未画出其内部结构中的部件。
 
-<img alt="img" src="./readme.assets/00436.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00436.jpeg" style="display:block; width:40%;"/>
 
 我们很容易想到如何把多个1位锁存器组织成为多位锁存器，所要做的就是把写操作端的信号连接到系统中，就像下面这样。
 
-<img alt="img" src="./readme.assets/00437.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00437.jpeg" style="display:block; width:40%;"/>
 
 图中显示的8位锁存器其输入和输出端各有8个。另外还包括一个写操作端，在非工作状态下一般为0。如果要把一个8位二进制数存储在锁存器中，首先要把写操作端置1，然后置0。我们同样可以把这个锁存器以框图的形式表现出来，就像下面这样。
 
-<img alt="img" src="./readme.assets/00438.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00438.jpeg" style="display:block; width:40%;"/>
 
 为了和先前提到的1位锁存器保持一致，我们将它可以画成下面这种形式。
 
-<img alt="img" src="./readme.assets/00439.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00439.jpeg" style="display:block; width:40%;"/>
 
 还有另一种方法集成8个1位锁存器，但其结构并不像上面的这样直观。假设我们只想用一个数据输入和输出信号端，而且希望锁存器能将输入信号数据分8次独立存储，这个任务可以在长达一天内完成，或者可能迅速在下一分钟内搞定。最后一项要求就是我们还希望能够通过观察数据输出信号端确定实际的8位输出。
 
@@ -3509,34 +3510,34 @@ B6h
 
 现在我们手头上已有8个1位锁存器、3个开关、1个灯泡，此外在开关和灯泡之间还有另外一种装置，如下图所示。
 
-<img alt="img" src="./readme.assets/00440.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00440.jpeg" style="display:block; width:40%;"/>
 
 
 这个“额外装置”就是图中的神秘盒子，顶部带有8个输入端，左侧也带有3个输入端。通过三个开关的闭合和断开，对顶部的输入进行8选1操作，输出结果被传递到其底部连接的灯泡，使其发光。
 
 上图标注的“这是什么装置？”到底是什么呢？我们先前曾碰见过类似的东西，当时讨论的装置没有这么多的输入端。这种装置曾出现在第14章中第一个改进的加法机的电路中。在该电路中要在一行开关和一个锁存器的输出之间选择一个，作为加法器的输入，当时称其为2-1选择器。而我们现在所需要的正是8-1数据选择器（8-Line-to-1-Line Data Selector）。
 
-<img alt="img" src="./readme.assets/00441.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00441.jpeg" style="display:block; width:40%;"/>
 
 8-1选择器有8个数据输入端（在其顶部），以及3个选择输入端（在其左侧）。选择输入端的功能就是选择一个输入端数据，然后使其在输出端输出。如果选择输入端为000，则将D<span class="subscript">0</span>锁存器的值输出；若选择端为111，则D<span class="subscript">7</span>锁存器的值将被输出；若选择端为101，则相应地输出D<span class="subscript">5</span>的值。系统的真值表如下所示。
 
-<img alt="img" src="./readme.assets/00442.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00442.jpeg" style="display:block; width:40%;"/>
 
 8-1选择器主要组成部件为：三个反向器、八个4端口输入与门、一个8端口输入或门，系统的组织结构如下图所示。
 
-<img alt="img" src="./readme.assets/00443.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00443.jpeg" style="display:block; width:40%;"/>
 
-这个电路看上去线路密布，要理解它是如何工作的，最好方式就是一起来看一个例子。假设S2初始化为1，S1初始化为0，S0初始化为1。从顶部开始的第6个与门的输入由S0、<img src="./readme.assets/00444.jpeg" class="picture_formula_line3" >、S2组成，初始状态下它们全为1。其余与门的这三项输入数据都与第6个与门不尽相同，这使得其余与门输出全部为0。若D5变为0意味着第6个与门输出为0；反之第6个与门输出则为1。对最右边的或门也可以按照同样的方式理解。我们可以总结出下面这个结论：若选择端为101，则数据输出端与D5的输出保持一致。
+这个电路看上去线路密布，要理解它是如何工作的，最好方式就是一起来看一个例子。假设S2初始化为1，S1初始化为0，S0初始化为1。从顶部开始的第6个与门的输入由S0、<img src="./readme.assets/00444.jpeg" style="display:block; width:5%;">、S2组成，初始状态下它们全为1。其余与门的这三项输入数据都与第6个与门不尽相同，这使得其余与门输出全部为0。若D5变为0意味着第6个与门输出为0；反之第6个与门输出则为1。对最右边的或门也可以按照同样的方式理解。我们可以总结出下面这个结论：若选择端为101，则数据输出端与D5的输出保持一致。
 
 让我们重新理一下思路，想想自己究竟要干什么。我们的目的是通过某种方式连接8个1位锁存器，使自己能够从一个输入信号端写入数据，还能从一个输出信号端鉴别出数据。现在我们已经成功地使用了一个8-1选择器对8个锁存器进行了选择操作，并将相应锁存器的数据输出，下面是电路的结构图。
 
-<img alt="img" src="./readme.assets/00445.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00445.jpeg" style="display:block; width:40%;"/>
 
 到这里我们只走完了长征的一半。既然输出端已经满足了要求，现在把注意力集中到输入端。
 
 输入端包括了数据输入信号及写操作信号。可以把所有数据输入信号在锁存器的输入端连接在一起。但8个写入信号是不可以连在一起的，因为我们很可能要向每个锁存器依次写入数据。除此之外还需要一个独立的写入信号，它能被路由到任意（且唯一）的锁存器上，系统的结构可用下图表示。
 
-<img alt="img" src="./readme.assets/00446.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00446.jpeg" style="display:block; width:40%;"/>
 
 
 为了能圆满完成任务，我们需要另外一款电路元件，而且这款元件与8-1选择器功能类似，但它的作用正好相反。我们所说的正是3-8译码器（3-to-8 Decoder）。前面的章节中我们曾学习过一个简易的数据译码器（Data Decoder）——在第11章中为了选择喜欢的猫咪的毛色，我们把开关以一定方式进行连接使其具有选择功能。
@@ -3544,22 +3545,22 @@ B6h
 3-8译码器的输出端口共有8个。在任何时刻，译码器只会有一个锁存器的输出为1，其余均为0。每一个输出端的结果都是由S<span class="subscript">0</span>、S<span class="subscript">1</span>、S<span class="subscript">2</span>这三个信号的排列组合决定的。而数据的输出和输入一致，如下图所示。
 
 
-<img alt="img" src="./readme.assets/00447.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00447.jpeg" style="display:block; width:40%;"/>
 
-我想再次强调一遍：注意从上往下数的第6个与门，它的输入包括S<span class="subscript">0</span>、<img src="./readme.assets/00448.jpeg" class="picture_formula_line4" >、S<span class="subscript">2</span>。没有任何一个与门具有和它相同的三个输入。在这种情况下，如果选择输入端为101，则除了O<span class="subscript">5</span>要根据情况进行判定外，其余与门输出都为0。这个时候，若数据端输入为0，则O<span class="subscript">5</span>随之输出为0；相应的，若数据端输入为1，则O<span class="subscript">5</span>输出为1。译码器的逻辑表可以如下表所示。
+我想再次强调一遍：注意从上往下数的第6个与门，它的输入包括S<span class="subscript">0</span>、<img src="./readme.assets/00448.jpeg" style="display:block; width:5%;">、S<span class="subscript">2</span>。没有任何一个与门具有和它相同的三个输入。在这种情况下，如果选择输入端为101，则除了O<span class="subscript">5</span>要根据情况进行判定外，其余与门输出都为0。这个时候，若数据端输入为0，则O<span class="subscript">5</span>随之输出为0；相应的，若数据端输入为1，则O<span class="subscript">5</span>输出为1。译码器的逻辑表可以如下表所示。
 
-<img alt="img" src="./readme.assets/00449.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00449.jpeg" style="display:block; width:40%;"/>
 
 将8个锁存器加入到电路就形成了完整的系统。
 
-<img alt="img" src="./readme.assets/00450.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00450.jpeg" style="display:block; width:40%;"/>
 
 
 值得注意的是，译码器和选择器具有相同的选择信号，在上图中这三个信号一起被称为地址端口（Address）。地址的作用就像我们平时使用的邮箱号，长度为三位的地址决定了8个锁存器中的哪一个将被引用。在3-8译码器的输入端，地址起到了决定哪些锁存器可以被写操作端的信号触发来保存数据的作用。在输出端（图的下半部分），8-1选择器通过地址来选择8个锁存器中的一个，最后将其输出。
 
 这种配置下的锁存器在有的资料中也被称为读/写存储器（read/write memory），但更普遍的叫法是随机访问存储器（Random Access Memory），或RAM（和单词animal发音类似）。可以认为我们讨论的这种存储器是可存储8个独立比特的RAM，它的简化结构图如下所示。
 
-<img alt="img" src="./readme.assets/00451.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00451.jpeg" style="display:block; width:40%;"/>
 
 上图所示的电路之所以能够被称为存储器是因为它可以保存信息。而能够被称为读/写存储器是因为它不仅可以在每个锁存器中存储新的数据（可以把这种功能称为写数据），而且我们还可以检查每个锁存器都保存了什么数据（可以把这种功能称为读数据）。之所以可以被称为随机访问存储器，是因为读写操作很自由，我们只需要改变地址及相关的输入，就可以从8个锁存器中读出或写入需要的数据。相反，一些其他类型的存储器必须按顺序读取——也就是说，如果想要读取地址为101的数据，你将不得不先把地址为100的数据读出来。
 
@@ -3568,22 +3569,22 @@ B6h
 
 RAM阵列的组合形式多种多样。比如我们可以通过共享地址的方式可以把两个8×1的RAM阵列连接起来，如下图所示。
 
-<img alt="img" src="./readme.assets/00452.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00452.jpeg" style="display:block; width:40%;"/>
 
 我们把这两个8×1的RAM阵列的地址和输出都分别看成一个整体，这样就得到了一个8×2的 RAM阵列，如下图所示。
 
-<img alt="img" src="./readme.assets/00453.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00453.jpeg" style="display:block; width:40%;"/>
 
 这个RAM阵列可存储的二进制数依然是8个，但每个数的位宽为2位。
 
 我们还可以把两个8×1的RAM阵列看做是两个锁存器，使用一个2-1选择器和一个1-2译码器就可以把它们按照单个锁存器连接方式进行集成，下面给出了这种方案的电路图。
 
-<img alt="img" src="./readme.assets/00454.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00454.jpeg" style="display:block; width:40%;"/>
 
 
 “选择”端之所以连接到译码器和选择器，主要作用是在两个8×1 RAM阵列中选择一个，本质上它扮演了第4根地址线的角色。因此这种结构实质上是一种16×1 的RAM 阵列，如下图所示。
 
-<img alt="img" src="./readme.assets/00455.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00455.jpeg" style="display:block; width:40%;"/>
 
 上图所示的RAM阵列存储容量为16个单位，每个单位占1位。
 
@@ -3594,7 +3595,7 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 
 前面已经向大家演示了怎么搭建小型RAM阵列，你可能会问：为什么不搭建一个大规模的RAM阵列呢？就像下面这样。
 
-<img alt="img" src="./readme.assets/00456.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00456.jpeg" style="display:block; width:40%;"/>
 
 上图所示的RAM阵列可存储8192个比特的信息，每8个比特为一组，共分为1024个组。因为2的10次方恰好是1024，所以地址端共有10个输入端口。电路还包括8位的数据输入端和8位的数据输出端。
 
@@ -3617,13 +3618,13 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 
 存储容量为1KB的存储系统由8个数据输入端、8个数据输出端和10个地址输入端所组成。由于这些字节是由10个地址输入端来标识和访问的，所以这种RAM阵列存储容量为2<span class="superscript">10</span>个字节。如果我们再加上一条地址线，它的存储容量将变成原来的两倍。下面的公式表示了存储容量的翻倍的过程。
 
-<img src="./readme.assets/00457.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00457.jpeg" style="display:block; width:40%;">
 
 请注意最左侧一排的数字也以2的幂的顺序逐步递增。
 
 我们把1024个字节简化成为了1 KB，相同的逻辑，我们把1024 KB统称为1兆字节（megabyte，希腊文中的mega意味着宏大），兆字节通常缩写为MB。下面这个例子表示了兆字节为单位的存储容量翻倍的过程。
 
-<img src="./readme.assets/00458.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00458.jpeg" style="display:block; width:40%;">
 
 
 希腊文中的giga意味着巨大，1024 MB也就被顺其自然地称为1吉（gigabyte）字节，缩写为GB。
@@ -3643,7 +3644,7 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 
 既然我们已经学会如何构造任意大小的RAM阵列，接下来继续对这个问题深究下去。假设现在已经构造好了一个容量为65,536字节的存储器组织，如下图所示。
 
-<img alt="img" src="./readme.assets/00459.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00459.jpeg" style="display:block; width:40%;"/>
 
 为什么选择大小为64 KB的RAM阵列？而非32 KB或128 KB？因为65,536是一个约整数，转换为幂的形式就是2<span class="superscript">16</span>，这个RAM阵列需要配备16位的寻址端。换句话说，该地址恰好可以用2个字节表示。将地址范围转化为十六进制就是 0000h～FFFFh。
 
@@ -3653,18 +3654,18 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 
 初始状态下所有的开关均置为0。其中右下角有一个标识为控制端（takeover）的开关，这个开关的作用是确定由控制面板还是由外部所连接的其他电路来控制存储器。如果其他电路连接到与控制面板相连的存储器，这时控制端置0（如图所示），此时存储器由其他电路系统接管，控制面板上的其他开关将不起任何作用；当控制端置1时，控制面板将重新获得对存储器的控制能力。
 
-<img src="./readme.assets/00460.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00460.jpeg" style="display:block; width:40%;">
 
 这种功能可以用一些2-1选择器来实现。仔细数一下会发现，我们需要25个2-1选择器——其中包括16个地址输入端、8个数据输入端，以及1个写操作端。电路如下图所示。
 
 当控制端开关断开时，RAM阵列的地址端、数据输入和写操作端的数据全部来源于外部信号，也就是在2-1选择器的左上角的输入信号；当控制端开关闭合，RAM阵列的地址端、数据输入端和写操作端的数据来源于控制面板开关发出的信号。但最终RAM阵列的输出信号都会传输到8个灯泡上或其他可能的地方。
 
-<img alt="img" src="./readme.assets/00461.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00461.jpeg" style="display:block; width:40%;"/>
 
 
 下面这幅是控制面板与64K×8 RAM阵列的逻辑结构框图。
 
-<img alt="img" src="./readme.assets/00462.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00462.jpeg" style="display:block; width:40%;"/>
 
 当控制端开关闭合时，通过操作16个地址开关，可以选择65,536个地址中的任何一个，灯泡的状态将表示该地址中所保存的8位数据。我们可以使用8个数据开关表示出一个新数，然后把写操作端置1，从而将数据写入存储器。
 
@@ -3690,7 +3691,7 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 
 从图中可以看出，8位锁存器利用触发器来保存8位数据。使用这个设备时，首先需要按下清零开关使锁存器中的内容全部都变为0，然后通过开关输入第一个数。加法器只是简单地将这个数字和锁存器输出的0进行求和，因此相加的结果与原先输入的数字是一样的。按下相加开关可以把这个数保存在锁存器中，最后会点亮某些灯泡以显示它。现在通过开关输入第二个数，加法器把它与已经存放在锁存器中的第一个数相加。再次按下相加开关，就可以把相加的结果存入锁存器中，并通过灯泡显示这个结果。通过这种方式，可以把一串数相加并显示运行结果。显然，这种设计方案存在一个缺陷：8个灯泡无法显示大于255的数。
 
-<img alt="img" src="./readme.assets/00463.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00463.jpeg" style="display:block; width:40%;"/>
 
 对于第14章所介绍的这种电路，目前为止只讲到了一种锁存器，它是电平触发（level triggered）的。在电平触发的锁存器中，为了保存数据必须将时钟输入端首先置1，然后回置为0。当时钟输入端为1时，锁存器的数据输入端可以改变，而这些变化将会影响到数据输出。在第14章的后半部分还介绍了边沿触发（edge-triggered）的锁存器，这种锁存器在时钟输入从0跳变为1的瞬间保存数据。边沿触发器在很多方面更加易于使用，因此假定本章用到的所有触发器都是边沿触发的。
 
@@ -3702,11 +3703,11 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 
 如果把这100个二进制数输入到RAM阵列中而不是直接输入到加法器中，一旦需要修改一些数据，我们的工作将会变得容易得多。
 
-<img alt="img" src="./readme.assets/00464.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00464.jpeg" style="display:block; width:40%;"/>
 
 因此我们所现在面临的挑战就是如何把RAM阵列和累加器连接起来。很显然，RAM阵列的输出信号可以替代加法器的开关。而你也许想不到，用一个16位的计数器（比如我们在14章构造的那种）就可以控制RAM阵列的地址信号。在这个电路中，RAM阵列的数据输入信号和写操作端信号可以省去。修改后的电路结构如下图所示。
 
-<img alt="img" src="./readme.assets/00465.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00465.jpeg" style="display:block; width:40%;"/>
 
 
 当然，这并不是迄今发明的最易于使用的计算设备。要使用它，首先要闭合清零开关，这样做的目的是，清除锁存器中的内容并把16位计数器的输出置为0000h，然后闭合RAM控制面板的控制端开关。现在你可以从地址0000h开始输入一组你想要相加的8位数。如果有100个数，那么它们将被存放在0000h～0063h的地址空间中（也应该把RAM阵列中未使用的单元设置为00h）。然后闭合RAM控制面板的控制端开关（这样控制面板就不再控制RAM阵列了），同时断开清零开关。做完了这些，我们可以静静地坐下来，观察灯泡显示运算结果。
@@ -3725,7 +3726,7 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 
 这意味着我们可以去掉与锁存器连接的灯泡，取而代之的是把锁存器的输出端连接到RAM阵列的数据输入端，这样就可以把计算结果写回到RAM阵列中去，如下图所示。
 
-<img alt="img" src="./readme.assets/00466.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00466.jpeg" style="display:block; width:40%;"/>
 
 
 上图中略去了自动加法器的其他部分，其中包括振荡器和清零开关，这是因为我们不再需要特别标注计数器和锁存器的清零及时钟输入。此外，既然我们现在已经开始利用RAM的数据输入，因此需要一种用来控制RAM写入信号的方法。
@@ -3734,7 +3735,7 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 
 例如，假设我们先要对三个数进行求和，然后对两个数进行求和，最后再对三个数进行求和。想象一下，我们可以把这些数保存在RAM阵列中以0000h开始的一组空间中，这些数存储在RAM阵列中的具体形式如下图所示。
 
-<img alt="img" src="./readme.assets/00467.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00467.jpeg" style="display:block; width:40%;"/>
 
 
 本书中将用这样的形式表示一小段存储器。方格表示的是存储器的内容。存储器的每一个字节写在一个方格里。地址标记在方格的左边，并不是每一个地址都需要标记，因为地址是线性的，所以总是可以通过计算确定某个方格对应的地址。方格右边是关于该存储单元内容的注释，这些标记的单元就是我们想要自动加法器保存三个计算结果的位置（尽管这些方格画出来是空的，但是存储单元内并不是空的，它们总是保存着一些东西，就算只是一些随机数，但此时存放的是一些没有用的数）。
@@ -3776,26 +3777,26 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 
 也许存放这些代码的最简单的方法（但肯定不是代价最小的）是把它们存放在一个独立的RAM阵列中。这个RAM应该和第一个RAM同时被访问。但是这个RAM中存放的是不需要求和的数，而是一些数字代码，用来标记自动加法器对第一个RAM中指定地址要做的一种操作。这两个RAM可以分别被标记为“数据”（第一个RAM阵列）和“代码”（第二个RAM阵列）。其结构如下图所示。
 
-<img alt="img" src="./readme.assets/00468.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00468.jpeg" style="display:block; width:40%;"/>
 
 我们已经清楚地认识到新的自动加法器能够把数据求和的结果写入到第一个RAM阵列（标记为“数据”），而新的RAM阵列（标记为“代码”）则只能通过控制面板写入。
 
 我们需要四个代码来标记新的自动加法器需要做的四个操作，这些代码可以任意指定。如下所示的是一种方案。
 
-<img src="./readme.assets/00469.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00469.jpeg" style="display:block; width:40%;">
 
 为了使上面讨论的三组加法得以正常执行，你需要通过控制面板把如下值存入代码RAM阵列。
 
 比较一下该RAM阵列与存放累加数据的RAM阵列中的内容，你会发现，代码RAM 阵列中存放的每一个代码都对应着数据RAM中要被加载或者加到累加器中的数，或者对应需要存回到数据RAM中的某个数。以这种方式使用的数字代码常常被称为指令码（instruction code）或操作码（operation code，opcode）。它们指示电路要执行的某种操作。
 
-<img alt="img" src="./readme.assets/00470.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00470.jpeg" style="display:block; width:30%;"/>
 
 
 如前所述，最初的自动加法器的8位锁存器的输出要作为数据RAM阵列的输入，这就是Save指令的功能。还需要做另一个改变：以前8位加法器的输出是8位锁存器的输入，但现在为了执行Load指令，数据RAM阵列的输出有时也要作为8位锁存器的输入，这种新的变化需要一个2-1选择器来实现。改进后的自动加法器如下图所示。
 
 图中略去了一些组件，但是仍然清晰地描述了各个组件之间的8位数据通路。16位的计数器为两个RAM阵列提供地址输入。通常，数据RAM阵列的输出传入到8位加法器执行加操作。8位锁存器的输入可以是数据RAM阵列的输出（当执行Load指令时），也可以是加法器的输出（当执行Add指令时），这种情况下就需要2-1选择器。通常，锁存器电路的输出又流回到加法器中，但是当执行Save指令时，它就成为了数据RAM阵列的输入数据。
 
-<img alt="img" src="./readme.assets/00471.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00471.jpeg" style="display:block; width:40%;"/>
 
 
 上图缺少的是控制所有这些组件的信号，它们统称为控制信号，包括16位计数器的“时钟”输入和“清零”输入，8位锁存器的“时钟”输入和“清零”输入，数据RAM阵列的“写”（W）输入，2-1选择器的“选择”（S）输入。其中的一些信号很明显是基于代码RAM阵列的输出，例如，如果代码RAM阵列输出是Load指令，那么2-1选择器的“选择”输入必须是0（即选择数据RAM的输出）。只有当操作码是指令Store时，数据RAM阵列的“写”（W）输入必须是1。这些控制信号可以通过逻辑门的各种组合来实现。
@@ -3803,19 +3804,19 @@ RAM阵列的存储容量与其地址输入端的数量有直接的联系。在�
 利用最少的附加硬件和一些新增的操作码，可以让这个电路从累加器中减去一个数。第1步是向操作码表增加一些代码。
 
 
-<img src="./readme.assets/00472.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00472.jpeg" style="display:block; width:40%;">
 
 对于Add和Subtract的代码，其区别仅在于最低有效位，我们称该位为C<span class="subscript">0</span>。如果操作码为21h，除了数据RAM阵列的数据传入加法器之前要取反，并且加法器进位输入置1之外，电路所做的操作与执行Add指令所做的操作相同。在这个增加了一个反相器的改进电路中，C<span class="subscript">0</span>信号可以完成这两项任务。改进后的电路结构图如下。
 
-<img alt="img" src="./readme.assets/00473.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00473.jpeg" style="display:block; width:40%;"/>
 
 假设现在要把56h和2Ah相加，然后再从中减去38h，可以按照下图中两个RAM阵列中的代码（操作码）和数据（操作数）完成该运算。
 
-<img alt="img" src="./readme.assets/00474.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00474.jpeg" style="display:block; width:40%;"/>
 
 Load操作完成之后，累加器中的值更新为56h，加法操作完成后累加器中的值为56h与2Ah的和，即80h。Subtract操作使数据RAM阵列的下一个值（38h）按位取反，得到C7h。当加法器的进位输入置1时，取反得到C7h，然后使其与80h相加：
 
-<img src="./readme.assets/00475.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00475.jpeg" style="display:block; width:20%;">
 
 最后的结果是48h。（在十进制中，86加42再减去56等于72）
 
@@ -3823,30 +3824,29 @@ Load操作完成之后，累加器中的值更新为56h，加法操作完成后�
 
 但还有代价更小的解决办法，假如你想把两个16位的数相加，比如：
 
-<img src="./readme.assets/00476.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00476.jpeg" style="display:block; width:20%;">
 
 这种16位的加法先单独处理最右边的字节（通常称之为低字节）：
 
-<img src="./readme.assets/00477.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00477.jpeg" style="display:block; width:20%;">
 
 然后再计算最左边的字节，即高字节的和：
 
-
-<img src="./readme.assets/00478.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00478.jpeg" style="display:block; width:20%;">
 
 得到相同的结果99D7h。因此，如果我们把两个16位的数用这种方式保存在存储器中，就像下面这样：
 
-<img alt="img" src="./readme.assets/00479.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00479.jpeg" style="display:block; width:40%;"/>
 
 运算结果D7h将被保存到地址0002h，而结果99h将被保存到地址0005h。
 
 当然并非所有的情况都是这样处理，只是上面的例子中用到了这种方法。如果要把76ABh和236Ch这两个16位的数相加该怎么做呢？在这个例子中，对两个数的低字节求和时将会产生一个进位：
 
-<img src="./readme.assets/00480.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00480.jpeg" style="display:block; width:20%;">
 
 产生的这个进位必须与两个数的高字节的和再相加：
 
-<img src="./readme.assets/00481.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00481.jpeg" style="display:block; width:20%;">
 
 最后的计算结果为9A17h。
 
@@ -3860,20 +3860,20 @@ Load操作完成之后，累加器中的值更新为56h，加法操作完成后�
 
 在加入了Add with Carry和Subtract and Borrow之后，目前我们已经有了7个操作码，如下表所示。
 
-<img src="./readme.assets/00482.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00482.jpeg" style="display:block; width:40%;">
 
 在执行减法或借位减法运算时，送入加法器中的操作数需要进行取反预处理。加法器的进位输出是进位锁存器的数据输入。无论何时，执行加法、减法、进位加法或借位减法中的任一种运算，进位锁存器都是同步的。当执行减法运算，或进位锁存器的数据输入为1且正在执行进位加法或者借位减法运算时，8位加法器的进位输入都是置1的。
 
 
 需要记住的是，只有当前一次的加法或者进位加法操作使加法器产生进位输出时，Add with Carry指令才会使8位加法器的进位输入置1。因此，只要进行多字节数加法运算，不管实际是否需要，都应该使用Add with Carry指令。为了保证编码的正确，使前面提到16位加法正常进行，可用如下方法。
 
-<img alt="img" src="./readme.assets/00483.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00483.jpeg" style="display:block; width:40%;"/>
 
 不论操作数是什么，该方法都可以正确执行。
 
 增加了两个新的操作码之后，我们已经极大地扩展了加法器的功能，它不再局限于8位数的加法运算。通过执行进位加法操作，可以对16位数、24位数、32位数、40位数，甚至更多位的数进行加法运算。假如要进行两个32位数7A892BCDh和65A872FFh的加法运算，我们仅需要1条Add指令和3条Add with Carry指令，如下图所示。
 
-<img alt="img" src="./readme.assets/00484.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00484.jpeg" style="display:block; width:40%;"/>
 
 
 当然，把这些数依次输入存储器并不是最好的做法。因为你不但要使用开关来输入这些数，而且保存这些数的存储单元的地址也不是连续的。例如，7A892BCDh从最低字节开始，每个字节依次保存在0000h，0003h，0006h，0009h中。而为了得到最后的结果，还需要检查0002h，0005h，0008h，000Bh这几个地址中的数。
@@ -3886,17 +3886,17 @@ Load操作完成之后，累加器中的值更新为56h，加法操作完成后�
 
 现在让我们立刻开始吧，目前已经有了7个操作码，如下所示。
 
-<img src="./readme.assets/00485.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00485.jpeg" style="display:block; width:40%;">
 
 每一个操作码在存储器中占1个字节。现在除了Halt操作码外，我希望每一个指令在存储器中仅占据3个字节的空间，其中第一个字节为代码本身，另外的两个字节用来存放1个16位存储器单元地址。对于Load指令来说，后两个字节保存的地址用来指明数据RAM阵列的一个存储单元，该单元存放的是需要被加载到累加器中的字节。对于Add，Subtract，Add with Carry，Subtract with Borrow指令来说，该地址指明的存储单元所保存的是要从累加器中加上或减去的字节。对于Store指令来说，该地址指明的是累加器中的内容将要保存到的存储单元地址。
 
 例如，当前加法器所能进行的最简单的运算就是对两个数求和。为了执行这个操作，需要按下面的方式设置代码RAM阵列和数据RAM阵列。
 
-<img alt="img" src="./readme.assets/00486.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00486.jpeg" style="display:block; width:40%;"/>
 
 在改进的自动加法器中，每条指令（除了Halt指令）需要3个字节。
 
-<img alt="img" src="./readme.assets/00487.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00487.jpeg" style="display:block; width:40%;"/>
 
 每一条指令的代码（除了Halt指令）后跟两个字节，用来指明数据RAM阵列中16位的存储地址。这三个地址恰巧是0000h，0001h和0002h，但它们可以是任何其他可用的地址。
 
@@ -3904,17 +3904,17 @@ Load操作完成之后，累加器中的值更新为56h，加法操作完成后�
 
 通过这种变化，我们可以用一种更合理的方式来保存这两个操作数及其运算结果，可能会把它们保存到我们从未用到过的存储区域。
 
-<img alt="img" src="./readme.assets/00488.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00488.jpeg" style="display:block; width:40%;"/>
 
 这6个存储单元不必像上图中这样全都连在一起，它们可以分散在整个64 KB数据RAM阵列的任意位置。为了把这些地址中的数相加，代码RAM阵列中的指令必须用以下方式设置。
 
-<img alt="img" src="./readme.assets/00489.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00489.jpeg" style="display:block; width:40%;"/>
 
 可以看到，保存在地址4001h和4003h处的两个低字节数先执行加法，其结果保存在4005h地址处。两个高字节数（分别保存在4000h和4002h处）通过Add with Carry指令相加，其结果保存在地址4004h处。如果去掉Halt指令并向代码RAM中加入更多指令，随后的计算可以通过引用地址很方便地使用原来的那些操作数及其结果。
 
 实现该设计的关键是把代码RAM阵列的数据输出到3个8位锁存器中。每个锁存器保存该3字节指令的一个字节。第一个锁存器保存指令代码本身，第二个锁存器保存地址的高字节，第三个锁存器保存地址的低字节。第二个和第三个锁存器的输出构成了数据RAM阵列的16位地址。
 
-<img alt="img" src="./readme.assets/00490.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00490.jpeg" style="display:block; width:40%;"/>
 
 从存储器中取出指令的过程称为取指令（instruction fetch）。在我们设计的加法器中，每一条指令的长度是3个字节。因为每次从存储器取回一个字节，所以取每条指令需要的时间为3个时钟周期。此外，一个完整的指令周期需要4个时钟周期。这些变化必然使得控制信号更加复杂。
 
@@ -3928,11 +3928,11 @@ Load操作完成之后，累加器中的值更新为56h，加法操作完成后�
 
 为了实现这个设计，我们需要一个2-1选择器来确定如何对RAM阵列寻址。通常，和前面的方式相同，我们用一个16位的计数器来计算地址。数据RAM阵列的输出仍然连接到3个锁存器，分别用来保存指令代码及其对应操作数的16位地址，其16位的地址输出是2-1选择器的第二种输入。地址被锁存后，可以通过选择器将其作为RAM阵列的地址输入。
 
-<img alt="img" src="./readme.assets/00491.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00491.jpeg" style="display:block; width:40%;"/>
 
 我们已经对原电路做了不少改进，现在可以把操作指令和操作数据保存在同一个RAM阵列中。例如，下图演示了如何把两个8位数相加，然后从结果中再减去一个8位数。
 
-<img alt="img" src="./readme.assets/00492.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00492.jpeg" style="display:block; width:40%;"/>
 
 
 通常，指令从0000h开始存放，这是因为当计数器复位后从该位置访问RAM阵列。最后的Halt指令存放在000Ch地址。我们可以把这3个操作数及它们的运算结果保存在RAM阵列的任何地址（当然这不包括最开始的13个字节，因为它们已经用来存放操作指令），所以我们选择在从0010h地址开始保存操作数。
@@ -3941,7 +3941,7 @@ Load操作完成之后，累加器中的值更新为56h，加法操作完成后�
 
 试想一下，把操作码和操作数存放在同一个RAM阵列并不是一个急于解决的问题。但可以肯定的是，这是一个迟早要解决的问题，不如现在就找一个解决办法吧。在当前的例子中，也许你更愿意从0020h地址开始存放新的指令，并从0030h处开始存放新的操作数据。
 
-<img alt="img" src="./readme.assets/00493.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00493.jpeg" style="display:block; width:40%;"/>
 
 注意，第一条Load指令所指向的地址为0013h，这个位置保存着第一次运算的结果。
 
@@ -3953,13 +3953,13 @@ Load操作完成之后，累加器中的值更新为56h，加法操作完成后�
 
 不过，我们可以用一个称为Jump（跳转）的新指令来替换Halt指令。现在把它加入到指令表。
 
-<img src="./readme.assets/00494.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00494.jpeg" style="display:block; width:40%;">
 
 通常情况下自动加法器是以顺序方式对RAM阵列寻址的。Jump指令改变了机器的这种寻址方式，取而代之的是从某个指定的地址开始寻址。这种指令有时也被称作分支（branch）指令或者Goto指令，即“转到另一个位置”。
 
 在上面的例子中，我们可以用一个Jump指令来替换000Ch地址处的Halt指令。
 
-<img alt="img" src="./readme.assets/00495.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00495.jpeg" style="display:block; width:40%;"/>
 
 30h即Jump指令的代码。其后的两个字节中存放的16位地址就是自动加法器要执行的下一条指令的地址。
 
@@ -3967,13 +3967,13 @@ Load操作完成之后，累加器中的值更新为56h，加法操作完成后�
 
 Jump指令通过作用于16位计数器实现其功能。无论何时，只要自动加法器遇到Jump指令，计数器就会被强制输出该Jump指令后的16位地址。这可以通过16位计数器的D型边沿触发器的预置（Pre）和清零（Clr）输入来实现：
 
-<img alt="img" src="./readme.assets/00496.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00496.jpeg" style="display:block; width:40%;"/>
 
 这里要再次声明，在正常的操作下，Pre和Clr端的输入都应该是0。但是，当Pre=1，Q=1；当Clr=1，则Q=0。
 
 如果你希望向一个触发器加载一个新的值（用A表示，代表地址），可以像下图所示这样连接。
 
-<img alt="img" src="./readme.assets/00497.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00497.jpeg" style="display:block; width:40%;"/>
 
 通常，置位信号为0。此时，触发器的预置端输入为0，在复位信号不为1的情况下，清零信号也为0。在这种情况下，触发器就可以独立清零，而不受置位信号的影响。当置位信号为1时，如果A为1，则清零输入为0，预置输入为1；如果A为0，则预置输入0，清零输入为1。这就意味着Q端将被设置为与A端相同的值。
 
@@ -3981,7 +3981,7 @@ Jump指令通过作用于16位计数器实现其功能。无论何时，只要�
 
 然而，这对电路的改动并不是很大。从RAM阵列锁存得到的16位地址既可以作为2-1选择器（它允许该地址作为RAM阵列的地址输入）的输入，也可以作为16位计数器置位信号的输入。
 
-<img alt="img" src="./readme.assets/00498.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00498.jpeg" style="display:block; width:40%;"/>
 
 显然，只有当指令代码为30h并且其后的16位地址被锁存时，我们才必须确保置位信号为1。
 
@@ -3989,12 +3989,12 @@ Jump指令通过作用于16位计数器实现其功能。无论何时，只要�
 
 这其实很简单。两个8位数相乘得到一个16位数，为了方便起见，把该乘法运算中涉及的3个数均表示为16位数。第一步确定要把乘数和乘积保存到什么位置。
 
-<img alt="img" src="./readme.assets/00499.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00499.jpeg" style="display:block; width:40%;"/>
 
 
 大家都知道A7h和1Ch相乘的结果（即十进制的28）和把28个A7h累加的结果相同。因此保存在地址1004h和1005h的字节实际上是累加的结果。下图演示了如何把A7h加到该地址。
 
-<img alt="img" src="./readme.assets/00500.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00500.jpeg" style="display:block; width:40%;"/>
 
 当这6条指令执行完毕之后，存储器1004h和1005h地址保存的16位数与A7h乘以1的结果相同。因此，为了使存放于该地址的值等于A7h与1Ch相乘的结果，要把这6条指令再反复执行27次。为了达到这个目的，可以在0012h地址开始把这6条指令连续输入27次；也可以在0012h处保存一个Halt指令，然后将复位键连续按28次得到最终结果。
 
@@ -4003,26 +4003,26 @@ Jump指令通过作用于16位计数器实现其功能。无论何时，只要�
 
 但如果在地址0012h处放置一条Jump指令会怎样呢？这个指令使得计数器再次从0000h处开始计数。
 
-<img alt="img" src="./readme.assets/00501.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00501.jpeg" style="display:block; width:40%;"/>
 
 这的确是一个巧妙的方法。第一次执行完指令之后，位于存储器的1004h和1005h地址的16位数等于A7h乘1，然后Jump指令使下一条指令从存储器顶部开始执行。第二次执行指令后，该16位数等于A7h乘2，最后其结果可以等于A7h乘1Ch。但是，这个过程不会停止下来，它会一直反复执行下去。
 
 我们需要的是这样一种Jump指令，它只让这个过程重复执行所需要的次数，这种指令就是条件跳转指令，它并不难实现。要实现它，要做的第一步是增加一个与进位锁存器类似的1位锁存器。该锁存器被称为零锁存器（Zero latch），这是因为只有当8位加法器的输出全部为0时，它锁存的值才是1。
 
-<img alt="img" src="./readme.assets/00502.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00502.jpeg" style="display:block; width:40%;"/>
 
 使或非门的输出为1的唯一方法是其所有的输入全为0。与进位锁存器的时钟输入一样，只有当Add、Subtract、Add with Carry、Subtract with Borrow这些指令执行时，零锁存器才锁存1个数，该数称做零标志位（Zero flag）。注意，它是以一种似乎是相反的方式工作的：当加法器的输出全为0时，零标志位等于1；当加法器的输出不全为0时，零标志位等于0。
 
 有了进位锁存器和零锁存器以后，我们可以为指令表新增4条指令。
 
 
-<img src="./readme.assets/00503.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00503.jpeg" style="display:block; width:40%;">
 
 例如，非零转移指令（Jump If Not Zero）只有在零锁存器的输出为0时才会跳转到指定的地址。换言之，如果上一步的加法、减法、进位加法、或者借位减法等运算的结果为0时，将不会发生跳转。为了实现这个设计，只需要在常规跳转命令的控制信号之上再加一个控制信号：如果指令是Jump If Not Zero，那么只有当零标志位是0时，16位计数器才被触发。
 
 下图中0012h地址之后的指令即两个数相乘所用到的上表中的所有指令。
 
-<img alt="img" src="./readme.assets/00504.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00504.jpeg" style="display:block; width:40%;"/>
 
 
 第一次循环之后，位于地址0004h和0005h处的16位数等于A7h与1的乘积，这和我们的设计相符。在上图中，地址1003h处的字节通过Load指令载入到累加器，该字节是1Ch。把这个数和001Eh地址的字节相加后，恰好遇到的是Halt指令，当然这是一个合法的数。FFh与1Ch相加的结果与从1Ch中减去1的结果相同，都是1Bh，因为这个数不等于0，所以零标志位是0，1Bh这个结果会存回到1003h地址。下一条要执行的指令是Jump If Not Zero，零标志位没有置为1，因此发生跳转。接下来要执行的一条指令位于0000h地址。
@@ -4060,58 +4060,58 @@ Jump指令通过作用于16位计数器实现其功能。无论何时，只要�
 
 一直以来，我们都在使用很长的短语来引用机器所执行的指令，比如Add with Carry指令。通常而言，机器码都分配了对应的简短助记符，这些助记符都用大写字母表示，包括2个或3个字符。下面是一系列上述计算机大致能够识别的机器码的助记符。
 
-<img src="./readme.assets/00505.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00505.jpeg" style="display:block; width:40%;">
 
 当这些助记符与另外一对短语结合使用时，其作用更加突出。例如，对于这样一条长语句“把1003h地址处的字节加载到累加器”，我们可以用如下简洁的句子替代：
 
-<img src="./readme.assets/00506.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00506.jpeg" style="display:block; width:40%;">
 
 
 位于助记符右侧的A和[1003h]称为参数（argument），它们是这个Load指令的操作对象。参数由两部分组成，左边的操作数称为目标（destination）操作数（A代表累加器），右边的操作数称为源（source）操作数。方括号“[]”表明要加载到累加器的不是1003h这个数值，而是位于存储器地址1003h的数值。
 
 类似的，指令“把001Eh地址的字节加到累加器”，可以简写为：
 
-<img src="./readme.assets/00507.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00507.jpeg" style="display:block; width:40%;">
 
 指令“把累加器中的内容保存到1003h地址”，可简写为：
 
-<img src="./readme.assets/00508.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00508.jpeg" style="display:block; width:40%;">
 
 注意，在上面的语句中，目标操作数（Store指令在存储器中的位置）仍然在左边，源操作数在右边。这就决定了累加器中的内容必须要保存到存储器的1003h地址。“如果零标志位不是1则跳转到0000h地址处”这个冗长的语句可以简明地表示为：
 
-<img src="./readme.assets/00509.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00509.jpeg" style="display:block; width:40%;">
 
 注意，这里没有使用方括号，这是因为跳转指令要转移到的地址是0000h，而不是保存于0000h地址的值，即0000h地址就是跳转指令的操作数。
 
 用缩写的形式表示指令是很方便的，因为在这种形式下指令以可读的方式顺序列出而不必画出存储器的空间分配情况。通过在一个十六进制地址后面加一个冒号，可以表示某个指令保存在某个特定地址空间，例如：
 
-<img src="./readme.assets/00510.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00510.jpeg" style="display:block; width:40%;">
 
 下面的语句表示了数据在特定地址空间的存储情况。
 
-<img src="./readme.assets/00511.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00511.jpeg" style="display:block; width:40%;">
 
 你可能已经注意到了，上面的两个字节都是以逗号分开的，它表示第一个字节保存在左侧的地址空间中，第二个字节保存在该地址后的下一个地址空间中。上面的三条语句等价于下面的这条语句：
 
-<img src="./readme.assets/00512.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00512.jpeg" style="display:block; width:40%;">
 
 
 因此上面讨论的乘法程序可以用如下一系列语句来表示：
 
-<img src="./readme.assets/00513.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00513.jpeg" style="display:block; width:40%;">
 
 使用空格和空行的目的仅仅是为了人们更方便地阅读程序。
 
 在编码时最好不要使用实际的数字地址，因为它们是可变的。例如，如果要把数值保存在存储器的2000h～2005h地址空间中，你需要在程序中重复多次写这些语句。用标号（label）来指代存储器中的地址空间是个较好的办法。这些标号是一些简单的单词，或是类似单词的字符串。上面的代码可以改写为：
 
-<img src="./readme.assets/00514.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00514.jpeg" style="display:block; width:40%;">
 
 
 注意，NUM1，NUM2，RESULT这些标号都是指存储器中保存两个字节的地址单元。在这些语句中，NUM1+1，NUM2+1和RESULT+1分别指标号NUM1，NUM2，RESULT后的第二个字节。注意，NEG1（negative one）用来标记HLT指令。
 
 最后，如果你可能忘记这些语句所表示的意思，那么可以在该语句后面加注释（comment），这些注释可以用我们人类的自然语言表述，然后通过分号与程序语句分隔开。
 
-<img src="./readme.assets/00515.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00515.jpeg" style="display:block; width:40%;">
 
 这里给出的是一种计算机程序设计语言，称为汇编语言（assembly language）。它是全数字的机器语言和指令的文字描述的一种结合体。同时它用标号表示存储器地址。人们有时候会混淆机器语言和汇编语言，这是因为它们是对同一种事物的不同描述方式。每一条汇编语句都对应着机器语言中的某些特定字节。
 
@@ -4139,7 +4139,7 @@ Jump指令通过作用于16位计数器实现其功能。无论何时，只要�
 
 在人类社会早期，人们借助数字这种工具来帮助自己记录物品和财产。包括古希腊以及美洲土著在内的很多文化中，人们借助小卵石或者谷粒进行计数。在欧洲，这些古老的计数方式演变成了计数板，而在中东，则演变成为我们较为熟悉的由骨架和算珠组成的算盘（abacus），算盘的样子就像下面这幅图所示。
 
-<img alt="img" src="./readme.assets/00516.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00516.jpeg" style="display:block; width:40%;"/>
 
 尽管人们通常将算盘与亚洲文化，尤其是中国文化联系到一起，但它似乎是在公元1200年左右由商人带到中国的。
 
@@ -4157,7 +4157,7 @@ Jump指令通过作用于16位计数器实现其功能。无论何时，只要�
 
 在18世纪（直到20世纪40年代），计算机就好比一个以计算维持生计的人，而计算能力就好比计算机的生命线。在这个用天上星辰进行航海导航的时期，经常要用到对数表，而三角函数表对航海导航也非常重要。此外，如果你想要发表新数学表，就需要使用许多台计算机，让它们一起工作，最后将所有的结果汇总成一张表。当然，从初始计算到设置打印最终结果，每一个阶段都可能会出现意想不到的错误。
 
-<img alt="img" src="./readme.assets/00517.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00517.jpeg" style="display:block; width:40%;"/>
 
 为了消除数学表中错误，英国数学家和经济学家查尔斯·巴贝芝（Charles Babbage，1791-1871，见右图）勤奋工作，他和塞缪尔·莫尔斯（Samuel Morse）差不多是同时代的人。
 
@@ -4179,9 +4179,9 @@ Jump指令通过作用于16位计数器实现其功能。无论何时，只要�
 
 人口普查局的官员们担心1890年的人口普查的数据采集和处理可能会花费10年以上的时间，因此他们研究了在工作中使用自动系统的可能性，并选择了由赫尔曼·霍尔瑞斯（Herman Hollerith，1860-1929）开发的机器，他曾在1880年人口普查中进行过相关工作。
 
-<img alt="img" src="./readme.assets/00518.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00518.jpeg" style="display:block; width:40%;"/>
 
-霍尔瑞斯的设计需要使用大小为<img src="./readme.assets/00519.jpeg" class="picture_formula_line5" >寸马尼拉（manila）穿孔卡片（尽管霍尔瑞斯不了解巴贝芝是怎样在解析机中利用卡片编制程序的，但他对杰奎德织布机中如何使用卡片却非常熟悉）。卡片上的孔按24列每列12个位置排列，共计288个位置。这些点代表了在人口普查中需要记录的一个人的特征，人口普查工作人员通过在卡片适当的位置上打1/4英寸的方孔来标记上述的特征。
+霍尔瑞斯的设计需要使用大小为<img src="./readme.assets/00519.jpeg" style="display:block; width:5%;">寸马尼拉（manila）穿孔卡片（尽管霍尔瑞斯不了解巴贝芝是怎样在解析机中利用卡片编制程序的，但他对杰奎德织布机中如何使用卡片却非常熟悉）。卡片上的孔按24列每列12个位置排列，共计288个位置。这些点代表了在人口普查中需要记录的一个人的特征，人口普查工作人员通过在卡片适当的位置上打1/4英寸的方孔来标记上述的特征。
 
 在读本书时你可能会习惯性地想到二进制编码，而且你或许立刻会猜想，可以利用卡片上的288个穿孔来存储288位的信息，但是卡片的使用方式并非如此。
 
@@ -4232,7 +4232,7 @@ Jump指令通过作用于16位计数器实现其功能。无论何时，只要�
 
 ENIAC吸引了数学家约翰·冯·诺依曼（John von Neumann，1903- 1957）的眼球。从1930年开始，出生在匈牙利的冯·诺依曼就定居美国。作为一名令公众瞩目的人物，因其仅凭自己的大脑就能进行复杂的数学计算而闻名，冯·诺依曼当时是普林斯顿高级研究院的一名数学教授，研究范围很广，从量子力学到游戏应用，甚至到经济理论。
 
-<img alt="img" src="./readme.assets/00520.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00520.jpeg" style="display:block; width:40%;"/>
 
 约翰·冯·诺依曼协助设计的ENIAC的后续产品EDVAC（Electronic Discrete Variable Automatic Computer）。特别是在1946年与亚瑟·W·伯克斯（Arthur W.Burks ）和荷曼·哥斯廷（Herman H.Goldstine）共同执笔的题为“电子计算器件逻辑设计的初步分析及讨论（<span class="emphasis_italic">Preliminary Discussion of the Logical Design of an Electronic Computing Instrument</span>）”的论文中，他描述了几个EDVAC比ENIAC更加先进的特点。EDVAC的设计者们感觉到计算机内部中应当使用二进制数，而ENIAC使用的是十进制数。同时他们认为计算机中应当拥有尽可能大容量的存储器，这些存储器应该用来存储程序代码和程序执行中产生的数据（再说明一下，这些在ENIAC中都是不能实现的，对于ENIAC来说，编程不过是扳动开关和插拔电线的事情）。这些指令在存储器中是顺序存放的，而且可以由程序计数器进行寻址，但允许条件跳转。这就是著名的“存储程序概念”（stored-program concept）。
 
@@ -4274,14 +4274,14 @@ ENIAC吸引了数学家约翰·冯·诺依曼（John von Neumann，1903- 1957）
 
 下面是NPN晶体管原理示意图。
 
-<img alt="img" src="./readme.assets/00521.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00521.jpeg" style="display:block; width:20%;"/>
 
 
 在基极施加微小的电压就可以控制非常大的电压从集电极到发射极。如果在基极没有施加电压，那么晶体管将不起作用。
 
 晶体管通常封装在直径为四分之一英寸的小金属罐中，并伸出三根金属线，外形如下图所示。
 
-<img alt="img" src="./readme.assets/00522.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00522.jpeg" style="display:block; width:10%;"/>
 
 晶体管开创了固态电子器件的时代，即指晶体管不再需要真空而是使用固体制造，尤其是使用半导体以及当今最为常见的硅来制造。除了体积比真空管更小，晶体管需要的电量更小，产生的热量更少，而且持久耐用。随身携带一个真空管收音机是无法想象的一件事情。但晶体管收音机不同，它可以由一节电池供电，而且不会发烫。1954年，对于一些幸运的人来说，或许在圣诞节早上打开礼物盒时能获得一件可以随身携带的晶体管收音机。德州仪器公司，半导体革命中一个非常重要的公司，制造了第一批可以随身携带的晶体管收音机。
 
@@ -4293,7 +4293,7 @@ ENIAC吸引了数学家约翰·冯·诺依曼（John von Neumann，1903- 1957）
 
 按照下图右边的方式连接两个晶体管可以组成一个或门。在与门中，上端晶体管的发射极连接下端晶体管的集电极。在或门中，两个晶体管的集电极都与电压源连接，两个发射极相互连接。
 
-<img alt="img" src="./readme.assets/00523.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00523.jpeg" style="display:block; width:40%;"/>
 
 使用继电器构造逻辑门以及其他的部件的方法对于晶体管同样是有效的。继电器、真空管以及晶体管最初都是为了开发放大器设计的，但是通过相似方式连接可以组成逻辑门，而计算机则是由这些部件构成的。1956年诞生了第一台晶体管计算机，随后的几年里，在新型计算机设计中电子管就被淘汰了。
 
@@ -4318,7 +4318,7 @@ ENIAC吸引了数学家约翰·冯·诺依曼（John von Neumann，1903- 1957）
 
 实际上，硅片是薄而且易碎的，因此它必须被安全地封装起来，这样不仅可以起到保护作用，还可以为芯片内部的部件与其他芯片之间的连接提供某种便利。集成电路有几种不同的封装方式，但最为常见的是采用矩形塑料双排直插式（或称为DIP），提供14、16或者40个管脚。
 
-<img alt="img" src="./readme.assets/00524.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00524.jpeg" style="display:block; width:20%;"/>
 
 上图是一个有16个管脚的芯片。将芯片上的凹槽朝左放置（如图），用1到16对管脚进行编号，从左下角开始，环绕到右端，依次为1～16，16号管脚位于左边最上端。管脚之间的距离正好是1/10英寸。
 
@@ -4336,16 +4336,16 @@ TTL代表transistor-transistor logic（晶体管-晶体管逻辑）。20世纪70
 
 7400系列中第一个集成电路标号即为7400，在《TTL数据手册》中这样描述它——“四个双输入正与非门”。这意味着这个特殊的集成电路包含四个双输入与非门。“正”与门则是指1对应为有电压，而0对应为没有电压。下图是一个14管脚的芯片，数据手册中的一张小图显示了管脚对应的输入与输出。
 
-<img alt="img" src="./readme.assets/00525.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00525.jpeg" style="display:block; width:40%;"/>
 
 上面这张图为芯片的俯视图（管脚在下面），小凹槽位于左边。
 
-14号管脚标注为<img src="./readme.assets/00526.jpeg" class="picture_formula_line6" >，与符号V一样，用来代表电压（顺便说一下，大写字母V的双下标代表电压源。下标的字母C指晶体管的电压输入端，即集电极，collector）。7号管脚标注的GND代表接地（ground）。在特定电路中使用的所有集成电路都必须有接电源端与接地端。
+14号管脚标注为<img src="./readme.assets/00526.jpeg" style="display:block; width:5%;">，与符号V一样，用来代表电压（顺便说一下，大写字母V的双下标代表电压源。下标的字母C指晶体管的电压输入端，即集电极，collector）。7号管脚标注的GND代表接地（ground）。在特定电路中使用的所有集成电路都必须有接电源端与接地端。
 
 
-拿TTL7400系列来说，<img src="./readme.assets/00527.jpeg" class="picture_formula_line6" >值必须介于4.75V和5.25V之间。换句话讲，电压必须在<img src="./readme.assets/00528.jpeg" class="picture_formula_line7" >的范围。电压低于4.75V时，芯片将无法工作。而高于5.25V时，芯片将被烧坏。即便有一个5V的电池，那也不能用来对TTL进行供电，因为电池的电压不可能刚好适合这些芯片。通常情况下，TTL需要从墙上接入电源。
+拿TTL7400系列来说，<img src="./readme.assets/00527.jpeg" style="display:block; width:5%;">值必须介于4.75V和5.25V之间。换句话讲，电压必须在<img src="./readme.assets/00528.jpeg" style="display:block; width:5%;">的范围。电压低于4.75V时，芯片将无法工作。而高于5.25V时，芯片将被烧坏。即便有一个5V的电池，那也不能用来对TTL进行供电，因为电池的电压不可能刚好适合这些芯片。通常情况下，TTL需要从墙上接入电源。
 
-7400芯片中每一个与非门有两个输入端和一个输出端，且相互独立工作。上一章中已经区分了输入为1（有电压）或者为0（无电压）的情况。实际上，与非门的输入端电压可以为0V（接地）到5V（<img src="./readme.assets/00529.jpeg" class="picture_formula_line6" >）范围内的任一值。TTL中，当电压介于0～0.8V任一值则可以认为是逻辑“0”，而介于2～5V则可以认为是逻辑“1”。0.8～2V范围的电压输入则应当尽量避免。
+7400芯片中每一个与非门有两个输入端和一个输出端，且相互独立工作。上一章中已经区分了输入为1（有电压）或者为0（无电压）的情况。实际上，与非门的输入端电压可以为0V（接地）到5V（<img src="./readme.assets/00529.jpeg" style="display:block; width:5%;">）范围内的任一值。TTL中，当电压介于0～0.8V任一值则可以认为是逻辑“0”，而介于2～5V则可以认为是逻辑“1”。0.8～2V范围的电压输入则应当尽量避免。
 
 TTL的典型输出是以0.2V表示逻辑“0”，以3.4V表示逻辑“1”。考虑到电压值不稳定，有时会有一些波动，集成电路的输入和输出端有时不用“0”和“1”表示，而是用“低”和“高”表示。此外，有时候低电压可以表示逻辑“1”，而高电压则可以表示逻辑“0”，这种配置称为“负逻辑”。7400芯片被称为“四个双输入正与非门”，而这里的“正”则代表了上述所讲的正逻辑。
 
@@ -4361,22 +4361,22 @@ TTL的典型输出是以0.2V表示逻辑“0”，以3.4V表示逻辑“1”。�
 
 继续阅读《TTL数据手册》会发现书中很多熟悉的小条目。7402芯片有4个双输入或非门，7404芯片有6个反相器，7408芯片有4个双输入与门，7432芯片有4个双输入或门，以及7430芯片有一个8输入与非门，如下图所示。
 
-<img alt="img" src="./readme.assets/00530.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00530.jpeg" style="display:block; width:40%;"/>
 
 缩写Nc表示无连接（no connection）。
 
 7474芯片是另一个较为熟悉的芯片。它是一个“带预置和清零的双Ｄ型正边沿触发器”，如下图所示。
 
-<img alt="img" src="./readme.assets/00531.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00531.jpeg" style="display:block; width:40%;"/>
 
 
 《TTL数据手册》中甚至还囊括了这个芯片中每个触发器的逻辑图。
 
-<img alt="img" src="./readme.assets/00532.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00532.jpeg" style="display:block; width:40%;"/>
 
 除了使用的是与非门外，你会发现上面的这个图与第14章结尾的图很相似。《TTL数据手册》中的逻辑表也稍微不同。
 
-<img src="./readme.assets/00533.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00533.jpeg" style="display:block; width:40%;">
 
 表格中，“H”代表高电平，“L”代表低电平。当然，可以将这些想象成1和0。在触发器中，预置（Pre）和清零输入（Clr）通常为0；这里通常为1。
 
@@ -4385,7 +4385,7 @@ TTL的典型输出是以0.2V表示逻辑“0”，以3.4V表示逻辑“1”。�
 现在你应该知道我是怎么想出从第11章中就开始使用的这么多不同种类的组件的，这些都是从《TTL数据手册》借鉴而来。
 
 
-作为一名数字电路设计工程师，你应当多花点时间看完《TTL数据手册》这本书，使自己熟悉用得到的TTL芯片类型。一旦你熟知了使用的工具，那么就可以使用TTL芯片构造一台第17章中的计算机。将芯片连接起来比将一个个的晶体管连接起来容易得多，但你可能不会考虑使用TTL来做64KB RAM阵列。1973年出版的《TTL数据手册》中，列出的容量最大的RAM芯片仅仅只有<img src="./readme.assets/00534.jpeg" class="picture_formula_line8" >位，制造64 KB需要2048个芯片！对制造存储器来讲，TTL绝非最好的技术。关于存储器将在第21章中详细讨论。
+作为一名数字电路设计工程师，你应当多花点时间看完《TTL数据手册》这本书，使自己熟悉用得到的TTL芯片类型。一旦你熟知了使用的工具，那么就可以使用TTL芯片构造一台第17章中的计算机。将芯片连接起来比将一个个的晶体管连接起来容易得多，但你可能不会考虑使用TTL来做64KB RAM阵列。1973年出版的《TTL数据手册》中，列出的容量最大的RAM芯片仅仅只有<img src="./readme.assets/00534.jpeg" style="display:block; width:5%;">位，制造64 KB需要2048个芯片！对制造存储器来讲，TTL绝非最好的技术。关于存储器将在第21章中详细讨论。
 
 或许你想使用更好一点的振荡器。只要将TTL反相器的输出连接到输入，就会获得一个振荡器，而且其振荡频率更容易计算。这种振荡器使用石英晶体制造相当简单，石英晶体放在带有两个引线的密封小扁罐中。这些石英晶体的振荡频率在一个特定的值，通常情况下是每秒至少振荡一百万个周期，称1兆赫兹，缩写为MHz。如果要使用TTL制造第17章中的计算机，那么需要时钟频率为10 MHz才可以使其运行良好，每条指令执行时间为400 ns。当然，这比使用继电器来做任何我们所构想的事情都要快。
 
@@ -4395,14 +4395,14 @@ TTL供电电压要求在4.75～5.25V范围内。而对于CMOS来说，范围在3
 
 在实际应用中，芯片的连接是在一个塑料“面包板”（如下图所示）完成的。
 
-<img alt="img" src="./readme.assets/00535.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00535.jpeg" style="display:block; width:40%;"/>
 
 
 每一短行有5个孔，在塑料板背面这5个孔通过电线相连。把芯片插入到面包板中，芯片将横跨在中间长槽的两侧，芯片的管脚则分别插到槽两侧的孔里，这样芯片的每一个管脚都会与其他四个孔里的管脚相连接，通过在孔之间连接电线可以实现芯片之间的连接。
 
 使用一种叫做“钢丝包装”（wire-wrapping）的技术可以使芯片之间连接更加牢固，芯片插入到带有几个长长的方柱的插槽中，如下图所示。
 
-<img alt="img" src="./readme.assets/00536.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00536.jpeg" style="display:block; width:20%;"/>
 
 每一个柱体对应芯片的一个管脚，而插口本身则插入到事先穿孔的薄板中。在板子的另一面，使用特殊的钢丝包装枪将每一个柱体周围紧紧包上绝缘线。柱体的直角边缘则从绝缘线中破出，与导线相连。
 
@@ -4452,28 +4452,28 @@ TTL供电电压要求在4.75～5.25V范围内。而对于CMOS来说，范围在3
 
 8080和6800都是40个管脚的集成电路。这些芯片最常见的IC封装大约为2英寸长，1/2英寸宽，1/8英寸厚。
 
-<img alt="img" src="./readme.assets/00537.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00537.jpeg" style="display:block; width:20%;"/>
 
 
 当然，你所看到的只是外部的封装。其内部的硅晶片是非常小的，例如在早期的8位微处理器中，硅晶片还不到1/4平方英寸。外包装可以保护内部的硅晶片，并且通过管脚提供了处理器的输入和输出访问接入点。下面给出了8080的40个管脚的功能说明图。
 
-<img alt="img" src="./readme.assets/00538.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00538.jpeg" style="display:block; width:40%;"/>
 
 本书中我们所创建的所有电气或电子设备都需要某种电源来供电。8080的一个特殊的地方就是它需要三种电源电压：管脚20必须接到5V的电压；管脚11需要接到-5V的电压；管脚28需接12V的电压；管脚2接地。（英特尔在1976年发布了8085芯片，目的就是简化对这些电源的要求）
 
 其他的管脚都标有箭头。从芯片引出的箭头表明这是一个输出（output）信号，这种信号由微处理器控制，计算机的其他芯片对该信号响应。指向芯片的箭头表明该信号是一个输入（input）信号，该信号由其他芯片发出，并由8080芯片对其响应。还一些管脚既是输入又是输出。
 
-第17章所设计的处理器需要一个振荡器来使其工作。8080需要两个不同的同步时钟输入，它们的频率都是2 MHz，分别标记为<img src="./readme.assets/00539.jpeg" class="picture_formula_line9" >和<img src="./readme.assets/00540.jpeg" class="picture_formula_line10" >，位于管脚22和15上。这些信号可以很方便地由英特尔生产的8224时钟信号发生器产生。为8224连接一个18 MHz的石英晶体后，它基本上就可以完成其余工作了。
+第17章所设计的处理器需要一个振荡器来使其工作。8080需要两个不同的同步时钟输入，它们的频率都是2 MHz，分别标记为<img src="./readme.assets/00539.jpeg" style="display:block; width:5%;">和<img src="./readme.assets/00540.jpeg" style="display:block; width:5%;">，位于管脚22和15上。这些信号可以很方便地由英特尔生产的8224时钟信号发生器产生。为8224连接一个18 MHz的石英晶体后，它基本上就可以完成其余工作了。
 
-一个微处理器通常有多个用来寻址存储器的输出信号。用于寻址的输出信号的数目与微处理器的可寻址空间大小直接相关。8080有16个用于寻址的输出信号，标记为<img src="./readme.assets/00541.jpeg" class="picture_formula_line11" >～<img src="./readme.assets/00542.jpeg" class="picture_formula_line12" >，因此它的可寻址空间大小为<img src="./readme.assets/00543.jpeg" class="picture_formula_line13" >，即65,536字节。
+一个微处理器通常有多个用来寻址存储器的输出信号。用于寻址的输出信号的数目与微处理器的可寻址空间大小直接相关。8080有16个用于寻址的输出信号，标记为<img src="./readme.assets/00541.jpeg" style="display:block; width:5%;">～<img src="./readme.assets/00542.jpeg" style="display:block; width:5%;">，因此它的可寻址空间大小为<img src="./readme.assets/00543.jpeg" style="display:block; width:5%;">，即65,536字节。
 
-8080是一个8位的微处理器，可以一次从存储器读取或向存储器写入8位数据。该芯片还包括标记为<img src="./readme.assets/00544.jpeg" class="picture_formula_line11" >～<img src="./readme.assets/00545.jpeg" class="picture_formula_line11" >的8个信号，这些信号是芯片仅有的几个既可以用做输入又可以用做输出的信号。当微处理器从存储器中读取一个字节时，这些管脚的功能是输入；当微处理器向存储器写入一个字节时，其功能又变成了输出。
+8080是一个8位的微处理器，可以一次从存储器读取或向存储器写入8位数据。该芯片还包括标记为<img src="./readme.assets/00544.jpeg" style="display:block; width:5%;">～<img src="./readme.assets/00545.jpeg" style="display:block; width:5%;">的8个信号，这些信号是芯片仅有的几个既可以用做输入又可以用做输出的信号。当微处理器从存储器中读取一个字节时，这些管脚的功能是输入；当微处理器向存储器写入一个字节时，其功能又变成了输出。
 
-芯片的其余10个管脚是控制信号（control signals）。例如，RESET（复位）输入用于控制微处理器的复位。输出信号<img src="./readme.assets/00546.jpeg" class="picture_formula_line14" >的功能是指明微处理器需要向RAM中写入数据（<img src="./readme.assets/00547.jpeg" class="picture_formula_line15" >信号对应于RAM阵列的写输入）。此外，当芯片读取指令时，在某些时刻一些控制信号会出现在<img src="./readme.assets/00548.jpeg" class="picture_formula_line11" >～<img src="./readme.assets/00549.jpeg" class="picture_formula_line11" >管脚处。使用8080芯片构建的计算机系统通常使用8228系统控制芯片来锁存附加的控制信号。本章在后面将会讲述一些控制信号。但8080的控制信号是极其复杂的，因此，除非你准备用该芯片搭建一台计算机，否则最好不要在这些控制信号上过多花费时间。
+芯片的其余10个管脚是控制信号（control signals）。例如，RESET（复位）输入用于控制微处理器的复位。输出信号<img src="./readme.assets/00546.jpeg" style="display:block; width:5%;">的功能是指明微处理器需要向RAM中写入数据（<img src="./readme.assets/00547.jpeg" style="display:block; width:5%;">信号对应于RAM阵列的写输入）。此外，当芯片读取指令时，在某些时刻一些控制信号会出现在<img src="./readme.assets/00548.jpeg" style="display:block; width:5%;">～<img src="./readme.assets/00549.jpeg" style="display:block; width:5%;">管脚处。使用8080芯片构建的计算机系统通常使用8228系统控制芯片来锁存附加的控制信号。本章在后面将会讲述一些控制信号。但8080的控制信号是极其复杂的，因此，除非你准备用该芯片搭建一台计算机，否则最好不要在这些控制信号上过多花费时间。
 
 假设8080微处理器连接了一个64KB的存储器，这样我们就能独立地读写数据而不依赖于微处理器。
 
-8080芯片复位后，它把锁存在存储器0000h地址处的字节读入微处理器，通过在地址信号端<img src="./readme.assets/00550.jpeg" class="picture_formula_line11" >～<img src="./readme.assets/00551.jpeg" class="picture_formula_line12" >输出16个0实现该过程。它读取的字节必须是8080指令，读取该字节的过程被称为取指令（instruction fetch）。
+8080芯片复位后，它把锁存在存储器0000h地址处的字节读入微处理器，通过在地址信号端<img src="./readme.assets/00550.jpeg" style="display:block; width:5%;">～<img src="./readme.assets/00551.jpeg" style="display:block; width:5%;">输出16个0实现该过程。它读取的字节必须是8080指令，读取该字节的过程被称为取指令（instruction fetch）。
 
 在第17章设计的计算机中，所有的指令（除了HLT指令）都是3个字节长，包括1字节的操作码和2字节的地址。在8080中，指令的长度可以是1字节、2字节，或者3字节。有些指令使8080从存储器的一个特定地址读取字节到微处理器，有些指令使8080将一个字节从微处理器写入存储器的特定地址；还有些指令使8080在其内部执行而不需要访问RAM。8080执行完第一条指令后，接着从存储器读取第二条指令，并依此类推。这些指令组合在一起构成了计算机程序，可以用来做一些很有趣的事情。
 
@@ -4490,14 +4490,14 @@ TTL供电电压要求在4.75～5.25V范围内。而对于CMOS来说，范围在3
 
 我们可以用助记符把上述代码简写为以下形式：
 
-<img src="./readme.assets/00552.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00552.jpeg" style="display:block; width:40%;">
 
 这里的A表示累加器（它既是Load指令的目的操作数也是Store指令的源操作数），aaaa表示16位的存储器地址，通常用4个16进制的数来表示一个地址。
 
 同第17章的累加器一样，8080的8位累加器也记做A。8080也有与第17章的计算机的Load指令和Store指令功能相同的两条指令，它们也称做加载（Load）和保存（Store）。在8080中，加载指令和保存指令的操作码分别是32h和3Ah，每个操作后面也同样跟着一个16位的地址。在8080中，它们的助记符分别是STA（Store Accumulator，表示加载到累加器）和LDA（Load Accumulator，表示保存到累加器）：
 
 
-<img src="./readme.assets/00553.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00553.jpeg" style="display:block; width:40%;">
 
 8080芯片的微处理器的内部除累加器外还设置了6个寄存器（register），每个寄存器可以存放一个8位的数。这些寄存器和累加器非常相似，事实上累加器被视为一种特殊的寄存器。这6个寄存器和累加器一样，本质上都是锁存器。处理器既可以把数据从存储器读入寄存器，也可以把数据从寄存器存回存储器。当然，其他的寄存器没有累加器所具有的丰富的功能，例如，当把两个8位数相加时，其结果总是保存到累加器而不会保存到其他寄存器。
 
@@ -4510,46 +4510,46 @@ TTL供电电压要求在4.75～5.25V范围内。而对于CMOS来说，范围在3
 下面列出了前32条MOV指令。再一次提醒你，两个参数中左侧的是目标操作数，右侧的是源操作数。
 
 
-<img src="./readme.assets/00554.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00554.jpeg" style="display:block; width:40%;">
 
 这些指令使用起来非常方便。利用上面的指令可以方便地把一个寄存器存放的数据转移到另一个寄存器。下面让我们研究一下以HL寄存器对作为操作数的4条指令。
 
-<img src="./readme.assets/00555.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00555.jpeg" style="display:block; width:40%;">
 
 前面讲过LDA指令，它可以把单字节的操作数从存储器转移到累加器；LDA操作码后面直接跟着该操作数的16位地址。在上面列出的指令中，MOV指令把字节从存储器转移到B寄存器，但该字节的16位地址却存放在HL寄存器对中。HL是怎样得到16位存储器地址的呢？这并不难解决，有很多方法可以做到，比如通过某种计算实现。
 
 总而言之，对于下面这两条指令：
 
-<img src="./readme.assets/00556.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00556.jpeg" style="display:block; width:40%;">
 
 它们的功能都是把一个字节从内存读入微处理器，但它们寻址存储器的方式并不相同。第一种方式称做直接寻址（direct addressing）；第二种方式称做间接寻址（indexed addressing）。
 
 下面列出了其余32条MOV指令，我们看到HL保存的16位存储器地址也可以作为目标操作数。
 
-<img src="./readme.assets/00557.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00557.jpeg" style="display:block; width:40%;">
 
 其中的一些指令如：
 
-<img src="./readme.assets/00558.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00558.jpeg" style="display:block; width:40%;">
 
 并不会执行有意义的操作。而指令：
 
-<img src="./readme.assets/00559.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00559.jpeg" style="display:block; width:40%;">
 
 是不存在的，事实上，与之对应的指令是HLT（Halt）即停止指令，也就是说该指令的意义是停止。
 
 研究MOV操作码的位模式能更好地了解它，MOV操作码由8位组成：
 
-<img src="./readme.assets/00560.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00560.jpeg" style="display:block; width:40%;">
 
 其中ddd这3位是目标操作数的代码，sss这3位是源操作数的代码。它们所表示的意义如下：
 
 
-<img src="./readme.assets/00561.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00561.jpeg" style="display:block; width:40%;">
 
 例如，指令
 
-<img src="./readme.assets/00562.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00562.jpeg" style="display:block; width:40%;">
 
 对应的操作码为：
 
@@ -4561,39 +4561,39 @@ TTL供电电压要求在4.75～5.25V范围内。而对于CMOS来说，范围在3
 
 寄存器B和C也可以组合成16位的寄存器对BC，同样我们还可以用Ｄ和E组成寄存器对DE。如果这些寄存器对也包含要读取或保存的字节的存储器地址，则可以用下面的指令实现：
 
-<img src="./readme.assets/00563.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00563.jpeg" style="display:block; width:40%;">
 
 另一种类型的传送（Move）指令称做传送立即数（Move Immediate），它的助记符写做MVI。传送立即数指令是一个双字节指令，第一个字节为操作码，第二个是数据。这个单字节数据从存储器转移到某个寄存器，或者转移到存储器中的某个存储单元，该存储单元由HL寄存器对寻址。
 
 
-<img src="./readme.assets/00564.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00564.jpeg" style="display:block; width:40%;">
 
 例如，当指令：
 
-<img src="./readme.assets/00565.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00565.jpeg" style="display:block; width:40%;">
 
 执行后，寄存器E存放的字节是37h。这就是我们要介绍的第三种寻址方式——立即数寻址（immediate addressing）。
 
 下面将列出一个操作码集，包括32个操作码，它们能完成4种基本的算术运算，这些运算在第17章设计处理器时我们已经熟悉了，它们是加法（ADD）、进位加法（ADC）、减法（SUB）和借位减法（SBB）。可以看到，在所有的例子中，累加器始终用于存放其中的一个操作数，同时用来保存计算结果。这些指令如下。
 
 
-<img src="./readme.assets/00566.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00566.jpeg" style="display:block; width:40%;">
 
 假如累加器A存放的字节是35h，累加器B存放的字节是22h，经过减法运算：
 
-<img src="./readme.assets/00567.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00567.jpeg" style="display:block; width:40%;">
 
 累加器中的值变为22h，即两个字节的差。
 
 如果累加器A中的值为35h，寄存器H和L中的值分别是10h和7Ch，而存储器地址107Ch处的字节为4Ah，指令：
 
-<img src="./readme.assets/00568.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00568.jpeg" style="display:block; width:40%;">
 
 把累加器中的值（35h）与寄存器对HL寻址（107Ch）存储器得到的数值（4Ah）相加，并把计算结果（7Fh）保存到累加器。
 
 在8080中，使用ADC指令和SBB指令可以对16位数、24位数、32位数甚至更高位的数进行加法、减法运算。例如，假设现在寄存器对BC和DE各自保存了一个16位的数，我们要把这两个数相加，并且把结果保存在寄存器对BC中。具体做法如下：
 
-<img src="./readme.assets/00569.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00569.jpeg" style="display:block; width:40%;">
 
 在上面的计算中，用ADD指令对低字节相加，用ADC指令对高字节相加。低字节相加产生的进位会进入高字节的运算中。在这段简短的代码中，我们用到了4个MOV指令，这是因为在8080中只能利用累加器进行加法运算，操作数在累加器和寄存器之间来回地传送，因此在8080的代码中会大量使用MOV指令。
 
@@ -4612,18 +4612,18 @@ TTL供电电压要求在4.75～5.25V范围内。而对于CMOS来说，范围在3
 
 下面的两条指令会直接影响进位标志位CF。
 
-<img src="./readme.assets/00570.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00570.jpeg" style="display:block; width:40%;">
 
 第17章设计的计算机可以执行ADD、ADC、SUB和SBB指令（虽然缺乏灵活性），而8080功能更为强大，它还可以执行AND（与）、OR（或）、XOR（异或）等逻辑运算。不论是算术运算还是逻辑运算，都是由8080处理器的算术逻辑单元（ALU）来完成的。
 
 以下是8080的算术运算和逻辑运算指令。
 
 
-<img src="./readme.assets/00571.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00571.jpeg" style="display:block; width:40%;">
 
 AND、XOR和OR都是按位运算（bitwise operations）指令，也就是说对于这些逻辑运算指令，其操作数的每一个对应位都是独立运算的，例如：
 
-<img src="./readme.assets/00572.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00572.jpeg" style="display:block; width:40%;">
 
 保存到累加器的结果将会是05h。假如我们把3条指令换作OR，则最终的结果将会是5Fh；如果换作XOR，则结果又变成了5Ah。
 
@@ -4637,7 +4637,7 @@ CMP　A, B
 
 同样的，也可以对立即数进行这8种算术逻辑操作。
 
-<img src="./readme.assets/00573.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00573.jpeg" style="display:block; width:40%;">
 
 例如，可以用下面的这条指令来替代上面列出的两条指令：
 
@@ -4646,7 +4646,7 @@ CPI　A, 25h
 下面是两种特别的8080指令。
 
 
-<img src="./readme.assets/00574.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00574.jpeg" style="display:block; width:40%;">
 
 CMA是Complement Accumulator的简写。它对累加器中的数按位取反，即把0变为1，1变为0。例如，累加器中的数如果是01100101，使用CMA命令后，累加器中的数按位取反，得到10011010。我们还可以使用如下指令对累加器中的数取反：
 
@@ -4672,13 +4672,13 @@ DAA
 
 在8080程序中，经常会对一个数进行加1或减1运算。在第17章的乘法程序中，为了实现对一个数减1，我们把该数与FFh相加，它是-1的补码。8080提供了专门的指令用来对寄存器或存储器中的数进行加1（称作增量）或减1（称作减量）操作。
 
-<img src="./readme.assets/00575.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00575.jpeg" style="display:block; width:40%;">
 
 INR和DCR都是单字节指令，它们可以影响除CF（Carry Flag）之外的所有标志位。
 
 8080还包括4个循环移位（Rotate）指令，这些指令可以把累加器中的内容向左或向右移动1位，它们的具体功能如下。
 
-<img src="./readme.assets/00576.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00576.jpeg" style="display:block; width:40%;">
 
 这些指令只对进位标志位CF有影响。
 
@@ -4742,11 +4742,11 @@ POP　　　C
 
 在我们所举的例子中，对于8080来说使用PUSH和POP对寄存器操作实际上是不准确的。在8080中，执行PUSH指令实际上是把16位的数据保存到堆栈，执行POP指令是把这些数据从堆栈中取回至寄存器。因此，对于上面的如PUSH C，POP C等指令，我们对其进行如下的修改。
 
-<img src="./readme.assets/00577.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00577.jpeg" style="display:block; width:40%;">
 
 PUSH　BC指令将寄存器B和C中的数据保存到堆栈，而POP　BC则将这些数据从堆栈取回到寄存器B和C中，并且保持原来的顺序。最后一行指令中的PSW代表程序状态字，如前所述，这是一个8位的寄存器，用于保存标志位。最后一行的PUSH和POP指令的操作对象实际上是累加器和PSW，即压入和弹出堆栈的数据由累加器和PSW中的内容组成。如果你想把所有寄存器中的数据及全部标志位都保存到堆栈，可以使用下面的指令：
 
-<img src="./readme.assets/00578.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00578.jpeg" style="display:block; width:30%;">
 
 堆栈是怎样工作的呢？我们假设堆栈指针是8000h，当执行PUSH BC指令时将会引发以下操作。
 
@@ -4775,11 +4775,11 @@ PUSH　BC指令将寄存器B和C中的数据保存到堆栈，而POP　BC则将�
 
 8080使用LXI指令为堆栈寄存器赋值，LXI是Load Extended Immediate的缩写，即加载扩展的立即数。下面的这些指令将把操作码后的两个字节保存到16位寄存器对中。
 
-<img src="./readme.assets/00579.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00579.jpeg" style="display:block; width:40%;">
 
 指令：
 
-<img src="./readme.assets/00580.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00580.jpeg" style="display:block; width:40%;">
 
 
 和下面两条指令等价：
@@ -4790,38 +4790,38 @@ MVI　C, 7Ah
 
 LXI指令节省了一个字节。而且上表中最后一条LXI指令为栈指针赋了一个特殊的值。通常下面的指令会作为微处理器复位后首先执行的指令之一。
 
-<img src="./readme.assets/00581.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00581.jpeg" style="display:block; width:40%;">
 
 类似的，还可以对寄存器对和堆栈指针进行加1或减1操作，即把它们看做16位寄存器。
 
-<img src="./readme.assets/00582.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00582.jpeg" style="display:block; width:40%;">
 
 对于要讨论的16位指令，我们可以再看一些例子。下面的指令把由任意2个寄存器组成的16位寄存器对的内容加到寄存器对HL中。
 
-<img src="./readme.assets/00583.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00583.jpeg" style="display:block; width:40%;">
 
 这些指令可以减少操作的字节数。例如，上面的第一条指令一般情况下需要6个字节。
 
-<img src="./readme.assets/00584.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00584.jpeg" style="display:block; width:20%;">
 
 DAD指令一般用来计算存储器地址，只对进位标志位CF有影响。
 
 
 接下来我们来认识一下各种各样的指令。下面两条指令的特点是操作码后面都跟着2字节的地址，第一条指令把HL寄存器对的内容保存到该地址，第二条指令把该地址的内容加载到HL寄存器对。
 
-<img src="./readme.assets/00585.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00585.jpeg" style="display:block; width:40%;">
 
 寄存器L的数据保存在地址aaaa，而寄存器H的数据保存在地址aaaa+1。
 
 下面的两条指令把寄存器对HL保存的数据加载到程序计数器和堆栈指针。
 
-<img src="./readme.assets/00586.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00586.jpeg" style="display:block; width:40%;">
 
 PCHL指令本质上是一种Jump指令，它把HL保存的存储器地址加载到程序计数器，而8080处理器要执行的下一条指令就是程序计数器所指明的存储器地址中存放的指令。SPHL指令可以作为另一种为堆栈指针赋值的指令。
 
 下面的两条指令中，第一条将HL保存的数据与堆栈顶部的两个字节进行交换；第二条指令将HL保存的数据和寄存器对DE保存的数据进行交换。
 
-<img src="./readme.assets/00587.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00587.jpeg" style="display:block; width:40%;">
 
 除了刚讲过的PCHL指令外，目前为止还没有介绍过8080的跳转指令。如第17章所述，在处理器中专门设置了一个称为程序计数器PC的寄存器，它用来保存处理器将要取出并执行的指令的存储地址。通常，处理器在PC的指引下顺序执行存储器中存放的指令，但有一些指令，如Jump（跳转）、Branch（分支）或Goto（无条件转移）——使处理器脱离原来的执行顺序。这些指令使PC重新加载另外的值，处理器要执行的下一条指令存放于存储器的其他位置，而不在按原来的顺序寻址。
 
@@ -4839,7 +4839,7 @@ PCHL指令本质上是一种Jump指令，它把HL保存的存储器地址加载�
 
 用来实现两个数相乘的一组指令可以作为一个子程序。下面我们将看到这个子程序。在第17章的乘法程序中，被乘数（还有乘积）被保存在存储器的特定位置；而在8080的子程序中，乘数和被乘数分别存放在寄存器B和寄存器C中，乘积保存到16位寄存器对HL中。8080中的乘法子程序如下：
 
-<img src="./readme.assets/00588.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00588.jpeg" style="display:block; width:40%;">
 
 注意，上述子程序的第一行有一个标志Multiply。当然，实际上这个标志对应着子程序在存储器中的起始地址。该子程序在开始处使用了两个PUSH指令，这是因为通常在子程序的起始处要保存程序用到的寄存器。
 
@@ -4851,45 +4851,45 @@ PCHL指令本质上是一种Jump指令，它把HL保存的存储器地址加载�
 
 在程序中使用如下指令来调用这个乘法子程序，例如，把25h和12h相乘：
 
-<img src="./readme.assets/00589.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00589.jpeg" style="display:block; width:30%;">
 
 CALL指令把PC的值保存到堆栈中，被保存的这个值是CALL指令的下一条指令的地址，然后CALL指令将使程序跳转到标志为Multiply的指令，即子程序的起始处。当子程序得到计算结果后，执行RET（返回）指令，该指令使保存在堆栈的PC的值弹出，并重新设置到PC，之后程序将继续执行CALL指令后面的指令。
 
 8080指令集包括条件CALL指令和条件Return指令，但它们使用的频率比条件跳转指令小得多。下面的表格完整地列出了这些指令。
 
-<img src="./readme.assets/00590.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00590.jpeg" style="display:block; width:40%;">
 
 正如你大概所了解的，存储器并不是连接在微处理器上的唯一设备。一个完整的计算机系统通常需要输入/输出设备（I/O）以实现人机交互。输入/输出设备通常包括键盘和显示器等。
 
-微处理器是如何与外围设备（peripheral，除存储器外，与微处理器连接的所有设备都可以称为外围设备）互相通信的呢？外围设备配备了与存储器类似的接口，微处理器通过与某种外围设备对应的特定地址（即接口）对其进行读写操作。在某些微处理器中，外围设备实际上占用了一些通常用来寻址存储器的地址，这种结构称作内存图像I/O（memory-mapped I/O）。但在8080中，除了常规的65536个地址外，另外增加了256个地址专门用来访问输入/输出设备，它们被称作I/O端口（I/O ports）。I/O地址信号标记为<img src="./readme.assets/00591.jpeg" class="picture_formula_line16" >～<img src="./readme.assets/00592.jpeg" class="picture_formula_line16" >，但I/O的访问方式与存储器的访问方式不同，两者的区分由8228系统控制芯片的锁存信号来标识。
+微处理器是如何与外围设备（peripheral，除存储器外，与微处理器连接的所有设备都可以称为外围设备）互相通信的呢？外围设备配备了与存储器类似的接口，微处理器通过与某种外围设备对应的特定地址（即接口）对其进行读写操作。在某些微处理器中，外围设备实际上占用了一些通常用来寻址存储器的地址，这种结构称作内存图像I/O（memory-mapped I/O）。但在8080中，除了常规的65536个地址外，另外增加了256个地址专门用来访问输入/输出设备，它们被称作I/O端口（I/O ports）。I/O地址信号标记为<img src="./readme.assets/00591.jpeg" style="display:block; width:5%;">～<img src="./readme.assets/00592.jpeg" style="display:block; width:5%;">，但I/O的访问方式与存储器的访问方式不同，两者的区分由8228系统控制芯片的锁存信号来标识。
 
 OUT（输出）指令把累加器中的内容写入到紧跟该指令后的字节所寻址的端口（port）。IN（输入）指令把一个字节从端口读入到累加器。它们的格式如下所示。
 
-<img src="./readme.assets/00593.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00593.jpeg" style="display:block; width:40%;">
 
 外围设备有时候需要获得处理器的注意。例如，当你按下键盘的某个键时，处理器应该马上注意到这个事件。这个过程由一个称为中断（interrupt）的机制实现，这是一个由外围设备产生的信号，连接至8080的INT输入端。
 
 但是，当8080复位后，就不再响应中断。程序必须执行EI（Enable Interrupt）指令来允许中断，然后执行DI（Disable Interrupts）禁止中断。这两条指令如下所示。
 
-<img src="./readme.assets/00594.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00594.jpeg" style="display:block; width:40%;">
 
 8080的INTE输出信号用来指明何时允许中断。当外围设备需要中断微处理器的当前工作时，它需要把8080的INT输入信号置为1。8080通过从存储器中取出指令来响应该中断，同时控制信号指明有中断发生。外围设备通常提供下列指令来响应8080微处理器。
 
-<img src="./readme.assets/00595.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00595.jpeg" style="display:block; width:40%;">
 
 上面列出的这些指令都称作Restart（重新启动）指令，在其执行的过程中也会把当前PC中的数据保存到堆栈，这一点与CALL指令类似。但Restart指令在保存PC数据之后会立刻跳转到特定的地址，而且是根据参数的不同将跳转到不同的地址：比如RST 0将跳转到地址0000h处，RST 1将跳转到地址00008h处，依此类推，最后的RST 7将跳转到地址0038h处。这些地址存放的代码都是用来处理中断的。例如，由键盘引起的中断将执行RST 4指令，程序将跳转到地址0020h处，该地址存放的代码将负责从键盘读入数据（完整的过程将在第21章讲述）。
 
 目前为止，我们已经介绍了243个操作码。在前255个数中，有12个没有作为操作码使用，它们是：08h，10h，18h，20h，28h，30h，38h，CBh，D9h，DDh，EDh和FDh。下面还需要讲到一个操作码。
 
-<img src="./readme.assets/00596.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00596.jpeg" style="display:block; width:40%;">
 
 NOP代表（即声明）no op（no operation，无操作）。NOP指令使处理器什么操作也不执行。这样做有什么好处呢？填空，即保持处理器的运行状态而不做任何事情。8080可以执行一批NOP指令而不会引起任何错误事件的发生。
 
 本章不准备详细介绍Motorola 6800微处理器，因为在构造和功能方面它与8080非常相似。下面是6800的40个管脚的功能描述图。
 
-<img alt="img" src="./readme.assets/00597.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00597.jpeg" style="display:block; width:40%;"/>
 
-在上图中，<img src="./readme.assets/00598.jpeg" class="picture_formula_line12" >表示接地，<img src="./readme.assets/00599.jpeg" class="picture_formula_line17" >代表5V的电源。同8080一样，6800也有16个地址输出信号端和8个数据信号端，其中数据信号端既可以用于输入信号也可以用于输出信号。它还有一个RESET信号端和一个<img src="./readme.assets/00600.jpeg" class="picture_formula_line18" >（read/write，读/写）信号。<img src="./readme.assets/00601.jpeg" class="picture_formula_line19" >信号代表中断请求。与8080相比，6800的时钟信号较为简单，6800没有设计独立的I/O端口，所有的输入/输出设备的地址都是存储器地址空间的一部分。
+在上图中，<img src="./readme.assets/00598.jpeg" style="display:block; width:5%;">表示接地，<img src="./readme.assets/00599.jpeg" style="display:block; width:5%;">代表5V的电源。同8080一样，6800也有16个地址输出信号端和8个数据信号端，其中数据信号端既可以用于输入信号也可以用于输出信号。它还有一个RESET信号端和一个<img src="./readme.assets/00600.jpeg" style="display:block; width:5%;">（read/write，读/写）信号。<img src="./readme.assets/00601.jpeg" style="display:block; width:5%;">信号代表中断请求。与8080相比，6800的时钟信号较为简单，6800没有设计独立的I/O端口，所有的输入/输出设备的地址都是存储器地址空间的一部分。
 
 6800有一个16位的程序计数器PC、一个16位的堆栈指针SP、一个8位的状态寄存器（用来保存标志位），以及两个8位的累加器A、B。A和B都可以用做累加器（而不是把B作为普通的寄存器），因为A和B的功能完全相同，任何用A做的工作都可以用B实现。与8080不同，6800没有设置其他的8位寄存器。
 
@@ -4897,7 +4897,7 @@ NOP代表（即声明）no op（no operation，无操作）。NOP指令使处理
 
 尽管6800实现的操作与8080大致相同——加载、保存、加法、减法、移位、跳转、调用等，但对应的操作码和助记符是完全不同的。例如，下面列出了6800的转移（Branch）指令集。
 
-<img src="./readme.assets/00602.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00602.jpeg" style="display:block; width:40%;">
 
 
 与8080不同，6800没有设置奇偶标志位，而是设置了一个溢出标志位（Overflow flag）。上面的转移指令中有一些依赖于标志位的组合（combinations of flags）。
@@ -4906,11 +4906,11 @@ NOP代表（即声明）no op（no operation，无操作）。NOP指令使处理
 
 8080和6800的另一个有趣的区别是：在两个处理器中，LDA指令都从存储器的特定地址将数据加载到累加器。例如，在8080中，下面的字节序列：
 
-<img src="./readme.assets/00603.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00603.jpeg" style="display:block; width:40%;">
 
 将把存储器地址347Bh处的字节加载到累加器。现在对比一下6800的LDA指令，它使用6800扩展寻址模式（6800 extended addressing mode）：
 
-<img src="./readme.assets/00604.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00604.jpeg" style="display:block; width:40%;">
 
 上面的这组字节序列将把存储器7B34h地址处的字节加载到累加器。
 
@@ -4922,7 +4922,7 @@ Intel和Motorola的微处理器在保存多字节数据问题上的根本区别�
 
 这两种微处理器后来的发展如何呢？8080被应用在一些人所谓的第一台个人电脑（personal computer）上，更准确地说应该是用于第一台家用电脑（home computer）上。下图是Altair 8800，它曾登上了1975年1月的<span class="emphasis_italic">Popular Electronics</span>杂志的封面。
 
-<img alt="img" src="./readme.assets/00605.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00605.jpeg" style="display:block; width:40%;"/>
 
 当你看到Altair 8800时，前面板上的灯泡和开关会让你感到似曾相识。这个界面和第16章介绍64 KB RAM阵列时的初始“控制面板”的界面是类似的。
 
@@ -4964,7 +4964,7 @@ PowerPC拥有完全不同的指令集，因此不能执行68K系列微处理器�
 
 还是先前所描述的例子，曾在某个杂志上细细品味过的一个故事，几年后出现在另外一本书中，但是文章的字体发生了变化，这算是一个问题吗？当年的杂志上是这样印刷的：
 
-<img alt="img" src="./readme.assets/00606.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00606.jpeg" style="display:block; width:30%;"/>
 
 而现在书中的写法变成了下面这样：
 
@@ -4992,7 +4992,7 @@ Call me Ishmael.
 
 由于Baudot对每个字符采用5位编码，整个系统由32个编码所组成，这些编码的十六进制取值范围从00h到1Fh。下表给出了32个不同编码的十六进制形式及其所对应的字母表中的字符。
 
-<img src="./readme.assets/00607.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00607.jpeg" style="display:block; width:60%;">
 
 编码00h被保留了下来，没有指派给任何值。剩下的31个编码中，字母表中的字符占了26个，其余5个用来调整格式，如上表中的楷体排版的语句所示。
 
@@ -5000,17 +5000,17 @@ Call me Ishmael.
 
 Baudot系统里怎么没有数字和标点符号呢？其实这是因为编码1Bh中暗藏玄机，它的实际作用是数字转义（Figure Shift）。数字转义编码后的所有的编码都会被解释为数字或标点符号，直到遇到字符转义编码（1Fh），一切就又被解释为字符。下表展示了十六进制编码以及所对应的数字和标点符号。
 
-<img src="./readme.assets/00608.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00608.jpeg" style="display:block; width:60%;">
 
 其实在ITU规范化的编码方案中，05h、0Bh和16h是留做他用的，官方说法为“国内使用”。表中列出的是这几个编码在美国使用时的含义。某些欧洲国家将这些编码代表重音符号。响铃编码令电传打字机发出清脆的铃声。“Who Are You”编码用来让打字员激活身份识别机制。
 
 像莫尔斯码一样，这种5位的编码并没有提供区分大、小写的方法。下面这个句子：
 
-<img alt="img" src="./readme.assets/00609.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00609.jpeg" style="display:block; width:30%;"/>
 
 表示成编码的十六进制数据流就是：
 
-<img alt="img" src="./readme.assets/00610.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00610.jpeg" style="display:block; width:40%;"/>
 
 请注意三个转义码的使用：1Bh出现在数字之前，1Fh出现在数字之后，而数字结束之后又出现了1Bh。这一行编码以掉头、换行符结尾。
 
@@ -5038,22 +5038,23 @@ Baudot系统里怎么没有数字和标点符号呢？其实这是因为编码1B
 
 ASCII码是7位编码，它的二进制取值范围为0000000～1111111，对应于十六进制就是00h～7Fh。现在我们一起来讨论下ASCII码，但我不建议从开始学起，因为相对于后面的编码，前32个编码理解起来还有一点难度。所以我们从第2组32个编码开始学习，它包括标点符号和10个数字。下表列出了这32个字符及相应的十六进制编码。
 
-<img src="./readme.assets/00611.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00611.jpeg" style="display:block; width:40%;">
 
 值得注意的是20h代表空格符，它的作用是将单词或句子隔开。
 
 接下来的32个编码是大写字母和一些附加的标点符号的编码。除了@符号和下画线之外，其余的符号很难在打字机上找到。它们真正出现的地方是标准计算机键盘，下表列出了这些字符及相应的十六进制编码。
 
-<img src="./readme.assets/00612.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00612.jpeg" style="display:block; width:40%;">
 
 
 <p class="picture_table_tit
 
 
-<img src="./readme.assets/00613.jpeg" style="display:block; width:50%;"></div>
+<img src="./readme.assets/00613.jpeg" style="display:block; width:40%;">
+
 再接下来的32个编码是所有小写字母和一些附加的标点符号及其对应的十六进制编码，这些字符也很少在打字机上出现。
 
-<img src="./readme.assets/00614.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00614.jpeg" style="display:block; width:40%;">
 
 注意，表的最后不包括7Fh及其对应的字符。如果你统计一下，就会发现这三张表共涵盖了95个字符。由于ASCII码的编码长度为7位，所以最多可以表示128个编码，这样算下来还剩33个编码可用。下面我们通过几个简短的例子学习一下编码。
 
@@ -5077,33 +5078,34 @@ ASCII码是7位编码，它的二进制取值范围为0000000～1111111，对应
 
 在ASCII码中，一个大写字母与其对应的小写字母的ASCII码值相差20h。这种规律大大简化了程序代码的编写，例如一段将特定的字符串变成大写的程序。假设有一个字符串存放在内存的某个区域，每个字符占据一个字节。下面是一段8080子程序，初始状态下字符串的首地址存放在寄存器HL中；寄存器C存放字符串的长度，也就是字符的个数。
 
-<img src="./readme.assets/00615.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00615.jpeg" style="display:block; width:40%;">
 
 
 还有另外一种方法也可以将小写字母减去20h而转换成大写字母，如下所示：
 
-<img src="./readme.assets/00616.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00616.jpeg" style="display:block; width:40%;">
 
 ANI指令（AND Immediate）用来“与”一个立即数。在上面这个例子中，累加器中的数值与DFh执行“按位与”操作，其中DFh转换成二进制数就是11011111。“按位与”操作就是把两个数分别转换成二进制，然后将对应的位进行“与”操作。这个例子中，除了自左向右数的第3位被置成0外，A中的其他位均被保留。通过将这一位设置为0，我们实现了将小写字母的ASCII码转换成大写字母的目的。
 
-<img src="./readme.assets/00617.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00617.jpeg" style="display:block; width:40%;">
 
 
 <p class="picture_table_tit
 
 
-<img src="./readme.assets/00618.jpeg" style="display:block; width:50%;"></div>
+<img src="./readme.assets/00618.jpeg" style="display:block; width:40%;">
+
 前面讲到的95个编码也被称为图形文字（graphic characters），因为它们可以被显示出来。其实ASCII码还包含33个控制字符（control characters），它们用来执行某一特定功能，因而不用显示出来。为了完整地讨论ASCII编码，下面将这33个控制字符也列举了出来，有一些的确很难理解，不过不用在意。其实在ASCII码公布以后，当时人们更多的是想把它用在电传打字机上，所以，如今其中的许多编码已经渐渐离开了人们的视线。
 
 人们最初的想法是可以在图形字符中使用控制字符，以便对文本格式进行基本的调整。举个例子或许会帮助你更好地理解这种做法：假如有一台电传打字机或者打印机，它负责解析ASCII码，解析之后做出相应的操作，最后在纸上打印出字符。设备的打印头每打印一个字符就向右移动一格，通过这种方式来对ASCII码做出响应。而要实现这些操作就需要用到控制字符。
 
 举个例子来讲，看看下面这个十六进制字符串：
 
-<img alt="img" src="./readme.assets/00619.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00619.jpeg" style="display:block; width:40%;"/>
 
 编码09代表水平制表符，简写为Tab。假设打印的过程中，所有水平排列字符的起始位置都为0，Tab的作用是在下一个水平位置即在距前一个字符的间距为字符长度8倍的位置打印下一个字符，如下所示：
 
-<img alt="img" src="./readme.assets/00620.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00620.jpeg" style="display:block; width:40%;"/>
 
 这种简单有效方法使得字符可以保持按列对齐。
 
@@ -5115,7 +5117,7 @@ ANI指令（AND Immediate）用来“与”一个立即数。在上面这个例�
 
 尽管ASCII码在计算机领域可以说是一统江湖，但许多IBM大型机上却没有采用这种标准。例如，System /360产品内部采用的是IBM自发研制的8位字符编码系统，也被称为扩展的BCD交换码（Extended BCD Interchange Code），或EBCDIC（英文中的发音为EBB-see-dick）。EBCDIC是早期的6位BCDIC编码的扩展形式，BCDIC的起源于IBM的打孔卡。一张打孔卡——存储容量为80个文本字符——1928年由IBM首创并沿用了将近50年，它的外观如下图所示。
 
-<img alt="img" src="./readme.assets/00621.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00621.jpeg" style="display:block; width:60%;"/>
 
 在考虑打孔卡与8位EBCDIC字符码的关系时，需要知道，在几代技术的影响下，这种编码也历经几十年的演变。因此，打孔卡与EBCDIC之间的逻辑性和一致性也逐渐消失了。
 
@@ -5127,22 +5129,21 @@ ANI指令（AND Immediate）用来“与”一个立即数。在上面这个例�
 
 数字0～9并不需要区域穿孔进行额外表示，它们的EBCDIC编码的高半字节是1111，代表了区域穿孔不起作用，而0～9的EBCDIC编码的低半字节是数字穿孔的BCD码，如下所示。
 
-<img src="./readme.assets/00622.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00622.jpeg" style="display:block; width:40%;">
 
 大写字母有一些有趣的规律，如果区域穿孔只出现在第12行，则高半字节标识为1100；如果只出现在第11行，则高半字节标识为1101；如果出现在第0行，则高半字节标识1110。下表给出了大写字母及其对应的EBCDIC编码。
 
-<img src="./readme.assets/00623.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00623.jpeg" style="display:block; width:60%;">
 
 
-<p class="picture_table_tit
 
+<img src="./readme.assets/00624.jpeg" style="display:block; width:60%;">
 
-<img src="./readme.assets/00624.jpeg" style="display:block; width:50%;"></div>
 值得注意的是R与S之间编号有跳变。有时在编写程序的时候，尤其是程序中用到EBCDIC编码时，这个容易被忽视的小细节往往会令人抓狂。
 
 小写与大写字母的数字穿孔是相同的，但它们的区域穿孔不同。在a～i的小写字母，穿孔位于第12行和第0行，高半字节对应的编码为1000；在j～r的小写字母，穿孔位于第12行和第11行，高半字节对应的编码为1001；在s～z的小写字母，穿孔位于第11行和第0行，高半字节对应的编码为1010。小写字母的EBCDIC字符及其对应的十六进制编码如下表所示。
 
-<img src="./readme.assets/00625.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00625.jpeg" style="display:block; width:60%;">
 
 当然，标点符号和控制字符也都有自己的EBCDIC编码，但对于这些字符的编码系统没有必要去深究。
 
@@ -5191,7 +5192,7 @@ ANI指令（AND Immediate）用来“与”一个立即数。在上面这个例�
 
 大多数计算机系统采用8位编码来存储字符，我们也自然地想到设计一种扩展的ASCII字符集，这样可以包含256个字符，比原先扩展了一倍。在这种字符集中，编码00h～7Fh与原ASCII码保持一致；编码80h～FFh可以用来引入其他字符。这项技术已经被用来定义附加的字符编码，比如前面提到过的重音字母以及非拉丁字母。下面这个例子是对96个额外字符的ASCII码扩展，称为第1号拉丁字母表（Latin Alphabet No.1），其中包括A0h～FFh字符编码。在该表中，每个字符的十六进制编码的高半字节由第一行给出，低半字节由第一列给出，如下表所示。
 
-<img alt="img" src="./readme.assets/00626.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00626.jpeg" style="display:block; width:30%;"/>
 
 编码A0h对应的字符为不中断空格（No-Break Space）。通常计算机在对文本进行排版时，会将其划分为行和段，行与行之间以空格符号区分（空格所对应的ASCII码为20h）。编码A0h显示为空格，但是并不表示行与行之间被断开。比如在“WW II”这样一段文字中就可以使用不中断空格。编码ADh被定义为软连字符（soft hyphen），它的用途是连接同一单词之间的音节，在一个单词被不得已划分在两行时就会用到它。
 
@@ -5260,17 +5261,17 @@ RAM阵列中数字的个数= 2<span class="superscript">地址信号的个数</s
 
 20世纪70年代中期，2102是用于家用计算机的一款流行的存储器芯片。其管脚分布如下图所示。
 
-<img alt="img" src="./readme.assets/00627.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00627.jpeg" style="display:block; width:40%;"/>
 
 它也是MOS（metal-oxide semiconductor）家族中的一员，与8080和6800微处理器所采用的技术相同。MOS半导体管很容易与TTL芯片连接起来；通常情况下，其内部晶体管的密度要比TTL高，但速度却不如TTL快。
 
-这个芯片存储容量可以达到1024位，这个数值可以根据地址信号（A0～A9）、数据输出（DO）和数据输入（DI）信号（输入和输出复用一个信号线）的数目计算出来。你所使用2102芯片型号不同，访问时间（read access time，指从芯片接收到地址信息到输出有效数据所需的时间）也是各有差异，从350 ns～1000 ns不等。当需要从存储器中读取数据时，<img src="./readme.assets/00628.jpeg" class="picture_formula_line20" >（读/写）信号置1；当向芯片中写入数据的时候，这个信号要置0，而且至少要持续170～550 ns的时间，也是由所使用的2102芯片的型号决定的。
+这个芯片存储容量可以达到1024位，这个数值可以根据地址信号（A0～A9）、数据输出（DO）和数据输入（DI）信号（输入和输出复用一个信号线）的数目计算出来。你所使用2102芯片型号不同，访问时间（read access time，指从芯片接收到地址信息到输出有效数据所需的时间）也是各有差异，从350 ns～1000 ns不等。当需要从存储器中读取数据时，<img src="./readme.assets/00628.jpeg" style="display:block; width:5%;">（读/写）信号置1；当向芯片中写入数据的时候，这个信号要置0，而且至少要持续170～550 ns的时间，也是由所使用的2102芯片的型号决定的。
 
-这里我们不得不提到的一个信号就是<img src="./readme.assets/00629.jpeg" class="picture_formula_line21" >信号，也称片选信号。该信号置1时，芯片不被选中，意思就是说，不会响应<img src="./readme.assets/00630.jpeg" class="picture_formula_line20" >信号。其实，<img src="./readme.assets/00631.jpeg" class="picture_formula_line21" >信号的作用不止这些，对芯片还有其他重要的作用，下面我们将简单描述一下。
+这里我们不得不提到的一个信号就是<img src="./readme.assets/00629.jpeg" style="display:block; width:5%;">信号，也称片选信号。该信号置1时，芯片不被选中，意思就是说，不会响应<img src="./readme.assets/00630.jpeg" style="display:block; width:5%;">信号。其实，<img src="./readme.assets/00631.jpeg" style="display:block; width:5%;">信号的作用不止这些，对芯片还有其他重要的作用，下面我们将简单描述一下。
 
-想想看，若让你为8位的微处理器组织存储器的话，你会怎么做呢？是选择按8位存储形式，还是1位存储形式？你肯定会选择前者。如果想存储整个字节，则至少需要8个这样的2102芯片。具体的做法就是，把8个芯片对应的地址信号、<img src="./readme.assets/00632.jpeg" class="picture_formula_line20" >及<img src="./readme.assets/00633.jpeg" class="picture_formula_line21" >信号连接起来，如下图所示。
+想想看，若让你为8位的微处理器组织存储器的话，你会怎么做呢？是选择按8位存储形式，还是1位存储形式？你肯定会选择前者。如果想存储整个字节，则至少需要8个这样的2102芯片。具体的做法就是，把8个芯片对应的地址信号、<img src="./readme.assets/00632.jpeg" style="display:block; width:5%;">及<img src="./readme.assets/00633.jpeg" style="display:block; width:5%;">信号连接起来，如下图所示。
 
-<img alt="img" src="./readme.assets/00634.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00634.jpeg" style="display:block; width:40%;"/>
 
 实际上，这是一个1024×8位的RAM阵列，或者说是容量为1 KB的RAM。
 
@@ -5278,7 +5279,7 @@ RAM阵列中数字的个数= 2<span class="superscript">地址信号的个数</s
 
 8位微处理器，例如8080、6800，有16位地址，可用来寻址64 KB 的存储空间。如果你制作了一个包含4个存储体、大小为4 KB的存储器板，则存储器板上的16位地址信号就有如下所示的功能。
 
-<img src="./readme.assets/00635.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00635.jpeg" style="display:block; width:40%;">
 
 下面详细解释一下这16位地址信号。A0～A9直接与RAM芯片相连接；A10和A11用来选择4个存储体中要被寻址的那一个；A12～A15确定哪些地址申请用这块存储器板，换言之，就是这块存储器板响应哪些地址。微处理器整个存储空间的大小是64 KB，被划分成16个不同的区域，每个区域的大小是4 KB，我们设计的4KB存储器板占用了其中一个区域。这16个区域划分情况如下。
 
@@ -5297,22 +5298,22 @@ F000h～FFFFh
 
 你完全可以制作一块4 KB存储器板，在用到它的时候再灵活确定其地址范围。要获得这样的灵活性，可以使用一种名为双列直插式封装（dual inline package，DIP）开关的器件。在DIP中，有一系列极小的开关（从2到12个不等）。DIP是可以插在标准的IC插槽中的，如下图所示。
 
-<img alt="img" src="./readme.assets/00636.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00636.jpeg" style="display:block; width:15%;"/>
 
 在一种称为比较器（comparator）的电路中，你可以把这个开关和总线上地址信号的高4位连接起来，就像下面这样。
 
-<img alt="img" src="./readme.assets/00637.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00637.jpeg" style="display:block; width:40%;"/>
 
 
 回想一下前面讲过的内容，异或（XOR）门电路在两个输入端中只有一个是高电平时，输出才为高电平；当两个输入端同时为低电平或高电平时，输出是低电平。
 
 例如，如果把A<span class="subscript">13</span>和A<span class="subscript">15</span>对应的开关闭合，就意味着让存储器板能响应存储器空间A000h～AFFFh。若总线上的地址信号A<span class="subscript">12</span>、A<span class="subscript">13</span>、A<span class="subscript">14</span>和A<span class="subscript">15</span>与开关上设置的值相同的话，四个异或（XOR）门的输出都是0，或非（NOR）门的输出为1，如下图所示。
 
-<img alt="img" src="./readme.assets/00638.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00638.jpeg" style="display:block; width:40%;"/>
 
-接下来我们把Equal信号和一个2-4译码器联合起来使用，就能为四个存储体中的每一个都产生一个<img src="./readme.assets/00639.jpeg" class="picture_formula_line22" >信号，便于对存储体进行选择。具体连接图如下图所示。
+接下来我们把Equal信号和一个2-4译码器联合起来使用，就能为四个存储体中的每一个都产生一个<img src="./readme.assets/00639.jpeg" style="display:block; width:5%;">信号，便于对存储体进行选择。具体连接图如下图所示。
 
-<img alt="img" src="./readme.assets/00640.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00640.jpeg" style="display:block; width:40%;"/>
 
 例如，若想选择第三个存储体，把A<span class="subscript">10</span>、A<span class="subscript">11</span>分别置 0和1就可以了。
 
@@ -5320,7 +5321,7 @@ F000h～FFFFh
 
 通常情况下，TTL兼容集成电路的输出信号要么大于2.2V（逻辑1）要么小于0.4V（逻辑0）。试想一下，如果把输出信号连接起来会发生什么呢？一个集成电路的输出为1，另一个集成电路的输出为0，若把这两个输出连接在一起，结果又是什么呢？恐怕谁也无法回答。就是由于这种不确定性，一般不会把集成电路的输出信号连接在一起。
 
-2102芯片的数据输出信号是三态（tri-state）的，也就是说，除了逻辑0和逻辑1之外，数据输出信号还有第三种状态。我们必须清楚地认识这种状态——它其实是一种“真空”态，就像芯片的引脚上什么也没连一样。当片选信号（<img src="./readme.assets/00641.jpeg" class="picture_formula_line23" >）为1的时，2102芯片的数据输出信号就会进入这种状态。这样一来，我们可以把4个存储体相应的数据输出信号连接在一起，并且可以把8个输出复用作为总线的8个数据输入信号。
+2102芯片的数据输出信号是三态（tri-state）的，也就是说，除了逻辑0和逻辑1之外，数据输出信号还有第三种状态。我们必须清楚地认识这种状态——它其实是一种“真空”态，就像芯片的引脚上什么也没连一样。当片选信号（<img src="./readme.assets/00641.jpeg" style="display:block; width:5%;">）为1的时，2102芯片的数据输出信号就会进入这种状态。这样一来，我们可以把4个存储体相应的数据输出信号连接在一起，并且可以把8个输出复用作为总线的8个数据输入信号。
 
 之所以强调三态输出的概念，是因为它对总线的操作是至关重要的。几乎所有连接在总线上的器件都使用由总线传递而来的数据输入信号。但不管何时，连接在总线上的电路板中只有一个能确定总线数据输入信号的类型，其他电路板处于三种状态中的无效状态。
 
@@ -5355,14 +5356,14 @@ SRAM芯片，例如2102，在电源持续供电的情况下，其内容就能保
 
 因此我们可以说，早期普通电视机上的视频适配器的分辨率为320×200，即水平方向上有320个像素、垂直方向上有200个像素。
 
-<img alt="img" src="./readme.assets/00642.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00642.jpeg" style="display:block; width:40%;"/>
 
 
 如何确定上面网格中像素的总数呢？你可以去数一下，也可以简单地用320乘以200得出结果64,000。每个像素可以是黑色或白色，或者为某一特定的颜色，这要取决于视频适配器的配置。
 
 现在我们想在显示器上显示出一些文本字符，那么到底能显示出多少呢？很明显，这取决于每个字符所用的像素数。下面是一种可行的方法，每个字符使用8×8的网格（64个像素）。
 
-<img alt="img" src="./readme.assets/00643.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00643.jpeg" style="display:block; width:40%;"/>
 
 上图中显示出的字符对应的ASCII码在20h～7Fh区间（在00h～1Fh的ASCII码字符都是无法显示的字符）。
 
@@ -5370,7 +5371,7 @@ SRAM芯片，例如2102，在电源持续供电的情况下，其内容就能保
 
 上面我们对字符进行了定义，使用这些定义，分辨率为320×200视频显示器的每一屏就能显示25行、每行40个字符，足够把艾米·洛威尔（Amy Lowell，1874-1925）的一首短诗显示出来，看看下面的图。
 
-<img alt="img" src="./readme.assets/00644.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00644.jpeg" style="display:block; width:40%;"/>
 
 
 视频适配器中必须配置一些RAM，用以存储所显示的内容；微处理器也必须能够向此RAM中写入数据以改变显示器上显示的内容。更方便的是，这个RAM也是微处理器存储空间的一部分。那么，上面描述的显示适配器需要多大的RAM呢？
@@ -5385,7 +5386,7 @@ SRAM芯片，例如2102，在电源持续供电的情况下，其内容就能保
 
 我们来做个假设，ASCII码为41h，就是大写的字母A。总共有8行，每行8位。下表给出了字母A的10位地址（ASCII码和行代码之间用空格分开）和数据输出信号。
 
-<img src="./readme.assets/00645.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00645.jpeg" style="display:block; width:40%;">
 
 
 从上表中，你能看出以0为背景、用1表示的字母A吗？
@@ -5422,13 +5423,13 @@ SRAM芯片，例如2102，在电源持续供电的情况下，其内容就能保
 
 键盘硬件包含了一些前面曾讲过的部件，如下图所示。
 
-<img alt="img" src="./readme.assets/00646.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00646.jpeg" style="display:block; width:40%;"/>
 
 上图左下部分所示的是键盘的16个按键，简单地用开关表示。4位的计数器在按键对应的16个编码间快速且重复地循环着，循环的速度必须足够快，以保证在按下并松开一个按键之前循环已经结束。
 
 4位计数器的输出同样也是2-4译码器和4-1数据选择器的输入。在没有按键按下的情况下，选择器的输入全都不为1，因此，其输出也不为1；一旦有某个按键被按下，而且与4位计数器某一特定输出相对应，那么选择器的输出就为1。例如，如果右上角对角线方向的第二个开关被按下，且计数器的输出是0110，选择器就会输出1，如下图所示。
 
-<img alt="img" src="./readme.assets/00647.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00647.jpeg" style="display:block; width:40%;"/>
 
 0110就是这个按键的代码。在这个按键按下的情况下，计数器的其他输出都不会使选择器的输出为1，也就是说每个按键都代码都是唯一的。
 
@@ -5487,11 +5488,11 @@ SRAM芯片，例如2102，在电源持续供电的情况下，其内容就能保
 
 机器代码指令是怎么加载到那个内存地址中的呢？把软件安装到一台新设计的计算机的过程，可能是整个过程中最令人困惑的部分了，怎样理解它呢？让我们先从第16章所讲的一个控制面板入手吧，这个控制面板的功能是把字节写入随机访问存储器，之后还可将其读出。
 
-<img alt="img" src="./readme.assets/00648.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00648.jpeg" style="display:block; width:40%;"/>
 
 与前面介绍过的有所不同，这个控制面板上设计了一个复位开关。复位开关与微处理器的复位输入相连接。一旦复位开关闭合（置1），微处理器就会停止工作；当此开关断开后（置0），微处理器就开始执行机器代码。
 
-使用此控制面板的方法是：打开复位开关，微处理器复位并停止执行机器代码；打开控制开关，就会接收总线上的地址信号和数据信号。在该状态下，你可以通过开关A<span class="subscript">0</span>～A<span class="subscript">15</span>来指定一个16位的存储器地址；通过灯泡<img src="./readme.assets/00649.jpeg" class="picture_formula_line24" >～<img src="./readme.assets/00650.jpeg" class="picture_formula_line24" >的明灭组合来显示该存储器地址中的8位数据。那么怎样把一个新的字节写入到此地址中呢？首先通过开关<img src="./readme.assets/00651.jpeg" class="picture_formula_line24" >～<img src="./readme.assets/00652.jpeg" class="picture_formula_line24" >来设置想要写入的字节，然后把写入开关先打开再关闭。当你已经完成向存储器中插入字节的工作后，关上控制及复位开关，微处理器就会执行程序。
+使用此控制面板的方法是：打开复位开关，微处理器复位并停止执行机器代码；打开控制开关，就会接收总线上的地址信号和数据信号。在该状态下，你可以通过开关A<span class="subscript">0</span>～A<span class="subscript">15</span>来指定一个16位的存储器地址；通过灯泡<img src="./readme.assets/00649.jpeg" style="display:block; width:5%;">～<img src="./readme.assets/00650.jpeg" style="display:block; width:5%;">的明灭组合来显示该存储器地址中的8位数据。那么怎样把一个新的字节写入到此地址中呢？首先通过开关<img src="./readme.assets/00651.jpeg" style="display:block; width:5%;">～<img src="./readme.assets/00652.jpeg" style="display:block; width:5%;">来设置想要写入的字节，然后把写入开关先打开再关闭。当你已经完成向存储器中插入字节的工作后，关上控制及复位开关，微处理器就会执行程序。
 
 上面这个过程展示了向这台我们刚刚打造出来的计算机输入第一条机器代码的步骤。不言而喻，这是一个耗时耗力的过程。在这个过程中一些小错误是在所难免的。看看你的手指，或许已经磨出了水泡，你的大脑也感觉一片混乱，而这一切都是工作的代价。
 
@@ -5501,11 +5502,11 @@ SRAM芯片，例如2102，在电源持续供电的情况下，其内容就能保
 
 这种转换可以通过编写小的程序来实现。下面是一段8080汇编程序，功能是把存储在累加器中的十六进制数（假设这个数介于00h与0Fh之间）的每一位转换成对应的ASCII码：
 
-<img src="./readme.assets/00653.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00653.jpeg" style="display:block; width:40%;">
 
 通过两次调用NibbleToAscii，下面的程序实现了把累加器A中的一个字节转换成两个ASCII码对应的数字，分别存放在寄存器B和C中。
 
-<img src="./readme.assets/00654.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00654.jpeg" style="display:block; width:40%;">
 
 
 通过这些程序，可以把一个用十六进制表示的字节显示在视频显示器上。进一步来讲，如果想把它转换成十进制数，还需要做些别的工作。这个过程与把一个数从十六进制转换成十进制的过程（用10除几次）十分相似。
@@ -5535,7 +5536,7 @@ SRAM芯片，例如2102，在电源持续供电的情况下，其内容就能保
 
 首先是W命令。它是以W开头的文本行，此命令用来把若干字节写入（Write）到内存中。例如输入到屏幕上的一行内容如下所示：
 
-<img src="./readme.assets/00655.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00655.jpeg" style="display:block; width:40%;">
 
 
 运行这条命令，命令处理程序会从内存地址1020h处开始，把35、4F等十六进制表示的字节写入内存中。要完成这项工作，键盘处理程序需要把ASCII码转换成字节——前面讲过把字节转换成ASCII码，这里其实就是它的逆变换。
@@ -5564,11 +5565,11 @@ R　1000
 
 仅仅有上面的命令还是不够的，还需要向命令处理程序中添加新命令。例如，S命令表示存储（Store）：
 
-<img src="./readme.assets/00656.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00656.jpeg" style="display:block; width:40%;">
 
 运行这条命令后，在磁盘的第2面、第15道、第3扇区中将存放起始地址为2080h的内存块数据（被存放内存块的大小是由磁盘扇区的大小决定的）。类似地，还可以通过加载（Load）命令，把磁盘上相应扇区的内容写回到内存中，如下所示：
 
-<img src="./readme.assets/00657.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00657.jpeg" style="display:block; width:40%;">
 
 当然，还要把存储的位置记录下来，这是必须要做的。你可以用手头上的纸和笔来完成。需要注意的是：你不能把位于某个地址处的代码又加载到内存的另外一个地址中，如果这样的话，程序将不能正常运行。具体来说，程序代码在内存中改变位置后，其跳转（Jump）和调用（Call）指令标识的依然是原来的地址，所以运行时会报错。也存在这样的情况，程序比磁盘的扇区大，这时就需要多个扇区来存放程序。而磁盘上某些扇区已被其他程序或数据占用了，而另外一些扇区是空闲的，可能在磁盘上找不到一块足够大的、连续的扇区来存放程序。
 
@@ -5590,7 +5591,7 @@ CP/M操作系统是存放在磁盘上的。单面、8英寸的磁盘是早期的
 
 为了能够根据目录找到相应的文件，每一个32字节的目录项包含以下信息。
 
-<img src="./readme.assets/00658.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00658.jpeg" style="display:block; width:40%;">
 
 在目录项中，第一个字节用来设置文件的共享属性，只有文件系统被两个或更多人同时共享时才设置此字节为1。在CP/M中，这个字节跟第13、14字节一样，通常设置为0。
 
@@ -5610,28 +5611,28 @@ CALC.COM
 
 假设一个小文件中包含三个16位数，如：5A48h、78BFh和F510h。如果此文件是二进制文件，只要6字节就可以了。
 
-<img src="./readme.assets/00659.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00659.jpeg" style="display:block; width:40%;">
 
 这是采用Intel格式来存储的，放在前面的是低位，放在后面的是高位。并不是所有的数据都是按照这种格式来存储的，例如为Motorola处理器编写的程序更倾向于按以下的方式来组织文件：
 
-<img src="./readme.assets/00660.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00660.jpeg" style="display:block; width:40%;">
 
 假如上面的三个16位数用ASCII文本文件来存放，则文件中保存的数据如下所示：
 
-<img src="./readme.assets/00661.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00661.jpeg" style="display:block; width:40%;">
 
 上面的这些字节是数字和字母的ASCII码表示形式，用掉头符（0Dh）和换行符（0Ah）来表示每一个数的结束。因为文本文件可以不通过解释相应的ASCII字节串来显示字符，而是将字符本身直接显示，所以显得更加方便，如下所示：
 
-<img src="./readme.assets/00662.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00662.jpeg" style="display:block; width:20%;">
 
 
 也可以用如下的形式来表示包含这三个数的ASCII文本文件：
 
-<img src="./readme.assets/00663.jpg" style="display:block; width:50%;">
+<img src="./readme.assets/00663.jpg" style="display:block; width:40%;">
 
 这是用十进制数的ASCII码形式来表示上述三个数，这两种表示形式是等价的，如下所示：
 
-<img src="./readme.assets/00664.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00664.jpeg" style="display:block; width:20%;">
 
 显然，文本文件更易于人们阅读，同样，与十六进制相比，十进制更符合人们的习惯，没理由使用十六进制而拒绝十进制。
 
@@ -5639,51 +5640,51 @@ CALC.COM
 
 操作系统的引导过程完成后，随机存储器（RAM）的最高地址区域用来存放CP/M，加载完CP/M后，整个内存空间的组织结构如下所示。
 
-<img alt="img" src="./readme.assets/00665.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00665.jpeg" style="display:block; width:40%;"/>
 
 
 该图仅仅粗略地表示出了内存各构成部分，没有按比例刻画各部分所占内存的大小。控制台命令处理程序（Console Command Processor，CCP）、基本磁盘操作系统（Basic Disk Operating System，BDOS）和基本输入/输出系统（Basic Input/Output System，BIOS）是CP/M的三个组成部分，这三个部分只占用了6 KB大小的内存空间。在拥有64 KB内存空间的计算机中，大约58 KB被临时程序区（Transient Program Area，TPA）占用，但是这58 KB空间一开始时是空的。
 
 控制台命令处理程序的功能和以前讨论过的命令处理程序是一样的。在这里，键盘和显示器组成了控制台（console）。控制台命令处理程序显示如下所示的命令提示符（prompt）：
 
-<img src="./readme.assets/00666.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00666.jpeg" style="display:block; width:10%;">
 
 在命令提示符后面可以输入一些信息。大多数计算机可能有不止一个磁盘驱动器，第一个磁盘驱动器标为A，CP/M被装载到该驱动器中。在命令提示符后面敲入命令并按掉头（Enter）键，控制台命令处理程序会执行该命令，然后将执行的结果显示到屏幕上。执行完命令后，命令提示符又会显示在屏幕上，等待下一次输入。
 
 控制台命令处理程序只能识别一部分命令，其中最重要的命令是：
 
-<img src="./readme.assets/00667.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00667.jpeg" style="display:block; width:10%;">
 
 该命令用于显示磁盘的目录信息，换句话说，它列出了存储在磁盘上的所有文件。然而有时候需要查看具有特定名字和类型的文件，这时候就可以在命令中使用像“？”和“*”这样的特殊字符来限定。如果想显示当前目录下所有的文本文件，可以使用如下指令：
 
-<img src="./readme.assets/00668.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00668.jpeg" style="display:block; width:20%;">
 
 而
 
-<img src="./readme.assets/00669.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00669.jpeg" style="display:block; width:20%;">
 
 则显示所有文件名由5个字符构成，其中第一个字符是A，最后一个字符是B的文件。
 
 如果想删除磁盘中的文件，要用到命令ERA，它是Erase的缩写，例如：
 
-<img src="./readme.assets/00670.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00670.jpeg" style="display:block; width:30%;">
 
 
 用来删除名为MYLETTER.TXT的文件，而运行下面的命令：
 
-<img src="./readme.assets/00671.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00671.jpeg" style="display:block; width:30%;">
 
 则所有的文本文件都被删除。一旦删除文件，此文件的目录项及其所占用的磁盘空间都将被释放。
 
 REN也是一个常用命令，它是Rename的缩写，此命令可以改变文件名。如果想显示文本文件的内容，可以使用TYPE 命令，这条命令的功能还不仅如此，要知道文本文件中仅包含ASCII码，所以屏幕上文件的内容也可以通过这条命令来浏览，例如：
 
-<img src="./readme.assets/00672.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00672.jpeg" style="display:block; width:30%;">
 
 表示查看MYLETER.TXT文件的内容。SAVE命令用来保存文件，它可把临时存储区域中的一个或多个256字节的内存块保存到磁盘中，并且给这个内存块指定一个名字。
 
 当然，上述所介绍的都是CP/M可识别的命令，如果你输入一个不能被CP/M识别的命令，CP/M就会默认为输入的是保存在磁盘上的一个程序名。而程序通常是以文件形式存储的，其文件类型为COM，代表着命令。控制台命令处理程序负责在磁盘上查找此文件，如果找到，此文件会被CP/M从磁盘加载到临时程序区域，该区域的地址从0100h开始，一旦文件被调入内存即可运行。上面从流程的角度介绍了磁盘中的文件是如何被运行的，下面举个例子来说明。假如在CP/M命令提示符后面输入：
 
-<img src="./readme.assets/00673.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00673.jpeg" style="display:block; width:20%;">
 
 如果在磁盘中存在名为CALC.COM的文件，则该文件会被控制台命令处理程序调入到以地址0100h开始的内存中，接着控制台命令处理程序会转到该地址并执行这段程序。
 
@@ -5701,22 +5702,22 @@ CP/M由一些实用的程序组成，如PIP（Peripheral Interchange Program）�
 
 那么如何设置和使用API呢？在CP/M下运行的程序，可以通过将寄存器C设置为特定的值（称为功能值），并且运行如下指令：
 
-<img src="./readme.assets/00674.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00674.jpeg" style="display:block; width:20%;">
 
 来使用API。例如，你从键盘上按下了一个键，程序会通过执行下面的指令来获取此键对应的ASCII码：
 
-<img src="./readme.assets/00675.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00675.jpeg" style="display:block; width:20%;">
 
 并且将这个键的ASCII码值保存在累加器A中。类似的，运行这条命令：
 
 
-<img src="./readme.assets/00676.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00676.jpeg" style="display:block; width:20%;">
 
 在视频显示器上当前的光标位置将显示累加器A中的ASCII码字符，然后光标移到下一个位置。
 
 如果程序要新建一个文件，它首先将文件名所在区域的地址保存在寄存器对DE中，接着执行如下代码：
 
-<img src="./readme.assets/00677.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00677.jpeg" style="display:block; width:20%;">
 
 执行此命令，CP/M会在磁盘上新建一个空文件。程序可以利用CP/M提供的其他功能来向空文件中写入内容，最后关闭（close）文件，关闭文件意味着文件使用完毕，不需要在对该文件执行任何操作了。当然，该文件可以再次被此程序和其他程序打开（open）并读取内容。
 
@@ -5772,22 +5773,22 @@ UNIX能够存在并发展到现在是无数人共同努力的结晶，如今FSF�
 我们将从整数的二进制表示开始，这里的整数被数学家称做“自然数”（positive whole numbers），即计算机程序员口中的“正整数”（positive integers），之后将介绍如何利用2的补数来表示“负整数”（negative integers），该方法可以让正数和负数的相加变得非常简单。下面的表格列出了8位、16位、32位二进制数所能表示的正整数及其2的补数的范围。
 
 
-<img src="./readme.assets/00678.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00678.jpeg" style="display:block; width:40%;">
 
 我们所要介绍的整数部分就是这些。除此之外，数学家还定义了用两个整数的比值表示的一类数，称做有理数（rational number）或分数（fraction）。例如，3/4是一个有理数，因为它是整数3和4的比。我们也可以把3/4表示成十进制小数的形式，即0.75。尽管我们可以把它写成十进制数的形式，但它实际上代表一个分数，即75/100。
 
 如第7章所述，在十进制数字系统中，小数点左边的数的每一位都和10的正整数次幂相关，而其右边的数的每一位都和10的负整数次幂相关。我们在第7章用到了42705.684这个实例，现在，我们把它表示为以下等价形式：
 
-<img src="./readme.assets/00679.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00679.jpeg" style="display:block; width:20%;">
 
 上面的除号表达了该位置的数与10的负整数次幂相关的情况，用下面的表达方式可以不用除号：
 
-<img src="./readme.assets/00680.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00680.jpeg" style="display:block; width:20%;">
 
 
 最后，我们将该数表示为10的幂的形式：
 
-<img src="./readme.assets/00681.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00681.jpeg" style="display:block; width:20%;">
 
 有一些有理数很难表示成小数，最明显的一个例子是1/3，如果用3来除1，会得到这样的结果：
 
@@ -5795,30 +5796,37 @@ UNIX能够存在并发展到现在是无数人共同努力的结晶，如今FSF�
 
 在小数点的后面将会有无数个3。通过在第一个3的上面加一条短横线，可以将这个无限循环的数简单表示为：
 
-<div class="picture_formula"><img src="./readme.assets/00682.jpeg" class="picture_formula2" ></div>
+<img src="./readme.assets/00682.jpeg" class="picture_formula2" >
+
 尽管如此，把1/3表示为小数还不是很方便，但它毕竟是一个有理数，因为在本质上它是两个整数的比。类似的，1/7可以表示为：
 
 0.1428571428571428571428571428571428571428571428571428571…
 
 或
 
-<div class="picture_formula"><img src="./readme.assets/00683.jpeg" class="picture_formula3" ></div>
+<img src="./readme.assets/00683.jpeg" class="picture_formula3" >
+
 无理数（irrational number）是一些更加奇特的数，如2的平方根等。它们不能表示为两个整数的比，这就意味着其小数部分是无穷的，而且毫无规律，没有循环，例如：
 
-<div class="picture_formula"><img src="./readme.assets/00684.jpeg" class="picture_formula4" ></div>
+<img src="./readme.assets/00684.jpeg" class="picture_formula4" >
+
 下面这个数学方程序的正数解就是2的平方根：
 
 
-<div class="picture_formula"><img src="./readme.assets/00685.jpeg" class="picture_formula5" ></div>
-如果某个数不是任何以整数为系数的代数方程的解，那么这个数称做超越数（transcendental，所有的超越数都是无理数，但是反之不成立）。<img src="./readme.assets/00686.jpeg" class="picture_formula_line25" >就是一个典型的超越数，它是圆的周长与其直径的比值，可以近似的表示为：
+<img src="./readme.assets/00685.jpeg" class="picture_formula5" >
 
-<div class="picture_formula"><img src="./readme.assets/00687.jpeg" class="picture_formula6" ></div>
+如果某个数不是任何以整数为系数的代数方程的解，那么这个数称做超越数（transcendental，所有的超越数都是无理数，但是反之不成立）。<img src="./readme.assets/00686.jpeg" style="display:block; width:3%;">就是一个典型的超越数，它是圆的周长与其直径的比值，可以近似的表示为：
+
+<img src="./readme.assets/00687.jpeg" class="picture_formula6" >
+
 e是另一个典型的超越数，它是数学表达式：
 
-<div class="picture_formula"><img src="./readme.assets/00688.jpeg" class="picture_formula7" ></div>
+<img src="./readme.assets/00688.jpeg" class="picture_formula7" >
+
 当<span class="emphasis_italic">n</span>趋向无穷大时的值，近似的值为：
 
-<div class="picture_formula"><img src="./readme.assets/00689.jpeg" class="picture_formula8" ></div>
+<img src="./readme.assets/00689.jpeg" class="picture_formula8" >
+
 目前我们所讨论过的所有数——有理数和无理数——统称为实数（real numbers）。使用实数定义它们的目的是为了将其与虚数（imaginary numbers）区别开来，虚数是负数的平方根。实数和虚数一起构成了复数（complex numbers）。不管名称如何，它们都有重要的作用，例如，虚数确实存在于现实世界，它在解决电子学的某些高级问题中有重要应用。
 
 我们习惯于把数字看做连续（continuous）的，任意给出两个有理数，都可以找出一个位于它们之间的数。实际上，只需要取这两个数的平均值即可。但是，数字计算机对连续数据却无能为力，因为二进制中的每一位非0即1，两者之间没有任何数。这一特点决定了数字计算机只能处理离散（discrete）数据。二进制数的位数直接决定了所能表示的离散数值的个数。例如，如果你选择的二进制位数是32，则所能表示的自然数的范围是0～4,294,967,295。如果想要在计算机中存储4.5这个数，则需要选择新的方法并做一些其他方面的改进。
@@ -5826,23 +5834,23 @@ e是另一个典型的超越数，它是数学表达式：
 小数也可以表示为二进制数吗？当然可以，最简单的方法可能就是使用BCD码（二进制编码的十进制数）。如第19章所述，BCD码是将十进制数以二进制的形式进行编码，0～9之间的每一个数都需要用4位来表示，如下表所示。
 
 
-<img src="./readme.assets/00690.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00690.jpeg" style="display:block; width:40%;">
 
 BCD编码在程序处理用美元和美分表示的钱款、账户时特别有用。银行和保险公司是非常典型的两类整日与钱打交道的机构，这些机构所使用的计算机程序中，大多数小数所占用的存储空间仅仅相当于两个十进制数所占用的位数。
 
 通常把两个BCD数字存放在一个字节，这种方式称为压缩BCD（packed BCD）。由于2的补数不和BCD数一起使用，因此压缩BCD通常需要增加1位用来标识数的正负，该位被称做符号位（sign bit）。用一整个字节保存某个特定的BCD数是很方便的，但要为这个短小的符号位牺牲4位或8位的存储空间。
 
-让我们来看一个例子，假设计算机程序所要处理的钱款数目在+/-100万美元之间，这就意味着，需要表示的钱的数目的范围是<img src="./readme.assets/00691.jpeg" class="picture_formula_line26" >，因此保存在存储器中的每一笔钱的金额都需要5个字节。因此，－4,325,120.25可以表示为下面5个字节：
+让我们来看一个例子，假设计算机程序所要处理的钱款数目在+/-100万美元之间，这就意味着，需要表示的钱的数目的范围是<img src="./readme.assets/00691.jpeg" style="display:block; width:5%;">，因此保存在存储器中的每一笔钱的金额都需要5个字节。因此，－4,325,120.25可以表示为下面5个字节：
 
 00010100　00110010　01010001　00100000　00100101
 
 将每个字节转换成十六进制数，上面的数可以等价地表示成：
 
-<img src="./readme.assets/00692.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00692.jpeg" style="display:block; width:40%;">
 
 注意，最左边的半个字节所构成的1用来指明该数是负数，这个1即符号位。如果这半个字节所构成的数是0，则说明该数是正数。组成该数的每一个数字都需要用4位来表示，从十六进制的表示形式中可以很直观地看到这一点。
 
-如果要表示的数的范围扩大到<img src="./readme.assets/00693.jpeg" class="picture_formula_line27" >，则我们需要用6个字节来实现，其中5个字节用来表示10个数字，另一个字节整个用来做符号位。
+如果要表示的数的范围扩大到<img src="./readme.assets/00693.jpeg" style="display:block; width:5%;">，则我们需要用6个字节来实现，其中5个字节用来表示10个数字，另一个字节整个用来做符号位。
 
 这种基于二进制的存储和标记方式也被称作定点格式（fixed-point format），所谓的“定点”是指小数点的位置总是在数的某个特定位置——在本例中，它位于两位小数之前。值得注意的是，有关小数点位置的计数信息并没有与整个数字一起存储。所以，使用定点小数的程序必须知道小数点的位置。你可以设计有任意小数码的定点小数，并且可以在程序中混合使用它们，但程序中对这些数进行算术运算的部分都需要知道小数点的位置，这样才能正确地对其做各种运算处理。
 
@@ -5854,29 +5862,34 @@ BCD编码在程序处理用美元和美分表示的钱款、账户时特别有�
 
 可以记为：
 
-<div class="picture_formula"><img src="./readme.assets/00694.jpeg" class="picture_formula9" ></div>
+<img src="./readme.assets/00694.jpeg" class="picture_formula9" >
+
 而
 
 0.00000000026
 
 可以表示为：
 
-<div class="picture_formula"><img src="./readme.assets/00695.jpeg" class="picture_formula10" ></div>
+<img src="./readme.assets/00695.jpeg" class="picture_formula10" >
+
 在上面的两个例子中，4.9和2.6被称做小数部分或者首数（characteristic），有时候也被称作尾数（mantissa，这个词通常与对数运算一起使用）。在计算机术语中这一部分被称做有效数（significand），因此为了保持一致，这里把科学计数法表示形式中的这一部分也称作有效数。
 
 采用科学计数法表示的数可以分为两部分，其中指数（exponent）部分用来表示10的几次幂。在第一个例子中，指数是11，第二个例子中指数是－10。指数可以表明小数点相对于有效数移动的距离。
 
 为了便于操作，一般规定有效数的取值范围是大于或等于1而小于10。尽管下面列出的各种写法表示的都是同一个数：
 
-<div class="picture_formula"><img src="./readme.assets/00696.jpeg" class="picture_formula11" ></div>
+<img src="./readme.assets/00696.jpeg" class="picture_formula11" >
+
 但是上面等式中的第一种写法是最恰当的。这种写法有时被称做科学计数法的规范化式（normalized）。
 
 这里需要说明，指数的正负性只是表明了数的大小，它并不能指明数本身的正负性。下面列出两个负数的科学计数法表示形式：
 
-<div class="picture_formula"><img src="./readme.assets/00697.jpeg" class="picture_formula12" ></div>
+<img src="./readme.assets/00697.jpeg" class="picture_formula12" >
+
 与-58,125,000相等。而
 
-<div class="picture_formula"><img src="./readme.assets/00698.jpeg" class="picture_formula13" ></div>
+<img src="./readme.assets/00698.jpeg" class="picture_formula13" >
+
 则与
 
 -0.000,000,058,125
@@ -5891,15 +5904,15 @@ BCD编码在程序处理用美元和美分表示的钱款、账户时特别有�
 
 可以用如下方式转换为十进制数：
 
-<img src="./readme.assets/00699.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00699.jpeg" style="display:block; width:20%;">
 
 将乘数和除数用2的整数次幂替换，就可以替换除号：
 
-<img src="./readme.assets/00700.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00700.jpeg" style="display:block; width:20%;">
 
 2的负整数次幂等于从1开始反复除以2，上式可以改写为：
 
-<img src="./readme.assets/00701.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00701.jpeg" style="display:block; width:20%;">
 
 经过这种计算，101.1101与十进制数5.8125是相等的。
 
@@ -5909,7 +5922,8 @@ BCD编码在程序处理用美元和美分表示的钱款、账户时特别有�
 
 其规范化式应该是：
 
-<div class="picture_formula"><img src="./readme.assets/00702.jpeg" class="picture_formula14" ></div>
+<img src="./readme.assets/00702.jpeg" class="picture_formula14" >
+
 这个规则暗示了这样一个有趣的现象：在规范化二进制浮点数中，小数点的左边通常只有一个1，除此之外没有其他数字。
 
 当代大部分计算机和计算机程序在处理浮点数时所遵循的标准是由IEEE（Institute of Electrical and Electronics Engineers，美国电气和电子工程师协会）于1985年制定的，ANSI（American National Standards Institute，美国国家标准局）也认可该标准。ANSI/IEEE Std 754-1985称作IEEE二进制浮点数算术运算标准（IEEE Standard for Binary Floating-Point Arithmetic）——它只有18页——相对于其他标准来说是非常简短了，但却奠定了以简便方式编码二进制浮点数的基石。
@@ -5918,7 +5932,7 @@ IEEE浮点数标准定义了两种基本的格式：以4个字节表示的单精
 
 让我们首先来了解一下单精度格式。它的4个字节可以分为三个部分：1位的符号位（0代表正数，1代表负数），8位用做指数，最后的23位用做有效数。下表给出了单精度格式的三部分的划分方式，其中有效数的最低位在最右边。
 
-<img src="./readme.assets/00703.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00703.jpeg" style="display:block; width:40%;">
 
 三部分共32位，也就是4个字节。我们刚才提到过，对于二进制科学计数法的规范化式，其有效数的小数点左边有且仅有一个1，因此在IEEE浮点数标准中，这一位没有分配存储空间。在该标准中，仅存储有效数的23位小数部分，尽管存储的只有23位，但仍然称其精度为24位。我们将在下面的内容里体会24位精度的含义。
 
@@ -5927,10 +5941,11 @@ IEEE浮点数标准定义了两种基本的格式：以4个字节表示的单精
 
 指数0和255用于特殊的目的，稍后将简单介绍。如果指数的取值范围是1～254，那么对于一个特定的数，可以用<span class="emphasis_italic">s</span>（符号位），<span class="emphasis_italic">e</span>（指数）以及<span class="emphasis_italic">f</span>（有效数）来描述它：
 
-<div class="picture_formula"><img src="./readme.assets/00704.jpeg" class="picture_formula15" ></div>
+<img src="./readme.assets/00704.jpeg" class="picture_formula15" >
+
 -1的<span class="emphasis_italic">s</span>次幂是数学上所采用的一种巧妙的方法，它的含义是：如果<span class="emphasis_italic">s </span>= 0，则该数是正的（因为任何数的0次幂都是1）；如果<span class="emphasis_italic">s </span>= 1，则该数是负的（因为-1的1次幂等于-1）。
 
-表达式的中间部分是<img src="./readme.assets/00705.jpeg" class="picture_formula_line28" >，其含义是：1的后面是小数点，小数点后面跟着23位的有效数。<img src="./readme.assets/00706.jpeg" class="picture_formula_line28" >与2的幂相乘，其中指数等于内存中的8位的偏移指数减去127。
+表达式的中间部分是<img src="./readme.assets/00705.jpeg" style="display:block; width:5%;">，其含义是：1的后面是小数点，小数点后面跟着23位的有效数。<img src="./readme.assets/00706.jpeg" style="display:block; width:5%;">与2的幂相乘，其中指数等于内存中的8位的偏移指数减去127。
 
 注意，目前为止我们还没有学习如何表达那个经常遇到却又总被遗忘的一个数字：那就是“0”。这是一种特殊的情况，下面我们对其进行说明。
 
@@ -5938,7 +5953,8 @@ IEEE浮点数标准定义了两种基本的格式：以4个字节表示的单精
 
 ●如果<span class="emphasis_italic">e</span>= 0且<span class="emphasis_italic">f</span>≠ 0，则该数是合法的，但不是规范化的。这类数可以表示为：
 
-<div class="picture_formula"><img src="./readme.assets/00707.jpeg" class="picture_formula16" ></div>
+<img src="./readme.assets/00707.jpeg" class="picture_formula16" >
+
 注意，在有效数中，小数点的左边是0。
 
 ●如果<span class="emphasis_italic">e</span>= 255且<span class="emphasis_italic">f</span>= 0，则该数被解释为无穷大或无穷小，这取决于符号位<span class="emphasis_italic">s</span>的值。
@@ -5947,59 +5963,71 @@ IEEE浮点数标准定义了两种基本的格式：以4个字节表示的单精
 
 单精度浮点格式下，可以表示的规格化的最小正、负二进制数是：
 
-<div class="picture_formula"><img src="./readme.assets/00708.jpeg" class="picture_formula17" ></div>
+<img src="./readme.assets/00708.jpeg" class="picture_formula17" >
+
 小数点后面跟着23个二进制0。单精度浮点格式下，可以表示的规格化的最大正、负二进制数是：
 
-<div class="picture_formula"><img src="./readme.assets/00709.jpeg" class="picture_formula18" ></div>
-在十进制下，这两个数近似地等于<img src="./readme.assets/00710.jpeg" class="picture_formula_line29" >和<img src="./readme.assets/00711.jpeg" class="picture_formula_line30" >，这也就是单精度浮点数的有效表示范围。
+<img src="./readme.assets/00709.jpeg" class="picture_formula18" >
+
+在十进制下，这两个数近似地等于<img src="./readme.assets/00710.jpeg" style="display:block; width:5%;">和<img src="./readme.assets/00711.jpeg" style="display:block; width:5%;">，这也就是单精度浮点数的有效表示范围。
 
 如前所述，10位二进制数可以近似地用3位十进制数来表示。其含义是，如果把10位都置为1，即十六进制的3FFh或十进制的1023，它近似等于把十进制数的3位都置为9，即999，可以表示为下面的约等式：
 
-<div class="picture_formula"><img src="./readme.assets/00712.jpeg" class="picture_formula19" ></div>
+<img src="./readme.assets/00712.jpeg" class="picture_formula19" >
+
 两者之间的这种关系意味着：单精度浮点数格式存放的24位二进制数大体上与7位的十进制数相等。因此，可以说单精度浮点格式提供24位的二进制精度或者7位的十进制精度。其深层的含义是什么呢？
 
 当我们查看定点数时，其精确度是很明显的。例如，当我们表示钱款时，采用两位定点小数就可以精确到美分。但是对于采用浮点格式的数，就不能如此肯定了。其精确度依赖于指数的值，有时候浮点数可以精确到比美分还小的单位，但有时候其精确度甚至达不到美元。
 
-这样说可能更合适：单精度浮点数的精度为<img src="./readme.assets/00713.jpeg" class="picture_formula_line31" >，或1/16777216，或百万分之六，但其真正的含义是什么呢？
+这样说可能更合适：单精度浮点数的精度为<img src="./readme.assets/00713.jpeg" style="display:block; width:5%;">，或1/16777216，或百万分之六，但其真正的含义是什么呢？
 
 首先，这意味着在单精度浮点格式下，16,777,216和16,777,217将表示成同一个数。不仅如此，处于这两个数之间的所有的数（例如，16,777,216.5）也将被表示成同一个数。所以上面提到的3个十进制数都按32位单精度浮点数：
 
-<div class="picture_formula"><img src="./readme.assets/00714.jpeg" class="picture_formula20" ></div>
+<img src="./readme.assets/00714.jpeg" class="picture_formula20" >
+
 来存放。将该数按符号位、指数码和有效数码划分，可以表示为：
 
-<div class="picture_formula"><img src="./readme.assets/00715.jpeg" class="picture_formula21" ></div>
+<img src="./readme.assets/00715.jpeg" class="picture_formula21" >
+
 也就是：
 
-<div class="picture_formula"><img src="./readme.assets/00716.jpeg" class="picture_formula22" ></div>
+<img src="./readme.assets/00716.jpeg" class="picture_formula22" >
+
 下一个二进制浮点数可表示的最大有效数是16,777,218，即：
 
-<div class="picture_formula"><img src="./readme.assets/00717.jpeg" class="picture_formula23" ></div>
+<img src="./readme.assets/00717.jpeg" class="picture_formula23" >
+
 
 以同一个浮点数来表示两个不同的十进制数，有时可能成为一个问题，也可能不会。
 
 但如果你为银行编写程序，用单精度浮点数来存放以美元、美分为单位的数字时，就会发现262144.00美元和262144.01美元在计算机中存储为同一个数：
 
-<div class="picture_formula"><img src="./readme.assets/00718.jpeg" class="picture_formula23" ></div>
+<img src="./readme.assets/00718.jpeg" class="picture_formula23" >
+
 这也是为什么人们在处理以美元、美分表示的钱款数目时更愿意使用定点数的一个原因。当使用浮点数时，你会发现它还存在着一些让人崩溃的小问题。你的程序进行了一系列计算，应该得到的结果为3.50的，但由于使用浮点数，你得到的可能是3.499999999999。这种问题在浮点数运算中经常发生，而且没有一套完整的解决方案。
 
 如果想在程序中使用浮点格式数，但使用单精度格式又会出现各种问题，这时你可以考虑使用双精度浮点数（double-precision floating-point format）。这种类型的数需要用8个字节来表示，它的结构如下表所示。
 
-<img src="./readme.assets/00719.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00719.jpeg" style="display:block; width:40%;">
 
 双精度浮点数的指数偏移量是1023，或十六进制的3FFh，因此以该格式存储的数可以表示为：
 
-<div class="picture_formula"><img src="./readme.assets/00720.jpeg" class="picture_formula24" ></div>
+<img src="./readme.assets/00720.jpeg" class="picture_formula24" >
+
 上面提到的关於单精度浮点格式下的0，无穷大（小）和NaN的判断规则同样适用于双精度浮点格式。
 
 双精度浮点格式下可以表示的最小正数或负数为：
 
-<div class="picture_formula"><img src="./readme.assets/00721.jpeg" class="picture_formula25" ></div>
+<img src="./readme.assets/00721.jpeg" class="picture_formula25" >
+
 注意，小数点的后面共有52个0。同样的，可以表示的最大数为：
 
-<div class="picture_formula"><img src="./readme.assets/00722.jpeg" class="picture_formula26" ></div>
+<img src="./readme.assets/00722.jpeg" class="picture_formula26" >
+
 其所能表示的范围，用十进制可以近似记为：
 
-<div class="picture_formula"><img src="./readme.assets/00723.jpeg" class="picture_formula27" ></div>
+<img src="./readme.assets/00723.jpeg" class="picture_formula27" >
+
 10的308次幂是一个非常巨大的数，在1的后面跟着308个0。
 
 
@@ -6009,15 +6037,18 @@ IEEE浮点数标准定义了两种基本的格式：以4个字节表示的单精
 
 即：
 
-<div class="picture_formula"><img src="./readme.assets/00724.jpeg" class="picture_formula28" ></div>
+<img src="./readme.assets/00724.jpeg" class="picture_formula28" >
+
 当然，为浮点数发明一种在内存中的存储方式，这只是在汇编程序使用浮点数所涉及的工作的一小部分。如果你决定闭门造车，完全独立地开发一台计算机，则必须要独立编写用于浮点数加、减、乘、除运算的函数集。幸运的是，有了前面关于整数四则运算的学习，这些关于浮点数的运算就可以分解成许多小的关于整数的加、减、乘、除运算，这样就能将问题大大简化。
 
 例如，浮点数加法中最重要一点的就是如何对有效数相加，为了能使它们的有效位匹配，需要利用指数来确定对其如何移位。假设要进行下面的加法运算：
 
-<div class="picture_formula"><img src="./readme.assets/00725.jpeg" class="picture_formula29" ></div>
+<img src="./readme.assets/00725.jpeg" class="picture_formula29" >
+
 你需要把有效数部分的11101和10010相加，但并不是简单地直接相加。两个数的指数部分的不同决定了第二个数必须相对于第一个数右移。实际上我们要做的整数加法应该是11101000加10010。最后的运算结果是：
 
-<div class="picture_formula"><img src="./readme.assets/00726.jpeg" class="picture_formula30" ></div>
+<img src="./readme.assets/00726.jpeg" class="picture_formula30" >
+
 前面我们曾列出过太阳与地球的距离以及氢原子的半径，如果把这两个数相加会是怎样的结果呢？显而易见，因为它们两者的指数相差太大，因此较小的数对结果甚至没有影响。
 
 两个浮点数的乘法意味着要把有效数当作整数相乘，并且把指数部分相加。为了使结果规范化，一般需要对指数调整一到两次。
@@ -6026,8 +6057,9 @@ IEEE浮点数标准定义了两种基本的格式：以4个字节表示的单精
 
 例如，三角函数中的sin函数可以通过下面的一系列展开式近似计算：
 
-<div class="picture_formula"><img src="./readme.assets/00727.jpeg" class="picture_formula31" ></div>
-参数<span class="emphasis_italic">x</span>的值必须是弧度，360°对应的弧度范围是2π。上式中的感叹号表示阶乘运算符，它的意义是把从1到该数之间的所有整数相乘，例如<img src="./readme.assets/00728.jpeg" class="picture_formula_line32" >。这只是简单的乘法运算，每一项的指数部分也是乘法运算。其余的部分也只是简单的除法，加法或减法运算，这些都是容易实现的。上面的算式中，唯一让人感到棘手的地方是最后的省略部分，这意味着计算会一直继续下去。然而事情并没有想象中的那么糟糕，在实际运算中，如果把弧度的取值限制在<img src="./readme.assets/00729.jpeg" class="picture_formula_line33" >的范围内（从这个范围就可以推导出所有的正弦值），你根本不需要进行多少运算，因为大约展开12项后，就可以使结果精确到双精度浮点数要求的53位。
+<img src="./readme.assets/00727.jpeg" class="picture_formula31" >
+
+参数<span class="emphasis_italic">x</span>的值必须是弧度，360°对应的弧度范围是2π。上式中的感叹号表示阶乘运算符，它的意义是把从1到该数之间的所有整数相乘，例如<img src="./readme.assets/00728.jpeg" style="display:block; width:5%;">。这只是简单的乘法运算，每一项的指数部分也是乘法运算。其余的部分也只是简单的除法，加法或减法运算，这些都是容易实现的。上面的算式中，唯一让人感到棘手的地方是最后的省略部分，这意味着计算会一直继续下去。然而事情并没有想象中的那么糟糕，在实际运算中，如果把弧度的取值限制在<img src="./readme.assets/00729.jpeg" style="display:block; width:5%;">的范围内（从这个范围就可以推导出所有的正弦值），你根本不需要进行多少运算，因为大约展开12项后，就可以使结果精确到双精度浮点数要求的53位。
 
 当然，使用计算机的目的就是帮助人们更加方便地解决问题，而编写程序来进行浮点数运算这一繁杂工作似乎和这个目的背道而驰。但这正是软件的优势所在：一旦某个人为特定的计算机编写了浮点数运算的程序，那么其他的人都可以使用它。浮点数运算在科学和工程类程序中极为重要，因此常常被赋予很高的优先级。在计算机发展的早期，为新制造的计算机做的第一项工作就是为其编写浮点数运算程序。
 
@@ -6059,7 +6091,7 @@ IBM公司在1954年发布了IBM 704，它是第一台将浮点数运算硬件作
 
 前面的章节介绍过，可以使用某些较短的助记符来关联机器码字节，这些助记符包括MOV，ADD，CALL，HLT等，通过这些类似英语的符号我们可以较方便地引用机器码。通常这些助记符的后面会跟着操作数，这可以进一步指明它所关联的机器码指令的功能。例如8080机器码字节46h，它的功能是令处理器将存储在内存特定地址的字节转移至寄存器B，而该地址由寄存器对HL中的16位数寻址。这个操作可以简单地写做：
 
-<img src="./readme.assets/00730.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00730.jpeg" style="display:block; width:40%;">
 
 显然，使用汇编语言编写程序要比使用机器语言简单得多，但微处理器并不能解释汇编语言。在前面的章节中我们已经学习了如何在纸上编写汇编程序，但只有当你确实准备在微处理器上运行汇编程序，才会手工对其汇编，这样就可以将汇编语言程序的语句转换成了机器语言代码，并把它们输入内存。
 
@@ -6067,7 +6099,7 @@ IBM公司在1954年发布了IBM 704，它是第一台将浮点数运算硬件作
 
 第一步，创建一个文本文件，并将汇编语言程序输入到该文本文件中。这项工作可以使用CP/M的应用程序ED.COM来完成。该程序是一个可以用来创建、修改文本文件的编辑器。假设你把该文本文件命名为PROGRAM1.ASM，其中ASM是文件类型，用来指明该文本文件的内容是由汇编语言程序组成。这个文件的内容如下：
 
-<img src="./readme.assets/00731.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00731.jpeg" style="display:block; width:40%;">
 
 这个文件中有两条语句我们从未接触过。第一条语句是ORG（origin），它不与任何8080指令对应，其功能是用来指明下面语句的地址从0100h地址处开始。如前所述，该地址是CP/M将程序装入内存的起始地址。
 
@@ -6084,7 +6116,7 @@ ASM对PROGRAM1.ASM文件进行汇编，产生一个名为PROGRAM1.COM的新文�
 
 PROGRAM1.COM文件包含以下16个字节：
 
-<img src="./readme.assets/00732.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00732.jpeg" style="display:block; width:40%;">
 
 开始的3个字节是LXI指令，其后的两个字节是MVI指令，接下来的三个字节是CALL指令，紧随其后的一个字节是RET指令，最后的7个字节是ASCII码，包括5个字母“Hello”，感叹号“！”以及美元符号“$”。
 
@@ -6103,7 +6135,8 @@ PROGRAM1.COM文件包含以下16个字节：
 
 上一章介绍了现代微处理器集成浮点运算机器码指令的原理。不可否认，这已经为我们带来了很大的便利，但仍不能令人特别满意。一种更好的方式是：完全放弃那些实现每个基本操作的机器码指令，这些指令与处理器相关，因而导致程序缺乏移植性。我们采用的替代策略是使用一些经典的数学表达式来描述复杂的数学运算。下面是一个表达式的例子：
 
-<div class="picture_formula"><img src="./readme.assets/00733.jpeg" class="picture_formula32" ></div>
+<img src="./readme.assets/00733.jpeg" class="picture_formula32" >
+
 上式中的<span class="emphasis_italic">A</span>，<span class="emphasis_italic">B</span>，<span class="emphasis_italic">C</span>代表数字，而PI = 3.14159。
 
 这看起来不错，为什么不动手尝试一下呢？假设在某个文本文件中有这样一个表达式，那么我们可以尝试编写一个汇编语言程序来读取该文本文件，并将其中的数学表达式转换为机器码。
@@ -6138,26 +6171,26 @@ ALGOL语言的原版由某国际委员会在1957至1958年间设计，它被称�
 
 ALGOL程序以begin开始，以end作为结尾，程序的主要内容被包括在这两个语句之间。下面的程序用来显示一行文本：
 
-<img src="./readme.assets/00734.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00734.jpeg" style="display:block; width:40%;">
 
 
 通过在命令行运行ALGOL编译器对FIRST.ALG文件进行编译，其格式如下：
 
-<img src="./readme.assets/00735.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00735.jpeg" style="display:block; width:40%;">
 
 ALGOL编译器对这条命令很可能做出这种响应，在显示设备上给出以下提示信息：
 
-<img src="./readme.assets/00736.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00736.jpeg" style="display:block; width:40%;">
 
 ALGOL编译器对拼写的检查非常严格，它在这一点上比传统的语文教师更甚。因为输入程序时，误把“end”拼写做“ende”，所以编译器通过提示信息告诉我们程序中有语法错误（syntax error）。当编译器检查到“ende”时，它期待能遇到一个可识别的关键字（keyword），但由于上述错误，编译不能通过。
 
 将程序中的错误改正之后，可以再次执行编译命令。由于系统平台和编译器版本的不同，有时编译器会直接生成一个可执行文件（CP/M平台下此文件名为FIRST.COM，MS-DOS平台下名为FIRST.EXE）；有时还需要再执行一个步骤才可以完成。不论是哪种情况，最后你都可以在命令行执行FIRST程序：
 
-<img src="./readme.assets/00737.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00737.jpeg" style="display:block; width:40%;">
 
 FIRST程序会对此响应，并显示以下内容：
 
-<img src="./readme.assets/00738.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00738.jpeg" style="display:block; width:40%;">
 
 注意，这里还有一个拼写错误：first被误做fist！编译器没有检查出这个错误，因此它被称为运行时错误（run-time error）——程序被执行时才出现的错误。
 
@@ -6165,7 +6198,7 @@ FIRST程序会对此响应，并显示以下内容：
 
 假设现在要编写一个用于两个数相乘的程序。每一种程序设计语言都包括变量（variable）的概念。程序中的变量可以是一个字母、一个短的字母序列，也可以是一个单词，由程序员自己决定。变量名实际上对应内存的一个存储单元，但在程序中是通过名字来访问该存储单元的，而不是直接使用存储单元的地址值。下面的程序定义了三个变量，分别命名为<span class="emphasis_italic">a</span>，<span class="emphasis_italic">b</span>，<span class="emphasis_italic">c</span>:
 
-<img src="./readme.assets/00739.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00739.jpeg" style="display:block; width:40%;">
 
 real语句称为声明（declaration）语句，用来指明程序中要定义的变量。在该程序中，变量<span class="emphasis_italic">a</span>，<span class="emphasis_italic">b</span>，<span class="emphasis_italic">c</span>被定义为实数（real）类型或浮点数类型（同时，ALGOL语言也支持使用integer关键字来定义整数型变量）。程序设计语言中的变量名通常以字母开头，变量名也可以包括数字，但前提是第一个字符必须是字母。变量名不能含有空格，也不能包含除字母和数字以外的其他大部分字符。通常编译器会规定变量名的最大长度，本章用到的变量一律以单个字母命名。
 
@@ -6177,25 +6210,25 @@ real语句称为声明（declaration）语句，用来指明程序中要定义�
 
 最后的print语句用来显示所有变量的值。它包含文本和变量，并以逗号分隔。print语句的主要工作并不是用来显示ASCII码值的，但本程序中却做了更多的工作：将浮点数也转换成了ASCII码并显示：
 
-<img src="./readme.assets/00740.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00740.jpeg" style="display:block; width:40%;">
 
 接着会执行end语句，程序终止并将控制权交还给操作系统。
 
 如果要将另外两个数相乘，则需要做以下工作：修改程序，改变变量的值，重新编译并重新运行程序，这将是一件非常烦琐的工作。为了避免这些重复工作，我们可以借助于另一个内部函数read。修改后的程序如下：
 
-<img src="./readme.assets/00741.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00741.jpeg" style="display:block; width:40%;">
 
 read语句的功能是读取从键盘键入的ASCII码值，并将其转换成浮点数。
 
 循环（loop）是高级语言的重要组成部分。循环使得程序可以对同一个变量的不同取值反复执行相同的操作。假设我们要写一段程序用来计算3，5，7，9各自的平方，可以这样编写程序：
 
-<img src="./readme.assets/00742.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00742.jpeg" style="display:block; width:40%;">
 
 for语句将变量<span class="emphasis_italic">a</span>的值第一次设为3，然后执行do关键字后面的语句。如果do后面要执行的语句不止一条（如本例），则必须将它们置于begin和end之间，这两个关键字定义了一个语句块（block）。第一次循环之后，for语句会依次为<span class="emphasis_italic">a</span>赋值5，7，9并执行相同的语句块。
 
 下面的程序中采用了for语句的另一种使用方式，这段程序用来计算3～99之间所有奇数的立方。
 
-<img src="./readme.assets/00743.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00743.jpeg" style="display:block; width:40%;">
 
 for语句将变量<span class="emphasis_italic">a</span>初始化为3，并执行for后面的语句块。第一次循环结束后，变量<span class="emphasis_italic">a</span>与step关键字后面的增量相加，这里是2。新得到的<span class="emphasis_italic">a</span>的值是5，它将用于第二次执行语句块。变量<span class="emphasis_italic">a</span>继续增加2并用于下一次循环，直到<span class="emphasis_italic">a</span>的值超过99，这时for循环结束。
 
@@ -6203,20 +6236,20 @@ for语句将变量<span class="emphasis_italic">a</span>初始化为3，并执�
 
 大部分程序设计语言的另一个重要特征体现在条件（conditional）语句的使用。条件语句的特点是，只有当某个条件成立时才会执行另一条对应的语句。在下面的例子中，我们使用ALGOL的内部函数sqrt来计算一些数的平方根。sqrt函数的参数不能是负数，因此要在程序中通过条件测试避免这种情况。
 
-<img src="./readme.assets/00744.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00744.jpeg" style="display:block; width:40%;">
 
 
 左尖括号（&lt;）是小于号。如果程序的使用者输入的是一个小于0的数，if语句中的判断语句为真，因此第一个print语句将会被执行。反之，如果该数大于或等于0，则else关键字后面的语句块则会被执行。
 
 本章目前所用到的变量都是一个变量对应一个值，我们也可以用一个变量对应多个值，数组（array）就是一个很好的选择。在ALGOL程序中可以这样声明一个数组：
 
-<img src="./readme.assets/00745.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00745.jpeg" style="display:block; width:40%;">
 
 该语句定义一个数组变量<span class="emphasis_bold"><span class="emphasis_italic">a</span></span>，它可以用来存放100个不同的浮点数，这些数被称做数组元素。可以使用数组名加标号的方式来引用数组元素，例如，第一个数组元素是<span class="emphasis_bold"><span class="emphasis_italic">a</span></span>[1]，第二个是<span class="emphasis_bold"><span class="emphasis_italic">a</span></span>[2]，最后一个是<span class="emphasis_bold"><span class="emphasis_italic">a</span></span>[100]。方括号中的数字称做数组下标（index）。
 
 下面的程序用来计算1～100所有数的平方根，将结果保存在一个数组中，然后再通过循环将这些结果显示出来。代码如下：
 
-<img src="./readme.assets/00746.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00746.jpeg" style="display:block; width:40%;">
 
 程序中还定义了一个整型变量<span class="emphasis_italic">i</span>（由于它是integer的首字母，经常被程序员用做整型变量名）。第一个for循环的执行过程中，每个数组元素被赋值为其下标的平方根；第二个for循环执行过程中，数组中的每一个元素被显示出来。
 
@@ -6228,7 +6261,7 @@ for语句将变量<span class="emphasis_italic">a</span>初始化为3，并执�
 
 下面的ALGOL程序用来筛选2～10,000之间的所有素数，程序中定义了一个布尔数组，用来对所有的数进行标识。该程序如下：
 
-<img src="./readme.assets/00747.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00747.jpeg" style="display:block; width:40%;">
 
 第一个for循环将数组<span class="emphasis_bold"><span class="emphasis_italic">a</span></span>的每一个元素的初始值设置为布尔值true。这里的true表示该位置的数是素数，因此现在程序默认所有的数都是素数。第二个for循环的范围是1～100（100刚好是10000的平方根）。在第二个for循环中，如果判断条件成立，该数为素数，即<span class="emphasis_bold"><span class="emphasis_italic">a</span></span>[<span class="emphasis_italic">i</span>]为true，则第三个for循环则会把该数的所有小于或等于10000的倍数（除了其本身）设置为false，因为这些数都不是素数。最后的for循环用来输出所有的素数，这里的判断条件是：若<span class="emphasis_bold"><span class="emphasis_italic">a</span></span>[<span class="emphasis_italic">i</span>]为true，则<span class="emphasis_italic">i</span>为素数。
 
@@ -6249,7 +6282,7 @@ COBOL语言广泛支持读取记录（record）和生成报表（report）。记
 
 BASIC（Beginner’s All-purpose Symbolic Instruction Code）由达特茅斯（Dartmouth）大学数学系的约翰·克莫尼（John Kemeny）和托马斯·克鲁兹（Thomas Kurtz）在1964年开发，该语言最初是为达特茅斯分时系统而设计的。达特茅斯大学的学生并非数学或工程专业，因此他们不应该为打孔卡片和复杂的程序语法花费太多精力，他们要做的只是端坐于计算机终端前，在数字后面输入一些BASIC语句来完成编程。BASIC语句前的数字用来指明该语句在程序中的次序。前面没有数字的语句是系统命令，如SAVE（将BASIC程序保存至磁盘），LIST（按顺序显示行）以及RUN（编译并运行程序）。BASIC手册的第一版中的第一个程序是这样的：
 
-<img src="./readme.assets/00748.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00748.jpeg" style="display:block; width:40%;">
 
 与ALGOL语言不同，BASIC不要求程序员指定变量的存储类型，究竟一个变量是保存为整型还是浮点型并不需要程序员担心，大部分数默认都是以浮点数格式存储的。
 
@@ -6265,16 +6298,15 @@ Pascal对Ada的影响也非常大。Ada是为美国国防部开发应用的一�
 
 C是一种风格非常简洁的语言。例如，ALGOL和Pascal使用关键字begin和end来界定程序块，而在C中这两个单词被一对大括号“{}”取代。下面给出一个例子，程序员常常会把一个常量和一个变量相加，比如：
 
-<img src="./readme.assets/00749.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00749.jpeg" style="display:block; width:20%;">
 
 在C程序中，你可以将上面的语句简写为：
 
-<img src="./readme.assets/00750.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00750.jpeg" style="display:block; width:20%;">
 
 如果只需要把变量加1（即增量），则该语句还可以精简成下面这样：
 
-
-<img alt="img" src="./readme.assets/00751.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00751.jpeg" style="display:block; width:20%;"/>
 
 在16位或32位微处理器中，i++这种语句仅需要一条机器码指令就可以执行。
 
@@ -6309,11 +6341,11 @@ C是一种风格非常简洁的语言。例如，ALGOL和Pascal使用关键字be
 
 其实Escape的编码1Bh只占据一个字节，且它的含义是唯一的。Escape如果作为一串序列的前缀字符，那么这串字符序列的含义也随之改变。比如下面这串序列：
 
-<img alt="img" src="./readme.assets/00752.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00752.jpeg" style="display:block; width:40%;"/>
 
 可以看出Escape 编码随后紧跟的是字符“[”“2”“J”的ASCII码，现在这一串字符的含义为“清屏”然后移动光标至左上角。这种定义在电传打字机上是不可能出现的。下面这串序列：
 
-<img alt="img" src="./readme.assets/00753.jpeg" style="display:block; width:50%;"/>
+<img alt="img" src="./readme.assets/00753.jpeg" style="display:block; width:40%;"/>
 
 即Escape编码随后紧跟的是字符“[”、“5”、“；”、“2”、“9”、“H”，这串字符的作用是把光标移到第5行的第29列。
 
@@ -6340,7 +6372,7 @@ CRT上的色彩空间由三个电子枪产生，每一个电子枪分别产生�
 在最简单的彩色显示适配器中，表示每个像素点需要3个比特。最直观的编码方式就是每一种原色对应编码中的1位。
 
 
-<img src="./readme.assets/00754.jpeg" style="display:block; width:50%;">
+<img src="./readme.assets/00754.jpeg" style="display:block; width:40%;">
 
 这种方案可能只适合简单的类似卡通画的图像。真实世界出现的几乎所有颜色都是由红、绿、蓝三原色的不同色阶（levels）组合而成的。如果为每个像素赋予2个字节的存储空间，这样一来，可以给每一个原色分配5位（1位保留）存储空间，这种方法可以表示出红、绿、蓝三种颜色且每种颜色具备32种不同的色阶，这样算下来总共有32,768种不同的颜色。这种模式通常称做高彩色（high color）或数千种颜色（thousands of colors）。
 
@@ -6546,13 +6578,5 @@ HTML与本章前面讨论过的富文本格式（RTF）很相似，它们都含�
 
 
 
+<img src="./readme.assets/00756.jpeg" style="display:block; width:40%;">
 
-<img src="./readme.assets/00755.jpeg" style="display:block; width:50%;">
-
-
-
-
-<img src="./readme.assets/00756.jpeg" style="display:block; width:50%;">
-
-</body>
-</html>
