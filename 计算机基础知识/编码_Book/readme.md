@@ -284,7 +284,7 @@ Additional Info: 下图来自维基百科。
 
 还是让我们来开始解析布莱叶盲文吧，首先看看基本的小写字母表。
 
-<img alt="img" src="./readme.assets/00023.jpeg" style="display:block; width:70%;"/>
+<img alt="img" src="./readme.assets/00023.jpg"/>
 
 例如，词组“you and me”用布莱叶盲文表示成如下组合：
 
@@ -342,7 +342,7 @@ Additional Info: 下图来自维基百科。
 
 第一个码字（4号点凸起）用来表示音调符号（accent indicator）。其他的码字则用来表示缩写的前缀或者其他的功能：4号和6号点凸起的码字（上表的第5个码字），根据上下文用来表示小数点或者强调符号（emphasis indicator）。5号和6号点凸起的编码，表示与“数字标识符”相对应的“字母标识符”（letter indicator）。
 
-最后（如果你现在还为布莱叶盲文如何表示大写字母忧心忡忡的话），我们还有6号凸点——大写标识符。这个符号表示它之后的字母将都被译为大写。例如，我们可以把这套文字系统的原创者的名字记做：
+最后（如果你现在还为布莱叶盲文如何表示大写字母忧心忡忡的话），我们还有6号凸点——大写标识符。这个符号表示它之后的字母将都被译为大写。例如，我们可以把这套文字系统的原创者的名字(刘易斯·布莱叶(Louis Braille)) 记做：
 
 <img alt="img" src="./readme.assets/00034.jpeg" style="display:block; width:70%;"/>
 
