@@ -434,11 +434,17 @@ Additional Info: 下图来自维基百科。
 
 > 笔记来源：[维基百科-分子](https://zh.wikipedia.org/wiki/%E5%88%86%E5%AD%90)
 >
-> `(2)` **分子(molecule `/'mɒlɪkjuːl/`)**：是一种构成物质的[粒子](https://zh.wikipedia.org/wiki/粒子)，呈电中性、由单个或多个[原子](https://zh.wikipedia.org/wiki/原子)组成，原子之间因[化学键](https://zh.wikipedia.org/wiki/化學鍵)而键结[[1\]](https://zh.wikipedia.org/wiki/分子#cite_note-iupac-1)[[2\]](https://zh.wikipedia.org/wiki/分子#cite_note-2)。能够单独存在、保持物质的[化学性质](https://zh.wikipedia.org/wiki/化学性质)；由分子组成的物质叫**分子化合物**。
+> `(2)` **分子(molecule `/'mɒlɪkjuːl/`)**：是一种构成物质的[粒子](https://zh.wikipedia.org/wiki/粒子)，呈电中性、由单个或多个[原子](https://zh.wikipedia.org/wiki/原子)组成，原子之间因[化学键](https://zh.wikipedia.org/wiki/化學鍵)而键结[[1\]](https://zh.wikipedia.org/wiki/分子#cite_note-iupac-1)[[2\]](https://zh.wikipedia.org/wiki/分子#cite_note-2)。能够单独存在、保持物质的[化学性质](https://zh.wikipedia.org/wiki/化学性质)；由分子组成的物质叫**分子化合物**。
 >
-> 一个分子是由多个[原子](https://zh.wikipedia.org/wiki/原子)在[共价键](https://zh.wikipedia.org/wiki/共價鍵)中通过共用[电子](https://zh.wikipedia.org/wiki/電子)连接一起而形成。它可以由相同的化学[元素](https://zh.wikipedia.org/wiki/元素)构成，如[氧气](https://zh.wikipedia.org/wiki/氧氣)分子{\displaystyle {\ce {O2}}}![{\displaystyle {\ce {O2}}}](readme.assets/a8c2c304a17b2fe1e4a79afb22d531d90f9c5ad1.svg+xml)；也可以由不同的元素构成，如[水](https://zh.wikipedia.org/wiki/水)分子{\displaystyle {\ce {H2O}}}![{\displaystyle {\ce {H2O}}}](readme.assets/373648858d1d59d300f88386b46dd95e01f04c5a.svg+xml)。若原子之间由非共价键的化学键（如[离子键](https://zh.wikipedia.org/wiki/離子鍵)）所结合，一般不会视为是单一分子[[3\]](https://zh.wikipedia.org/wiki/分子#cite_note-3)。
+> 一个分子是由多个[原子](https://zh.wikipedia.org/wiki/原子)在[共价键](https://zh.wikipedia.org/wiki/共價鍵)中通过共用[电子](https://zh.wikipedia.org/wiki/電子)连接在一起而形成。它可以由相同的化学[元素](https://zh.wikipedia.org/wiki/元素)构成，如[氧气](https://zh.wikipedia.org/wiki/氧氣)分子 $O_2$；也可以由不同的元素构成，如[水](https://zh.wikipedia.org/wiki/水)分子$H_2O$。若原子之间由非共价键的化学键（如[离子键](https://zh.wikipedia.org/wiki/離子鍵)）所结合，一般不会视为是单一分子[[3\]](https://zh.wikipedia.org/wiki/分子#cite_note-3)。
 >
-> 在不同的领域中，分子的定义也会有一点差异：在[热力学](https://zh.wikipedia.org/wiki/热力学)中，构成物质的分子（如[水分子](https://zh.wikipedia.org/wiki/水分子)）、原子（如[碳原子](https://zh.wikipedia.org/wiki/碳原子)）、离子（如[氯离子](https://zh.wikipedia.org/wiki/氯离子)）等在热力学上的表现性质都是一样的，因此，都统称为分子；在[气体动力论](https://zh.wikipedia.org/wiki/氣體動力論)中，分子是指任何构成气体的粒子，此定义下，单原子的[惰性气体](https://zh.wikipedia.org/wiki/稀有气体)也可视为是分子[[4\]](https://zh.wikipedia.org/wiki/分子#cite_note-4)。而在[量子物理](https://zh.wikipedia.org/wiki/量子物理)、[有机化学](https://zh.wikipedia.org/wiki/有機化學)及[生物化学](https://zh.wikipedia.org/wiki/生物化學)中，多原子的离子（如[硫酸根](https://zh.wikipedia.org/wiki/硫酸根)）也可以视为是一个分子。
+> 在不同的领域中，分子的定义也会有一点差异：
+>
+> 在[热力学](https://zh.wikipedia.org/wiki/热力学)中，构成物质的分子（如[水分子](https://zh.wikipedia.org/wiki/水分子)）、原子（如[碳原子](https://zh.wikipedia.org/wiki/碳原子)）、离子（如[氯离子](https://zh.wikipedia.org/wiki/氯离子)）等在热力学上的表现性质都是一样的，因此，都统称为分子；
+>
+> 在[气体动力论](https://zh.wikipedia.org/wiki/氣體動力論)中，分子是指任何构成气体的粒子，此定义下，单原子的[惰性气体](https://zh.wikipedia.org/wiki/稀有气体)也可视为是分子[[4\]](https://zh.wikipedia.org/wiki/分子#cite_note-4)。
+>
+> 而在[量子物理](https://zh.wikipedia.org/wiki/量子物理)、[有机化学](https://zh.wikipedia.org/wiki/有機化學)及[生物化学](https://zh.wikipedia.org/wiki/生物化學)中，多原子的离子（如[硫酸根](https://zh.wikipedia.org/wiki/硫酸根)）也可以视为是一个分子。
 
 这种化学反应不会一直进行下去，除非我们有办法能使负极多余的自由电子回到正极去。因此如果我们没有给电池连上任何东西，什么事情也不会发生（实际上电池内仍有化学反应发生，但是非常缓慢）。电路可以将负极的电子带走，以补充正极缺失的电子，只有当存在电路的时候，化学反应才会发生。如下图所示，电子在电路中的这次旅行是沿逆时针方向的。
 
@@ -461,7 +467,7 @@ Additional Info: 下图来自维基百科。
 
 现在电路能够正常工作了。与前文我们提到的“串联”方式不同，这种连接电池的方式被称做“并联”。并联后的电压是1.5伏，与每个电池的电压是一样的。或许灯泡仍能发光，但是肯定没有串联电池的灯泡亮。不过电池的使用寿命也将延长一倍。
 
-一般情况下，我们认为电池为电路提供了电能。但是我们也同样可以反过来想，电路为电池内的化学反应的进行提供了条件。电路把电子从电池的负极运走，然后转移到电池的正极。电池中的化学反应将持续进行，直到所有的化学物质被消耗完，那时你就可以把电池扔掉或者重新给它充电了。
+**一般情况下，我们认为电池为电路提供了电能。但是我们也同样可以反过来想，电路为电池内的化学反应的进行提供了条件。电路把电子从电池的负极运走，然后转移到电池的正极。电池中的化学反应将持续进行，直到所有的化学物质被消耗完，那时你就可以把电池扔掉或者重新给它充电了。**
 
 从电池的负极到正极，电子流经了导线和灯泡。但是为什么我们需要导线呢？电流不可以直接被空气传导吗？哦，可以说能，也可以说不能。电流可以通过空气传导（特别是潮湿的空气），不然的话我们就看不到闪电了。但是电流也不能轻易地穿过空气。
 
@@ -469,11 +475,19 @@ Additional Info: 下图来自维基百科。
 
 与导电性相反的是阻抗性。有一些物质与其他的物质相比更不容易让电流通过，我们称其为电阻。如果一种物质有着很强的阻抗性——也就是说它几乎不能传导任何电流——它就被称为绝缘体（insulator）。橡胶和塑料都是很好的绝缘体，因而它们经常被用来包裹金属导线。布料和木头在干燥的空气中也是很好的绝缘体。不过事实上只要有足够高的电压，任何的物质都是可以导电的。
 
-铜具有很低的阻抗，但实际上或多或少仍然会存在一点。导线越长，它的阻抗就越高。如果你用几英里长的导线来为自制手电筒布线的话，导线所产生的阻抗将变得很高，以至于手电筒将无法正常工作。
+铜具有很低的阻抗，但实际上或多或少仍然会存在一点。==导线越长，它的阻抗就越高==。如果你用几英里长的导线来为自制手电筒布线的话，导线所产生的阻抗将变得很高，以至于手电筒将无法正常工作。
 
-导线越粗，它的阻抗就越低。这可能有些违背我们的直观感觉。你可能会想，粗一些的导线需要更多的电流来“填满它”。但是实际上粗一些的导线可以使更多的电子顺畅地通过线路。
+==导线越粗，它的阻抗就越低==。这可能有些违背我们的直观感觉。你可能会想，粗一些的导线需要更多的电流来“填满它”。但是实际上粗一些的导线可以使更多的电子顺畅地通过线路。
 
-前面我多次提到了电压，但是却还没有定义它。一个电池有1.5伏的电压，这意味着什么呢？实际上，电压——因亚历山大·伏特（Alessandro Volta，1745-1827）伯爵的名字而得名，他于1800年发明出第一枚电池——在初等电学中是最难理解的概念之一。电压表征了电流做功的“势”（potential），也就是电势能的大小。不管电池是否被连接到电路中，电压都是存在的。
+前面我多次提到了电压，但是却还没有定义它。一个电池有1.5伏的电压，这意味着什么呢？实际上，**电压——因亚历山大·伏特（Alessandro Volta，1745-1827）伯爵的名字而得名，他于1800年发明出第一枚电池——在初等电学中是最难理解的概念之一。电压表征了电流做功的“势”（potential），也就是电势能的大小。不管电池是否被连接到电路中，电压都是存在的。**
+
+> [维基百科-电压](https://zh.wikipedia.org/wiki/%E9%9B%BB%E5%A3%93)
+>
+> **电压**：(英文：Voltage、electric pressure 或 electric tension)是两点之间的[电势](https://zh.wikipedia.org/wiki/電位)差（electric potential difference），也就是静电学中将测试电荷从一点移动到另外一点所需要的能量。电压的 国际单位(SI)`(a)` 为[伏特](https://zh.wikipedia.org/wiki/伏特)[[1\]](https://zh.wikipedia.org/wiki/電壓#cite_note-SI-Bro-1):166，又可以写成[焦耳](https://zh.wikipedia.org/wiki/焦耳)每[库伦](https://zh.wikipedia.org/wiki/庫侖)。值得一提的是，电压或电势差在符号上写为 $∆V$，之后省略了差值符号，直接记为**V**[[2\]](https://zh.wikipedia.org/wiki/電壓#cite_note-2)或**U**[[3\]](https://zh.wikipedia.org/wiki/電壓#cite_note-3)。
+>
+> 电压可能由电荷、通过磁场的电流、或随时间改变的磁场等因素造成[[4\]](https://zh.wikipedia.org/wiki/電壓#cite_note-4)[[5\]](https://zh.wikipedia.org/wiki/電壓#cite_note-5)。
+>
+> `(a)` [国际单位制](https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E5%8D%95%E4%BD%8D%E5%88%B6)
 
 想象一块砖，当它在地板上时，这块砖只有很少的势能。把它从地面上举到离地板四英尺的高度，现在这块砖就会有比较多的势能。如果你想了解所谓“势能”到底是多少，把砖扔掉就可以了。当我们拿着砖跑到一座高楼的楼顶时，它的势能会更多。在这三个场景中，你只是拿着这块砖，它并没有做什么，但是这块砖的势能却差别迥异。
 
