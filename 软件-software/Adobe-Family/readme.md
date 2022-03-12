@@ -63,3 +63,28 @@ FangSong_GB2312 not found, using Courier."
 - (1) 打开 Adobe Acrobat Pro 点击主页中部的 “将多个文件合并为 PDF”首先选择一个文件，等待程序处理完毕后打开，然后在顶部第二行中找到打印机图标，点击后在弹出**打印机(N)** 选项选择 **Adobe PDF**，然后点击后面的 **属性(P)** 按钮，在当前的弹框中把 **仅依靠系统字体，不适用文档字体(N)** 前的复选框取消勾选。
 - (2) 找到 **FangSong_GB2312**, **FZXBSJW**, **KaiTi_GB2312**, **方正小标宋_GBK** 几个字体，右键 **为所有用户安装**。
 
+
+
+
+
+## ▲ M1 Max 安装 Premiere Pro 的方法
+
+1. 文件见百度网盘 `### M1 Adobe 全家桶/2022-Premiere Pro`
+
+2. 按照下载文件里说的先安装里面的 Adobe creative cloud (tip：文件夹内的 adobe creative cloud 我没安装，我安装的 maccw 此链接的版本：https://www.macw.com/mac/3417.html 点击下载时选择 M1 版本 ) 。
+
+3. 点击 PR_2022.dmg 打开之后看到里面有 **Install PPRO_22.1.2-zh_CN-macuniversal.app**
+   和 **Premiere Pro2022 破解补丁.pkg** 两个文件，但现在直接安装 macuniversal.app 会报错，
+   一开始我是按照这个链接(https://www.macwk.com/article/macos-file-damage) 
+   里的步骤才一步一步解决无法安装的错误的，但是一直到最下面我仍然没有解决，但是看到文章里说的
+   `如果您嫌麻烦，您也可以下载 macwk.com 编写的 macOS小助手进行快速操作：` 我就抱着试试的态度，
+   下载了这个软件(https://www.macwk.com/soft/macos-assistant-macwk)，然后安装完成后，
+   我把 macuniversal.app 拖到下面的路径里，点击执行操作后真的移除了签名。
+   ![image-20220313002818646](readme.assets/image-20220313002818646.png)
+
+4. 接着我继续安装 macuniversal.app 就成功了。
+
+5. 最后安装 **Premiere Pro2022 破解补丁.pkg** 文件后，就彻底完成了。
+
+6. 但是此版本的 PR 打开某默认是没有界面的，如下图，需要点击左上角的 文件 -- 新建 -- 项目，创建项目后才会真正出现 PR 的界面。
+     ![image-20220313002439774](readme.assets/image-20220313002439774.png)
