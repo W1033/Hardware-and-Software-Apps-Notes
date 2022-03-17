@@ -369,7 +369,7 @@ git clone特别慢是因为`github.global.ssl.fastly.net`域名被限制了。
 
 ```access
 199.232.69.194 github.global-ssl.fastly.net
-140.82.112.3 github.com 
+140.82.112.4 github.com 
 ```
 
 1. 保存更新DNS
@@ -377,3 +377,14 @@ git clone特别慢是因为`github.global.ssl.fastly.net`域名被限制了。
 - Winodws系统的做法：打开CMD，输入`ipconfig /flushdns`
 - CentOS的做法：在终端输入`nscd -i hosts`
 - MacOS 的刷新方法见这篇文章：https://www.zhihu.com/question/19679715
+    - Tip: MacOS 刷新 DNS 的命令真的是各种各样，给出最多的一句是 `sudo killall -HUP mDNSResponder`(OS > 10.10.4)，由于不知道到底管不管用，所以建议使用下面这种方式修改 hosts 和刷新的方式。
+       ```md
+       1.打开终端
+       2.输入sudo vi /etc/hosts
+       3.输入密码
+       4.进入文件hosts，然后按“i”，进入编辑模式
+       5.把你的host添加到最后
+       6.control+c推出编辑模式
+       7.输入:wq，保存退出
+       ···
+

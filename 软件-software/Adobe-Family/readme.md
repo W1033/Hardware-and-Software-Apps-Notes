@@ -84,7 +84,7 @@ FangSong_GB2312 not found, using Courier."
 
 4. 接着我继续安装 macuniversal.app 就成功了。
 
-5. 最后安装 **Premiere Pro2022 破解补丁.pkg** 文件后，就彻底完成了。
+5. 最后安装 **Premiere Pro2022 破解补丁.pkg** 文件后，彻底完成。
 
 6. 但是此版本的 PR 打开某默认是没有界面的，如下图，需要点击左上角的 文件 -- 新建 -- 项目，创建项目后才会真正出现 PR 的界面。
      ![image-20220313002439774](readme.assets/image-20220313002439774.png)
