@@ -32,3 +32,18 @@
 
 > 下载地址：https://otp.landian.vip/zh-cn/download.html
 
+
+
+
+
+搜索 ：`信息化` 关键字一共 26 条，结果如下
+
+![image-20220319121624606](ReadMe.assets/image-20220319121624606.png)
+
+
+
+规章
+
+制度
+
+网络
