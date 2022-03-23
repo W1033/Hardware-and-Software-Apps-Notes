@@ -32,3 +32,8 @@
 
 > 下载地址：https://otp.landian.vip/zh-cn/download.html
 
+
+
+### 7. PowerPoint 中使用演讲者模式
+1. 按 `windows + p` 调出拓展选项, 选择 `扩展`
+1. 在 PowerPoint 中的 `幻灯片放映` 中点击 `使用演讲者模式` 
