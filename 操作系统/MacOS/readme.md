@@ -347,3 +347,23 @@ sudo upx -d /Applications/CORE\ Keygen.app/Contents/MacOS/CORE\ Keygen
 - 12:04 MacOS深度定制 TinkerTool
 - 14:15 截屏神器 Monosnap
 - 17:18 目录自动备份Sync folders Pro
+
+### 33. 提示文件已损坏解决方法
+
+先打开 `系统偏好设置 -> 安全与隐私 -> 通用` 选项卡，检查是否已经启用了 `任何来源` 选项。
+
+如果没有这个选项，复制以下面的命令：
+
+```bash
+sudo spctl --master-disable
+```
+
+打开`终端`：
+
+将刚刚复制的命令粘贴到终端中。
+
+然后按下键盘的回车键（return）
+
+输入密码
+
+恭喜您，`您已成功开启任何来源`。
