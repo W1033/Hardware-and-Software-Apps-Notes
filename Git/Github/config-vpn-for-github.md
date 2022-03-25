@@ -42,33 +42,6 @@
 
 
 
-## 查看 `追风岛 vpn Mac 客户端` 设置文件中的 `代理 ip` 和 `端口(port)`:
-- (1) 在顶部追风岛客户端上右键查看 `复制用户主目录` 路径, 然后在 finder 中按下
-  `Shift + Command + G` 弹出 `前往文件夹` 弹框, 粘贴复制的路径
-  `/Users/WANG/Library/Application Support/com.nina.netfly/netfly` 点击 `前往`,
-  在打开的文件夹中, 打开 `tempPath` 文件(Tip: 看不出文件后缀), 可看到 ip 
-  `127.0.0.1`, port 为 `1080`.
-- (2) 打开 `iTerm`, 通过如下代码设置 proxy:
-  ```shell
-    git config --global http.proxy 127.0.0.1:1080
-    git config --global https.proxy 127.0.0.1:1080
-  ```
-- (3) 通过第 (2) 步设置的代码可以在 `.gitConfig` 文件中查看, 路径为
-  `/Users/WANG/.gitconfig` 
-- (4) 然后通过上面第(2) 步仍然不能提交代码, 个人认为可能是 `v2ray` 客户端的通病, 
-  所以还是要打开 `.gitconfig` 文件删除通过上面 2 行代码添加的 `proxy`.
-  然后通过下面 2 行代码删除系统内被设置的代理:
-  ```shell
-    # 查看有没有设置代理的代码(本机上没效果, 但是评论里说这 2 行代码是有效果的.)
-    git config --global http.proxy
-    # 取消代理
-    git config --global --unset http.proxy
-    git config --global --unset https.proxy
-  ```
-- (4) 重启电脑.
-
-
-
 ## 把蓝灯的代理添加到 `/Users/WANG/.gitconfig` 中:
 - (1) 每次启动蓝灯，它会自动修改操作系统的网络代理指向它自己。不需要我们手动配置，很是方便。
   需要网络代理的地方其实不止是浏览器，很多命令行工具也会访问网络。比如，我们通过
