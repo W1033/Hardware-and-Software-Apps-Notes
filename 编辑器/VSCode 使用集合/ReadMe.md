@@ -199,7 +199,7 @@
         // - 关闭左侧的缩略地图
         "editor.minimap.enabled": false,
         "marKdown.preview.fontSize": 13,
-  
+    
         // - 关闭代码片段提示
         "editor.quicKSuggestions": {
             "other": false,
@@ -208,14 +208,14 @@
         "editor.parameterHints.enabled": false,
         "editor.wordBasedSuggestions": false,
         "editor.snippetSuggestions": "none",
-  
+    
         // - 设置 flow 
         "flow.useNPMPacKagedFlow": true,
         "javascript.validate.enable": false,
-  
+    
         // - 设置 Emmet
          "emmet.triggerExpansionOnTab": true,
-  
+    
          // - 配置插件: Sass/Less/Typescript/Jade/Pug Compile Hero
         "compile-hero": {
             "disable-compile-files-on-did-save-code": false,
@@ -311,3 +311,14 @@
 
 ### 4. 解决 mbp 使用 VSCode 导致风扇狂转的问题
 - 一般情况下, vscode 的进程不会导致风扇一直狂转, 所以打开 "活动监视器" 查找是哪个占了极高的 cpu 即可.
+
+
+
+### Gitlens 取消每行后面的代码变更记录
+具体操作步骤如下:
+
+按快捷键 `Ctrl/Command` + `,` 打开设置面板
+
+搜索栏输入 `gitlens.toggleLineBLame`
+
+取消 Specifies whether to provide a blame annotation for the current line, by default. Use the Toggle Line Blame Annotations command (gitlens. toggleLineBLame) to toggle the annotations on and off for the current window. (默认情况下，指定是否为当前行提供责备注释。 使用 Toggle Line Blame Annotations 命令 (gitlens.toggleLineBLame) 打开和关闭当前窗口的注释。) 前的勾选。
