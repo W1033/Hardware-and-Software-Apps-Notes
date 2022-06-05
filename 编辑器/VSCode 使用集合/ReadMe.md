@@ -1,39 +1,11 @@
 # VSCode 使用设置
 
 
-## Table Of Contents
-1. Mac 和 Win 下的通用设置
-    + 1.1 快捷键:
-    + 1.2 更改英文为中文
-    + 1.3 调出 `settings.json` 编辑文件
-    + 1.4 VSCode 打开多个项目
-    + 1.5 VSCode 设置每行代码的长度: 
-    + 1.6 关闭 VSCode 右侧缩略图 (预览面板):
-    + 1.7 关闭 VSCode 自动换行
-    + 1.8 如何打开终端?
-    + 1.9 修改终端中的字体
-    + 1.10 Visual Studio Code 修改文件树缩进
-    + 1.11 隐藏/显示 左侧的 activity bar (活动栏)
-    + 1.12 隐藏/显示 左侧的 side bar (侧标栏)
-    + 1.13 快速生成文件模块
-    + 1.14 查找某个函数在哪些地方被调用了
-    + 1.15 鼠标操作
-    + 1.16 创建多层子文件夹:
-    + 1.17 `.vscode` 文件夹的作用
-    + 1.18 通用插件
-2. Mac 下设置
-    + 2.1 关于 VSCode 版本字体的问题
-    + 2.2 Mac 下 `settings.json` 基本设置
-3. Windows 下设置
-    + 3.1 Win 下 `settings.json` 的基本设置
-    + 3.2 Windows VSCode 常用快捷键
-4. 解决 mbp 使用 VSCode 导致风扇狂转的问题
-
-
-## New Words
-## vscode 重要 快捷键:
-- 复制当前行：`shift + alt +up/down`
+## ▲ vscode 常用快捷键:
+- 复制当前行：`Control/Command + C` `shift + alt +up/down`
+- 代码格式化: `Shift + Alt +f`
 - 格式化选定代码 ：`ctrl + k / ctrl + f`
+- 代码展开: 先按下 `ctrl + K`, 再按下 `ctrl + J` ;
 - 注释：
   + a) 单行注释：`[ctrl+k, ctrl+c] 或 ctrl+/`
   + b) 取消单行注释：`[ctrl+k, ctrl+u] (按下ctrl不放, 再按k + u)`
@@ -41,48 +13,58 @@
   + d) 多行注释：`/**`
 - 折叠代码快捷键: 先按下 `Ctrl + K` 再按下 `ctrl + 0(数字0)` 
   + (Tip: 即使是折叠全部代码也不用全选文本) 
-- 代码展开: 先按下 `ctrl + K`, 再按下 `ctrl + J` ;
 
 
-## Content
-### 1. Mac 和 Win 下的通用设置
-#### 1.1 快捷键
-- Windows: `Ctrl + Shift + p` / Mac: `Command + Shift + p`:
-  `show all commands` (显示所有命令面板)
+
+
+
+## ▲ VSCode 中使用正则表达式给 markdown 文档中内的中英文添加空格
+
+![image-20220602120237714](ReadMe.assets/image-20220602120237714.png)
+
+正则表达式的讲解见：`Github-clone/DataStructure-Algorithm-Learning/正则表达式/正则表达式-特殊字符.md`
+
+
+
+
+## ▲ 1. Mac 和 Win 下的通用设置
+
+### 1.1 快捷键
+- 显示所有命令面板(show all commands): `Ctrl + Shift + p`(Windows) / `Command + Shift + p`(Mac) 
 - 更该默认设置: `File` -> `Preferences` --> `Settings`
 
-#### 1.2 更改英文为中文
+### 1.2 更改英文为中文
 - 使用 Ctrl + Shift + P 调出所有命令行面板，输入 configure display language 安装中文包
 
-#### 1.3 调出 `settings.json` 编辑文件
+### 1.3 调出 `settings.json` 编辑文件
 - File -> Preference -> Settings -> 点击左上角的 `{}` 图标。
 
-#### 1.4 VSCode 打开多个项目
+### 1.4 VSCode 打开多个项目
 - Windows 下 `control + Shift + N`
 - Mac 下 `command + Shift + N` 
 
-#### 1.5 VSCode 设置每行代码的长度: 
+### 1.5 VSCode 设置每行代码的长度: 
 - 在 setting.json 的规则内添加:  `editor.rulers:[80]` ，添加完毕之后右侧就会自动出来
   达到 80 个字符的时的竖线
 
-#### 1.6 关闭 VSCode 右侧缩略图 (预览面板):
+### 1.6 关闭 VSCode 右侧缩略图 (预览面板):
 - 在 settings.json 中添加: `"editor.minimap.enabled": false,`
 
-#### 1.7 关闭 VSCode 自动换行
+### 1.7 关闭 VSCode 自动换行
 - settings.json 中添加 `"editor.wordWrap": "off"`
 
-#### 1.8 如何打开终端?
+### 1.8 如何打开终端?
 - 1、快捷键: `control + `(esc 下的那个按键)`
 - 2、View --> Terminal
 
-#### 1.9 修改终端中的字体
+### 1.9 修改终端中的字体
 - `"terminal.integrated.fontSize":14,`
 - `"terminal.integrated.letterSpacing":1,`
 
-#### 1.10 Visual Studio Code 修改文件树缩进
+### 1.10 Visual Studio Code 修改文件树缩进
 - `"worKbench.tree.indent": 24,`
 
-#### 1.11 隐藏/显示 左侧的 activity bar (活动栏)
+### 1.11 隐藏/显示 左侧的 activity bar (活动栏)
 - Explorer (Ctrl + Shift + E) 探测器 (项目 文件)
 - Search (Ctrl + Shift + F) 搜索
 - Source Control (Ctrl + Shift + G): 代码控制工具 (Git: 可以查看修改了多少个文件)
@@ -90,38 +72,38 @@
 - Extensions (Ctrl + Shift + X) 插件扩展
    (横向拖动变宽在 Extensions 栏可以搜索内容的图标)
 
-#### 1.12 隐藏/显示 左侧的 side bar (侧标栏)
+### 1.12 隐藏/显示 左侧的 side bar (侧标栏)
 - 右上角 `view -> Appearance -> Show activity bar`
 - 快捷键
     + Windows 下: Ctrl + b
     + Mac 下:  command + b
 
-#### 1.13 快速生成文件模块
+### 1.13 快速生成文件模块
 - 快速生成 HTML 模版:  在当前文件中输入`!` 然后按下 `Tab` 按键
 
-#### 1.14 查找某个函数在哪些地方被调用了
+### 1.14 查找某个函数在哪些地方被调用了
 - 比如我已经在 `a.js` 文件里调用了 `foo()` 函数. 那么, 如果我想知道 `foo()`
   函数在其他文件中是否也被调用了, 该怎么做呢？
   
   做法如下: 在 `a.js` 文件里, 选中 `foo()` 函数 (或者将光标放置在foo()函数上),
   然后按住快捷键 `Shift + F12`, 就能看到 `foo()` 函数在哪些地方被调用了, 比较实用. 
 
-#### 1.15 鼠标操作
+### 1.15 鼠标操作
 - 在当前行的位置，鼠标三击，可以选中当前行。
 - 用鼠标单击文件的行号，可以选中当前行。
 - 在某个行号的位置，上下移动鼠标，可以选中多行。
 
-#### 1.16 创建多层子文件夹:
+### 1.16 创建多层子文件夹:
 - 我们可以在新建文件夹的时候，如果直接输入, 比如 `aa/bb/cc` 的类似格式即可.
 
-#### 1.17 `.vscode` 文件夹的作用
+### 1.17 `.vscode` 文件夹的作用
 - 如果你发现项目的根目录下有一个.vscode文件夹，说明这个文件夹代表的是当前项目的配置。
 - 这个文件夹里可能包含以下集中文件: 
     + `settings.json`: 工作空间设置。只针对当前项目有效。比如说，我可以在这里面要求
       当前项目的代码统一使用制表符，而不需要要求每一位码农去修改各自的配置文件。
     + `sftp.json`: ftp文件传输的配置。
 
-#### 1.18 通用插件
+### 1.18 通用插件
 1. `vscode-icons`: 更换图标主题(即给文件添加对应的文件图标):
     + 显示方式: `Ctrl/command + Shift + p` 弹出显示所有命令面板, 输入:
       `Icons`, 点击 Activate VSCode icon
@@ -167,11 +149,11 @@
 1. `indent-rainbow`: 缩进彩虹, 不同的颜色来提示当前的缩进位置.(tip: 颜色太丑.)
 1. `Local history`: 查看文件修改历史记录.
 
-### 2. Mac 下设置
+## ▲ Mac 下设置
 
-#### 2.2 Mac 下 `settings.json` 基本设置
+### 2.2 Mac 下 `settings.json` 基本设置
 
-- ```json
+```json
     {
         // - 粘贴到 vscode 的 settings.json 中时记得删除这些注释,
         // - ☆☆☆ 不用删除, vscode 中可以存在, 不报错
@@ -225,11 +207,10 @@
             "sass-output-toggle": true
         }
     }
-  ```
+```
 
-
-###  Windows 下设置:
-#### Windows 下更改 VSCode 中的字体为 Source Code Pro
+## ▲ Windows 下设置:
+### Windows 下更改 VSCode 中的字体为 Source Code Pro
 - 从 github 下载:
   [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
   点击 latest release, 选择 otf 文件下载，放到字体文件夹 (C:\Windows\Fonts)
@@ -238,8 +219,10 @@
     + "editor.fontFamily": "Source Code Variable, 'Source Code Variable Italic'"
     + 具体的字体名参照自己下的字体，同样在 C:\Windows\Fonts 中可以找到
 
-### 3. Win10 下 VSCode 的基本设置
-#### 3.1 Win 下 `settings.json` 的基本设置
+
+
+## ▲ Win10 下 VSCode 的基本设置
+### Win 下 `settings.json` 的基本设置
 - ```json
     {
         "files.autoSave": "afterDelay",
@@ -270,7 +253,7 @@
   解决了中文和英文的显示问题, 一定不要更改, `Source Code Pro` 解决的是英文显示字体, 
   `Source Han Sans SC Light`解决的是汉语字体显示的问题. 
 
-#### 3.2 Windows VSCode 常用快捷键:
+### Windows VSCode 常用快捷键:
 1. 注释: 
 　　+ (1) 单行注释: `[Ctrl + K, Ctrl + c]` 或 `Ctrl` + `/`
 　　+ (2) 取消单行注释: `[Ctrl + K, Ctrl + U] (按下 Ctrl 不放, 再按 K + U)`
@@ -309,12 +292,12 @@
 
 
 
-### 4. 解决 mbp 使用 VSCode 导致风扇狂转的问题
+## ▲ 解决 mbp 使用 VSCode 导致风扇狂转的问题
 - 一般情况下, vscode 的进程不会导致风扇一直狂转, 所以打开 "活动监视器" 查找是哪个占了极高的 cpu 即可.
 
 
 
-### Gitlens 取消每行后面的代码变更记录
+## ▲ Gitlens 取消每行后面的代码变更记录
 具体操作步骤如下:
 
 按快捷键 `Ctrl/Command` + `,` 打开设置面板
