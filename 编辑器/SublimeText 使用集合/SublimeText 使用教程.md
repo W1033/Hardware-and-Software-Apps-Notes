@@ -5,4 +5,5 @@
       建议安装插件后都进设置菜单配置一下。
       删除插件：Ctrl+Shift+P，输入remove package，选择插件再回车。
       
+
 ### 其他配置见此教程: https://www.zybuluo.com/king/note/47271

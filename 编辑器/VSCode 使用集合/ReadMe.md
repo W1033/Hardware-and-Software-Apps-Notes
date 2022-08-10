@@ -44,13 +44,14 @@
 - Mac 下 `command + Shift + N` 
 
 ### 1.5 VSCode 设置每行代码的长度: 
-- 在 setting.json 的规则内添加:  `editor.rulers:[80]` ，添加完毕之后右侧就会自动出来
-  达到 80 个字符的时的竖线
+- 在 setting.json 的规则内添加:  `editor.rulers:[80]` ，添加完毕之后右侧就会自动出来达到 80 个字符的时的竖线
 
 ### 1.6 关闭 VSCode 右侧缩略图 (预览面板):
+
 - 在 settings.json 中添加: `"editor.minimap.enabled": false,`
 
 ### 1.7 关闭 VSCode 自动换行
+
 - settings.json 中添加 `"editor.wordWrap": "off"`
 
 ### 1.8 如何打开终端?
@@ -58,6 +59,7 @@
 - 2、View --> Terminal
 
 ### 1.9 修改终端中的字体
+
 - `"terminal.integrated.fontSize":14,`
 - `"terminal.integrated.letterSpacing":1,`
 
@@ -211,10 +213,9 @@
 
 ## ▲ Windows 下设置:
 ### Windows 下更改 VSCode 中的字体为 Source Code Pro
-- 从 github 下载:
-  [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
-  点击 latest release, 选择 otf 文件下载，放到字体文件夹 (C:\Windows\Fonts)
-    + tips: 字体有2个版本，可以都安装
+从 github 下载: [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) 点击 latest release, 选择 otf 文件下载，放到字体文件夹 (C:\Windows\Fonts)
+  + tips: 字体有2个版本，可以都安装
+
 - 在 `settings.json` 中设置
     + "editor.fontFamily": "Source Code Variable, 'Source Code Variable Italic'"
     + 具体的字体名参照自己下的字体，同样在 C:\Windows\Fonts 中可以找到
@@ -222,36 +223,35 @@
 
 
 ## ▲ Win10 下 VSCode 的基本设置
+
 ### Win 下 `settings.json` 的基本设置
-- ```json
-    {
-        "files.autoSave": "afterDelay",
-        "editor.fontFamily": "Source Code Pro, Source Han Sans SC Light",
-        "editor.lineHeight": 24,
-        "editor.detectIndentation":false,
-        "editor.tabSize": 4,
-        "terminal.integrated.fontSize":14,
-        "terminal.integrated.letterSpacing":1,
-        "editor.rulers":[80],
-        "editor.cursorStyle": "line",
-        "terminal.integrated.fontFamily": "Source Code Pro, Source Han Sans SC Light",
-        "debug.console.fontFamily": "Source Code Pro, Source Han Sans SC Light",
-        "marKdown.preview.fontFamily": "Source Code Pro, Source Han Sans SC Light",
-        "editor.fontSize": 14,
-        "editor.letterSpacing": 1,
-        "window.zoomLevel":0,
-        "editor.wordWrap": "on",
-        "editor.wordWrapColumn": 100,
-        "debug.toolBarLocation": "docKed",
-        "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-        "diffEditor.renderSideBySide": false,
-        "worKbench.tree.indent": 24,
-        "editor.minimap.enabled": false
-    }
-  ```
-- Tips: `editor.fontFamily: "Source Code Pro, Source Han Sans SC Light"`
-  解决了中文和英文的显示问题, 一定不要更改, `Source Code Pro` 解决的是英文显示字体, 
-  `Source Han Sans SC Light`解决的是汉语字体显示的问题. 
+```json
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Source Code Pro, Source Han Sans SC Light",
+    "editor.lineHeight": 24,
+    "editor.detectIndentation":false,
+    "editor.tabSize": 4,
+    "terminal.integrated.fontSize":14,
+    "terminal.integrated.letterSpacing":1,
+    "editor.rulers":[80],
+    "editor.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "Source Code Pro, Source Han Sans SC Light",
+    "debug.console.fontFamily": "Source Code Pro, Source Han Sans SC Light",
+    "marKdown.preview.fontFamily": "Source Code Pro, Source Han Sans SC Light",
+    "editor.fontSize": 14,
+    "editor.letterSpacing": 1,
+    "window.zoomLevel":0,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 100,
+    "debug.toolBarLocation": "docKed",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "diffEditor.renderSideBySide": false,
+    "worKbench.tree.indent": 24,
+    "editor.minimap.enabled": false
+}
+```
+Tips: `editor.fontFamily: "Source Code Pro, Source Han Sans SC Light"` 解决了中文和英文的显示问题, 一定不要更改, `Source Code Pro` 解决的是英文显示字体,  `Source Han Sans SC Light`解决的是汉语字体显示的问题. 
 
 ### Windows VSCode 常用快捷键:
 1. 注释: 
@@ -293,7 +293,7 @@
 
 
 ## ▲ 解决 mbp 使用 VSCode 导致风扇狂转的问题
-- 一般情况下, vscode 的进程不会导致风扇一直狂转, 所以打开 "活动监视器" 查找是哪个占了极高的 cpu 即可.
+一般情况下, vscode 的进程不会导致风扇一直狂转, 所以打开 "活动监视器" 查找是哪个占了极高的 cpu 即可.
 
 
 
@@ -305,3 +305,9 @@
 搜索栏输入 `gitlens.toggleLineBLame`
 
 取消 Specifies whether to provide a blame annotation for the current line, by default. Use the Toggle Line Blame Annotations command (gitlens. toggleLineBLame) to toggle the annotations on and off for the current window. (默认情况下，指定是否为当前行提供责备注释。 使用 Toggle Line Blame Annotations 命令 (gitlens.toggleLineBLame) 打开和关闭当前窗口的注释。) 前的勾选。
+
+
+
+## ▲ 快速跳出成对的标点符号
+
+比如：vscode 自动补充的 `""` ，在双引号写完字符串之后，直接再次按下双引号键即可。
