@@ -18,18 +18,24 @@
 
 
 
-## ▲ VSCode 中使用正则表达式给 markdown 文档中内的中英文添加空格
+## ▲ VSCode 中使用正则表达式给 markdown 文档中内添加空格
+
+### (1) 给中文和英文中间添加空格
 
 ![image-20220602120237714](ReadMe.assets/image-20220602120237714.png)
 
-正则表达式的讲解见：`Github-clone/DataStructure-Algorithm-Learning/正则表达式/正则表达式-特殊字符.md`
+### (2) 在数字前添加空格
 
+![image-20220828163140573](ReadMe.assets/image-20220828163140573.png)
+
+正则表达式的讲解见：`Github-clone/DataStructure-Algorithm-Learning/正则表达式/正则表达式-特殊字符.md`
 
 
 
 ## ▲ 1. Mac 和 Win 下的通用设置
 
 ### 1.1 快捷键
+
 - 显示所有命令面板(show all commands): `Ctrl + Shift + p`(Windows) / `Command + Shift + p`(Mac) 
 - 更该默认设置: `File` -> `Preferences` --> `Settings`
 
