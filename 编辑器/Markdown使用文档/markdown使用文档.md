@@ -9,8 +9,7 @@
     + markup language 标记语言/标识语言
     + Extensible Markup Language. 可扩展标记语言
     + an average markup of 10%. 平均 10% 的加成
-- **bit `/bɪt/` --n.(二进制) 位, 比特; 少量. --adj.很小的; 微不足道的.**
-  **--adv.相当; 有点儿.**
+- **bit `/bɪt/`**   --n.(二进制) 位, 比特; 少量.  --adj.很小的; 微不足道的.  --adv.相当; 有点儿.
     + 1Byte = 8 bit. 1字节 = 8 比特(位)
     + a bit(n) of paper. 纸片
     + come to bits(n) 破成碎片
