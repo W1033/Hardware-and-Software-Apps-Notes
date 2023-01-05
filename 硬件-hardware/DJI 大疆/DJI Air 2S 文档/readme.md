@@ -119,7 +119,11 @@
 
 
 
+## ▲ GNSS 模块是什么？
 
+
+
+## ▲ ATTI 模式
 
 
 
@@ -155,6 +159,9 @@ DJI Fly app 拥有完善的新手教学功能，让你到手即飞。配合DJI A
 
 - SanDisk Extreme 128GB V30 A2 microSDXC 
 - SanDisk Extreme 256GB V30 A2 microSDXC 
+
+
+
 
 
 
