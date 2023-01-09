@@ -1,21 +1,82 @@
 # 软件 Software
 
 
-## Content (内容)
 
-### 1. 使用黑阈激活器激活手机黑阈
 
-(1). 點擊 `設定` --> `關於手機` --> 按 5 下 `版本號碼` 啟動 `開發人員選項`
 
-(2). 點擊 `設定` --> `系統` --> `進階` --> `開發人員選項` --> 打開 `USB 偵錯 (連接 USB 時進入偵錯模式)` -->  往下滑動當前界面找到 `預設 USB 設定` 點擊一下打開後選擇 `檔案轉移`
+## Mac 软件下载网站 (2023.01.09)
 
-### 2. PhpStudy
-#### (2.1) D盘安装完phpstudy后, www 目录下放置需要打开的文件夹: 例如: secondVerson文件夹
-如果想访问 secondVersion 中的 html，直接浏览器中输入: 
-    http://192.168.31.169:80/secondVersion/homepage.html 即可
-    (192...位本机IP，80没phpsuty默认端口，可以更改)
+MacYY网：https://www.macyy.cn/ 
 
-### 3.  potPlayer 快捷键
+这个是我自己做的网站
+
+主打无广告 无后门 简约 快速 ， 有兴趣的小伙伴可以试试看
+
+
+
+**1，appstorrent**
+
+https://appstorrent.ru/
+
+这个需要部分需要魔法上网，默认俄语，需软件内转换，转换后语言是繁体且很多**翻译错误**，且下载速度较慢但资源很多
+
+![img](readme.assets/99a02a487cc17e3ad6a21cabb84b21b5d96a0f1a.png)
+
+
+
+**2，mac-torrent-download**
+
+http://mac-torrent-download.net/
+
+访问速度极慢，在写笔记时无法打开
+
+
+
+**3，xclient**
+
+https://xclient.info/
+
+界面稍微有点混乱，速度有点慢，软件资源多
+
+![img](readme.assets/3b63722ffe80d3f5aef5e2c40f8b89835c69cdf5.png)
+
+
+**4，waitsun**
+
+https://www.waitsun.com/
+
+界面稍微有点混乱，首页大部分是安卓软件
+
+![img](readme.assets/631a66dfab0aecac4c993835bbd1916ec6824a37.png)
+
+
+**5，cmacked**
+
+https://apps.cmacked.com/
+
+网站默认英文，速度快，资源全
+
+![img](readme.assets/7e721cb52dc3e9ac6f0ac6da9de8a4552901deed.png)
+
+
+**6，torrentmac**
+
+https://www.torrentmac.net/
+
+速度快，软件界面比较老，**有广告**，全英文
+
+![img](readme.assets/dabda1caa7d4aecec949a0dcc5c5f019807107f1.png)
+
+
+
+
+
+
+
+
+
+## PotPlayer 快捷键
+
 - 空格：播放/暂停
 - Enter/Alt+Enter：全屏
 - C:加速; x:减速;  z:恢复原速度
