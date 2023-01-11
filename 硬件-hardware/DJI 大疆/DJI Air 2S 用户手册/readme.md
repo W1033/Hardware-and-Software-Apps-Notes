@@ -280,9 +280,22 @@ DJI Air 2S 机身上包含**机头 LED 指示灯**以及**飞行器状态指示�
 | <strong style="color:red; border:1px solid red; border-radius:50%; padding:1px 3px;">红</strong> <span style="color:red;">——</span> | 红灯常亮       | 严重错误                   |
 | <strong style="color:red; border:1px solid red; border-radius:50%; padding:1px 3px;">红</strong> <strong style="color:#bbbb02; border:1px solid #bbbb02; border-radius:50%; padding:1px 3px;">黄</strong> ......    | 红黄灯交替闪烁 | 指南针数据错误，需校准      |
 
-
-
 ### 3. 自动返航
+
+DJI Air 2S 飞行器具备自动返航功能，返航方式主要分为**智能返航**、**智能低电量返航**以及**失控返航**。飞行器成功记录了返航点并且在定位服务良好的情况下，当用户开启智能返航、飞行器低电量触发智能低电量返航、遥控器与飞行器之间失去通讯信号以及图传信号丢失触发失控返航时，飞行器将自动返回返航点并降落。
+
+| 参考信息 |                             GPS                              | 描述                                                         |
+| -------- | :----------------------------------------------------------: | :----------------------------------------------------------- |
+| 返航点   | ![image-20230111220400051](readme.assets/image-20230111220400051.png) | 飞行器开机后，当 GNSS 信号首次显示为强或较强（白色）时，将记录飞行器当前位置为返航点。<br />起飞时，若 GNSS 信号再次达到强或较强时， 将重新记录飞行器当前位置为返航点；<br />若 GNSS 信号不能满足条件，则不会刷新返航点。 |
+
+#### (1) 智能返航
+
+智能返航由用户主动触发，**可长按遥控器智能返航按键** 或 **点击 DJI Fly App 相机界面中的返航图标 ![image-20230111220856680](readme.assets/image-20230111220856680.png)**启动。返航过程中短按遥控器智能返航按键或点击DJI Fly App 相机界面中的停止图标 <span style="color:white; background-color:grey; border-radius:50%; padding:0 4px; vertical-align:middle;">×</span> 可退出返航。退出智能返航后，用户可重新控制飞行器。 
+
+#### (2) 智能低电量返航
+
+#### (3) 失控返航
+
 
 ![image-20230109225324577](readme.assets/image-20230109225324577.png)
 
