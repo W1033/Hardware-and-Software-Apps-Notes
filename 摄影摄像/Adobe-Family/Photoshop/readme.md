@@ -1,4 +1,4 @@
-# PhotoShop 
+# PhotoShop
 
 
 
@@ -6,7 +6,21 @@
 
 
 
-## 生词(New Words)
+
+
+## ▲ 如何在 PS 中画透明矩形
+
+选中圆角矩形后，设置如下图：
+- 选择工具模式：**形状**
+- 填充：无
+- 描边：即前景色
+- 描边的宽度：3px, 若修改数值后直接按 enter 键就会及时变更。
+
+填充完毕之后，按下 `Command + Enter` 退出自由变换状态，然后按下 `Esc` 或 `Command + D` 键去除虚边线。 
+
+![image-20230207205221142](readme.assets/image-20230207205221142.png)
+
+
 
 
 
@@ -24,7 +38,11 @@
 - [<span class="m">147 Colors <span class="p">| CSS Color Names](http://www.colors.commutercreative.com/grid/)
 
 
+
+
+
 ## ◆ PS `矩形选框工具(M)` 怎么填充颜色
+
 在工具栏的 选框工具 上右键, 可以看到其包含:
 + 矩形选框工具
 + 椭圆选框工具
@@ -41,7 +59,7 @@
 
 
 ## ◆ PS 绘制多条等间距的直线/矩形
-tip: Mac 几个重要的快捷键
+Mac 几个重要的快捷键
 + `⌘` == Command
 + `⇧` == Shift
 + `⌥` == Alt/Option
@@ -105,8 +123,6 @@ tip: Mac 几个重要的快捷键
 
 ## ▲ Photoshop 智能选择主体对象的两种方法
 
-
-
 ### 技能说明
 
 从Photoshop CC 2018 版本开始增加了基于人工智能技术的抠图工具和命令，包括【对象选择工具】和【选择主体】命令。使用这些工具和命令可以轻松且快速地选中场景中的人物、物等对象。
@@ -131,7 +147,7 @@ tip: Mac 几个重要的快捷键
 
 ![img](readme.assets/v2-c1b81a1db9f957a5cec0dac33c8eda48_720w.jpg)
 
-**Step04**：释放鼠标后，创建选区并选择选框内的对象，如下图所示。
+**Step04**：释放鼠标后，**创建选区并选择选框内的对象**，如下图所示。（Q: 这个如何实现的？）
 
 ![img](readme.assets/v2-bc42582917501b11d109bc2a34f68221_720w.jpg)
 
