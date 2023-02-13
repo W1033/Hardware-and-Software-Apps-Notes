@@ -4,7 +4,7 @@
 
 ## ▲ DaVinci Resolve 官网书籍和教程
 
-
+> 官网地址：https://www.blackmagicdesign.com/cn/products/davinciresolve/training
 
 ### 《DaVinci Resolve 17 初学者指南》
 
