@@ -2,6 +2,16 @@
 
 
 
+
+<p style="background-color:#fdeed6; border-radius:6px; padding:20px;"><strong style="color:#f79c21;">提示：</strong>xxxxx。</p>
+
+
+
+<p style="background-color:#f9e2d2; border-radius:6px; padding:20px;"><strong style="color:#dd5a2b;">备注：</strong>xxxx。</p>
+
+
+
+
 ## ▲ DaVinci Resolve 官网书籍和教程
 
 > 官网地址：https://www.blackmagicdesign.com/cn/products/davinciresolve/training
