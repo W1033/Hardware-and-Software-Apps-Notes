@@ -305,7 +305,7 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 
 ### 1.3 组合音频片段 
 
-==1.1 和 1.2 算是熟悉 "快编界面"，现在正式开始剪辑==
+==1.1 和 1.2 算是熟悉 "快编界面"，现在正式开始学习剪辑==
 
 此剪辑的目的是为户外时尚品牌 Organ Mountain Outfitters 创建 1 条时长 1 分钟的视频。客户为我们提供了一系列素材片段，内容大体为穿着时尚的年轻人享受户外生活，顾客在品牌零售店购物，公司创始人 Chris Lang 的一小段访谈，一小段音乐和一个 PNG 格式的公司 logo 图片。
 
@@ -316,9 +316,9 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 
 #### (2) 为时间线命名并查看时间线
 
-![image-20230217145417778](readme.assets/image-20230217145417778.png)
+<img src="readme.assets/image-20230217203532941.png" alt="image-20230217203532941" style="zoom:67%;" />
 
-![image-20230217151157307](readme.assets/image-20230217151157307.png)
+![image-20230217203559107](readme.assets/image-20230217203559107.png)
 
 系统新建 1 条“时间线”，“时间线”左侧面板上显示了一些控制按钮。
 
@@ -333,7 +333,38 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 
 #### (4) 确保 "检视器" 的红色 "播放头" 处于访谈片段的开头位置
 
+![image-20230217204248581](readme.assets/image-20230217204248581.png)
 
+#### (5) 播放第一个片段，听听 Chris 的同期声。
+这段内容是Chris本人和公司的简介，以及他们如何专注于支持本地社区。最后您可能会发现这段内容太长了，但剪辑工作才刚刚开始，这样已经不错了!
+
+> ### D A 002_01359092.mov
+>
+> Ask: So tell me about yourself and where we are, sorry.
+>  
+>Chris: My name is Chris Lang, and I'm the founder of Organ`/ˈɔːrɡən/` Mountain Outfitters. We are located in our store and Las Cruces, New Mexico. (新墨西哥州的拉斯克鲁塞斯)
+> 
+>  Ask: What is Organ mountain outfitters?
+>
+> Chris: Organ mountain outfitters is a lifestyle and outdoor brand, that not only for most outdoors but also gives back at the same time to the communities we live in, with every purchase.  We donated lunch to local schools and we donated over 100,000 lunches so far. 
+>  
+>Ask: That's awesome.
+
+#### (6) 媒体池 - 附加编辑按钮
+确保 "播放头" 仍位于源磁带中的第 1 个片段之上，而后单击 "媒体池" 面板底部的 `附加 (Append)` 编辑按钮。
+
+![image-20230217220653207](readme.assets/image-20230217220653207.png)
+
+Added: "媒体池" 面板底部的按钮介绍：
+
+| 图标                                                         | 中文名     | 英文名           | 解释                                                         |
+| ------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------------------------ |
+| ![image-20230211201539839_24](readme.assets/image-20230211201539839_24.jpg) | 智能插入   | Smart Insert     |                                                              |
+| ![image-20230211201539839_25](readme.assets/image-20230211201539839_25.jpg) | 附加       | Append           | 把素材片段添加到时间线                                       |
+| ![image-20230211201539839_26](readme.assets/image-20230211201539839_26.jpg) | 波纹覆盖   | Ripple Overwrite | ※ ripple `/ˈrɪpl/`<br />- n. 波纹；涟漪。<br/>- v.（使）起涟漪；发出潺潺声。 <br />※ overwrite`/ˌovɚ'raɪt/` n.覆盖；重写。 |
+| ![image-20230211201539839_27](readme.assets/image-20230211201539839_27.jpg) | 特写       | Close Up         |                                                              |
+| ![image-20230211201539839_28](readme.assets/image-20230211201539839_28.jpg) | 叠加       | Place on Top     | ※ place `/pleɪs/`<br />- n. 地方，场所。<br />- vt.放置，安排。 |
+| ![image-20230211201539839_29](readme.assets/image-20230211201539839_29.jpg) | 源媒体覆盖 | Source Overwrite |                                                              |
 
 ### 1.4 精修 "时间线" 上的片段
 
@@ -446,17 +477,3 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 ## ▲ 14. 交付最终项目
 
 ## ▲ 15. 管理媒体文件和数据库
-
-初识“快编页面”
-
-使用“源磁带模式”检视片段
-
-组合音频片段
-
-精修“时间线”上的片段
-
-更改片段顺序
-
-添加 B—Roll
-
-智能插入
