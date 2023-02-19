@@ -18,7 +18,7 @@
 
 ### 《DaVinci Resolve 17 初学者指南》
 
-![The Beginner's Guide to DaVinci Resolve 17](ReadMe.assets/the-beginners-guide-to-davinci-resolve-17-cn.jpg)
+![The Beginner's Guide to DaVinci Resolve 17](README.assets/the-beginners-guide-to-davinci-resolve-17-cn.jpg)
 
 这是一本循序渐进的培训指南，涵盖了全新革命性快编页面上的高速剪辑功能，该功能专为时间紧迫的工作而设计。内容还包括如何使用传统剪辑页面处理复杂性更高的项目，以及如何使用 DaVinci Resolve 出色的校色、Fusion 视觉特效和 FairlightFX 音频工具，学成后即可立即开始创建自己的好莱坞级影视作品！
 
@@ -28,7 +28,7 @@
 
 ### DaVinci Resolve 17 剪辑师指南
 
-<img src="ReadMe.assets/the-editors-guide-to-davinci-resolve-17-cn.jpg" alt="The Editor’s Guide to DaVinci Resolve 17" style="zoom:67%;" />
+<img src="README.assets/the-editors-guide-to-davinci-resolve-17-cn.jpg" alt="The Editor’s Guide to DaVinci Resolve 17" style="zoom:67%;" />
 
 本书以实操课程的形式，教授了如何在剪辑页面和快编页面剪切访谈节目、戏剧场景、纪录片内容或是 MV 音乐视频，并介绍了如何使用 DaVinci Resolve Speed Editor。您将学会如何构建精彩特效、进行混音以及为在线发布、广播电视或流媒体服务交付最终影片。
 
@@ -42,7 +42,7 @@
 
 ### DaVinci Resolve 17 Fairlight 音频指南
 
-<img src="ReadMe.assets/the-fairlight-audio-guide-to-davinci-resolve-17-cn.jpg" alt="The Fairlight Audio Guide to DaVinci Resolve 17" style="zoom:67%;" />
+<img src="README.assets/the-fairlight-audio-guide-to-davinci-resolve-17-cn.jpg" alt="The Fairlight Audio Guide to DaVinci Resolve 17" style="zoom:67%;" />
 
 
 这本实用培训指南旨在向用户教授声音剪辑、美化、录制、混合和母版制作的技巧。本书的课程划分条理清晰，不仅适合刚入行的音频剪辑师和音频助理学习和使用，还适合经验丰富的专业人士快速掌握 Fairlight 的各项易用工具，打造出精彩的声音效果。
@@ -60,7 +60,7 @@
 
 ### DaVinci Resolve 17 调色师指南
 
-<img src="ReadMe.assets/the-colorist-guide-to-davinci-resolve-17-cn.jpg" alt="The Colorist Guide to DaVinci Resolve 17" style="zoom: 67%;" />
+<img src="README.assets/the-colorist-guide-to-davinci-resolve-17-cn.jpg" alt="The Colorist Guide to DaVinci Resolve 17" style="zoom: 67%;" />
 
 这本 Blackmagic Design 官方实用培训指南通过一系列实战练习和详细介绍，让用户学会如何使用 DaVinci Resolve 的调色工具。您将学会各种不同的工作流程、特效和工具，为打造好莱坞水准的优秀作品奠定坚实基础。
 
@@ -76,7 +76,7 @@
 
 ### DaVinci Resolve 17 视觉特效指南
 
-![The Visual Effects Guide to DaVinci Resolve 17](ReadMe.assets/the-visual-effects-guide-to-davinci-resolve-17-cn-1675746979264-47.jpg)
+![The Visual Effects Guide to DaVinci Resolve 17](README.assets/the-visual-effects-guide-to-davinci-resolve-17-cn-1675746979264-47.jpg)
 
 本书以实操课程的形式，教授如何使用 DaVinci Resolve 直接创建视觉特效和动态图形，无需在不同应用程序之间导入或导出大型媒体文件；并且介绍其节点式界面如何将工作流程化繁为简，快速实现各项更改。
 
