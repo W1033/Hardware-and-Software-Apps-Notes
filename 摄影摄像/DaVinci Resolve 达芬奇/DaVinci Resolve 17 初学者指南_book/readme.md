@@ -85,6 +85,7 @@ Blackmagic Design 出版了一系列培训书籍，旨在提升学员的 DaVinci
 单击位于“音频表”面板下方的“`调整时间线大小 (Resize Timeline)`”按钮，并向下拖拽，放大“媒体池”和“检视器”面板。<img src="readme.assets/image-20230211193338056.png" alt="image-20230211193338056" style="zoom:67%;" />
 
 #### (5) 媒体池 - 导入媒体文件夹 按钮
+
 在新建项目后，请使用“媒体池”面板左上角的按钮将所需片段导入“媒体池”。
 
 在“媒体池”面板左上角点击 `导入媒体文件夹 (Import Media Folder)` 按钮。
