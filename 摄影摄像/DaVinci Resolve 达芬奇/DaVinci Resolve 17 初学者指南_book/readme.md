@@ -341,17 +341,30 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 ##### (5) 播放第一个片段，听听 Chris 的同期声。
 这段内容是Chris本人和公司的简介，以及他们如何专注于支持本地社区。最后您可能会发现这段内容太长了，但剪辑工作才刚刚开始，这样已经不错了!
 
-> **D A 002_01359092.mov**
+> ### D A 002_01359092.mov
 >
-> Ask: So tell me about yourself and where we are, sorry.
->  
->Chris: My name is Chris Lang, and I'm the founder of Organ`/ˈɔːrɡən/` Mountain Outfitters. We are located in our store and Las Cruces, New Mexico. (新墨西哥州的拉斯克鲁塞斯)
+> Ask: So tell me about yourself and where we are, sir.
+>
+> Chris: My name is Chris Lang, and I'm the founder of Organ`/ˈɔːrɡən/` Mountain Outfitters. We are located in our store in Las Cruces, New Mexico.
+>
+> Ask: What is Organ mountain outfitters?
+>
+> Chris: Organ mountain outfitters is a lifestyle and outdoor brand that not only promotes outdoors but also gives back at the same time to our communities that we live in. and so with every purchase we donated`/ˈdoʊneɪt/` lunch to local schools and we donated over a 100,000 lunches so far. 
+>
+> Ask: That's awesome.
+>
 > 
->  Ask: What is Organ mountain outfitters?
 >
-> Chris: Organ mountain outfitters is a lifestyle and outdoor brand, that not only for most outdoors but also gives back at the same time to the communities we live in, with every purchase.  We donated lunch to local schools and we donated over 100,000 lunches so far. 
->  
->Ask: That's awesome.
+> 问：那么，请告诉我你的情况和我们的位置，先生。
+>
+> Chris：我叫 Chris Lang，是 Organ Mountain Outfitters 的创始人。 我们位于新墨西哥州拉斯克鲁塞斯的商店。 (新墨西哥州的拉斯克鲁塞斯)
+>
+> 问：什么是风琴山户外用品？
+>
+> Chris：Organ mountain outfitters 是一个生活方式和户外品牌，它不仅推广户外活动，同时还回馈我们居住的社区。因此，每次购买时，我们都会向当地学校捐赠午餐，我们已经捐赠超过 到目前为止有 100,000 份午餐。
+>
+> 问：那太棒了。
+
 
 ##### (6) 媒体池 - 附加编辑按钮
 确保 "播放头" 仍位于源磁带中的第 1 个片段之上，而后单击 "媒体池" 面板底部的 `附加 (Append)` 编辑按钮。
@@ -373,7 +386,8 @@ Added: "媒体池" 面板底部的按钮介绍：
 #### 1.3.2 添加更多音频片段
 您已经为观众初步介绍了 Chris 和 Organ Mountain Outfitters 公司，现在需要进一步介绍 Chris 的愿景。
 
-##### (1) 打开第 4 个访谈片段 
+##### (1) 打开第 4 个访谈片段
+
 将 "播放头" 移动到 "访谈" 媒体夹中的第 4 个访谈片段的开头
 
 ![image-20230228165300410](readme.assets/image-20230228165300410.png)
@@ -383,7 +397,11 @@ Added: "媒体池" 面板底部的按钮介绍：
 ##### (2) 播放第 4 个访谈片段
 播放此片段，直到 Chris 说，"We want people to experience the Southwest...（我们想让人们体会到西南部的生活...）"
 
-
+> ### D A 008_01419786.mov
+>
+> We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally ever experienced, whether it's the community, the culture, the food, or the landscapes. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and our brand is just really a reflection of our community and who we are, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? the only way to do that is to experience it, and that's why we say experience the southwest.
+>
+> 我们希望人们体验南方，因为它是如此独特。 无论是社区、文化、食物还是风景，我个人所经历过的都比不上它。 但我可以诚实地说，它改变了我的生活，它给了我一个家庭，这是我成长过程中没有的。 对我来说，这真的很特别，真的很独特。 我们的品牌实际上反映了我们的社区和我们是谁，这就是我们前进的原因。 我们真的在鼓励人们不仅要到户外去，还要同时回来。 那么我们如何体现这一点呢？ 唯一的方法就是去体验它，这就是为什么我们说体验西南。
 
 ### 1.4 精修 "时间线" 上的片段
 
@@ -496,3 +514,145 @@ Added: "媒体池" 面板底部的按钮介绍：
 ## ▲ 14. 交付最终项目
 
 ## ▲ 15. 管理媒体文件和数据库
+
+
+
+
+
+# 视频转文字
+
+## ▲ Lesson01
+### ▲ INTERVIEWS
+#### D A 002_01359092.mov
+见：1.3.1 ()
+
+#### D A 005_01371421.mov
+
+百度转：
+
+> and.so what inspires all your designs?and really being on the road visiting these places and capturing their beauty with our cameras and also designed inspirations sketching out you.you know,in the field it really kind of.i don't know you'd like you have to experience things for you to truly.to be able to tell that story and so it's not just the landscapes but the salts of the people that we meet on the road,whether it's through instagram or social,media and.and being able to connect and hear their stories and tell our stories and.that that's what really inspires US. and we take that inspiration,and we bring it back to the store and,that's really where the design process starts nbsp.uh,so how did you feel about that that s great? yes.
+
+讯飞转：
+
+> 说话人1 00:34
+>  What inspires all your designs and your products。
+>
+> 说话人2 00:41
+>  really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration, sketching out in the field. It really kind of, I don't know you like you have to experience things for you to truly be able to tell that story.
+>
+> 
+>  And so it's not just a landscape, but assault of people that we meet on the road, whether through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration and we bring it back to the store. And that's really where the design process starts.
+>
+> 说话人1 01:25
+>  So how do you care about that one? That's great. 
+
+
+
+#### D A 006_01397420.mov
+
+百度转：
+
+> to get back to the community,so can you tell me a little bit about?so what really makes this unique is the whole motto of how we started it.which is by a sure give a lunch change or community.here,indi ona county twenty five percent of arc hui nd I lives in poverty,and I grew up in poverty and I understand what it's like to be a child.um in the lunch line and not having your Bill paid,and so it.as a child,there's nothing you can do. I mean it,you're,you're a child,so what we really want to do as a company is take that burden off those families who are struggling to pay their lunch balance and,so what we've done.
+>
+> is with every purchase we donated lunch to the local public schools here.and to date we've donated over a hundred thousand lunches,so the whole motto bia sur give a lunch change of community has really been inspirational.um,not only to our community but to us as well,because now we're in a position like can we duplicate this and this fault. we're going to be opening a store in albuquerque.and we've already donated a thousand dollars,which is two thousand five hundred lunches to just based on online sales that we've had up there and.we're really,really looking forward to the future.so。
+
+讯飞转：
+
+> How you kind of get back to the community. 
+>
+> So can you tell me a little bit about where that started from?
+>
+> 说话人2 01:40
+>  So what really makes this unique is the whole motto of how we started, which is buy a shirt, give a lunch, change your community. Here in Donna county, 25 % of our community lives in poverty. And I grew up in poverty and I understand what it's like to be a child in the lunch line and not having your bill paid. And so as a child, there's nothing you can do. I you're a child. So what we really want to do as a company is take that burden off those families who are struggling to pay their lunch balance.
+>
+> 
+>  And so what we've done is with every purchase, we donate a lunch to the local public schools here. To date, we've donated over 100,000 lunches. So the whole motto buy a shirt, give a lunch changer community has really been inspirational, not only to our community, but to us as well, because now we're in a position like, can we duplicate this?
+>
+>
+>  This fault, we're going to be opening a store in Albuquerque and we've already donated $1,000, which is 2,500 lunches to just based on online sales that we've had up there. We're really looking forward to the future.
+
+
+
+#### D A 008_01419786.mov
+
+见：1.3.2
+
+
+
+#### F A 002_01359221.mov
+
+
+
+#### FA 005_01371396.mov
+
+百度云转：
+
+> 
+
+讯飞转：
+
+> 说话人1 04:12
+>  Hello. What inspires all your designs and your products。
+>
+> 说话人2 04:21
+>
+>  really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration, sketching out in the field. It really kind of, I don't know you like you have to experience things for you to truly be able to tell that story.
+>
+>
+> And so it's not just a landscape, but assault of people that we meet on the road, whether through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration and we bring it back to the store. And that's really where the design process starts.
+
+
+
+#### FA 006_01397398.mov
+
+讯飞转：
+
+> 说话人1 05:05
+>  Right? And how you kind of get back to the community. So can you tell me a little bit about where that started from?
+>
+> 说话人2 05:13
+>  What really makes this unique is the whole motto of how we started, which is buy a shirt, give a lunch, change our community. Here in Donna county, 25 % of our community lives in poverty. I grew up in poverty and I understand what it's like to be a child in the lunch line and not having your bill paid. And so as a child, there's nothing you can do. I you're a child. So what we really want to do as a company is take that burden off those families who are struggling to pay their lunch balance.
+>
+>
+> 
+>  And so what we've done is with every purchase, we donate a lunch to the local public schools here. To date, we've donated over 100,000 lunches. So the whole model buy a shirt, give a lunch changer community has really been inspirational, not only to our community, but to us as well, because now we're in a position like, can we duplicate this?
+>
+>
+>  This fall we're going to be opening a store in Albuquerque and we've already donated $1,000, which is 2,500 lunches to just based on online sales that we've had up there and we're really looking forward to the future.
+
+
+
+#### FA 008_01420149.mov
+
+讯飞转：
+
+>
+>  So. but I can honestly say it's changed my life. And it's given me a family in a way that I didn't have growing up. And to me, that's really special, that's really unique. And our brand is just really a reflection of our community and who we are. And so that's why as we're going forward, we're really encouraging people to not only get outdoors, but to also get back at the same time. And so how do we embody that? And the only way to do that is to experience it. And that's why we say experience the southwest.
+
+
+
+
+
+
+
+## ▲ Lesson02
+
+
+
+## ▲ Lesson03
+
+
+
+## ▲ Lesson04
+
+
+
+## ▲ Lesson05
+
+
+
+## ▲ Lesson06
+
+
+
+## ▲ Lesson07

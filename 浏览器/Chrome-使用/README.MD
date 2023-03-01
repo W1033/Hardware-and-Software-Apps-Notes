@@ -21,8 +21,8 @@ Mac Chrome 调出控制台的快捷键: `fn` + `F12`
     style="border-radius: 4px; width: 76%;
         box-shadow: 1px 1px 3px 2px #e5e5e5">
 
-
 ### 2. Chrome 中长截图
+
 按 `F12`(Win) / `command + option + i`(Mac) 打开控制台, 接着按下
 `Ctrl+Shift+P`(Win) / `Command + Shift + P`(Mac), 这时会出现一个搜索框,
 输入 "Capture full size screenshot", 回车就可以自动截取整个网页内容并自动下载到本地.
