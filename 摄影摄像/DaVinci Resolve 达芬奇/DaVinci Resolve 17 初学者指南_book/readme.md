@@ -225,7 +225,7 @@ DaVinci Resolve 会将所有媒体文件导入“媒体池”，文件系统中�
 > ### 检视器按钮集合
 >
 > | 图标 | 中文名                    | 英文名                       | 快捷键 | 解释                                                         |
-> | ---- | ------------------------- | ---------------------------- | ------ | ------------------------------------------------------------ |
+> | :--: | :-----------------------: | :--------------------------: | :----: | ------------------------------------------------------------ |
 > | ![image-20230303152912518](readme.assets/image-20230303152912518.png) | 停止 | Stop                         |        |                                                              |
 > | ![image-20230303152922383](readme.assets/image-20230303152922383.png) | 播放 | Play                         |        |                                                              |
 > | ![image-20230303152932463](readme.assets/image-20230303152932463.png) | 倒放 | Play Reverse                 |        |                                                              |
@@ -238,17 +238,17 @@ DaVinci Resolve 会将所有媒体文件导入“媒体池”，文件系统中�
 >
 > ### 工具键包含的子功能
 >
-> | 图标（选中状态）                                             | 中文名   | 英文名 | 快捷键 | 解释 |
-> | ------------------------------------------------------------ | -------- | ------ | ------ | ---- |
-> | ![image-20230303154114887](readme.assets/image-20230303154114887.png) | 变换     |        |        |      |
-> | ![image-20230303154123473](readme.assets/image-20230303154123473.png) | 裁切     |        |        |      |
+> |                       图标（选中状态）                       |  中文名  | 英文名 | 快捷键 | 解释 |
+> | :----------------------------------------------------------: | :------: | :----: | :----: | ---- |
+> | ![image-20230303154114887](readme.assets/image-20230303154114887.png) |   变换   |        |        |      |
+> | ![image-20230303154123473](readme.assets/image-20230303154123473.png) |   裁切   |        |        |      |
 > | ![image-20230303154134216](readme.assets/image-20230303154134216.png) | 动态缩放 |        |        |      |
-> | ![image-20230303154147623](readme.assets/image-20230303154147623.png) | 合成     |        |        |      |
-> | ![image-20230303154207024](readme.assets/image-20230303154207024.png) | 变速     |        |        |      |
-> | ![image-20230303154236848](readme.assets/image-20230303154236848.png) | 稳定     |        |        |      |
+> | ![image-20230303154147623](readme.assets/image-20230303154147623.png) |   合成   |        |        |      |
+> | ![image-20230303154207024](readme.assets/image-20230303154207024.png) |   变速   |        |        |      |
+> | ![image-20230303154236848](readme.assets/image-20230303154236848.png) |   稳定   |        |        |      |
 > | ![image-20230303154303559](readme.assets/image-20230303154303559.png) | 镜头矫正 |        |        |      |
-> | ![image-20230303154321920](readme.assets/image-20230303154321920.png) | 颜色     |        |        |      |
-> | ![image-20230303154334993](readme.assets/image-20230303154334993.png) | 音频     |        |        |      |
+> | ![image-20230303154321920](readme.assets/image-20230303154321920.png) |   颜色   |        |        |      |
+> | ![image-20230303154334993](readme.assets/image-20230303154334993.png) |   音频   |        |        |      |
 > |                                                              |          |        |        |      |
 
 “快速预览”模式将依次播放所有片段，并根据片段时长自动调整播放速度。较长的片段播放速度快，较短的片段播放速度慢，因此在“快速预览”模式下，每个片段的实际播放时长相等。这样，您可以方便地在较短时间内检视所有新素材。在素材检视完成后，您通常已经找到了剪辑思路和一些高光镜头了，此时您就可以信心满满地在“时间线”上开始宣传片剪辑了。
@@ -288,12 +288,12 @@ DaVinci Resolve 会将所有媒体文件导入“媒体池”，文件系统中�
 
 Added: 上图媒体池右上角的不同视图按钮：
 
-| 图标                                                         | 中文名     | 英文名         | 解释                                                         |
-| ------------------------------------------------------------ | ---------- | -------------- | ------------------------------------------------------------ |
+|                             图标                             |   中文名   |     英文名     | 解释                                                         |
+| :----------------------------------------------------------: | :--------: | :------------: | ------------------------------------------------------------ |
 | ![image-20230211201539839_10](readme.assets/image-20230211201539839_10.jpg) | 元数据视图 | Metadata View  | ※ metadata`ˈ/metədeɪtə/` n.元数据。<br />                    |
 | ![image-20230211201539839_11](readme.assets/image-20230211201539839_11.jpg) | 缩略图视图 | Thumbnail View | ※ thumbnail `/ˈθʌmneɪl/`<br />- n.拇指甲；(计算机)缩略图。<br/>- adj.极小的；简略的描述。<br /> |
-| ![image-20230211201539839_12](readme.assets/image-20230211201539839_12.jpg) | 条带视图   | Strip View     | ※ strip`/strɪp/`<br />- n.带；条状；脱衣舞。<br/>- vt.剥去；剥夺；脱去衣服。 |
-| ![image-20230211201539839_13](readme.assets/image-20230211201539839_13.jpg) | 列表视图   | List View      |                                                              |
+| ![image-20230211201539839_12](readme.assets/image-20230211201539839_12.jpg) |  条带视图  |   Strip View   | ※ strip`/strɪp/`<br />- n.带；条状；脱衣舞。<br/>- vt.剥去；剥夺；脱去衣服。 |
+| ![image-20230211201539839_13](readme.assets/image-20230211201539839_13.jpg) |  列表视图  |   List View    |                                                              |
 
 ##### (3) 显示 "访谈媒体夹 (Interviews)" 中的片段
 单击“媒体夹列表”，并选中“访谈媒体夹”。
@@ -402,14 +402,14 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 
 Added: "媒体池" 面板底部的按钮介绍：
 
-| 图标                                                         | 中文名     | 英文名           | l快捷键 | 解释                                                         |
-| ------------------------------------------------------------ | ---------- | ---------------- | ------- | ------------------------------------------------------------ |
-| ![image-20230211201539839_24](readme.assets/image-20230211201539839_24.jpg) | 智能插入   | Smart Insert     |         |                                                              |
-| ![image-20230211201539839_25](readme.assets/image-20230211201539839_25.jpg) | 附加       | Append           |         | 把素材片段添加到时间线                                       |
-| ![image-20230211201539839_26](readme.assets/image-20230211201539839_26.jpg) | 波纹覆盖   | Ripple Overwrite |         | ※ ripple `/ˈrɪpl/`<br />- n. 波纹；涟漪。<br/>- v.（使）起涟漪；发出潺潺声。 <br />※ overwrite`/ˌovɚ'raɪt/` n.覆盖；重写。 |
-| ![image-20230211201539839_27](readme.assets/image-20230211201539839_27.jpg) | 特写       | Close Up         |         |                                                              |
-| ![image-20230211201539839_28](readme.assets/image-20230211201539839_28.jpg) | 叠加       | Place on Top     |         | ※ place `/pleɪs/`<br />- n. 地方，场所。<br />- vt.放置，安排。 |
-| ![image-20230211201539839_29](readme.assets/image-20230211201539839_29.jpg) | 源媒体覆盖 | Source Overwrite |         |                                                              |
+|                             图标                             |   中文名   |      英文名      |    快捷键     | 解释                                                         |
+| :----------------------------------------------------------: | :--------: | :--------------: | :-----------: | ------------------------------------------------------------ |
+| ![image-20230211201539839_24](readme.assets/image-20230211201539839_24.jpg) |  智能插入  |   Smart Insert   |               |                                                              |
+| ![image-20230211201539839_25](readme.assets/image-20230211201539839_25.jpg) |    附加    |      Append      | `Shift + F12` | 把素材片段添加到时间线                                       |
+| ![image-20230211201539839_26](readme.assets/image-20230211201539839_26.jpg) |  波纹覆盖  | Ripple Overwrite |               | ※ ripple `/ˈrɪpl/`<br />- n. 波纹；涟漪。<br/>- v.（使）起涟漪；发出潺潺声。 <br />※ overwrite`/ˌovɚ'raɪt/` n.覆盖；重写。 |
+| ![image-20230211201539839_27](readme.assets/image-20230211201539839_27.jpg) |    特写    |     Close Up     |               |                                                              |
+| ![image-20230211201539839_28](readme.assets/image-20230211201539839_28.jpg) |    叠加    |   Place on Top   |               | ※ place `/pleɪs/`<br />- n. 地方，场所。<br />- vt.放置，安排。 |
+| ![image-20230211201539839_29](readme.assets/image-20230211201539839_29.jpg) | 源媒体覆盖 | Source Overwrite |               |                                                              |
 
 
 #### 1.3.2 添加更多音频片段
@@ -417,9 +417,9 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 ##### (1) 打开第 4 个访谈片段
 
-将 "播放头" 移动到 "访谈" 媒体夹中的第 4 个访谈片段的开头
+将 "播放头" 移动到 "访谈" 媒体夹中的第 4 个访谈片段的开头：
 
-![image-20230228165300410](readme.assets/image-20230228165300410.png)
+![image-20230303161655284](readme.assets/image-20230303161655284.png)
 
 <p style="background-color:#fdeed6; border-radius:6px; padding:20px;"><strong style="color:#f79c21;">提示：</strong>您可以使用键盘上的上下箭头键在“源磁带检视器”中跳转至前一个或下一个片段的起始位置。</p>
 
@@ -430,7 +430,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 > ### D A 008_01419786.mov
 >
-> We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally`/ˈpɜːrsənəli/` ever experienced, whether it's the community, the culture, the food, or the landscapes. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and our brand is just really a reflection of our community and who we are, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? the only way to do that is to experience it, and that's why we say experience the southwest.
+> **We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally`/ˈpɜːrsənəli/` ever experienced, whether it's the community, the culture, the food, or the landscapes**. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and **our brand is just really a reflection of our community`/kəˈmjuːnəti/` and who we are**, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? the only way to do that is to experience it, and that's why we say experience the southwest.
 >
 > 我们希望人们体验南方，因为它是如此独特。 无论是社区、文化、食物还是风景，我个人所经历过的都比不上它。 但我可以诚实地说，它改变了我的生活，它给了我一个家庭，这是我成长过程中没有的。 对我来说，这真的很特别，真的很独特。 我们的品牌实际上反映了我们的社区和我们是谁，这就是我们前进的原因。 我们真的在鼓励人们不仅要到户外去，还要同时回来。 那么我们如何体现这一点呢？ 唯一的方法就是去体验它，这就是为什么我们说体验西南。
 
@@ -443,12 +443,24 @@ Added: "媒体池" 面板底部的按钮介绍：
 ##### (5) 主时间线添加第 2 个片段的出点
 单击字母 `O` 键，在此处添加 1 个出点。
 
-##### (6) 单击 `附加(Append)` 编辑按钮添加片段到时间线
-##### (7)
-##### (8)
-##### (0)
-##### (10)
-##### (11)
+##### (6) 单击 附加(Append) 按钮添加片段到时间线
+
+##### (7) 在主时间线添加第 3 个片段的入点
+
+继续播放源磁带中的访谈内容，并在 Chris 刚好说出 "Our brand is really a reflection of...（我们的品牌主要体现了...）" 这句话之前打 1 个入点。
+
+##### (8) 主时间线添加第 3 个片段的出点
+
+并在他说完 "...and who we are.（自我认同。）" 时打 1 个出点
+
+##### (9) 单击 "附加" 按钮把第 3 个片段添加到主时间线
+
+##### (10) 添加第 4 个片段到主时间线
+继续播放访谈片段，在 Chris 说 "The only way to do that...（唯一的方式就是...）" 之前打 1 个入点，并在他说完这句话之后和眨眼之前打 1 个出点。再执行 1 次 "附加" 编辑。(把此片段加入到主时间线)
+
+##### (11) 添加第 5 个片段到主时间线
+在 "源磁带检视器" 中，移动到第 2 个访谈片段。正向播放此片段，并在 Chris 说“ That ’ s really
+what inspires us …. （这真正激励了我们……）”之前打 1 个入点。
 ##### (12)
 ##### (13)
 
@@ -636,21 +648,29 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 #### FA 005_01371396.mov
 
-百度云转：
+确认版本：
 
+> Q: Hello. What inspires all your designs and your products?
+>
+> A: Really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration sketching out.
+>
+> You know,  in the field, It really kind of. I don't know if you'd like to have to experience things for you to truly. To be able to tell that story, and so it's not just a landscape but saws of people that we meet on the road, whether it's through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration, and we bring it back to the store. And that's really where the design process starts.
+>
+> Q: so how did you feel about that?
+>
+> A：That's great. yes.
+>
 > 
-
-讯飞转：
-
-> 说话人1 04:12
->  Hello. What inspires all your designs and your products。
 >
-> 说话人2 04:21
+> 问：您好。 是什么激发了您所有的设计和产品？
 >
->  really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration, sketching out in the field. It really kind of, I don't know you like you have to experience things for you to truly be able to tell that story.
+> A：真正在路上，走访这些地方，用我们的相机捕捉它们的美，同时也将设计灵感勾画出来。
 >
+> 你知道，在这个领域，它真的有点。 我不知道你是否愿意为你真实地体验一些事情。 能够讲述这个故事，所以这不仅仅是风景，还有我们在路上遇到的人，无论是通过 Instagram 还是社交媒体，并且能够联系并听到他们的故事并讲述我们的故事。 这才是真正激励我们的。 我们汲取灵感，并将其带回商店。 这才是设计过程真正开始的地方。
 >
-> And so it's not just a landscape, but assault of people that we meet on the road, whether through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration and we bring it back to the store. And that's really where the design process starts.
+> 问：那你感觉如何？
+>
+> 答：是的。
 
 
 
