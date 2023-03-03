@@ -222,6 +222,35 @@ DaVinci Resolve 会将所有媒体文件导入“媒体池”，文件系统中�
 
 单击“快速预览”按钮开始快速预览播放。
 
+> ### 检视器按钮集合
+>
+> | 图标 | 中文名                    | 英文名                       | 快捷键 | 解释                                                         |
+> | ---- | ------------------------- | ---------------------------- | ------ | ------------------------------------------------------------ |
+> | ![image-20230303152912518](readme.assets/image-20230303152912518.png) | 停止 | Stop                         |        |                                                              |
+> | ![image-20230303152922383](readme.assets/image-20230303152922383.png) | 播放 | Play                         |        |                                                              |
+> | ![image-20230303152932463](readme.assets/image-20230303152932463.png) | 倒放 | Play Reverse                 |        |                                                              |
+> | ![image-20230303152948176](readme.assets/image-20230303152948176.png) | 跳到尾帧 / 跳到下一个片段     | Go To xxxx / Go To Next Clip |        | 源片段模式下为：跳到尾帧 ()<br/>源磁带模式下为：跳到下个片段 (Go To Next Clip) |
+> | ![image-20230303153004880](readme.assets/image-20230303153004880.png) | 跳到首帧 / 跳到上一个片段     |                              |        |                                                              |
+> | ![image-20230303153150329](readme.assets/image-20230303153150329.png) | 循环 |  | | |
+> | ![image-20230303153212753](readme.assets/image-20230303153212753.png) | 慢搜轮 | Jog Wheel | | |
+> | ![image-20230303153111823](readme.assets/image-20230303153111823.png) | 工具 | Tool | | |
+> | ![image-20230303153026392](readme.assets/image-20230303153026392.png) | 快速预览 | Fast Review |        |                                                              |
+>
+> ### 工具键包含的子功能
+>
+> | 图标（选中状态）                                             | 中文名   | 英文名 | 快捷键 | 解释 |
+> | ------------------------------------------------------------ | -------- | ------ | ------ | ---- |
+> | ![image-20230303154114887](readme.assets/image-20230303154114887.png) | 变换     |        |        |      |
+> | ![image-20230303154123473](readme.assets/image-20230303154123473.png) | 裁切     |        |        |      |
+> | ![image-20230303154134216](readme.assets/image-20230303154134216.png) | 动态缩放 |        |        |      |
+> | ![image-20230303154147623](readme.assets/image-20230303154147623.png) | 合成     |        |        |      |
+> | ![image-20230303154207024](readme.assets/image-20230303154207024.png) | 变速     |        |        |      |
+> | ![image-20230303154236848](readme.assets/image-20230303154236848.png) | 稳定     |        |        |      |
+> | ![image-20230303154303559](readme.assets/image-20230303154303559.png) | 镜头矫正 |        |        |      |
+> | ![image-20230303154321920](readme.assets/image-20230303154321920.png) | 颜色     |        |        |      |
+> | ![image-20230303154334993](readme.assets/image-20230303154334993.png) | 音频     |        |        |      |
+> |                                                              |          |        |        |      |
+
 “快速预览”模式将依次播放所有片段，并根据片段时长自动调整播放速度。较长的片段播放速度快，较短的片段播放速度慢，因此在“快速预览”模式下，每个片段的实际播放时长相等。这样，您可以方便地在较短时间内检视所有新素材。在素材检视完成后，您通常已经找到了剪辑思路和一些高光镜头了，此时您就可以信心满满地在“时间线”上开始宣传片剪辑了。
 
 > ##### 用键盘控制播放
@@ -234,8 +263,8 @@ DaVinci Resolve 会将所有媒体文件导入“媒体池”，文件系统中�
 > - 按住 `K` 键再按下 `L` 键或 `J` 键 — 每次向前或向后慢搜 1 帧
 > - 按住 `K` 键，再按住 `L` 键或 `J` 键 — 以 50% 的正常速度向前或向后搓擦预览
 
-
 #### 1.2.2 更改 "源磁带" 中的片段
+
 除了拥有检视素材片段的新方法之外，您还可以在“源磁带模式”下更改片段的顺序和显示方式。
 
 “源磁带模式”永远按照素材在“媒体池”中的顺序排列，显示您在“媒体池”中当前选中的“媒体夹”（包括当前“媒体夹”中的“子媒体夹”）中的素材。
@@ -373,14 +402,14 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 
 Added: "媒体池" 面板底部的按钮介绍：
 
-| 图标                                                         | 中文名     | 英文名           | 解释                                                         |
-| ------------------------------------------------------------ | ---------- | ---------------- | ------------------------------------------------------------ |
-| ![image-20230211201539839_24](readme.assets/image-20230211201539839_24.jpg) | 智能插入   | Smart Insert     |                                                              |
-| ![image-20230211201539839_25](readme.assets/image-20230211201539839_25.jpg) | 附加       | Append           | 把素材片段添加到时间线                                       |
-| ![image-20230211201539839_26](readme.assets/image-20230211201539839_26.jpg) | 波纹覆盖   | Ripple Overwrite | ※ ripple `/ˈrɪpl/`<br />- n. 波纹；涟漪。<br/>- v.（使）起涟漪；发出潺潺声。 <br />※ overwrite`/ˌovɚ'raɪt/` n.覆盖；重写。 |
-| ![image-20230211201539839_27](readme.assets/image-20230211201539839_27.jpg) | 特写       | Close Up         |                                                              |
-| ![image-20230211201539839_28](readme.assets/image-20230211201539839_28.jpg) | 叠加       | Place on Top     | ※ place `/pleɪs/`<br />- n. 地方，场所。<br />- vt.放置，安排。 |
-| ![image-20230211201539839_29](readme.assets/image-20230211201539839_29.jpg) | 源媒体覆盖 | Source Overwrite |                                                              |
+| 图标                                                         | 中文名     | 英文名           | l快捷键 | 解释                                                         |
+| ------------------------------------------------------------ | ---------- | ---------------- | ------- | ------------------------------------------------------------ |
+| ![image-20230211201539839_24](readme.assets/image-20230211201539839_24.jpg) | 智能插入   | Smart Insert     |         |                                                              |
+| ![image-20230211201539839_25](readme.assets/image-20230211201539839_25.jpg) | 附加       | Append           |         | 把素材片段添加到时间线                                       |
+| ![image-20230211201539839_26](readme.assets/image-20230211201539839_26.jpg) | 波纹覆盖   | Ripple Overwrite |         | ※ ripple `/ˈrɪpl/`<br />- n. 波纹；涟漪。<br/>- v.（使）起涟漪；发出潺潺声。 <br />※ overwrite`/ˌovɚ'raɪt/` n.覆盖；重写。 |
+| ![image-20230211201539839_27](readme.assets/image-20230211201539839_27.jpg) | 特写       | Close Up         |         |                                                              |
+| ![image-20230211201539839_28](readme.assets/image-20230211201539839_28.jpg) | 叠加       | Place on Top     |         | ※ place `/pleɪs/`<br />- n. 地方，场所。<br />- vt.放置，安排。 |
+| ![image-20230211201539839_29](readme.assets/image-20230211201539839_29.jpg) | 源媒体覆盖 | Source Overwrite |         |                                                              |
 
 
 #### 1.3.2 添加更多音频片段
@@ -397,11 +426,33 @@ Added: "媒体池" 面板底部的按钮介绍：
 ##### (2) 播放第 4 个访谈片段
 播放此片段，直到 Chris 说，"We want people to experience the Southwest...（我们想让人们体会到西南部的生活...）"
 
+在此时开始切入访谈片段。您不需要在此添加整个片段，而可以通过打入点和出点，添加 1 个片段中的特定部分。
+
 > ### D A 008_01419786.mov
 >
-> We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally ever experienced, whether it's the community, the culture, the food, or the landscapes. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and our brand is just really a reflection of our community and who we are, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? the only way to do that is to experience it, and that's why we say experience the southwest.
+> We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally`/ˈpɜːrsənəli/` ever experienced, whether it's the community, the culture, the food, or the landscapes. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and our brand is just really a reflection of our community and who we are, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? the only way to do that is to experience it, and that's why we say experience the southwest.
 >
 > 我们希望人们体验南方，因为它是如此独特。 无论是社区、文化、食物还是风景，我个人所经历过的都比不上它。 但我可以诚实地说，它改变了我的生活，它给了我一个家庭，这是我成长过程中没有的。 对我来说，这真的很特别，真的很独特。 我们的品牌实际上反映了我们的社区和我们是谁，这就是我们前进的原因。 我们真的在鼓励人们不仅要到户外去，还要同时回来。 那么我们如何体现这一点呢？ 唯一的方法就是去体验它，这就是为什么我们说体验西南。
+
+##### (3) 在主时间线添加第 2 个片段的入点
+按下字母 `I` 键，在 "We want...（我们想让...）" 这句话之前添加 1 个入点。
+
+##### (4) 播放视频到想要的结束点
+继续播放，当 Chris 刚好说完 "... the landscapes（风景）" 这几个词之后暂停。这是这个音频片段的结束点。
+
+##### (5) 主时间线添加第 2 个片段的出点
+单击字母 `O` 键，在此处添加 1 个出点。
+
+##### (6) 单击 `附加(Append)` 编辑按钮添加片段到时间线
+##### (7)
+##### (8)
+##### (0)
+##### (10)
+##### (11)
+##### (12)
+##### (13)
+
+
 
 ### 1.4 精修 "时间线" 上的片段
 
