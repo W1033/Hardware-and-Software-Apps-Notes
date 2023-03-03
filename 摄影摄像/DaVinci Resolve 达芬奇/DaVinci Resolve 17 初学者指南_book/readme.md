@@ -587,27 +587,36 @@ what inspires us …. （这真正激励了我们……）”之前打 1 个入�
 ## ▲ Lesson01
 ### ▲ INTERVIEWS
 #### D A 002_01359092.mov
+
 见：1.3.1 ()
 
 #### D A 005_01371421.mov
 
-百度转：
+确认版本：
 
-> and.so what inspires all your designs?and really being on the road visiting these places and capturing their beauty with our cameras and also designed inspirations sketching out you.you know,in the field it really kind of.i don't know you'd like you have to experience things for you to truly.to be able to tell that story and so it's not just the landscapes but the salts of the people that we meet on the road,whether it's through instagram or social,media and.and being able to connect and hear their stories and tell our stories and.that that's what really inspires US. and we take that inspiration,and we bring it back to the store and,that's really where the design process starts nbsp.uh,so how did you feel about that that s great? yes.
-
-讯飞转：
-
-> 说话人1 00:34
->  What inspires all your designs and your products。
+> Q: Hello. What inspires all your designs and your products?
 >
-> 说话人2 00:41
->  really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration, sketching out in the field. It really kind of, I don't know you like you have to experience things for you to truly be able to tell that story.
+> A: Really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration sketching out.
+>
+> You know,  in the field, It really kind of. I don't know if you'd like to have to experience things for you to truly. To be able to tell that story, and so it's not just a landscape but saws of people that we meet on the road, whether it's through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration, and we bring it back to the store. And that's really where the design process starts.
+>
+> Q: so how did you feel about that?
+>
+> A：That's great. yes.
 >
 > 
->  And so it's not just a landscape, but assault of people that we meet on the road, whether through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration and we bring it back to the store. And that's really where the design process starts.
 >
-> 说话人1 01:25
->  So how do you care about that one? That's great. 
+> 问：您好。 是什么激发了您所有的设计和产品？
+>
+> A：真正在路上，走访这些地方，用我们的相机捕捉它们的美，同时也将设计灵感勾画出来。
+>
+> 你知道，在这个领域，它真的有点。 我不知道你是否愿意为你真实地体验一些事情。 能够讲述这个故事，所以这不仅仅是风景，还有我们在路上遇到的人，无论是通过 Instagram 还是社交媒体，并且能够联系并听到他们的故事并讲述我们的故事。 这才是真正激励我们的。 我们汲取灵感，并将其带回商店。 这才是设计过程真正开始的地方。
+>
+> 问：那你感觉如何？
+>
+> 答：是的。
+
+
 
 
 
@@ -648,29 +657,24 @@ what inspires us …. （这真正激励了我们……）”之前打 1 个入�
 
 #### FA 005_01371396.mov
 
-确认版本：
+百度云转：
 
+> So what inspires all your designs?
+>
+> and really being on the road visiting these places and capturing their beauty with our cameras and also designed inspirations sketching out. you know, in the field it really kind of. I don't know you'd like you have to experience things for you to truly.to be able to tell that story and so it's not just the landscapes but the salts of the people that we meet on the road,whether it's through instagram or social,media and.and being able to connect and hear their stories and tell our stories and.that that's what really inspires US. and we take that inspiration,and we bring it back to the store and,that's really where the design process starts nbsp.uh,so how did you feel about that that s great? yes.
+
+讯飞转：
+
+> 说话人1 04:12
 > Q: Hello. What inspires all your designs and your products?
+>
+> 说话人2 04:21
 >
 > A: Really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration sketching out.
 >
-> You know,  in the field, It really kind of. I don't know if you'd like to have to experience things for you to truly. To be able to tell that story, and so it's not just a landscape but saws of people that we meet on the road, whether it's through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration, and we bring it back to the store. And that's really where the design process starts.
->
-> Q: so how did you feel about that?
->
-> A：That's great. yes.
+> you know,  in the field It really kind of. I don't know you'd like you have to experience things for you to truly. to be able to tell that story and so it's not just a landscape but saws of people that we meet on the road, whether it's through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration and we bring it back to the store. And that's really where the design process starts.
 >
 > 
->
-> 问：您好。 是什么激发了您所有的设计和产品？
->
-> A：真正在路上，走访这些地方，用我们的相机捕捉它们的美，同时也将设计灵感勾画出来。
->
-> 你知道，在这个领域，它真的有点。 我不知道你是否愿意为你真实地体验一些事情。 能够讲述这个故事，所以这不仅仅是风景，还有我们在路上遇到的人，无论是通过 Instagram 还是社交媒体，并且能够联系并听到他们的故事并讲述我们的故事。 这才是真正激励我们的。 我们汲取灵感，并将其带回商店。 这才是设计过程真正开始的地方。
->
-> 问：那你感觉如何？
->
-> 答：是的。
 
 
 
