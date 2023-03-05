@@ -459,8 +459,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 继续播放访谈片段，在 Chris 说 "The only way to do that...（唯一的方式就是...）" 之前打 1 个入点，并在他说完这句话之后和眨眼之前打 1 个出点。再执行 1 次 "附加" 编辑。(把此片段加入到主时间线)
 
 ##### (11) 添加第 5 个片段到主时间线
-在 "源磁带检视器" 中，移动到第 2 个访谈片段。正向播放此片段，并在 Chris 说“ That ’ s really
-what inspires us …. （这真正激励了我们……）”之前打 1 个入点。
+在 "源磁带检视器" 中，移动到第 2 个访谈片段。正向播放此片段，并在 Chris 说 "That's really what inspires us...（这真正激励了我们...）" 之前打 1 个入点。
 ##### (12)
 ##### (13)
 
@@ -585,10 +584,18 @@ what inspires us …. （这真正激励了我们……）”之前打 1 个入�
 # 视频转文字
 
 ## ▲ Lesson01
-### ▲ INTERVIEWS
-#### D A 002_01359092.mov
 
+### ▲ INTERVIEWS
+
+#### D A 002_01359092.mov
 见：1.3.1 ()
+
+#### F A 002_01359221.mov
+和上面的相同
+
+
+#### F A 005_01371396.mov
+和下面的相同
 
 #### D A 005_01371421.mov
 
@@ -615,6 +622,25 @@ what inspires us …. （这真正激励了我们……）”之前打 1 个入�
 > 问：那你感觉如何？
 >
 > 答：是的。
+
+
+#### F A 006_01397398.mov
+
+讯飞转：
+
+> 说话人1 05:05
+>  Right? And how you kind of get back to the community. So can you tell me a little bit about where that started from?
+>
+> 说话人2 05:13
+>  What really makes this unique is the whole motto of how we started, which is buy a shirt, give a lunch, change our community. Here in Donna county, 25 % of our community lives in poverty. I grew up in poverty and I understand what it's like to be a child in the lunch line and not having your bill paid. And so as a child, there's nothing you can do. I you're a child. So what we really want to do as a company is take that burden off those families who are struggling to pay their lunch balance.
+>
+>
+> 
+>  And so what we've done is with every purchase, we donate a lunch to the local public schools here. To date, we've donated over 100,000 lunches. So the whole model buy a shirt, give a lunch changer community has really been inspirational, not only to our community, but to us as well, because now we're in a position like, can we duplicate this?
+>
+>
+>  This fall we're going to be opening a store in Albuquerque and we've already donated $1,000, which is 2,500 lunches to just based on online sales that we've had up there and we're really looking forward to the future.
+
 
 
 
@@ -650,54 +676,7 @@ what inspires us …. （这真正激励了我们……）”之前打 1 个入�
 见：1.3.2
 
 
-
-#### F A 002_01359221.mov
-
-
-
-#### FA 005_01371396.mov
-
-百度云转：
-
-> So what inspires all your designs?
->
-> and really being on the road visiting these places and capturing their beauty with our cameras and also designed inspirations sketching out. you know, in the field it really kind of. I don't know you'd like you have to experience things for you to truly.to be able to tell that story and so it's not just the landscapes but the salts of the people that we meet on the road,whether it's through instagram or social,media and.and being able to connect and hear their stories and tell our stories and.that that's what really inspires US. and we take that inspiration,and we bring it back to the store and,that's really where the design process starts nbsp.uh,so how did you feel about that that s great? yes.
-
-讯飞转：
-
-> 说话人1 04:12
-> Q: Hello. What inspires all your designs and your products?
->
-> 说话人2 04:21
->
-> A: Really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration sketching out.
->
-> you know,  in the field It really kind of. I don't know you'd like you have to experience things for you to truly. to be able to tell that story and so it's not just a landscape but saws of people that we meet on the road, whether it's through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration and we bring it back to the store. And that's really where the design process starts.
->
-> 
-
-
-
-#### FA 006_01397398.mov
-
-讯飞转：
-
-> 说话人1 05:05
->  Right? And how you kind of get back to the community. So can you tell me a little bit about where that started from?
->
-> 说话人2 05:13
->  What really makes this unique is the whole motto of how we started, which is buy a shirt, give a lunch, change our community. Here in Donna county, 25 % of our community lives in poverty. I grew up in poverty and I understand what it's like to be a child in the lunch line and not having your bill paid. And so as a child, there's nothing you can do. I you're a child. So what we really want to do as a company is take that burden off those families who are struggling to pay their lunch balance.
->
->
-> 
->  And so what we've done is with every purchase, we donate a lunch to the local public schools here. To date, we've donated over 100,000 lunches. So the whole model buy a shirt, give a lunch changer community has really been inspirational, not only to our community, but to us as well, because now we're in a position like, can we duplicate this?
->
->
->  This fall we're going to be opening a store in Albuquerque and we've already donated $1,000, which is 2,500 lunches to just based on online sales that we've had up there and we're really looking forward to the future.
-
-
-
-#### FA 008_01420149.mov
+#### F A 008_01420149.mov
 
 讯飞转：
 
