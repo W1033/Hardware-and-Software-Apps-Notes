@@ -226,13 +226,14 @@ DaVinci Resolve 会将所有媒体文件导入“媒体池”，文件系统中�
 >
 > | 图标 | 中文名                    | 英文名                       | 快捷键 | 解释                                                         |
 > | :--: | :-----------------------: | :--------------------------: | :----: | ------------------------------------------------------------ |
+> | ![image-20230306134728524](readme.assets/image-20230306134728524.png) | 搓擦预览 | scrub through |  |  |
 > | ![image-20230303152912518](readme.assets/image-20230303152912518.png) | 停止 | Stop                         |        |                                                              |
 > | ![image-20230303152922383](readme.assets/image-20230303152922383.png) | 播放 | Play                         |        |                                                              |
 > | ![image-20230303152932463](readme.assets/image-20230303152932463.png) | 倒放 | Play Reverse                 |        |                                                              |
 > | ![image-20230303152948176](readme.assets/image-20230303152948176.png) | 跳到尾帧 / 跳到下一个片段     | Go To xxxx / Go To Next Clip |        | 源片段模式下为：跳到尾帧 ()<br/>源磁带模式下为：跳到下个片段 (Go To Next Clip) |
 > | ![image-20230303153004880](readme.assets/image-20230303153004880.png) | 跳到首帧 / 跳到上一个片段     |                              |        |                                                              |
 > | ![image-20230303153150329](readme.assets/image-20230303153150329.png) | 循环 |  | | |
-> | ![image-20230303153212753](readme.assets/image-20230303153212753.png) | 慢搜轮 | Jog Wheel | | |
+> | ![image-20230303153212753](readme.assets/image-20230303153212753.png) | 慢搜轮（搜索轮） | Jog Wheel | | |
 > | ![image-20230303153111823](readme.assets/image-20230303153111823.png) | 工具 | Tool | | |
 > | ![image-20230303153026392](readme.assets/image-20230303153026392.png) | 快速预览 | Fast Review |        |                                                              |
 >
@@ -361,13 +362,17 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 <p style="background-color:#f9e2d2; border-radius:6px; padding:20px;"><strong style="color:#dd5a2b;">备注：</strong><strong>“快编页面”的宗旨就是帮助您快速将多个片段添加到“时间线”。</strong>在将所有片段添加到“时间线”后，您就可以专注于片段的剪辑和调整，直至输出最终成片。与其他剪辑软件（甚至与DaVinci Resolve自身的“剪辑页面”）的理念不同，在剪辑过程中，“快编页面”不会自动在“源片段”和“时间线”之间来回切换。</p>
 
 ##### (3) 打开 "INTERVIEWS" 文件夹，并切换到 "源磁带" 模式
+
 单击“媒体夹列表”，选中“访谈媒体夹”，并单击“源磁带”按钮。
+
+![image-20230306135701644](readme.assets/image-20230306135701644.png)
 
 ##### (4) 确保 "检视器" 的红色 "播放头" 处于访谈片段的开头位置
 
-![image-20230217204248581](readme.assets/image-20230217204248581.png)
+![image-20230306135739571](readme.assets/image-20230306135739571.png)
 
 ##### (5) 播放第一个片段，听听 Chris 的同期声。
+
 这段内容是Chris本人和公司的简介，以及他们如何专注于支持本地社区。最后您可能会发现这段内容太长了，但剪辑工作才刚刚开始，这样已经不错了!
 
 > ### D A 002_01359092.mov
@@ -398,7 +403,7 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 ##### (6) 媒体池 - 附加编辑按钮
 确保 "播放头" 仍位于源磁带中的第 1 个片段之上，而后单击 "媒体池" 面板底部的 `附加 (Append)` 编辑按钮。
 
-![image-20230217220653207](readme.assets/image-20230217220653207.png)
+![image-20230306135948163](readme.assets/image-20230306135948163.png)
 
 Added: "媒体池" 面板底部的按钮介绍：
 
@@ -430,7 +435,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 > ### D A 008_01419786.mov
 >
-> **We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally`/ˈpɜːrsənəli/` ever experienced, whether it's the community, the culture, the food, or the landscapes**. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and **our brand is just really a reflection of our community`/kəˈmjuːnəti/` and who we are**, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? the only way to do that is to experience it, and that's why we say experience the southwest.
+> **We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally`/ˈpɜːrsənəli/` ever experienced, whether it's the community, the culture, the food, or the landscapes**. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and **our brand is just really a reflection of our community`/kəˈmjuːnəti/` and who we are**, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? **The only way to do that is to experience it, and that's why we say experience the southwest.
 >
 > 我们希望人们体验南方，因为它是如此独特。 无论是社区、文化、食物还是风景，我个人所经历过的都比不上它。 但我可以诚实地说，它改变了我的生活，它给了我一个家庭，这是我成长过程中没有的。 对我来说，这真的很特别，真的很独特。 我们的品牌实际上反映了我们的社区和我们是谁，这就是我们前进的原因。 我们真的在鼓励人们不仅要到户外去，还要同时回来。 那么我们如何体现这一点呢？ 唯一的方法就是去体验它，这就是为什么我们说体验西南。
 
@@ -458,9 +463,56 @@ Added: "媒体池" 面板底部的按钮介绍：
 ##### (10) 添加第 4 个片段到主时间线
 继续播放访谈片段，在 Chris 说 "The only way to do that...（唯一的方式就是...）" 之前打 1 个入点，并在他说完这句话之后和眨眼之前打 1 个出点。再执行 1 次 "附加" 编辑。(把此片段加入到主时间线)
 
+<img>
+
 ##### (11) 添加第 5 个片段到主时间线
+
 在 "源磁带检视器" 中，移动到第 2 个访谈片段。正向播放此片段，并在 Chris 说 "That's really what inspires us...（这真正激励了我们...）" 之前打 1 个入点。
-##### (12)
+
+> ### D A 005_01371421.mov
+>
+> Q: Hello. What inspires all your designs and your products?
+>
+> A: Really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration sketching out.
+>
+> You know,  in the field, It really kind of. I don't know if you'd like to have to experience things for you to truly. To be able to tell that story, and so it's not just a landscape but saws of people that we meet on the road, whether it's through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's really what inspires us. And we take that inspiration, and we bring it back to the store. And that's really where the design process starts.
+>
+> Q: so how did you feel about that?
+>
+> A：That's great. yes.
+>
+> 
+>
+> 问：您好。 是什么激发了您所有的设计和产品？
+>
+> A：真正在路上，走访这些地方，用我们的相机捕捉它们的美，同时也将设计灵感勾画出来。
+>
+> 你知道，在这个领域，它真的有点。 我不知道你是否愿意为你真实地体验一些事情。 能够讲述这个故事，所以这不仅仅是风景，还有我们在路上遇到的人，无论是通过 Instagram 还是社交媒体，并且能够联系并听到他们的故事并讲述我们的故事。 这才是真正激励我们的。 我们汲取灵感，并将其带回商店。 这才是设计过程真正开始的地方。
+>
+> 问：那你感觉如何？
+>
+> 答：是的。
+
+<p style="background-color:#fdeed6; border-radius:6px; padding:20px;"><strong style="color:#f79c21;">提示：</strong>这个音频片段已经接近访谈片段的结尾了，因此，您最好将正常速度播放改为 2 倍速播放，以便快速播完这段访谈。2 次按下字母 `L` 键，以 2 倍速播放。</p>
+
+这个编辑点比较紧，有点难找，因为 Chris 说了 2 次 "that's（这）"。为了精确地将入点打在第 1 次 "that's（这）" 之后，您可以使用 "慢搜入点" 功能。
+
+##### (12) 使用慢搜入点和出点精确定位剪辑点
+
+使用源磁带滚动区域左侧的“慢搜入点”功能，精确找到所您满意的入点位置。（操作步骤如下：）
+
+首先点击下图中的（1） "慢搜入点" 按钮，检视器内部会分为两个窗口，左侧窗口显示的为第一个
+
+ 
+
+相应的，在源磁带滚动区域右侧，使用“慢搜出点”功能，找到需要的出点。
+
+
+
+
+
+
+
 ##### (13)
 
 
@@ -495,12 +547,10 @@ Added: "媒体池" 面板底部的按钮介绍：
 >
 > ### (1) 媒体池 (Media Pool)
 >
-> <img src="readme.assets/image-20230211201539839.png" alt="image-20230211201539839" style="zoom:67%;" />
->
 > 媒体池界面各个功能按钮介绍：(从左到右，从上到下 依次为)
 >
 > | 图标        | 中文名          | 英文名                      | 解释                  |
-> | -------------------------- | -------------------------- | -------------------------- | -------------------------- |
+>| -------------------------- | -------------------------- | -------------------------- | -------------------------- |
 > | <img src="readme.assets/image-20230211201539839_03.jpg" alt="image-20230211201539839_03"  /> | 媒体夹                        | Bin List               |               |
 > | <img src="readme.assets/image-20230210231107637.png" alt="image-20230210231107637" style="zoom: 40%;" /> | 添加媒体夹         | Add Bin  | 点击 媒体夹或后面的 ∨ 图标即可看到 添加媒体夹(Add Bin) 按钮。 |
 > | ![image-20230211201539839_05](readme.assets/image-20230211201539839_05.jpg) | 导入媒体                                       | Import Meida                 |                |
@@ -525,7 +575,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 > | ![image-20230211201539839_31](readme.assets/image-20230211201539839_31.jpg) | 剪切              | Cut               |                   |
 > | ![image-20230211201539839_32](readme.assets/image-20230211201539839_32.jpg) | 叠化              | Dissolve          | ※ dissolve `/dɪˈzɑːlv/` <br />- v.（使）溶解；解散。<br />- n.(画面的)叠化，淡入淡出。 |
 > | ![image-20230211201539839_33](readme.assets/image-20230211201539839_33.jpg) | 平滑剪接          | Smooth Cut        |                   |
->
+> 
 > ### (2) 同步媒体夹 (Sync Bin)
 >
 > ### (3) 转场 (Transitions)
@@ -601,27 +651,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 确认版本：
 
-> Q: Hello. What inspires all your designs and your products?
->
-> A: Really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration sketching out.
->
-> You know,  in the field, It really kind of. I don't know if you'd like to have to experience things for you to truly. To be able to tell that story, and so it's not just a landscape but saws of people that we meet on the road, whether it's through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's what really inspires us. And we take that inspiration, and we bring it back to the store. And that's really where the design process starts.
->
-> Q: so how did you feel about that?
->
-> A：That's great. yes.
->
 > 
->
-> 问：您好。 是什么激发了您所有的设计和产品？
->
-> A：真正在路上，走访这些地方，用我们的相机捕捉它们的美，同时也将设计灵感勾画出来。
->
-> 你知道，在这个领域，它真的有点。 我不知道你是否愿意为你真实地体验一些事情。 能够讲述这个故事，所以这不仅仅是风景，还有我们在路上遇到的人，无论是通过 Instagram 还是社交媒体，并且能够联系并听到他们的故事并讲述我们的故事。 这才是真正激励我们的。 我们汲取灵感，并将其带回商店。 这才是设计过程真正开始的地方。
->
-> 问：那你感觉如何？
->
-> 答：是的。
 
 
 #### F A 006_01397398.mov
