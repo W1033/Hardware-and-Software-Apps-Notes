@@ -24,7 +24,7 @@
 
 [下载中文 PDF](https://documents.blackmagicdesign.com/cn/UserManuals/DaVinci-Resolve-17-Beginners-Guide.pdf?_v=1624593615000)  [课程文件第 1 部分](https://www.blackmagicdesign.com/dvres/beginners-guide-resolve-17)  [完成在线测试](https://blackmagic.brillium.com/assess.aspx?aid=INTRO17-CH-ENDUSER&key=iXgNbJ5MQO8pp4G6)
 
-
+> 英文 PDF: https://documents.blackmagicdesign.com/UserManuals/DaVinci-Resolve-17-Beginners-Guide.pdf
 
 ### DaVinci Resolve 17 剪辑师指南
 
