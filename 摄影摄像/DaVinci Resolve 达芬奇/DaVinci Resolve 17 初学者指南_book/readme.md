@@ -454,7 +454,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 > ### D A 008_01419786.mov
 >
-> **We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally`/ˈpɜːrsənəli/` ever experienced, whether it's the community, the culture, the food, or the landscapes**. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and **our brand is just really a reflection of our community`/kəˈmjuːnəti/` and who we are**, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? **The only way to do that is to experience it, and that's why we say experience the southwest.
+> **We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally`/ˈpɜːrsənəli/` ever experienced, whether it's the community, the culture, the food, or the landscapes**. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and **our brand is just really a reflection of our community`/kəˈmjuːnəti/` and who we are**, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? **The only way to do that is to experience it, and that's why we say experience the southwest**.
 >
 > 我们希望人们体验南方，因为它是如此独特。 无论是社区、文化、食物还是风景，我个人所经历过的都比不上它。 但我可以诚实地说，它改变了我的生活，它给了我一个家庭，这是我成长过程中没有的。 对我来说，这真的很特别，真的很独特。 我们的品牌实际上反映了我们的社区和我们是谁，这就是我们前进的原因。 我们真的在鼓励人们不仅要到户外去，还要同时回来。 那么我们如何体现这一点呢？ 唯一的方法就是去体验它，这就是为什么我们说体验西南。
 
@@ -482,7 +482,9 @@ Added: "媒体池" 面板底部的按钮介绍：
 ##### (10) 添加第 4 个片段到主时间线
 继续播放访谈片段，在 Chris 说 "The only way to do that...（唯一的方式就是...）" 之前打 1 个入点，并在他说完这句话之后和眨眼之前打 1 个出点。再执行 1 次 "附加" 编辑。(把此片段加入到主时间线)
 
-<img>
+![image-20230308120323800](readme.assets/image-20230308120323800.png)
+
+*Remark:* 注意上图我们使用 `I` 和 `O` 键标记需要的片段后，视频相当于被裁剪了(注：实际源文件上并没有被裁剪，可以理解为达芬奇给我们创建了当前音视频的一个副本)，所以我们在执行下面的操作前，**需要把入点和出点的两个白色方块移到素材(footage)的开始和结尾处**。(Q：这两个白色方块刚开始不知道叫什么，我还去 QQ 群里问了才知道的，原来就叫入点和出点。 :joy:)
 
 ##### (11) 编辑第 5 个片段
 
@@ -494,7 +496,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 >
 > A: Really being on the road, visiting these places and capturing their beauty with our cameras and also design inspiration sketching out.
 >
-> You know,  in the field, It really kind of. I don't know if you'd like to have to experience things for you to truly. To be able to tell that story, and so it's not just a landscape but saws of people that we meet on the road, whether it's through Instagram or social media and being able to connect and hear their stories and tell our stories. And that's really what inspires us. And we take that inspiration, and we bring it back to the store. And that's really where the design process starts.
+> You know,  in the field, It really kind of. I don't know if you'd like to have to experience things for you to truly. To be able to tell that story, and so it's not just a landscape but saws of people that we meet on the road, whether it's through Instagram or social media and being able to connect and hear their stories and tell our stories. And **that's really what inspires us. And we take that inspiration, and we bring it back to the store. And that's really where the design process starts.**
 >
 > Q: so how did you feel about that?
 >
@@ -512,7 +514,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 >
 > 答：是的。
 
-<p style="background-color:#fdeed6; border-radius:6px; padding:20px;"><strong style="color:#f79c21;">提示：</strong>这个音频片段已经接近访谈片段的结尾了，因此，您最好将正常速度播放改为 2 倍速播放，以便快速播完这段访谈。2 次按下字母 `L` 键，以 2 倍速播放。</p>
+<p style="background-color:#fdeed6; border-radius:6px; padding:20px;"><strong style="color:#f79c21;">提示：</strong>这个音频片段已经接近访谈片段的结尾了，因此，您最好将正常速度播放改为 2 倍速播放，以便快速播完这段访谈。2 次按下字母 L 键，以 2 倍速播放。</p>
 
 这个编辑点比较紧，有点难找，因为 Chris 说了 2 次 "that's（这）"。为了精确地将入点打在第 1 次 "that's（这）" 之后，您可以使用 "慢搜入点" 功能。
 
@@ -520,18 +522,20 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 使用源磁带滚动区域左侧的“慢搜入点”功能，精确找到您所满意的入点位置。（步骤如下：）
 
-- 首先在第二个片段上大致播放到 Chris 说 "That's really what inspires us...（这真正激励了我们...）" 的片段处（tip: 可以稍微提前一点，看音频波形图，没有波形的地方大致就是没说话的时候。），然后点击下图中的（1）按钮，检视器内部图示如下：
+- 首先在第二个片段上大致播放到 Chris 说 "That's really what inspires us...（这真正激励了我们...）" 的片段处（tip: 可以稍微提前一点，看音频波形图，没有波形的地方大致就是没说话的时候。），然后点击下图中的（1）`慢搜入点` 按钮，检视器内部变成如下所示：
   ![image-20230307164424765](readme.assets/image-20230307164424765.png)
 
-  当前检视器内部会分为两个窗口，左边画面为 INTERVIEWS 文件夹中的第一个片段的第一帧，右边画面为 INTERVIEWS 文件夹中的最后一个片段的最后一帧。
+  当前检视器内部会分为两个窗口，左边画面为 INTERVIEWS 文件夹中的第一个片段的第一帧，右边画面为文件夹中的最后一个片段的最后一帧。
 
-- 接着我们滑动 `慢搜入点` 按钮到上图搓擦按钮暂停的地方，图示如下：
+- 接着我们滑动 `入点` 按钮到上图搓擦按钮暂停的地方，图示如下：
 
-    ![image-20230307164935040](readme.assets/image-20230307164935040.png)
+  ![image-20230307164935040](readme.assets/image-20230307164935040.png)
 
-- 详细的定位到某一帧处，点击下图红色长条内的的 2 个按钮，慢搜入点按钮会一帧一帧的往前/往后移动，这样就可以确定入口(in) 的剪辑点。(注意：这两个按钮控制的是慢搜入点按钮，而不是下图中红色的搓擦预览按钮。)
+- 详细的定位到某一帧处，点击下图红色长条内的的 2 个按钮，白色的入点按钮会一帧一帧的往前/往后移动，这样就可以确定入口(in) 的剪辑点。
 
-    ![image-20230307165755683](readme.assets/image-20230307165755683.png)
+  ![image-20230307165755683](readme.assets/image-20230307165755683.png)
+  
+- 精确定位出点(out)按钮的方式同上部一样。
 
 ##### (13) 添加第 5 个片段到时间段
 
