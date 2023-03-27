@@ -43,7 +43,7 @@ Added: 媒体池左上角按钮介绍：
 
 | 图标                                                         | 中文名         | 英文名              | 解释                                                         |
 | ------------------------------------------------------------ | -------------- | ------------------- | ------------------------------------------------------------ |
-| <img src="readme.assets/image-20230211201539839_03.jpg" alt="image-20230211201539839_03"  /> | 媒体夹         | Bin List            |                                                              |
+| <img src="readme.assets/image-20230211201539839_03.jpg" alt="image-20230211201539839_03"  /> | 媒体夹         | Bin List            | 注：Bin = Binary                                             |
 | <img src="readme.assets/image-20230210231107637.png" alt="image-20230210231107637" style="zoom: 40%;" /> | 添加媒体夹     | Add Bin             | 点击 媒体夹或后面的 ∨ 图标即可看到 添加媒体夹(Add Bin) 按钮。 |
 | ![image-20230211201539839_05](readme.assets/image-20230211201539839_05.jpg) | 导入媒体       | Import Meida        |                                                              |
 | ![image-20230211201539839_06](readme.assets/image-20230211201539839_06.jpg) | 导入媒体文件夹 | Import Meida Folder |                                                              |
@@ -134,7 +134,6 @@ DaVinci Resolve 会将所有媒体文件导入 "媒体池"，文件系统中的�
 
 <p style="background-color:#fdeed6; border-radius:6px; padding:20px;"><strong style="color:#f79c21;">提示：</strong>在拽拖 "播放头" 进行搓擦预览素材的同时，您还可以选择监听素材声音。进入菜单“时间线”>“音频搓擦”，或使用组合键 <code>Shift + S</code> ，可以选择启或停用音频搓擦功能。</p>
 
-
 “检视器搓擦条”上的白色竖线指示“源磁带”中的各个片段。这样您就可以方便地快速在“源磁带”中的各个片段之间前后跳转。即下图中的白色竖线：
 
 ![image-20230216103247665](readme.assets/image-20230216103247665.png)
@@ -156,7 +155,7 @@ DaVinci Resolve 会将所有媒体文件导入 "媒体池"，文件系统中的�
 ##### (5) 检视器 - 倒向播放按钮
 ![image-20230215165705891](readme.assets/image-20230215165705891.png)
 
-单击 `播放 (Play Reverse)` 按钮将倒向播放当前片段。
+单击 `倒向播放 (Play Reverse)` 按钮将倒向播放当前片段。
 
 ##### (6) 检视器 - 停止播放按钮
 ![image-20230215165629278](readme.assets/image-20230215165629278.png)
@@ -175,9 +174,11 @@ DaVinci Resolve 会将所有媒体文件导入 "媒体池"，文件系统中的�
 
 ![image-20230215170521835](readme.assets/image-20230215170521835.png)
 
-单击“快速预览”按钮开始快速预览播放。
+单击“快速预览”按钮开始快速预览播放。（注：点击 stop 按钮，停止快速预览）
 
-> ### 检视器按钮集合
+“快速预览”模式将依次播放所有片段，并根据片段时长自动调整播放速度。较长的片段播放速度快，较短的片段播放速度慢，因此在“快速预览”模式下，每个片段的实际播放时长相等。这样，您可以方便地在较短时间内检视所有新素材。在素材检视完成后，您通常已经找到了剪辑思路和一些高光镜头了，此时您就可以信心满满地在“时间线”上开始宣传片剪辑了。
+
+> #### 检视器按钮集合
 >
 > | 图标 | 中文名                    | 英文名                       | 快捷键 | 解释                                                         |
 > | :--: | :-----------------------: | :--------------------------: | :----: | ------------------------------------------------------------ |
@@ -186,13 +187,15 @@ DaVinci Resolve 会将所有媒体文件导入 "媒体池"，文件系统中的�
 > | ![image-20230303152922383](readme.assets/image-20230303152922383.png) | 播放 | Play                         |        |                                                              |
 > | ![image-20230303152932463](readme.assets/image-20230303152932463.png) | 倒放 | Play Reverse                 |        |                                                              |
 > | ![image-20230303152948176](readme.assets/image-20230303152948176.png) | 跳到尾帧 / 跳到下一个片段     | Go To xxxx / Go To Next Clip |        | 源片段模式下为：跳到尾帧 ()<br/>源磁带模式下为：跳到下个片段 (Go To Next Clip) |
-> | ![image-20230303153004880](readme.assets/image-20230303153004880.png) | 跳到首帧 / 跳到上一个片段     |                              |        |                                                              |
+> | ![image-20230303153004880](readme.assets/image-20230303153004880.png) | 跳到首帧 / 跳到上一个片段     | Go To xxx / Go To Previous Clip |        | 源片段模式下为：跳到首帧 ()<br/>源磁带模式下为：跳到上个片段 (Go To Previous Clip) |
 > | ![image-20230303153150329](readme.assets/image-20230303153150329.png) | 循环 |  | | |
 > | ![image-20230303153212753](readme.assets/image-20230303153212753.png) | 慢搜轮（搜索轮） | Jog Wheel | | |
 > | ![image-20230303153111823](readme.assets/image-20230303153111823.png) | 工具 | Tool | | |
 > | ![image-20230303153026392](readme.assets/image-20230303153026392.png) | 快速预览 | Fast Review |        |                                                              |
 >
-> ### `工具(Tool)` 键包含的子功能
+> #### `工具(Tool)` 键包含的子功能
+>
+> ![image-20230327143007034](readme.assets/image-20230327143007034.png)
 >
 > |                       图标（选中状态）                       |  中文名  | 英文名 | 快捷键 | 解释 |
 > | :----------------------------------------------------------: | :------: | :----: | :----: | ---- |
@@ -206,8 +209,6 @@ DaVinci Resolve 会将所有媒体文件导入 "媒体池"，文件系统中的�
 > | ![image-20230303154321920](readme.assets/image-20230303154321920.png) |   颜色   |        |        |      |
 > | ![image-20230303154334993](readme.assets/image-20230303154334993.png) |   音频   |        |        |      |
 > |                                                              |          |        |        |      |
-
-“快速预览”模式将依次播放所有片段，并根据片段时长自动调整播放速度。较长的片段播放速度快，较短的片段播放速度慢，因此在“快速预览”模式下，每个片段的实际播放时长相等。这样，您可以方便地在较短时间内检视所有新素材。在素材检视完成后，您通常已经找到了剪辑思路和一些高光镜头了，此时您就可以信心满满地在“时间线”上开始宣传片剪辑了。
 
 > ##### 用键盘控制播放
 > 
@@ -285,6 +286,7 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 单击“检视器”顶部的“源片段”按钮，仅显示片段 OMO STORE EXT FRONT 。
 
 ##### (7) 源磁带模式和源片段模式快速切换
+
 单击“源磁带”按钮，返回到整个源磁带。
 
 <p style="background-color:#fdeed6; border-radius:6px; padding:20px;"><strong style="color:#f79c21;">提示：</strong>使用 <code>Shift - Q</code>组合键可以切换 "源磁带模式" 和 "源片段模式"。</p>
@@ -292,8 +294,7 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 太棒了。现在，您应该已经学会了如何在“快编页面”中快速地预览素材了。现在可以开始使用这些片段，为公司制作 1 条可发布在各大社交媒体上的短视频广告了。
 
 ### 1.3 组合音频片段 
-
-==1.1 和 1.2 算是熟悉 "快编界面"，现在正式开始学习剪辑==
+==注：1.1 和 1.2 算是熟悉 "快编界面"，现在正式开始学习剪辑==
 
 此剪辑的目的是为户外时尚品牌 Organ Mountain Outfitters 创建 1 条时长 1 分钟的视频。客户为我们提供了一系列素材片段，内容大体为穿着时尚的年轻人享受户外生活，顾客在品牌零售店购物，公司创始人 Chris Lang 的一小段访谈，一小段音乐和一个 PNG 格式的公司 logo 图片。
 
@@ -330,13 +331,13 @@ Added: 检视器左上角的素材查看模式（从左到右）有 3 个，分�
 
 ##### (5) 播放第一个片段，听听 Chris 的同期声。
 
-这段内容是Chris本人和公司的简介，以及他们如何专注于支持本地社区。最后您可能会发现这段内容太长了，但剪辑工作才刚刚开始，这样已经不错了!
+这段内容是 Chris 本人和公司的简介，以及他们如何专注于支持本地社区。最后您可能会发现这段内容太长了，但剪辑工作才刚刚开始，这样已经不错了!
 
-> ### D A 002_01359092.mov
+> #### D A 002_01359092.mov
 >
 > Ask: So tell me about yourself and where we are, sir.
 >
-> Chris: My name is Chris Lang, and I'm the founder of Organ`/ˈɔːrɡən/` Mountain Outfitters. We are located in our store in Las Cruces, New Mexico.
+> Chris: My name is Chris Lang, and I'm the founder of Organ`/ˈɔːrɡən/` Mountain Outfitters. We are located in our store in Las Cruces, New Mexico`/'meksikəu/`.
 >
 > Ask: What is Organ mountain outfitters?
 >
@@ -396,7 +397,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 在此时开始切入访谈片段。您不需要在此添加整个片段，而可以通过打入点和出点，添加 1 个片段中的特定部分。
 
-> ### D A 008_01419786.mov
+> #### D A 008_01419786.mov
 >
 > **We want people to experience`/ɪk'spɪrɪəns/` the south because it's so unique. there's nothing like it that I have personally`/ˈpɜːrsənəli/` ever experienced, whether it's the community, the culture, the food, or the landscapes**. But I can honestly say it's changed my life and it's given me a family in a way that I didn't have, you know, growing up. And to me that's really special, that's really unique. and **our brand is just really a reflection of our community`/kəˈmjuːnəti/` and who we are**, and so that's why we're going forward. we're really encouraging people to not only get outdoors but to also get back at the same time. and so how do we embody that? **The only way to do that is to experience it, and that's why we say experience the southwest**.
 >
@@ -434,7 +435,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 在 "源磁带检视器" 中，移动到第 2 个访谈片段。正向播放此片段，并在 Chris 说 "That's really what inspires us...（这真正激励了我们...）" 之前打 1 个入点。
 
-> ### D A 005_01371421.mov
+> #### D A 005_01371421.mov
 >
 > Q: Hello. What inspires all your designs and your products?
 >
@@ -523,53 +524,49 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 播放 "时间线" 至 Chris 露出笑容后，但在他说 "My name is Chris Lang…（我叫 Chris Lang……）" 之前，停止播放。
 
-<img>
+![image-20230327162834129](readme.assets/image-20230327162834129.png)
 
-您可以从下方 **"时间线" 的波形显示** 中识别出他开始自我介绍的那句话。如果您错过了那一点，还可以使用 "检视器" 的搜索轮倒回他开始说话的点。
+您可以从下方 "时间线" 的波形显示中识别出他开始自我介绍的那句话。如果您错过了那一点，还可以使用 "检视器" 的**搜索轮**倒回他开始说话的点。
 
-<img>
+![image-20230327163329901](readme.assets/image-20230327163329901.png)
 
 此时，您可以移除这一点之前的所有素材。最方便的办法就是在 "播放头" 位置将片段剪开。
 
-3 单击 "时间线" 面板左上角的 "分割片段 (split clips)" 按钮。
+3 单击 "时间线" 面板左上角的 `分割片段 (split clips)` 按钮。 软件在 "播放头" 位置为片段添加了 1 个编辑点。
 
-<img>
-
-软件在 "播放头" 位置为片段添加了 1 个编辑点。
+![image-20230327163651980](readme.assets/image-20230327163651980.png)
 
 4 在任意一条 "时间线" 上选中此片段的第一部分。
 
-<img>
+![image-20230327163718328](readme.assets/image-20230327163718328.png)
 
-5 按下 Delete 键（或 Backspace
+5 按下 Delete 键（或 Backspace 键），移除片段中不需要的部分。
 
-键），移除片段中不需要的部分。
+![image-20230327163826474](readme.assets/image-20230327163826474.png)
 
-<img>
+6 继续播放 Chris 的访谈，并在他说完 "……Las Cruces, New Mexico（新墨西哥州的拉斯克鲁塞斯）" 这几个词之后和他眨眼之前停止。
 
-6 继续播放 Chris 的访谈，并在他说完 "……Las Cruces， New Mexico（新墨西哥州的拉斯克鲁塞斯）" 这几个词之后和他眨眼之前停止。
+![image-20230327164025955](readme.assets/image-20230327164025955.png)
 
 尽管 Chris 继续谈到了公司根据每笔销售在社区中捐赠午餐的事，但这部分内容与当前特定的剪辑无关。剪辑师这时应该将内容专注于 Chris 的服装品牌所体现的生活方式上。
 
-<img>
+7 **在 "下时间线" 的 "播放头" 上点击鼠标右键**，从弹出的快捷菜单中选择 `分割片段` 命令，在 "播放头" 位置再添加 1 个编辑点。
 
-7 在 "下时间线" 的 "播放头" 上点击鼠标右键，从弹出的快捷菜单中选择 "分割片段" 命令，在 "播放头" 位置再添加 1 个编辑点。
-
-<img>
+![image-20230327164220234](readme.assets/image-20230327164220234.png)
 
 8 选中您刚刚添加的那个编辑点之后的那部分片段。
 
-<img>
+![image-20230327164405561](readme.assets/image-20230327164405561.png)
 
 9 按下 Delete 键（或 Backspace 键）将这部分片段从 "时间线" 中移除。
 
-<img>
+![image-20230327164448693](readme.assets/image-20230327164448693.png)
 
 > **连同音频素材一起精修编辑点**
 >
 > 有时，当您回看粗剪的结果时，常常发现需要稍微调整一下编辑点。这有可能是因为您之前没有正确设定入点和出点，或您改变了主意，需要精细调整片段的入点或出点。这时，使用 "快编页面" 就可以很方便地调整编辑点。
 >
-> 
+> ![image-20230327165113447](readme.assets/image-20230327165113447.png)
 >
 > 只需选中 1 个片段的开头或结尾处进行拖拽，就可以添加或减少原来的帧数。
 >
@@ -1225,10 +1222,7 @@ Added: "媒体池" 面板底部的按钮介绍：
 
 
 ### 1.13 快速导出
-
 您已经成功完成了 Organ Mountain Outfitters 推广视频的剪辑。现在就将它导出，以便快速将成片发布到流媒体服务器或社交媒体网站，如 YouTube、 Vimeo 或 Twitter。以上工作都可以直接在 "快编页面" 之中完成。
-
-
 
 1 单击 "快编页面" 右上角的 "快速导出" 按钮。
 
@@ -1286,7 +1280,6 @@ H.264 是一种高质量的视频压缩格式。
 
 
 ### 1.14 复习题
-
 1 判断题。从操作系统中导入 1 个媒体文件夹，此文件夹会自动变为 1 个 "媒体夹"。
 
 2 判断题。查看片段的唯一方法就是在 "源磁带模式" 下一起成串查看。
