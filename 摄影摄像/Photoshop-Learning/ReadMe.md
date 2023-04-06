@@ -2,6 +2,16 @@
 
 [Photoshop 的精髓是什么？为什么？](https://www.zhihu.com/question/20329343)
 
+
+
+
+
+## ▲ 在 Camera Raw 中你用蒙版进行局部调整
+
+> 官网教程：https://helpx.adobe.com/cn/camera-raw/using/masking.html
+
+
+
 ## ▲ PS 常用快捷键
 
 ### (1) 图层
