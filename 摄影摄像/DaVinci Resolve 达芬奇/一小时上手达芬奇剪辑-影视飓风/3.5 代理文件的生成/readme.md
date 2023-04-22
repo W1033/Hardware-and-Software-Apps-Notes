@@ -6,31 +6,31 @@
 
 达芬奇其实有很多的方法来降低你电脑的负荷，那最简单的方法就是点击播放，然后选择我们的代理模式，然后选择更低的分辨率，比如说二分之一或者四分之一，这样在进行回放的时候，你会看到素材虽然模糊了一些，但是播放确实更流畅了，只不过这并不是最好的方法，因为剪辑一旦开始复杂，你仍然会卡顿；
 
-![1.1.1](./readme.assets/1.1.1.png)
+<img src="./readme.assets/1.1.1.png" alt="1.1.1" style="zoom:50%;" />
 
 那我们就要涉及到**优化媒体文件**这个功能，简单来说就是达芬奇帮助你转码你的素材到一个更加友好的编码或者是更低的一个分辨率，这样剪辑的时候使用这个代理文件，等到导出的时候你再使用原片，你就会有一个流畅的工作流，所以创建媒体优化文件很容易，你可以在 **媒体池** 选中素材，点击**右键**，然后点击**生成优化媒体文件**，
 
-![1.1.2](./readme.assets/1.1.2.png)
+<img src="./readme.assets/1.1.2.png" alt="1.1.2" style="zoom:50%;" />
 
 或者是**在时间线选中这个素材**，然后**点击右键**，你也能够看到一样的这个选项。
 
-![1.1.3](./readme.assets/1.1.3.png)
+<img src="./readme.assets/1.1.3.png" alt="1.1.3" style="zoom: 50%;" />
 
-![1.1.4](./readme.assets/1.1.4.png)
+<img src="./readme.assets/1.1.4.png" alt="1.1.4" style="zoom:50%;" />
 
 点击以后，达芬奇就会开始帮你进行渲染，
 
-![1.1.5](./readme.assets/1.1.5.png)
+<img src="./readme.assets/1.1.5.png" alt="1.1.5" style="zoom: 67%;" />
 
 只不过通常你自己需要去更改一下它渲染的这个编码和分辨率，这样文件就不会大大造成浪费。
 
 设置可以在 **文件** -> **项目设置** -> **主设置**  ->  **优化的媒体和渲染缓存** 这个地方找到。
 
-![1.1.6](./readme.assets/1.1.6.png)
+<img src="./readme.assets/1.1.6.png" alt="1.1.6" style="zoom:50%;" />
 
 达芬奇默认的规格其实非常高，文件体积巨大，我个人建议，假如你拍的是 4K，你可以选择**二分之一**或者是**四分之一**的分辨率，编码你可以选择 **DNXHR SQ**；假如说你是 Mac 的话，你可以选择 **Prores 422LT**，
 
-![1.1.7](./readme.assets/1.1.7.png)
+<img src="./readme.assets/1.1.7.png" alt="1.1.7" style="zoom:50%;" />
 
 你也需要注意你的媒体缓存位置，来防止它塞满你的 C 盘。(注：从上图可以看出来，影视飓风用的是 windows 电脑，缓存文件位置：CacheClip <并不知道他这个文件在 C 盘的哪个目录下>）
 
@@ -38,39 +38,39 @@
 
 - (1) 如果使用默认的 Locale DataBase 数据库，在计算机硬盘上新创建一个 Untitled Project 项目，默认的缓存文件位置如下图：
 
-   <img src="./readme.assets/image-20230413223309449.png" alt="image-20230413223309449" style="zoom:67%;" />
+   <img src="./readme.assets/image-20230413223309449.png" alt="image-20230413223309449" style="zoom: 50%;" />
 
 - (2) 如果我在自己的 1033KX 的 SSD 上创建一个名为 learning_editing 的数据库，我自己更改代理和缓存文件的目录如下图：(下图一为我自己在 SSD 中创建的目录，下图二为更改后的路径)：
   
-  <img src="./readme.assets/image-20230413223821115.png" alt="image-20230413223821115" style="zoom:67%;" />
+  <img src="./readme.assets/image-20230413223821115.png" alt="image-20230413223821115" style="zoom: 50%;" />
   
-  <img src="./readme.assets/image-20230413223919065.png" alt="image-20230413223919065" style="zoom:67%;" />
+  <img src="./readme.assets/image-20230413223919065.png" alt="image-20230413223919065" style="zoom: 50%;" />
 
 那完成这些设置以后，只要你生成了优化媒体文件，播放素材应该是丝般顺滑的，而且假如你临时换了电脑，你也可以直接把代理文件给拷上去，
 
-![2.1.1](./readme.assets/2.1.1.png)
+<img src="./readme.assets/2.1.1.png" alt="2.1.1" style="zoom:50%;" />
 
 哪怕是用一台 5 年前的笔记本，你只要素材箱里面选中，然后重新连接优化媒体文件，连上之后你应该可以完全不卡顿的继续你的剪辑。
 
-![2.1.2](./readme.assets/2.1.2.png)
+<img src="./readme.assets/2.1.2.png" alt="2.1.2" style="zoom:50%;" />
 
 那当然，有的时候你加上了一些复杂的效果，或者是标题，时间线也会开始重新卡顿，这是因为你没有做过预渲染，所以说就会开始卡，这时候你只需要再回到**播放**，点击**渲染缓存**，点击**用户定义**，
 
-![2.1.3](./readme.assets/2.1.3.png)
+<img src="./readme.assets/2.1.3.png" alt="2.1.3" style="zoom:46%;" />
 
 然后你再回到时间线上，选中你卡顿的片段，然后右键选择你想要预渲染的部分，比如说 OFX 插件、调色或者是 Fusion，
 
-![2.1.4](./readme.assets/2.1.4.png)
+<img src="./readme.assets/2.1.4.png" alt="2.1.4" style="zoom:50%;" />
 
 你就会看到时间线上容易卡顿的地方就会出现这么一条红线，等到它这条线变蓝了，就说明这个缓存完成了，然后你就可以继续顺畅地播放了。
 
-![2.1.5](./readme.assets/2.1.5.png)
+<img src="./readme.assets/2.1.5.png" alt="2.1.5" style="zoom: 50%;" />
 
-![2.1.6](./readme.assets/2.1.6.png)
+<img src="./readme.assets/2.1.6.png" alt="2.1.6" style="zoom:50%;" />
 
 假如你不想手动来做这些麻烦的操作，你也可以直接把用户改成智能，
 
-![2.1.7](./readme.assets/2.1.7.png)
+<img src="./readme.assets/2.1.7.png" alt="2.1.7" style="zoom: 50%;" />
 
 这样达芬奇会自动检测容易卡顿的地方，自己就帮你做好预渲染，这样的话整个时间线就应该可以流畅的播放了。
 
