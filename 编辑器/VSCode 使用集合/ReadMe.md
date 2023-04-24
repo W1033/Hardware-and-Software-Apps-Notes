@@ -86,7 +86,8 @@
 - Extensions (Ctrl + Shift + X) 插件扩展
    (横向拖动变宽在 Extensions 栏可以搜索内容的图标)
 
-### 1.12 隐藏/显示 左侧的 side bar (侧标栏)
+### 1.12 隐藏/显示 左侧的 side bar (侧边栏)
+
 - 右上角 `view -> Appearance -> Show activity bar`
 - 快捷键
     + Windows 下: Ctrl + b
