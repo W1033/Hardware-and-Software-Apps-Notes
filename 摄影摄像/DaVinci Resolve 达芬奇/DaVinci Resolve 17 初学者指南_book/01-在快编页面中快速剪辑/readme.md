@@ -15,9 +15,10 @@
 
 #### (2) 新建项目
 
-请单击“新建项目”并将其命名为“OMO Quick Cut”，再单击“创建”按钮。 DaVinci Resolve 将打开您上次所使用的页面。
+请单击 **新建项目** 并将其命名为 `OMO Quick Cut`，再单击“创建”按钮。 DaVinci Resolve 将打开您上次所使用的页面。
 
-#### (3) 快编页面(Cut) 
+#### (3) 快编页面(Cut)
+
 如有必要，请单击界面底部的“快编”按钮，切换到“快编页面”。
 
 ![image-20230210234734825](readme.assets/image-20230210234734825.png)
@@ -55,7 +56,7 @@ Added: 媒体池左上角按钮介绍：
 在“打开”对话框中，请导航至您存储“R17 Beginners Guide lessons/Lesson 01”要使用的媒体文件的文件夹。
 
 #### (7) 选择 OMO 素材文件夹 
-在此文件夹中，选中 OMO 素材(footage)文件夹。
+在此文件夹中，选中 `OMO Footage`(素材) 文件夹。
 - footage `/'fʊtɪdʒ/` -n.素材；镜头；影片片段。 
 
 ![image-20230216111251410](readme.assets/image-20230216111251410.png)
