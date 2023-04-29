@@ -1,6 +1,15 @@
-# PhotoShop
+# PhotoShop Learning
 
 [Photoshop 的精髓是什么？为什么？](https://www.zhihu.com/question/20329343)
+
+
+
+## ▲ Photoshop 官网教程
+
+> 
+
+
+
 
 
 
@@ -8,6 +17,11 @@
 ## ▲ 在 Camera Raw 中你用蒙版进行局部调整
 
 > 官网教程：https://helpx.adobe.com/cn/camera-raw/using/masking.html
+
+
+
+
+
 
 
 ## ▲ Mac Studio 安装 PS 出错记录
@@ -19,14 +33,18 @@ created: 2023.03.29
 **解决方法**：
 
 - 先从 `应用程序` 中点击各个 adobe 软件后，点击 content 下的 uninstall 删除所有 adobe 家的软件，
-- 然后点击 `访达` —> 点击顶部导航栏的 `前往` 按钮 --> `资源库`—> `/Users/mac1033/Library/Application Support` 把文件夹下面的所有含有 adobe 名的文件夹都删除，并清空废纸篓。
-    -  注：资源库的显示方法：点击当前访达窗口的用户图标（mac1033），然后按下 `command + J` 在弹框中勾选 “显示资源库文件夹” ) 
 
-- 最后关机重启之后重新安装。
+- 然后点击 `访达` —> 点击顶部导航栏的 `前往` 按钮 --> `资源库`—> `/Users/mac1033/Library/Application Support` 把文件夹下面的所有含有 adobe 名的文件夹都删除，并清空废纸篓。
+  
+  - 注：资源库的显示方法：点击当前访达窗口的用户图标（mac1033），然后按下 `command + J` 在弹框中勾选 “显示资源库文件夹” ) 
+
+- 关机重启，再次重新安装。
 
 **PS 2023 安装版本**： 安装百度云里的 ps 2023 版本，安装之前先看里面的安装教程。
 
 
+
+@
 
 ## ▲ PS 常用快捷键
 
