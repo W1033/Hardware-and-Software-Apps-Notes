@@ -6,7 +6,9 @@
 
 ## ▲ Photoshop 官网教程
 
-> 
+> https://helpx.adobe.com/cn/photoshop/using/layer-basics.html
+
+官网教程需要过一遍。
 
 
 
@@ -44,7 +46,7 @@ created: 2023.03.29
 
 
 
-@
+
 
 ## ▲ PS 常用快捷键
 
