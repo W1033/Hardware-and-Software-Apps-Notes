@@ -31,7 +31,6 @@
 正则表达式的讲解见：`Github-clone/DataStructure-Algorithm-Learning/正则表达式/正则表达式-特殊字符.md`
 
 
-
 ### (3) 给一些特定格式的文字添加统一后缀
 
 ![image-20221108093239148](ReadMe.assets/image-20221108093239148.png)
@@ -87,21 +86,19 @@
    (横向拖动变宽在 Extensions 栏可以搜索内容的图标)
 
 ### 1.12 隐藏/显示 左侧的 side bar (侧边栏)
+右上角 `view -> Appearance -> Show activity bar`
 
-- 右上角 `view -> Appearance -> Show activity bar`
-- 快捷键
-    + Windows 下: Ctrl + b
-    + Mac 下:  command + b
+快捷键
++ Windows 下: `Ctrl + b`
++ Mac 下: `command + b`
 
 ### 1.13 快速生成文件模块
-- 快速生成 HTML 模版:  在当前文件中输入`!` 然后按下 `Tab` 按键
+快速生成 HTML 模版:  在当前文件中输入`!` 然后按下 `Tab` 按键
 
 ### 1.14 查找某个函数在哪些地方被调用了
-- 比如我已经在 `a.js` 文件里调用了 `foo()` 函数. 那么, 如果我想知道 `foo()`
-  函数在其他文件中是否也被调用了, 该怎么做呢？
+比如我已经在 `a.js` 文件里调用了 `foo()` 函数. 那么, 如果我想知道 `foo()` 函数在其他文件中是否也被调用了, 该怎么做呢？
   
-  做法如下: 在 `a.js` 文件里, 选中 `foo()` 函数 (或者将光标放置在foo()函数上),
-  然后按住快捷键 `Shift + F12`, 就能看到 `foo()` 函数在哪些地方被调用了, 比较实用. 
+做法如下: 在 `a.js` 文件里, 选中 `foo()` 函数 (或者将光标放置在foo()函数上), 然后按住快捷键 `Shift + F12`, 就能看到 `foo()` 函数在哪些地方被调用了, 比较实用. 
 
 ### 1.15 鼠标操作
 - 在当前行的位置，鼠标三击，可以选中当前行。
@@ -109,22 +106,38 @@
 - 在某个行号的位置，上下移动鼠标，可以选中多行。
 
 ### 1.16 创建多层子文件夹:
-- 我们可以在新建文件夹的时候，如果直接输入, 比如 `aa/bb/cc` 的类似格式即可.
+我们可以在新建文件夹的时候，如果直接输入, 比如 `aa/bb/cc` 的类似格式即可.
 
 ### 1.17 `.vscode` 文件夹的作用
-- 如果你发现项目的根目录下有一个.vscode文件夹，说明这个文件夹代表的是当前项目的配置。
-- 这个文件夹里可能包含以下集中文件: 
-    + `settings.json`: 工作空间设置。只针对当前项目有效。比如说，我可以在这里面要求
-      当前项目的代码统一使用制表符，而不需要要求每一位码农去修改各自的配置文件。
-    + `sftp.json`: ftp文件传输的配置。
+如果你发现项目的根目录下有一个.vscode文件夹，说明这个文件夹代表的是当前项目的配置。
+
+这个文件夹里可能包含以下集中文件: 
++ `settings.json`: 工作空间设置。只针对当前项目有效。比如说，我可以在这里面要求当前项目的代码统一使用制表符，而不需要要求每一位码农去修改各自的配置文件。
++ `sftp.json`: ftp文件传输的配置。
 
 ### 1.18 通用插件
+
+
+#### 标签自动补全插件
+默认的标签补全，只需要在 Settings 中打开 Emmet 触发设置，即可实现在 html 和 css 中写入标签后按下 enter 回车键，即可实现自动补全；
+代码如下：
+```json
+// - 标签自动补全：就是把 Emmet 的触发设置打开。
+"emmet.triggerExpansionOnTab": true,
+```
+还有 2 个自动补全的插件：Auto Close Tag 和 Auto Rename Tag。
+
+(1) `Auto Close Tag` 自动闭合标签
+使用方式：比如写完 `<div>` 标签后，会自动补全成 `<div></div>`
+
+(2) `Auto Rename Tag` 修改 HTML 标签时，自动修改匹配的标签。
+
+
 1. `vscode-icons`: 更换图标主题(即给文件添加对应的文件图标):
     + 显示方式: `Ctrl/command + Shift + p` 弹出显示所有命令面板, 输入:
       `Icons`, 点击 Activate VSCode icon
 1. `image preview`: 光标悬浮在图片路径上, 显示图片预览.
-1. `Chinese(Simplified) Language PacK for Visual Studio Code`:
-   安装汉化 VS Code 插件.
+1. `Chinese(Simplified) Language PacK for Visual Studio Code`: 安装汉化 VS Code 插件.
 1. `beautify`: 自动格式化代码; 可以放大标记, 调整代码间距, 快速格式化代码,
    可以让杂乱的 HTML, CSS, JS 代码瞬间变得整齐.
 1. `Code Runner`: 搭建各类语言开发环境
