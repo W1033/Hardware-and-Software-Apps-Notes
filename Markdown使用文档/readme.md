@@ -8,19 +8,46 @@
 
 开源就用 MarkText 或者 Zettlr，还有数不尽的商业MD编辑器可以选用。
 
+
+
 ## Markdown 中插入空格的方式:
 
 ```
-    紧贴 $a\!b$
-    没有空格 $ab$
-    小空格 a\,b
-    中等空格 a\;b
-    大空格 a\ b
-    quad空格 $a\quad b$
-    两个quad空格 $a\qquad b$
+紧贴 $a\!b$
+没有空格 $ab$
+小空格 a\,b
+中等空格 a\;b
+大空格 a\ b
+quad空格 $a\quad b$
+两个quad空格 $a\qquad b$
 ```
 
-#### 4.5 markdown 引入本地文件
+
+
+## ▲ markdown 中添加锚点
+
+### (1) 跳转到外网的锚点
+
+略。
+
+### (2) 文章内部锚点
+
+使用示例如下：
+
+注：文章内跳转，点击 "人称代词的格" 跳转文字之前，需要按下 ctrl.
+```md
+人称代词 "格" 的详细语法见当前文档最底部：[人称代词的格](#人称代词的格)
+...
+...
+...
+## #人称代词的格
+```
+
+提示：`#人称代词的格` 紧挨着文字的 `#` 是实现文章内部锚点需要的写法，和一级二级三级... 标题的 `#` 语法是不同的，标题的 # 号是和标题分开的。
+
+
+
+## ▲ markdown 引入本地文件
 
 - (1) 使用绝对路径
   
@@ -30,7 +57,9 @@
   
   + [transition-transform-animation.md](File:///Users/WANG/Github-clone/CSS-grocery/CSS3-过渡-转换-动画/transition-transform-animation.md)
     
-    注意 File 协议首字母要大写, `File://` 中英文字符不限, 文件夹亦可.
+    注意 File 协议首字母要大写, `File:///` 中英文字符不限, 文件夹亦可.
+
+
 
 ## ▲ markdown 中多张图片并排显示
 
@@ -52,7 +81,9 @@
 > 
 > 笔记来源：https://www.w3school.com.cn/tags/index.asp
 
-### 2. Markdown vs 一般富文本编辑器
+
+
+## ▲ Markdown vs 一般富文本编辑器
 
 当我们希望拿一个东西来跟 Markdown 对比的时候, 相信很多人很自然地想到了 Word, 而想到 Word 也就容易想到 Word 与 `LaTex`$\color{red}{^{(2)}}$ 之间那旷日弥久的神圣战争. Word 与 LaTex 都是排版系统, 都提供了文档从书写到展示的完整解决方案, 但是实现方式各有不同:
 
