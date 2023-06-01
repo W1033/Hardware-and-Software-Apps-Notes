@@ -97,7 +97,7 @@
 
 ### 1.14 查找某个函数在哪些地方被调用了
 比如我已经在 `a.js` 文件里调用了 `foo()` 函数. 那么, 如果我想知道 `foo()` 函数在其他文件中是否也被调用了, 该怎么做呢？
-  
+
 做法如下: 在 `a.js` 文件里, 选中 `foo()` 函数 (或者将光标放置在foo()函数上), 然后按住快捷键 `Shift + F12`, 就能看到 `foo()` 函数在哪些地方被调用了, 比较实用. 
 
 ### 1.15 鼠标操作
@@ -115,67 +115,7 @@
 + `settings.json`: 工作空间设置。只针对当前项目有效。比如说，我可以在这里面要求当前项目的代码统一使用制表符，而不需要要求每一位码农去修改各自的配置文件。
 + `sftp.json`: ftp文件传输的配置。
 
-### 1.18 通用插件
 
-
-#### 标签自动补全插件
-默认的标签补全，只需要在 Settings 中打开 Emmet 触发设置，即可实现在 html 和 css 中写入标签后按下 enter 回车键，即可实现自动补全；
-代码如下：
-```json
-// - 标签自动补全：就是把 Emmet 的触发设置打开。
-"emmet.triggerExpansionOnTab": true,
-```
-还有 2 个自动补全的插件：Auto Close Tag 和 Auto Rename Tag。
-
-(1) `Auto Close Tag` 自动闭合标签
-使用方式：比如写完 `<div>` 标签后，会自动补全成 `<div></div>`
-
-(2) `Auto Rename Tag` 修改 HTML 标签时，自动修改匹配的标签。
-
-
-1. `vscode-icons`: 更换图标主题(即给文件添加对应的文件图标):
-    + 显示方式: `Ctrl/command + Shift + p` 弹出显示所有命令面板, 输入:
-      `Icons`, 点击 Activate VSCode icon
-1. `image preview`: 光标悬浮在图片路径上, 显示图片预览.
-1. `Chinese(Simplified) Language PacK for Visual Studio Code`: 安装汉化 VS Code 插件.
-1. `beautify`: 自动格式化代码; 可以放大标记, 调整代码间距, 快速格式化代码,
-   可以让杂乱的 HTML, CSS, JS 代码瞬间变得整齐.
-1. `Code Runner`: 搭建各类语言开发环境
-1. `Debugger for Chrome`: 与chrome联调.
-1. `ESLint`: 自动检测代码规范.
-1. `English word hint`: 英语翻译提示.
-1. `Code Spell ChecKer`英语拼写检查.
-1. Github 插件
-    + `GitLens`: 在 git 管理上有很强大的功能. 比如:
-        - 查看某个 commit 的代码改动记录
-        - 查看不同的分支
-        - 可以将两个 commit 进行代码对比，甚至可以将两个 branch 分支进行代码比对。
-          这一点，简直是 GitLens 最强大的功能。
-    + `RemoteHub`: RemoteHub 和 GitLens 是同一个作者开发出来的。
-      RemoteHub插件的作用是: 可以在本地查看 GitHub 网站上的代码，而无需将代码下载到本地。
-    + `Git history` : github 提交历史查看
-    + `GitHub pull Requests`
-1. `MarKdown + Math`: MathJax 支持插件.
-1. `open in browser`: 浏览器打开.
-1. `MarKdown pdf`
-1. `Prettier`
-1. `Rainbow BracKets`: 彩虹括号
-1. `SVG`
-1. `SVG Viewer`
-1. `Terminal`
-1. `Vetur`
-1. `C/C++`
-1. `Dart`
-1. `Awesome Flutter Snippets`
-1. `Python`
-1. `CSS PeeK`
-1. `Flutter`
-1. `Path Intellisense`
-1. `IntelliSense for CSS`
-1. `Code Spell ChecKer`: 单词拼写检查
-1. `Live Server`: 实现静态/动态页面的实时预览, 保存即可看见页面更新, 无需手动刷新.
-1. `indent-rainbow`: 缩进彩虹, 不同的颜色来提示当前的缩进位置.(tip: 颜色太丑.)
-1. `Local history`: 查看文件修改历史记录.
 
 ## ▲ Mac 下设置
 
