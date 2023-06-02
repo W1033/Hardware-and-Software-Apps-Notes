@@ -34,11 +34,19 @@ office 2019 专业版没有设置颜色的 "Office 背景" 选项，只有设置
 
 ![image-20230602163618814](readme.assets/image-20230602163618814.png)
 
-### (6)  导出设置
+### (6)  导出设置（多文件导出）
 
-多文件导出：导出为 PDF、图片，图片 PPT、视频等。
+1. 导出为 PDF
 
-![image-20230602164116976](readme.assets/image-20230602164116976.png)
+<img src="readme.assets/image-20230602164116976.png" alt="image-20230602164116976" style="zoom: 90%;" />
+
+2. 导出为图片 (PNG/JPG)： PowerPoint 会自动创建一个和当前 PPT 同名的文件夹，里面包含当前 PPT 内所有的幻灯片（slide）。
+
+    <img src="readme.assets/image-20230602165907405.png" alt="image-20230602165907405" style="zoom:90%;" />
+
+3. 图片 PPT、
+
+4. 视频等。
 
 ### (7) 设置参考线
 
