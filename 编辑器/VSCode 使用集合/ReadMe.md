@@ -78,6 +78,7 @@
 - `"worKbench.tree.indent": 24,`
 
 ### 1.11 隐藏/显示 左侧的 activity bar (活动栏)
+
 - Explorer (Ctrl + Shift + E) 探测器 (项目 文件)
 - Search (Ctrl + Shift + F) 搜索
 - Source Control (Ctrl + Shift + G): 代码控制工具 (Git: 可以查看修改了多少个文件)

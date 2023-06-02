@@ -195,6 +195,14 @@ $V = 0.615R - 0.515G - 0.100B$    $B = Y + 2.03U$
 
 <img src="ReadMe.assets/image-20230207205221142.png" alt="image-20230207205221142"/>
 
+2023.06.02 Added:
+
+windows 上的 PS 没有圆角矩形，这里添加一下如何在画完直角矩形后，再自定义圆角的：
+
+![image-20230602145058711](ReadMe.assets/image-20230602145058711.png)
+
+
+
 ## ▲ 推荐几个配色网站
 
 - [Color Hex - ColorHexa.com](http://www.colorhexa.com/)
