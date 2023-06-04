@@ -50,6 +50,10 @@ created: 2023.03.29
 
 ## ▲ PS 常用快捷键
 
+显示标尺：`command + R`
+
+
+
 ### (1) 图层
 
 | 功能           | Mac 快捷键（win 系统把 Command 换成 Control）                             | 常用程度  |
