@@ -48,6 +48,30 @@ created: 2023.03.29
 
 
 
+## ▲ MBP 卸载 Adobe 全家桶后重新安装
+
+created: 2023.06.05
+
+事情的起因：6 月 4 号晚打开老黑的 MBP，突然弹出下图所示的弹框，大致意思就是 "这个非正版的adobe应用程序将很快被禁用"，然后我就卸载安装了最新版本的 ps 24 beta 版本，仍然不行；也在 google 和 baidu 搜索了很久，都没有找到任何可以解决的方法，无奈只能把 mbp 上所有的 adobe 软件都卸载试下可不可以解决问题。
+
+![image-20230605212632168](./ReadMe.assets/image-20230605212632168.png)
+
+
+
+1. 首选需要在应用程序中点击各个 Adobe 软件的 uninstaller 删除，然后从 Application support 中删除 adobe 文件夹，好像哪个文件夹下还有 adobe 的残余文件，但是找不到了，全盘搜索找吧。。。
+
+2. 首选需要安装 adobe creative installer，下载地址：https://www.adobe.com/creativecloud/desktop-app.html，安装期间需要登录账号，可以使用 apple id 登录。（注意：安装过程中不要勾选 AGS）
+
+
+
+==Note: 重新安装仍然不行！！！==
+
+
+
+
+
+
+
 ## ▲ PS 常用快捷键
 
 显示标尺：`command + R`
