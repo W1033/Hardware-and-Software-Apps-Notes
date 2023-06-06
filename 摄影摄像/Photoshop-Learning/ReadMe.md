@@ -50,13 +50,11 @@ created: 2023.03.29
 
 ## ▲ MBP 卸载 Adobe 全家桶后重新安装
 
-created: 2023.06.05
+Created: 2023.06.05
 
 事情的起因：6 月 4 号晚打开老黑的 MBP，突然弹出下图所示的弹框，大致意思就是 "这个非正版的adobe应用程序将很快被禁用"，然后我就卸载安装了最新版本的 ps 24 beta 版本，仍然不行；也在 google 和 baidu 搜索了很久，都没有找到任何可以解决的方法，无奈只能把 mbp 上所有的 adobe 软件都卸载试下可不可以解决问题。
 
 ![image-20230605212632168](./ReadMe.assets/image-20230605212632168.png)
-
-
 
 1. 首选需要在应用程序中点击各个 Adobe 软件的 uninstaller 删除，然后从 Application support 中删除 adobe 文件夹，好像哪个文件夹下还有 adobe 的残余文件，但是找不到了，全盘搜索找吧。。。
 
@@ -64,7 +62,107 @@ created: 2023.06.05
 
 
 
-==Note: 重新安装仍然不行！！！==
+*Added: 2023.06.06*
+
+今天在 google 继续搜寻解决方案的时候，看到这个知乎专栏：[PS/LR 等软件提示“this Adobe app is not available”的解决方法（2023.05.21更新）](https://zhuanlan.zhihu.com/p/631079550?utm_id=0), 意思就是 Adobe 软件自动联网检查是否是盗版，作者建议把下面的网址加入到 Hosts 文件中（注: 下面的地址可能会不时更新）：
+
+```sh
+# 屏蔽 photoshop 非正版提示
+0.0.0.0 ic.adobe.io
+0.0.0.0 p13n.adobe.io
+0.0.0.0 p13n-mr.adobe.io
+0.0.0.0 cai-identity.adobe.io
+0.0.0.0 dyzt55url8.adobe.io
+0.0.0.0 gw8gfjbs05.adobe.io
+0.0.0.0 2ftem87osk.adobe.io
+0.0.0.0 ph0f2h2csf.adobe.io
+
+0.0.0.0 crs.cr.adobe.com
+0.0.0.0 photos.adobe.io
+0.0.0.0 lcs-cops.adobe.io
+0.0.0.0 cc-cdn.adobe.com
+0.0.0.0 cc-api-data.adobe.io
+0.0.0.0 cai-splunk-proxy.adobe.io
+
+0.0.0.0 ge02.adobe.com
+0.0.0.0 assets.adobedtm.com
+0.0.0.0 auth.services.adobe.com
+0.0.0.0 sstats.adobe.com
+0.0.0.0 adobeid-na1.services.adobe.com
+```
+
+> 从哪里可以看到 PS 会自动联网检测软件是不是正版呢？
+>
+> 答：从 ClashX 的日志文件可以看到，我们点击 `ClashX -> 控制台 -> 日志`，此时几乎没有连接信息，接着我们打开 PS ，稍等 2 分种，可以看到如下的 TCP 连接，接着 PS 便会出现 non-genuine 弹出。
+>
+> <img src="./ReadMe.assets/image-20230606225318764.png" alt="image-20230606225318764" style="zoom:50%;" />
+
+然后，我添加到 hosts 文件中，不开 ClashX 的情况下，PS 的 non-genuine 提示确实不再弹出了，但问题我是一直开着 ClashX 使用的。那为什么开着 ClashX 本地的 hosts 文件就不起作用了呢？原因大致是：DNS 解析被 ClashX 接管了，本地的 hosts 设置就没有作用了，看到的解决方法大致有 2 种，两种方法默认都是根据 Clash Windows 端为基础配置的：
+
+### (1) 在 config 配置文件（如下图）中把 clash 的 DNS 设置设置为 false，
+
+<img src="./ReadMe.assets/image-20230606224330583.png" alt="image-20230606224330583" style="zoom: 40%;" />
+
+代码如下图：
+
+<img src="./ReadMe.assets/image-20230606224512295.png" alt="image-20230606224512295" style="zoom:50%;" />
+
+但是在 ClashX mac 上尝试没有作用。
+
+### (2) 在代理节点的配置文件中添加 "指定网站不走代理" 的设置
+
+Clash 的默认语法是这样的：
+
+```yaml
+# 此笔记来自：https://docs.mebi.me/docs/advanced-usage-for-clash#2%E6%8C%87%E5%AE%9A%E7%BD%91%E7%AB%99%E4%B8%8D%E8%B5%B0%E4%BB%A3%E7%90%86
+
+mixin: # 注意下面缩进
+  rules:
+    - "DOMAIN-SUFFIX,ident.me,DIRECT"
+```
+
+注意：上面的 "DIRECT" 是 Clash 允许次网址直连的意思。
+
+上面的代码是允许直连的情况，但我们自己购买的节点配置文件如何更改呢？
+
+点击下图的 "打开配置文件夹" 然后找到 `DuangCloud.yaml` 文件。(注：请打开自己电脑对应的节点配置文件，此处只做演示。)
+
+<img src="./ReadMe.assets/image-20230606230609640.png" alt="image-20230606230609640" style="zoom:50%;" />
+
+<img src="./ReadMe.assets/image-20230606230917856.png" alt="image-20230606230917856" style="zoom:50%;" />
+
+打开后，可以看到 `proxy-groups` 数组内可能有 REJECT 拒绝链接的配置（下面的截图来自 DuangCloud，但我发现 "比特云" 是没有的）。
+
+![image-20230606230112362](./ReadMe.assets/image-20230606230112362.png)
+
+接着我们在当前文件的 `rules` 字段下添加如下的拦截配置。接着 `ClashX -> 配置 -> 重载配置` 即可。
+
+```yaml
+rules:
+    - 'DOMAIN,api.duangss.cloud,DIRECT'
+	...
+    - 'DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截'    
+    # 添加如下的拦截配置
+    - 'DOMAIN-SUFFIX,ic.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,p13n.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,p13n-mr.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,cai-identity.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,dyzt55url8.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,gw8gfjbs05.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,2ftem87osk.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,ph0f2h2csf.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,crs.cr.adobe.com,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,photos.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,lcs-cops.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,cc-cdn.adobe.com,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,cc-api-data.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,cai-splunk-proxy.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,ge02.adobe.com,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,assets.adobedtm.com,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,auth.services.adobe.com,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,sstats.adobe.com,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,adobeid-na1.services.adobe.com,🛑 全球拦截'
+```
 
 
 
