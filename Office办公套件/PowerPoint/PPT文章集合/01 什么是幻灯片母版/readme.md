@@ -2,12 +2,6 @@
 
 
 
-
-
-
-
-
-
 ## ▲ 微软官方教程 - 什么是幻灯片母版？
 
 > https://support.microsoft.com/zh-cn/office/powerpoint-for-windows-%E5%9F%B9%E8%AE%AD-40e8c930-cb0b-40d8-82c4-bd53d3398787
