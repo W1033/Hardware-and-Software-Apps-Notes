@@ -28,8 +28,7 @@
 | <img src="./readme.assets/swapObjectsN@3x-20230617151658471.png" alt="img" style="zoom:67%;" /> | Swap Objects 交换对象                  |      |
 | <img src="./readme.assets/smartRegroupN@3x-20230617151713527.png" alt="img" style="zoom:67%;" /> | Add to Group 添加到群组                |      |
 
-
-### PPT 工作区宽高大小
+### PPT 工作区（/操作区）宽高大小
 
 | 宽 - 高 | 大小 | 注释 |
 | --- | --- | --- |
@@ -55,6 +54,5 @@
 
 
 ## ▲ 8. Passive Features 被动功能
-
 
 ## ▲ 9. Legacy Tools 遗留工具
