@@ -30,8 +30,6 @@ engineering `/ˌendʒəˈnɪərɪŋ $ -ˈnɪr-/` -n. 工程（学）
 #### (2.2) Brown 账号的 Access Token
 
 
-### (3) 让 ChatGPT 联网
-
 
 ## ▲ Bing ChatGPT
 
