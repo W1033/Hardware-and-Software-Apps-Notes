@@ -15,6 +15,10 @@ journey `/'dʒɝni/`  -n. 旅行; 行程 -vi. 旅行
 
 
 
+## ▲ 待做笔记
+> https://www.bilibili.com/video/BV1vm4y1B7gP/?spm_id_from=888.80997.embed_other.whitelist&vd_source=e92153ec1930505e455be52646a78b7c
+
+
 
 
 
