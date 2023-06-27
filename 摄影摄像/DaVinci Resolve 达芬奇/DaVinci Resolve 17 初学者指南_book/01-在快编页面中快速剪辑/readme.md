@@ -9,7 +9,7 @@
 
 首先请运行 DaVinci Resolve 应用程序。
 
-<img src="readme.assets/image-20230201223221260.png" alt="image-20230201223221260" style="zoom: 50%;"/>
+<img src="readme.assets/image-20230201223221260.png" alt="image-20230201223221260" style="zoom: 33%;"/>
 
 您看到的第 1 个窗口是“项目管理器”。上面为您显示了已创建的所有项目（如果有）。每个项目代表一个作业，其中包含了链接到您的硬盘上所保存的素材的“时间线”和片段。
 
