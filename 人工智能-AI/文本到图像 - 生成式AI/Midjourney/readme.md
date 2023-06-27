@@ -1,5 +1,19 @@
 # Midjourney
 
+
+
+
+
+<div style="background-color:#fbd69c; border-radius:6px; padding:15px 20px;">
+    <p style="font-style:italic">edited: 2023.06.27 </p>
+    <strong>提示：暂停学习，下面的笔记都还未做，再次学习的时候先把下面笔记的内容学完，再往下学习。</strong>
+</div>
+
+
+
+
+
+
 ## New Words
 
 journey `/'dʒɝni/` -n. 旅行；行程   -vi. 旅行
@@ -8,7 +22,16 @@ journey `/'dʒɝni/` -n. 旅行；行程   -vi. 旅行
 
 
 
+
 ## ▲ Midjourney 入门指南
+
+### 英文官网教程
+
+> https://docs.midjourney.com/docs/quick-start
+
+借助 "沉浸式翻译" 插件，看英文文档还是没问题的，就是慢一些。
+
+### 国内网友翻译的官网教程 
 
 > http://www.midjourney-zh.com/docs/%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/Midjourney
 
@@ -24,29 +47,15 @@ journey `/'dʒɝni/` -n. 旅行；行程   -vi. 旅行
 
 
 
-
-
-
-
 ## ▲ 在 Midjourney 官网收集关键字
 
 | 关键字                                                       | 生成图片                                                     |      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
 | landscape, mountains and river, white background, summer, minimalism, very soft colors, watercolor |                                                              |      |
 | landscape, mountains and river, white background, winter, minimalism, very soft colors, watercolor -- @RobatmM (fast) |                                                              |      |
-| landscape, mountains and river, white background, minimalism, very soft colors, drawn in pencil | ![image-20230625165031714](readme.assets/image-20230625165031714.png) |      |
-|                                                              |                                                              |      |
-|                                                              |                                                              |      |
-
-
-
-
-
-
-
-
-
-
+| landscape, mountains and river, white background, minimalism, very soft colors, drawn in pencil | <img src="readme.assets/image-20230625165031714.png" alt="image-20230625165031714" style="zoom:40%;" /> |      |
+| `url` `url`  `url`  keep the consistency of action , expression , clothing , shape and appearance of the photos,disney style,pixar,super detail,8k,soft light --s 250 --q 2 --iw 2 --v5 |                                                              |      |
+| A peaceful place, very pleasant, aesthetic, calm, scenic. photorealistic, 8k uhd, studio quality, ultra realistic, max detail, massive scale, post-processing, realistic, photorealism, photoshop, photography, detailed, cinematic lighting, landscape, panoramic, landscape, raytracing, cinema4d |                                                              |      |
 
 
 
