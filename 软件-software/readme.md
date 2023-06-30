@@ -6,14 +6,6 @@
 
 ## Mac 软件下载网站 (2023.01.09)
 
-MacYY网：https://www.macyy.cn/ 
-
-这个是我自己做的网站
-
-主打无广告 无后门 简约 快速 ， 有兴趣的小伙伴可以试试看
-
-
-
 **1，appstorrent**
 
 https://appstorrent.ru/

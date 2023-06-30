@@ -143,13 +143,13 @@ mixin: # 注意下面缩进
 
 点击下图的 "打开配置文件夹" 然后找到 `DuangCloud.yaml` 文件。(注：请打开自己电脑对应的节点配置文件，此处只做演示。)
 
-<img src="./ReadMe.assets/image-20230606230609640.png" alt="image-20230606230609640" style="zoom:50%;" />
+<img src="./ReadMe.assets/image-20230606230609640.png" alt="image-20230606230609640" style="zoom:40%;" />
 
 <img src="./ReadMe.assets/image-20230606230917856.png" alt="image-20230606230917856" style="zoom:50%;" />
 
 打开后，可以看到 `proxy-groups` 数组内可能有 REJECT 拒绝链接的配置（下面的截图来自 DuangCloud，但我发现 "比特云" 是没有的）。
 
-![image-20230606230112362](./ReadMe.assets/image-20230606230112362.png)
+<img src="./ReadMe.assets/image-20230606230112362.png" alt="image-20230606230112362" style="zoom:50%;" />
 
 接着我们在当前文件的 `rules` 字段下添加如下的拦截配置。接着 `ClashX -> 配置 -> 重载配置` 即可。
 
