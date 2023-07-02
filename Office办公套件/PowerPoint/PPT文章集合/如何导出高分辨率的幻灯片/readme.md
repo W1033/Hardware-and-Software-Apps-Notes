@@ -15,9 +15,9 @@
 <div style="background-color:#d7eaf8; padding:20px; border-radius:10px;">
  	<strong>重要：</strong>
 	<br/>
-	<br/>
 	请仔细遵循本部分中的步骤进行操作。 对注册表修改不当可能会导致严重问题。 修改之前，[备份注册表以便在发生问题时进行还原](https://support.microsoft.com/help/322756)。
 </div> 
+
 
 默认情况下，要另存为图片的 PowerPoint 幻灯片的导出分辨率为每英寸 96 点 (dpi)。 若要更改导出分辨率，请执行以下步骤：
 
