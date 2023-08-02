@@ -34,7 +34,13 @@
 
 
 
+## ▲ Excel 中一次删除多个空行
 
+> 多种情形情请看此文章：https://zhuanlan.zhihu.com/p/29831632
 
+<img src="readme.assets/image-20230802155827031.png" alt="image-20230802155827031" style="zoom: 80%;" />
 
+动图如下：
+
+![动图封面](readme.assets/v2-b644aa80b68c1ba64f21583c04060e3b_b.jpg)
 
