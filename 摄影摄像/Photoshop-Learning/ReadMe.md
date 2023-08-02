@@ -229,6 +229,12 @@ rules:
     - 'DOMAIN-SUFFIX,auth.services.adobe.com,🛑 全球拦截'
     - 'DOMAIN-SUFFIX,sstats.adobe.com,🛑 全球拦截'
     - 'DOMAIN-SUFFIX,adobeid-na1.services.adobe.com,🛑 全球拦截'
+    
+    # 2023.08.02 添加
+    - 'DOMAIN-SUFFIX,cai-splunk-proxy.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,cc-api-data.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,dxyeyf6ecy.adobe.io,🛑 全球拦截'
+    - 'DOMAIN-SUFFIX,cc-api-data.adobe.io,🛑 全球拦截'
 ```
 
 
