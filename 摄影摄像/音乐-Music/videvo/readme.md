@@ -8,15 +8,15 @@
 
 
 
-
-
 ## ▲ New Words
 
 | 音乐流派 | 美式发音    | 词类 + 汉语释义     |
 | -------- | ----------- | ------------------- |
 | devotion | `/dɪˈvoʊʃən/ ` | n. 奉献, 献身   |
+| genre | `/ˈʒɑːnrə/ ` | n. （艺术、文学等的）类型，流派 |
 |          |             |                     |
-|          |             |                     |
+| | | |
+| | | |
 
 
 
@@ -154,6 +154,84 @@
 | boring       | `/ˈbɔːrɪŋ/`        | adj. 无聊的。               |                |
 
 
+
+
+
+## ▲ 音乐乐器 (Instruments)
+
+==Notice: 下面这个表格不确定完全正确，明天再验证==
+
+| 音乐乐器     | 英文名称                  | 美式发音                              | 对应音乐流派                                     |
+| ------------ | ------------------------- | ------------------------------------- | ------------------------------------------------ |
+| 吉他         | Guitar                    | `/ɡɪˈtɑr/`                            | Rock, Pop, Blues, Country, Jazz                  |
+| 钢琴         | Piano                     | `/piˈænoʊ/`                           | Classical, Jazz, Pop, Soundtrack, Easy Listening |
+| 小提琴       | Violin                    | `/ˈvaɪəlɪn/`                          | Classical, Jazz, Folk, Soundtrack                |
+| 鼓           | Drums                     | `/drʌmz/`                             | Rock, Pop, Jazz, Punk, Metal                     |
+| 贝斯吉他     | Bass Guitar               | `/beɪs ɡɪˈtɑr/`                       | Rock, Funk, Jazz, Metal                          |
+| 萨克斯管     | Saxophone                 | `/ˈsæksəfoʊn/`                        | Jazz, Blues, Rock, Pop, Funk                     |
+| 长笛         | Flute                     | `/fluːt/`                             | Classical, Jazz, Pop, World Music                |
+| 口琴         | Harmonica                 | `/hɑːrˈmɑnɪkə/`                       | Blues, Folk, Country, Jazz                       |
+| 长号         | Trombone                  | `/ˈtrɑːmboʊn/`                        | Jazz, Classical, Ska, Funk                       |
+| 钢琴键盘     | Keyboard / Piano Keyboard | `/ˈkiːbɔːrd/` / `/piˈænoʊ ˈkiːbɔːrd/` | Pop, Rock, Electronic, Jazz, Soundtrack          |
+| 爵士鼓       | Jazz Drum Set             | `/dʒæz drʌm sɛt/`                     | Jazz, Fusion, Funk, Latin                        |
+| 手风琴       | Accordion                 | `/əˈkɔːrdiən/`                        | Folk, World Music, Tango, Polka                  |
+| 小号         | Trumpet                   | `/ˈtrʌmpɪt/`                          | Jazz, Classical, Pop, Funk, Ska                  |
+| 合成器       | Synthesizer               | `/ˈsɪnθəˌsaɪzər/`                     | Electronic, Pop, Rock, Synthwave                 |
+| 大提琴       | Cello                     | `/ˈtʃɛloʊ/`                           | Classical, Jazz, Pop, Soundtrack                 |
+| 电吉他       | Electric Guitar           | `/ɪˈlɛktrɪk ɡɪˈtɑr/`                  | Rock, Pop, Blues, Metal, Funk                    |
+| 钢琴协奏曲   | Piano Concerto            | `/piˈænoʊ ˈkɑːnsərtoʊ/`               | Classical, Romantic, Soundtrack                  |
+| 电子琴       | Electronic Organ          | `/ɪlɛkˈtrɑnɪk ˈɔːrɡən/`               | Jazz, Rock, Pop, Electronic                      |
+| 小号协奏曲   | Trumpet Concerto          | `/ˈtrʌmpɪt ˈkɑːnsərtoʊ/`              | Classical, Jazz, Romantic                        |
+| 木吉他       | Acoustic Guitar           | `/əˈkuːstɪk ɡɪˈtɑr/`                  | Folk, Pop, Country, Easy Listening               |
+| 法国号       | French Horn               | `/frɛntʃ hɔːrn/`                      | Classical, Jazz, Soundtrack, Brass Band          |
+| 雅马哈电子琴 | Yamaha Keyboard           | `/ˈjæməhɑː kɪˈbɔrd/`                  | Pop, Rock, Electronic, Jazz, Soundtrack          |
+| 管风琴       | Pipe Organ                | `/paɪp ˈɔːrɡən/`                      | Classical, Sacred Music, Soundtrack              |
+| 巴松管       | Bassoon                   | `/bəˈsuːn/`                           | Classical, Jazz, Chamber Music                   |
+| 古典吉他     | Classical Guitar          | `/ˈklæsɪkl ɡɪˈtɑr/`                   | Classical, Romantic, Spanish Music               |
+| 琵琶         | Pipa                      | `/ˈpiːpə/`                            | Chinese Music, Traditional, World Music          |
+| 三角铁       | Triangle                  | `/ˈtraɪˌæŋɡəl/`                       | Classical, Orchestra, Percussion                 |
+| 钟琴         | Xylophone                 | `/ˈzaɪləfoʊn/`                        | Classical, Orchestra, Percussion                 |
+| 萧           | Xiao                      | `/ʃaʊ/`                               | Chinese Music, Traditional, World Music          |
+| 中提琴       | Viola                     | `/viˈoʊlə/`                           | Classical, Jazz, Chamber Music                   |
+| 雷鬼鼓       | Reggae Drum Set           | `/ˈrɛɡeɪ drʌm sɛt/`                   | Reggae, Ska, Dub, World Music                    |
+| 钢片琴       | Steel Drum                | `/stil drʌm/`                         | Caribbean Music, Calypso, Soca, World Music      |
+| 木琴         | Marimba                   | `/məˈrɪmbə/`                          | Classical, Jazz, World Music, Percussion         |
+| 低音提琴     | Double Bass               | `/ˈdʌbl beɪs/`                        | Classical, Jazz, Orchestra, Chamber Music        |
+| 手鼓         | Bongo Drums               | `/ˈbɔŋɡoʊ drʌmz/`                     | Afro-Cuban Music, Latin, Jazz, World             |
+
+
+
+## ▲ 音乐类别 (Music category)
+
+当然，我很乐意再为您补充一些常见的乐器类别和对应的乐器。以下是更多乐器类别及其代表性乐器：
+
+| 乐器类别                                | 乐器     | 英文名称         | 美式发音            | 对应音乐流派                         |
+| --------------------------------------- | -------- | ---------------- | ------------------- | ------------------------------------ |
+| 弦乐器 <br />(String instruments)       | 吉他     | Guitar           | `/ɡɪˈtɑr/`          | Rock, Pop, Blues, Country, Jazz      |
+|                                         | 小提琴   | Violin           | `/ˈvaɪəlɪn/`        | Classical, Jazz, Folk, Soundtrack    |
+| 吹管乐器 <br />(Brass instruments)      | 小号     | Trumpet          | `/ˈtrʌmpɪt/`        | Classical, Jazz, Pop, Marching Bands |
+|                                         | 长号     | Trombone         | `/ˈtrɑmbəʊn/`       | Classical, Jazz, Pop, Big Band       |
+|                                         | 单簧管   | Clarinet         | `/ˌklærɪˈnet/`      | Classical, Jazz, Blues, Pop          |
+| 弹拨乐器 <br />(Plucked instruments)    | 古典吉他 | Classical Guitar | `/ˈklæsɪkl ɡɪˈtɑr/` | Classical, Flamenco, Latin, Folk     |
+|                                         | 竖琴     | Harp             | `/hɑrp/`            | Classical, Celtic, Orchestral        |
+|                                         | 三弦     | Shamisen         | `/ˈʃæmɪsɛn/`        | Traditional Japanese, Folk           |
+| 风乐器 <br />(Woodwind instruments)     | 长笛     | Flute            | `/fluːt/`           | Classical, Jazz, Folk, Pop           |
+|                                         | 萨克斯管 | Saxophone        | `/ˈsæksəfoʊn/`      | Jazz, Pop, Rock, Classical           |
+|                                         | 双簧管   | Oboe             | `/ˈoʊboʊ/`          | Classical, Orchestral, Chamber Music |
+| 键盘乐器 <br />(Keyboard instruments)   | 钢琴     | Piano            | `/piˈænoʊ/`         | Classical, Pop, Jazz, Ballads        |
+|                                         | 风琴     | Organ            | `/ˈɔrɡən/`          | Classical, Church Music, Jazz        |
+|                                         | 手风琴   | Accordion        | `/əˈkɔrdiən/`       | Folk, Tango, Polka, World Music      |
+| 打击乐器 <br />(Percussion instruments) | 鼓       | Drum             | `/drʌm/`            | Rock, Pop, Jazz, World Music         |
+|                                         | 锣       | Gong             | `/ɡɑŋ/`             | Classical, Traditional Music         |
+|                                         | 钹       | Cymbals          | `/ˈsɪmbəlz/`        | Orchestral, Marching Bands           |
+|                                         | 钢片琴   | Xylophone        | `/ˈzaɪləfoʊn/`      | Classical, Children's Music          |
+| 铜管乐器 <br />(Brass instruments)      | 法国号   | French Horn      | `/frɛntʃ hɔrn/`     | Classical, Orchestral, Brass Bands   |
+|                                         | 大号     | Tuba             | `/ˈtjuːbə/`         | Classical, Brass Bands, Jazz         |
+|                                         | 长号     | Euphonium        | `/juːˈfoʊniəm/`     | Brass Bands, Wind Ensembles          |
+| 手摇乐器 <br />(Handheld instruments)   | 马拉卡斯 | Maracas          | `/məˈrɑːkəs/`       | Latin, Caribbean, World Music        |
+|                                         | 铃鼓     | Tambourine       | `/ˌtæmbəˈriːn/`     | Folk, Pop, Rock                      |
+
+希望这次补充更多乐器类别能满足您的需求。乐器的种类实在是非常多样，每种乐器都有着独特的声音和音乐风格。
 
 
 
