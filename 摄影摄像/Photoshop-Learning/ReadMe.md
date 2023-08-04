@@ -115,7 +115,9 @@ created: 2023.03.29
 
 
 
-## ▲ MBP 卸载 Adobe 全家桶后重新安装
+## ▲ MBP 解决 This non-genuine Adobe app will be disabled soon
+
+（这个非正版的 Adobe 应用程序将很快被禁用）
 
 Created: 2023.06.05
 
@@ -235,6 +237,8 @@ rules:
     - 'DOMAIN-SUFFIX,cc-api-data.adobe.io,🛑 全球拦截'
     - 'DOMAIN-SUFFIX,dxyeyf6ecy.adobe.io,🛑 全球拦截'
     - 'DOMAIN-SUFFIX,cc-api-data.adobe.io,🛑 全球拦截'
+
+     
 ```
 
 
