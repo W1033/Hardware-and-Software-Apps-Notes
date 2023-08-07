@@ -119,19 +119,18 @@ created: 2023.03.29
 
 （这个非正版的 Adobe 应用程序将很快被禁用）
 
-Created: 2023.06.05
+*==Created: 2023.06.05==*
 
 事情的起因：6 月 4 号晚打开老黑的 MBP，突然弹出下图所示的弹框，大致意思就是 "这个非正版的adobe应用程序将很快被禁用"，然后我就卸载安装了最新版本的 ps 24 beta 版本，仍然不行；也在 google 和 baidu 搜索了很久，都没有找到任何可以解决的方法，无奈只能把 mbp 上所有的 adobe 软件都卸载试下可不可以解决问题。
 
 ![image-20230605212632168](./ReadMe.assets/image-20230605212632168.png)
 
 1. 首选需要在应用程序中点击各个 Adobe 软件的 uninstaller 删除，然后从 Application support 中删除 adobe 文件夹，好像哪个文件夹下还有 adobe 的残余文件，但是找不到了，全盘搜索找吧。。。
-
 2. 首选需要安装 adobe creative installer，下载地址：https://www.adobe.com/creativecloud/desktop-app.html，安装期间需要登录账号，可以使用 apple id 登录。（注意：安装过程中不要勾选 AGS）
 
+但是重新安装仍然没有解决上面的盗版提示。
 
-
-*Added: 2023.06.06*
+*==Added: 2023.06.06==*
 
 今天在 google 继续搜寻解决方案的时候，看到这个知乎专栏：[PS/LR 等软件提示“this Adobe app is not available”的解决方法（2023.05.21更新）](https://zhuanlan.zhihu.com/p/631079550?utm_id=0), 意思就是 Adobe 软件自动联网检查是否是盗版，作者建议把下面的网址加入到 Hosts 文件中（注: 下面的地址可能会不时更新）：
 
@@ -176,7 +175,7 @@ Created: 2023.06.05
 
 <img src="./ReadMe.assets/image-20230606224512295.png" alt="image-20230606224512295" style="zoom:50%;" />
 
-但是在 ClashX mac 上尝试没有作用。
+**但是在 ClashX mac 上尝试没有作用**。
 
 ### (2) 在代理节点的配置文件中添加 "指定网站不走代理" 的设置
 
@@ -240,6 +239,16 @@ rules:
 
      
 ```
+
+*==Added: 2023.08.07==*
+
+上面在 ClashX 中添加拦截的配置是可以的，但现在面临一个新的问题，因为节点会自动更新，所以自己添加的配置就会被更新后的节点文件覆盖，解决的方法就是下载 [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public) 版本，然后使用 Pro 版本的 [rule-providers](https://lancellc.gitbook.io/clash/clash-config-file/proxy-provider) 功能。
+
+rule-providers 的使用方法见同仓库的这篇文章：`Hardware-and-Software-Apps-Notes\软件-software\ClashX\ClashX-Pro配置rule-providers\readme.md`
+
+
+
+
 
 
 
