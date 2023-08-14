@@ -237,7 +237,9 @@ rules:
     - 'DOMAIN-SUFFIX,dxyeyf6ecy.adobe.io,🛑 全球拦截'
     - 'DOMAIN-SUFFIX,cc-api-data.adobe.io,🛑 全球拦截'
 
-     
+    # 2023.08.14 added 
+    - 'DOMAIN-SUFFIX,fqaq3pq1o9.adobe.io,🛑 全球拦截'
+    
 ```
 
 *==Added: 2023.08.07==*
