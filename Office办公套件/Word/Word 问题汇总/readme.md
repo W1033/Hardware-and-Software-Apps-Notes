@@ -3,6 +3,18 @@
 
 
 
+
+## ▲ word2019 中“允许拖放式文字编辑”默认启用失败
+
+`允许拖放式文字编辑` 在：文件 - 选项 - 高级 - 允许拖放式文字编辑 打开。
+
+> https://answers.microsoft.com/zh-hans/msoffice/forum/all/word2019%E4%B8%AD%E5%85%81%E8%AE%B8%E6%8B%96/e4264bbf-9971-460b-ae85-9b7170e0b7fc
+
+
+
+
+
+
 ## ▲ Word 在试图打开文件时遇到错误
 
 错误提示如下：
