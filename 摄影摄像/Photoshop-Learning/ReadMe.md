@@ -513,7 +513,9 @@ Mac 几个重要的快捷键
 
 ## ▲ PS 插件
 
-1. 磨皮插件 Portraiture 3
+1. 磨皮插件 Portraiture 3 
+    - windows 下载地址：https://jpsmile.com/imagenomic-portraiture-v3/
+    - Mac 下载地址：后补充
 2. 
 
 ## ▲ PS 制作九宫格方法
