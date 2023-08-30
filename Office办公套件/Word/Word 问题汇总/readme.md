@@ -2,6 +2,25 @@
 
 
 
+## ▲ office 2019 word打开文档排版全乱了
+
+> 笔记来源：https://answers.microsoft.com/zh-hans/msoffice/forum/all/office-2019/e3f4beb8-7c2b-4c2d-ae51-1a58c5a24110
+
+方法一：关闭 Word 的情况下，尝试定位到 C:\Users\xxx\AppData\roaming\Microsoft\Templates，找到 Normal.dotm，尝试将该文件进行重命名后，重启 Word 组件，打开这些文件后看下是否能显示正常。
+
+方法二：文件-选项-高级中，勾选禁用硬件图形加速的选项，看下显示效果。
+
+
+
+
+## ▲ word2019 中“允许拖放式文字编辑”默认启用失败
+
+`允许拖放式文字编辑` 在：文件 - 选项 - 高级 - 允许拖放式文字编辑 打开。
+
+> https://answers.microsoft.com/zh-hans/msoffice/forum/all/word2019%E4%B8%AD%E5%85%81%E8%AE%B8%E6%8B%96/e4264bbf-9971-460b-ae85-9b7170e0b7fc
+
+
+
 
 ## ▲ Word 在试图打开文件时遇到错误
 
