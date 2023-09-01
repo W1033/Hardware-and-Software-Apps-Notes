@@ -129,7 +129,11 @@ A：首先选中路径选择工具，如下图：（快捷键：A）
 
 ## ▲ Mac Studio 安装 PS 出错记录
 
+
+
 ## ▲ MBP 解决 This non-genuine Adobe app will be disabled soon
+
+
 
 ## ▲ PS 常用快捷键
 
