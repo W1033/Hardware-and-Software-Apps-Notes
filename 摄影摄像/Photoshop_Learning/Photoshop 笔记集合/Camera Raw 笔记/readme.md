@@ -16,11 +16,6 @@
 
 
 
-n. 面具；口罩
-vt. 掩盖；伪装
-
-
-
 ## ▲ 径向渐变 (Radial Filter)
 
 ### Camera Raw 径向滤镜调节手柄丢失
