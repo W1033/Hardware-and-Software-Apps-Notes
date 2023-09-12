@@ -4,6 +4,65 @@
 
 
 
+| 单词       | 美式发音          | 词类 + 汉语释义                                |
+| ---------- | ----------------- | ---------------------------------------------- |
+| vibrance   | `/ˈvaɪbrəns/`     | n. 振动；自然饱和度                            |
+| saturation | `/ˌsætʃəˈreɪʃən/` | n. 饱和；饱和度                                |
+| cyan       | `/saɪən/`         | n. 青色；青绿色<br />adj. 青色的               |
+| magenta    | `/məˈdʒentə/`     | n. 品红色，洋红色<br />adj. 品红色的，洋红色的 |
+|            |                   |                                                |
+
+
+
+## ▲ RGB 和 CMY
+
+> 第一张图来源：https://www.youtube.com/watch?v=EIVhk1RvbSE （这个视频还没看完）
+
+<img src="./ReadMe.assets/image-20230910211235732.png" alt="image-20230910211235732" style="zoom: 33%;" />
+
+<img src="./ReadMe.assets/image-20230910211304399.png" alt="image-20230910211304399" style="zoom:50%;" />
+
+下面一张图来自：《美国纽约摄影学院-摄影教材》P173
+
+<img src="./ReadMe.assets/image-20230910212743172.png" alt="image-20230910212743172" style="zoom: 50%;" />
+
+
+
+
+
+## ▲ 饱和度(Saturation) 和 自然饱和度(Vibrance)
+
+> 下面笔记来源：https://www.bilibili.com/video/BV1sr4y1S7ZZ/?spm_id_from=333.337.search-card.all.click&vd_source=e92153ec1930505e455be52646a78b7c
+
+<img src="./ReadMe.assets/image-20230910202938822.png" alt="image-20230910202938822" style="zoom:50%;" />
+
+饱和度：其实就是颜色的纯度，饱和度越高颜色越纯，饱和度越低颜色越偏灰
+
+<img src="./ReadMe.assets/image-20230910203252066.png" alt="image-20230910203252066" style="zoom: 50%;" />
+
+<img src="./ReadMe.assets/image-20230910203207238.png" alt="image-20230910203207238" style="zoom:50%;" />
+
+![image-20230910203607438](./ReadMe.assets/image-20230910203607438.png)
+
+![image-20230910203642619](./ReadMe.assets/image-20230910203642619.png)
+
+> 知识点总结
+> SUMMARY OF KNOWLEDGE POINTS
+>
+> - 调整自然饱和度会让照片整体的饱和度超于一致
+> - 调整饱和度会整体的提升或降低照片中的饱和度，且强度大于自然饱和度
+> - 对于不同的色相.自然饱和度跟饱和度调整參数时影响的幅度是不一样的。
+> - 自然饱和度对接近肤色的黄色,橙色影响较小，
+> - 饱和度对于蓝色饱和度的影响程度不如自然饱和度（此条仅限于LR软件）
+> - 调整饱和度参数时也会影响照片中颜色的亮度
+> - 不同软件的自然饱和度 饱和度原理大致相同,但调整结果略有差异
+
+> 下面的笔记来自评论区：
+>
+> 一句话概括，饱和度调节是线性的，自然饱和度调节是非线性的，斜率是下降的。
+
+
+
 ## ▲ Photoshop 官网教程
 
 > https://helpx.adobe.com/cn/photoshop/using/layer-basics.html
