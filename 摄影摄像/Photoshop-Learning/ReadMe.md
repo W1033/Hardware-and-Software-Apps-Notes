@@ -418,7 +418,7 @@ $V = 0.615R - 0.515G - 0.100B$    $B = Y + 2.03U$
 
 工具模式选择：**像素**
 
-![image-20230207215238529](ReadMe.assets/image-20230207215238529.png)
+<img src="ReadMe.assets/image-20230207215238529.png" alt="image-20230207215238529" style="zoom:40%;" />
 
 ## ▲ 如何在 PS 中画透明矩形
 
@@ -431,13 +431,13 @@ $V = 0.615R - 0.515G - 0.100B$    $B = Y + 2.03U$
 
 填充完毕之后，按下 `Command + Enter` 退出自由变换状态，然后按下 `Esc` 或 `Command + D` 键去除虚边线。 
 
-<img src="ReadMe.assets/image-20230207205221142.png" alt="image-20230207205221142"/>
+<img src="ReadMe.assets/image-20230207205221142.png" alt="image-20230207205221142" style="zoom:40%;" />
 
 2023.06.02 Added:
 
 windows 上的 PS 没有圆角矩形，这里添加一下如何在画完直角矩形后，再自定义圆角的：
 
-![image-20230602145058711](ReadMe.assets/image-20230602145058711.png)
+<img src="ReadMe.assets/image-20230602145058711.png" alt="image-20230602145058711" style="zoom:70%;" />
 
 
 
