@@ -2,9 +2,16 @@
 
 
 
-- 包装内物品
-- 安全须知
-- 声明
+## New Words
+
+| 单词     | 美式发音       | 词类 + 汉语释义      |
+| -------- | -------------- | -------------------- |
+| auto     | `/ˈɔːtoʊ/`     | n. 汽车；adj. 自动的 |
+| exposure | `/ɪkˈspoʊʒər/` | n. 曝光；暴露        |
+
+
+
+
 
 ## ▲ 简介   1
 
@@ -62,7 +69,7 @@
 | (2) 取景器 ... 17                       | (15) <img src="ReadMe.assets/image-20230113132754890.png" style="zoom:52%;"/> 按钮 ... 9、42、55、207、388 |
 | (3) 取景器接目镜 ... 23、106               | (16) 显示屏 ... 31、35、43、49、56、236、369 |
 | (4) 屈光度调节控制器 ... 17                | (17) <img src="ReadMe.assets/image-20230128145558900.png" style="zoom:42%;"/> （确定）按钮 ... 25 |
-| (5) <img src="ReadMe.assets/image-20230128145144160.png" style="zoom:42%;"/> 按钮 ... 36、97、128、351、365 | (18) <img src="ReadMe.assets/image-20230128145629045.png" style="zoom:42%;"/> 按钮 ... 38、44、236、248 |
+| (5) <img src="ReadMe.assets/image-20230128145144160.png" style="zoom:42%;"/> 按钮 ... 36、97、128、351、365<br />- 注：AE-L：Auto Exposure Lock | (18) <img src="ReadMe.assets/image-20230128145629045.png" style="zoom:42%;"/> 按钮 ... 38、44、236、248 |
 | (6) **AF-ON** 按钮 ... 50、88          | (19) <img src="ReadMe.assets/image-20230128145723298.png" style="zoom:42%;"/> 按钮 ... 38、44、236、248 |
 | (7) 照相机背带孔 ... 12                 | (20) <img src="ReadMe.assets/image-20230128145742639.png" style="zoom:42%;"/> 按钮 ... 25、172、250 |
 | (8) 多重选择器 ... 11、25               | (21) **MENU** 按钮 ... 24、272             |
@@ -167,6 +174,7 @@
 
 ## ▲ 释放模式 102
 ### 选择释放模式 102
+
 #### 电源和每秒幅数 104
 ### 自拍模式 <img src="ReadMe.assets/image-20230113133855807.png" style="zoom:62%">  106
 ### 反光板弹起模式 <img src="ReadMe.assets/image-20230113144203819.png" style="zoom:52%"> 108
