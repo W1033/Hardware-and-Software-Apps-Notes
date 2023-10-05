@@ -18,12 +18,6 @@
 
 
 
-## ▲ Photoshop 官网教程
-
-> https://helpx.adobe.com/cn/photoshop/using/layer-basics.html
-
-官网教程需要过一遍。
-
 
 
 
