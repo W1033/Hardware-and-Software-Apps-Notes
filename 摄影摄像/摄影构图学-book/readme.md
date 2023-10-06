@@ -14,7 +14,7 @@ Ben Clements and David Rosenfeld
 | 单词          | 美式发音          | 词类 + 汉语释义                                              |
 | ------------- | ----------------- | ------------------------------------------------------------ |
 | photograph    | `/ˈfoʊtəɡræf/`    | n. 照片；摄影作品。v. 拍照                                   |
-| photographing | `/ˈfoʊtəˌɡræfɪŋ/` | v. 拍照；摄影（photograph 的现在分词）<br />- Architectural Photographing 建筑摄影<br />- No Photographing 严禁拍照 |
+| photographing | `/ˈfoʊtəˌɡræfɪŋ/` | v. 拍照；摄影（photograph 的现在分词）<br />- Architectural`/ˌɑːrkɪˈtektʃərəl/` Photographing 建筑摄影<br />- No Photographing 严禁拍照 |
 | photographic  | `/ˌfoʊtəˈɡræfɪk/` | adj. 摄影的；用摄影法的。<br />- photographic file 摄影胶片<br />- photographic equipment 摄影器材 |
 | photographer  | `/fəˈtɑːɡrəfər/`  | n. 摄影师                                                    |
 | photography   | `/fəˈtɑːɡrəfi/`   | n. 摄影；摄影术                                              |

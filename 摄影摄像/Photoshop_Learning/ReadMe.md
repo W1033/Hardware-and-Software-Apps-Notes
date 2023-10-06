@@ -6,19 +6,40 @@
 
 | 单词       | 美式发音          | 词类 + 汉语释义                                |
 | ---------- | ----------------- | ---------------------------------------------- |
+| dawn       | `/dɔn/`           | n. 拂晓；黎明；v. 破晓；出现。                 |
+| resolution | `/ˌrɛzəˈluʃən/`   | n. 决心；分辨率                                |
 | vibrance   | `/ˈvaɪbrəns/`     | n. 振动；自然饱和度                            |
 | saturation | `/ˌsætʃəˈreɪʃən/` | n. 饱和；饱和度                                |
 | cyan       | `/saɪən/`         | n. 青色；青绿色<br />adj. 青色的               |
 | magenta    | `/məˈdʒentə/`     | n. 品红色，洋红色<br />adj. 品红色的，洋红色的 |
-|            |                   |                                                |
 
 
 
+## ▲ 一日之时间细分
+
+> 笔记来源：https://zh.wikipedia.org/zh-cn/%E6%8B%82%E6%9B%89
+
+**拂晓**（英语：Dawn^*^），又称**黎明**，古称**昧爽**[[1\]](https://zh.wikipedia.org/zh-cn/拂曉#cite_note-1)，指[早晨](https://zh.wikipedia.org/wiki/早晨)在[日出](https://zh.wikipedia.org/wiki/日出)之前的太阳已在地平线下6度以上，天将晓而尚暗之时段，日常定义是物体已经能够被辨识，而且户外活动也可以开始进行的时段。
+
+**航海拂晓**是日出之前[太阳](https://zh.wikipedia.org/wiki/太陽)仍在地平线下12度的时段。航海拂晓的定义是阳光仅足以辨识物体。
+
+**天文拂晓**是黎明之前，太阳仍在地平线下18度的时段。天文拂晓的定义是阳光开始渗入天空的时刻，在这之前的天空仍是完全黑暗的。[[来源请求\]](https://zh.wikipedia.org/wiki/Wikipedia:列明来源)
+
+拂晓不会与[日出](https://zh.wikipedia.org/wiki/日出)混淆，那是太阳的边缘刚刚从地平线露出来的时刻，叫做破晓。
+
+![image-20231006182842588](./ReadMe.assets/image-20231006182842588.png)
 
 
 
+## ▲ 把 Photoshop 界面从中文改为英文（以 MacOS 为例）
 
+(1) 如果从 `首选项（Preference）` -- `界面（Interface）`中的 `语言（UI Language）` 可以改成 “英文”，从这里更改重启 PS 即可。
 
+(2) 如果上面的 UI Language 中并没有英文，那么更改如下图：即把 `tw10428_Photoshop_zh_CN.dat` 文件命更改掉（见下图），这样 PS 无法识别汉语语言包，就会自动设置为默认的英文界面。 
+
+英文改中文，只需把上面的文件名还原即可。
+
+![image-20231006104327671](./ReadMe.assets/image-20231006104327671.png)
 
 
 
@@ -50,11 +71,16 @@ alt+shift+ctrl+s打开存储为web格式页面
 
 > 第一张图来源：https://www.youtube.com/watch?v=EIVhk1RvbSE （这个视频还没看完）
 
+| 单词    | 美式发音      | 词类 + 汉语释义                            |
+| ------- | ------------- | ------------------------------------------ |
+| cyan    | `/saɪən/`     | n. 青色；青绿色。adj. 青色的               |
+| magenta | `/məˈdʒentə/` | n. 品红色，洋红色。adj. 品红色的，洋红色的 |
+
 <img src="./ReadMe.assets/image-20230910211235732.png" alt="image-20230910211235732" style="zoom: 30%;" />
 
 <img src="./ReadMe.assets/image-20230910211304399.png" alt="image-20230910211304399" style="zoom:50%;" />
 
-下面一张图来自：《美国纽约摄影学院-摄影教材》P173
+下图来自：《美国纽约摄影学院-摄影教材》P173
 
 <img src="./ReadMe.assets/image-20230910212743172.png" alt="image-20230910212743172" style="zoom: 40%;" />
 
@@ -100,6 +126,18 @@ alt+shift+ctrl+s打开存储为web格式页面
 ## ▲ PS 中新建文件窗口信息介绍
 
 <img src="./ReadMe.assets/image-20230801182448139.png" alt="image-20230801182448139" style="zoom:40%;" />
+
+### 分辨率 (Resolution)
+
+分辨率（Resolution^*^）的单位简称 PPI (Pixel Per Inch 像素每英寸)。 
+
+300Ppi 即表示 1 英寸由 300 个像素点组成。
+
+注：常用的是像素没英寸，很少使用像素每厘米。
+
+![image-20231006122308877](./ReadMe.assets/image-20231006122308877.png)
+
+注：上图来自笔记：`/CSS-grocery/CSS-知识集合/布局-Layout/CSS单位/CSS-像素px详解和布局基础.md`
 
 ### 颜色模式 (Color Mode)
 
