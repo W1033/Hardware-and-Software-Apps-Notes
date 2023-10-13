@@ -91,4 +91,4 @@
 
 ### 频闪参数值设置(输出值、次数、频率)
 
-![image-20231012214724091](readme.assets/image-20231012214724091.png)
+<img src="readme.assets/image-20231012214724091.png" alt="image-20231012214724091" style="zoom:50%;" />
