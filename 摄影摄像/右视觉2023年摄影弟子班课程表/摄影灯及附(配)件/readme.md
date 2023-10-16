@@ -182,6 +182,16 @@ The three basic types of photography lighting equipment are continuous lights, s
 
 需要注意的是，这些附件在收纳时较长，对于携带来说有些不便。更好的柔光伞和反光伞通常是16骨的，因此具有更高的强度。对于便携性，美国Westcott公司提供了三折柔光伞反光伞，是一种不错的选择。
 
+
+
+## 雷达罩/ 美人碟 Beautify dish
+
+
+
+
+
+
+
 ## 柔光箱
 
 
