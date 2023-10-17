@@ -2,8 +2,29 @@
 
 
 
-
 ## 第一讲：摄影概述和光的本质
+
+#### 熟悉灯光和附件，解析每一个附件的核心特点和使用技巧
+
+1. 标罩：标准硬光，很实；脸部结构很明显，
+
+2. 雷达罩：依然是硬光
+
+3. 柔光伞：
+
+4. 柔光箱/长条柔光箱/八角柔光箱：很舒服的灯光
+
+5. 束光筒/聚光筒
+
+6. 反光伞
+
+7. 
+
+蜂巢（栅格）：
+
+- 让光的方向趋向一致，光变硬
+- 收放（光)
+- 光量变少
 
 
 ## 第二讲：单灯
@@ -18,6 +39,12 @@
 ## 第六讲：右视觉经典作品的背后及秘老师的摄影之路
 
 
+
+
+
+亮部的颜色会逼着暗色的颜色往其互补色的方向走
+
+饱和度高的颜色会逼着饱和度低的颜色往其互补色的方向走
 
 
 -------------
@@ -53,9 +80,69 @@
 
 <img src="readme.assets/image-20231016092730023.png" alt="image-20231016092730023" style="zoom:50%;" />
 
-HSV：色调（H, Hue），饱和度（S,Saturation），明度（V, Value）。
+
 
 HSL：色彩有三个基本的属性，“色相（Hue）、饱和度（Saturation）、亮度（Lightness）”，取首字母简称为hsl功能。
+
+
+
+> ### 色彩空间中的 HSL、HSV、HSB 有什么区别？
+>
+>
+> | 单词       | 美式发音          | 词类 + 汉语释义 |
+> | ---------- | ----------------- | --------------- |
+> | hue        | `/hjuː/`          | n. 色相；色调   |
+> | saturation | `/ˌsætʃəˈreɪʃən/` | n. 饱和；饱和度 |
+> | lightness  | `/ˈlaɪtnəs/`      | n. 亮度；明度   |
+>
+> HSB/HSV：色相(/调)（Hue）、饱和度（Saturation）、明度（Brightness）/ 明度（Value）。
+>
+> HSL：色相（Hue）、饱和度（Saturation）、亮度/明度（Lightness）。
+>
+> > 笔记来自：https://www.zhihu.com/question/22077462 中 [Forrest](https://www.zhihu.com/people/forrest-72) 的回答
+>
+> 首先， HSB 和 HSV 是同一个东西，只是名称不同，本文后面仅使用 HSB，当提到它的时候，也代表 HSV。
+>
+> HSB 和 HSL 在字面意思上是一样的：
+>
+> - H 指的是色相（Hue），就是颜色名称。例如：“红色”、“蓝色”；
+> - S 指的是饱和度（Saturation），即颜色的纯度；
+> - L（Lightness） 和 B（Brightness）是明度，颜色的明亮程度。
+>
+> 在原理和表现上，HSL 和 HSB 中的 H（色相） 完全一致，但二者的 S（饱和度）不一样， L 和 B （明度 ）也不一样：
+>
+> - HSB 中的 S 控制纯色中混入**白色**的量，值越大，白色越少，颜色**越纯**；
+> - HSB 中的 B 控制纯色中混入**黑色**的量，值越大，黑色越少，明度**越高**
+> - HSL 中的 S 和黑白没有关系，饱和度不控制颜色中混入黑白的多寡；
+> - HSL 中的 L 控制纯色中的混入的**黑白两种颜色**。
+>
+> 原理说完，结合实际应用场景看看。下面是 Photoshop 和 Affinity Designer 的[拾色器](https://www.zhihu.com/search?q=拾色器&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})
+>
+> ![img](readme.assets/v2-54376fec33366dac52c366d2442e6ffb_1440w.png)
+>
+> 两者分别使用了 HSB 和 HSL [颜色模型](https://www.zhihu.com/search?q=颜色模型&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})。两个拾色器都是 X 轴表示饱和度，越往右，饱和度越高；Y 轴表示明度，越往上明度越高。
+>
+> 先看 Photoshop 的 HSB 颜色模型拾色器，如下图所示，HSB 的 B（明度）控制纯色中混入黑色的量，越往上，值越大，黑色越少，颜色明度越高。
+>
+> ![img](readme.assets/v2-e1b97d312caa3d70c6d89315c8d9852d_1440w.png)
+>
+> 如下图所示，HSB 的 S（饱和度）控制纯色中混入白色的量，越往右，值越大，白色越少，颜色纯度越高。
+>
+> ![img](readme.assets/v2-1742509c67a8064860a6413eb1b0a7cb_1440w.png)
+>
+> 接下来看 Affinity Designer 的 HSL 颜色[模型拾色器](https://www.zhihu.com/search?q=模型拾色器&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})。如下图所示，Y 轴[明度轴](https://www.zhihu.com/search?q=明度轴&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})，从下至上，混入的黑色逐渐减少，直到 50% 位置处完全没有黑色，也没有白色，[纯度](https://www.zhihu.com/search?q=纯度&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})达到最高。继续往上走，纯色混入的白色逐渐增加，到达最高点变为纯白色，明度最高。
+>
+> ![img](readme.assets/v2-e1f83943c0e14debe12ed9dd4a9ad5b5_1440w.png)
+>
+> HSB 和 HSL 的区别解释完毕。
+>
+> 提问中提到，二者有什么优劣？
+>
+> 因为 RGB 色彩模型是通过不同量的红绿蓝来描述一个颜色的，对人类来说很不直观，难以理解。人类更习惯这样去描述一个颜色：它是什么颜色？是鲜艳还是灰暗？HSB 和 HSL 都是基于此被创造出来的。在弄清楚二者的原理和表现之后，你觉得哪个更符合你的直觉，对你来说，它就更优秀。
+>
+> 就日常使用来说，即便你不知道他们的原理，也不会影响你做出优秀的作品。但是，知其然就不会惧怕某天有小白指着 Photoshop 拾色器的右上角问你，这里[明度](https://www.zhihu.com/search?q=明度&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})最高，为什么不是白色的呢？
+
+
 
 <img src="readme.assets/image-20231016093332270.png" alt="image-20231016093332270" style="zoom:50%;" />
 
@@ -142,15 +229,29 @@ HSL：色彩有三个基本的属性，“色相（Hue）、饱和度（Saturati
 
 建议：在摄影当中建议多用道具，道具本身具有引导性，这样给拍摄者一个引导。
 
-服装搭配是一件非常重要的事情。
-
-从主题身上提取元素，这样道具不容易出错。
+服装搭配是一件非常重要的事情。从主题身上提取元素，这样道具不容易出错。
 
 吹头发：不能对着人的眼睛来吹风，常规的位置是对着人的脖子吹；第二也不要对着一个地方吹，要摇着吹；
 
+道具：秋千
 
+
+
+##### 神仙光拍摄
+
+灯光：
+
+- 第一盏灯（标罩 + 按需求加色片）在人的背后，一般拍大半身人像，轴心光在的脖子处，不要超过人，让人挡住灯。
+- 第二盏灯（标罩 + 按需求加色片）在第一盏灯的后面，但是灯位提高，往下有个角度，这个是给头部和肩膀的轮廓光。
+- 第三盏灯（反光伞）在人的前方补光
+
+附件：可以喷水，或者女生拿个配件（比如：打伞或者拿个扇子之类）
 
 ### 综合场景（数个右视觉经典案例的解析；创意点和场景的结合，大片原来是这么拍出来的；）
+
+
+
+
 
 
 
@@ -171,8 +272,6 @@ HSL：色彩有三个基本的属性，“色相（Hue）、饱和度（Saturati
 - 利用背景（背景纸、绒布、肌理布）拍摄一个主题
 - 利用道具拍摄一个主题
 - 任选一种综合置景拍摄一个主题
-
-
 
 为接下来的模特实拍做准备
 
