@@ -158,7 +158,7 @@ The three basic types of photography lighting equipment are continuous lights, s
 - 第一种是：纯白的柔光伞
 - 第二种是：外黑内银（或外黑内白）的反光伞。
 
-<img src="./readme.assets/image-20231015141042571.png" alt="image-20231015141042571" style="zoom:40%;" />
+<img src="./readme.assets/image-20231015141042571.png" alt="image-20231015141042571" style="zoom: 40%;" />
 
 <img src="./readme.assets/image-20231015140456604.png" alt="image-20231015140456604" style="zoom:50%;" />
 
@@ -186,7 +186,7 @@ The three basic types of photography lighting equipment are continuous lights, s
 
 ## 雷达罩/ 美人碟 Beautify dish
 
-
+<img src="./readme.assets/image-20231020205756979.png" alt="image-20231020205756979" style="zoom:50%;" />
 
 
 
@@ -207,7 +207,7 @@ The three basic types of photography lighting equipment are continuous lights, s
 
 ## 硫酸纸和旗板
 
-<img src="./readme.assets/image-20231015154357607.png" alt="image-20231015154357607" style="zoom:33%;" />
+<img src="./readme.assets/image-20231015154357607.png" alt="image-20231015154357607" style="zoom: 33%;" />
 
 硫酸纸是拍物品最常用的东西，价格不贵，但容易弄坏，私人学习和玩可以多买几张，摄影工作室估计是成卷买的吧。旗 板的柔光效果比硫酸纸更好，如果不拍产品，只拍人像几乎是用不到的。
 
@@ -219,7 +219,7 @@ The three basic types of photography lighting equipment are continuous lights, s
 
 国外有布朗P70， 效果最好，价格2000以上，贵！国内有金贝M9，仿布朗P70，一套下来也要270左右，套装配的还是不实用的60度蜂巢，而不是实用的30度蜂巢，配齐30度和10度蜂巢接近500大洋，吐血！效果似乎还行。前面这两个都是70度的反光罩。要求不高还是标准55度标准罩，价格低廉厂家多。另外有一种叫美人碟，顾名思义，就是专门拍人像用的，还有一种叫MOLA的反光罩，没用过，这里不多讲了。
 
-## 格珊、蜂巢和猪嘴
+## 格珊（蜂巢）和猪嘴
 
 上面三个都是一个作用，聚集光线，让打出来的光线具有方向性，不影响背景亮度，一般随厂家的柔光箱、反光罩配对购买，同型号不同厂家大小都有差异。格珊一般比较大，用在柔光箱上面，材质是软的，摸仿太阳光透过窗户一样的平行光。蜂巢一般用在反光罩和猪嘴上，有8 ~ 10度的；30度左右的，这个最常用。还有40 ~ 60度的，一般8 ~ 10度和40 ~ 60度都是辅助用的。猪嘴摸仿聚光灯一样的效果，也是用于定向打光的。这三种附件都是黑色的，吸收光线，因此会产生光损，损失的光量大约为1到2档。如果说没加格珊的柔光箱投出来的光在物体上产生的阴影柔和自然，那么加了格珊的光在物体上产生的阴影就柔中偏硬的过渡效果。而要的就是这种效果，使物体表面质感得以呈现。
 
