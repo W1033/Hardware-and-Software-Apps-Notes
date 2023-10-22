@@ -153,7 +153,7 @@ alt+shift+ctrl+s打开存储为web格式页面
 
 1. **Lab 颜色**：这个模式是以一个亮度分量 L 以及两个颜色分量 a 与 b 来表示颜色的。通常情况下，Lab 颜色很少使用。该模式是 Photoshop 的内部颜色模式，它是图像由 RGB 模式转换为 CMYK 颜色的中间模式。
 
-### 颜色模式 - 颜色深度（Color Depth）
+### 颜色模式 - 色彩深度（Color Depth）
 
 <img src="./ReadMe.assets/image-20230801185127434.png" alt="image-20230801185127434" style="zoom:67%;" />
 

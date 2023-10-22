@@ -6,9 +6,7 @@
 
 Camera技术专家
 
-170 人赞同了该文章
-
-**光的本质**
+## 光的本质
 
 人们很早就发现，白光或太阳光经三棱镜折射会分离出光谱色光，形成由红、橙、黄、绿、蓝、靛、紫等七个颜色组成的光带，这光带称为**光谱**。其中红光波长最长，紫光波长最短，其它各色光的波长则依次介于其间。如下图所示。
 
@@ -26,7 +24,7 @@ Camera技术专家
 
 从观察颜色的角度看，日光是一种非常理想的光源，如下图所示，日光在可见光波段光谱连续（覆盖所有波长）、平坦（各波长功率非常接近），因此被定义为观察颜色的标准光源。
 
-![img](readme.assets/v2-016c3de6406faa6878640af99460107b_1440w.png)
+<img src="readme.assets/v2-016c3de6406faa6878640af99460107b_1440w.png" alt="img" style="zoom:50%;" />
 
 
 
@@ -82,17 +80,17 @@ Camera技术专家
 
 LED 全称 Light Emitting Diode，即发光二极管，目前流行的高功率LED发射的是峰值波长460nm的蓝光。为了获得白光光源，人们在LED上添加了磷化合物，它能吸收蓝光发射黄绿光，从而改变LED光源的色调，调制出冷白、暖白等各种色温的光源产品。
 
-![img](readme.assets/v2-f094da50efeac9b2c0741ac40ee2a48a_1440w.png)
+<img src="readme.assets/v2-f094da50efeac9b2c0741ac40ee2a48a_1440w.png" alt="img"  />
 
 6650K 冷白光
 
-![img](readme.assets/v2-584770cb7b8d5e6ca224bc04e7817aa3_1440w.png)
+<img src="readme.assets/v2-584770cb7b8d5e6ca224bc04e7817aa3_1440w.png" alt="img"  />
 
 2875K 暖白光
 
 从下图的例子可以看到，不同的光谱成分（色温）对拍照的效果影响很大。
 
-![img](readme.assets/v2-f7839b56ced30a399cef95e17d7da4d4_1440w.png)
+<img src="readme.assets/v2-f7839b56ced30a399cef95e17d7da4d4_1440w.png" alt="img" style="zoom:67%;" />
 
 
 
@@ -446,9 +444,9 @@ v’=1.5v=9y/(-2x+12y+3)
 
 CIE 1976 UCS将CIE 1931色度坐标加以转换，使其所形成的色域接近均匀色度空间，让色彩差异得以量化，在各种文献中也称CIE LUV颜色空间。
 
-![img](readme.assets/v2-5cf5e1d4b2f643e89e9a2caa9861a05b_1440w.png)
+<img src="readme.assets/v2-5cf5e1d4b2f643e89e9a2caa9861a05b_1440w.png" alt="img" style="zoom:50%;" />
 
-![img](readme.assets/v2-eddbac7484640efbebff2ae77fc7db4d_1440w.png)
+<img src="readme.assets/v2-eddbac7484640efbebff2ae77fc7db4d_1440w.png" alt="img" style="zoom: 67%;" />
 
 ![img](readme.assets/v2-7b2339450d565a598d948a3d9ebfcb1d_1440w.webp)
 
@@ -458,7 +456,7 @@ CIE-1976 UCS 普朗克曲线局部放大图
 
 在(u',v')坐标系上两个颜色的差异∆u'v'与人知觉到的颜色差异成正比关系。
 
-![img](readme.assets/v2-3ddfff9657fb9eb45c86db9be3e7f11a_1440w.png)
+<img src="readme.assets/v2-3ddfff9657fb9eb45c86db9be3e7f11a_1440w.png" alt="img" style="zoom:77%;" />
 
 ![img](readme.assets/v2-fbf69ff1fdc35d3b282caa30d902a1d2_1440w.png)
 
@@ -474,7 +472,7 @@ CIE-1976 UCS 普朗克曲线局部放大图
 
 CIE L*a*b*又称**CIELAB**颜色空间，是目前应用最广的颜色空间之一，它的主要优点是颜色之间的距离与人的知觉更好地符合线性关系，尤其是描述较暗的颜色准确度更高。轻微的不足是描述黄色区域时线性关系会有一定变化，即颜色宽容量的圆圈在黄色附近直径会有变化。
 
-![img](readme.assets/v2-939715466586bc43db9b0c67d1c6f259_1440w.png)
+<img src="readme.assets/v2-939715466586bc43db9b0c67d1c6f259_1440w.png" alt="img" style="zoom:67%;" />
 
 **CIELAB** 颜色空间在知觉均匀性方面与CIE 1976 UCS类似，两种标准都不是十全十美的，但都取得了广泛的应用。关于这两个颜色空间哪一个会更均匀一些，学术界还没有形成明确的结论。目前似乎是CIELAB的应用会更多一些。下图是使用CIELAB标注Munsell色序，可以看到确实有些色调的分布是不太均匀的，尤其是蓝色问题比较。
 
@@ -484,11 +482,11 @@ CIELAB 颜色空间并没有很好地解决色调恒常问题，它无法解释H
 
 
 
-![img](readme.assets/v2-24803d52c229155c3734e93a5940fced_1440w.webp)
+<img src="readme.assets/v2-24803d52c229155c3734e93a5940fced_1440w.webp" alt="img" style="zoom:87%;" />
 
 
 
-![img](readme.assets/v2-3073eb532b67a0485ff5496f99c5e260_1440w.png)
+<img src="readme.assets/v2-3073eb532b67a0485ff5496f99c5e260_1440w.png" alt="img" style="zoom:67%;" />
 
 CIE L***a***b* 颜色模型的数学定义
 
@@ -621,7 +619,7 @@ IP T 数值范围分别为 : *I* 为{ 0 ～ 1} *,* *P* 与 *T* 均为{- 1～1}�
 
 ITU-R Recommendation BT.709, 常简写为 Rec. 709, BT.709, ITU709, 是ITU组织于1990年制定的HDTV色域标准，符合HDTV标准的显示器应支持此空间的全部颜色。
 
-![img](readme.assets/v2-bd1220fee5dd45bc0fda8cdff20a15ed_1440w.png)
+<img src="readme.assets/v2-bd1220fee5dd45bc0fda8cdff20a15ed_1440w.png" alt="img" style="zoom:67%;" />
 
 Rec.709 Gamma 公式
 
@@ -695,17 +693,17 @@ ACES can be used on any type of production from features to television, commerci
 
 ACES2065-1 定义了一个特别宽广的色域，包含了所有可见颜色，三基色点定义在可见区之外。白点采用CIE D60，坐标 x = 0.32168， y = 0.33767。ACES2065-1 常简称为AP0, 即“ACES Primaries 0”，主要用于视频数据存储，采用线性gamma。
 
-![img](readme.assets/v2-ff0b0850757434b5619811fc95a77c28_1440w.png)
+<img src="readme.assets/v2-ff0b0850757434b5619811fc95a77c28_1440w.png" alt="img" style="zoom:67%;" />
 
 **ACES系列色域的区别**
 
-![img](readme.assets/v2-465aa0d9613cd51598aa918bcdeecd83_1440w.png)
+<img src="readme.assets/v2-465aa0d9613cd51598aa918bcdeecd83_1440w.png" alt="img" style="zoom:67%;" />
 
 ## DCI P3 色域
 
 DCI-P3是美国电影行业推出的一种广色域标准，是目前数字电影回放设备的色彩标准之一。它的色域较大，与sRGB相比，绿色和红色的范围更广。DCI-P3能更好的满足人类视觉体验，适用于数字电影，电视剧后期制作、调色等。
 
-![img](readme.assets/v2-9f59b24719eefb53520a4143d68c8a22_1440w.png)
+<img src="readme.assets/v2-9f59b24719eefb53520a4143d68c8a22_1440w.png" alt="img" style="zoom:67%;" />
 
 在 CIE 1931 xy 色彩空间中，DCI-P3 色彩空间覆盖了 45.5% 的全色域和 86.9% 的常见色域，在 CIE 1976 u’v’ 色度图覆盖率分别是 41.7% 和 85.5%。 蓝色原色与 sRGB 和 Adobe RGB 相同; 红色原色是波长 615 纳米单色光源。
 
@@ -757,7 +755,7 @@ DCI-P3 的伽马是 2.6, 而 Display P3 和 sRGB, AdobeRGB 也一样，都是 2.
 
 Michael R. Pointer 于 1980 年定义了一个常见物体表面颜色的最大可能色域，包含了 4089个样本，这个色域成为了研究色彩还原问题的有力工具，得到了人们的推崇。在视觉上，Pointer Gamut 代表了人们在自然界中可能见到的大部分颜色。 Pointer Gamut 之外的颜色则一般是人造光源，包括霓虹灯（neon lights）以及电脑动画生成的颜色。
 
-![img](readme.assets/v2-88e06646c534f51c8414915d66178f2b_1440w.webp)
+<img src="readme.assets/v2-88e06646c534f51c8414915d66178f2b_1440w.webp" alt="img" style="zoom:67%;" />
 
 Pointer 色域覆盖了CIE1931 xy空间47.9%的颜色范围，从它的不规则形状就不难想象，制造一个支持Pointer色域的显示器应该不是一件很容易的事情。事实也确实如此，研究发现，理论上不可能使用三种基色实现支持Pointer色域的显示系统，实际上至少需要四种基色。
 
@@ -779,7 +777,7 @@ ProPhoto RGB 也被称为 ROMM RGB 色域（Reference Output Medium Metric RGB C
 
 Munsell 首次将颜色分解成三个相互独立的分量，即hue, value, chroma。Munsell 颜色空间的最大优势在于它是知觉均匀的（percetually uniform），所以至今仍有一定用途，尤其是在评估空间的知觉均匀性时总是会以它作为参考标准。
 
-![img](readme.assets/v2-6f5d8dd7ae26e432a00af990ffc718a1_1440w.png)
+<img src="readme.assets/v2-6f5d8dd7ae26e432a00af990ffc718a1_1440w.png" alt="img" style="zoom:67%;" />
 
 ![img](readme.assets/v2-3eeed3c4db249b0a4ed89dd897a89192_1440w.png)
 
@@ -809,11 +807,11 @@ constant hue plane example
 
 ## RGB2XYZ 变换矩阵
 
-![img](readme.assets/v2-5a636de0cda02f60415f285dab67bcef_1440w.png)
+<img src="readme.assets/v2-5a636de0cda02f60415f285dab67bcef_1440w.png" alt="img" style="zoom: 77%;" />
 
-![img](readme.assets/v2-e2ea77ec97c9f84895d32372dd366f74_1440w.png)
+<img src="readme.assets/v2-e2ea77ec97c9f84895d32372dd366f74_1440w.png" alt="img" style="zoom:77%;" />
 
-![img](readme.assets/v2-3647012de616e778600c7ba872303674_1440w.png)
+<img src="readme.assets/v2-3647012de616e778600c7ba872303674_1440w.png" alt="img" style="zoom:77%;" />
 
 ## ICC Profile
 
@@ -863,17 +861,17 @@ dE00或dE2000 的符号定义如下
 
 CIE dE2000 标准发布于2001年，公式比较复杂，具体步骤如下。
 
-![img](readme.assets/v2-f4514095b95894ee2f0af6d2e3cdeaaf_1440w.png)
+<img src="readme.assets/v2-f4514095b95894ee2f0af6d2e3cdeaaf_1440w.png" alt="img" style="zoom:77%;" />
 
-![img](readme.assets/v2-f7c13b38bfbb85bc610707197a23d72f_1440w.png)
+<img src="readme.assets/v2-f7c13b38bfbb85bc610707197a23d72f_1440w.png" alt="img" style="zoom:77%;" />
 
-![img](readme.assets/v2-6f93b35a7d21029b2e0d8aede18626b3_1440w.png)
+<img src="readme.assets/v2-6f93b35a7d21029b2e0d8aede18626b3_1440w.png" alt="img" style="zoom:67%;" />
 
-![img](readme.assets/v2-4e9c9a76e9e8a7a74bd542222dec517a_1440w.png)
+<img src="readme.assets/v2-4e9c9a76e9e8a7a74bd542222dec517a_1440w.png" alt="img" style="zoom:77%;" />
 
 下面是某软件对camera进行颜色精度评估的算法过程，可以看到同时使用了dE76和dE2000 标准。
 
-![img](readme.assets/v2-490c7cb57a6a07efeecd105c19c5717e_1440w.png)
+<img src="readme.assets/v2-490c7cb57a6a07efeecd105c19c5717e_1440w.png" alt="img" style="zoom:77%;" />
 
 **FAQ: What does the “E” in delta E or E\* stand for?**
 
@@ -1051,11 +1049,11 @@ Finlayson 等人于2000年提出了一个基于BFD模型的改进矩阵，实验
 
 如下图所示，ColorChecker 某色块（patch）在光源A下呈现的颜色是Sample A，在光源C下呈现的颜色是Sample C。分别使用Bradford、Von Kries、XYZ Scaling等矩阵对Sample A 颜色进行CAT变换，得到图中的三个小方块所示的颜色。显然没有任何矩阵能够输出完全正确的结果，但大体上都是比较接近的。
 
-![img](readme.assets/v2-5dce849c628c6a1466566dc6ad225699_1440w.png)
+<img src="readme.assets/v2-5dce849c628c6a1466566dc6ad225699_1440w.png" alt="img" style="zoom:77%;" />
 
 ## 相关书籍
 
-![img](readme.assets/v2-4adbe43c5f5f71546d0ac7eabab6d2b0_1440w.png)
+<img src="readme.assets/v2-4adbe43c5f5f71546d0ac7eabab6d2b0_1440w.png" alt="img" style="zoom:77%;" />
 
 下面的网站提供了各种常用光源之间的变换矩阵。
 
@@ -1094,17 +1092,3 @@ Finlayson 等人于2000年提出了一个基于BFD模型的改进矩阵，实验
 Camera
 
 色度学
-
-赞同 1706 条评论
-
-分享
-
-喜欢收藏申请转载
-
-
-
-
-
-评论区已关闭
-
-### 文章被以下专栏收录

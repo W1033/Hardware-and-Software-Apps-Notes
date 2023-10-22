@@ -12,6 +12,7 @@
 ### 如何让摄影做的更长久进步的也更快
 ### 如何提升摄影师的眼光
 ### 如何让摄影师的观察更有效
+
 ### 如何做摄影拍摄题材和创意的有效积累
 ### 摄影师的控制力
 ### 摄影师必备的硬件基础。
@@ -40,7 +41,8 @@
 ### 如何选适合自己的闪光灯，如何充分利用闪光灯
 ### 结合实拍消化和深入了解
 ### 快速提升摄影眼光的好习惯！
-### 轴心光和三原色人像现场实操 
+### 轴心光和三原色人像现场实操
+
 ### 2023 年新增 led 常亮灯课程
 
 
@@ -252,8 +254,8 @@
 ##### 3 大面
 |  1   | 白（亮部）|
 | ---- | ---- |
-|  2   | 灰|
-|  3   | 黑|
+|  2   | 灰（中间调） |
+|  3   | 黑（暗部） |
 
 
 ### 双灯经典案例解析
@@ -387,77 +389,10 @@
 
 ### 色彩构成和摄影的结合（颜色本身的引导性，颜色的关系等）
 
-<img src="readme.assets/image-20231016092730023.png" alt="image-20231016092730023" style="zoom:50%;" />
+![rgb](./readme.assets/rgb.png)
 
 
-
-HSL：色彩有三个基本的属性，“色相（Hue）、饱和度（Saturation）、亮度（Lightness）”，取首字母简称为hsl功能。
-
-
-
-> ### 色彩空间中的 HSL、HSV、HSB 有什么区别？
->
->
-> | 单词       | 美式发音          | 词类 + 汉语释义 |
-> | ---------- | ----------------- | --------------- |
-> | hue        | `/hjuː/`          | n. 色相；色调   |
-> | saturation | `/ˌsætʃəˈreɪʃən/` | n. 饱和；饱和度 |
-> | lightness  | `/ˈlaɪtnəs/`      | n. 亮度；明度   |
->
-> HSB/HSV：色相(/调)（Hue）、饱和度（Saturation）、明度（Brightness）/ 明度（Value）。
->
-> HSL：色相（Hue）、饱和度（Saturation）、亮度/明度（Lightness）。
->
-> > 笔记来自：https://www.zhihu.com/question/22077462 中 [Forrest](https://www.zhihu.com/people/forrest-72) 的回答
->
-> 首先， HSB 和 HSV 是同一个东西，只是名称不同，本文后面仅使用 HSB，当提到它的时候，也代表 HSV。
->
-> HSB 和 HSL 在字面意思上是一样的：
->
-> - H 指的是色相（Hue），就是颜色名称。例如：“红色”、“蓝色”；
-> - S 指的是饱和度（Saturation），即颜色的纯度；
-> - L（Lightness） 和 B（Brightness）是明度，颜色的明亮程度。
->
-> 在原理和表现上，HSL 和 HSB 中的 H（色相） 完全一致，但二者的 S（饱和度）不一样， L 和 B （明度 ）也不一样：
->
-> - HSB 中的 S 控制纯色中混入**白色**的量，值越大，白色越少，颜色**越纯**；
-> - HSL 中的 S 和黑白没有关系，饱和度不控制颜色中混入黑白的多寡；
-> - HSB 中的 B 控制纯色中混入**黑色**的量，值越大，黑色越少，明度**越高**
-> - HSL 中的 L 控制纯色中的混入的**黑白两种颜色**。
->
-> 原理说完，结合实际应用场景看看。下面是 Photoshop 和 Affinity Designer 的[拾色器](https://www.zhihu.com/search?q=拾色器&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})
->
-> ![img](readme.assets/v2-54376fec33366dac52c366d2442e6ffb_1440w.png)
->
-> 两者分别使用了 HSB 和 HSL [颜色模型](https://www.zhihu.com/search?q=颜色模型&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})。两个拾色器都是 X 轴表示饱和度，越往右，饱和度越高；Y 轴表示明度，越往上明度越高。
->
-> 先看 Photoshop 的 HSB 颜色模型拾色器，如下图所示，HSB 的 B（明度）控制纯色中混入黑色的量，越往上，值越大，黑色越少，颜色明度越高。
->
-> ![img](readme.assets/v2-e1b97d312caa3d70c6d89315c8d9852d_1440w.png)
->
-> 如下图所示，HSB 的 S（饱和度）控制纯色中混入白色的量，越往右，值越大，白色越少，颜色纯度越高。
->
-> ![img](readme.assets/v2-1742509c67a8064860a6413eb1b0a7cb_1440w.png)
->
-> 接下来看 Affinity Designer 的 HSL 颜色[模型拾色器](https://www.zhihu.com/search?q=模型拾色器&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})。如下图所示，Y 轴[明度轴](https://www.zhihu.com/search?q=明度轴&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})，从下至上，混入的黑色逐渐减少，直到 50% 位置处完全没有黑色，也没有白色，[纯度](https://www.zhihu.com/search?q=纯度&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})达到最高。继续往上走，纯色混入的白色逐渐增加，到达最高点变为纯白色，明度最高。
->
-> ![img](readme.assets/v2-e1f83943c0e14debe12ed9dd4a9ad5b5_1440w.png)
->
-> HSB 和 HSL 的区别解释完毕。
->
-> 提问中提到，二者有什么优劣？
->
-> 因为 RGB 色彩模型是通过不同量的红绿蓝来描述一个颜色的，对人类来说很不直观，难以理解。人类更习惯这样去描述一个颜色：它是什么颜色？是鲜艳还是灰暗？HSB 和 HSL 都是基于此被创造出来的。在弄清楚二者的原理和表现之后，你觉得哪个更符合你的直觉，对你来说，它就更优秀。
->
-> 就日常使用来说，即便你不知道他们的原理，也不会影响你做出优秀的作品。但是，知其然就不会惧怕某天有小白指着 Photoshop 拾色器的右上角问你，这里[明度](https://www.zhihu.com/search?q=明度&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A280114578})最高，为什么不是白色的呢？
-
-
-
-<img src="readme.assets/image-20231016093332270.png" alt="image-20231016093332270" style="zoom:50%;" />
-
-> （待做笔记）上图来源：https://zhuanlan.zhihu.com/p/140478770
-
-| 色彩 | 色彩图 |                  抽象联想                  |
+| 色彩 | 色彩值 |                  抽象联想                  |
 | :--: | :----: | :----------------------------------------: |
 |  红  |        |  兴奋、热烈、激情、喜庆、高贵、紧张、奋进  |
 |  橙  |        |  愉快、激情、活跃、热情、精神、活渡、甜美  |
@@ -475,18 +410,24 @@ HSL：色彩有三个基本的属性，“色相（Hue）、饱和度（Saturati
 
 相机不同焦段的视角：
 
-- 14mm 的视角为 114°
-- 15mm 的视角为 114°
-- 24mm 的视角为 84°
-- 28mm 的视角为 75°
-- 35mm 的视角为 63°
-- 50mm 的视角为 46°
-- 85mm 的视角为 28-30°
-- 100mm 的视角为 24°
-- 135mm 的视角为 18°
-- 200mm 的视角为 12°
-- 500mm 的视角为 5°
-- 600mm 的视角为 4°10′
+<img src="./readme.assets/fbf05de7f3.png" alt="fbf05de7f3" style="zoom: 67%;" />
+
+| 焦段   |  视角  |
+| :--   |  :--  |
+| 15mm  |  114° |
+| 20mm | 94° |
+| 24mm  |  84°  |
+| 28mm  |  75°  |
+| 35mm  |  63°  |
+| 50mm  |  46°  |
+| 70mm | 34° |
+| 80mm | 30° |
+| 85mm  |  28° |
+| 100mm  |  24°  |
+| 135mm  |  18°  |
+| 200mm  |  12°  |
+| 500mm  |  5°  |
+| 600mm  | 4° |
 
 
 人眼视角：
