@@ -1,4 +1,4 @@
-# 蒙版 (Mask) 
+# 蒙版 (Mask)
 
 > 笔记来源：https://www.zhihu.com/question/372879137
 

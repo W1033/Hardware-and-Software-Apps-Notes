@@ -226,7 +226,7 @@ HSB/HSV：色相 (/调）（Hue）、饱和度（Saturation）、明度（Bright
 
 HSL：色相（Hue）、饱和度（Saturation）、亮度/明度（Lightness）。
 
-笔记来自：https://www.zhihu.com/question/22077462 中 [Forrest](https://www.zhihu.com/people/forrest-72) 的回答
+>  笔记来自：https://www.zhihu.com/question/22077462 中 [Forrest](https://www.zhihu.com/people/forrest-72) 的回答
 
 首先， HSB 和 HSV 是同一个东西，只是名称不同，本文后面仅使用 HSB，当提到它的时候，也代表 HSV。
 
