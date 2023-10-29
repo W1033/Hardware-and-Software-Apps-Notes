@@ -106,19 +106,19 @@ RGB 是指红绿蓝，是**光**的三原色；三原色是指所有的颜色都
 
 我们想把纯红色，也就是 RGB 为 255.0.0 的红色，调成黄色。看色环，加绿色就可以！一比一配比，+255 的绿色。
 
-<img src="./readme.assets/image-20231022172722944.png" alt="image-20231022172722944" style="zoom: 50%;" />
+<img src="./readme.assets/image-20231022172722944.png" alt="image-20231022172722944" style="zoom: 33%;" />
 
 ##### (2) 红色 → 橙色
 
 根据上面表格的比例关系可以看出，如果要调成橙色，就是 $\frac{1}{2}$ 绿色的量，也就是 128.
 
-<img src="./readme.assets/image-20231022173149193.png" alt="image-20231022173149193" style="zoom:50%;" />
+<img src="./readme.assets/image-20231022173149193.png" alt="image-20231022173149193" style="zoom: 33%;" />
 
 ##### (3) 红色 → 黄绿色
 
 根据上面表格的比例关系可以看出，要调成橙色，就是 $\frac{1}{2}$ 红色的量，也就是 Red = 128.
 
-![image-20231022173706977](./readme.assets/image-20231022173706977.png)
+<img src="./readme.assets/image-20231022173706977.png" alt="image-20231022173706977" style="zoom:33%;" />
 
 ##### (4) 红色 → 紫色
 ##### (5) 红色 → 洋红色
@@ -157,37 +157,37 @@ RGB 是指红绿蓝，是**光**的三原色；三原色是指所有的颜色都
 
 **把红色变为其他任何颜色：**红色→橙色：加1/2绿或减1/2洋红
 
-<img src="./readme.assets/v2-27e2faad885958035e82537db5e0d3ca_1440w.webp" alt="img" style="zoom: 67%;" />
+<img src="./readme.assets/v2-27e2faad885958035e82537db5e0d3ca_1440w.webp" alt="img" style="zoom: 50%;" />
 
-<img src="./readme.assets/v2-b3e61bb6b6bd21d08aa0c7e329b42f2f_1440w.webp" alt="img" style="zoom:67%;" />
+<img src="./readme.assets/v2-b3e61bb6b6bd21d08aa0c7e329b42f2f_1440w.webp" alt="img" style="zoom: 50%;" />
 
 
 
 红色→黄色：加绿或减洋红
 
-<img src="./readme.assets/v2-0032157410d4c2411539aa9355485036_1440w.webp" alt="img" style="zoom: 67%;" />
+<img src="./readme.assets/v2-0032157410d4c2411539aa9355485036_1440w.webp" alt="img" style="zoom: 50%;" />
 
 
 
 红色→黄绿：加绿同时减1/2红或减洋红同时加1/2青
 
-<img src="./readme.assets/v2-dd6785f15dbe3f86d887735f03eafa8e_1440w.webp" alt="img" style="zoom:67%;" />
+<img src="./readme.assets/v2-dd6785f15dbe3f86d887735f03eafa8e_1440w.webp" alt="img" style="zoom: 50%;" />
 
 
 
 红色→黄绿：减红加绿或加青减洋红
 
-<img src="./readme.assets/v2-ac0a3b7cf12dcd2b5af45252ef915aaf_1440w.jpeg" alt="img" style="zoom:67%;" />
+<img src="./readme.assets/v2-ac0a3b7cf12dcd2b5af45252ef915aaf_1440w.jpeg" alt="img" style="zoom: 50%;" />
 
 红色→青绿：减红加绿加1/2蓝或加青减洋红减1/2黄
 
-<img src="./readme.assets/v2-5f1737a6f0e94d9f0e8f34a148139fe7_1440w.jpeg" alt="img" style="zoom:67%;" />
+<img src="./readme.assets/v2-5f1737a6f0e94d9f0e8f34a148139fe7_1440w.jpeg" alt="img" style="zoom: 50%;" />
 
 
 
 红色→青：减红加绿加蓝或加青减洋红减黄
 
-<img src="./readme.assets/v2-fe280d611cdda5d888070b0a829a06c9_1440w.jpeg" alt="img" style="zoom:67%;" />
+<img src="./readme.assets/v2-fe280d611cdda5d888070b0a829a06c9_1440w.jpeg" alt="img" style="zoom: 50%;" />
 
 OK了，不用真的一一列举了吧！
 
