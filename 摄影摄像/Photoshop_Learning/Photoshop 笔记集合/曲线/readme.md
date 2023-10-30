@@ -2,7 +2,9 @@
 
 ## 常见曲线调整方式
 
-> 图片来源：https://www.bilibili.com/video/BV13j411q731/?spm_id_from=333.337.search-card.all.click&vd_source=e92153ec1930505e455be52646a78b7c  （建议观看此视频）![image-20231028225019975](./readme.assets/image-20231028225019975-8544407.png)
+> 图片来源：https://www.bilibili.com/video/BV13j411q731/?spm_id_from=333.337.search-card.all.click&vd_source=e92153ec1930505e455be52646a78b7c  （建议观看此视频）
+>
+> ![image-20231028225019975](./readme.assets/image-20231028225019975-8544407.png)
 
 |   方式   | 注释                                                         |
 | :------: | ------------------------------------------------------------ |
