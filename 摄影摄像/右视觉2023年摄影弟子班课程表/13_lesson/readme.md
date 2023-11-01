@@ -3,7 +3,7 @@
 
 
 <p style="background-color:#f9e2d2; border-radius:6px; padding:20px 10px;"><strong style="color:#dd5a2b;">重要提示：</strong>笔记不确保全部正确，若发现错误请自行改正，见谅。
-<br>
+<br><br>
 Windows 系统请把下面快捷键的 Command 换成 Control.
 </p>
 
