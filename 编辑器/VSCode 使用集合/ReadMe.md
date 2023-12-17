@@ -1,24 +1,143 @@
 # VSCode 使用设置
 
+## ▲ VSCode 常用快捷键
 
-## ▲ vscode 常用快捷键:
-- 复制当前行：`Control/Command + C` `shift + alt +up/down`
-- 代码格式化: `Shift + Alt +f`
-- 格式化选定代码 ：`ctrl + k / ctrl + f`
-- 代码展开: 先按下 `ctrl + K`, 再按下 `ctrl + J` ;
-- 注释：
-  + a) 单行注释：`[ctrl+k, ctrl+c] 或 ctrl+/`
-  + b) 取消单行注释：`[ctrl+k, ctrl+u] (按下ctrl不放, 再按k + u)`
-  + c) 多行注释：`[alt+shift+A]`
-  + d) 多行注释：`/**`
-- 折叠代码快捷键: 先按下 `Ctrl + K` 再按下 `ctrl + 0(数字0)` 
-  + (Tip: 即使是折叠全部代码也不用全选文本) 
+> 此段笔记大部分来自：https://zhuanlan.zhihu.com/p/564341329
+
+*Edited: 2023.12.16*
+
+<p style="background-color:#fdeed6; border-radius:6px; padding:20px;"><span style="color:#f79c21;">提示：</span>Command + K, Command + S 打开快捷键一览表（按下 Command 不放, 再按 K + S)</p>
+
+### △ 光标移动
+
+| 功能                      | 快捷键 |
+| ------------------------- | -------------- |
+| 把光标移动到连续文字/字符的前面？<br />（以空格来分割） | `option` + `←` |
+|  | 说明：字符拿汉语和英文 2 种语言来解释：<br />（1）汉语：一段连续的没有空格的汉字（包含中文标点符号），直到一段文字前有空格才会停下来。<br />（2）英文：一般情况下会移动到当前单词的前面，因为一般每个单词之间都是拿空格分隔的。 |
+| 移动到连续文字/字符的后面 | `option` + `←`     |
+| 移动当前行(上/下) | `option` + `↑`/`↓` |
+| 光标移动到行首 | `Command` + `←` |
+| 光标移动到行尾 | `Command` + `→` |
+| 花括号之间跳转 | `Command` + `shift` +`+` |
+| 移动到文档第一行或最后一行 | `Command` + `↑` / `Command` + `↓` |
+
+### △ 选中文本
+| 快捷键                              | 功能                                                         |
+| ----------------------------------- | ------------------------------------------------------------ |
+| `Command` + `Shift` + `←`/`→` | 基于（上面光标移动）单词、行、文档的光标操作加上个 shift 键，<br />就可以移动光标的同时选择文本。e.g.: 下**示例(1)** |
+| `Command` + `Shift` + `L` | 选中所有与当前选中内容相同部分 |
+| `Command` + `Shift` + `Option` + `←`/`→` | 选中多行文本之后，把光标移动到多行文本的开头或结尾。e.g.: **示例(2)** |
+
+##### 示例(1)：选中多行相同字符后，将光标从选中的位置扩展到当前行的末尾
+
+首先选中第一行的 ``/` 后，使用快捷键 `Command` + `D` 选中接下来的几行，然后按下 **`Shift` + `Command` + `→`** 即可从选中的位置到一行的末尾。
+
+<img src="./ReadMe.assets/image-20231216162220290.png" alt="image-20231216162220290" style="zoom:50%;" />
+
+##### 示例(2): 选中多行文本之后，把光标移动到多行文本的开头
+
+<img src="./ReadMe.assets/image-20231216162033335.png" alt="image-20231216162033335" style="zoom:50%;" />
+
+
+
+### △ 添加注释
+
+| 功能             | 快捷键                                         |
+| ---------------- | ---------------------------------------------- |
+| 单行注释     | `Command` + `/` 或 `Command` + `K, Command` + `C`                 |
+| 取消单行注释  | `Command` + `K`, `Command` + `U` (按下 Command 不放, 再按 K + U) |
+| 多行注释     | `Option` + `Shift` + `A`                              |
+
+### △ 格式化代码
+| 功能           | 快捷键                                                       |
+| -------------- | ------------------------------------------------------------ |
+| 代码格式化     | `Shift` + `Option` + `F` （formatter)                            |
+| 折叠所有代码/字符 | 先按下 `Command` + `K` 再按下 `Command` + `0`(数字0) <br> (Hint: 无需全选文本/字符) |
+| 展开所有代码/字符 | 先按下 `Command` + `K`, 再按下 `Command` + `J`                           |
+| 格式化选定代码 | 先按下`Command` + `K` 再按下 `Command` + `F`                          |
+| 增加/减少缩进     | `Command` + `[` / `]` |
+
+### △ 文件、符号、代码之间的快速跳转
+
+| 快捷键                                                       | 功能                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `Command` + `P`                                              | **打开最近打开文件列表**，同时列表顶部出现搜索框；直接输入文件名按回车(enter)，在档期窗口打开对应文件；使用 `Command` + `Enter` 在新的编辑器窗口打开此文件。 |
+|                                                              | `?`：列出当前可执行的动作<br /><img src="./ReadMe.assets/image-20231217110645478.png" alt="image-20231217110645478" style="zoom: 25%;" /> |
+|                                                              | `:`跳转到行数，也可以 `Ctrl+G` 直接进入                      |
+|                                                              | `@ `：跳转到 symbol（搜索变量或者函数），也可以 `Ctrl` + `Shift` + `O` 直接进入 |
+|                                                              | `@`： 根据分类跳转 symbol，查找属性或函数，也可以 `Ctrl` + `Shift` + `O` 后输入:进入 |
+|                                                              | `#`： 根据名字查找 symbol，也可以 `Ctrl` + `T`               |
+| `Command` + `G`                                              | 行跳转，输入对应数字回车，可以跳转到当前文件的当前行         |
+| `Command` + `P`<br />(输入文件名 + “:” + 行数)               | 跳转到指定文件的指定行数                                     |
+| `Command` + `shift` + `O`<br />(字母 o)                      | 调出当前文件的符号（函数名等），使用方向键或者搜索，回车，就能跳转到你想要的符号；如果输入“:”可以对当前文件的所有符号进行分类 |
+| `Command` + `T`                                              | 打开多个文件，搜索多个文件中的符号                           |
+| `F12` (或加 `Fn`)                                            | 跳转到函数的定义处                                           |
+| `Command` + `F12`                                            | 跳转到函数的实现位置。注: js 中没有接口的概念，定义和实现是相同的，所以 JS 中的 `F12` 和 `Command` + `F12` 效果是一样的 |
+| `Shift` + `F12`                                              | 打开函数引用的预览（把光标放在函数或者类上，按 Shift + F12 可以打开一个引用列表和内嵌编辑器） |
+| 当有多个错误时可以按 `F8` 逐个跳转                           | 跳转到下一个 Error 或 Warning                                |
+| ~~`Command + Tab`(同时按住)，继续按着 `Command`键，松开 `Tab`键~~ | 打开当前打开文件的列表，选择要打开文件，松开 Command 就能打开对应文件 |
+
+### △ 全局
+
+| 快捷键 | 功能 |
+| ---- | ------ |
+| `Command` + `C`           | 复制（未选中文本的情况下，复制光标所在行）|
+| `Command` + `X`           | 剪切（未选中文本的情况下，剪切光标所在行）|
+| `Command` + `Shift` + `P` 或 `F1` | **显示命令面板** |
+| `Command` + `Shift` + `N` | 打开新窗口 |
+| `Command` + `W`           | 关闭窗口 |
+| `Command` + `K` + `W`     |  关闭所有窗口 |
+
+### △ 查找替换
+
+| 快捷键                    | 功能 |
+| ------------------------- | ---- |
+| `Command` + `F`                   | 查找 |
+| `Command` + `Option` + `F`        | 替换 |
+| `Command` + `G`                   | 查找下一个 |
+| `Command` + `Shift` + `G`         | 查找上一个 |
+| `Option` + `Enter`                | 选中所有匹配项 |
+| `Command` + `D`                   | 向下选中相同内容 |
+| `Command` + `K`  `Command` + `D`  | 移除前一个向下选中相同内容 |
+
+### △ 显示相关
+
+| 快捷键                            | 功能                                       |
+| --------------------------------- | ------------------------------------------ |
+| `Command` + `B`                   | 侧边栏(/目录栏)显示/隐藏                   |
+| `Command` + `+/-`                 | 字体放大(zoomIn)/缩小(zoomOut)             |
+| `Command` + `1/2/3`               | 拆分编辑器（注：把一个编辑器窗口变成 2+ ） |
+| `Command` + `Shift` + `←`/`→`     | 切换窗口                                   |
+| `F11`                             | 全屏                                       |
+| `Command` + `Shift` + `G`         | 显示 Git                                   |
+| `Command` + `Shift` + `F`         | 全局查找文件                               |
+| `Command` + `K` / `Command` + `T` | 快速切换主题                               |
+| `Command` + `Shift` + `D`         | 显示 Debug                                 |
+| `Command` + `Shift` + `U`         | 显示 Output                                |
+
+
+
+### △ 进阶
+
+
+| 快捷键 | 功能 |
+| ------ | ---- |
+| `Command` + `Shift` + `K` | 删除当前行 |
+| `Command` + `Shift` + `x` | 裁剪尾随空格(去掉一行的末尾那些没用的空格)  |
+|  |  |
+|  |  |
+|  |  |
 
 
 
 
 
-## ▲ VSCode 中使用正则表达式给 markdown 文档中内添加空格
+
+
+
+
+
+## ▲ VSCode 中使用正则表达式给 MD 文档内添加空格
 
 ### (1) 给中文和英文中间添加空格
 
@@ -26,13 +145,13 @@
 
 ### (2) 在数字前添加空格
 
-![image-20220828163140573](ReadMe.assets/image-20220828163140573.png)
+<img src="ReadMe.assets/image-20220828163140573.png" alt="image-20220828163140573" style="zoom: 40%;" />
 
 正则表达式的讲解见：`Github-clone/DataStructure-Algorithm-Learning/正则表达式/正则表达式-特殊字符.md`
 
 ### (3) 给一些特定格式的文字添加统一后缀
 
-![image-20221108093239148](ReadMe.assets/image-20221108093239148.png)
+<img src="ReadMe.assets/image-20221108093239148.png" alt="image-20221108093239148" style="zoom:67%;" />
 
 
 
@@ -203,8 +322,6 @@
     + "editor.fontFamily": "Source Code Variable, 'Source Code Variable Italic'"
     + 具体的字体名参照自己下的字体，同样在 C:\Windows\Fonts 中可以找到
 
-
-
 ## ▲ Win10 下 VSCode 的基本设置
 
 ### Win 下 `settings.json` 的基本设置
@@ -236,48 +353,9 @@
 ```
 Tips: `editor.fontFamily: "Source Code Pro, Source Han Sans SC Light"` 解决了中文和英文的显示问题, 一定不要更改, `Source Code Pro` 解决的是英文显示字体,  `Source Han Sans SC Light`解决的是汉语字体显示的问题. 
 
-### Windows VSCode 常用快捷键:
-1. 注释: 
-　　+ (1) 单行注释: `[Ctrl + K, Ctrl + c]` 或 `Ctrl` + `/`
-　　+ (2) 取消单行注释: `[Ctrl + K, Ctrl + U] (按下 Ctrl 不放, 再按 K + U)`
-　　+ (3) 多行注释: `[Alt + Shift + A]`
-　　+ (4) 多行注释: `/**`
-1. 折叠代码快捷键: 先按下 `Ctrl + K` 再按下 `Ctrl + 0(数字0)` 
-    + (Tip: 即使是折叠全部代码也不用全选文本) 
-1. 代码展开: 先按下 `Ctrl + K`，再按下 `Ctrl + J` ;
-1. 移动行: `Alt + Up/Down`
-1. 显示/隐藏左侧目录栏: `Ctrl + B`
-1. 复制当前行: `Shift + Alt + Up/Down`
-1. 删除当前行: `Shift + Ctrl + K / Mac: Shift + command + K`
-1. 控制台终端显示与隐藏: `Ctrl + ~`
-1. 查找文件/安装vs code 插件地址: `Ctrl + p`
-1. 代码格式化: `Shift + Alt +f`
-1. 新建一个窗口 : `Ctrl + Shift + n`
-1. 行增加缩进: `Ctrl + [`
-1. 行减少缩进: `Ctrl + ]`
-1. 裁剪尾随空格(去掉一行的末尾那些没用的空格) : `Ctrl + Shift + x`
-1. 字体放大/缩小: `Ctrl + ( + 或 - )`
-1. 拆分编辑器 : `Ctrl + 1/2/3`
-1. 切换窗口 : `Ctrl + Shift + left/right`
-1. 关闭编辑器窗口 : `Ctrl + w`
-1. 关闭所有窗口 : `Ctrl + K + w`
-1. 切换全屏 : `F11`
-1. 自动换行 : `Alt + z`
-1. 显示git : `Ctrl + Shift + g`
-1. 全局查找文件: `Ctrl + Shift + f`
-1. 显示相关插件的命令(如: git log): `Ctrl + Shift + p`
-1. 选中文字: `Shift + left / right / up / down`
-1. 删除行 :  `Ctrl + Shift + K`
-1. 快速切换主题: `Ctrl + K / Ctrl + t`
-1. 快速回到顶部 :  `Ctrl + home`
-1. 快速回到底部 : `Ctrl + end`
-1. 格式化选定代码 : `Ctrl + K / Ctrl + f`
-
-
 
 ## ▲ 解决 mbp 使用 VSCode 导致风扇狂转的问题
 一般情况下, vscode 的进程不会导致风扇一直狂转, 所以打开 "活动监视器" 查找是哪个占了极高的 cpu 即可.
-
 
 
 ## ▲ Gitlens 取消每行后面的代码变更记录
