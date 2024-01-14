@@ -21,6 +21,7 @@ engineering `/ˌendʒəˈnɪərɪŋ $ -ˈnɪr-/` -n. 工程（学）
 ## ▲ chatGPT 账号：
 
 ### (1) 自己的 Gmail 账号
+
 见个人仓库
 
 ### (2) 自己的 Gami 2 邮箱账号
