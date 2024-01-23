@@ -1,7 +1,16 @@
 # Typora
 
 
-## Typora 的 Vue 主题设置 宋体的 CSS 代码
+
+##  ▲ 更改 Typora 侧边栏 sidebar 的字体大小
+
+*Added: 2024.01.23*
+
+找到当前主题（e.g.: vue-dark) vscode 打开后搜索 sidebar
+
+<img src="./readme.assets/image-20240123113522800.png" alt="image-20240123113522800" style="zoom:50%;" />
+
+## ▲ Typora 的 Vue 主题设置宋体的 CSS 代码
 
 ```css
 :root {
