@@ -12,35 +12,35 @@
 
 1. 打开文档，在“视图”选项卡中点击“大纲”。
 
-![Image for post](./readme.assets/1*mrDnLOS_66fpP4Fbgnw7oQ-8588645.png)
+<img src="./readme.assets/1*mrDnLOS_66fpP4Fbgnw7oQ-8588645.png" alt="Image for post" style="zoom:50%;" />
 
 2. 打开大纲视图后发现一个问题，标题和正文前面的小圆点在同一列上，这说明系统没有把你的标题认为是“标题”，它只是“有着标题格式的正文”，我们提高标题的级别。
 
-![Image for post](./readme.assets/1*_hXjp3iNbQrae6ABe00B3A.png)
+<img src="./readme.assets/1*_hXjp3iNbQrae6ABe00B3A.png" alt="Image for post" style="zoom: 50%;" />
 
 3. 点击标题前的圆点（光标会变成方向箭头，不要拖动，只要点一下），或者鼠标移到前面后变成反向，点击后选择这一行。
 
-![Image for post](./readme.assets/1*yTgrP1SJ24JEeumBJ1I4cA.png)
+<img src="./readme.assets/1*yTgrP1SJ24JEeumBJ1I4cA.png" alt="Image for post" style="zoom:50%;" />
 
 4. 在上方点击这个向右箭头，将该标题修改为“1级标题”。
 
-![Image for post](./readme.assets/1*x0rHdKTeXHDS8xOEPBDFKg.png)
+<img src="./readme.assets/1*x0rHdKTeXHDS8xOEPBDFKg.png" alt="Image for post" style="zoom: 67%;" />
 
 5. 选中二级标题，同样点击箭头，该标题就会自动修改为“2级标题”
 
-![Image for post](./readme.assets/1*IbsHB4-cYhA2d2aCFG1Dww.png)
+<img src="./readme.assets/1*IbsHB4-cYhA2d2aCFG1Dww.png" alt="Image for post" style="zoom: 67%;" />
 
 6. 如果有三级标题，同样方法，改成“3级标题”
 
-![Image for post](./readme.assets/1*kJq4Zx9tAk0jrhABGPwc6g.png)
+<img src="./readme.assets/1*kJq4Zx9tAk0jrhABGPwc6g.png" alt="Image for post" style="zoom: 67%;" />
 
 7. 当然此时如果你还想通过同样方法修改别的标题到2级标题，会比较麻烦，可以直接在这里选择
 
-![Image for post](./readme.assets/1*c_L3eXRONX7Q9LCl8iBWVg.png)
+<img src="./readme.assets/1*c_L3eXRONX7Q9LCl8iBWVg.png" alt="Image for post" style="zoom:67%;" />
 
 8. 如果你要一次性选择多个标题，先选择一个标题，然后按住 Ctrl键，再选中别的标题，可以跨行选择多个。
 
-![Image for post](./readme.assets/1*gvZHw_Ru7NIs68rJn4ULDw.png)
+<img src="./readme.assets/1*gvZHw_Ru7NIs68rJn4ULDw.png" alt="Image for post" style="zoom: 50%;" />
 
 9. 如果你的目录中包括摘要，也别忘记修改，修改完毕后，关闭大纲视图
 
@@ -49,21 +49,21 @@
 > 大纲视图内修改完毕后，可能会发现正文的标题格式发生了变化，不用着急，后面会修改。并且你可能会发现标题前出现黑点，这也不用担心，这是标题标记，打印时是不会打印出来的。
 10. 插入自动目录，如果你不知道在哪里添加，直接在搜索框里搜“目录”就行。
 
-![Image for post](./readme.assets/1*WQwxKyilCXJ8O5117b8c1g.png)
+<img src="./readme.assets/1*WQwxKyilCXJ8O5117b8c1g.png" alt="Image for post" style="zoom:50%;" />
 
 11. 添加好后可以看到目录的效果。
 
 ![Image for post](https://miro.medium.com/max/60/1*rZ27JXoCf93ADGFjJnxBfw.png?q=20)
 
-![Image for post](./readme.assets/1*rZ27JXoCf93ADGFjJnxBfw.png)
+<img src="./readme.assets/1*rZ27JXoCf93ADGFjJnxBfw.png" alt="Image for post" style="zoom:40%;" />
 
 12. 格式不符合要求没关系，都是可以改的
 
-![Image for post](./readme.assets/1*8gY4eAn46uTx7rAErK800w.png)
+<img src="./readme.assets/1*8gY4eAn46uTx7rAErK800w.png" alt="Image for post" style="zoom:40%;" />
 
 13. 如果想更新目录，右键目录区域，选择“更新域”。
 
-![Image for post](./readme.assets/1*_Nve3zLNAI-e9AhzQvEYGA.png)
+<img src="./readme.assets/1*_Nve3zLNAI-e9AhzQvEYGA.png" alt="Image for post" style="zoom:50%;" />
 
 14. 如果你没有修改过标题内容，就只更新页码，更新过标题的话则要更新整个目录
 
@@ -72,16 +72,17 @@
 > 如果更新整个目录，目录的字体格式会恢复成默认状态。所以建议确定好标题后，再制作目录。
 15. 目录里面的文字也是可以修改的，不会影响到对应的实际标题文字。
 
-![Image for post](./readme.assets/1*fo_ZgyJzmkns9jomOmaLuQ.png)
+<img src="./readme.assets/1*fo_ZgyJzmkns9jomOmaLuQ.png" alt="Image for post" style="zoom:67%;" />
 
 16. 重新修改目录的格式，和第 8 步一样，同样可以使用 Ctrl 键同时选中多个同级标题，统一进行修改。
 
 ## 第二种方法
+
 第一种方法存在缺陷，就是在最后一步只修改了正文标题格式，并没有从根本上修改默认的标题格式，如果再把另一行调整为标题状态时，又需要再次修改格式，所以说适合写完后临时调整。
 
 1. 新建一个空白文档后，首先你要检查系统预置给你的标题格式够不够你用。比如下图提供了“标题 1”和“标题 2”，如果你有三级标题，就不够。这时可以自己添加，点击预置样式右下角的小按钮（用红色框子标注的按钮）。
 
-![Image for post](./readme.assets/1*ZW0cG4AVf191oihA7Tesug.png)
+<img src="./readme.assets/1*ZW0cG4AVf191oihA7Tesug.png" alt="Image for post" style="zoom: 50%;" />
 
 对于 macOS，点击右侧的“样式窗格”。
 
