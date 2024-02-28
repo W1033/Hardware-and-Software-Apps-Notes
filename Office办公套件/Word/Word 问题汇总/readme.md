@@ -34,7 +34,15 @@
 
 > 待做笔记：https://www.bilibili.com/video/BV1QP4y1w75c/?spm_id_from=333.788&vd_source=e92153ec1930505e455be52646a78b7c
 
+粘贴后缩进一般会分为 3 种情况，如下图：
 
+<img src="./readme.assets/image-20240227110619413.png" alt="image-20240227110619413" style="zoom: 60%;" />
+
+更改的方式如下图：
+
+<img src="./readme.assets/image-20240227112502013.png" alt="image-20240227112502013" style="zoom:40%;" />
+
+<img src="./readme.assets/image-20240227112636378.png" alt="image-20240227112636378" style="zoom:40%;" />
 
 ## ▲ Word 如何让一行文字在当前页面中垂直居中
 
