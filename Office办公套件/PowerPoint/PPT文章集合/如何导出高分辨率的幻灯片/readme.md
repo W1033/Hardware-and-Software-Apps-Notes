@@ -76,6 +76,8 @@
     	设置此值时，请参阅[限制](https://learn.microsoft.com/zh-cn/office/troubleshoot/powerpoint/change-export-slide-resolution#limitations)部分以了解详细信息。
     </div> 
 
+    > 注：mac 导出图片的时候会让设置宽和高，直接写 4000 * 2250 就行。
+
 10. 选择“确定”。
 
 11. 在“文件”菜单上，选择“退出”，退出注册表编辑器。
