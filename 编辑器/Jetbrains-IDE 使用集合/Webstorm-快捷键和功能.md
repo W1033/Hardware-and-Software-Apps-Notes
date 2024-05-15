@@ -90,48 +90,43 @@
 ### 7. 更改字符编码:
 - 主界面的最下面即可看到当前文件的字符编码
 
-### 8. 有用的快捷键:
-1. 在不选中的情况下是复制一行: `Ctrl` + `D`
-1. 复制选中内容, 不选中时是直接复制当前行: `Ctrl` + `C` 
-1. 后退/撤销: `Ctrl` + `Z`
-1. 取消后退/撤销: `Ctrl` + `Shift` + `Z` 
-1. 查找(当前文件): `Ctrl` + `F`
-1. 替换(当前文件): `Ctrl` + `R`
-1. 格式化代码: 
-    + Windows: `Control` + `Alt` + `L`:
-    + MacOS: `Command`+ `Alt` + `L`
-1. `Ctrl` + `Alt` + `I`: 自动缩进 
-1. `Ctrl` + `Shift` + `Space`: 切换窗口 
-1. 展开/折叠全部代码: `Ctrl` + `Shift` + `+/-`
-1. 展开/折叠当前方法: `Ctrl` + `+/-` : 
-1. 全局搜索: 
-    + Windows: `Control` + `Shift` + `F`
-    + MacOS: `Command` + `Shift` + `F`
-1. 单行注释: 
-    + Windows: `Control` + `/`
-    + MacOS: `Command` + `/`
-1. 多行注释: 
-    + Windows: `Control` + `Shift` + `/`
-    + MacOS: `Command`+ `Shift` + `/` (Notice: 和 macos 的系统快捷冲突)
-1. 快速在当前行上插入一行:
-    + Windows: `Ctrl` + `Shift` + `Enter`
-    + MacOS: `Option` + `Command` + `Enter`
-1. 快速在当前行下插入一行: `Ctrl + Enter`
+## 快捷键：
+
+| 操作描述                         | Windows 快捷键           | MacOS 快捷键                                          |
+| -------------------------------- | ------------------------ | :---------------------------------------------------- |
+| 选中下一个相同内容               | `Alt + J`                | Command + G                                           |
+| 选中所有相同内容                 | `Ctrl + Shift + Alt + J` | Command + Ctrl + G                                    |
+| 在不选中的情况下复制一行         | `Ctrl + D`               |                                                       |
+| 复制选中内容，不选中时复制当前行 | `Ctrl + C`               |                                                       |
+| 后退/撤销                        | `Ctrl + Z`               |                                                       |
+| 取消后退/撤销                    | `Ctrl + Shift + Z`       |                                                       |
+| 查找（当前文件）                 | `Ctrl + F`               |                                                       |
+| 替换（当前文件）                 | `Ctrl + R`               |                                                       |
+| 格式化代码                       | `Ctrl + Alt + L`         | `Command + Option + L`                                |
+| 自动缩进                         | `Ctrl + Alt + I`         |                                                       |
+| 切换窗口                         | `Ctrl + Shift + Space`   |                                                       |
+| 展开/折叠全部代码       x        | `Ctrl + Shift + +/-`     |                                                       |
+| 展开/折叠当前方法                | `Ctrl + +/-`             |                                                       |
+| 全局搜索                         | `Ctrl + Shift + F`       | `Command + Shift + F`                                 |
+| 单行注释                         | `Ctrl + /`               | `Command + /`                                         |
+| 多行注释                         | `Ctrl + Shift + /`       | `Command + Shift + /` (注意: 和 MacOS 系统快捷键冲突) |
+| 快速在当前行上插入一行           | `Ctrl + Shift + Enter`   | `Option + Command + Enter`                            |
+| 快速在当前行下插入一行           | `Ctrl + Enter`           |                                                       |
+
 
 ### 9. 解决 JavaScript 无法运行, 和 JS 文件被当做 txt文件的问题 ?
+
 - `Preferences` --> `Editor` --> `File types` --> 在右侧方框中找到
   `JavaScript` 然后在下面的 Registered Patterns 中更该为 `*.js` 
 
-### 10.
-
-### 11. 
-
 ### 13. 只修改编辑区的背景色，不改主题:
+
 -  `Settings -> Editor -> Color Scheme -> General -> Text -> Default text`
 
-### 12. 
+### 12.
 
 ### 14. 更改 js/css/scss/less 文件的缩进:
+
 - `File -> Settings -> Editor -> Code Style --> 相应的文件格式然后更改`
 
 ### 15. webStorm 下将 vue 的代码锁紧由 2 个空格改为 4 个空格
