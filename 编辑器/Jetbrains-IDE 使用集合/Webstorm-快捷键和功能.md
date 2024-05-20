@@ -47,10 +47,11 @@
 ### 0. WebStorm 中的 `皮肤` 和 `主题`
 - `皮肤`(appearance): 是显示界面
 - `主题`(Theme): 是代码主题
-- 2019 年 WebStorm 支持全局的主题了, 可以装个 vscode 的主题:
-  `Visual Studio Code Dark Plus Theme`
+- ~~2019 年 WebStorm 支持全局的主题了, 可以装个 vscode 的主题:
+  `Visual Studio Code Dark Plus Theme`~~
 
 ### 1. WebStorm 中去掉灰色的参数提示: `parameter name hints`
+
 - `Settings` --> 输入: `parameter hints` --> `Editor` --> `General`
   --> `Appearance` --> `Show parameter name hints` 去掉勾选   
 
@@ -85,9 +86,11 @@
   设置上面的 foreground,记得把下面的 use inherited attributed 前面的对号取消就可以了。
 
 ### 6. WebStorm 中更改文档的默认字体:
+
 - `Settings` -> `Editor` -> `Color Scheme` -> `General`
 
 ### 7. 更改字符编码:
+
 - 主界面的最下面即可看到当前文件的字符编码
 
 ## 快捷键：
