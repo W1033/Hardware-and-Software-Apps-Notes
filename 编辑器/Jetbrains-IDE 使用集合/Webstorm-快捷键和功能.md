@@ -95,26 +95,26 @@
 
 ## 快捷键：
 
-| 操作描述                         | Windows 快捷键           | MacOS 快捷键                                          |
-| -------------------------------- | ------------------------ | :---------------------------------------------------- |
-| 选中下一个相同内容               | `Alt + J`                | Command + G                                           |
-| 选中所有相同内容                 | `Ctrl + Shift + Alt + J` | Command + Ctrl + G                                    |
-| 在不选中的情况下复制一行         | `Ctrl + D`               |                                                       |
-| 复制选中内容，不选中时复制当前行 | `Ctrl + C`               |                                                       |
-| 后退/撤销                        | `Ctrl + Z`               |                                                       |
-| 取消后退/撤销                    | `Ctrl + Shift + Z`       |                                                       |
-| 查找（当前文件）                 | `Ctrl + F`               |                                                       |
-| 替换（当前文件）                 | `Ctrl + R`               |                                                       |
-| 格式化代码                       | `Ctrl + Alt + L`         | `Command + Option + L`                                |
-| 自动缩进                         | `Ctrl + Alt + I`         |                                                       |
-| 切换窗口                         | `Ctrl + Shift + Space`   |                                                       |
-| 展开/折叠全部代码       x        | `Ctrl + Shift + +/-`     |                                                       |
-| 展开/折叠当前方法                | `Ctrl + +/-`             |                                                       |
-| 全局搜索                         | `Ctrl + Shift + F`       | `Command + Shift + F`                                 |
-| 单行注释                         | `Ctrl + /`               | `Command + /`                                         |
-| 多行注释                         | `Ctrl + Shift + /`       | `Command + Shift + /` (注意: 和 MacOS 系统快捷键冲突) |
-| 快速在当前行上插入一行           | `Ctrl + Shift + Enter`   | `Option + Command + Enter`                            |
-| 快速在当前行下插入一行           | `Ctrl + Enter`           |                                                       |
+| 操作描述                         | Windows 快捷键             | MacOS 快捷键                                                 |
+| -------------------------------- | -------------------------- | :----------------------------------------------------------- |
+| 选中下一个相同内容               | `Alt + J`                  | Command + G                                                  |
+| 选中所有相同内容                 | `Ctrl + Shift + Alt + J`   | Command + Ctrl + G                                           |
+| 在不选中的情况下复制一行         | `Ctrl + D`                 |                                                              |
+| 复制选中内容，不选中时复制当前行 | `Ctrl + C`                 |                                                              |
+| 后退/撤销                        | `Ctrl + Z`                 |                                                              |
+| 取消后退/撤销                    | `Ctrl + Shift + Z`         |                                                              |
+| 查找（当前文件）                 | `Ctrl + F`                 |                                                              |
+| 替换（当前文件）                 | `Ctrl + R`                 |                                                              |
+| 格式化代码                       | `Ctrl + Alt + L`           | `Command` + `Option`(⌥) + `L`                                |
+| 自动缩进                         | `Ctrl + Alt + I`           |                                                              |
+| 切换窗口                         | `Ctrl + Shift + Space`     |                                                              |
+| 展开/折叠当前代码                | `Ctrl` + `+/-`             | `Command`(⌘)  + `+`<br />`Command`(⌘)  + `-`                 |
+| 展开/折叠全部代码                | `Ctrl` + `Shift` + `+/-`   | `Command`(⌘) + `Shift`(⇧) + `+`<br />`Command`(⌘) + `Shift`(⇧) + `-` |
+| 全局搜索                         | `Ctrl` + `Shift` + `F`     | `Command` + `Shift` + `F`                                    |
+| 单行注释                         | `Ctrl` + `/`               | `Command` + `/`                                              |
+| 多行注释                         | `Ctrl` + `Shift + `/`      | `Command` + `Shift` + `/` (注意: 和 MacOS 系统快捷键冲突)    |
+| 快速在当前行上插入一行           | `Ctrl` + `Shift` + `Enter` | `Option` + `Command` + `Enter`                               |
+| 快速在当前行下插入一行           | `Ctrl` + `Enter`           |                                                              |
 
 
 ### 9. 解决 JavaScript 无法运行, 和 JS 文件被当做 txt文件的问题 ?
