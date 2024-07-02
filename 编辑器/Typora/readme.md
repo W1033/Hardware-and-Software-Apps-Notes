@@ -73,3 +73,22 @@ body {
 }
 
 ```
+
+> ## Source Sans Pro
+>
+> *Added： 2024.07.02* 
+>
+> *来源：https://zh.wikipedia.org/wiki/Source_Sans_Pro*
+>
+> **Source Sans Pro**是一个由Paul D. Hunt为[Adobe Systems](https://zh.wikipedia.org/wiki/Adobe_Systems)所设计的无衬线[字体](https://zh.wikipedia.org/wiki/字体)。它是Adobe的第一个[开放源代码](https://zh.wikipedia.org/wiki/开放源代码)字体家族，以[SIL开源字体许可](https://zh.wikipedia.org/wiki/SIL開源字體授權)进行散布[[1\]](https://zh.wikipedia.org/wiki/Source_Sans_Pro#cite_note-hunt-1)[[2\]](https://zh.wikipedia.org/wiki/Source_Sans_Pro#cite_note-2)。
+>
+> 这个字体是由Morris Fuller Benton所设计的Gothics系列字体所启发。它提供了六种字重（常规、特细、细、半粗、粗、黑），并且皆包含斜体。此字体包含了相当多拉丁文字的支持，包含了西欧及东欧的语言、越南文、中文的罗马拼音、纳瓦霍文等[[1\]](https://zh.wikipedia.org/wiki/Source_Sans_Pro#cite_note-hunt-1)
+>
+> ### Adobe开放源代码字体家族
+>
+> - Source Sans Pro，Adobe开放源代码字体家族的第一个成员。
+> - [Source Code Pro](https://zh.wikipedia.org/wiki/Source_Code_Pro)，Adobe开放源代码字体家族的第二个成员。
+> - [Source Serif Pro](https://zh.wikipedia.org/wiki/Source_Serif_Pro)，Adobe开放源代码字体家族的第三个成员。
+> - [Source Han Sans](https://zh.wikipedia.org/wiki/Source_Han_Sans)，Adobe开放源代码字体家族的第四个成员，也是第一个包含中日韩文字的成员。
+> - [Source Han Serif](https://zh.wikipedia.org/wiki/Source_Han_Serif)，Adobe开放源代码字体家族的第五个成员，同样包含中日韩文字。
+

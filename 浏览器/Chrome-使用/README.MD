@@ -31,7 +31,7 @@ Mac Chrome 调出控制台的快捷键: `fn` + `F12`
 
 <img src="./README.assets/image-20230623121327001.png" alt="image-20230623121327001" style="zoom:50%;" />
 
-看名字就可以理解，这个字体是设置的 Google Font 字体，所以需要安装 Google 开源的字体，因为我第 (1) 个插件里的字体就是用的 google 字体 `Note Serif SC` （SC: Simple Chinese），所以我无需再次安装，安装好之后，只需要在当前需要更改字体的页面直接点击插件图标来更换字体就行啦。如下图：
+看名字就可以理解，这个字体是设置的 Google Font 字体，所以需要安装 Google 开源的字体，因为我第 (1) 个插件里的字体就是用的 google 字体 `Noto Serif SC` （SC: Simple Chinese），所以我无需再次安装，安装好之后，只需要在当前需要更改字体的页面直接点击插件图标来更换字体就行啦。如下图：
 
 <img src="./README.assets/image-20230623121746214.png" alt="image-20230623121746214" style="zoom:50%;" />
 
