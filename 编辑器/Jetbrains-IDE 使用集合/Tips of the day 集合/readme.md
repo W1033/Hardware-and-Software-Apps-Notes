@@ -2,7 +2,7 @@
 
 *Create: 2024.07.02*
 
-*Last Edit: 2024.07.03*
+*Last Edit: 2024.07.~~03~~、04、*
 
 ## Code completion
 
@@ -204,7 +204,7 @@ To navigate to the implementations of an abstract method, position the caret at 
 
 
 
-## Find usages
+## Find usages 查找用法
 
 Press   ⌥   F7   to quickly locate all occurrences of code referencing the symbol at the caret, no matter if the symbol is a part of a class, method, field, parameter, or another statement.
 
@@ -269,7 +269,7 @@ You can execute expressions or reassign values for variables while your script i
 
 
 
-##  Extract Variable refactoring
+##  Extract Variable refactoring 提取变量重构
 
 The Extract Variable refactoring wraps a selected expression into a variable. It adds a new variable declaration and uses the expression as an initializer. Select an expression and press   ⌥   ⌘   V   (Refactor | Extract/Introduce | Variable).
 
@@ -421,7 +421,16 @@ You can also copy references in the Go to Class/Go to Symbol/Go to File dialogs.
 
 
 
+## Close editor tabs
+
+To close all editor tabs except the current one, keep   Alt   (on Windows and Linux) /   ⌥   (on macOS) pressed and click the cross icon for the current editor tab.
+
+<img src="./readme.assets/image-20240704130525991.png" alt="image-20240704130525991" style="zoom:50%;" />
+
+
+
 ## Close all editor tabs
+
 To close all editor tabs, right-click a tab and select Close All Tabs.
 
 To close all tabs except the active one, press   Alt   (on Windows and Linux) /   ⌥   (on macOS) and click the Close button on the active tab.
@@ -496,7 +505,7 @@ If you do not remember a live template abbreviation, press   ⌘   J   to see a 
 
 ## Compare archives
 
-To compare two   .jar  ,   .zip   or   .phar   archives or even files inside an archive, select them in the Project tool window and press   ⌘   D  .
+To compare two   `.jar` ,  `.zip`  or  `.phar` archives or even files inside an archive, select them in the Project tool window and press   ⌘   D  .
 
 The Compare Archives feature is integrated with the Java bytecode decompiler and allows you to see what exactly has changed between two different versions of a library.
 
@@ -777,6 +786,20 @@ In the Settings/Preferences dialog   ⌘   ,  , go to Tools | Terminal and speci
 
 
 
+## Code Completion
+
+When using code completion, you can accept the currently highlighted selection in the popup list by pressing   ⇥ Tab  .
+
+Unlike accepting with   ↩ Return  , the selected name will overwrite the rest of the name to the right of the caret. This can be especially useful for replacing one method or variable name with another. 
+
+<img src="./readme.assets/image-20240704125401672.png" alt="image-20240704125401672" style="zoom:50%;" />
+
+
+
+
+
+
+
 ......
 
 ......
@@ -794,10 +817,6 @@ To navigate to the implementations of an abstract method, position the caret at 
 <img src="./readme.assets/image-20240702091303083.png" alt="image-20240702091303083" style="zoom:50%;" />
 
  
-
-
-
-
 
 
 
