@@ -84,10 +84,9 @@
 | `Option + Fn + Delete`                          | 删除到单词的末尾      |
 | `Option + Delete`                               | 删除到单词的开头      |
 | `Command` + 加号 / `Command` + 减号               | 展开 / 折叠代码块    |
-| `Command + Shift` + 加号                         | 展开所以代码块       |
-| `Command + Shift` + 减号                         | 折叠所有代码块       |
+| **`Command + Shift` + 加号**                     | **展开所以代码块**   |
+| **`Command + Shift` + 减号**                     | **折叠所有代码块**   |
 | `Command + W`                                   | 关闭活动的编辑器选项卡   |
-
 
 ### Part 2：Search / Replace（查询/替换）
 
