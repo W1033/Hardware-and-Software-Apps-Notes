@@ -40,11 +40,13 @@
 
 ## ▲ 更改 Typora 侧边栏 sidebar 的字体大小
 
-*Added: 2024.01.23*
+*Added: 2024.01.23， Update: 2024.09.19*
 
-找到当前主题（e.g.: vue-dark) vscode 打开后搜索 sidebar
+首先通过控制台，找到侧边栏的样式，如下图：（注意：最新版本的 Typora, 开启控制台调试比较麻烦，按照 typora 文档操作。）
 
-<img src="./readme.assets/image-20240123113522800.png" alt="image-20240123113522800" style="zoom:50%;" />
+![image-20240919103151367](./readme.assets/image-20240919103151367.png)
+
+然后再找到当前主题， vscode 打开后搜索 sidebar-content，如果没有自己添加 `#sidebar-conent` 样式。
 
 
 
