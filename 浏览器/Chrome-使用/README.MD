@@ -23,7 +23,7 @@ Mac Chrome 调出控制台的快捷键: `fn` + `F12`
 
  `Advanced Font Settings`, 我记得很久之前 Chrome 默认更改字体的设置和此插件的界面一模一样，我的设置如下：
 
-<img src="./README.assets/image-20230623121044784.png"  style="zoom: 40%;" />
+<img src="./README.assets/image-20230623121044784.png"  style="zoom: 50%;" />
 
 ### (2) Goolge Font Previewer for Chrome
 
