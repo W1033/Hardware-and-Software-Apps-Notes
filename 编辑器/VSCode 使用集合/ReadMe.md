@@ -130,7 +130,9 @@
 
 
 
+## ▲ VSCode 更改侧边栏的缩进
 
+<img src="./ReadMe.assets/image-20241013214621851.png" alt="image-20241013214621851" style="zoom:50%;" />
 
 
 
