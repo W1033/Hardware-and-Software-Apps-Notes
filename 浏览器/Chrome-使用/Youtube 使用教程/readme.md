@@ -94,9 +94,10 @@ If you need any modifications or additional formatting, please let me know!
 | [PocketTube: Youtube Subscription Manager](https://chromewebstore.google.com/detail/pockettube-youtube-subscr/kdmnjgijlmjgmimahnillepgcgeemffb?utm_source=ext_app_menu) | 管理 YouTube 订阅的频道                                      |
 | [Youtube-shorts block](https://chromewebstore.google.com/detail/youtube-shorts-block/jiaopdjbehhjgokpphdfgmapkobbnmjp?utm_source=ext_app_menu) | 屏蔽 YouTube 列表中的 Shorts                                 |
 | [Download Youtube Subtitles](https://chromewebstore.google.com/detail/download-youtube-subtitle/gdfkkklabpbkconekepgjcghpagenigl?utm_source=ext_app_menu) | 下载 YouTube 视频中的字幕，但前提是当前视频是有字幕的情况下。有字幕可以分为：1. 当前视频的上传者已经上传了字幕；2. 当前视频 YouTube 已经转录了字幕。 |
-| 单个视频快速下载: 9x                                         | 在当前视频的 url 前添加 9x，例如视频 url: https://www.youtube.com/watch?v=vwxr9OFkDcQ&ab_channel=YOUYOU, 添加 9x 后为：https://www.9xyoutube.com/watch?v=vwxr9OFkDcQ&ab_channel=YOUYOU |
+| 单个视频快速下载: 9x                                         | 在当前视频的 url 前添加 9x，例如视频 url: https://www.youtube.com/watch?v=vwxr9OFkDcQ&ab_channel=YOUYOU, 添加 9x 后为：https://www.9xyoutube.com/watch?v=vwxr9OFkDcQ&ab_channel=YOUYOU<br />*注：2024.11.24 - 不好用，高清视频没有音频整合* |
 | 单个及批量视频下载                                           | 使用 Downie 4 下载                                           |
 | 批量视频下载                                                 | 使用自己购买的这个伪 4k downloader<br /><img src="./readme.assets/image-20240714152816376.png" alt="image-20240714152816376" style="zoom:30%;" /> |
+| 4K Downloader                                                | 上面的 Jihosoft 4K Video downloader 是模仿真的 4K Downloader 的国内产品，真正的 [4K Downloader](https://www.4kdownload.com/zh-cn/6) 会员费用很贵，从闲鱼购买的破解版。 - 2024.11.24 |
 
 
 
